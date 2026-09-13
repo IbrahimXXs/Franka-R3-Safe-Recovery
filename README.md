@@ -61,6 +61,19 @@ A [saved pilot](outputs/recovery_pilot/report.md) includes both recoveries. Its
 [validation notes](outputs/recovery_pilot/validation.md) flag excessive overlap
 and timestep-sensitive costs; quantitative rankings still need refinement.
 
+## Interactive results viewer
+
+```bash
+./view_study.sh outputs/full_suite_guard_fix
+```
+
+Replace the path with a specific study folder. This builds and opens an offline
+HTML dashboard with selectable trials, zoomable force/torque profiles, phase
+filters, force versus depth, recovery-cost comparisons, and the original report
+and images. Invalid trial costs stay excluded. No simulation or extra Python
+packages are required. See the [viewer guide](visualization/README.md).
+
+
 ## Scene
 
 - FR3 arm and Franka hand from NVIDIA's FR3 USD asset.
@@ -90,6 +103,8 @@ file and overwrites it if it exists.
 | Path | Purpose |
 | --- | --- |
 | `run.sh` | Select the project environment and launch |
+| `view_study.sh` | Build and open an interactive viewer for one study |
+| `visualization/` | Offline dashboard generator, browser UI, and bundled plotting library |
 | `simulation/scene.py` | FR3 configuration, dimensions, and scene geometry |
 | `simulation/launch.py` | Launcher, hold/demo control, and diagnostics |
 | `simulation/study.py` | Controlled insertion/recovery experiments |
