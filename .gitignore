@@ -1,0 +1,7 @@
+.deps/
+__pycache__/
+*.py[cod]
+outputs/
+.pytest_cache/
+core
+core.*

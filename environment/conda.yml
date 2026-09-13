@@ -1,0 +1,10 @@
+name: franka-safe-recovery
+channels:
+  - defaults
+dependencies:
+  - python=3.11.16
+  - pip
+variables:
+  PYTHONNOUSERSITE: "1"
+# Install the simulator and the project-local Isaac Lab checkout afterward.
+# See docs/setup.md for installation commands, run from the project root.

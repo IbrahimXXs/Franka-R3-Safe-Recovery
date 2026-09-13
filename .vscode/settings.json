@@ -1,0 +1,13 @@
+{
+    "python-envs.defaultEnvManager": "ms-python.python:conda",
+    "python-envs.defaultPackageManager": "ms-python.python:conda",
+    "python.defaultInterpreterPath": "/home/ibrahim/miniconda3/envs/franka-safe-recovery/bin/python",
+    "files.exclude": {
+        ".deps": true,
+        "**/__pycache__": true
+    },
+    "search.exclude": {
+        ".deps": true,
+        "outputs": true
+    }
+}
