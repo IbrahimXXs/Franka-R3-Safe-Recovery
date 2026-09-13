@@ -61,6 +61,26 @@ A [saved pilot](outputs/recovery_pilot/report.md) includes both recoveries. Its
 [validation notes](outputs/recovery_pilot/validation.md) flag excessive overlap
 and timestep-sensitive costs; quantitative rankings still need refinement.
 
+## Phase 2: randomized insertion characterization
+
+The [Phase 2 protocol](docs/phase2.md) targets 100 numerically valid 480 Hz GPU
+reference trajectories across six signed offset/tilt families. Independent
+recovery probes at 5, 10, 15 and 20 mm produce `Y_R_tested` labels with explicit
+unknowns for invalid or unmatched states. The full collection is not started
+by setup; first inspect the pilot and its numerical rejection rate.
+
+```bash
+./run.sh --phase2 experiments/phase2_pilot.json --headless --physics-hz 480 \
+  --device cuda:0 --output-dir outputs/Phase2-Pilot-480G
+./view_study.sh outputs/Phase2-Pilot-480G
+```
+
+Use a new output directory for a fresh pilot, or the documented resume command
+for an interrupted run with unchanged code/configuration. The full protocol is
+[experiments/phase2.json](experiments/phase2.json); its first 100 planned candidates
+are saved in [phase2_plan.csv](experiments/phase2_plan.csv).
+
+
 ## Interactive results viewer
 
 ```bash

@@ -1,0 +1,2 @@
+trajectory_id,slot,retry,family,offset_x_mm,offset_y_mm,roll_deg,pitch_deg,insertion_duration_s,folder,status,insertion_success,max_force,max_torque,max_normal_load,max_penetration,max_depth,stalled,force_budget_exceeded,torque_budget_exceeded,numerically_valid,outcome_trustworthy
+slot000_try00,0,0,centered,0.0,0.0,0.0,0.0,6.376472775231715,slot000_try00,complete,True,0.0,0.0,0.0,0.0,20.09426593780517,False,False,False,True,True

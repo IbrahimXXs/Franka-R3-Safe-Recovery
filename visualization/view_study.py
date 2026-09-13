@@ -45,12 +45,53 @@ def read_csv(path):
         return list(csv.DictReader(stream))
 
 
+def load_phase2(directory, manifest):
+    trials, checkpoints, warnings = [], [], []
+    for attempt in manifest.get('attempts', []):
+        folder=attempt.get('folder', '')
+        if not folder or Path(folder).name != folder or '\\' in folder:
+            warnings.append('Skipped invalid attempt folder name');continue
+        metrics=attempt.get('metrics', {})
+        eligible=attempt.get('status')=='complete' and metrics.get('numerically_valid') is True
+        summary=dict(metrics, scenario=attempt['family'], recovery='insertion',
+                     status='insertion_characterized' if eligible else 'numerically_invalid' if metrics else 'incomplete',
+                     penetration_screen_passed=metrics.get('numerically_valid'))
+        path=directory/folder/'insertion.csv';series={}
+        if path.is_file():
+            rows=read_csv(path)
+            if rows:series={k:[clean(r.get(k)) for r in rows] for k in SERIES if k in rows[0]}
+        trials.append(dict(id=folder,summary=summary,status=summary['status'],eligible=eligible,series=series))
+        for cp in attempt.get('checkpoints', []):
+            state=cp.get('state', {})
+            checkpoints.append(dict(trajectory_id=folder,family=attempt['family'],depth_mm=state.get('depth_mm'),
+                requested_depth_mm=cp['depth_mm'],time_s=state.get('time_s'),force_n=state.get('force_norm_n'),
+                torque_nm=state.get('torque_norm_nm'),reached=cp['reached'],parent_valid=eligible,
+                Y_R_tested=cp.get('Y_R_tested') if eligible else None,
+                label_reason=cp.get('label_reason') if eligible else 'Parent invalid/incomplete; '+str(cp.get('label_reason')), 
+                probes=cp.get('probes', [])))
+    assets={}
+    for name,mime in [('study.json','application/json'),('report.md','text/markdown'),
+        ('trajectories.csv','text/csv'),('checkpoints.csv','text/csv'),('recovery_probes.csv','text/csv'),
+        ('recovery_characterization.png','image/png'),('recovery_characterization.pdf','application/pdf')]:
+        path=directory/name
+        if path.is_file():assets[name]=f'data:{mime};base64,'+base64.b64encode(path.read_bytes()).decode('ascii')
+    # The common dashboard uses parameters for its physics/budget display.
+    manifest=dict(manifest,parameters={**manifest.get('physics', {}),
+        'force_budget':manifest.get('protocol', {}).get('force_budget_n'),
+        'torque_budget':manifest.get('protocol', {}).get('torque_budget_nm')})
+    warnings.append('Phase 2 labels refer to two tested recovery policies at approximately replay-matched states. Unknown labels are not failures or proof of irrecoverability.')
+    report=(directory/'report.md').read_text() if (directory/'report.md').is_file() else 'The experiment has not generated a report yet.'
+    return dict(name=directory.name,manifest=manifest,trials=trials,assets=assets,report=report,warnings=warnings,phase2=checkpoints)
+
+
 def load_study(directory):
     directory = Path(directory).resolve()
     manifest_path = directory/'study.json'
     if not manifest_path.is_file():
         raise ValueError(f'No study.json in {directory}')
     manifest = clean(json.loads(manifest_path.read_text(encoding='utf-8')))
+    if manifest.get('study') == 'FR3-Phase2-v1':
+        return load_phase2(directory,manifest)
     warnings, entries = [], {}
     summary = directory/'summary.csv'
     records = read_csv(summary) if summary.is_file() else []

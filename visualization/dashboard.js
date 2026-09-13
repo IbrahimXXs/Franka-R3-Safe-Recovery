@@ -8,15 +8,15 @@ const recoveryPhases=new Set(['realign','retreat','clear_hold']);
 const colors=['#087e8b','#c07324','#7152aa','#287e4c','#c44965','#3b6fbe'];
 const scenarios=[...new Set(D.trials.map(t=>t.summary.scenario))];
 const color=t=>colors[scenarios.indexOf(t.summary.scenario)%colors.length];
-const label=t=>`${t.summary.scenario} / ${t.summary.recovery}`;
+const label=t=>D.phase2?`${t.summary.scenario} · ${t.id}`:`${t.summary.scenario} / ${t.summary.recovery}`;
 const selected=new Set();
 const completed=D.trials.filter(t=>t.eligible);
 const defaultScenario=completed.some(t=>t.summary.scenario==='loaded_deep')?'loaded_deep':completed[0]?.summary.scenario;
 completed.filter(t=>t.summary.scenario===defaultScenario).forEach(t=>selected.add(t.id));
 let activeTab='profiles', sortKey='scenario', sortAscending=true, drawing=Promise.resolve(), syncZoom=false;
 const signals={fz:['Signed axial force Fz','Force [N]'],resistance:['Phase-aware axial resistance','Axial resistance [N]'],force_norm_n:['Net contact force magnitude','Net force [N]'],fx:['Force Fx','Force [N]'],fy:['Force Fy','Force [N]'],normal_fz:['Normal component Fz','Normal force [N]'],friction_fz:['Friction component Fz','Friction force [N]'],normal_load_n:['Total normal contact load','Normal load [N]'],min_separation_mm:['Minimum contact separation','Separation [mm]']};
-const metrics={retreat_peak_resistance_n:'Peak retreat resistance [N]',retreat_peak_50ms_resistance_n:'50 ms peak retreat resistance [N]',retreat_resistance_impulse_ns:'Retreat resistance impulse [N s]',recovery_peak_force_n:'Peak recovery net force [N]',recovery_peak_torque_nm:'Peak recovery torque [N m]',recovery_resistive_work_j:'Recovery resisting-work proxy [J]',time_to_clear_s:'Time to sustained clearance [s]',insertion_peak_resistance_n:'Peak insertion resistance [N]'};
-const columns=[['scenario','Scenario'],['recovery','Recovery'],['status','Outcome'],['depth_before_recovery_mm','Depth before recovery [mm]'],['tilt_before_recovery_deg','Tilt before recovery [°]'],['retreat_peak_resistance_n','Peak retreat [N]'],['recovery_peak_force_n','Peak recovery net force [N]'],['recovery_peak_torque_nm','Peak recovery torque [N m]'],['recovery_resistive_work_j','Recovery work [J]'],['time_to_clear_s','Clearance time [s]'],['max_penetration_mm','Max overlap [mm]'],['penetration_screen_passed','Overlap screen']];
+const metrics=D.phase2?{max_force:"Peak insertion net force [N]",max_torque:"Peak insertion torque [N m]",max_normal_load:"Peak normal load [N]",max_penetration:"Maximum overlap [mm]",max_depth:"Maximum depth [mm]"}:{retreat_peak_resistance_n:'Peak retreat resistance [N]',retreat_peak_50ms_resistance_n:'50 ms peak retreat resistance [N]',retreat_resistance_impulse_ns:'Retreat resistance impulse [N s]',recovery_peak_force_n:'Peak recovery net force [N]',recovery_peak_torque_nm:'Peak recovery torque [N m]',recovery_resistive_work_j:'Recovery resisting-work proxy [J]',time_to_clear_s:'Time to sustained clearance [s]',insertion_peak_resistance_n:'Peak insertion resistance [N]'};
+const columns=D.phase2?[["scenario","Family"],["status","Numerical status"],["insertion_success","Inserted"],["max_force","Peak force [N]"],["max_torque","Peak torque [N m]"],["max_normal_load","Peak normal load [N]"],["max_penetration","Max overlap [mm]"],["max_depth","Max depth [mm]"],["stalled","Stalled"],["force_budget_exceeded","Force budget exceeded"],["torque_budget_exceeded","Torque budget exceeded"],["numerically_valid","Numerically valid"]]:[['scenario','Scenario'],['recovery','Recovery'],['status','Outcome'],['depth_before_recovery_mm','Depth before recovery [mm]'],['tilt_before_recovery_deg','Tilt before recovery [°]'],['retreat_peak_resistance_n','Peak retreat [N]'],['recovery_peak_force_n','Peak recovery net force [N]'],['recovery_peak_torque_nm','Peak recovery torque [N m]'],['recovery_resistive_work_j','Recovery work [J]'],['time_to_clear_s','Clearance time [s]'],['max_penetration_mm','Max overlap [mm]'],['penetration_screen_passed','Overlap screen']];
 const config={responsive:true,displaylogo:false,scrollZoom:true,toImageButtonOptions:{format:'png',scale:2},modeBarButtonsToRemove:['lasso2d','select2d']};
 function options(element, items){for(const [v,n] of Object.entries(items)){const o=document.createElement('option');o.value=v;o.textContent=Array.isArray(n)?n[0]:n;element.append(o);}}
 options($('signal'),signals);options($('metric'),metrics);
@@ -86,7 +86,7 @@ async function profiles(){
   }
  }
 }
-function safeCost(t,k){return !t.eligible&&(k in metrics||k==='time_to_clear_s')?null:t.summary[k];}
+function safeCost(t,k){return !D.phase2&&!t.eligible&&(k in metrics||k==='time_to_clear_s')?null:t.summary[k];}
 function drawTable(){
  const list=[...D.trials].sort((a,b)=>{const aa=safeCost(a,sortKey),bb=safeCost(b,sortKey);if(aa==null)return bb==null?0:1;if(bb==null)return -1;return (finite(aa)&&finite(bb)?aa-bb:String(aa).localeCompare(String(bb)))*(sortAscending?1:-1);});
  $('summary-table').innerHTML='<caption style="text-align:left;padding:10px 0">All trial outcomes · click a column heading to sort</caption><thead><tr>'+columns.map(([k,n])=>`<th><button data-sort="${k}">${esc(n)} ${sortKey===k?(sortAscending?'↑':'↓'):''}</button></th>`).join('')+'</tr></thead><tbody>'+list.map(t=>'<tr>'+columns.map(([k])=>{let v=safeCost(t,k);if(k==='penetration_screen_passed')v=v===true?'Passed':v===false?'Review required':'—';return `<td class="${!t.eligible||k==='penetration_screen_passed'&&v==='Review required'?'bad-text':''}">${esc(fmt(v))}</td>`;}).join('')+'</tr>').join('')+'</tbody>';
@@ -99,8 +99,17 @@ async function compare(){
  const layout=baseLayout(metrics[key],'Scenario / recovery');layout.margin.b=95;if(!available.length)layout.annotations=[{text:'No eligible recorded costs for this selection.',xref:'paper',yref:'paper',x:.5,y:.5,showarrow:false}];
  await Plotly.react($('cost-chart'),traces,layout,config);drawTable();
 }
-function refresh(){drawing=drawing.catch(()=>{}).then(async()=>{if(activeTab==='profiles')await profiles();if(activeTab==='compare')await compare();});drawing.catch(error=>{$('plot-warning').textContent='Viewer error: '+error.message;console.error(error);});return drawing;}
-function tab(name){activeTab=name;for(const key of ['profiles','compare','source','setup'])$(key).hidden=key!==name;$('selection').hidden=!['profiles','compare'].includes(name);document.querySelectorAll('[data-tab]').forEach(b=>b.classList.toggle('active',b.dataset.tab===name));return refresh();}
+async function recoverability(){
+ const rows=(D.phase2||[]).filter(c=>$('checkpoint-family').value==='all'||c.family===$('checkpoint-family').value);
+ const traces=[[1,'#13866b','Safe policy observed'],[0,'#b23f4c','Tested policies failed'],[null,'#8b98a1','Unknown / numerical review']].map(([value,c,name])=>{
+  const points=rows.filter(r=>r.reached&&r.Y_R_tested===value);
+  return {type:'scatter',mode:'markers',name,x:points.map(p=>p.depth_mm),y:points.map(p=>p.force_n),marker:{color:c,size:10,symbol:value===null?'x':'circle'},customdata:points.map(p=>[esc(p.trajectory_id),esc(p.family),p.time_s,esc(p.label_reason)]),hovertemplate:'%{customdata[0]} · %{customdata[1]}<br>Depth %{x:.4f} mm · Force %{y:.4f} N<br>Time %{customdata[2]:.4f} s<br>%{customdata[3]}<extra></extra>'};
+ });
+ await Plotly.react($('checkpoint-chart'),traces,baseLayout('Insertion-state net force [N]','Actual checkpoint depth [mm]'),config);
+ $('checkpoint-table').innerHTML='<thead><tr><th>Trajectory</th><th>Family</th><th>Requested depth [mm]</th><th>Actual depth [mm]</th><th>Force [N]</th><th>Y_R_tested</th><th>Reason</th><th>Policy outcomes</th></tr></thead><tbody>'+rows.map(r=>'<tr>'+[r.trajectory_id,r.family,r.requested_depth_mm,r.depth_mm,r.force_n,r.Y_R_tested===null?'Unknown':r.Y_R_tested,!r.parent_valid?'Parent invalid/incomplete':r.label_reason,r.probes.map(p=>p.policy+': '+p.status).join('; ')].map(v=>'<td>'+esc(fmt(v))+'</td>').join('')+'</tr>').join('')+'</tbody>';
+}
+function refresh(){drawing=drawing.catch(()=>{}).then(async()=>{if(activeTab==='profiles')await profiles();if(activeTab==='compare')await compare();if(activeTab==='recoverability')await recoverability();});drawing.catch(error=>{$('plot-warning').textContent='Viewer error: '+error.message;console.error(error);});return drawing;}
+function tab(name){activeTab=name;for(const key of ['profiles','compare','source','setup','recoverability'])$(key).hidden=key!==name;$('selection').hidden=!['profiles','compare'].includes(name);document.querySelectorAll('[data-tab]').forEach(b=>b.classList.toggle('active',b.dataset.tab===name));return refresh();}
 document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>tab(b.dataset.tab));
 $('include-invalid').onchange=()=>{if(!$('include-invalid').checked)D.trials.filter(t=>!t.eligible).forEach(t=>selected.delete(t.id));choices();refresh();};
 $('select-completed').onclick=()=>{selected.clear();completed.forEach(t=>selected.add(t.id));choices();refresh();};
@@ -115,4 +124,5 @@ for(const [name,url] of Object.entries(D.assets)){const a=document.createElement
 $('manifest').textContent=JSON.stringify(D.manifest,null,2);
 const parameters={...(D.manifest.parameters||{}),physics_device:D.manifest.device||'Not recorded',force_frame:D.manifest.force_frame,torque_origin:D.manifest.torque_origin,grasp:D.manifest.grasp,controller:D.manifest.controller,peg_diameter_mm:D.manifest.peg_diameter_mm,peg_length_mm:D.manifest.peg_length_mm,hole_depth_mm:D.manifest.hole_depth_mm};
 $('parameters').innerHTML='<tbody>'+Object.entries(parameters).map(([k,v])=>`<tr><th>${esc(k)}</th><td>${esc(fmt(v))}</td></tr>`).join('')+'</tbody>';
-choices();tab(D.trials.some(t=>t.series.time_s?.length)?'profiles':'compare').then(()=>{document.body.dataset.viewerReady='true';});
+if(D.phase2){$('phase2-tab').hidden=false;options($('checkpoint-family'),Object.fromEntries(scenarios.map(s=>[s,s])));$('checkpoint-family').onchange=refresh;document.querySelector('[data-tab=compare]').textContent='Insertion characterization';$('compare').querySelector('h2').textContent='Insertion characterization';$('compare').querySelector('p').textContent='Reference-insertion metrics from the saved dataset. Invalid attempts remain diagnostic and are excluded from comparison bars.';}
+choices();tab(D.phase2?'recoverability':D.trials.some(t=>t.series.time_s?.length)?'profiles':'compare').then(()=>{document.body.dataset.viewerReady='true';});

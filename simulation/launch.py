@@ -14,6 +14,8 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("--num_envs", type=int, choices=[1], default=1, help="This initial workbench supports one FR3.")
 parser.add_argument("--demo", action="store_true", help="Execute a slow, scripted 20 mm insertion.")
+parser.add_argument("--phase2-resume", action="store_true", help="Resume the same Phase 2 protocol and output directory.")
+parser.add_argument("--phase2", type=Path, metavar="CONFIG", help="Run randomized characterization from a Phase 2 JSON protocol.")
 parser.add_argument("--study", action="store_true", help="Run insertion/retreat experiments and produce force profiles.")
 parser.add_argument("--output-dir", type=Path, help="Study output directory; defaults to outputs/<timestamp>.")
 parser.add_argument("--scenario", choices=["all", "aligned", "offset", "tilted", "loaded_shallow", "loaded_deep"], nargs="+", default=["all"])
@@ -42,14 +44,16 @@ parser.add_argument(
 )
 AppLauncher.add_app_launcher_args(parser)
 args = parser.parse_args()
+if args.phase2_resume and not args.phase2:
+    parser.error("--phase2-resume requires --phase2")
 if "all" in args.scenario and len(args.scenario) > 1:
     parser.error("Use --scenario all or a list of named scenarios")
 if len(args.scenario) != len(set(args.scenario)):
     parser.error("Scenario names must be unique")
-if args.output_dir and not args.study:
-    parser.error("--output-dir is used with --study")
-if args.study and args.demo:
-    parser.error("Choose --study or --demo")
+if args.output_dir and not (args.study or args.phase2):
+    parser.error("--output-dir is used with --study or --phase2")
+if sum((bool(args.study), bool(args.demo), bool(args.phase2))) > 1:
+    parser.error("Choose --study, --demo, or --phase2")
 import math
 if not all(math.isfinite(v) for v in (args.friction, args.clearance_mm, args.contact_offset_mm, args.force_budget, args.torque_budget, args.contact_stiffness, args.contact_damping, args.translation_stiffness, args.rotation_stiffness)):
     parser.error("Study parameters must be finite")
@@ -111,6 +115,9 @@ from scene import (
 
 
 def main():
+    if args.phase2:
+        from phase2 import run_phase2
+        return run_phase2(args, simulation_app)
     if args.study:
         from study import run_study
         return run_study(args, simulation_app)

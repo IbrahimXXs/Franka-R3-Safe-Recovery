@@ -1,0 +1,12 @@
+{
+  "target_valid": 6,
+  "seed": 20260913,
+  "attempts_per_slot": 1,
+  "checkpoints_mm": [10],
+  "offset_range_mm": [0.1, 0.75],
+  "tilt_range_deg": [0.25, 3.0],
+  "insertion_duration_s": [5.0, 7.0],
+  "penetration_fraction": 0.25,
+  "force_budget_n": 20.0,
+  "torque_budget_nm": 1.0
+}

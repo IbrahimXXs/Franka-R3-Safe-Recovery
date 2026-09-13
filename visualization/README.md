@@ -76,3 +76,17 @@ and safe HTML embedding. Run `python3 -m unittest discover -s tests -p test_stud
 The generated full-study and five-file-only dashboards were also tested in Chrome:
 trial selection, phase and depth views, linked time zoom, invalid-cost exclusion,
 overlap-screen filtering, sortable outcome table, and original-file/report access.
+
+## Phase 2 datasets
+
+Use the same launcher: `./view_study.sh outputs/Phase2-Pilot-480G`.
+Phase 2 is detected from `study.json` and opens on the checkpoint-recoverability
+scatter and table. You can filter insertion families and inspect the tested
+policy outcomes. The insertion-characterization tab exposes success, stalls,
+peak loads, penetration, budget flags, and numerical validity. The profile tab
+plots each reference insertion. Per-policy replay and recovery samples remain
+available in the attempt folders for detailed analysis.
+
+Invalid or incomplete parents are shown as unknown in the central plot, even
+when an earlier prefix has a recorded positive witness. The original prefix
+labels are preserved in the dataset for separately qualified analysis.

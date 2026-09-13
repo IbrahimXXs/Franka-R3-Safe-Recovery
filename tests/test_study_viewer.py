@@ -45,6 +45,20 @@ class StudyViewerTests(unittest.TestCase):
                 'completed_trials':[{'scenario':'aligned','recovery':'straight','status':'cleared_within_budget'}]}))
             self.assertFalse(load_study(p)['trials'][0]['eligible'])
 
+    def test_phase2_invalid_parent_cannot_color_checkpoint_as_safe(self):
+        with tempfile.TemporaryDirectory() as d:
+            p=Path(d)
+            (p/'study.json').write_text(json.dumps({'study':'FR3-Phase2-v1','status':'target_not_met',
+                'attempts':[{'family':'tilt_only','folder':'slot004_try00','status':'complete',
+                    'metrics':{'numerically_valid':False,'max_force':30.},
+                    'checkpoints':[{'depth_mm':10,'reached':True,'Y_R_tested':1,
+                        'state':{'depth_mm':10.01,'force_norm_n':2.},'label_reason':'safe_policy_witness','probes':[]}]}]}))
+            data=load_study(p)
+            self.assertFalse(data['trials'][0]['eligible'])
+            self.assertIsNone(data['phase2'][0]['Y_R_tested'])
+            self.assertIn('Parent invalid',data['phase2'][0]['label_reason'])
+
+
 
 if __name__=='__main__':
     unittest.main()
