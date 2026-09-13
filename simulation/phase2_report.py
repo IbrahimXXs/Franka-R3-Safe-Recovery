@@ -51,7 +51,8 @@ def write_phase2_report(directory,manifest):
         axes[0].scatter([r['depth_mm'] for r in selected],[r['force_n'] for r in selected],
             c=color,label=label,marker='x' if value is None else 'o',alpha=.8,s=40)
     axes[0].set(xlabel='Actual checkpoint depth [mm]',ylabel='Insertion-state net force [N]',title='Recovery labels at observed insertion states')
-    axes[0].axhline(manifest['protocol']['force_budget_n'],color='#b87c27',ls=':',lw=1)
+    if manifest.get('study')!='Forge-Controlled-Phase2-v1':
+        axes[0].axhline(manifest['protocol']['force_budget_n'],color='#b87c27',ls=':',lw=1)
     axes[0].legend(fontsize=8)
     for policy,marker in [('straight','o'),('realign','^')]:
         selected=[p for p in probes if p['policy']==policy and p['label_eligible'] and p.get('safe_recovery')]
@@ -62,8 +63,13 @@ def write_phase2_report(directory,manifest):
     fig.savefig(directory/'recovery_characterization.png',dpi=160)
     fig.savefig(directory/'recovery_characterization.pdf');plt.close(fig)
     accepted={r['slot'] for r in trajectories if r['status']=='complete' and r['numerically_valid']}
-    lines=['# Phase 2 randomized insertion characterization','',
-        f"Status: **{manifest['status']}**. {len(accepted)} / {manifest['protocol']['target_valid']} numerically valid trajectory slots filled.",'',
+    heading='# Phase 2 randomized insertion characterization'
+    status=f"Status: **{manifest['status']}**. {len(accepted)} / {manifest['protocol']['target_valid']} numerically valid trajectory slots filled."
+    if manifest.get('study')=='Forge-Controlled-Phase2-v1':
+        heading='# FORGE randomized insertion collection' if manifest.get('mode')=='collect' else '# Controlled FORGE pilot'
+        if manifest.get('mode')!='collect':
+            status=f"Status: **{manifest['status']}**. {len(accepted)} / {manifest['pilot_candidate_count']} pilot cases passed the initial numerical screen. Full collection has not started."
+    lines=[heading,'',status,'',
         'A valid trajectory need not insert successfully or remain within force budgets. Numerical rejects stay in the dataset; retries keep their family and direction.','',
         '| Family | Completed attempts | Numerically valid slots |', '| --- | ---: | ---: |']
     for family in ('centered','x_offset','y_offset','diagonal_offset','tilt_only','offset_tilt'):

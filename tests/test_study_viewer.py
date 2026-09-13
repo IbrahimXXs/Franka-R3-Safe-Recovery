@@ -7,6 +7,33 @@ from visualization.view_study import build_dashboard, load_study
 
 
 class StudyViewerTests(unittest.TestCase):
+    def test_forge_recovery_profiles_preserve_unknown_replay_and_recorded_time(self):
+        with tempfile.TemporaryDirectory() as d:
+            p=Path(d);folder=p/'slot004_try00';folder.mkdir()
+            data='time_s,recovery_time_s,phase,force_norm_n\n10,0,stop,2\n10.1,0.1,retreat,3\n'
+            for name in ('final_retreat','d10_straight_recovery','d10_realign_recovery'):
+                (folder/f'{name}.csv').write_text(data)
+            probes=[dict(policy=policy,replay_matched=matched,label_eligible=True,numerically_valid=True,reason='cleared')
+                    for policy,matched in (('straight',False),('realign',True))]
+            (p/'study.json').write_text(json.dumps({'study':'Forge-Controlled-Phase2-v1','attempts':[
+                dict(folder=folder.name,family='tilt_only',status='complete',metrics={'numerically_valid':True},
+                     final_retreat={'numerically_valid':False,'label_eligible':False},
+                     checkpoints=[dict(depth_mm=10,reached=True,prefix_numerically_valid=True,probes=probes)])]}))
+            profiles=load_study(p)['trials'][0]['profiles']
+            self.assertFalse(profiles['final_retreat']['eligible'])
+            self.assertFalse(profiles['d10_straight']['eligible'])
+            self.assertTrue(profiles['d10_realign']['eligible'])
+            self.assertEqual(profiles['d10_realign']['series']['recovery_time_s'],[0.,.1])
+
+    def test_forge_results_keep_provisional_warning_and_wrist_budget_context(self):
+        with tempfile.TemporaryDirectory() as d:
+            p=Path(d)
+            (p/'study.json').write_text(json.dumps({'study':'Forge-Controlled-Phase2-v1',
+                'protocol':{'force_budget_n':20.,'torque_budget_nm':1.},'attempts':[]}))
+            data=load_study(p)
+            self.assertIn('phase2',data)
+            self.assertTrue(any('provisional' in w and 'wrist' in w for w in data['warnings']))
+
     def test_manifest_invalid_status_overrides_stale_summary(self):
         with tempfile.TemporaryDirectory() as d:
             p=Path(d)

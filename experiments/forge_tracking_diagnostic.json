@@ -1,0 +1,56 @@
+{
+  "120": {
+    "window_s": [
+      2.5,
+      4.0
+    ],
+    "max_socket_force_n": 0.0,
+    "x_range_mm": [
+      -0.041544437408447266,
+      0.12695789337158203
+    ],
+    "y_range_mm": [
+      -0.039263784856302664,
+      0.03374925290700048
+    ],
+    "max_wrist_force_n": 0.01323032844811678
+  },
+  "240": {
+    "window_s": [
+      2.5,
+      4.0
+    ],
+    "max_socket_force_n": 0.0,
+    "x_range_mm": [
+      -0.17917156219482422,
+      0.2548694610595703
+    ],
+    "y_range_mm": [
+      -0.07549492875114083,
+      0.05011279063182883
+    ],
+    "max_wrist_force_n": 0.07704072445631027
+  },
+  "480": {
+    "window_s": [
+      2.5,
+      4.0
+    ],
+    "max_socket_force_n": 0.0,
+    "x_range_mm": [
+      -0.5702376365661621,
+      0.41282176971435547
+    ],
+    "y_range_mm": [
+      -0.13490515993908048,
+      0.09244556713383645
+    ],
+    "max_wrist_force_n": 0.07568049430847168
+  },
+  "interpretation": "Centered commanded case, identical gains and continuous reference path, no peg/socket contact in this window. Different achieved motion before contact demonstrates sensitivity of the complete controller/reset/physics stack. It does not identify a single cause or prove the finer rate is more accurate.",
+  "sources": {
+    "120": "outputs/Forge-Pilot-120/slot000_try00/insertion.csv",
+    "240": "outputs/Forge-Rate-240/slot000_try00/insertion.csv",
+    "480": "outputs/Forge-Rate-480/slot000_try00/insertion.csv"
+  }
+}

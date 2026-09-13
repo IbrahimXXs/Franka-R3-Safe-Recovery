@@ -1,0 +1,116 @@
+{
+  "integration": "passed",
+  "csvs": [
+    {
+      "file": "centered_00/d20_realign_prefix.csv",
+      "samples": 1178,
+      "finite": true,
+      "continuous_dt": true
+    },
+    {
+      "file": "centered_00/final_retreat.csv",
+      "samples": 539,
+      "finite": true,
+      "continuous_dt": true
+    },
+    {
+      "file": "centered_00/d20_straight_recovery.csv",
+      "samples": 539,
+      "finite": true,
+      "continuous_dt": true
+    },
+    {
+      "file": "centered_00/d10_realign_prefix.csv",
+      "samples": 838,
+      "finite": true,
+      "continuous_dt": true
+    },
+    {
+      "file": "centered_00/d5_straight_prefix.csv",
+      "samples": 729,
+      "finite": true,
+      "continuous_dt": true
+    },
+    {
+      "file": "centered_00/d15_realign_prefix.csv",
+      "samples": 960,
+      "finite": true,
+      "continuous_dt": true
+    },
+    {
+      "file": "centered_00/d20_straight_prefix.csv",
+      "samples": 1178,
+      "finite": true,
+      "continuous_dt": true
+    },
+    {
+      "file": "centered_00/d5_realign_recovery.csv",
+      "samples": 646,
+      "finite": true,
+      "continuous_dt": true
+    },
+    {
+      "file": "centered_00/insertion.csv",
+      "samples": 1321,
+      "finite": true,
+      "continuous_dt": true
+    },
+    {
+      "file": "centered_00/d20_realign_recovery.csv",
+      "samples": 779,
+      "finite": true,
+      "continuous_dt": true
+    },
+    {
+      "file": "centered_00/d10_straight_prefix.csv",
+      "samples": 838,
+      "finite": true,
+      "continuous_dt": true
+    },
+    {
+      "file": "centered_00/d10_straight_recovery.csv",
+      "samples": 470,
+      "finite": true,
+      "continuous_dt": true
+    },
+    {
+      "file": "centered_00/d15_straight_recovery.csv",
+      "samples": 511,
+      "finite": true,
+      "continuous_dt": true
+    },
+    {
+      "file": "centered_00/d15_realign_recovery.csv",
+      "samples": 751,
+      "finite": true,
+      "continuous_dt": true
+    },
+    {
+      "file": "centered_00/d10_realign_recovery.csv",
+      "samples": 711,
+      "finite": true,
+      "continuous_dt": true
+    },
+    {
+      "file": "centered_00/d5_straight_recovery.csv",
+      "samples": 406,
+      "finite": true,
+      "continuous_dt": true
+    },
+    {
+      "file": "centered_00/d15_straight_prefix.csv",
+      "samples": 960,
+      "finite": true,
+      "continuous_dt": true
+    },
+    {
+      "file": "centered_00/d5_realign_prefix.csv",
+      "samples": 729,
+      "finite": true,
+      "continuous_dt": true
+    }
+  ],
+  "checkpoint_safe_witnesses": 4,
+  "matched_safe_probes": 8,
+  "scope": "Logging and replay checks; contact-physics convergence not established"
+}

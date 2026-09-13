@@ -1,0 +1,91 @@
+{
+  "factory_peg_8mm.usd": {
+    "mesh": "/Root/forge_round_peg_8mm/mesh",
+    "transform": "( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )",
+    "rings": [
+      {
+        "z_m": 0.0005,
+        "radius_m": 0.003993,
+        "vertices": 288
+      },
+      {
+        "z_m": 0.0,
+        "radius_m": 0.003493,
+        "vertices": 288
+      },
+      {
+        "z_m": 0.0495,
+        "radius_m": 0.003993,
+        "vertices": 288
+      },
+      {
+        "z_m": 0.05,
+        "radius_m": 0.003493,
+        "vertices": 288
+      },
+      {
+        "z_m": 0.0,
+        "radius_m": 0.0,
+        "vertices": 1
+      },
+      {
+        "z_m": 0.05,
+        "radius_m": 0.0,
+        "vertices": 1
+      }
+    ],
+    "source_url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/IsaacLab/Factory/factory_peg_8mm.usd",
+    "sha256": "b5040c8c639f3dc0731adfb6022c0d63383b7550354e413dc24e7417b600869d"
+  },
+  "factory_hole_8mm.usd": {
+    "mesh": "/Root/forge_hole_8mm/forge_hole_8mm/mesh",
+    "transform": "( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 0, 1) )",
+    "rings": [
+      {
+        "z_m": 0.025,
+        "radius_m": 0.0055,
+        "vertices": 144
+      },
+      {
+        "z_m": 0.0,
+        "radius_m": 0.0045,
+        "vertices": 144
+      },
+      {
+        "z_m": 0.024,
+        "radius_m": 0.0045,
+        "vertices": 144
+      },
+      {
+        "z_m": 0.0,
+        "radius_m": 0.0,
+        "vertices": 1
+      }
+    ],
+    "source_url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/IsaacLab/Factory/factory_hole_8mm.usd",
+    "sha256": "4bad48cde5a2e523454f9ed584023fae53d619a5ffb3d6ab08f29a6240014c28"
+  },
+  "derived": {
+    "peg_diameter_mm": 7.986,
+    "bore_vertex_diameter_mm": 9.0,
+    "bore_wall_sides": 144,
+    "radial_vertex_clearance_mm": 0.507,
+    "radial_inradius_clearance_mm": 0.5059291218595914,
+    "screen_clearance_mm": 0.5059,
+    "socket_chamfer_mm": 1.0,
+    "peg_chamfer_mm": 0.5,
+    "upstream_config_bore_diameter_mm": 8.1
+  },
+  "units_note": "Dimensions describe references composed into the Isaac simulation metre-scale Z-up stage. Source-layer fallback metadata (centimetres/Y-up) is not an authored mesh rescaling. An in-memory reference into a 1 metre/Z-up stage preserves the identity mesh transform and the 9 mm bore; the runtime backend additionally checks composed stage units and socket mesh world scale.",
+  "composed_runtime_check": {
+    "source": "outputs/Forge-Wrist-Calibration/scene.json",
+    "stage_meters_per_unit": 1.0,
+    "stage_up_axis": "Z",
+    "socket_mesh_world_scales": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "measured_bore_diameter_mm": 9.000000328508277
+  }
+}

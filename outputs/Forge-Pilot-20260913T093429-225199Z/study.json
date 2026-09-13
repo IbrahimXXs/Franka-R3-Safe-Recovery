@@ -1,0 +1,78 @@
+{
+  "schema": "Forge-Pilot-v1",
+  "status": "error",
+  "seed": 20260913,
+  "task": "Isaac-Forge-PegInsert-Direct-v0",
+  "robot": "Factory franka_mimic.usd (Panda)",
+  "physics_hz": 120,
+  "action_hz": 15,
+  "radial_clearance_mm": 0.057,
+  "overrides": [
+    "one environment",
+    "60 s timeout",
+    "viewer, DLSS Performance, Eco"
+  ],
+  "script_sha256": "7d961ea17f8a16e5646bac948e2cee1737fd30f119a11acd76c2caf59c35d092",
+  "trials": [
+    {
+      "name": "centered",
+      "requested_x_offset_mm": 0.0,
+      "csv": "centered.csv",
+      "status": "complete",
+      "samples": 2400,
+      "stock_success_observed": false,
+      "max_depth_mm": -0.014199316501616044,
+      "max_contact_force_n": 9.992082595825195,
+      "max_contact_torque_nm": 0.03260809928178787,
+      "max_normal_load_n": 9.733427047729492,
+      "max_wrist_force_n": 9.326542854309082,
+      "max_penetration_mm": 0.01074105966836214,
+      "final_depth_mm": -1.1439755558967577,
+      "numerically_valid": null,
+      "Y_R_tested": null,
+      "reset_parameters": {
+        "seed": 20260913,
+        "gains": [
+          [
+            682.6341552734375,
+            746.982421875,
+            466.28375244140625,
+            29.865022659301758,
+            31.04604721069336,
+            29.14634132385254
+          ]
+        ],
+        "ema_factor": [
+          [
+            0.02749370038509369
+          ]
+        ],
+        "pos_threshold": [
+          [
+            0.023238325491547585,
+            0.024598531424999237,
+            0.018890930339694023
+          ]
+        ],
+        "rot_threshold": [
+          [
+            0.09893421083688736,
+            0.11362949013710022,
+            0.11286864429712296
+          ]
+        ],
+        "contact_reward_threshold_n": [
+          7.151023864746094
+        ],
+        "initial_grasp_finger_minus_peg_m": [
+          [
+            0.0018781423568725586,
+            -0.0004891920834779739,
+            0.03002414107322693
+          ]
+        ]
+      }
+    }
+  ],
+  "error": "ReferenceError: weakly-referenced object no longer exists"
+}

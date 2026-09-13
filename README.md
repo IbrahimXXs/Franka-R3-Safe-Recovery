@@ -32,6 +32,33 @@ robot. The seed option is retained, but the scene currently has no randomization
 
 ## Force and recovery study
 
+For the upstream Factory/FORGE alternative with its **Panda, SDF peg/socket and
+native contact/controller configuration**, see [the FORGE pilot](docs/forge.md).
+Run `./forge_pilot.sh` to inspect it or add `--headless` to collect three small
+diagnostic runs. This is separate from the custom FR3 experiment below.
+
+The [controlled FORGE experiment](docs/forge_controlled.md) adds repeatable pose
+commands, signed tilt/offset cases, grasp monitoring and matched checkpoint
+recovery tests. Start its centered baseline with `./forge_study.sh --headless`.
+The working setup uses the **installed scene's default physics rate, currently
+120 Hz**; leave `--physics-hz` unset. See the
+[native-rate repeatability check](outputs/Forge-Native-Stability/report.md).
+The [earlier validation assessment](outputs/Forge-Validation/report.md) and
+[pilot findings](outputs/Forge-Validation/pilot_notes.md) preserve the 240/480 Hz
+comparison results. Those rates were explicit experiments. Results remain
+provisional, and the full 100-reference collection is not started automatically.
+
+To start the exploratory FORGE dataset at its native rate:
+
+```bash
+./forge_study.sh --headless --mode collect --output-dir outputs/Forge-Phase2-100
+```
+
+This targets 100 numerically screened references with checkpoint recoveries at
+5/10/15/20 mm. Add `--resume` to continue the same directory after interruption.
+Physical failures are retained; unknown recovery labels remain unknown. See
+[collection rules and retry limits](docs/forge_controlled.md).
+
 ```bash
 ./run.sh --study --headless
 ```

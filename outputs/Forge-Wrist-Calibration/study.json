@@ -1,0 +1,69 @@
+{
+  "study": "Forge-Controlled-Phase2-v1",
+  "status": "calibration_complete",
+  "physics_hz": 120,
+  "physics": {
+    "physics_hz": 120,
+    "radial_clearance_mm": 0.5059
+  },
+  "mode": "calibration",
+  "seed": 20260913,
+  "attempts": [],
+  "protocol": {
+    "target_valid": 100,
+    "seed": 20260913,
+    "attempts_per_slot": 5,
+    "checkpoints_mm": [
+      5.0,
+      10.0,
+      15.0,
+      20.0
+    ],
+    "offset_range_mm": [
+      0.1,
+      0.75
+    ],
+    "tilt_range_deg": [
+      0.25,
+      3.0
+    ],
+    "insertion_duration_s": [
+      8.0,
+      8.0
+    ],
+    "penetration_fraction": 0.25,
+    "success_depth_mm": 19.5,
+    "success_dwell_s": 0.2,
+    "stall_window_s": 0.5,
+    "stall_progress_mm": 0.1,
+    "stall_command_progress_mm": 0.5,
+    "retreat_duration_s": 6.0,
+    "realign_duration_s": 2.0,
+    "stop_duration_s": 0.25,
+    "clear_hold_s": 0.5,
+    "force_budget_n": 20.0,
+    "torque_budget_nm": 1.0,
+    "replay_position_mm": 0.005,
+    "replay_orientation_deg": 0.02,
+    "replay_joint_rad": 0.0001,
+    "replay_joint_velocity_rad_s": 0.001,
+    "replay_linear_velocity_m_s": 0.001,
+    "replay_angular_velocity_rad_s": 0.005,
+    "replay_force_n": 0.1,
+    "replay_torque_nm": 0.005
+  },
+  "pilot_candidate_count": 3,
+  "requested_checkpoints_mm": [],
+  "validation_status": "provisional",
+  "budget_signal": "raw wrist force and torque norms",
+  "sources": {
+    "forge_experiment.py": "7315b2665c13879ec8883cb5c737b70f5f283f3a43a0bd0314de6751bbb1029f",
+    "forge_backend.py": "6143e91871e76113f342d5b3cd70759f1cb67aae6ebf42158304586ddb053cc8",
+    "forge_calibration.py": "21fac7dc79bed34959791e944bbd1ad4fe8aabfcf0ab76e61ca5a9f2bd179b6a",
+    "contact.py": "a23500505916cf97fe792258fedae0ea583f03b2652dc42121e2d761fbb6e522",
+    "launch_forge_study.py": "7a9b2b00faca88987a5cf83c7cf4d108a0e6a1f74409d14b6577c9b80b0d0a26",
+    "forge_protocol.py": "c36820adab9c1e594ad7eec0e37e3862cd2d75fd5232c14ff4035beccfd5c872",
+    "phase2_protocol.py": "3d05bd187320591bb9e69d38f9dc3263925608f17213c945caf8c7a6adcc84ca"
+  },
+  "elapsed_wall_seconds": 174.67008577400702
+}

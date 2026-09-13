@@ -1,0 +1,56 @@
+[
+  {
+    "slot": 0,
+    "hold_samples": 240,
+    "mean_force_balance_vector_n": [
+      -0.0005738894085292638,
+      7.167435378126659e-05,
+      -5.4175610370066354e-05
+    ],
+    "mean_force_balance_norm_n": 0.0005808797319333836,
+    "mean_torque_balance_vector_nm": [
+      -9.320470077038105e-06,
+      -5.218806559265469e-05,
+      -1.196515937439783e-05
+    ],
+    "mean_torque_balance_norm_nm": 5.434731264391029e-05,
+    "mean_instantaneous_force_residual_n": 0.0018662549781159516,
+    "mean_instantaneous_torque_residual_nm": 0.0001764417432781329
+  },
+  {
+    "slot": 2,
+    "hold_samples": 240,
+    "mean_force_balance_vector_n": [
+      -0.0026643980401687513,
+      0.0007804869317099422,
+      -0.0022976297431500353
+    ],
+    "mean_force_balance_norm_n": 0.0036037867866499512,
+    "mean_torque_balance_vector_nm": [
+      -0.00010734918023306639,
+      3.4969936186698974e-05,
+      7.991594070529984e-05
+    ],
+    "mean_torque_balance_norm_nm": 0.0001383231741698627,
+    "mean_instantaneous_force_residual_n": 0.0473138506039201,
+    "mean_instantaneous_torque_residual_nm": 0.007923226792627247
+  },
+  {
+    "slot": 4,
+    "hold_samples": 240,
+    "mean_force_balance_vector_n": [
+      0.0009588964116090891,
+      -0.001209208919913194,
+      0.0017998672237297345
+    ],
+    "mean_force_balance_norm_n": 0.002370905009326819,
+    "mean_torque_balance_vector_nm": [
+      4.996771870797718e-05,
+      9.913512721787902e-05,
+      3.0657755685481464e-05
+    ],
+    "mean_torque_balance_norm_nm": 0.00011517136946765573,
+    "mean_instantaneous_force_residual_n": 0.019373660848941654,
+    "mean_instantaneous_torque_residual_nm": 0.003184082491376709
+  }
+]

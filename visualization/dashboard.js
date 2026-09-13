@@ -1,10 +1,11 @@
 'use strict';
 const D=JSON.parse(document.getElementById('study-data').textContent);
+const isForge=D.manifest.study==='Forge-Controlled-Phase2-v1';
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const finite=v=>typeof v==='number'&&Number.isFinite(v);
 const fmt=v=>v===null||v===undefined?'—':typeof v==='number'?(v===0?'0':Math.abs(v)<.001?v.toExponential(3):v.toLocaleString(undefined,{maximumFractionDigits:4})):String(v);
-const recoveryPhases=new Set(['realign','retreat','clear_hold']);
+const recoveryPhases=new Set(['stop','realign','retreat','clear_hold']);
 const colors=['#087e8b','#c07324','#7152aa','#287e4c','#c44965','#3b6fbe'];
 const scenarios=[...new Set(D.trials.map(t=>t.summary.scenario))];
 const color=t=>colors[scenarios.indexOf(t.summary.scenario)%colors.length];
@@ -18,9 +19,18 @@ const signals={fz:['Signed axial force Fz','Force [N]'],resistance:['Phase-aware
 const metrics=D.phase2?{max_force:"Peak insertion net force [N]",max_torque:"Peak insertion torque [N m]",max_normal_load:"Peak normal load [N]",max_penetration:"Maximum overlap [mm]",max_depth:"Maximum depth [mm]"}:{retreat_peak_resistance_n:'Peak retreat resistance [N]',retreat_peak_50ms_resistance_n:'50 ms peak retreat resistance [N]',retreat_resistance_impulse_ns:'Retreat resistance impulse [N s]',recovery_peak_force_n:'Peak recovery net force [N]',recovery_peak_torque_nm:'Peak recovery torque [N m]',recovery_resistive_work_j:'Recovery resisting-work proxy [J]',time_to_clear_s:'Time to sustained clearance [s]',insertion_peak_resistance_n:'Peak insertion resistance [N]'};
 const columns=D.phase2?[["scenario","Family"],["status","Numerical status"],["insertion_success","Inserted"],["max_force","Peak force [N]"],["max_torque","Peak torque [N m]"],["max_normal_load","Peak normal load [N]"],["max_penetration","Max overlap [mm]"],["max_depth","Max depth [mm]"],["stalled","Stalled"],["force_budget_exceeded","Force budget exceeded"],["torque_budget_exceeded","Torque budget exceeded"],["numerically_valid","Numerically valid"]]:[['scenario','Scenario'],['recovery','Recovery'],['status','Outcome'],['depth_before_recovery_mm','Depth before recovery [mm]'],['tilt_before_recovery_deg','Tilt before recovery [°]'],['retreat_peak_resistance_n','Peak retreat [N]'],['recovery_peak_force_n','Peak recovery net force [N]'],['recovery_peak_torque_nm','Peak recovery torque [N m]'],['recovery_resistive_work_j','Recovery work [J]'],['time_to_clear_s','Clearance time [s]'],['max_penetration_mm','Max overlap [mm]'],['penetration_screen_passed','Overlap screen']];
 const config={responsive:true,displaylogo:false,scrollZoom:true,toImageButtonOptions:{format:'png',scale:2},modeBarButtonsToRemove:['lasso2d','select2d']};
+if(isForge){
+ Object.assign(signals,{wrist_force_n:['Raw wrist force norm','Wrist force [N]'],wrist_torque_nm:['Raw wrist torque norm','Wrist torque [N m]'],torque_norm_nm:['Contact torque about peg base','Contact torque [N m]'],grasp_slip_mm:['Peg slip in grasp','Grasp displacement [mm]'],grasp_slip_deg:['Peg rotation in grasp','Grasp rotation [°]']});
+ Object.assign(metrics,{max_wrist_force_n:'Peak wrist force [N]',max_wrist_torque_nm:'Peak wrist torque [N m]',max_grasp_slip_mm:'Maximum grasp displacement [mm]'});
+ columns.push(['max_wrist_force_n','Peak wrist force [N]'],['max_wrist_torque_nm','Peak wrist torque [N m]'],['grasp_retained','Grasp retained']);
+ document.querySelector('header small').textContent='FORGE / PANDA INSERTION & RECOVERY';
+ document.title=D.name+' · FORGE study viewer';
+ document.querySelector('.definition').innerHTML='<h2>Reading the measurements</h2><p>Contact forces are socket-on-peg forces in world axes; contact torque is about the peg base. Wrist signals are incoming joint reactions and include hand/grasp dynamics. Their raw norms are shown separately.</p><p>Operational recovery limits apply to raw wrist force and torque at the sensor. A limit violation stops a probe. The controller remains compliant; a recorded peak can exceed a limit before the stop is applied.</p><p>Positive resisting contact work is an energy proxy, not motor energy. Pilot labels remain provisional until numerical convergence is established. Unknown labels are not failures.</p>';
+}
 function options(element, items){for(const [v,n] of Object.entries(items)){const o=document.createElement('option');o.value=v;o.textContent=Array.isArray(n)?n[0]:n;element.append(o);}}
 options($('signal'),signals);options($('metric'),metrics);
-for(const p of [...new Set(D.trials.flatMap(t=>t.series.phase||[]))].filter(Boolean)){const o=document.createElement('option');o.value=p;o.textContent=p;$('phase').append(o);}
+if(isForge){$('profile-control').style.display='flex';options($('profile-kind'),Object.fromEntries(D.trials.flatMap(t=>Object.entries(t.profiles||{}).map(([k,p])=>[k,p.label]))));}
+for(const p of [...new Set(D.trials.flatMap(t=>[t.series,...Object.values(t.profiles||{}).map(p=>p.series)].flatMap(s=>s.phase||[])))].filter(Boolean)){const o=document.createElement('option');o.value=p;o.textContent=p;$('phase').append(o);}
 $('study-name').textContent=D.name;
 $('subtitle').textContent=`${D.manifest.study||'FR3 study'} · ${D.manifest.status||'unknown status'} · ${D.manifest.parameters?.physics_hz??'unknown'} Hz physics`;
 const invalid=D.trials.filter(t=>!t.eligible).length, review=completed.filter(t=>t.summary.penetration_screen_passed===false).length;
@@ -41,7 +51,7 @@ function choices(){
 function chosen(){return D.trials.filter(t=>selected.has(t.id)&&(t.eligible||$('include-invalid').checked));}
 function baseLayout(ytitle, xtitle){return {paper_bgcolor:'white',plot_bgcolor:'white',font:{family:'system-ui, sans-serif',color:'#263f49',size:12},margin:{l:76,r:30,t:32,b:60},hovermode:'closest',legend:{orientation:'h',y:1.16,font:{size:11}},xaxis:{title:{text:xtitle},gridcolor:'#e4edef',zerolinecolor:'#bccdd2'},yaxis:{title:{text:ytitle},gridcolor:'#e4edef',zerolinecolor:'#bccdd2'}};}
 function xTitle(){return $('x-mode').value==='depth'?'Actual insertion depth [mm]':$('x-mode').value==='recovery'?'Time from recovery start [s]':'Experiment time [s]';}
-function recoveryStart(s){const i=(s.phase||[]).findIndex(p=>recoveryPhases.has(p));return i<0?null:i>0?s.time_s[i-1]:s.time_s[0]-1/(D.manifest.parameters?.physics_hz||480);}
+function recoveryStart(s){if(s.recovery_time_s?.length)return s.time_s[0]-s.recovery_time_s[0];const i=(s.phase||[]).findIndex(p=>recoveryPhases.has(p));return i<0?null:i>0?s.time_s[i-1]:s.time_s[0]-1/(D.manifest.parameters?.physics_hz||480);}
 function value(s,key,i){if(key==='resistance'){const f=s.fz?.[i],p=s.phase?.[i];return !finite(f)?null:p==='insert'?Math.max(0,f):p==='retreat'?Math.max(0,-f):null;}return s[key]?.[i]??null;}
 function makeTrace(t,key){
  const s=t.series, mode=$('x-mode').value, phase=$('phase').value, start=mode==='recovery'?recoveryStart(s):0;
@@ -55,7 +65,7 @@ function makeTrace(t,key){
   x.push(xx);y.push(yy);customdata.push([s.time_s[i],esc(p),s.depth_mm?.[i],s.tilt_deg?.[i],i]);previous=i;
  }
  if(!x.length)return null;
- return {type:'scatter',mode:'lines',name:esc(label(t))+(!t.eligible?' [INVALID / PARTIAL]':''),x,y,customdata,
+ return {type:'scatter',mode:'lines',name:esc(label(t)+(t.profile_label?' · '+t.profile_label:''))+(!t.eligible?' [INVALID / PARTIAL]':''),x,y,customdata,
   line:{color:color(t),width:t.eligible?1.5:2,dash:t.eligible?(t.summary.recovery==='realign'?'dash':'solid'):'dot',simplify:false},connectgaps:false,
   hovertemplate:'%{fullData.name}<br>Time: %{customdata[0]:.4f} s<br>Phase: %{customdata[1]}<br>Depth: %{customdata[2]:.4f} mm<br>Value: %{y:.6g}<extra></extra>'};
 }
@@ -64,16 +74,16 @@ function phaseShapes(t){
  const s=t.series, start=$('x-mode').value==='recovery'?recoveryStart(s):0;if(start===null)return [];
  const shapes=[];let i=0;
  while(i<s.time_s.length){let j=i;while(j+1<s.time_s.length&&s.phase?.[j+1]===s.phase?.[i])j++;
-  shapes.push({type:'rect',xref:'x',yref:'paper',x0:(i?s.time_s[i-1]:0)-start,x1:s.time_s[j]-start,y0:0,y1:1,fillcolor:recoveryPhases.has(s.phase?.[i])?'#def1ec':'#e5edf8',opacity:shapes.length%2?.38:.65,line:{width:0},layer:'below',label:{text:esc(s.phase?.[i]||''),textposition:'top left',font:{size:10,color:'#657b82'}}});i=j+1;
+  shapes.push({type:'rect',xref:'x',yref:'paper',x0:(i?s.time_s[i-1]:s.time_s[0])-start,x1:s.time_s[j]-start,y0:0,y1:1,fillcolor:recoveryPhases.has(s.phase?.[i])?'#def1ec':'#e5edf8',opacity:shapes.length%2?.38:.65,line:{width:0},layer:'below',label:{text:esc(s.phase?.[i]||''),textposition:'top left',font:{size:10,color:'#657b82'}}});i=j+1;
  }return shapes;
 }
 async function profiles(){
- const ts=chosen();const missing=ts.filter(t=>!t.series.time_s).length;
+ const ts=chosen().map(t=>{if(!isForge||$('profile-kind').value==='insertion')return t;const p=t.profiles?.[$('profile-kind').value];return {...t,profile_label:p?p.label+' · '+p.status:'Not recorded',eligible:t.eligible&&!!p?.eligible,series:p&&(p.eligible||$('include-invalid').checked)?p.series:{}};});const missing=ts.filter(t=>!t.series.time_s).length;
  $('plot-warning').innerHTML=(ts.some(t=>!t.eligible)?'<div class="notice bad">Diagnostic view includes partial or invalid traces. These are not valid recovery-cost evidence.</div>':'')+(missing?`<div class="notice">${missing} selected trial(s) have no raw samples. See the summary comparison and original figures.</div>`:'');
  const motion=$('x-mode').value==='depth'?'tilt_deg':'depth_mm';
- for(const [id,key,title] of [['force-chart',$('signal').value,signals[$('signal').value][1]],['torque-chart','torque_norm_nm','Contact torque magnitude [N m]'],['motion-chart',motion,motion==='depth_mm'?'Actual insertion depth [mm]':'Actual tilt [°]']]){
+ for(const [id,key,title] of [['force-chart',$('signal').value,signals[$('signal').value][1]],['torque-chart',isForge?'wrist_torque_nm':'torque_norm_nm',isForge?'Raw wrist torque magnitude [N m]':'Contact torque magnitude [N m]'],['motion-chart',motion,motion==='depth_mm'?'Actual insertion depth [mm]':'Actual tilt [°]']]){
   const traces=ts.map(t=>makeTrace(t,key)).filter(Boolean);const layout=baseLayout(title,xTitle());layout.shapes=ts.length===1?phaseShapes(ts[0]):[];
-  const budget=key==='force_norm_n'?D.manifest.parameters?.force_budget:key==='torque_norm_nm'?D.manifest.parameters?.torque_budget:null;
+  const budget=key===(isForge?'wrist_force_n':'force_norm_n')?D.manifest.parameters?.force_budget:key===(isForge?'wrist_torque_nm':'torque_norm_nm')?D.manifest.parameters?.torque_budget:null;
   if(finite(budget))layout.shapes.push({type:'line',xref:'paper',x0:0,x1:1,y0:budget,y1:budget,line:{color:'#b87523',dash:'dot',width:1},label:{text:'Evaluation budget',font:{size:10},textposition:'top right'}});
   if(!traces.length)layout.annotations=[{text:'No recorded samples for this selection / phase / axis.',xref:'paper',yref:'paper',x:.5,y:.5,showarrow:false}];
   await Plotly.react($(id),traces,layout,config);
@@ -106,7 +116,7 @@ async function recoverability(){
   return {type:'scatter',mode:'markers',name,x:points.map(p=>p.depth_mm),y:points.map(p=>p.force_n),marker:{color:c,size:10,symbol:value===null?'x':'circle'},customdata:points.map(p=>[esc(p.trajectory_id),esc(p.family),p.time_s,esc(p.label_reason)]),hovertemplate:'%{customdata[0]} · %{customdata[1]}<br>Depth %{x:.4f} mm · Force %{y:.4f} N<br>Time %{customdata[2]:.4f} s<br>%{customdata[3]}<extra></extra>'};
  });
  await Plotly.react($('checkpoint-chart'),traces,baseLayout('Insertion-state net force [N]','Actual checkpoint depth [mm]'),config);
- $('checkpoint-table').innerHTML='<thead><tr><th>Trajectory</th><th>Family</th><th>Requested depth [mm]</th><th>Actual depth [mm]</th><th>Force [N]</th><th>Y_R_tested</th><th>Reason</th><th>Policy outcomes</th></tr></thead><tbody>'+rows.map(r=>'<tr>'+[r.trajectory_id,r.family,r.requested_depth_mm,r.depth_mm,r.force_n,r.Y_R_tested===null?'Unknown':r.Y_R_tested,!r.parent_valid?'Parent invalid/incomplete':r.label_reason,r.probes.map(p=>p.policy+': '+p.status).join('; ')].map(v=>'<td>'+esc(fmt(v))+'</td>').join('')+'</tr>').join('')+'</tbody>';
+ $('checkpoint-table').innerHTML='<thead><tr><th>Trajectory</th><th>Family</th><th>Requested depth [mm]</th><th>Actual depth [mm]</th><th>Force [N]</th><th>Y_R_tested</th><th>Reason</th><th>Policy outcomes</th></tr></thead><tbody>'+rows.map(r=>'<tr>'+[r.trajectory_id,r.family,r.requested_depth_mm,r.depth_mm,r.force_n,r.Y_R_tested===null?'Unknown':r.Y_R_tested,!r.parent_valid?'Parent invalid/incomplete':r.label_reason,r.probes.map(p=>p.policy+': '+(p.status??p.reason??'unknown')).join('; ')].map(v=>'<td>'+esc(fmt(v))+'</td>').join('')+'</tr>').join('')+'</tbody>';
 }
 function refresh(){drawing=drawing.catch(()=>{}).then(async()=>{if(activeTab==='profiles')await profiles();if(activeTab==='compare')await compare();if(activeTab==='recoverability')await recoverability();});drawing.catch(error=>{$('plot-warning').textContent='Viewer error: '+error.message;console.error(error);});return drawing;}
 function tab(name){activeTab=name;for(const key of ['profiles','compare','source','setup','recoverability'])$(key).hidden=key!==name;$('selection').hidden=!['profiles','compare'].includes(name);document.querySelectorAll('[data-tab]').forEach(b=>b.classList.toggle('active',b.dataset.tab===name));return refresh();}
@@ -114,7 +124,7 @@ document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>tab(b.dataset.t
 $('include-invalid').onchange=()=>{if(!$('include-invalid').checked)D.trials.filter(t=>!t.eligible).forEach(t=>selected.delete(t.id));choices();refresh();};
 $('select-completed').onclick=()=>{selected.clear();completed.forEach(t=>selected.add(t.id));choices();refresh();};
 $('clear-selection').onclick=()=>{selected.clear();choices();refresh();};
-for(const id of ['x-mode','phase','signal','metric','screen-only'])$(id).onchange=refresh;
+for(const id of ['x-mode','phase','signal','metric','screen-only','profile-kind'])$(id).onchange=refresh;
 $('reset-zoom').onclick=()=>{for(const id of ['force-chart','torque-chart','motion-chart'])if($(id).data)Plotly.relayout($(id),{'xaxis.autorange':true,'yaxis.autorange':true});};
 $('export-selection').onclick=()=>{const quote=v=>'"'+String(v??'').replace(/"/g,'""')+'"';const keys=columns.map(c=>c[0]);const csv=[keys,...chosen().map(t=>keys.map(k=>safeCost(t,k)))].map(row=>row.map(quote).join(',')).join('\r\n');const url=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='selected_trial_summary.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
 function inlineMarkdown(text){return esc(text).replace(/!\[([^\]]*)\]\(([^)]+)\)/g,(_,alt,path)=>D.assets[path]?`<img alt="${alt}" src="${D.assets[path]}">`:alt).replace(/\[([^\]]*)\]\(([^)]+)\)/g,(_,name,path)=>D.assets[path]?`<a download="${esc(path)}" href="${D.assets[path]}">${name}</a>`:name).replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>').replace(/`([^`]+)`/g,'<code>$1</code>');}
@@ -125,4 +135,4 @@ $('manifest').textContent=JSON.stringify(D.manifest,null,2);
 const parameters={...(D.manifest.parameters||{}),physics_device:D.manifest.device||'Not recorded',force_frame:D.manifest.force_frame,torque_origin:D.manifest.torque_origin,grasp:D.manifest.grasp,controller:D.manifest.controller,peg_diameter_mm:D.manifest.peg_diameter_mm,peg_length_mm:D.manifest.peg_length_mm,hole_depth_mm:D.manifest.hole_depth_mm};
 $('parameters').innerHTML='<tbody>'+Object.entries(parameters).map(([k,v])=>`<tr><th>${esc(k)}</th><td>${esc(fmt(v))}</td></tr>`).join('')+'</tbody>';
 if(D.phase2){$('phase2-tab').hidden=false;options($('checkpoint-family'),Object.fromEntries(scenarios.map(s=>[s,s])));$('checkpoint-family').onchange=refresh;document.querySelector('[data-tab=compare]').textContent='Insertion characterization';$('compare').querySelector('h2').textContent='Insertion characterization';$('compare').querySelector('p').textContent='Reference-insertion metrics from the saved dataset. Invalid attempts remain diagnostic and are excluded from comparison bars.';}
-choices();tab(D.phase2?'recoverability':D.trials.some(t=>t.series.time_s?.length)?'profiles':'compare').then(()=>{document.body.dataset.viewerReady='true';});
+choices();tab(D.phase2?.length?'recoverability':D.trials.some(t=>t.series.time_s?.length)?'profiles':'compare').then(()=>{document.body.dataset.viewerReady='true';});

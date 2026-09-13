@@ -16,7 +16,8 @@ SERIES = ('time_s', 'phase', 'depth_mm', 'command_depth_mm', 'tilt_deg', 'comman
           'tip_x_mm', 'tip_y_mm', 'fx', 'fy', 'fz', 'taux', 'tauy', 'tauz',
           'force_norm_n', 'torque_norm_nm', 'normal_load_n', 'min_separation_mm',
           'contact_power_w', 'normal_fx', 'normal_fy', 'normal_fz',
-          'friction_fx', 'friction_fy', 'friction_fz')
+          'friction_fx', 'friction_fy', 'friction_fz', 'wrist_force_n', 'wrist_torque_nm',
+          'grasp_slip_mm', 'grasp_slip_deg', 'recovery_time_s')
 
 
 def clean(value):
@@ -45,6 +46,11 @@ def read_csv(path):
         return list(csv.DictReader(stream))
 
 
+def read_series(path):
+    rows=read_csv(path) if path.is_file() else []
+    return {k:[clean(r.get(k)) for r in rows] for k in SERIES if k in rows[0]} if rows else {}
+
+
 def load_phase2(directory, manifest):
     trials, checkpoints, warnings = [], [], []
     for attempt in manifest.get('attempts', []):
@@ -60,7 +66,13 @@ def load_phase2(directory, manifest):
         if path.is_file():
             rows=read_csv(path)
             if rows:series={k:[clean(r.get(k)) for r in rows] for k in SERIES if k in rows[0]}
-        trials.append(dict(id=folder,summary=summary,status=summary['status'],eligible=eligible,series=series))
+        trial=dict(id=folder,summary=summary,status=summary['status'],eligible=eligible,series=series)
+        trials.append(trial)
+        if manifest.get('study')=='Forge-Controlled-Phase2-v1':
+            final=attempt.get('final_retreat',{})
+            trial['profiles']={'final_retreat':dict(label='Final straight withdrawal',
+                status=final.get('reason','not_recorded'),eligible=eligible and final.get('numerically_valid') is True and final.get('label_eligible') is True,
+                series=read_series(directory/folder/'final_retreat.csv'))}
         for cp in attempt.get('checkpoints', []):
             state=cp.get('state', {})
             checkpoints.append(dict(trajectory_id=folder,family=attempt['family'],depth_mm=state.get('depth_mm'),
@@ -69,10 +81,23 @@ def load_phase2(directory, manifest):
                 Y_R_tested=cp.get('Y_R_tested') if eligible else None,
                 label_reason=cp.get('label_reason') if eligible else 'Parent invalid/incomplete; '+str(cp.get('label_reason')), 
                 probes=cp.get('probes', [])))
+            if 'profiles' in trial:
+                depth=cp['depth_mm']
+                if not isinstance(depth,(int,float)) or not math.isfinite(depth):continue
+                for probe in cp.get('probes',[]):
+                    policy=probe.get('policy')
+                    if policy not in ('straight','realign'):continue
+                    tag=f'd{depth:g}_{policy}'
+                    trial['profiles'][tag]=dict(label=f'{depth:g} mm · {policy}',status=probe.get('reason','unknown'),
+                        eligible=eligible and cp.get('prefix_numerically_valid') is True
+                            and probe.get('label_eligible') is True and probe.get('replay_matched') is True
+                            and probe.get('numerically_valid') is True,
+                        series=read_series(directory/folder/f'{tag}_recovery.csv'))
     assets={}
     for name,mime in [('study.json','application/json'),('report.md','text/markdown'),
         ('trajectories.csv','text/csv'),('checkpoints.csv','text/csv'),('recovery_probes.csv','text/csv'),
-        ('recovery_characterization.png','image/png'),('recovery_characterization.pdf','application/pdf')]:
+        ('recovery_characterization.png','image/png'),('recovery_characterization.pdf','application/pdf'),
+        ('force_profiles.png','image/png'),('force_vs_depth.png','image/png')]:
         path=directory/name
         if path.is_file():assets[name]=f'data:{mime};base64,'+base64.b64encode(path.read_bytes()).decode('ascii')
     # The common dashboard uses parameters for its physics/budget display.
@@ -80,6 +105,11 @@ def load_phase2(directory, manifest):
         'force_budget':manifest.get('protocol', {}).get('force_budget_n'),
         'torque_budget':manifest.get('protocol', {}).get('torque_budget_nm')})
     warnings.append('Phase 2 labels refer to two tested recovery policies at approximately replay-matched states. Unknown labels are not failures or proof of irrecoverability.')
+    if manifest.get('study')=='Forge-Controlled-Phase2-v1':
+        kind='collection' if manifest.get('mode')=='collect' else 'pilot'
+        warnings.append(f'Controlled FORGE/Panda {kind}. Labels are provisional: overlap and replay checks do not establish timestep convergence. Operational budgets apply to raw wrist wrench norms.')
+    if manifest.get('geometry_audit_correction'):
+        warnings.append('Geometry metadata corrected from the USD mesh: 9.0 mm bore and about 0.507 mm radial clearance. The original stricter numerical screen is retained in the run history.')
     report=(directory/'report.md').read_text() if (directory/'report.md').is_file() else 'The experiment has not generated a report yet.'
     return dict(name=directory.name,manifest=manifest,trials=trials,assets=assets,report=report,warnings=warnings,phase2=checkpoints)
 
@@ -90,7 +120,7 @@ def load_study(directory):
     if not manifest_path.is_file():
         raise ValueError(f'No study.json in {directory}')
     manifest = clean(json.loads(manifest_path.read_text(encoding='utf-8')))
-    if manifest.get('study') == 'FR3-Phase2-v1':
+    if manifest.get('study') in ('FR3-Phase2-v1','Forge-Controlled-Phase2-v1'):
         return load_phase2(directory,manifest)
     warnings, entries = [], {}
     summary = directory/'summary.csv'

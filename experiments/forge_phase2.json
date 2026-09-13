@@ -1,0 +1,43 @@
+{
+  "target_valid": 100,
+  "seed": 20260913,
+  "attempts_per_slot": 5,
+  "checkpoints_mm": [
+    5.0,
+    10.0,
+    15.0,
+    20.0
+  ],
+  "offset_range_mm": [
+    0.1,
+    0.75
+  ],
+  "tilt_range_deg": [
+    0.25,
+    3.0
+  ],
+  "insertion_duration_s": [
+    8.0,
+    8.0
+  ],
+  "penetration_fraction": 0.25,
+  "success_depth_mm": 19.5,
+  "success_dwell_s": 0.2,
+  "stall_window_s": 0.5,
+  "stall_progress_mm": 0.1,
+  "stall_command_progress_mm": 0.5,
+  "retreat_duration_s": 6.0,
+  "realign_duration_s": 2.0,
+  "stop_duration_s": 0.25,
+  "clear_hold_s": 0.5,
+  "force_budget_n": 20.0,
+  "torque_budget_nm": 1.0,
+  "replay_position_mm": 0.005,
+  "replay_orientation_deg": 0.02,
+  "replay_joint_rad": 0.0001,
+  "replay_joint_velocity_rad_s": 0.001,
+  "replay_linear_velocity_m_s": 0.001,
+  "replay_angular_velocity_rad_s": 0.005,
+  "replay_force_n": 0.1,
+  "replay_torque_nm": 0.005
+}

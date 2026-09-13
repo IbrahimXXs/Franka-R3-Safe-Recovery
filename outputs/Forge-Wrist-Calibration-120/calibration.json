@@ -1,0 +1,229 @@
+{
+  "passed": false,
+  "cases": [
+    {
+      "case": "zero",
+      "applied_force_world_n": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_torque_world_nm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_force_residual_n": 1.380766563272573e-05,
+      "mean_torque_residual_nm": 0.00010436022663877036,
+      "max_socket_force_n": 0.0,
+      "max_grasp_slip_mm": 0.004088822606718168,
+      "mean_measured_force_world_n": [
+        1.5539411415706657e-06,
+        -7.556014759154313e-06,
+        7.644375187669064e-08
+      ],
+      "mean_raw_child_force_n": [
+        1.5519052729710362e-06,
+        7.556425477694972e-06,
+        -7.722826693701279e-08
+      ],
+      "passed": true
+    },
+    {
+      "case": "force_0",
+      "applied_force_world_n": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "applied_torque_world_nm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_force_residual_n": 0.002593427552104307,
+      "mean_torque_residual_nm": 0.0007554360248226052,
+      "max_socket_force_n": 0.0,
+      "max_grasp_slip_mm": 0.040689596062293276,
+      "mean_measured_force_world_n": [
+        -1.0001745795210202,
+        -4.593634133319331e-05,
+        -0.0001288821314422724
+      ],
+      "mean_raw_child_force_n": [
+        -1.0001733511686326,
+        0.00017564750309778294,
+        -0.0015702159545374647
+      ],
+      "passed": true
+    },
+    {
+      "case": "torque_0",
+      "applied_force_world_n": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_torque_world_nm": [
+        0.01,
+        0.0,
+        0.0
+      ],
+      "mean_force_residual_n": 0.0021846321900132657,
+      "mean_torque_residual_nm": 0.00039387619032519677,
+      "max_socket_force_n": 0.0,
+      "max_grasp_slip_mm": 0.006096326160331955,
+      "mean_measured_force_world_n": [
+        -4.2057492258133304e-05,
+        0.00014888372609978736,
+        -1.2756827025365662e-05
+      ],
+      "mean_raw_child_force_n": [
+        -4.2054994171773315e-05,
+        -0.0001488746625530742,
+        1.2833450758383455e-05
+      ],
+      "passed": true
+    },
+    {
+      "case": "force_1",
+      "applied_force_world_n": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "applied_torque_world_nm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_force_residual_n": 0.005980494331015507,
+      "mean_torque_residual_nm": 0.0009918670330080204,
+      "max_socket_force_n": 0.0,
+      "max_grasp_slip_mm": 0.0074854292506643105,
+      "mean_measured_force_world_n": [
+        5.642813266604207e-06,
+        -1.0000044559439023,
+        1.2343392396966616e-05
+      ],
+      "mean_raw_child_force_n": [
+        -0.00036297353973158885,
+        1.0000033775965373,
+        -0.0014781464092872435
+      ],
+      "passed": true
+    },
+    {
+      "case": "torque_1",
+      "applied_force_world_n": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_torque_world_nm": [
+        0.0,
+        0.01,
+        0.0
+      ],
+      "mean_force_residual_n": 0.02625590938453873,
+      "mean_torque_residual_nm": 0.005341056799322056,
+      "max_socket_force_n": 0.0,
+      "max_grasp_slip_mm": 0.013846274669049308,
+      "mean_measured_force_world_n": [
+        0.00017744024905065695,
+        -1.686165718031892e-05,
+        -0.00014060614242528875
+      ],
+      "mean_raw_child_force_n": [
+        0.00017752387405683596,
+        1.6973911139454383e-05,
+        0.0001404561451636255
+      ],
+      "passed": false
+    },
+    {
+      "case": "force_2",
+      "applied_force_world_n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "applied_torque_world_nm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_force_residual_n": 0.00033251386933746594,
+      "mean_torque_residual_nm": 8.476531447740854e-05,
+      "max_socket_force_n": 0.0,
+      "max_grasp_slip_mm": 0.007942756383272354,
+      "mean_measured_force_world_n": [
+        -5.0957937734589605e-05,
+        0.00016708598559489474,
+        -1.0000208914279938
+      ],
+      "mean_raw_child_force_n": [
+        -0.0005623331938598616,
+        0.00054442132920182,
+        1.0000206728776295
+      ],
+      "passed": true
+    },
+    {
+      "case": "torque_2",
+      "applied_force_world_n": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "applied_torque_world_nm": [
+        0.0,
+        0.0,
+        0.01
+      ],
+      "mean_force_residual_n": 0.0023665834077595113,
+      "mean_torque_residual_nm": 0.0013925988275635367,
+      "max_socket_force_n": 0.0,
+      "max_grasp_slip_mm": 0.015565574358333834,
+      "mean_measured_force_world_n": [
+        3.4802903981775066e-05,
+        -0.00019589088321178376,
+        0.00012250281485535198
+      ],
+      "mean_raw_child_force_n": [
+        3.480956117982714e-05,
+        0.0001958899202387935,
+        -0.00012250223794959918
+      ],
+      "passed": true
+    },
+    {
+      "case": "mixed",
+      "applied_force_world_n": [
+        -0.7,
+        -0.5,
+        -1.0
+      ],
+      "applied_torque_world_nm": [
+        -0.005,
+        0.007,
+        -0.003
+      ],
+      "mean_force_residual_n": 0.022941140363400336,
+      "mean_torque_residual_nm": 0.005236121608080188,
+      "max_socket_force_n": 0.0,
+      "max_grasp_slip_mm": 0.05497520760400221,
+      "mean_measured_force_world_n": [
+        0.6996078327298164,
+        0.5001386848588785,
+        0.9994031230608622
+      ],
+      "mean_raw_child_force_n": [
+        0.6989329501986503,
+        -0.4987604280312856,
+        -1.0005635097622871
+      ],
+      "passed": false
+    }
+  ]
+}
