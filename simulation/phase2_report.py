@@ -19,6 +19,8 @@ def write_phase2_report(directory,manifest):
     for a in manifest['attempts']:
         if 'metrics' not in a:continue
         base={k:a[k] for k in ('trajectory_id','slot','retry','family','offset_x_mm','offset_y_mm','roll_deg','pitch_deg','insertion_duration_s','folder','status')}
+        grouping={k:a[k] for k in ('sampling_slot','sample_role','split_group_id') if k in a}
+        base.update(grouping)
         trajectories.append({**base,**a['metrics']})
         for cp in a['checkpoints']:
             state=cp.get('state',{})
@@ -34,11 +36,12 @@ def write_phase2_report(directory,manifest):
             row.update({k:state.get(k) for k in ('fx','fy','fz','taux','tauy','tauz','vx','vy','vz','omegax','omegay','omegaz','qw','qx','qy','qz')})
             for i in range(1,8):
                 for k in (f'joint{i}_rad',f'joint_velocity{i}_rad_s'):row[k]=state.get(k)
+            row.update(grouping)
             checkpoints.append(row)
             for p in cp['probes']:
                 flat={k:v for k,v in p.items() if not isinstance(v,dict)}
                 flat.update({f'replay_error_{k}':v for k,v in p.get('replay_errors',{}).items()})
-                probes.append(dict(trajectory_id=a['trajectory_id'],folder=a['folder'],family=a['family'],**flat))
+                probes.append(dict(trajectory_id=a['trajectory_id'],folder=a['folder'],family=a['family'],**flat,**grouping))
     table(directory/'trajectories.csv',trajectories)
     table(directory/'checkpoints.csv',checkpoints)
     table(directory/'recovery_probes.csv',probes)
@@ -75,6 +78,9 @@ def write_phase2_report(directory,manifest):
     for family in ('centered','x_offset','y_offset','diagonal_offset','tilt_only','offset_tilt'):
         rows=[r for r in trajectories if r['family']==family and r['status']=='complete']
         lines.append(f"| {family} | {len(rows)} | {len({r['slot'] for r in rows if r['numerically_valid']})} |")
+    if manifest.get('planned_family_quotas'):
+        lines += ['', 'Planned valid-slot quotas: '+', '.join(f'{k}: {v}' for k,v in manifest['planned_family_quotas'].items())+'.', '',
+            'Centered trajectories are repeated controls, not independent configurations. Split by `split_group_id` across trajectories, checkpoints and recovery probes: all centered copies share one group, and each contact-rich slot retains its group across retries and branches. These fields do not automatically enforce a downstream ML split. Report controls separately or deduplicate them when evaluating performance.', '']
     eligible_labels=[r for r in checkpoints if r['parent_numerically_valid'] and r['parent_complete']]
     lines += ['', f"Eligible-parent checkpoint labels: {sum(r['Y_R_tested']==1 for r in eligible_labels)} safe witnesses, {sum(r['Y_R_tested']==0 for r in eligible_labels)} tested-policy failures, {sum(r['Y_R_tested'] is None for r in eligible_labels)} unknown. {len(checkpoints)-len(eligible_labels)} checkpoint records belong to invalid or incomplete parents.", '', '## Labels and numerical limits','',
         '`Y_R_tested = 1` is a safe-policy witness. Zero means both tested policies failed valid matched-state tests, not that all recovery motions are impossible. Null means unknown. Labels are recorded only at the tested checkpoints; no continuous recoverability boundary is inferred.','',

@@ -56,6 +56,10 @@ To start the exploratory FORGE dataset at its native rate:
 
 This targets 100 numerically screened references with checkpoint recoveries at
 5/10/15/20 mm. Add `--resume` to continue the same directory after interruption.
+The quota is 8 centered controls, 18 each X/Y/diagonal offset, and 19 each
+tilt-only/offset + tilt, with offsets 0.1–1.0 mm and tilts 0.25–4°.
+Use the exported `split_group_id` for ML splits to keep controls and related
+recovery branches together.
 Physical failures are retained; unknown recovery labels remain unknown. See
 [collection rules and retry limits](docs/forge_controlled.md).
 

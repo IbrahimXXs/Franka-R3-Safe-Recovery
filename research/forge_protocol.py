@@ -1,8 +1,8 @@
 """Screening and recovery definitions for the freely grasped FORGE peg."""
 import math
 import json
-from dataclasses import replace
-from research.phase2_protocol import Protocol, replay_match, sample_slot
+from dataclasses import dataclass, field, replace
+from research.phase2_protocol import FAMILIES, Protocol, replay_match, sample_slot
 
 # Actual USD: 9 mm bore with 144-sided straight wall; config's 8.1 mm is stale.
 # Use the wall polygon's inscribed radius minus the peg's 3.993 mm outer radius.
@@ -11,8 +11,22 @@ MAX_GRASP_SLIP_MM=.1
 MAX_GRASP_SLIP_DEG=.5
 
 
+@dataclass(frozen=True)
+class ForgeProtocol(Protocol):
+    family_weights: dict = field(default_factory=lambda: dict(zip(FAMILIES,(8,18,18,18,19,19))))
+
+    def validate(self):
+        super().validate()
+        weights=self.family_weights
+        if (not isinstance(weights,dict) or set(weights)!=set(FAMILIES)
+                or any(type(v) is not int or v<0 for v in weights.values())
+                or sum(weights.values())<=0):
+            raise ValueError('family_weights must give a nonnegative integer for each family and a positive total')
+        return self
+
+
 def protocol():
-    return replace(Protocol(),offset_range_mm=(.1,.75),tilt_range_deg=(.25,3.),
+    return replace(ForgeProtocol(),offset_range_mm=(.1,1.),tilt_range_deg=(.25,4.),
         insertion_duration_s=(8.,8.), replay_position_mm=.005,replay_orientation_deg=.02,
         replay_joint_rad=.0001,replay_joint_velocity_rad_s=.001,
         replay_linear_velocity_m_s=.001,replay_angular_velocity_rad_s=.005,
@@ -23,7 +37,7 @@ def load_protocol(path):
     values=json.loads(path.read_text())
     for key in ('checkpoints_mm','offset_range_mm','tilt_range_deg','insertion_duration_s'):
         if key in values:values[key]=tuple(values[key])
-    p=Protocol(**values).validate()
+    p=ForgeProtocol(**values).validate()
     if not 0<=p.seed<2**32:
         raise ValueError('FORGE seed must be in [0, 2**32)')
     if p.replay_position_mm>=RADIAL_CLEARANCE_MM/2:

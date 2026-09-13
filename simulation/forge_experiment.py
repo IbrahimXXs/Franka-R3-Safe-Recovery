@@ -12,7 +12,7 @@ import torch
 from isaaclab.utils.math import quat_apply,quat_mul,quat_conjugate,quat_slerp
 from research.phase2_protocol import insertion_metrics,recovery_label,sample_slot
 from research.forge_protocol import load_protocol,pilot_cases,retained,screened,within_budget,clear,match,recovery_summary,RADIAL_CLEARANCE_MM
-from research.forge_collection import accepted_slots,collection_cases,collection_status,validate_resume
+from research.forge_collection import accepted_slots,collection_cases,collection_status,validate_resume,family_quotas
 from forge_backend import Bench,resolve_physics_rate
 from phase2_report import write_phase2_report
 
@@ -188,6 +188,7 @@ def _run(args,app):
             (directory/'source'/name).write_bytes(src.read_bytes())
     if args.mode=='collect':
         cases=collection_cases(p,manifest['attempts'])
+        manifest['planned_family_quotas']=family_quotas(p)
         manifest['pilot_candidate_count']=p.target_valid
         manifest['valid_trajectories']=len(accepted_slots(manifest['attempts']))
         manifest['acceptance_rule']='Completed reference passes numerical screen; physical insertion/recovery failures are retained. Unknown checkpoints do not trigger replacement.'

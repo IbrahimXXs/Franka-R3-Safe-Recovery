@@ -1,6 +1,35 @@
 """Quota scheduling and resume checks for the FORGE characterization collection."""
 import json
-from research.phase2_protocol import sample_slot
+from research.phase2_protocol import FAMILIES, sample_slot
+
+
+def family_quotas(protocol):
+    """Exact integer allocation, scaling the configured weights for other targets."""
+    protocol.validate()
+    total=sum(protocol.family_weights.values())
+    counts={f:protocol.target_valid*protocol.family_weights[f]//total for f in FAMILIES}
+    remainder=protocol.target_valid-sum(counts.values())
+    ranked=sorted(FAMILIES,key=lambda f:-(protocol.target_valid*protocol.family_weights[f]%total))
+    for family in ranked[:remainder]:counts[family]+=1
+    return counts
+
+
+def sample_collection_slot(protocol,slot,retry=0):
+    """Interleave families until their quotas fill; preserve signed strata on retry."""
+    if not 0<=slot<protocol.target_valid:raise ValueError('Collection slot outside target')
+    quotas=family_quotas(protocol)
+    schedule=[(family,ordinal) for ordinal in range(max(quotas.values()))
+              for family in FAMILIES if ordinal<quotas[family]]
+    family,ordinal=schedule[slot]
+    # Reuse the signed-stratum sampler without letting reduced centered quotas
+    # shift a contact family's sign/axis sequence or its retry random stream.
+    sampling_slot=ordinal*len(FAMILIES)+FAMILIES.index(family)
+    case=sample_slot(protocol,sampling_slot,retry)
+    case.update(slot=slot,trajectory_id=f'slot{slot:03d}_try{retry:02d}',
+                sampling_slot=sampling_slot,
+                sample_role='repeatability_control' if family=='centered' else 'characterization',
+                split_group_id='centered_controls' if family=='centered' else f'slot{slot:03d}')
+    return case
 
 
 def accepted_slots(attempts):
@@ -16,7 +45,7 @@ def next_case(protocol,attempts):
         finished={a['retry'] for a in attempts if a['slot']==slot and a['status']=='complete'}
         for retry in range(protocol.attempts_per_slot):
             if retry not in finished:
-                return sample_slot(protocol,slot,retry)
+                return sample_collection_slot(protocol,slot,retry)
     return None
 
 

@@ -21,11 +21,35 @@ To collect the initial **100 numerically screened references at native 120 Hz**:
 ```
 
 This is an exploratory dataset specific to the configured model and timestep.
-The default protocol uses 0.1–0.75 mm offsets and 0.25–3° tilts, across all six
+The default protocol uses 0.1–1.0 mm offsets and 0.25–4° tilts, across all six
 signed families, and probes straight/realigned recovery at actual first depth
 crossings of 5, 10, 15 and 20 mm. The separate 5° stress configuration is not
 silently included. All previous force, torque, pose and grasp measurements are
 retained.
+
+The 100 valid-slot quotas are **8 centered, 18 X-offset, 18 Y-offset,
+18 diagonal offset, 19 tilt-only, and 19 offset + tilt**. Families are interleaved
+until their quotas fill; signs and tilt axes cycle within each family. Offset
+range refers to the total XY offset magnitude, including diagonal cases.
+`family_weights` in the FORGE protocol specifies these shares. Other
+`--target-valid` sizes scale them using largest remainders (ties follow family
+order); very small tests may omit families. Pilot `--slots` retains its original
+six-family diagnostic indexing and is separate from collection slot indexing.
+
+The eight centered references remain identical repeatability controls with
+fixed 8 s insertion duration. They share `split_group_id=centered_controls` and
+`sample_role=repeatability_control`. All retries, checkpoints and recovery
+branches of each contact-rich slot share that slot's split group. These fields
+are recorded in the ledger and all three dataset CSV tables. A downstream ML
+split must use these groups, never individual rows or trajectory IDs; report
+controls separately or deduplicate them for evaluation. No ML split is created
+automatically. Group IDs are local to the study; pooling studies requires
+checking identical configurations across studies as well.
+
+The saved candidate plan reflects the updated ranges and quotas. Existing pilot
+outputs retain their original settings; their results do not validate every
+configuration in the expanded range. Start a fresh collection directory when
+changing the sampling protocol; resume rejects changed protocol/source files.
 
 An accepted reference has completed processing and passed the numerical screen.
 Physical stalls, insertion failures, grasp losses and budget violations remain

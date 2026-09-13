@@ -10,11 +10,11 @@
   ],
   "offset_range_mm": [
     0.1,
-    0.75
+    1.0
   ],
   "tilt_range_deg": [
     0.25,
-    3.0
+    4.0
   ],
   "insertion_duration_s": [
     8.0,
@@ -39,5 +39,13 @@
   "replay_linear_velocity_m_s": 0.001,
   "replay_angular_velocity_rad_s": 0.005,
   "replay_force_n": 0.1,
-  "replay_torque_nm": 0.005
+  "replay_torque_nm": 0.005,
+  "family_weights": {
+    "centered": 8,
+    "x_offset": 18,
+    "y_offset": 18,
+    "diagonal_offset": 18,
+    "tilt_only": 19,
+    "offset_tilt": 19
+  }
 }
