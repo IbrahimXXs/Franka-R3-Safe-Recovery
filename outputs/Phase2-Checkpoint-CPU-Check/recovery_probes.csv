@@ -1,9 +1,0 @@
-trajectory_id,folder,family,policy,depth_mm,replay_matched,label_eligible,safe_recovery,numerically_valid,status,max_force,max_torque,max_normal_load,max_penetration,time_to_clear_s,duration_s,resisting_work_j,retreat_peak_resistance_n,replay_error_position_mm,replay_error_orientation_deg,replay_error_joint_rad,replay_error_joint_velocity_rad_s,replay_error_linear_velocity_m_s,replay_error_angular_velocity_rad_s,replay_error_force_n,replay_error_torque_nm
-slot000_try00,slot000_try00,centered,straight,5,True,True,True,True,cleared_within_limits,0.0,0.0,0.0,0.0,2.39375,6.75,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-slot000_try00,slot000_try00,centered,realign,5,True,True,True,True,cleared_within_limits,0.0,0.0,0.0,0.0,4.395833333333333,8.75,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-slot000_try00,slot000_try00,centered,straight,10,True,True,True,True,cleared_within_limits,0.0,0.0,0.0,0.0,2.86875,6.75,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-slot000_try00,slot000_try00,centered,realign,10,True,True,True,True,cleared_within_limits,0.0,0.0,0.0,0.0,4.870833333333334,8.75,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-slot000_try00,slot000_try00,centered,straight,15,True,True,True,True,cleared_within_limits,0.0,0.0,0.0,0.0,3.20625,6.75,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-slot000_try00,slot000_try00,centered,realign,15,True,True,True,True,cleared_within_limits,0.0,0.0,0.0,0.0,5.20625,8.75,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-slot000_try00,slot000_try00,centered,straight,20,True,True,True,True,cleared_within_limits,0.0,0.0,0.0,0.0,3.4604166666666667,6.75,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
-slot000_try00,slot000_try00,centered,realign,20,True,True,True,True,cleared_within_limits,0.0,0.0,0.0,0.0,5.4625,8.75,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
