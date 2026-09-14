@@ -7,6 +7,22 @@ from visualization.view_study import build_dashboard, load_study
 
 
 class StudyViewerTests(unittest.TestCase):
+    def test_phase2b_terminal_profile_does_not_alias_fixed_depth(self):
+        with tempfile.TemporaryDirectory() as d:
+            p=Path(d);folder=p/'b000_try00';folder.mkdir()
+            for name,force in (('d20_straight',1),('terminal_straight',2)):
+                (folder/f'{name}_recovery.csv').write_text(f'time_s,recovery_time_s,phase,force_norm_n\n11,0,stop,{force}\n')
+            probe=dict(policy='straight',replay_matched=True,label_eligible=True,numerically_valid=True)
+            cps=[dict(depth_mm=20.,checkpoint_kind=kind,reached=True,prefix_numerically_valid=True,probes=[probe])
+                 for kind in ('fixed_depth','terminal')]
+            (p/'study.json').write_text(json.dumps(dict(study='Forge-Controlled-Phase2-v1',case_plan={'schema':'test'},
+                attempts=[dict(folder=folder.name,family='offset_tilt',status='complete',split_group_id='path',
+                    metrics={'numerically_valid':True},checkpoints=cps)])))
+            trial=load_study(p)['trials'][0]
+            self.assertEqual(trial['profiles']['d20_straight']['series']['force_norm_n'],[1.])
+            self.assertEqual(trial['profiles']['terminal_straight']['series']['force_norm_n'],[2.])
+            self.assertEqual(trial['summary']['split_group_id'],'path')
+
     def test_forge_recovery_profiles_preserve_unknown_replay_and_recorded_time(self):
         with tempfile.TemporaryDirectory() as d:
             p=Path(d);folder=p/'slot004_try00';folder.mkdir()

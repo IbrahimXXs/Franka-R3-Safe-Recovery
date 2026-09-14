@@ -1,0 +1,37 @@
+{
+  "schema": "Forge-Phase2B-depth-drift-v1",
+  "depth_feedback": "maximum_reached_depth_previous_step",
+  "probe_terminal": true,
+  "provenance": [
+    {
+      "study": "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2B-Pilot/study.json",
+      "sha256": "73dbb78f2a148545358011bb1960d6652dfe451886fa01001d8cf5eaf216457f"
+    }
+  ],
+  "cases": [
+    {
+      "family": "offset_tilt",
+      "offset_x_mm": 0.0,
+      "offset_y_mm": 0.0,
+      "roll_deg": 0.0,
+      "pitch_deg": 0.0,
+      "insertion_duration_s": 8.0,
+      "ramp_onset_mm": 5.0,
+      "ramp_full_depth_mm": 20.0,
+      "final_offset_x_mm": 0.6666666666666666,
+      "final_offset_y_mm": 0.0,
+      "final_roll_deg": 0.0,
+      "final_pitch_deg": 4.0,
+      "severity_deg": 4.0,
+      "path_axis": "x_pitch",
+      "path_sign": 1,
+      "path_mode": "combined",
+      "sample_role": "boundary_characterization",
+      "split_group_id": "b_d5_x_pitch_+1_combined",
+      "path_group_id": "b_d5_x_pitch_+1_combined",
+      "slot": 0,
+      "retry": 0,
+      "trajectory_id": "b000_try00"
+    }
+  ]
+}

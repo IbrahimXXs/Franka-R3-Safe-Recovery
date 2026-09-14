@@ -63,6 +63,10 @@ recovery branches together.
 Physical failures are retained; unknown recovery labels remain unknown. See
 [collection rules and retry limits](docs/forge_controlled.md).
 
+[Phase 2B](docs/phase2b.md) introduces tilt/drift only after entry and searches
+bounded paths for changes in tested recoverability. It also provides a causal
+future-stall label extractor for the completed Phase 2A references.
+
 ```bash
 ./run.sh --study --headless
 ```

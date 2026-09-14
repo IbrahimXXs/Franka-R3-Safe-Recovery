@@ -19,7 +19,8 @@ def write_phase2_report(directory,manifest):
     for a in manifest['attempts']:
         if 'metrics' not in a:continue
         base={k:a[k] for k in ('trajectory_id','slot','retry','family','offset_x_mm','offset_y_mm','roll_deg','pitch_deg','insertion_duration_s','folder','status')}
-        grouping={k:a[k] for k in ('sampling_slot','sample_role','split_group_id') if k in a}
+        grouping={k:a[k] for k in ('sampling_slot','sample_role','split_group_id','path_group_id','severity_deg',
+            'ramp_onset_mm','ramp_full_depth_mm','final_offset_x_mm','final_offset_y_mm','final_roll_deg','final_pitch_deg') if k in a}
         base.update(grouping)
         trajectories.append({**base,**a['metrics']})
         for cp in a['checkpoints']:
@@ -27,6 +28,7 @@ def write_phase2_report(directory,manifest):
             row=dict(trajectory_id=a['trajectory_id'],folder=a['folder'],family=a['family'],slot=a['slot'],
                 parent_numerically_valid=a['metrics']['numerically_valid'],parent_complete=a['status']=='complete',
                 checkpoint_depth_mm=cp['depth_mm'],reached=cp['reached'],reference_time_s=state.get('time_s'),
+                checkpoint_kind=cp.get('checkpoint_kind','fixed_depth'),
                 prefix_numerically_valid=cp['prefix_numerically_valid'],Y_R_tested=cp.get('Y_R_tested'),label_reason=cp.get('label_reason'),
                 depth_mm=state.get('depth_mm'),force_n=state.get('force_norm_n'),torque_nm=state.get('torque_norm_nm'),
                 normal_load_n=state.get('normal_load_n'),tilt_deg=state.get('tilt_deg'),
@@ -70,6 +72,7 @@ def write_phase2_report(directory,manifest):
     status=f"Status: **{manifest['status']}**. {len(accepted)} / {manifest['protocol']['target_valid']} numerically valid trajectory slots filled."
     if manifest.get('study')=='Forge-Controlled-Phase2-v1':
         heading='# FORGE randomized insertion collection' if manifest.get('mode')=='collect' else '# Controlled FORGE pilot'
+        if manifest.get('case_plan'):heading='# FORGE Phase 2B depth-dependent boundary search'
         if manifest.get('mode')!='collect':
             status=f"Status: **{manifest['status']}**. {len(accepted)} / {manifest['pilot_candidate_count']} pilot cases passed the initial numerical screen. Full collection has not started."
     lines=[heading,'',status,'',
@@ -78,7 +81,10 @@ def write_phase2_report(directory,manifest):
     for family in ('centered','x_offset','y_offset','diagonal_offset','tilt_only','offset_tilt'):
         rows=[r for r in trajectories if r['family']==family and r['status']=='complete']
         lines.append(f"| {family} | {len(rows)} | {len({r['slot'] for r in rows if r['numerically_valid']})} |")
-    if manifest.get('planned_family_quotas'):
+    if manifest.get('case_plan'):
+        lines += ['', 'Misalignment ramps with the maximum actual depth reached on the previous physics step, starting at 5 or 10 mm. Terminal probes test the final insertion/hold state as well as fixed-depth checkpoints. A terminal safe recovery after a stall does not establish safe further insertion progress.', '',
+            'Group paired amplitudes and all branches by `split_group_id`. Shared aligned prefixes across paths also need duplicate-history handling before ML evaluation. Unreached checkpoints are unknown; zero requires valid failures of both tested recovery policies.', '']
+    elif manifest.get('planned_family_quotas'):
         lines += ['', 'Planned valid-slot quotas: '+', '.join(f'{k}: {v}' for k,v in manifest['planned_family_quotas'].items())+'.', '',
             'Centered trajectories are repeated controls, not independent configurations. Split by `split_group_id` across trajectories, checkpoints and recovery probes: all centered copies share one group, and each contact-rich slot retains its group across retries and branches. These fields do not automatically enforce a downstream ML split. Report controls separately or deduplicate them when evaluating performance.', '']
     eligible_labels=[r for r in checkpoints if r['parent_numerically_valid'] and r['parent_complete']]

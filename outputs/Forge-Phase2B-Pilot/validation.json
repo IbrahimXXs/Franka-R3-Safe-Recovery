@@ -1,0 +1,118 @@
+{
+  "passed": true,
+  "physics_hz": 120,
+  "unit_tests_passed": 54,
+  "study_sha256": "73dbb78f2a148545358011bb1960d6652dfe451886fa01001d8cf5eaf216457f",
+  "validator_sha256": "aad91a95c8cf32d894f353d38fb582297e817b13dc6ff39f71b8a68c34ce007d",
+  "archive_hashes_match": true,
+  "current_command_functions_match_archive": true,
+  "cases": [
+    {
+      "trajectory_id": "b000_try00",
+      "outcome": "safe_terminal",
+      "maximum_command_error": 0.0,
+      "command_files_checked": 9,
+      "metrics": {
+        "insertion_success": false,
+        "max_force": 2.9374425411224365,
+        "max_torque": 0.04516499117016792,
+        "max_normal_load": 2.3499538898468018,
+        "max_penetration": 0.041492563468636945,
+        "max_depth": 19.39430609345436,
+        "stalled": false,
+        "force_budget_exceeded": false,
+        "torque_budget_exceeded": false,
+        "numerically_valid": true,
+        "outcome_trustworthy": true,
+        "grasp_retained": true,
+        "max_grasp_slip_mm": 0.022691654521622695,
+        "max_grasp_slip_deg": 0.07912936237050427,
+        "max_wrist_force_n": 2.5887742042541504,
+        "max_wrist_torque_nm": 0.20645621418952942
+      },
+      "checkpoint_labels": [
+        {
+          "depth_mm": 5.0,
+          "kind": "fixed_depth",
+          "Y_R": 1
+        },
+        {
+          "depth_mm": 10.0,
+          "kind": "fixed_depth",
+          "Y_R": 1
+        },
+        {
+          "depth_mm": 15.0,
+          "kind": "fixed_depth",
+          "Y_R": 1
+        },
+        {
+          "depth_mm": 20.0,
+          "kind": "fixed_depth",
+          "Y_R": null
+        },
+        {
+          "depth_mm": 19.39430609345436,
+          "kind": "terminal",
+          "Y_R": 1
+        }
+      ],
+      "matched_probes": 6,
+      "unknown_probes": 2
+    },
+    {
+      "trajectory_id": "b001_try00",
+      "outcome": "safe_terminal",
+      "maximum_command_error": 0.0,
+      "command_files_checked": 9,
+      "metrics": {
+        "insertion_success": false,
+        "max_force": 3.757094144821167,
+        "max_torque": 0.1663774996995926,
+        "max_normal_load": 19.938343048095703,
+        "max_penetration": 0.1013008295558393,
+        "max_depth": 17.45549365878105,
+        "stalled": true,
+        "force_budget_exceeded": false,
+        "torque_budget_exceeded": false,
+        "numerically_valid": true,
+        "outcome_trustworthy": true,
+        "grasp_retained": true,
+        "max_grasp_slip_mm": 0.07287492189789191,
+        "max_grasp_slip_deg": 0.15323335969831878,
+        "max_wrist_force_n": 3.306211471557617,
+        "max_wrist_torque_nm": 0.1983148753643036
+      },
+      "checkpoint_labels": [
+        {
+          "depth_mm": 5.0,
+          "kind": "fixed_depth",
+          "Y_R": 1
+        },
+        {
+          "depth_mm": 10.0,
+          "kind": "fixed_depth",
+          "Y_R": 1
+        },
+        {
+          "depth_mm": 15.0,
+          "kind": "fixed_depth",
+          "Y_R": 1
+        },
+        {
+          "depth_mm": 20.0,
+          "kind": "fixed_depth",
+          "Y_R": null
+        },
+        {
+          "depth_mm": 17.442313581705093,
+          "kind": "terminal",
+          "Y_R": 1
+        }
+      ],
+      "matched_probes": 7,
+      "unknown_probes": 1
+    }
+  ],
+  "limitation": "Numerical screens and observable replay tolerances only; no timestep convergence or recoverability-boundary certificate."
+}

@@ -28,6 +28,11 @@ if(isForge){
  document.querySelector('.definition').innerHTML='<h2>Reading the measurements</h2><p>Contact forces are socket-on-peg forces in world axes; contact torque is about the peg base. Wrist signals are incoming joint reactions and include hand/grasp dynamics. Their raw norms are shown separately.</p><p>Operational recovery limits apply to raw wrist force and torque at the sensor. A limit violation stops a probe. The controller remains compliant; a recorded peak can exceed a limit before the stop is applied.</p><p>Positive resisting contact work is an energy proxy, not motor energy. Pilot labels remain provisional until numerical convergence is established. Unknown labels are not failures.</p>';
 }
 function options(element, items){for(const [v,n] of Object.entries(items)){const o=document.createElement('option');o.value=v;o.textContent=Array.isArray(n)?n[0]:n;element.append(o);}}
+if(D.manifest.case_plan){
+ Object.assign(signals,{command_tilt_deg:['Commanded tilt','Tilt [°]'],tilt_deg:['Actual tilt','Tilt [°]'],command_offset_x_mm:['Commanded X drift','Offset [mm]'],command_offset_y_mm:['Commanded Y drift','Offset [mm]'],ramp_progress_depth_mm:['Reached depth driving ramp','Depth [mm]']});
+ columns.push(['ramp_onset_mm','Ramp onset [mm]'],['severity_deg','Path severity'],['split_group_id','Split group']);
+ $('signal').parentElement.firstChild.textContent='Signal';
+}
 options($('signal'),signals);options($('metric'),metrics);
 if(isForge){$('profile-control').style.display='flex';options($('profile-kind'),Object.fromEntries(D.trials.flatMap(t=>Object.entries(t.profiles||{}).map(([k,p])=>[k,p.label]))));}
 for(const p of [...new Set(D.trials.flatMap(t=>[t.series,...Object.values(t.profiles||{}).map(p=>p.series)].flatMap(s=>s.phase||[])))].filter(Boolean)){const o=document.createElement('option');o.value=p;o.textContent=p;$('phase').append(o);}

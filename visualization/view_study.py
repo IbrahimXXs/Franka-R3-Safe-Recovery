@@ -17,7 +17,8 @@ SERIES = ('time_s', 'phase', 'depth_mm', 'command_depth_mm', 'tilt_deg', 'comman
           'force_norm_n', 'torque_norm_nm', 'normal_load_n', 'min_separation_mm',
           'contact_power_w', 'normal_fx', 'normal_fy', 'normal_fz',
           'friction_fx', 'friction_fy', 'friction_fz', 'wrist_force_n', 'wrist_torque_nm',
-          'grasp_slip_mm', 'grasp_slip_deg', 'recovery_time_s')
+          'grasp_slip_mm', 'grasp_slip_deg', 'recovery_time_s', 'ramp_progress_depth_mm',
+          'command_offset_x_mm', 'command_offset_y_mm', 'command_roll_deg', 'command_pitch_deg')
 
 
 def clean(value):
@@ -62,6 +63,7 @@ def load_phase2(directory, manifest):
         summary=dict(metrics, scenario=attempt['family'], recovery='insertion',
                      status='insertion_characterized' if eligible else 'numerically_invalid' if metrics else 'incomplete',
                      penetration_screen_passed=metrics.get('numerically_valid'))
+        summary.update({k:attempt[k] for k in ('sample_role','split_group_id','ramp_onset_mm','severity_deg','path_group_id') if k in attempt})
         path=directory/folder/'insertion.csv';series={}
         if path.is_file():
             rows=read_csv(path)
@@ -77,6 +79,7 @@ def load_phase2(directory, manifest):
             state=cp.get('state', {})
             checkpoints.append(dict(trajectory_id=folder,family=attempt['family'],depth_mm=state.get('depth_mm'),
                 requested_depth_mm=cp['depth_mm'],time_s=state.get('time_s'),force_n=state.get('force_norm_n'),
+                checkpoint_kind=cp.get('checkpoint_kind','fixed_depth'),
                 torque_nm=state.get('torque_norm_nm'),reached=cp['reached'],parent_valid=eligible,
                 Y_R_tested=cp.get('Y_R_tested') if eligible else None,
                 label_reason=cp.get('label_reason') if eligible else 'Parent invalid/incomplete; '+str(cp.get('label_reason')), 
@@ -87,8 +90,10 @@ def load_phase2(directory, manifest):
                 for probe in cp.get('probes',[]):
                     policy=probe.get('policy')
                     if policy not in ('straight','realign'):continue
-                    tag=f'd{depth:g}_{policy}'
-                    trial['profiles'][tag]=dict(label=f'{depth:g} mm · {policy}',status=probe.get('reason','unknown'),
+                    tag=f'terminal_{policy}' if cp.get('checkpoint_kind')=='terminal' else f'd{depth:g}_{policy}'
+                    label=f'{depth:g} mm · {policy}'
+                    if cp.get('checkpoint_kind')=='terminal':label='Terminal · '+label
+                    trial['profiles'][tag]=dict(label=label,status=probe.get('reason','unknown'),
                         eligible=eligible and cp.get('prefix_numerically_valid') is True
                             and probe.get('label_eligible') is True and probe.get('replay_matched') is True
                             and probe.get('numerically_valid') is True,
