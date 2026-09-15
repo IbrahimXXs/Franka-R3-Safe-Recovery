@@ -1,0 +1,127 @@
+{
+  "settings": {
+    "window_s": 0.25,
+    "stride_s": 0.1,
+    "lag_steps": 1,
+    "length_scale_m": 0.01,
+    "motion_floor_m": 1e-06,
+    "wrench_floor_n": 0.0001,
+    "rank_relative_tolerance": 0.01,
+    "ridge_relative": 0.001,
+    "bootstrap_samples": 400,
+    "seed": 20260915
+  },
+  "robustness_settings": {
+    "primary": {
+      "window_s": 0.25,
+      "stride_s": 0.1,
+      "lag_steps": 1,
+      "length_scale_m": 0.01,
+      "motion_floor_m": 1e-06,
+      "wrench_floor_n": 0.0001,
+      "rank_relative_tolerance": 0.01,
+      "ridge_relative": 0.001,
+      "bootstrap_samples": 400,
+      "seed": 20260915
+    },
+    "length_5mm": {
+      "window_s": 0.25,
+      "stride_s": 0.1,
+      "lag_steps": 1,
+      "length_scale_m": 0.005,
+      "motion_floor_m": 1e-06,
+      "wrench_floor_n": 0.0001,
+      "rank_relative_tolerance": 0.01,
+      "ridge_relative": 0.001,
+      "bootstrap_samples": 400,
+      "seed": 20260915
+    },
+    "length_20mm": {
+      "window_s": 0.25,
+      "stride_s": 0.1,
+      "lag_steps": 1,
+      "length_scale_m": 0.02,
+      "motion_floor_m": 1e-06,
+      "wrench_floor_n": 0.0001,
+      "rank_relative_tolerance": 0.01,
+      "ridge_relative": 0.001,
+      "bootstrap_samples": 400,
+      "seed": 20260915
+    },
+    "lag_2_steps": {
+      "window_s": 0.25,
+      "stride_s": 0.1,
+      "lag_steps": 2,
+      "length_scale_m": 0.01,
+      "motion_floor_m": 1e-06,
+      "wrench_floor_n": 0.0001,
+      "rank_relative_tolerance": 0.01,
+      "ridge_relative": 0.001,
+      "bootstrap_samples": 400,
+      "seed": 20260915
+    },
+    "window_500ms": {
+      "window_s": 0.5,
+      "stride_s": 0.1,
+      "lag_steps": 1,
+      "length_scale_m": 0.01,
+      "motion_floor_m": 1e-06,
+      "wrench_floor_n": 0.0001,
+      "rank_relative_tolerance": 0.01,
+      "ridge_relative": 0.001,
+      "bootstrap_samples": 400,
+      "seed": 20260915
+    }
+  },
+  "command": "/home/ibrahim/Documents/Franka-Safe-Recovery/research/contact_response.py --outputs-root outputs --output outputs/Contact-Response-Offline-v1",
+  "studies": [
+    {
+      "study": "Forge-Phase2-100",
+      "cohort": "Phase2A",
+      "references": 100,
+      "physics_hz": 120
+    },
+    {
+      "study": "Forge-Phase2B-Stage1",
+      "cohort": "Phase2B",
+      "references": 24,
+      "physics_hz": 120
+    },
+    {
+      "study": "Forge-Phase2B-Stage2",
+      "cohort": "Phase2B",
+      "references": 20,
+      "physics_hz": 120
+    },
+    {
+      "study": "Forge-Phase2B-Stage3",
+      "cohort": "Phase2B",
+      "references": 13,
+      "physics_hz": 120
+    },
+    {
+      "study": "Forge-Phase2B-Stage4",
+      "cohort": "Phase2B",
+      "references": 13,
+      "physics_hz": 120
+    }
+  ],
+  "excluded_studies": [
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Initial-Test-480Hz",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Initial-Test-960Hz"
+  ],
+  "trajectory_counts": {
+    "successful_nonstalled": 133,
+    "other_unsuccessful": 13,
+    "stalled": 24
+  },
+  "trajectories_found": 170,
+  "trajectories_eligible": 170,
+  "unique_split_groups": 117,
+  "windows": 7820,
+  "stalled_split_groups": 13,
+  "exact_duplicate_references": 4,
+  "repeated_command_configurations": 7,
+  "input_files_unchanged": true,
+  "interpretation": "offline observational contact response, not causal contact stiffness"
+}

@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "focused_math_tests": 17,
+  "full_unit_suite_tests": 71,
+  "trajectory_rows": 170,
+  "window_rows": 7820,
+  "existing_output_files_unchanged": 3050,
+  "input_sha256_reverified": 195,
+  "actual_translation_step_um": {
+    "median": 39.222768280094144,
+    "p99": 65.6824627260466,
+    "maximum": 184.3779849986369
+  },
+  "actual_rotation_step_deg": {
+    "median": 0.001028680472007015,
+    "p99": 0.017668382479528604,
+    "maximum": 0.08106385344468782
+  }
+}
