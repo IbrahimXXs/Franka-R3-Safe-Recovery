@@ -1,0 +1,7 @@
+........................................................................................../home/ibrahim/Documents/Franka-Safe-Recovery/tests/test_productivity_dewedge.py:78: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:254.)
+  pq=mul(torch.tensor([quat([roll_deg,pitch_deg,0])],dtype=torch.float64),self.peg_q)
+................................................
+----------------------------------------------------------------------
+Ran 138 tests in 3.712s
+
+OK

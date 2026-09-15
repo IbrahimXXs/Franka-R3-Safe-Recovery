@@ -1,0 +1,19 @@
+[
+  {
+    "intervention": 1,
+    "trigger_time_s": 9.1,
+    "trigger_depth_mm": 17.28401854634285,
+    "trigger_command_depth_mm": 18.94636718750032,
+    "eta_raw": 0.4595655512226634,
+    "wrist_force_n": 1.6017986536026,
+    "wrist_torque_nm": 0.038091402500867844,
+    "normal_load_n": 13.049140930175781,
+    "previous_stall": false,
+    "retract_start_actual_depth_mm": 17.28428304195404,
+    "retract_end_time_s": 9.849999999856664,
+    "retract_end_actual_depth_mm": 17.280665785074234,
+    "actual_retraction_mm": 0.0033527612686157227,
+    "actual_retract_phase_mm": 0.0036172568798065186,
+    "retry_started_s": 10.35
+  }
+]

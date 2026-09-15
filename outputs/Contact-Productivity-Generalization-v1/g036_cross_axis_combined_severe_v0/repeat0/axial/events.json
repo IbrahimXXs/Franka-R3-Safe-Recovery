@@ -1,0 +1,27 @@
+[
+  {
+    "intervention": 1,
+    "trigger_time_s": 9.5,
+    "trigger_depth_mm": 18.033237755298615,
+    "trigger_command_depth_mm": 19.663085937500213,
+    "eta_raw": 0.16371898162061432,
+    "wrist_force_n": 1.051947832107544,
+    "wrist_torque_nm": 0.03281329572200775,
+    "normal_load_n": 12.55582332611084,
+    "unloading_status": "budget_exhausted",
+    "max_commanded_retract_mm": 5.0,
+    "max_actual_retract_mm": 0.3266148269176483,
+    "previous_stall": false,
+    "actual_retract_at_last_sample_mm": 0.3266148269176483,
+    "first_crossing_time_s": null,
+    "time_to_0_5_mm_s": null,
+    "verification_time_s": null,
+    "hold_rebounds": 0,
+    "after_time_s": 14.75,
+    "after_depth_mm": 17.706622928380966,
+    "after_wrist_force_n": 1.370762586593628,
+    "after_wrist_torque_nm": 0.12835797667503357,
+    "after_normal_load_n": 1.0810132026672363,
+    "after_contact_force_n": 1.3512550592422485
+  }
+]

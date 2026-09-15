@@ -1,0 +1,40 @@
+{
+  "captured_at_utc": "2026-09-15T15:44:39.007367+00:00",
+  "command": "./productivity_generalization.sh --headless --output-dir outputs/Contact-Productivity-Generalization-v1 > /tmp/contact-productivity-generalization-v1.log 2>&1",
+  "collection_status": "complete",
+  "collection_process_ended": true,
+  "collection_exit_code": null,
+  "exit_code_note": "The completed exec session returned no numeric exit code; a subsequent poll found the session closed and no benchmark process remained. Completion is established by the complete 192-run manifest and passing automatic report audit.",
+  "automatic_analysis_status": "passed",
+  "tests_passed": 138,
+  "focused_tests_passed": 11,
+  "raw_artifacts": 581,
+  "raw_hash_manifest": "validation/raw_sha256.json",
+  "collection_source_archives_verified": 26,
+  "current_sources_differing_from_collection_snapshot": [
+    "research/productivity_generalization_report.py"
+  ],
+  "postprocessing_note": "Only report diagnostics/plots were refined after collection started: terminal detector/safety details and no-intervention discordances. Frozen conditions, policies, primary endpoint and bootstrap plan were unchanged. Collection-time source is retained separately.",
+  "final_analysis_source": "source/postprocessing/research/productivity_generalization_report.py",
+  "final_analysis_source_sha256": "ae985949a7bf6b5ed5d8585a4729dc6f8d0485e5f2ced51a5a27a1ee5d264047",
+  "policy_hashes_verified": true,
+  "frozen_plan_sha256": "ed84d146fdefb44997ff39584e05516c85885ec0ac81e27da3be59f3b2ff9fb7",
+  "preexisting_outputs_checked": 3618,
+  "preexisting_outputs_changed": [],
+  "analysis_artifact_sha256": {
+    "summary.csv": "55121a0a889ca2315e6bfa5cf1103e49e3676e1ef1fddbdd579f189e5dd73f04",
+    "failure_cases.csv": "00e8f897bcb3e5faa3147948f0143ac1a56cbf733579371a57598c4d5020e1f2",
+    "paired_policy_effects.csv": "39c664be1b554793547fcc50e97544393e9ce6816f29ff481163bb9c44446195",
+    "detector_checks.csv": "0b60f65be22af6c292c272471da4a1ae2970a8ea0e394409cf51e8eae5325a2d",
+    "per_condition_results.csv": "6835b0150f21809bd2d1d3eb6e2c2e06851607cde9f143bf30f8a384a273eb8e",
+    "policy_summary.csv": "b2956242d6bba18d32f3df972865bf37b34a6906bf9a888439c1bda6f041a264",
+    "paired_comparisons.csv": "97af38e18de9911908ff1530e5f7ffa064a3a2db5d9d4d5b51d6f163fb4aabcf",
+    "recovery_events.csv": "eac96f6c7000a5f7bb5f35dab4a75fc2d8b92305ee3024957d65a0d973dc20bb",
+    "stratified_results.csv": "871f0e6126ca50b4d4ff14ed45655d725f1bf0f499af236bfdbc54ebe955fd8e",
+    "report.md": "a0c66d320201edd065429e7be00a610ba6b3e37351fe3b7a4c4291ccc961ae29",
+    "failure_case_analysis.md": "7d7f32e4cdc743de8f647ef5f5be201a6a7025bb0e85c1919deb73ae28731cef",
+    "validation.json": "0f0fecf66f51fcd668ab52e32539f8816e89906efb93c4cf2de4a43273b7a71e"
+  },
+  "test_log_sha256": "8fff05d1d877e45d0931724ca69242de99ade7a67b07f616f8efc2e72af50a85",
+  "collection_log_sha256": "be7eff557ee5f3016787e31a6c69558b2a574513dcce2bc92014f6a0f7b3980b"
+}

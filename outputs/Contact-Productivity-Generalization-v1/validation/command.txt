@@ -1,0 +1,1 @@
+./productivity_generalization.sh --headless --output-dir outputs/Contact-Productivity-Generalization-v1 > /tmp/contact-productivity-generalization-v1.log 2>&1

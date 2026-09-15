@@ -1,0 +1,630 @@
+WARNING: overwriting environment variables set in the machine
+overwriting variable ['IsaacLab_PATH']
+[INFO][AppLauncher]: Using device: cuda:0
+[INFO][AppLauncher]: Loading experience file: /home/ibrahim/Documents/Franka-Safe-Recovery/.deps/IsaacLab/apps/isaaclab.python.headless.kit
+Loading user config located at: '/home/ibrahim/miniconda3/envs/franka-safe-recovery/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: /home/ibrahim/miniconda3/envs/franka-safe-recovery/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20260915_170445.log
+2026-09-15T13:04:45Z [58ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-09-15T13:04:45Z [234ms] [Error] [omni.core.ITypeFactory] Circular dependency detected! Interface: omni::platforminfo::ICpuInfo requested. But plugin with an interface: /home/ibrahim/miniconda3/envs/franka-safe-recovery/lib/python3.11/site-packages/isaacsim/kit/kernel/plugins/libomni.platforminfo.plugin.so is already in resolving state.
+2026-09-15T13:04:45Z [234ms] [Error] [carb] [Plugin: gpu.foundation.plugin] Dependency: [omni::platforminfo::ICpuInfo v1.0] failed to be resolved.
+2026-09-15T13:04:45Z [362ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-09-15T13:04:45Z [483ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 580.178.04    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA GeForce RTX 3080          | Yes: 0 |     | 10486   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2206      | 20805ce9.. |
+|     |                                  |        |     |            | 1         |            |
+|=============================================================================================|
+| OS: 22.04.5 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.5, Kernel: 6.8.0-138-generic
+| XServer Vendor: The X.Org Foundation, XServer Version: 12101004 (1.21.1.4)
+| Processor: Intel(R) Core(TM) i5-14600KF
+| Bare Metal Cores: 14 | Bare Metal Logical Cores: 28
+| Available Cores:  20 
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 31923 | Free Memory: 21643
+| Total Page/Swap (MB): 2047 | Free Page/Swap: 2046
+|---------------------------------------------------------------------------------------------|
+2026-09-15T13:04:48Z [3,510ms] [Warning] [gpu.foundation.plugin] CPU performance profile is set to powersave. This profile sets the CPU to the lowest frequency reducing performance.
+2026-09-15T13:04:48Z [3,519ms] [Warning] [gpu.foundation.plugin] IOMMU is enabled.
+FORGE physics: 120 Hz (upstream_default); installed scene default: 120 Hz
+Setting seed: 20260913
+[INFO]: Base environment:
+	Environment device    : cuda:0
+	Environment seed      : 20260913
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.03333333333333333
+	Environment step-size : 0.06666666666666667
+2026-09-15T13:04:49Z [4,187ms] [Warning] [isaaclab.envs.direct_rl_env] The render interval (4) is smaller than the decimation (8). Multiple render calls will happen for each environment step.If this is not intended, set the render interval to be equal to the decimation.
+[INFO]: Time taken for scene creation : 2.274306 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 2.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 0.346657 seconds
+[INFO]: Completed setting up the environment...
+Setting seed: 20260913
+[generalization] 1/192 g022_axis_tilt_severe_v2/repeat0/axial
+Setting seed: 20260913
+[generalization] unloading_budget_exhausted; depth=18.128 stall=False recoveries=1 ready=0 wrist=3.093 N load=13.031 N
+[generalization] 2/192 g022_axis_tilt_severe_v2/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.781 stall=False recoveries=1 ready=1 wrist=1.926 N load=13.031 N
+[generalization] 3/192 g022_axis_tilt_severe_v2/repeat0/force
+Setting seed: 20260913
+[generalization] grasp_retention_limit; depth=18.098 stall=False recoveries=0 ready=0 wrist=2.663 N load=11.747 N
+[generalization] 4/192 g022_axis_tilt_severe_v2/repeat0/nominal
+Setting seed: 20260913
+[generalization] grasp_retention_limit; depth=18.137 stall=False recoveries=0 ready=0 wrist=1.926 N load=14.403 N
+[generalization] 5/192 g026_oblique_tilt_moderate_v2/repeat0/force
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.569 stall=False recoveries=0 ready=0 wrist=0.963 N load=0.997 N
+[generalization] 6/192 g026_oblique_tilt_moderate_v2/repeat0/nominal
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.566 stall=False recoveries=0 ready=0 wrist=1.029 N load=1.141 N
+[generalization] 7/192 g026_oblique_tilt_moderate_v2/repeat0/axial
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.569 stall=False recoveries=0 ready=0 wrist=0.963 N load=0.997 N
+[generalization] 8/192 g026_oblique_tilt_moderate_v2/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.569 stall=False recoveries=0 ready=0 wrist=0.963 N load=0.997 N
+[generalization] 9/192 g040_oblique_combined_moderate_v0/repeat0/axial
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.652 stall=False recoveries=0 ready=0 wrist=1.134 N load=1.175 N
+[generalization] 10/192 g040_oblique_combined_moderate_v0/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.679 stall=False recoveries=0 ready=0 wrist=1.060 N load=1.096 N
+[generalization] 11/192 g040_oblique_combined_moderate_v0/repeat0/force
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.679 stall=False recoveries=0 ready=0 wrist=1.060 N load=1.096 N
+[generalization] 12/192 g040_oblique_combined_moderate_v0/repeat0/nominal
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.652 stall=False recoveries=0 ready=0 wrist=1.134 N load=1.175 N
+[generalization] 13/192 g021_axis_tilt_severe_v1/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.683 stall=False recoveries=1 ready=1 wrist=2.985 N load=18.330 N
+[generalization] 14/192 g021_axis_tilt_severe_v1/repeat0/force
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=16.994 stall=True recoveries=2 ready=0 wrist=3.454 N load=21.303 N
+[generalization] 15/192 g021_axis_tilt_severe_v1/repeat0/nominal
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=17.130 stall=True recoveries=0 ready=0 wrist=3.913 N load=20.851 N
+[generalization] 16/192 g021_axis_tilt_severe_v1/repeat0/axial
+Setting seed: 20260913
+[generalization] unloading_budget_exhausted; depth=16.982 stall=False recoveries=1 ready=0 wrist=4.054 N load=18.330 N
+[generalization] 17/192 g047_oblique_combined_severe_v3/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.833 stall=False recoveries=1 ready=1 wrist=2.456 N load=11.253 N
+[generalization] 18/192 g047_oblique_combined_severe_v3/repeat0/force
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=15.582 stall=True recoveries=2 ready=0 wrist=3.145 N load=12.996 N
+[generalization] 19/192 g047_oblique_combined_severe_v3/repeat0/nominal
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=15.792 stall=True recoveries=0 ready=0 wrist=3.187 N load=13.591 N
+[generalization] 20/192 g047_oblique_combined_severe_v3/repeat0/axial
+Setting seed: 20260913
+[generalization] unloading_budget_exhausted; depth=15.771 stall=False recoveries=1 ready=0 wrist=3.607 N load=11.253 N
+[generalization] 21/192 g046_oblique_combined_severe_v2/repeat0/axial
+Setting seed: 20260913
+[generalization] unloading_budget_exhausted; depth=18.080 stall=False recoveries=1 ready=0 wrist=3.546 N load=17.283 N
+[generalization] 22/192 g046_oblique_combined_severe_v2/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.767 stall=True recoveries=1 ready=1 wrist=4.245 N load=17.653 N
+[generalization] 23/192 g046_oblique_combined_severe_v2/repeat0/force
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=17.916 stall=True recoveries=2 ready=0 wrist=4.245 N load=18.051 N
+[generalization] 24/192 g046_oblique_combined_severe_v2/repeat0/nominal
+Setting seed: 20260913
+[generalization] grasp_retention_limit; depth=18.110 stall=False recoveries=0 ready=0 wrist=2.829 N load=21.492 N
+[generalization] 25/192 g031_oblique_tilt_severe_v3/repeat0/force
+Setting seed: 20260913
+[generalization] grasp_retention_limit; depth=17.297 stall=False recoveries=0 ready=0 wrist=2.076 N load=16.583 N
+[generalization] 26/192 g031_oblique_tilt_severe_v3/repeat0/nominal
+Setting seed: 20260913
+[generalization] grasp_retention_limit; depth=17.297 stall=False recoveries=0 ready=0 wrist=2.076 N load=16.583 N
+[generalization] 27/192 g031_oblique_tilt_severe_v3/repeat0/axial
+Setting seed: 20260913
+[generalization] grasp_retention_limit; depth=17.323 stall=False recoveries=0 ready=0 wrist=1.923 N load=17.689 N
+[generalization] 28/192 g031_oblique_tilt_severe_v3/repeat0/dewedge
+Setting seed: 20260913
+[generalization] grasp_retention_limit; depth=17.297 stall=False recoveries=0 ready=0 wrist=2.076 N load=16.583 N
+[generalization] 29/192 g036_cross_axis_combined_severe_v0/repeat0/force
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=18.031 stall=True recoveries=1 ready=0 wrist=3.470 N load=19.988 N
+[generalization] 30/192 g036_cross_axis_combined_severe_v0/repeat0/nominal
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=18.032 stall=True recoveries=0 ready=0 wrist=3.546 N load=20.796 N
+[generalization] 31/192 g036_cross_axis_combined_severe_v0/repeat0/axial
+Setting seed: 20260913
+[generalization] unloading_budget_exhausted; depth=17.707 stall=False recoveries=1 ready=0 wrist=3.563 N load=12.886 N
+[generalization] 32/192 g036_cross_axis_combined_severe_v0/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.789 stall=False recoveries=1 ready=1 wrist=3.470 N load=12.886 N
+[generalization] 33/192 g000_axis_offset_moderate_v0/repeat0/nominal
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.732 stall=False recoveries=0 ready=0 wrist=1.054 N load=0.954 N
+[generalization] 34/192 g000_axis_offset_moderate_v0/repeat0/axial
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.722 stall=False recoveries=0 ready=0 wrist=1.001 N load=0.910 N
+[generalization] 35/192 g000_axis_offset_moderate_v0/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.722 stall=False recoveries=0 ready=0 wrist=1.001 N load=0.910 N
+[generalization] 36/192 g000_axis_offset_moderate_v0/repeat0/force
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.732 stall=False recoveries=0 ready=0 wrist=1.054 N load=0.954 N
+[generalization] 37/192 g003_axis_offset_moderate_v3/repeat0/nominal
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.730 stall=False recoveries=0 ready=0 wrist=0.453 N load=0.453 N
+[generalization] 38/192 g003_axis_offset_moderate_v3/repeat0/axial
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.730 stall=False recoveries=0 ready=0 wrist=0.453 N load=0.453 N
+[generalization] 39/192 g003_axis_offset_moderate_v3/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.745 stall=False recoveries=0 ready=0 wrist=0.388 N load=0.375 N
+[generalization] 40/192 g003_axis_offset_moderate_v3/repeat0/force
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.730 stall=False recoveries=0 ready=0 wrist=0.453 N load=0.453 N
+[generalization] 41/192 g007_axis_offset_severe_v3/repeat0/axial
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.640 stall=False recoveries=0 ready=0 wrist=0.767 N load=0.707 N
+[generalization] 42/192 g007_axis_offset_severe_v3/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.618 stall=False recoveries=0 ready=0 wrist=0.919 N load=0.883 N
+[generalization] 43/192 g007_axis_offset_severe_v3/repeat0/force
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.640 stall=False recoveries=0 ready=0 wrist=0.767 N load=0.707 N
+[generalization] 44/192 g007_axis_offset_severe_v3/repeat0/nominal
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.640 stall=False recoveries=0 ready=0 wrist=0.767 N load=0.707 N
+[generalization] 45/192 g029_oblique_tilt_severe_v1/repeat0/axial
+Setting seed: 20260913
+[generalization] grasp_retention_limit; depth=18.207 stall=False recoveries=0 ready=0 wrist=1.774 N load=15.140 N
+[generalization] 46/192 g029_oblique_tilt_severe_v1/repeat0/dewedge
+Setting seed: 20260913
+[generalization] grasp_retention_limit; depth=18.222 stall=False recoveries=0 ready=0 wrist=1.850 N load=15.902 N
+[generalization] 47/192 g029_oblique_tilt_severe_v1/repeat0/force
+Setting seed: 20260913
+[generalization] grasp_retention_limit; depth=18.222 stall=False recoveries=0 ready=0 wrist=1.850 N load=15.902 N
+[generalization] 48/192 g029_oblique_tilt_severe_v1/repeat0/nominal
+Setting seed: 20260913
+[generalization] grasp_retention_limit; depth=18.207 stall=False recoveries=0 ready=0 wrist=1.774 N load=15.140 N
+[generalization] 49/192 g045_oblique_combined_severe_v1/repeat0/nominal
+Setting seed: 20260913
+[generalization] grasp_retention_limit; depth=17.365 stall=False recoveries=0 ready=0 wrist=2.030 N load=15.539 N
+[generalization] 50/192 g045_oblique_combined_severe_v1/repeat0/axial
+Setting seed: 20260913
+[generalization] grasp_retention_limit; depth=17.365 stall=False recoveries=0 ready=0 wrist=2.030 N load=15.539 N
+[generalization] 51/192 g045_oblique_combined_severe_v1/repeat0/dewedge
+Setting seed: 20260913
+[generalization] grasp_retention_limit; depth=17.387 stall=False recoveries=0 ready=0 wrist=1.466 N load=16.247 N
+[generalization] 52/192 g045_oblique_combined_severe_v1/repeat0/force
+Setting seed: 20260913
+[generalization] grasp_retention_limit; depth=17.365 stall=False recoveries=0 ready=0 wrist=2.030 N load=15.539 N
+[generalization] 53/192 g019_axis_tilt_moderate_v3/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.621 stall=False recoveries=0 ready=0 wrist=1.703 N load=2.007 N
+[generalization] 54/192 g019_axis_tilt_moderate_v3/repeat0/force
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.609 stall=False recoveries=0 ready=0 wrist=3.268 N load=3.648 N
+[generalization] 55/192 g019_axis_tilt_moderate_v3/repeat0/nominal
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.621 stall=False recoveries=0 ready=0 wrist=1.703 N load=2.007 N
+[generalization] 56/192 g019_axis_tilt_moderate_v3/repeat0/axial
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.621 stall=False recoveries=0 ready=0 wrist=1.703 N load=2.007 N
+[generalization] 57/192 g009_oblique_offset_moderate_v1/repeat0/nominal
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.707 stall=False recoveries=0 ready=0 wrist=0.510 N load=0.545 N
+[generalization] 58/192 g009_oblique_offset_moderate_v1/repeat0/axial
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.714 stall=False recoveries=0 ready=0 wrist=0.413 N load=0.467 N
+[generalization] 59/192 g009_oblique_offset_moderate_v1/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.714 stall=False recoveries=0 ready=0 wrist=0.413 N load=0.467 N
+[generalization] 60/192 g009_oblique_offset_moderate_v1/repeat0/force
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.707 stall=False recoveries=0 ready=0 wrist=0.510 N load=0.545 N
+[generalization] 61/192 g018_axis_tilt_moderate_v2/repeat0/axial
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.546 stall=False recoveries=0 ready=0 wrist=2.375 N load=2.158 N
+[generalization] 62/192 g018_axis_tilt_moderate_v2/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.546 stall=False recoveries=0 ready=0 wrist=2.375 N load=2.158 N
+[generalization] 63/192 g018_axis_tilt_moderate_v2/repeat0/force
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.531 stall=False recoveries=0 ready=0 wrist=1.895 N load=1.684 N
+[generalization] 64/192 g018_axis_tilt_moderate_v2/repeat0/nominal
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.546 stall=False recoveries=0 ready=0 wrist=2.375 N load=2.158 N
+[generalization] 65/192 g005_axis_offset_severe_v1/repeat0/force
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.563 stall=False recoveries=0 ready=0 wrist=0.785 N load=0.880 N
+[generalization] 66/192 g005_axis_offset_severe_v1/repeat0/nominal
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.568 stall=False recoveries=0 ready=0 wrist=0.820 N load=0.919 N
+[generalization] 67/192 g005_axis_offset_severe_v1/repeat0/axial
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.563 stall=False recoveries=0 ready=0 wrist=0.785 N load=0.880 N
+[generalization] 68/192 g005_axis_offset_severe_v1/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.563 stall=False recoveries=0 ready=0 wrist=0.785 N load=0.880 N
+[generalization] 69/192 g001_axis_offset_moderate_v1/repeat0/axial
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.722 stall=False recoveries=0 ready=0 wrist=0.575 N load=0.616 N
+[generalization] 70/192 g001_axis_offset_moderate_v1/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.707 stall=False recoveries=0 ready=0 wrist=0.609 N load=0.690 N
+[generalization] 71/192 g001_axis_offset_moderate_v1/repeat0/force
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.707 stall=False recoveries=0 ready=0 wrist=0.609 N load=0.690 N
+[generalization] 72/192 g001_axis_offset_moderate_v1/repeat0/nominal
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.722 stall=False recoveries=0 ready=0 wrist=0.575 N load=0.616 N
+[generalization] 73/192 g035_cross_axis_combined_moderate_v3/repeat0/force
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=19.339 stall=False recoveries=0 ready=0 wrist=2.212 N load=2.288 N
+[generalization] 74/192 g035_cross_axis_combined_moderate_v3/repeat0/nominal
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=19.339 stall=False recoveries=0 ready=0 wrist=2.212 N load=2.288 N
+[generalization] 75/192 g035_cross_axis_combined_moderate_v3/repeat0/axial
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=19.417 stall=False recoveries=0 ready=0 wrist=2.339 N load=2.789 N
+[generalization] 76/192 g035_cross_axis_combined_moderate_v3/repeat0/dewedge
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=19.339 stall=False recoveries=0 ready=0 wrist=2.212 N load=2.288 N
+[generalization] 77/192 g004_axis_offset_severe_v0/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.606 stall=False recoveries=0 ready=0 wrist=1.300 N load=1.165 N
+[generalization] 78/192 g004_axis_offset_severe_v0/repeat0/force
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.661 stall=False recoveries=0 ready=0 wrist=1.343 N load=1.212 N
+[generalization] 79/192 g004_axis_offset_severe_v0/repeat0/nominal
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.606 stall=False recoveries=0 ready=0 wrist=1.300 N load=1.165 N
+[generalization] 80/192 g004_axis_offset_severe_v0/repeat0/axial
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.606 stall=False recoveries=0 ready=0 wrist=1.300 N load=1.165 N
+[generalization] 81/192 g012_oblique_offset_severe_v0/repeat0/axial
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.639 stall=False recoveries=0 ready=0 wrist=0.774 N load=0.695 N
+[generalization] 82/192 g012_oblique_offset_severe_v0/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.644 stall=False recoveries=0 ready=0 wrist=0.925 N load=0.859 N
+[generalization] 83/192 g012_oblique_offset_severe_v0/repeat0/force
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.644 stall=False recoveries=0 ready=0 wrist=0.925 N load=0.859 N
+[generalization] 84/192 g012_oblique_offset_severe_v0/repeat0/nominal
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.639 stall=False recoveries=0 ready=0 wrist=0.774 N load=0.695 N
+[generalization] 85/192 g016_axis_tilt_moderate_v0/repeat0/force
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.654 stall=False recoveries=0 ready=0 wrist=2.631 N load=3.101 N
+[generalization] 86/192 g016_axis_tilt_moderate_v0/repeat0/nominal
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.654 stall=False recoveries=0 ready=0 wrist=2.631 N load=3.101 N
+[generalization] 87/192 g016_axis_tilt_moderate_v0/repeat0/axial
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.607 stall=False recoveries=0 ready=0 wrist=2.878 N load=3.080 N
+[generalization] 88/192 g016_axis_tilt_moderate_v0/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.654 stall=False recoveries=0 ready=0 wrist=2.631 N load=3.101 N
+[generalization] 89/192 g044_oblique_combined_severe_v0/repeat0/nominal
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=15.749 stall=True recoveries=0 ready=0 wrist=3.484 N load=15.419 N
+[generalization] 90/192 g044_oblique_combined_severe_v0/repeat0/axial
+Setting seed: 20260913
+[generalization] unloading_budget_exhausted; depth=15.731 stall=True recoveries=1 ready=0 wrist=4.039 N load=11.505 N
+[generalization] 91/192 g044_oblique_combined_severe_v0/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.829 stall=False recoveries=1 ready=1 wrist=2.703 N load=11.696 N
+[generalization] 92/192 g044_oblique_combined_severe_v0/repeat0/force
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=15.750 stall=True recoveries=2 ready=0 wrist=3.522 N load=15.438 N
+[generalization] 93/192 g027_oblique_tilt_moderate_v3/repeat0/axial
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=19.486 stall=False recoveries=0 ready=0 wrist=2.313 N load=3.388 N
+[generalization] 94/192 g027_oblique_tilt_moderate_v3/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.501 stall=False recoveries=0 ready=0 wrist=1.929 N load=3.446 N
+[generalization] 95/192 g027_oblique_tilt_moderate_v3/repeat0/force
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.501 stall=False recoveries=0 ready=0 wrist=1.929 N load=3.446 N
+[generalization] 96/192 g027_oblique_tilt_moderate_v3/repeat0/nominal
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=19.486 stall=False recoveries=0 ready=0 wrist=2.313 N load=3.388 N
+[generalization] 97/192 g030_oblique_tilt_severe_v2/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.786 stall=True recoveries=1 ready=1 wrist=2.320 N load=14.219 N
+[generalization] 98/192 g030_oblique_tilt_severe_v2/repeat0/force
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=15.908 stall=True recoveries=2 ready=0 wrist=3.410 N load=17.482 N
+[generalization] 99/192 g030_oblique_tilt_severe_v2/repeat0/nominal
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=15.913 stall=True recoveries=0 ready=0 wrist=3.493 N load=17.327 N
+[generalization] 100/192 g030_oblique_tilt_severe_v2/repeat0/axial
+Setting seed: 20260913
+[generalization] unloading_budget_exhausted; depth=15.962 stall=True recoveries=1 ready=0 wrist=4.159 N load=14.219 N
+[generalization] 101/192 g025_oblique_tilt_moderate_v1/repeat0/nominal
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.539 stall=False recoveries=0 ready=0 wrist=1.779 N load=1.914 N
+[generalization] 102/192 g025_oblique_tilt_moderate_v1/repeat0/axial
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.529 stall=False recoveries=0 ready=0 wrist=1.352 N load=1.397 N
+[generalization] 103/192 g025_oblique_tilt_moderate_v1/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.539 stall=False recoveries=0 ready=0 wrist=1.779 N load=1.914 N
+[generalization] 104/192 g025_oblique_tilt_moderate_v1/repeat0/force
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.539 stall=False recoveries=0 ready=0 wrist=1.779 N load=1.914 N
+[generalization] 105/192 g014_oblique_offset_severe_v2/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.621 stall=False recoveries=0 ready=0 wrist=1.487 N load=1.366 N
+[generalization] 106/192 g014_oblique_offset_severe_v2/repeat0/force
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.629 stall=False recoveries=0 ready=0 wrist=1.534 N load=1.403 N
+[generalization] 107/192 g014_oblique_offset_severe_v2/repeat0/nominal
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.629 stall=False recoveries=0 ready=0 wrist=1.534 N load=1.403 N
+[generalization] 108/192 g014_oblique_offset_severe_v2/repeat0/axial
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.621 stall=False recoveries=0 ready=0 wrist=1.487 N load=1.366 N
+[generalization] 109/192 g020_axis_tilt_severe_v0/repeat0/force
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=15.458 stall=True recoveries=2 ready=0 wrist=4.064 N load=17.728 N
+[generalization] 110/192 g020_axis_tilt_severe_v0/repeat0/nominal
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=15.590 stall=True recoveries=0 ready=0 wrist=4.092 N load=18.393 N
+[generalization] 111/192 g020_axis_tilt_severe_v0/repeat0/axial
+Setting seed: 20260913
+[generalization] unloading_budget_exhausted; depth=15.519 stall=False recoveries=1 ready=0 wrist=4.019 N load=13.314 N
+[generalization] 112/192 g020_axis_tilt_severe_v0/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.817 stall=False recoveries=1 ready=1 wrist=3.289 N load=13.493 N
+[generalization] 113/192 g017_axis_tilt_moderate_v1/repeat0/axial
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.509 stall=False recoveries=0 ready=0 wrist=5.444 N load=8.513 N
+[generalization] 114/192 g017_axis_tilt_moderate_v1/repeat0/dewedge
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=19.454 stall=False recoveries=0 ready=0 wrist=6.321 N load=12.179 N
+[generalization] 115/192 g017_axis_tilt_moderate_v1/repeat0/force
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.509 stall=False recoveries=0 ready=0 wrist=5.444 N load=8.513 N
+[generalization] 116/192 g017_axis_tilt_moderate_v1/repeat0/nominal
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.509 stall=False recoveries=0 ready=0 wrist=5.444 N load=8.513 N
+[generalization] 117/192 g008_oblique_offset_moderate_v0/repeat0/nominal
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.761 stall=False recoveries=0 ready=0 wrist=0.688 N load=0.643 N
+[generalization] 118/192 g008_oblique_offset_moderate_v0/repeat0/axial
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.766 stall=False recoveries=0 ready=0 wrist=0.699 N load=0.657 N
+[generalization] 119/192 g008_oblique_offset_moderate_v0/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.766 stall=False recoveries=0 ready=0 wrist=0.699 N load=0.657 N
+[generalization] 120/192 g008_oblique_offset_moderate_v0/repeat0/force
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.761 stall=False recoveries=0 ready=0 wrist=0.688 N load=0.643 N
+[generalization] 121/192 g013_oblique_offset_severe_v1/repeat0/force
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.553 stall=False recoveries=0 ready=0 wrist=0.606 N load=0.534 N
+[generalization] 122/192 g013_oblique_offset_severe_v1/repeat0/nominal
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.553 stall=False recoveries=0 ready=0 wrist=0.606 N load=0.534 N
+[generalization] 123/192 g013_oblique_offset_severe_v1/repeat0/axial
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.551 stall=False recoveries=0 ready=0 wrist=0.603 N load=0.550 N
+[generalization] 124/192 g013_oblique_offset_severe_v1/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.553 stall=False recoveries=0 ready=0 wrist=0.606 N load=0.534 N
+[generalization] 125/192 g011_oblique_offset_moderate_v3/repeat0/nominal
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.742 stall=False recoveries=0 ready=0 wrist=0.697 N load=0.758 N
+[generalization] 126/192 g011_oblique_offset_moderate_v3/repeat0/axial
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.722 stall=False recoveries=0 ready=0 wrist=0.749 N load=0.813 N
+[generalization] 127/192 g011_oblique_offset_moderate_v3/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.742 stall=False recoveries=0 ready=0 wrist=0.697 N load=0.758 N
+[generalization] 128/192 g011_oblique_offset_moderate_v3/repeat0/force
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.742 stall=False recoveries=0 ready=0 wrist=0.697 N load=0.758 N
+[generalization] 129/192 g033_cross_axis_combined_moderate_v1/repeat0/force
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=19.453 stall=False recoveries=0 ready=0 wrist=1.944 N load=2.910 N
+[generalization] 130/192 g033_cross_axis_combined_moderate_v1/repeat0/nominal
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.511 stall=False recoveries=0 ready=0 wrist=2.386 N load=2.460 N
+[generalization] 131/192 g033_cross_axis_combined_moderate_v1/repeat0/axial
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.511 stall=False recoveries=0 ready=0 wrist=2.386 N load=2.460 N
+[generalization] 132/192 g033_cross_axis_combined_moderate_v1/repeat0/dewedge
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=19.453 stall=False recoveries=0 ready=0 wrist=1.944 N load=2.910 N
+[generalization] 133/192 g038_cross_axis_combined_severe_v2/repeat0/axial
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=16.195 stall=True recoveries=2 ready=2 wrist=2.877 N load=6.010 N
+[generalization] 134/192 g038_cross_axis_combined_severe_v2/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.815 stall=False recoveries=1 ready=1 wrist=2.361 N load=6.010 N
+[generalization] 135/192 g038_cross_axis_combined_severe_v2/repeat0/force
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=16.792 stall=True recoveries=2 ready=0 wrist=2.926 N load=10.205 N
+[generalization] 136/192 g038_cross_axis_combined_severe_v2/repeat0/nominal
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=16.776 stall=True recoveries=0 ready=0 wrist=2.755 N load=10.316 N
+[generalization] 137/192 g034_cross_axis_combined_moderate_v2/repeat0/nominal
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=19.078 stall=False recoveries=0 ready=0 wrist=2.292 N load=3.409 N
+[generalization] 138/192 g034_cross_axis_combined_moderate_v2/repeat0/axial
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=19.131 stall=False recoveries=0 ready=0 wrist=2.088 N load=4.790 N
+[generalization] 139/192 g034_cross_axis_combined_moderate_v2/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.970 stall=False recoveries=1 ready=1 wrist=2.292 N load=3.085 N
+[generalization] 140/192 g034_cross_axis_combined_moderate_v2/repeat0/force
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=19.078 stall=False recoveries=0 ready=0 wrist=2.292 N load=3.409 N
+[generalization] 141/192 g039_cross_axis_combined_severe_v3/repeat0/force
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=17.768 stall=True recoveries=2 ready=0 wrist=2.257 N load=13.954 N
+[generalization] 142/192 g039_cross_axis_combined_severe_v3/repeat0/nominal
+Setting seed: 20260913
+[generalization] grasp_retention_limit; depth=17.912 stall=True recoveries=0 ready=0 wrist=2.294 N load=12.649 N
+[generalization] 143/192 g039_cross_axis_combined_severe_v3/repeat0/axial
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=15.861 stall=True recoveries=2 ready=2 wrist=3.109 N load=10.388 N
+[generalization] 144/192 g039_cross_axis_combined_severe_v3/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.746 stall=True recoveries=1 ready=1 wrist=1.982 N load=9.901 N
+[generalization] 145/192 g028_oblique_tilt_severe_v0/repeat0/dewedge
+Setting seed: 20260913
+[generalization] grasp_retention_limit; depth=17.292 stall=False recoveries=0 ready=0 wrist=2.206 N load=17.751 N
+[generalization] 146/192 g028_oblique_tilt_severe_v0/repeat0/force
+Setting seed: 20260913
+[generalization] grasp_retention_limit; depth=17.293 stall=False recoveries=1 ready=0 wrist=1.978 N load=17.508 N
+[generalization] 147/192 g028_oblique_tilt_severe_v0/repeat0/nominal
+Setting seed: 20260913
+[generalization] grasp_retention_limit; depth=17.286 stall=False recoveries=0 ready=0 wrist=2.135 N load=16.502 N
+[generalization] 148/192 g028_oblique_tilt_severe_v0/repeat0/axial
+Setting seed: 20260913
+[generalization] grasp_retention_limit; depth=17.292 stall=False recoveries=0 ready=0 wrist=2.206 N load=17.751 N
+[generalization] 149/192 g037_cross_axis_combined_severe_v1/repeat0/nominal
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=15.522 stall=True recoveries=0 ready=0 wrist=3.601 N load=11.179 N
+[generalization] 150/192 g037_cross_axis_combined_severe_v1/repeat0/axial
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=14.761 stall=True recoveries=2 ready=2 wrist=3.526 N load=7.710 N
+[generalization] 151/192 g037_cross_axis_combined_severe_v1/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.810 stall=False recoveries=1 ready=1 wrist=2.784 N load=7.843 N
+[generalization] 152/192 g037_cross_axis_combined_severe_v1/repeat0/force
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=14.813 stall=True recoveries=2 ready=0 wrist=3.508 N load=6.393 N
+[generalization] 153/192 g015_oblique_offset_severe_v3/repeat0/nominal
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.576 stall=False recoveries=0 ready=0 wrist=0.820 N load=0.768 N
+[generalization] 154/192 g015_oblique_offset_severe_v3/repeat0/axial
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.576 stall=False recoveries=0 ready=0 wrist=0.814 N load=0.842 N
+[generalization] 155/192 g015_oblique_offset_severe_v3/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.576 stall=False recoveries=0 ready=0 wrist=0.814 N load=0.842 N
+[generalization] 156/192 g015_oblique_offset_severe_v3/repeat0/force
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.576 stall=False recoveries=0 ready=0 wrist=0.820 N load=0.768 N
+[generalization] 157/192 g032_cross_axis_combined_moderate_v0/repeat0/force
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=19.481 stall=False recoveries=1 ready=0 wrist=1.793 N load=3.261 N
+[generalization] 158/192 g032_cross_axis_combined_moderate_v0/repeat0/nominal
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=19.483 stall=False recoveries=0 ready=0 wrist=2.412 N load=4.247 N
+[generalization] 159/192 g032_cross_axis_combined_moderate_v0/repeat0/axial
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.503 stall=False recoveries=0 ready=0 wrist=2.061 N load=3.768 N
+[generalization] 160/192 g032_cross_axis_combined_moderate_v0/repeat0/dewedge
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=19.483 stall=False recoveries=0 ready=0 wrist=2.412 N load=4.247 N
+[generalization] 161/192 g023_axis_tilt_severe_v3/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.781 stall=True recoveries=1 ready=1 wrist=2.450 N load=13.800 N
+[generalization] 162/192 g023_axis_tilt_severe_v3/repeat0/force
+Setting seed: 20260913
+[generalization] grasp_retention_limit; depth=15.997 stall=True recoveries=2 ready=0 wrist=2.464 N load=16.402 N
+[generalization] 163/192 g023_axis_tilt_severe_v3/repeat0/nominal
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=15.805 stall=True recoveries=0 ready=0 wrist=3.235 N load=16.293 N
+[generalization] 164/192 g023_axis_tilt_severe_v3/repeat0/axial
+Setting seed: 20260913
+[generalization] unloading_budget_exhausted; depth=15.975 stall=True recoveries=1 ready=0 wrist=3.837 N load=13.800 N
+[generalization] 165/192 g006_axis_offset_severe_v2/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.573 stall=False recoveries=0 ready=0 wrist=0.831 N load=0.760 N
+[generalization] 166/192 g006_axis_offset_severe_v2/repeat0/force
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.578 stall=False recoveries=0 ready=0 wrist=0.844 N load=0.772 N
+[generalization] 167/192 g006_axis_offset_severe_v2/repeat0/nominal
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.578 stall=False recoveries=0 ready=0 wrist=0.844 N load=0.772 N
+[generalization] 168/192 g006_axis_offset_severe_v2/repeat0/axial
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.573 stall=False recoveries=0 ready=0 wrist=0.831 N load=0.760 N
+[generalization] 169/192 g041_oblique_combined_moderate_v1/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.977 stall=False recoveries=1 ready=1 wrist=2.276 N load=3.408 N
+[generalization] 170/192 g041_oblique_combined_moderate_v1/repeat0/force
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=19.421 stall=False recoveries=0 ready=0 wrist=2.276 N load=4.188 N
+[generalization] 171/192 g041_oblique_combined_moderate_v1/repeat0/nominal
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=19.424 stall=False recoveries=0 ready=0 wrist=2.402 N load=4.155 N
+[generalization] 172/192 g041_oblique_combined_moderate_v1/repeat0/axial
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=19.050 stall=True recoveries=2 ready=2 wrist=2.276 N load=3.621 N
+[generalization] 173/192 g010_oblique_offset_moderate_v2/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.748 stall=False recoveries=0 ready=0 wrist=1.016 N load=0.960 N
+[generalization] 174/192 g010_oblique_offset_moderate_v2/repeat0/force
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.745 stall=False recoveries=0 ready=0 wrist=0.970 N load=0.898 N
+[generalization] 175/192 g010_oblique_offset_moderate_v2/repeat0/nominal
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.748 stall=False recoveries=0 ready=0 wrist=1.016 N load=0.960 N
+[generalization] 176/192 g010_oblique_offset_moderate_v2/repeat0/axial
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.748 stall=False recoveries=0 ready=0 wrist=1.016 N load=0.960 N
+[generalization] 177/192 g024_oblique_tilt_moderate_v0/repeat0/dewedge
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=19.463 stall=False recoveries=0 ready=0 wrist=1.444 N load=3.463 N
+[generalization] 178/192 g024_oblique_tilt_moderate_v0/repeat0/force
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=19.487 stall=False recoveries=0 ready=0 wrist=1.359 N load=3.691 N
+[generalization] 179/192 g024_oblique_tilt_moderate_v0/repeat0/nominal
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=19.487 stall=False recoveries=0 ready=0 wrist=1.359 N load=3.691 N
+[generalization] 180/192 g024_oblique_tilt_moderate_v0/repeat0/axial
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=19.463 stall=False recoveries=0 ready=0 wrist=1.444 N load=3.463 N
+[generalization] 181/192 g043_oblique_combined_moderate_v3/repeat0/nominal
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.509 stall=False recoveries=0 ready=0 wrist=2.859 N load=3.085 N
+[generalization] 182/192 g043_oblique_combined_moderate_v3/repeat0/axial
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.509 stall=False recoveries=0 ready=0 wrist=2.859 N load=3.085 N
+[generalization] 183/192 g043_oblique_combined_moderate_v3/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.517 stall=False recoveries=0 ready=0 wrist=2.417 N load=2.739 N
+[generalization] 184/192 g043_oblique_combined_moderate_v3/repeat0/force
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.509 stall=False recoveries=0 ready=0 wrist=2.859 N load=3.085 N
+[generalization] 185/192 g002_axis_offset_moderate_v2/repeat0/axial
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.732 stall=False recoveries=0 ready=0 wrist=0.237 N load=0.236 N
+[generalization] 186/192 g002_axis_offset_moderate_v2/repeat0/dewedge
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.700 stall=False recoveries=0 ready=0 wrist=0.278 N load=0.324 N
+[generalization] 187/192 g002_axis_offset_moderate_v2/repeat0/force
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.732 stall=False recoveries=0 ready=0 wrist=0.237 N load=0.236 N
+[generalization] 188/192 g002_axis_offset_moderate_v2/repeat0/nominal
+Setting seed: 20260913
+[generalization] insertion_success; depth=19.732 stall=False recoveries=0 ready=0 wrist=0.237 N load=0.236 N
+[generalization] 189/192 g042_oblique_combined_moderate_v2/repeat0/force
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=19.425 stall=False recoveries=0 ready=0 wrist=2.454 N load=2.286 N
+[generalization] 190/192 g042_oblique_combined_moderate_v2/repeat0/nominal
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=19.423 stall=False recoveries=0 ready=0 wrist=3.427 N load=3.212 N
+[generalization] 191/192 g042_oblique_combined_moderate_v2/repeat0/axial
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=19.423 stall=False recoveries=0 ready=0 wrist=3.427 N load=3.212 N
+[generalization] 192/192 g042_oblique_combined_moderate_v2/repeat0/dewedge
+Setting seed: 20260913
+[generalization] time_budget_exhausted; depth=19.425 stall=False recoveries=0 ready=0 wrist=2.454 N load=2.286 N

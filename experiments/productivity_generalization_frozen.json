@@ -1,0 +1,2478 @@
+{
+  "schema": "Contact-Productivity-Generalization-v1",
+  "frozen_at_utc": "2026-09-15T13:03:53.777669+00:00",
+  "previous_experiment": "outputs/Contact-Productivity-Dewedge-v1",
+  "previous_manifest_sha256": "6ca4f556da5f0bb2e3aef0be05bc43980a7b5c16cd43022a4b393d4e37995bb5",
+  "design": {
+    "history_s": 0.5,
+    "check_s": 0.1,
+    "minimum_command_mm": 0.1,
+    "contact_margin_mm": 0.1,
+    "consecutive_checks": 2,
+    "stop_s": 0.25,
+    "retract_mm": 1.0,
+    "retract_s": 0.5,
+    "rejoin_s": 0.5,
+    "max_interventions": 2,
+    "insertion_budget_s": 20.0,
+    "nonstall_alert_budget": 0.1
+  },
+  "unloading_design": {
+    "actual_target_mm": 0.5,
+    "max_command_mm": 5.0,
+    "command_ramp_s": 4.0,
+    "recovery_timeout_s": 5.0,
+    "verification_hold_s": 0.25
+  },
+  "dewedge_design": {
+    "relaxation_s": 0.5,
+    "post_verification_hold_s": 0.25
+  },
+  "eta_threshold": 0.4212659765112803,
+  "force_threshold_n": 1.035449028015137,
+  "policy_source_sha256": {
+    "research/productivity_control.py": "03f4fd21ca6adb2f88f9649477d2b12370e6cb2c4556dcc22631b58dd2c3a262",
+    "simulation/productivity_control.py": "085fd486208fe80b88d1314729a4ab6d9edd312445508f0c55cbec9809fd5d4b",
+    "research/productivity_unloading.py": "0317b208c963e52bc2c30b614fca0cdd4e54a67fe43888c9035fd2f77c12420f",
+    "simulation/productivity_unloading.py": "8ddd17fc748c8f116772210de0d44c6e6a448c88153d097de55904690321e8f2",
+    "research/productivity_dewedge.py": "85ea24f65e566baeb3ccb2b6d5b315ebab567a5a4e3f8d286e277cf37635ab71",
+    "simulation/productivity_dewedge.py": "c5f658c8ee25a9bd05e2fca91f619c41e128c04f9b448e7c2b693a19b90f2e89",
+    "simulation/forge_backend.py": "fa60db0c72e74cb79a0b76e5e2819dbc3419c53e0ec56c20f36e88d85712887e",
+    "simulation/contact.py": "a23500505916cf97fe792258fedae0ea583f03b2652dc42121e2d761fbb6e522",
+    "simulation/forge_experiment.py": "f6e94fb4c1ee614ef1e6cc7424583bb6149774a4a881257ff5c1b2999f935357",
+    "research/forge_protocol.py": "c636047d37dfffad068ad5f30a4a592aee70abcdf4b58ec99086e554b10d194d",
+    "research/phase2_protocol.py": "3d05bd187320591bb9e69d38f9dc3263925608f17213c945caf8c7a6adcc84ca",
+    "research/phase2b.py": "0dfa4d32fd924a72576a7f1316198352147a389e5fe4e328727eb0637a94949a",
+    "experiments/forge_phase2.json": "3657344364a049517872c72d572e583499b39bf6488ef679f9432baeae505557",
+    "experiments/productivity_control_calibration.json": "64b95b05689507778eee00807f171c74ea9d33d157221a6d561ae2ee1d07ab92"
+  },
+  "cases": [
+    {
+      "case_id": "g000_axis_offset_moderate_v0",
+      "family": "axis_offset",
+      "severity": "moderate",
+      "sign_variant": 0,
+      "ramp_onset_mm": 7.0,
+      "offset_magnitude_mm": 0.7,
+      "tilt_magnitude_deg": 0.0,
+      "case": {
+        "family": "axis_offset",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 7.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.7,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "g000_axis_offset_moderate_v0",
+        "split_group_id": "g000_axis_offset_moderate_v0",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g001_axis_offset_moderate_v1",
+      "family": "axis_offset",
+      "severity": "moderate",
+      "sign_variant": 1,
+      "ramp_onset_mm": 12.0,
+      "offset_magnitude_mm": 0.7,
+      "tilt_magnitude_deg": 0.0,
+      "case": {
+        "family": "axis_offset",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 12.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.7,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "g001_axis_offset_moderate_v1",
+        "split_group_id": "g001_axis_offset_moderate_v1",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g002_axis_offset_moderate_v2",
+      "family": "axis_offset",
+      "severity": "moderate",
+      "sign_variant": 2,
+      "ramp_onset_mm": 15.0,
+      "offset_magnitude_mm": 0.7,
+      "tilt_magnitude_deg": 0.0,
+      "case": {
+        "family": "axis_offset",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 15.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.7,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "g002_axis_offset_moderate_v2",
+        "split_group_id": "g002_axis_offset_moderate_v2",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g003_axis_offset_moderate_v3",
+      "family": "axis_offset",
+      "severity": "moderate",
+      "sign_variant": 3,
+      "ramp_onset_mm": 7.0,
+      "offset_magnitude_mm": 0.7,
+      "tilt_magnitude_deg": 0.0,
+      "case": {
+        "family": "axis_offset",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 7.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": -0.7,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "g003_axis_offset_moderate_v3",
+        "split_group_id": "g003_axis_offset_moderate_v3",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g004_axis_offset_severe_v0",
+      "family": "axis_offset",
+      "severity": "severe",
+      "sign_variant": 0,
+      "ramp_onset_mm": 12.0,
+      "offset_magnitude_mm": 1.2,
+      "tilt_magnitude_deg": 0.0,
+      "case": {
+        "family": "axis_offset",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 12.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 1.2,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "g004_axis_offset_severe_v0",
+        "split_group_id": "g004_axis_offset_severe_v0",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g005_axis_offset_severe_v1",
+      "family": "axis_offset",
+      "severity": "severe",
+      "sign_variant": 1,
+      "ramp_onset_mm": 15.0,
+      "offset_magnitude_mm": 1.2,
+      "tilt_magnitude_deg": 0.0,
+      "case": {
+        "family": "axis_offset",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 15.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -1.2,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "g005_axis_offset_severe_v1",
+        "split_group_id": "g005_axis_offset_severe_v1",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g006_axis_offset_severe_v2",
+      "family": "axis_offset",
+      "severity": "severe",
+      "sign_variant": 2,
+      "ramp_onset_mm": 7.0,
+      "offset_magnitude_mm": 1.2,
+      "tilt_magnitude_deg": 0.0,
+      "case": {
+        "family": "axis_offset",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 7.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 1.2,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "g006_axis_offset_severe_v2",
+        "split_group_id": "g006_axis_offset_severe_v2",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g007_axis_offset_severe_v3",
+      "family": "axis_offset",
+      "severity": "severe",
+      "sign_variant": 3,
+      "ramp_onset_mm": 12.0,
+      "offset_magnitude_mm": 1.2,
+      "tilt_magnitude_deg": 0.0,
+      "case": {
+        "family": "axis_offset",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 12.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": -1.2,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "g007_axis_offset_severe_v3",
+        "split_group_id": "g007_axis_offset_severe_v3",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g008_oblique_offset_moderate_v0",
+      "family": "oblique_offset",
+      "severity": "moderate",
+      "sign_variant": 0,
+      "ramp_onset_mm": 12.0,
+      "offset_magnitude_mm": 0.7,
+      "tilt_magnitude_deg": 0.0,
+      "case": {
+        "family": "oblique_offset",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 12.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.5599999999999999,
+        "final_offset_y_mm": 0.42,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "g008_oblique_offset_moderate_v0",
+        "split_group_id": "g008_oblique_offset_moderate_v0",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g009_oblique_offset_moderate_v1",
+      "family": "oblique_offset",
+      "severity": "moderate",
+      "sign_variant": 1,
+      "ramp_onset_mm": 15.0,
+      "offset_magnitude_mm": 0.7,
+      "tilt_magnitude_deg": 0.0,
+      "case": {
+        "family": "oblique_offset",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 15.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.5599999999999999,
+        "final_offset_y_mm": -0.42,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "g009_oblique_offset_moderate_v1",
+        "split_group_id": "g009_oblique_offset_moderate_v1",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g010_oblique_offset_moderate_v2",
+      "family": "oblique_offset",
+      "severity": "moderate",
+      "sign_variant": 2,
+      "ramp_onset_mm": 7.0,
+      "offset_magnitude_mm": 0.7,
+      "tilt_magnitude_deg": 0.0,
+      "case": {
+        "family": "oblique_offset",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 7.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.5599999999999999,
+        "final_offset_y_mm": -0.42,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "g010_oblique_offset_moderate_v2",
+        "split_group_id": "g010_oblique_offset_moderate_v2",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g011_oblique_offset_moderate_v3",
+      "family": "oblique_offset",
+      "severity": "moderate",
+      "sign_variant": 3,
+      "ramp_onset_mm": 12.0,
+      "offset_magnitude_mm": 0.7,
+      "tilt_magnitude_deg": 0.0,
+      "case": {
+        "family": "oblique_offset",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 12.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.5599999999999999,
+        "final_offset_y_mm": 0.42,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "g011_oblique_offset_moderate_v3",
+        "split_group_id": "g011_oblique_offset_moderate_v3",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g012_oblique_offset_severe_v0",
+      "family": "oblique_offset",
+      "severity": "severe",
+      "sign_variant": 0,
+      "ramp_onset_mm": 15.0,
+      "offset_magnitude_mm": 1.2,
+      "tilt_magnitude_deg": 0.0,
+      "case": {
+        "family": "oblique_offset",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 15.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.96,
+        "final_offset_y_mm": 0.72,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "g012_oblique_offset_severe_v0",
+        "split_group_id": "g012_oblique_offset_severe_v0",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g013_oblique_offset_severe_v1",
+      "family": "oblique_offset",
+      "severity": "severe",
+      "sign_variant": 1,
+      "ramp_onset_mm": 7.0,
+      "offset_magnitude_mm": 1.2,
+      "tilt_magnitude_deg": 0.0,
+      "case": {
+        "family": "oblique_offset",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 7.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.96,
+        "final_offset_y_mm": -0.72,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "g013_oblique_offset_severe_v1",
+        "split_group_id": "g013_oblique_offset_severe_v1",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g014_oblique_offset_severe_v2",
+      "family": "oblique_offset",
+      "severity": "severe",
+      "sign_variant": 2,
+      "ramp_onset_mm": 12.0,
+      "offset_magnitude_mm": 1.2,
+      "tilt_magnitude_deg": 0.0,
+      "case": {
+        "family": "oblique_offset",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 12.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.96,
+        "final_offset_y_mm": -0.72,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "g014_oblique_offset_severe_v2",
+        "split_group_id": "g014_oblique_offset_severe_v2",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g015_oblique_offset_severe_v3",
+      "family": "oblique_offset",
+      "severity": "severe",
+      "sign_variant": 3,
+      "ramp_onset_mm": 15.0,
+      "offset_magnitude_mm": 1.2,
+      "tilt_magnitude_deg": 0.0,
+      "case": {
+        "family": "oblique_offset",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 15.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.96,
+        "final_offset_y_mm": 0.72,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "g015_oblique_offset_severe_v3",
+        "split_group_id": "g015_oblique_offset_severe_v3",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g016_axis_tilt_moderate_v0",
+      "family": "axis_tilt",
+      "severity": "moderate",
+      "sign_variant": 0,
+      "ramp_onset_mm": 15.0,
+      "offset_magnitude_mm": 0.0,
+      "tilt_magnitude_deg": 3.5,
+      "case": {
+        "family": "axis_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 15.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 3.5,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "g016_axis_tilt_moderate_v0",
+        "split_group_id": "g016_axis_tilt_moderate_v0",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g017_axis_tilt_moderate_v1",
+      "family": "axis_tilt",
+      "severity": "moderate",
+      "sign_variant": 1,
+      "ramp_onset_mm": 7.0,
+      "offset_magnitude_mm": 0.0,
+      "tilt_magnitude_deg": 3.5,
+      "case": {
+        "family": "axis_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 7.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": -3.5,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "g017_axis_tilt_moderate_v1",
+        "split_group_id": "g017_axis_tilt_moderate_v1",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g018_axis_tilt_moderate_v2",
+      "family": "axis_tilt",
+      "severity": "moderate",
+      "sign_variant": 2,
+      "ramp_onset_mm": 12.0,
+      "offset_magnitude_mm": 0.0,
+      "tilt_magnitude_deg": 3.5,
+      "case": {
+        "family": "axis_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 12.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 3.5,
+        "path_group_id": "g018_axis_tilt_moderate_v2",
+        "split_group_id": "g018_axis_tilt_moderate_v2",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g019_axis_tilt_moderate_v3",
+      "family": "axis_tilt",
+      "severity": "moderate",
+      "sign_variant": 3,
+      "ramp_onset_mm": 15.0,
+      "offset_magnitude_mm": 0.0,
+      "tilt_magnitude_deg": 3.5,
+      "case": {
+        "family": "axis_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 15.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": -3.5,
+        "path_group_id": "g019_axis_tilt_moderate_v3",
+        "split_group_id": "g019_axis_tilt_moderate_v3",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g020_axis_tilt_severe_v0",
+      "family": "axis_tilt",
+      "severity": "severe",
+      "sign_variant": 0,
+      "ramp_onset_mm": 7.0,
+      "offset_magnitude_mm": 0.0,
+      "tilt_magnitude_deg": 7.0,
+      "case": {
+        "family": "axis_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 7.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 7.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "g020_axis_tilt_severe_v0",
+        "split_group_id": "g020_axis_tilt_severe_v0",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g021_axis_tilt_severe_v1",
+      "family": "axis_tilt",
+      "severity": "severe",
+      "sign_variant": 1,
+      "ramp_onset_mm": 12.0,
+      "offset_magnitude_mm": 0.0,
+      "tilt_magnitude_deg": 7.0,
+      "case": {
+        "family": "axis_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 12.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": -7.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "g021_axis_tilt_severe_v1",
+        "split_group_id": "g021_axis_tilt_severe_v1",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g022_axis_tilt_severe_v2",
+      "family": "axis_tilt",
+      "severity": "severe",
+      "sign_variant": 2,
+      "ramp_onset_mm": 15.0,
+      "offset_magnitude_mm": 0.0,
+      "tilt_magnitude_deg": 7.0,
+      "case": {
+        "family": "axis_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 15.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 7.0,
+        "path_group_id": "g022_axis_tilt_severe_v2",
+        "split_group_id": "g022_axis_tilt_severe_v2",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g023_axis_tilt_severe_v3",
+      "family": "axis_tilt",
+      "severity": "severe",
+      "sign_variant": 3,
+      "ramp_onset_mm": 7.0,
+      "offset_magnitude_mm": 0.0,
+      "tilt_magnitude_deg": 7.0,
+      "case": {
+        "family": "axis_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 7.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": -7.0,
+        "path_group_id": "g023_axis_tilt_severe_v3",
+        "split_group_id": "g023_axis_tilt_severe_v3",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g024_oblique_tilt_moderate_v0",
+      "family": "oblique_tilt",
+      "severity": "moderate",
+      "sign_variant": 0,
+      "ramp_onset_mm": 7.0,
+      "offset_magnitude_mm": 0.0,
+      "tilt_magnitude_deg": 3.5000000000000004,
+      "case": {
+        "family": "oblique_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 7.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 2.1,
+        "final_pitch_deg": 2.8000000000000003,
+        "path_group_id": "g024_oblique_tilt_moderate_v0",
+        "split_group_id": "g024_oblique_tilt_moderate_v0",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g025_oblique_tilt_moderate_v1",
+      "family": "oblique_tilt",
+      "severity": "moderate",
+      "sign_variant": 1,
+      "ramp_onset_mm": 12.0,
+      "offset_magnitude_mm": 0.0,
+      "tilt_magnitude_deg": 3.5000000000000004,
+      "case": {
+        "family": "oblique_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 12.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": -2.1,
+        "final_pitch_deg": -2.8000000000000003,
+        "path_group_id": "g025_oblique_tilt_moderate_v1",
+        "split_group_id": "g025_oblique_tilt_moderate_v1",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g026_oblique_tilt_moderate_v2",
+      "family": "oblique_tilt",
+      "severity": "moderate",
+      "sign_variant": 2,
+      "ramp_onset_mm": 15.0,
+      "offset_magnitude_mm": 0.0,
+      "tilt_magnitude_deg": 3.5000000000000004,
+      "case": {
+        "family": "oblique_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 15.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 2.1,
+        "final_pitch_deg": -2.8000000000000003,
+        "path_group_id": "g026_oblique_tilt_moderate_v2",
+        "split_group_id": "g026_oblique_tilt_moderate_v2",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g027_oblique_tilt_moderate_v3",
+      "family": "oblique_tilt",
+      "severity": "moderate",
+      "sign_variant": 3,
+      "ramp_onset_mm": 7.0,
+      "offset_magnitude_mm": 0.0,
+      "tilt_magnitude_deg": 3.5000000000000004,
+      "case": {
+        "family": "oblique_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 7.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": -2.1,
+        "final_pitch_deg": 2.8000000000000003,
+        "path_group_id": "g027_oblique_tilt_moderate_v3",
+        "split_group_id": "g027_oblique_tilt_moderate_v3",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g028_oblique_tilt_severe_v0",
+      "family": "oblique_tilt",
+      "severity": "severe",
+      "sign_variant": 0,
+      "ramp_onset_mm": 12.0,
+      "offset_magnitude_mm": 0.0,
+      "tilt_magnitude_deg": 7.000000000000001,
+      "case": {
+        "family": "oblique_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 12.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 4.2,
+        "final_pitch_deg": 5.6000000000000005,
+        "path_group_id": "g028_oblique_tilt_severe_v0",
+        "split_group_id": "g028_oblique_tilt_severe_v0",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g029_oblique_tilt_severe_v1",
+      "family": "oblique_tilt",
+      "severity": "severe",
+      "sign_variant": 1,
+      "ramp_onset_mm": 15.0,
+      "offset_magnitude_mm": 0.0,
+      "tilt_magnitude_deg": 7.000000000000001,
+      "case": {
+        "family": "oblique_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 15.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": -4.2,
+        "final_pitch_deg": -5.6000000000000005,
+        "path_group_id": "g029_oblique_tilt_severe_v1",
+        "split_group_id": "g029_oblique_tilt_severe_v1",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g030_oblique_tilt_severe_v2",
+      "family": "oblique_tilt",
+      "severity": "severe",
+      "sign_variant": 2,
+      "ramp_onset_mm": 7.0,
+      "offset_magnitude_mm": 0.0,
+      "tilt_magnitude_deg": 7.000000000000001,
+      "case": {
+        "family": "oblique_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 7.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 4.2,
+        "final_pitch_deg": -5.6000000000000005,
+        "path_group_id": "g030_oblique_tilt_severe_v2",
+        "split_group_id": "g030_oblique_tilt_severe_v2",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g031_oblique_tilt_severe_v3",
+      "family": "oblique_tilt",
+      "severity": "severe",
+      "sign_variant": 3,
+      "ramp_onset_mm": 12.0,
+      "offset_magnitude_mm": 0.0,
+      "tilt_magnitude_deg": 7.000000000000001,
+      "case": {
+        "family": "oblique_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 12.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": -4.2,
+        "final_pitch_deg": 5.6000000000000005,
+        "path_group_id": "g031_oblique_tilt_severe_v3",
+        "split_group_id": "g031_oblique_tilt_severe_v3",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g032_cross_axis_combined_moderate_v0",
+      "family": "cross_axis_combined",
+      "severity": "moderate",
+      "sign_variant": 0,
+      "ramp_onset_mm": 12.0,
+      "offset_magnitude_mm": 0.7,
+      "tilt_magnitude_deg": 3.5,
+      "case": {
+        "family": "cross_axis_combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 12.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.7,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 3.5,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "g032_cross_axis_combined_moderate_v0",
+        "split_group_id": "g032_cross_axis_combined_moderate_v0",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g033_cross_axis_combined_moderate_v1",
+      "family": "cross_axis_combined",
+      "severity": "moderate",
+      "sign_variant": 1,
+      "ramp_onset_mm": 15.0,
+      "offset_magnitude_mm": 0.7,
+      "tilt_magnitude_deg": 3.5,
+      "case": {
+        "family": "cross_axis_combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 15.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.7,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": -3.5,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "g033_cross_axis_combined_moderate_v1",
+        "split_group_id": "g033_cross_axis_combined_moderate_v1",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g034_cross_axis_combined_moderate_v2",
+      "family": "cross_axis_combined",
+      "severity": "moderate",
+      "sign_variant": 2,
+      "ramp_onset_mm": 7.0,
+      "offset_magnitude_mm": 0.7,
+      "tilt_magnitude_deg": 3.5,
+      "case": {
+        "family": "cross_axis_combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 7.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.7,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": -3.5,
+        "path_group_id": "g034_cross_axis_combined_moderate_v2",
+        "split_group_id": "g034_cross_axis_combined_moderate_v2",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g035_cross_axis_combined_moderate_v3",
+      "family": "cross_axis_combined",
+      "severity": "moderate",
+      "sign_variant": 3,
+      "ramp_onset_mm": 12.0,
+      "offset_magnitude_mm": 0.7,
+      "tilt_magnitude_deg": 3.5,
+      "case": {
+        "family": "cross_axis_combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 12.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": -0.7,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 3.5,
+        "path_group_id": "g035_cross_axis_combined_moderate_v3",
+        "split_group_id": "g035_cross_axis_combined_moderate_v3",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g036_cross_axis_combined_severe_v0",
+      "family": "cross_axis_combined",
+      "severity": "severe",
+      "sign_variant": 0,
+      "ramp_onset_mm": 15.0,
+      "offset_magnitude_mm": 1.2,
+      "tilt_magnitude_deg": 7.0,
+      "case": {
+        "family": "cross_axis_combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 15.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 1.2,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 7.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "g036_cross_axis_combined_severe_v0",
+        "split_group_id": "g036_cross_axis_combined_severe_v0",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g037_cross_axis_combined_severe_v1",
+      "family": "cross_axis_combined",
+      "severity": "severe",
+      "sign_variant": 1,
+      "ramp_onset_mm": 7.0,
+      "offset_magnitude_mm": 1.2,
+      "tilt_magnitude_deg": 7.0,
+      "case": {
+        "family": "cross_axis_combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 7.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -1.2,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": -7.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "g037_cross_axis_combined_severe_v1",
+        "split_group_id": "g037_cross_axis_combined_severe_v1",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g038_cross_axis_combined_severe_v2",
+      "family": "cross_axis_combined",
+      "severity": "severe",
+      "sign_variant": 2,
+      "ramp_onset_mm": 12.0,
+      "offset_magnitude_mm": 1.2,
+      "tilt_magnitude_deg": 7.0,
+      "case": {
+        "family": "cross_axis_combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 12.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 1.2,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": -7.0,
+        "path_group_id": "g038_cross_axis_combined_severe_v2",
+        "split_group_id": "g038_cross_axis_combined_severe_v2",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g039_cross_axis_combined_severe_v3",
+      "family": "cross_axis_combined",
+      "severity": "severe",
+      "sign_variant": 3,
+      "ramp_onset_mm": 15.0,
+      "offset_magnitude_mm": 1.2,
+      "tilt_magnitude_deg": 7.0,
+      "case": {
+        "family": "cross_axis_combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 15.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": -1.2,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 7.0,
+        "path_group_id": "g039_cross_axis_combined_severe_v3",
+        "split_group_id": "g039_cross_axis_combined_severe_v3",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g040_oblique_combined_moderate_v0",
+      "family": "oblique_combined",
+      "severity": "moderate",
+      "sign_variant": 0,
+      "ramp_onset_mm": 15.0,
+      "offset_magnitude_mm": 0.7,
+      "tilt_magnitude_deg": 3.5000000000000004,
+      "case": {
+        "family": "oblique_combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 15.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.5599999999999999,
+        "final_offset_y_mm": 0.42,
+        "final_roll_deg": 2.8000000000000003,
+        "final_pitch_deg": -2.1,
+        "path_group_id": "g040_oblique_combined_moderate_v0",
+        "split_group_id": "g040_oblique_combined_moderate_v0",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g041_oblique_combined_moderate_v1",
+      "family": "oblique_combined",
+      "severity": "moderate",
+      "sign_variant": 1,
+      "ramp_onset_mm": 7.0,
+      "offset_magnitude_mm": 0.7,
+      "tilt_magnitude_deg": 3.5000000000000004,
+      "case": {
+        "family": "oblique_combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 7.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.5599999999999999,
+        "final_offset_y_mm": -0.42,
+        "final_roll_deg": -2.8000000000000003,
+        "final_pitch_deg": 2.1,
+        "path_group_id": "g041_oblique_combined_moderate_v1",
+        "split_group_id": "g041_oblique_combined_moderate_v1",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g042_oblique_combined_moderate_v2",
+      "family": "oblique_combined",
+      "severity": "moderate",
+      "sign_variant": 2,
+      "ramp_onset_mm": 12.0,
+      "offset_magnitude_mm": 0.7,
+      "tilt_magnitude_deg": 3.5000000000000004,
+      "case": {
+        "family": "oblique_combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 12.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.5599999999999999,
+        "final_offset_y_mm": -0.42,
+        "final_roll_deg": 2.8000000000000003,
+        "final_pitch_deg": 2.1,
+        "path_group_id": "g042_oblique_combined_moderate_v2",
+        "split_group_id": "g042_oblique_combined_moderate_v2",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g043_oblique_combined_moderate_v3",
+      "family": "oblique_combined",
+      "severity": "moderate",
+      "sign_variant": 3,
+      "ramp_onset_mm": 15.0,
+      "offset_magnitude_mm": 0.7,
+      "tilt_magnitude_deg": 3.5000000000000004,
+      "case": {
+        "family": "oblique_combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 15.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.5599999999999999,
+        "final_offset_y_mm": 0.42,
+        "final_roll_deg": -2.8000000000000003,
+        "final_pitch_deg": -2.1,
+        "path_group_id": "g043_oblique_combined_moderate_v3",
+        "split_group_id": "g043_oblique_combined_moderate_v3",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g044_oblique_combined_severe_v0",
+      "family": "oblique_combined",
+      "severity": "severe",
+      "sign_variant": 0,
+      "ramp_onset_mm": 7.0,
+      "offset_magnitude_mm": 1.2,
+      "tilt_magnitude_deg": 7.000000000000001,
+      "case": {
+        "family": "oblique_combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 7.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.96,
+        "final_offset_y_mm": 0.72,
+        "final_roll_deg": 5.6000000000000005,
+        "final_pitch_deg": -4.2,
+        "path_group_id": "g044_oblique_combined_severe_v0",
+        "split_group_id": "g044_oblique_combined_severe_v0",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g045_oblique_combined_severe_v1",
+      "family": "oblique_combined",
+      "severity": "severe",
+      "sign_variant": 1,
+      "ramp_onset_mm": 12.0,
+      "offset_magnitude_mm": 1.2,
+      "tilt_magnitude_deg": 7.000000000000001,
+      "case": {
+        "family": "oblique_combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 12.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.96,
+        "final_offset_y_mm": -0.72,
+        "final_roll_deg": -5.6000000000000005,
+        "final_pitch_deg": 4.2,
+        "path_group_id": "g045_oblique_combined_severe_v1",
+        "split_group_id": "g045_oblique_combined_severe_v1",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g046_oblique_combined_severe_v2",
+      "family": "oblique_combined",
+      "severity": "severe",
+      "sign_variant": 2,
+      "ramp_onset_mm": 15.0,
+      "offset_magnitude_mm": 1.2,
+      "tilt_magnitude_deg": 7.000000000000001,
+      "case": {
+        "family": "oblique_combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 15.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.96,
+        "final_offset_y_mm": -0.72,
+        "final_roll_deg": 5.6000000000000005,
+        "final_pitch_deg": 4.2,
+        "path_group_id": "g046_oblique_combined_severe_v2",
+        "split_group_id": "g046_oblique_combined_severe_v2",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    },
+    {
+      "case_id": "g047_oblique_combined_severe_v3",
+      "family": "oblique_combined",
+      "severity": "severe",
+      "sign_variant": 3,
+      "ramp_onset_mm": 7.0,
+      "offset_magnitude_mm": 1.2,
+      "tilt_magnitude_deg": 7.000000000000001,
+      "case": {
+        "family": "oblique_combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 7.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.96,
+        "final_offset_y_mm": 0.72,
+        "final_roll_deg": -5.6000000000000005,
+        "final_pitch_deg": -4.2,
+        "path_group_id": "g047_oblique_combined_severe_v3",
+        "split_group_id": "g047_oblique_combined_severe_v3",
+        "sample_role": "frozen_held_out_evaluation"
+      }
+    }
+  ],
+  "schedule": [
+    {
+      "case_id": "g022_axis_tilt_severe_v2",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g022_axis_tilt_severe_v2",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g022_axis_tilt_severe_v2",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g022_axis_tilt_severe_v2",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g026_oblique_tilt_moderate_v2",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g026_oblique_tilt_moderate_v2",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g026_oblique_tilt_moderate_v2",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g026_oblique_tilt_moderate_v2",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g040_oblique_combined_moderate_v0",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g040_oblique_combined_moderate_v0",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g040_oblique_combined_moderate_v0",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g040_oblique_combined_moderate_v0",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g021_axis_tilt_severe_v1",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g021_axis_tilt_severe_v1",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g021_axis_tilt_severe_v1",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g021_axis_tilt_severe_v1",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g047_oblique_combined_severe_v3",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g047_oblique_combined_severe_v3",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g047_oblique_combined_severe_v3",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g047_oblique_combined_severe_v3",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g046_oblique_combined_severe_v2",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g046_oblique_combined_severe_v2",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g046_oblique_combined_severe_v2",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g046_oblique_combined_severe_v2",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g031_oblique_tilt_severe_v3",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g031_oblique_tilt_severe_v3",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g031_oblique_tilt_severe_v3",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g031_oblique_tilt_severe_v3",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g036_cross_axis_combined_severe_v0",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g036_cross_axis_combined_severe_v0",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g036_cross_axis_combined_severe_v0",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g036_cross_axis_combined_severe_v0",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g000_axis_offset_moderate_v0",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g000_axis_offset_moderate_v0",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g000_axis_offset_moderate_v0",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g000_axis_offset_moderate_v0",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g003_axis_offset_moderate_v3",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g003_axis_offset_moderate_v3",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g003_axis_offset_moderate_v3",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g003_axis_offset_moderate_v3",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g007_axis_offset_severe_v3",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g007_axis_offset_severe_v3",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g007_axis_offset_severe_v3",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g007_axis_offset_severe_v3",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g029_oblique_tilt_severe_v1",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g029_oblique_tilt_severe_v1",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g029_oblique_tilt_severe_v1",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g029_oblique_tilt_severe_v1",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g045_oblique_combined_severe_v1",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g045_oblique_combined_severe_v1",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g045_oblique_combined_severe_v1",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g045_oblique_combined_severe_v1",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g019_axis_tilt_moderate_v3",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g019_axis_tilt_moderate_v3",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g019_axis_tilt_moderate_v3",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g019_axis_tilt_moderate_v3",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g009_oblique_offset_moderate_v1",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g009_oblique_offset_moderate_v1",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g009_oblique_offset_moderate_v1",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g009_oblique_offset_moderate_v1",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g018_axis_tilt_moderate_v2",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g018_axis_tilt_moderate_v2",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g018_axis_tilt_moderate_v2",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g018_axis_tilt_moderate_v2",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g005_axis_offset_severe_v1",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g005_axis_offset_severe_v1",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g005_axis_offset_severe_v1",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g005_axis_offset_severe_v1",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g001_axis_offset_moderate_v1",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g001_axis_offset_moderate_v1",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g001_axis_offset_moderate_v1",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g001_axis_offset_moderate_v1",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g035_cross_axis_combined_moderate_v3",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g035_cross_axis_combined_moderate_v3",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g035_cross_axis_combined_moderate_v3",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g035_cross_axis_combined_moderate_v3",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g004_axis_offset_severe_v0",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g004_axis_offset_severe_v0",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g004_axis_offset_severe_v0",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g004_axis_offset_severe_v0",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g012_oblique_offset_severe_v0",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g012_oblique_offset_severe_v0",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g012_oblique_offset_severe_v0",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g012_oblique_offset_severe_v0",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g016_axis_tilt_moderate_v0",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g016_axis_tilt_moderate_v0",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g016_axis_tilt_moderate_v0",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g016_axis_tilt_moderate_v0",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g044_oblique_combined_severe_v0",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g044_oblique_combined_severe_v0",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g044_oblique_combined_severe_v0",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g044_oblique_combined_severe_v0",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g027_oblique_tilt_moderate_v3",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g027_oblique_tilt_moderate_v3",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g027_oblique_tilt_moderate_v3",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g027_oblique_tilt_moderate_v3",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g030_oblique_tilt_severe_v2",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g030_oblique_tilt_severe_v2",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g030_oblique_tilt_severe_v2",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g030_oblique_tilt_severe_v2",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g025_oblique_tilt_moderate_v1",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g025_oblique_tilt_moderate_v1",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g025_oblique_tilt_moderate_v1",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g025_oblique_tilt_moderate_v1",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g014_oblique_offset_severe_v2",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g014_oblique_offset_severe_v2",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g014_oblique_offset_severe_v2",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g014_oblique_offset_severe_v2",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g020_axis_tilt_severe_v0",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g020_axis_tilt_severe_v0",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g020_axis_tilt_severe_v0",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g020_axis_tilt_severe_v0",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g017_axis_tilt_moderate_v1",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g017_axis_tilt_moderate_v1",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g017_axis_tilt_moderate_v1",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g017_axis_tilt_moderate_v1",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g008_oblique_offset_moderate_v0",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g008_oblique_offset_moderate_v0",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g008_oblique_offset_moderate_v0",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g008_oblique_offset_moderate_v0",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g013_oblique_offset_severe_v1",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g013_oblique_offset_severe_v1",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g013_oblique_offset_severe_v1",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g013_oblique_offset_severe_v1",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g011_oblique_offset_moderate_v3",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g011_oblique_offset_moderate_v3",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g011_oblique_offset_moderate_v3",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g011_oblique_offset_moderate_v3",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g033_cross_axis_combined_moderate_v1",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g033_cross_axis_combined_moderate_v1",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g033_cross_axis_combined_moderate_v1",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g033_cross_axis_combined_moderate_v1",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g038_cross_axis_combined_severe_v2",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g038_cross_axis_combined_severe_v2",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g038_cross_axis_combined_severe_v2",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g038_cross_axis_combined_severe_v2",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g034_cross_axis_combined_moderate_v2",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g034_cross_axis_combined_moderate_v2",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g034_cross_axis_combined_moderate_v2",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g034_cross_axis_combined_moderate_v2",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g039_cross_axis_combined_severe_v3",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g039_cross_axis_combined_severe_v3",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g039_cross_axis_combined_severe_v3",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g039_cross_axis_combined_severe_v3",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g028_oblique_tilt_severe_v0",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g028_oblique_tilt_severe_v0",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g028_oblique_tilt_severe_v0",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g028_oblique_tilt_severe_v0",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g037_cross_axis_combined_severe_v1",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g037_cross_axis_combined_severe_v1",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g037_cross_axis_combined_severe_v1",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g037_cross_axis_combined_severe_v1",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g015_oblique_offset_severe_v3",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g015_oblique_offset_severe_v3",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g015_oblique_offset_severe_v3",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g015_oblique_offset_severe_v3",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g032_cross_axis_combined_moderate_v0",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g032_cross_axis_combined_moderate_v0",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g032_cross_axis_combined_moderate_v0",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g032_cross_axis_combined_moderate_v0",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g023_axis_tilt_severe_v3",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g023_axis_tilt_severe_v3",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g023_axis_tilt_severe_v3",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g023_axis_tilt_severe_v3",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g006_axis_offset_severe_v2",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g006_axis_offset_severe_v2",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g006_axis_offset_severe_v2",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g006_axis_offset_severe_v2",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g041_oblique_combined_moderate_v1",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g041_oblique_combined_moderate_v1",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g041_oblique_combined_moderate_v1",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g041_oblique_combined_moderate_v1",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g010_oblique_offset_moderate_v2",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g010_oblique_offset_moderate_v2",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g010_oblique_offset_moderate_v2",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g010_oblique_offset_moderate_v2",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g024_oblique_tilt_moderate_v0",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g024_oblique_tilt_moderate_v0",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g024_oblique_tilt_moderate_v0",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g024_oblique_tilt_moderate_v0",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g043_oblique_combined_moderate_v3",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g043_oblique_combined_moderate_v3",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g043_oblique_combined_moderate_v3",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g043_oblique_combined_moderate_v3",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g002_axis_offset_moderate_v2",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g002_axis_offset_moderate_v2",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g002_axis_offset_moderate_v2",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g002_axis_offset_moderate_v2",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 3
+    },
+    {
+      "case_id": "g042_oblique_combined_moderate_v2",
+      "repeat": 0,
+      "policy": "force",
+      "policy_order": 0
+    },
+    {
+      "case_id": "g042_oblique_combined_moderate_v2",
+      "repeat": 0,
+      "policy": "nominal",
+      "policy_order": 1
+    },
+    {
+      "case_id": "g042_oblique_combined_moderate_v2",
+      "repeat": 0,
+      "policy": "axial",
+      "policy_order": 2
+    },
+    {
+      "case_id": "g042_oblique_combined_moderate_v2",
+      "repeat": 0,
+      "policy": "dewedge",
+      "policy_order": 3
+    }
+  ],
+  "holdout_audit": {
+    "source_sha256": {
+      "outputs/Contact-Productivity-Control-v1/experiment.json": "9a113787152e71de51060bcaab0a473989dbe4f1c153c84e4f42bcc875c0e53e",
+      "outputs/Contact-Productivity-Dewedge-v1/experiment.json": "6ca4f556da5f0bb2e3aef0be05bc43980a7b5c16cd43022a4b393d4e37995bb5",
+      "outputs/Contact-Productivity-Unloading-v1/experiment.json": "cdb5b6e0506eec2e3da234e3d846110600df230fed8a91d2945e4331767d6517",
+      "outputs/Forge-Phase2-100/study.json": "16471dd38d275a530d22b9a282084c38d19a8b33be7bcdf939442155212a7048",
+      "outputs/Forge-Phase2B-Stage1/study.json": "95fc5e677fed0b61c96a7b894189386297dcbff6c421bf05f17e4f80afa798d5",
+      "outputs/Forge-Phase2B-Stage2/study.json": "2255d2a0994c7803637faeceefd3f95c3472c8927da73b5ac643e2c85a854fe4",
+      "outputs/Forge-Phase2B-Stage3/study.json": "c4e274c670ba4b5c4ebcc8943d75f832932b99421400620af30797cc96e0eca3",
+      "outputs/Forge-Phase2B-Stage4/study.json": "48afe9094b7a881d8804bbab2214d80f6c2d66993f7545c28afb915d89272d75"
+    },
+    "descriptors_checked": 252,
+    "unique_paths": 163
+  },
+  "exact_previous_path_overlaps": 0,
+  "condition_selection": "Fixed structured design; no outcome-driven selection, exclusions, replacement or retuning.",
+  "clearance_variation": false,
+  "clearance_reason": "The current backend requires unit mesh scale and the audited 9 mm bore; diameter metadata is not a geometry parameter. Changing clearance would require changing mesh/geometry audit and penetration interpretation.",
+  "geometry_scope": "48 unseen pose/misalignment paths on the same audited peg/socket assets; not 48 new solid geometries.",
+  "analysis": {
+    "primary": "Insertion success over all 48 conditions per policy; safety/numerical failures retained.",
+    "paired_bootstrap_seed": 20260916,
+    "paired_bootstrap_samples": 10000,
+    "uncertainty": "Stratified resampling of conditions within six families; descriptive uncertainty over this structured test design, not population guarantees."
+  }
+}

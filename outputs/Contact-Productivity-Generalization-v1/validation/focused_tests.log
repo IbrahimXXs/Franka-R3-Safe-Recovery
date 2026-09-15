@@ -1,0 +1,16 @@
+test_design_edit_is_not_a_new_allowed_test_outcome (tests.test_productivity_generalization.DesignTests.test_design_edit_is_not_a_new_allowed_test_outcome) ... ok
+test_every_policy_once_per_condition_and_balanced_order (tests.test_productivity_generalization.DesignTests.test_every_policy_once_per_condition_and_balanced_order) ... ok
+test_existing_depth_feedback_and_no_initial_misalignment (tests.test_productivity_generalization.DesignTests.test_existing_depth_feedback_and_no_initial_misalignment) ... ok
+test_metadata_does_not_make_a_path_unseen (tests.test_productivity_generalization.DesignTests.test_metadata_does_not_make_a_path_unseen) ... ok
+test_source_edit_rejected_without_rewriting_lock (tests.test_productivity_generalization.DesignTests.test_source_edit_rejected_without_rewriting_lock) ... ok
+test_unique_balanced_coverage_and_both_signs (tests.test_productivity_generalization.DesignTests.test_unique_balanced_coverage_and_both_signs) ... ok
+test_original_force_policy_replays_without_productivity_substitution (tests.test_productivity_generalization.ReplayTests.test_original_force_policy_replays_without_productivity_substitution) ... ok
+test_shadow_productivity_alarm_is_not_a_nominal_intervention (tests.test_productivity_generalization.ReplayTests.test_shadow_productivity_alarm_is_not_a_nominal_intervention) ... ok
+test_budget_failure_and_no_trigger_are_not_stall_prevention (tests.test_productivity_generalization.StatisticsTests.test_budget_failure_and_no_trigger_are_not_stall_prevention) ... ok
+test_no_matched_conditions_is_missing_not_zero_effect (tests.test_productivity_generalization.StatisticsTests.test_no_matched_conditions_is_missing_not_zero_effect) ... ok
+test_paired_effect_uses_whole_condition_differences (tests.test_productivity_generalization.StatisticsTests.test_paired_effect_uses_whole_condition_differences) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.302s
+
+OK
