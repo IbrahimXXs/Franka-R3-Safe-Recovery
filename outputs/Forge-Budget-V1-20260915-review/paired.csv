@@ -1,0 +1,9 @@
+condition_id,pair_state,both_branches_complete,both_references_eligible,observed_prefixes_matched,paired_costs_complete,paired_recovery_evidence_eligible,configuration_differences,prefix_audit_error,replay_matched,replay_prefix_matched,replay_prefix_equal,replay_prefix_first_mismatch_index,straight_outcome,realign_outcome,straight_minus_realign_recovery_observed_peak_wrist_force_n,straight_minus_realign_retreat_observed_peak_wrist_force_n,straight_minus_realign_retreat_peak_wrist_force_mean100ms_n
+m_d18_fs100_fd100_a00__b04,paired_both_clear_safe,True,True,True,True,True,[],,True,True,True,,clear_safe,clear_safe,-0.07678338885307312,-0.07678338885307312,0.004467181124103575
+m_d18_fs100_fd100_a01__b04,paired_both_clear_safe,True,True,True,True,True,[],,True,True,True,,clear_safe,clear_safe,-0.5722683668136597,0.945448063313961,0.15019721110972267
+m_d18_fs100_fd100_a1p5__b04,paired_straight_overbudget_realign_safe,True,True,True,False,True,[],,True,True,True,,recovery_budget_exceeded,clear_safe,,,
+m_d18_fs100_fd100_a1p5__b05,paired_both_clear_safe,True,True,True,True,True,[],,True,True,True,,clear_safe,clear_safe,0.8289120197296143,3.4326300621032715,2.114438722608611
+m_d12_fs100_fd100_a1p5__b04,paired_both_clear_safe,True,True,True,True,True,[],,True,True,True,,clear_safe,clear_safe,-0.4625305235385895,-0.3728164732456207,-0.023079853427285947
+m_d18_fs050_fd050_a1p5__b04,alternative_not_tested_reference_ineligible,False,False,False,False,False,[],,,,,,reference_budget_exceeded,,,,
+m_d18_fs100_fd100_a02__b04,alternative_not_tested_reference_ineligible,False,False,False,False,False,[],,,,,,reference_budget_exceeded,,,,
+m_d18_fs100_fd100_a1p5__b03,alternative_not_tested_reference_ineligible,False,False,False,False,False,[],,,,,,reference_budget_exceeded,,,,

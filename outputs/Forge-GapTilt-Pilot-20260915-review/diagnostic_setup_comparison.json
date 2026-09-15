@@ -1,0 +1,38 @@
+{
+  "configuration_differences": [
+    {
+      "field": "decimation",
+      "120Hz": 8,
+      "240Hz": 16
+    },
+    {
+      "field": "ft_smoothing_factor",
+      "120Hz": 0.25,
+      "240Hz": 0.1339745962155614
+    },
+    {
+      "field": "sim.dt",
+      "120Hz": 0.008333333333333333,
+      "240Hz": 0.004166666666666667
+    },
+    {
+      "field": "sim.render_interval",
+      "120Hz": 4,
+      "240Hz": 8
+    },
+    {
+      "field": "task.fixed_asset.spawn.usd_path",
+      "120Hz": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-GapTilt-Pilot-20260915/gap_0200/geometry/socket_radial_0.200000mm.usda",
+      "240Hz": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-GapTilt-Diagnostic-240Hz-20260915/geometry/socket_radial_0.200000mm.usda"
+    },
+    {
+      "field": "task.fixed_asset_cfg.usd_path",
+      "120Hz": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-GapTilt-Pilot-20260915/gap_0200/geometry/socket_radial_0.200000mm.usda",
+      "240Hz": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-GapTilt-Diagnostic-240Hz-20260915/geometry/socket_radial_0.200000mm.usda"
+    }
+  ],
+  "same_socket_mesh": true,
+  "socket_mesh_sha256": "8241aad76384b8c880b75008758ac2eb2c34334472ae70db41ca31428d3145c9",
+  "clearance_120Hz": 0.19899400710569026,
+  "clearance_240Hz": 0.19899400710569026
+}

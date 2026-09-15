@@ -1,0 +1,62 @@
+{
+  "schema": "budget-first-control-legacy-comparison-v1",
+  "comparison": {
+    "replay_matched": true,
+    "replay_errors": {
+      "position_mm": 0.0,
+      "orientation_deg": 0.0,
+      "joint_rad": 0.0,
+      "joint_velocity_rad_s": 0.0,
+      "linear_velocity_m_s": 0.0,
+      "angular_velocity_rad_s": 0.0,
+      "force_n": 0.0,
+      "torque_nm": 0.0,
+      "normal_load_n": 0.0,
+      "min_separation_mm": 0.0,
+      "wrist_torque_nm": 0.0,
+      "finger_position": 0.0,
+      "finger_velocity": 0.0,
+      "grasp_position": 0.0,
+      "hand_pose": 0.0,
+      "wrist_raw_child": 0.0,
+      "grasp_quat_angle_deg": 0.0,
+      "hand_pose_angle_deg": 0.0
+    },
+    "replay_prefix_matched": true,
+    "replay_prefix_equal": true,
+    "replay_prefix_first_mismatch_index": null,
+    "replay_prefix_max_errors": {
+      "position_mm": 0.0,
+      "orientation_deg": 0.0,
+      "joint_rad": 0.0,
+      "joint_velocity_rad_s": 0.0,
+      "linear_velocity_m_s": 0.0,
+      "angular_velocity_rad_s": 0.0,
+      "force_n": 0.0,
+      "torque_nm": 0.0,
+      "normal_load_n": 0.0,
+      "min_separation_mm": 0.0,
+      "wrist_torque_nm": 0.0,
+      "finger_position": 0.0,
+      "finger_velocity": 0.0,
+      "grasp_position": 0.0,
+      "hand_pose": 0.0,
+      "wrist_raw_child": 0.0,
+      "grasp_quat_angle_deg": 0.0,
+      "hand_pose_angle_deg": 0.0
+    },
+    "reference_sample_count": 2811,
+    "replay_sample_count": 2811
+  },
+  "inputs": [
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Boundary-20260915/m_d18_fs100_fd100_a00_try00/insertion.csv",
+      "sha256": "bc7ba687d47cef5bb83262256db5a92c89c0d54aaf267f500f5cba37d82ac52d"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/insertion.csv",
+      "sha256": "bc7ba687d47cef5bb83262256db5a92c89c0d54aaf267f500f5cba37d82ac52d"
+    }
+  ],
+  "interpretation": "One 4 N control versus previous 20 N reference; complete sampled prefixes match. This does not establish all other cases or physical calibration."
+}

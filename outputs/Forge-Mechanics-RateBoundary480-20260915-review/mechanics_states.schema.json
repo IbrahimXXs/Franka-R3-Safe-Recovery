@@ -1,0 +1,57 @@
+{
+  "schema": "mechanics_state_export_v2",
+  "study_dir": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915",
+  "study_status_at_read": "complete",
+  "study_json_sha256_at_read": "48a04e1dcebc98fd59337d228bcd9748fbc37e1cb447a11559b40b261db93c07",
+  "analyzer_sha256": "c1a2f0577accc77dc16c4aceb2da31dd15e7798aed08ec80f3b8aee1703e3902",
+  "completed_attempts": 2,
+  "completed_case_ids": [
+    "m_d18_fs100_fd100_a00",
+    "m_d18_fs100_fd100_a1p5"
+  ],
+  "planned_cases": 2,
+  "all_planned_cases_included": true,
+  "state_rows": 22,
+  "observed_state_rows": 22,
+  "physics_hz": 480.0,
+  "csv_path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915-review/mechanics_states.csv",
+  "input_profile_hashes": {
+    "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915/m_d18_fs100_fd100_a00_try00/insertion.csv": "f926a765bb6d06bb7df1eee5aaed765a6cdbc92d6985b956abba63f3d2d31a3d",
+    "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915/m_d18_fs100_fd100_a00_try00/final_retreat.csv": "91a697988c741cc2209faa36133f513ddd20d5ff01d0c3b31d827087de2d92ef",
+    "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915/m_d18_fs100_fd100_a00_try00/terminal_realign_recovery.csv": "edb2d64ecf374c0ec0786549c538b8e189e6cc0872cab184a3ed07dbfca87b95",
+    "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915/m_d18_fs100_fd100_a1p5_try00/insertion.csv": "bcaf8ceb57d876a930bac9d354beb8aef63ce3ad347b9eabc4efec5d850fa870",
+    "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915/m_d18_fs100_fd100_a1p5_try00/final_retreat.csv": "77cdb9559c2f17e6269f5661dc933e91dd07050593f009b62beb58571c10c598",
+    "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915/m_d18_fs100_fd100_a1p5_try00/terminal_realign_recovery.csv": "bb61d74fb34615f3641f4d7e10d4bd3feb7bda23d24004c6e368e51efa789f49"
+  },
+  "csv_boolean_encoding": "true / false; empty field means null, not false or zero",
+  "state_selection": {
+    "depth_gate": "first reference row with authoritative depth_gate_passed=true",
+    "reference_terminal": "last saved reference state, even if protocol failed; quality labels remain separate",
+    "reference_normal_load_peak": "maximum normal_load_n anywhere in reference; first sample wins a tie",
+    "stop_end": "last saved stop-phase observation, including a copied recovery t=0 row if the guard prevented every STOP step; inspect phase_executed and phase_observed_duration_s",
+    "retreat_wrist_peak": "maximum wrist force within retreat phase only",
+    "retreat_wrist_mean100ms_peak_end": "instantaneous state at the end of the greatest complete 100ms wrist-force window; selection_value_n stores the window mean",
+    "retreat_normal_load_peak": "maximum normal_load_n within retreat phase only"
+  },
+  "phase_execution_definitions": {
+    "phase_executed": "whether at least one non-copied simulation-step observation exists in the contiguous actual sample phase through this selected state; null for an unobserved selected state",
+    "phase_executed_sample_count": "number of such observations up to and including this state; excludes non-reference recovery_time_s=0 copied rows and reference_step=0 initialization rows",
+    "phase_observed_duration_s": "phase_executed_sample_count / physics_hz: recorded simulation-step support through the selected state, not a guarantee of phase completion; missing samples do not count as observed time",
+    "sample_is_copied_recovery_start": "true only for a selected non-reference observation with recovery_time_s=0; an observation with no new physics step",
+    "sample_is_reference_initialization": "true only for a selected reference observation with reference_step=0; prepare result before the trajectory executes its first physics step"
+  },
+  "length_definitions": {
+    "geometric_guide_length_Lg_mm": "alias of valid effective_guide_span_estimate_mm: actual pose, full-radius shaft axis segment clipped to straight wall; approximate geometry, not a measured contact distance",
+    "observed_contact_separation_ell_mm": "alias of wall_centroid_axial_span_mm only when both loaded straight-wall side flags pass; normal-load weighted region centers, not uniquely identified contact pairs",
+    "contact_axial_span_mm": "separate extrema span of classified normal points; inspect contact_axial_span_valid; coincident points may give zero"
+  },
+  "limitations": [
+    "Only attempts marked complete at manifest read are included; invalid or failed completed attempts are retained with their labels.",
+    "Missing events/policies/windows produce unobserved rows with null measurements, never invented zeros.",
+    "state_observed alone does not imply a policy phase executed. A guard can leave only a copied STOP t=0 observation, with phase_executed=false and duration zero.",
+    "The 100ms calculation uses ceil(0.1/dt) contiguous retreat samples and the same N*dt support convention as the study metrics; first-to-last timestamp span is separately recorded.",
+    "Signed world-Z force components are fixture-on-peg; axial withdrawal resistance is max(0,-Z). Independent component peaks must not be added.",
+    "Command columns are preserved exactly as logged; a policy final orientation target is not necessarily its interpolated within-step command.",
+    "Lg and ell have distinct validity masks and meanings. No geometric compatibility bound or material deformation is inferred."
+  ]
+}

@@ -1,0 +1,3141 @@
+{
+  "schema": "Forge-budget-output-validation-v1",
+  "source_study": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915",
+  "source_manifest_sha256": "7c21a3646f4f4d438c0c3e65ad981153d9b484b8abe7121859b6ff320d591e85",
+  "analysis_sources": {
+    "simulation/validate_budget_output.py": "1f9199fc0f8a99ca9ae372903c8d52237a778969be04875e9cfe885be2b43c60",
+    "simulation/validate_mechanics_output.py": "5d08ad759d8a0fc8ed4e819bc39bd09dae24ef1fda1c1cb799f4ec0ad1c76196",
+    "research/forge_budget.py": "40192b23c229040c8b1115a64576b0ff163ba2b53e4989c765891eafc59d22e1",
+    "research/forge_mechanics_metrics.py": "d2924bfe32e2a1b14b073cd8393b310f47d3274b6dff44a28c47a2501ec13e60",
+    "research/forge_mechanics_plan.py": "b738155535c4ff11e9e4e8ad470b0da82f154b789f8cece4ba2a330f8348fdca",
+    "research/forge_mechanics_protocol.py": "0df8a8d32cdaf88ff4a8d3076ea81713367d1c23fd07992f71efe624be902fad",
+    "research/forge_protocol.py": "3e112d13a94bfb85f82ec7beec0c9750792042b222b07d7277df1c32503006a1",
+    "research/phase2_protocol.py": "3d05bd187320591bb9e69d38f9dc3263925608f17213c945caf8c7a6adcc84ca",
+    "research/forge_gap_metrics.py": "ed4dcde065a52732492fd5169eb408875c9d9b5f0850cafd76137ffef9462edc",
+    "research/forge_events.py": "88361f3eacacda079fd3e9f7bc075dcc0a61ccbf7019b1891b670764d0b11022"
+  },
+  "source_status": "complete",
+  "passed": true,
+  "deep": true,
+  "planned_conditions": 8,
+  "planned_policy_branches": 16,
+  "completed_branches_checked": 13,
+  "not_tested_branches_checked": 3,
+  "incomplete_branches_not_opened": 0,
+  "unrecorded_branches": 0,
+  "check_count": 1362463,
+  "error_count": 0,
+  "errors": [],
+  "checked_files": [
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/case_plan.json",
+      "sha256": "a5a5904a717538dd4c8bc196c79572fed9acc91c5525d33d186441a5a8c285b0"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/base_protocol.json",
+      "sha256": "3657344364a049517872c72d572e583499b39bf6488ef679f9432baeae505557"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/source/simulation/forge_mechanics.py",
+      "sha256": "3fd43f2e07700664eb0c2a4124a88d873dd87e54b6f78b42acb62557dc75d020"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/source/simulation/launch_forge_mechanics.py",
+      "sha256": "264a4f0cb3e3c1a8e088b1e8f5c31dc17462f465666223de766a7c25e391dadb"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/source/simulation/forge_mechanics_backend.py",
+      "sha256": "4d9d058ad5e2807a8a27151498c3f456d81badafce590b10050071e01b01cf1a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/source/research/forge_mechanics_contacts.py",
+      "sha256": "16dcba4012b1d5071ae30f835a5b2eaf0246d2b3aaa3b4571631f3b326047c41"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/source/simulation/forge_mechanics_recovery.py",
+      "sha256": "d6bfc182f1ce17cea871e78143dbda19d0a7cb1bd89a0b1390773344e4c26abe"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/source/research/forge_mechanics_motion.py",
+      "sha256": "b03db0bdf9d1f697442bd2032cbea8c64bae0f3fa8c5f162ee054f4910bf17a4"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/source/research/forge_mechanics_plan.py",
+      "sha256": "b738155535c4ff11e9e4e8ad470b0da82f154b789f8cece4ba2a330f8348fdca"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/source/research/forge_mechanics_metrics.py",
+      "sha256": "d2924bfe32e2a1b14b073cd8393b310f47d3274b6dff44a28c47a2501ec13e60"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/source/research/forge_mechanics_protocol.py",
+      "sha256": "0df8a8d32cdaf88ff4a8d3076ea81713367d1c23fd07992f71efe624be902fad"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/source/simulation/forge_backend.py",
+      "sha256": "5a0c3fb5f1c5d330c90fdc2a22e6d48cda1713156d134c5ba533b5fa6ce3a45f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/source/simulation/forge_experiment.py",
+      "sha256": "54ac5813d9dba93c4ac6aaf907d67e53d84a039d47000386cfc57434b1e76618"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/source/simulation/contact.py",
+      "sha256": "a23500505916cf97fe792258fedae0ea583f03b2652dc42121e2d761fbb6e522"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/source/research/forge_protocol.py",
+      "sha256": "3e112d13a94bfb85f82ec7beec0c9750792042b222b07d7277df1c32503006a1"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/source/research/phase2_protocol.py",
+      "sha256": "3d05bd187320591bb9e69d38f9dc3263925608f17213c945caf8c7a6adcc84ca"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/source/research/forge_gap_metrics.py",
+      "sha256": "ed4dcde065a52732492fd5169eb408875c9d9b5f0850cafd76137ffef9462edc"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/source/research/forge_geometry.py",
+      "sha256": "d37caa904ae3bfcc2360ed31294f4d700fe412a127e030f6fe76dc6bb8751078"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/source/research/forge_events.py",
+      "sha256": "88361f3eacacda079fd3e9f7bc075dcc0a61ccbf7019b1891b670764d0b11022"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/source/research/future_stall.py",
+      "sha256": "7d6466b6e452beed65930aadcb6552d123947038ddac9bb18416b09e25a63d3c"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/source/research/forge_gap_study.py",
+      "sha256": "2dbea013ab35053fff628126fd36775a75aa782fad98e443e0b4f1409bb17fc9"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/source/research/forge_collection.py",
+      "sha256": "f06901e0c9d55df411981a27ee4ad512f089aaf8bd6fecec00d3da9a0d4c890f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/source/research/phase2b.py",
+      "sha256": "0dfa4d32fd924a72576a7f1316198352147a389e5fe4e328727eb0637a94949a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/source/research/forge_budget.py",
+      "sha256": "40192b23c229040c8b1115a64576b0ff163ba2b53e4989c765891eafc59d22e1"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/source/simulation/forge_budget.py",
+      "sha256": "149ebc16d1847c2d1d538d69c14a3d6f2e2e4dcce35e4f3c3f9221b31e0a4c8f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/source/simulation/launch_forge_budget.py",
+      "sha256": "cde311c34739495cdead06d5cbcc1e7eece78a3e41a69f81e5600c4902188233"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/source/simulation/run_budget_study.py",
+      "sha256": "07b415b85597cc1ed4cd4f824aca37ab158cf295c43222fb7b8a2c0785be1794"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/source/forge_budget.sh",
+      "sha256": "63655fe98a2091aaca7006247e5dbbded9810e330ea52adb9a91f75dc333c37b"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/run.json",
+      "sha256": "74740f08bf310129354a491c20bc5e8dcce4e05a7300622abe633fae459b6a42"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/source/simulation/forge_mechanics.py",
+      "sha256": "3fd43f2e07700664eb0c2a4124a88d873dd87e54b6f78b42acb62557dc75d020"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/source/simulation/launch_forge_mechanics.py",
+      "sha256": "264a4f0cb3e3c1a8e088b1e8f5c31dc17462f465666223de766a7c25e391dadb"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/source/simulation/forge_mechanics_backend.py",
+      "sha256": "4d9d058ad5e2807a8a27151498c3f456d81badafce590b10050071e01b01cf1a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/source/research/forge_mechanics_contacts.py",
+      "sha256": "16dcba4012b1d5071ae30f835a5b2eaf0246d2b3aaa3b4571631f3b326047c41"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/source/simulation/forge_mechanics_recovery.py",
+      "sha256": "d6bfc182f1ce17cea871e78143dbda19d0a7cb1bd89a0b1390773344e4c26abe"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/source/research/forge_mechanics_motion.py",
+      "sha256": "b03db0bdf9d1f697442bd2032cbea8c64bae0f3fa8c5f162ee054f4910bf17a4"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/source/research/forge_mechanics_plan.py",
+      "sha256": "b738155535c4ff11e9e4e8ad470b0da82f154b789f8cece4ba2a330f8348fdca"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/source/research/forge_mechanics_metrics.py",
+      "sha256": "d2924bfe32e2a1b14b073cd8393b310f47d3274b6dff44a28c47a2501ec13e60"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/source/research/forge_mechanics_protocol.py",
+      "sha256": "0df8a8d32cdaf88ff4a8d3076ea81713367d1c23fd07992f71efe624be902fad"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/source/simulation/forge_backend.py",
+      "sha256": "5a0c3fb5f1c5d330c90fdc2a22e6d48cda1713156d134c5ba533b5fa6ce3a45f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/source/simulation/forge_experiment.py",
+      "sha256": "54ac5813d9dba93c4ac6aaf907d67e53d84a039d47000386cfc57434b1e76618"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/source/simulation/contact.py",
+      "sha256": "a23500505916cf97fe792258fedae0ea583f03b2652dc42121e2d761fbb6e522"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/source/research/forge_protocol.py",
+      "sha256": "3e112d13a94bfb85f82ec7beec0c9750792042b222b07d7277df1c32503006a1"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/source/research/phase2_protocol.py",
+      "sha256": "3d05bd187320591bb9e69d38f9dc3263925608f17213c945caf8c7a6adcc84ca"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/source/research/forge_gap_metrics.py",
+      "sha256": "ed4dcde065a52732492fd5169eb408875c9d9b5f0850cafd76137ffef9462edc"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/source/research/forge_geometry.py",
+      "sha256": "d37caa904ae3bfcc2360ed31294f4d700fe412a127e030f6fe76dc6bb8751078"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/source/research/forge_events.py",
+      "sha256": "88361f3eacacda079fd3e9f7bc075dcc0a61ccbf7019b1891b670764d0b11022"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/source/research/future_stall.py",
+      "sha256": "7d6466b6e452beed65930aadcb6552d123947038ddac9bb18416b09e25a63d3c"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/source/research/forge_gap_study.py",
+      "sha256": "2dbea013ab35053fff628126fd36775a75aa782fad98e443e0b4f1409bb17fc9"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/source/research/forge_collection.py",
+      "sha256": "f06901e0c9d55df411981a27ee4ad512f089aaf8bd6fecec00d3da9a0d4c890f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/source/research/phase2b.py",
+      "sha256": "0dfa4d32fd924a72576a7f1316198352147a389e5fe4e328727eb0637a94949a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/source/research/forge_budget.py",
+      "sha256": "40192b23c229040c8b1115a64576b0ff163ba2b53e4989c765891eafc59d22e1"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/source/simulation/forge_budget.py",
+      "sha256": "149ebc16d1847c2d1d538d69c14a3d6f2e2e4dcce35e4f3c3f9221b31e0a4c8f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/source/simulation/launch_forge_budget.py",
+      "sha256": "cde311c34739495cdead06d5cbcc1e7eece78a3e41a69f81e5600c4902188233"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/source/simulation/run_budget_study.py",
+      "sha256": "07b415b85597cc1ed4cd4f824aca37ab158cf295c43222fb7b8a2c0785be1794"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/source/forge_budget.sh",
+      "sha256": "63655fe98a2091aaca7006247e5dbbded9810e330ea52adb9a91f75dc333c37b"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/insertion_contacts.jsonl.gz",
+      "sha256": "9fe296db7ba5179eb50f18ff3f85dda9961f8dce7068b6e5d42c969b089a679f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/scene.json",
+      "sha256": "0fa7c8262dc9e893387194606fcbbae2edf4ef557179e54bf318f9b3948c5a8b"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/insertion.csv",
+      "sha256": "bc7ba687d47cef5bb83262256db5a92c89c0d54aaf267f500f5cba37d82ac52d"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/recovery.csv",
+      "sha256": "d23f76d89b6f059584e7d8e57951f99b7e0f432f3930061e59200da653000dc7"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/recovery_contacts.jsonl.gz",
+      "sha256": "ecb3d7664117742ad6a32f854ff219454609c7e4e7b4a3cc1e061479a7aeb075"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/config.json",
+      "sha256": "2db631d5ba4ddcf6f697ec7f1b58af91d0bd640a14f0f72836c11f782291e1ba"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/insertion.csv",
+      "sha256": "bc7ba687d47cef5bb83262256db5a92c89c0d54aaf267f500f5cba37d82ac52d"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/insertion_contacts.jsonl.gz",
+      "sha256": "9fe296db7ba5179eb50f18ff3f85dda9961f8dce7068b6e5d42c969b089a679f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/recovery.csv",
+      "sha256": "d23f76d89b6f059584e7d8e57951f99b7e0f432f3930061e59200da653000dc7"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/recovery_contacts.jsonl.gz",
+      "sha256": "ecb3d7664117742ad6a32f854ff219454609c7e4e7b4a3cc1e061479a7aeb075"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/run.json",
+      "sha256": "950d929cf39943478c5805042e62dadfd3a58ff088c1ea84070eaf6eeadd22fc"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/source/simulation/forge_mechanics.py",
+      "sha256": "3fd43f2e07700664eb0c2a4124a88d873dd87e54b6f78b42acb62557dc75d020"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/source/simulation/launch_forge_mechanics.py",
+      "sha256": "264a4f0cb3e3c1a8e088b1e8f5c31dc17462f465666223de766a7c25e391dadb"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/source/simulation/forge_mechanics_backend.py",
+      "sha256": "4d9d058ad5e2807a8a27151498c3f456d81badafce590b10050071e01b01cf1a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/source/research/forge_mechanics_contacts.py",
+      "sha256": "16dcba4012b1d5071ae30f835a5b2eaf0246d2b3aaa3b4571631f3b326047c41"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/source/simulation/forge_mechanics_recovery.py",
+      "sha256": "d6bfc182f1ce17cea871e78143dbda19d0a7cb1bd89a0b1390773344e4c26abe"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/source/research/forge_mechanics_motion.py",
+      "sha256": "b03db0bdf9d1f697442bd2032cbea8c64bae0f3fa8c5f162ee054f4910bf17a4"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/source/research/forge_mechanics_plan.py",
+      "sha256": "b738155535c4ff11e9e4e8ad470b0da82f154b789f8cece4ba2a330f8348fdca"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/source/research/forge_mechanics_metrics.py",
+      "sha256": "d2924bfe32e2a1b14b073cd8393b310f47d3274b6dff44a28c47a2501ec13e60"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/source/research/forge_mechanics_protocol.py",
+      "sha256": "0df8a8d32cdaf88ff4a8d3076ea81713367d1c23fd07992f71efe624be902fad"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/source/simulation/forge_backend.py",
+      "sha256": "5a0c3fb5f1c5d330c90fdc2a22e6d48cda1713156d134c5ba533b5fa6ce3a45f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/source/simulation/forge_experiment.py",
+      "sha256": "54ac5813d9dba93c4ac6aaf907d67e53d84a039d47000386cfc57434b1e76618"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/source/simulation/contact.py",
+      "sha256": "a23500505916cf97fe792258fedae0ea583f03b2652dc42121e2d761fbb6e522"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/source/research/forge_protocol.py",
+      "sha256": "3e112d13a94bfb85f82ec7beec0c9750792042b222b07d7277df1c32503006a1"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/source/research/phase2_protocol.py",
+      "sha256": "3d05bd187320591bb9e69d38f9dc3263925608f17213c945caf8c7a6adcc84ca"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/source/research/forge_gap_metrics.py",
+      "sha256": "ed4dcde065a52732492fd5169eb408875c9d9b5f0850cafd76137ffef9462edc"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/source/research/forge_geometry.py",
+      "sha256": "d37caa904ae3bfcc2360ed31294f4d700fe412a127e030f6fe76dc6bb8751078"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/source/research/forge_events.py",
+      "sha256": "88361f3eacacda079fd3e9f7bc075dcc0a61ccbf7019b1891b670764d0b11022"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/source/research/future_stall.py",
+      "sha256": "7d6466b6e452beed65930aadcb6552d123947038ddac9bb18416b09e25a63d3c"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/source/research/forge_gap_study.py",
+      "sha256": "2dbea013ab35053fff628126fd36775a75aa782fad98e443e0b4f1409bb17fc9"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/source/research/forge_collection.py",
+      "sha256": "f06901e0c9d55df411981a27ee4ad512f089aaf8bd6fecec00d3da9a0d4c890f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/source/research/phase2b.py",
+      "sha256": "0dfa4d32fd924a72576a7f1316198352147a389e5fe4e328727eb0637a94949a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/source/research/forge_budget.py",
+      "sha256": "40192b23c229040c8b1115a64576b0ff163ba2b53e4989c765891eafc59d22e1"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/source/simulation/forge_budget.py",
+      "sha256": "149ebc16d1847c2d1d538d69c14a3d6f2e2e4dcce35e4f3c3f9221b31e0a4c8f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/source/simulation/launch_forge_budget.py",
+      "sha256": "cde311c34739495cdead06d5cbcc1e7eece78a3e41a69f81e5600c4902188233"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/source/simulation/run_budget_study.py",
+      "sha256": "07b415b85597cc1ed4cd4f824aca37ab158cf295c43222fb7b8a2c0785be1794"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/source/forge_budget.sh",
+      "sha256": "63655fe98a2091aaca7006247e5dbbded9810e330ea52adb9a91f75dc333c37b"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/insertion_contacts.jsonl.gz",
+      "sha256": "d26d4c6e0e3faac1fda7bf38c375a9793c27d8bd1a7ac94640de3f28a5aecd7a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/scene.json",
+      "sha256": "3c8dada25e932273bd883a82be666368869eb3ea5715b53be02731fa0a330dcb"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/insertion.csv",
+      "sha256": "bc7ba687d47cef5bb83262256db5a92c89c0d54aaf267f500f5cba37d82ac52d"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/recovery.csv",
+      "sha256": "f700a211c308138d307bb2942659e19c003f9a66afeb8b5a54e534df6c3dc748"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/recovery_contacts.jsonl.gz",
+      "sha256": "0701d2008d4f45926dbc89ee535e88ad264b76f89d3ce81cfc7c3767ae47a4f6"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/config.json",
+      "sha256": "9e180334ec51e0bed5e1a3b0f0c05ae83038e8b1612ec526681f100c3c7fdb7c"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/insertion.csv",
+      "sha256": "bc7ba687d47cef5bb83262256db5a92c89c0d54aaf267f500f5cba37d82ac52d"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/insertion_contacts.jsonl.gz",
+      "sha256": "d26d4c6e0e3faac1fda7bf38c375a9793c27d8bd1a7ac94640de3f28a5aecd7a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/recovery.csv",
+      "sha256": "f700a211c308138d307bb2942659e19c003f9a66afeb8b5a54e534df6c3dc748"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/recovery_contacts.jsonl.gz",
+      "sha256": "0701d2008d4f45926dbc89ee535e88ad264b76f89d3ce81cfc7c3767ae47a4f6"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/run.json",
+      "sha256": "037a12bb70b751e192420d5f3129d926286a247890ac086931d8637508935243"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/source/simulation/forge_mechanics.py",
+      "sha256": "3fd43f2e07700664eb0c2a4124a88d873dd87e54b6f78b42acb62557dc75d020"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/source/simulation/launch_forge_mechanics.py",
+      "sha256": "264a4f0cb3e3c1a8e088b1e8f5c31dc17462f465666223de766a7c25e391dadb"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/source/simulation/forge_mechanics_backend.py",
+      "sha256": "4d9d058ad5e2807a8a27151498c3f456d81badafce590b10050071e01b01cf1a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/source/research/forge_mechanics_contacts.py",
+      "sha256": "16dcba4012b1d5071ae30f835a5b2eaf0246d2b3aaa3b4571631f3b326047c41"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/source/simulation/forge_mechanics_recovery.py",
+      "sha256": "d6bfc182f1ce17cea871e78143dbda19d0a7cb1bd89a0b1390773344e4c26abe"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/source/research/forge_mechanics_motion.py",
+      "sha256": "b03db0bdf9d1f697442bd2032cbea8c64bae0f3fa8c5f162ee054f4910bf17a4"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/source/research/forge_mechanics_plan.py",
+      "sha256": "b738155535c4ff11e9e4e8ad470b0da82f154b789f8cece4ba2a330f8348fdca"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/source/research/forge_mechanics_metrics.py",
+      "sha256": "d2924bfe32e2a1b14b073cd8393b310f47d3274b6dff44a28c47a2501ec13e60"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/source/research/forge_mechanics_protocol.py",
+      "sha256": "0df8a8d32cdaf88ff4a8d3076ea81713367d1c23fd07992f71efe624be902fad"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/source/simulation/forge_backend.py",
+      "sha256": "5a0c3fb5f1c5d330c90fdc2a22e6d48cda1713156d134c5ba533b5fa6ce3a45f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/source/simulation/forge_experiment.py",
+      "sha256": "54ac5813d9dba93c4ac6aaf907d67e53d84a039d47000386cfc57434b1e76618"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/source/simulation/contact.py",
+      "sha256": "a23500505916cf97fe792258fedae0ea583f03b2652dc42121e2d761fbb6e522"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/source/research/forge_protocol.py",
+      "sha256": "3e112d13a94bfb85f82ec7beec0c9750792042b222b07d7277df1c32503006a1"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/source/research/phase2_protocol.py",
+      "sha256": "3d05bd187320591bb9e69d38f9dc3263925608f17213c945caf8c7a6adcc84ca"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/source/research/forge_gap_metrics.py",
+      "sha256": "ed4dcde065a52732492fd5169eb408875c9d9b5f0850cafd76137ffef9462edc"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/source/research/forge_geometry.py",
+      "sha256": "d37caa904ae3bfcc2360ed31294f4d700fe412a127e030f6fe76dc6bb8751078"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/source/research/forge_events.py",
+      "sha256": "88361f3eacacda079fd3e9f7bc075dcc0a61ccbf7019b1891b670764d0b11022"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/source/research/future_stall.py",
+      "sha256": "7d6466b6e452beed65930aadcb6552d123947038ddac9bb18416b09e25a63d3c"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/source/research/forge_gap_study.py",
+      "sha256": "2dbea013ab35053fff628126fd36775a75aa782fad98e443e0b4f1409bb17fc9"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/source/research/forge_collection.py",
+      "sha256": "f06901e0c9d55df411981a27ee4ad512f089aaf8bd6fecec00d3da9a0d4c890f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/source/research/phase2b.py",
+      "sha256": "0dfa4d32fd924a72576a7f1316198352147a389e5fe4e328727eb0637a94949a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/source/research/forge_budget.py",
+      "sha256": "40192b23c229040c8b1115a64576b0ff163ba2b53e4989c765891eafc59d22e1"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/source/simulation/forge_budget.py",
+      "sha256": "149ebc16d1847c2d1d538d69c14a3d6f2e2e4dcce35e4f3c3f9221b31e0a4c8f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/source/simulation/launch_forge_budget.py",
+      "sha256": "cde311c34739495cdead06d5cbcc1e7eece78a3e41a69f81e5600c4902188233"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/source/simulation/run_budget_study.py",
+      "sha256": "07b415b85597cc1ed4cd4f824aca37ab158cf295c43222fb7b8a2c0785be1794"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/source/forge_budget.sh",
+      "sha256": "63655fe98a2091aaca7006247e5dbbded9810e330ea52adb9a91f75dc333c37b"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/insertion_contacts.jsonl.gz",
+      "sha256": "23ecbb3ec9f4b4b348b0031302430b035b42a7020fd9a215ab7ca537050eee73"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/scene.json",
+      "sha256": "0def6ddf0d60c5f3542d8957d630d776a3891360890436748203521c091f50de"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/insertion.csv",
+      "sha256": "6247c23e7e49ba818e9918d601f70accb45a98eeb07bda5d78a8b44d42bba129"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/recovery.csv",
+      "sha256": "67d86aef37866e8a4c8f20945bb7a6db3e802ec4884c63d7ae2bef5096db73eb"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/recovery_contacts.jsonl.gz",
+      "sha256": "0a43197e7ec98ab659e05a2c425c222e59bc713ca97b83bb71b5771044beda88"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/config.json",
+      "sha256": "f7e406d3e9076b296500572ac9640b052b8f1d97af301c713b6db4d8a6afcbb4"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/insertion.csv",
+      "sha256": "6247c23e7e49ba818e9918d601f70accb45a98eeb07bda5d78a8b44d42bba129"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/insertion_contacts.jsonl.gz",
+      "sha256": "23ecbb3ec9f4b4b348b0031302430b035b42a7020fd9a215ab7ca537050eee73"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/recovery.csv",
+      "sha256": "67d86aef37866e8a4c8f20945bb7a6db3e802ec4884c63d7ae2bef5096db73eb"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/recovery_contacts.jsonl.gz",
+      "sha256": "0a43197e7ec98ab659e05a2c425c222e59bc713ca97b83bb71b5771044beda88"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/run.json",
+      "sha256": "46869cb87623012ea2f20b01bc52d079ddc113133683485e83564ea1fdd9a738"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/source/simulation/forge_mechanics.py",
+      "sha256": "3fd43f2e07700664eb0c2a4124a88d873dd87e54b6f78b42acb62557dc75d020"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/source/simulation/launch_forge_mechanics.py",
+      "sha256": "264a4f0cb3e3c1a8e088b1e8f5c31dc17462f465666223de766a7c25e391dadb"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/source/simulation/forge_mechanics_backend.py",
+      "sha256": "4d9d058ad5e2807a8a27151498c3f456d81badafce590b10050071e01b01cf1a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/source/research/forge_mechanics_contacts.py",
+      "sha256": "16dcba4012b1d5071ae30f835a5b2eaf0246d2b3aaa3b4571631f3b326047c41"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/source/simulation/forge_mechanics_recovery.py",
+      "sha256": "d6bfc182f1ce17cea871e78143dbda19d0a7cb1bd89a0b1390773344e4c26abe"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/source/research/forge_mechanics_motion.py",
+      "sha256": "b03db0bdf9d1f697442bd2032cbea8c64bae0f3fa8c5f162ee054f4910bf17a4"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/source/research/forge_mechanics_plan.py",
+      "sha256": "b738155535c4ff11e9e4e8ad470b0da82f154b789f8cece4ba2a330f8348fdca"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/source/research/forge_mechanics_metrics.py",
+      "sha256": "d2924bfe32e2a1b14b073cd8393b310f47d3274b6dff44a28c47a2501ec13e60"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/source/research/forge_mechanics_protocol.py",
+      "sha256": "0df8a8d32cdaf88ff4a8d3076ea81713367d1c23fd07992f71efe624be902fad"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/source/simulation/forge_backend.py",
+      "sha256": "5a0c3fb5f1c5d330c90fdc2a22e6d48cda1713156d134c5ba533b5fa6ce3a45f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/source/simulation/forge_experiment.py",
+      "sha256": "54ac5813d9dba93c4ac6aaf907d67e53d84a039d47000386cfc57434b1e76618"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/source/simulation/contact.py",
+      "sha256": "a23500505916cf97fe792258fedae0ea583f03b2652dc42121e2d761fbb6e522"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/source/research/forge_protocol.py",
+      "sha256": "3e112d13a94bfb85f82ec7beec0c9750792042b222b07d7277df1c32503006a1"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/source/research/phase2_protocol.py",
+      "sha256": "3d05bd187320591bb9e69d38f9dc3263925608f17213c945caf8c7a6adcc84ca"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/source/research/forge_gap_metrics.py",
+      "sha256": "ed4dcde065a52732492fd5169eb408875c9d9b5f0850cafd76137ffef9462edc"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/source/research/forge_geometry.py",
+      "sha256": "d37caa904ae3bfcc2360ed31294f4d700fe412a127e030f6fe76dc6bb8751078"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/source/research/forge_events.py",
+      "sha256": "88361f3eacacda079fd3e9f7bc075dcc0a61ccbf7019b1891b670764d0b11022"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/source/research/future_stall.py",
+      "sha256": "7d6466b6e452beed65930aadcb6552d123947038ddac9bb18416b09e25a63d3c"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/source/research/forge_gap_study.py",
+      "sha256": "2dbea013ab35053fff628126fd36775a75aa782fad98e443e0b4f1409bb17fc9"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/source/research/forge_collection.py",
+      "sha256": "f06901e0c9d55df411981a27ee4ad512f089aaf8bd6fecec00d3da9a0d4c890f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/source/research/phase2b.py",
+      "sha256": "0dfa4d32fd924a72576a7f1316198352147a389e5fe4e328727eb0637a94949a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/source/research/forge_budget.py",
+      "sha256": "40192b23c229040c8b1115a64576b0ff163ba2b53e4989c765891eafc59d22e1"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/source/simulation/forge_budget.py",
+      "sha256": "149ebc16d1847c2d1d538d69c14a3d6f2e2e4dcce35e4f3c3f9221b31e0a4c8f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/source/simulation/launch_forge_budget.py",
+      "sha256": "cde311c34739495cdead06d5cbcc1e7eece78a3e41a69f81e5600c4902188233"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/source/simulation/run_budget_study.py",
+      "sha256": "07b415b85597cc1ed4cd4f824aca37ab158cf295c43222fb7b8a2c0785be1794"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/source/forge_budget.sh",
+      "sha256": "63655fe98a2091aaca7006247e5dbbded9810e330ea52adb9a91f75dc333c37b"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/insertion_contacts.jsonl.gz",
+      "sha256": "0f87cfe8d9418fbafad7fbcbf9249577ed8cd871074285682026475e71ac394d"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/scene.json",
+      "sha256": "ee645a3b55245542e6785150768d74caf59e661362cd4e8046cb1531a5798c2d"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/insertion.csv",
+      "sha256": "6247c23e7e49ba818e9918d601f70accb45a98eeb07bda5d78a8b44d42bba129"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/recovery.csv",
+      "sha256": "8b970c82a23e5ef44b343b9f7595649eeab6f10f13260208241fcc0e7b986d55"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/recovery_contacts.jsonl.gz",
+      "sha256": "ab9c800cb6dc67fa95637457177385a18644a508d9147612c455a94a4e687e8c"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/config.json",
+      "sha256": "fc6ed7d35a0f44f9de11e052ff3fcb98bb0f9ce705dd36fa9f91e3037bd5e34a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/insertion.csv",
+      "sha256": "6247c23e7e49ba818e9918d601f70accb45a98eeb07bda5d78a8b44d42bba129"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/insertion_contacts.jsonl.gz",
+      "sha256": "0f87cfe8d9418fbafad7fbcbf9249577ed8cd871074285682026475e71ac394d"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/recovery.csv",
+      "sha256": "8b970c82a23e5ef44b343b9f7595649eeab6f10f13260208241fcc0e7b986d55"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/recovery_contacts.jsonl.gz",
+      "sha256": "ab9c800cb6dc67fa95637457177385a18644a508d9147612c455a94a4e687e8c"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/run.json",
+      "sha256": "964716ad178dbd81c964405945a5473b5d258a7c1e34c77e1421380727331087"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/source/simulation/forge_mechanics.py",
+      "sha256": "3fd43f2e07700664eb0c2a4124a88d873dd87e54b6f78b42acb62557dc75d020"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/source/simulation/launch_forge_mechanics.py",
+      "sha256": "264a4f0cb3e3c1a8e088b1e8f5c31dc17462f465666223de766a7c25e391dadb"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/source/simulation/forge_mechanics_backend.py",
+      "sha256": "4d9d058ad5e2807a8a27151498c3f456d81badafce590b10050071e01b01cf1a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/source/research/forge_mechanics_contacts.py",
+      "sha256": "16dcba4012b1d5071ae30f835a5b2eaf0246d2b3aaa3b4571631f3b326047c41"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/source/simulation/forge_mechanics_recovery.py",
+      "sha256": "d6bfc182f1ce17cea871e78143dbda19d0a7cb1bd89a0b1390773344e4c26abe"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/source/research/forge_mechanics_motion.py",
+      "sha256": "b03db0bdf9d1f697442bd2032cbea8c64bae0f3fa8c5f162ee054f4910bf17a4"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/source/research/forge_mechanics_plan.py",
+      "sha256": "b738155535c4ff11e9e4e8ad470b0da82f154b789f8cece4ba2a330f8348fdca"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/source/research/forge_mechanics_metrics.py",
+      "sha256": "d2924bfe32e2a1b14b073cd8393b310f47d3274b6dff44a28c47a2501ec13e60"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/source/research/forge_mechanics_protocol.py",
+      "sha256": "0df8a8d32cdaf88ff4a8d3076ea81713367d1c23fd07992f71efe624be902fad"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/source/simulation/forge_backend.py",
+      "sha256": "5a0c3fb5f1c5d330c90fdc2a22e6d48cda1713156d134c5ba533b5fa6ce3a45f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/source/simulation/forge_experiment.py",
+      "sha256": "54ac5813d9dba93c4ac6aaf907d67e53d84a039d47000386cfc57434b1e76618"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/source/simulation/contact.py",
+      "sha256": "a23500505916cf97fe792258fedae0ea583f03b2652dc42121e2d761fbb6e522"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/source/research/forge_protocol.py",
+      "sha256": "3e112d13a94bfb85f82ec7beec0c9750792042b222b07d7277df1c32503006a1"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/source/research/phase2_protocol.py",
+      "sha256": "3d05bd187320591bb9e69d38f9dc3263925608f17213c945caf8c7a6adcc84ca"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/source/research/forge_gap_metrics.py",
+      "sha256": "ed4dcde065a52732492fd5169eb408875c9d9b5f0850cafd76137ffef9462edc"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/source/research/forge_geometry.py",
+      "sha256": "d37caa904ae3bfcc2360ed31294f4d700fe412a127e030f6fe76dc6bb8751078"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/source/research/forge_events.py",
+      "sha256": "88361f3eacacda079fd3e9f7bc075dcc0a61ccbf7019b1891b670764d0b11022"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/source/research/future_stall.py",
+      "sha256": "7d6466b6e452beed65930aadcb6552d123947038ddac9bb18416b09e25a63d3c"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/source/research/forge_gap_study.py",
+      "sha256": "2dbea013ab35053fff628126fd36775a75aa782fad98e443e0b4f1409bb17fc9"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/source/research/forge_collection.py",
+      "sha256": "f06901e0c9d55df411981a27ee4ad512f089aaf8bd6fecec00d3da9a0d4c890f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/source/research/phase2b.py",
+      "sha256": "0dfa4d32fd924a72576a7f1316198352147a389e5fe4e328727eb0637a94949a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/source/research/forge_budget.py",
+      "sha256": "40192b23c229040c8b1115a64576b0ff163ba2b53e4989c765891eafc59d22e1"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/source/simulation/forge_budget.py",
+      "sha256": "149ebc16d1847c2d1d538d69c14a3d6f2e2e4dcce35e4f3c3f9221b31e0a4c8f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/source/simulation/launch_forge_budget.py",
+      "sha256": "cde311c34739495cdead06d5cbcc1e7eece78a3e41a69f81e5600c4902188233"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/source/simulation/run_budget_study.py",
+      "sha256": "07b415b85597cc1ed4cd4f824aca37ab158cf295c43222fb7b8a2c0785be1794"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/source/forge_budget.sh",
+      "sha256": "63655fe98a2091aaca7006247e5dbbded9810e330ea52adb9a91f75dc333c37b"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/insertion_contacts.jsonl.gz",
+      "sha256": "23d88b267df4ab27600089f25fc1b95658aebbd552648d69d58f3b3172a631a5"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/scene.json",
+      "sha256": "a94004f48e71dce5b3e685a9c222c5171eb1a6f7cb6c59de0f4febe245ca9544"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/insertion.csv",
+      "sha256": "da31c236fa8b40b658f9bca7bca7ed54599db0f739a5b4cd2755dfc170a10f2f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/recovery.csv",
+      "sha256": "cb4f8aeb3e08886bd7133bad1d71a15644ee623eba5f2009850896046e92a987"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/recovery_contacts.jsonl.gz",
+      "sha256": "c4f3fd4595b5c3e8ad843d9a7f8367a3d15c80611d651fd83b0273476ee46336"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/config.json",
+      "sha256": "37cb1ab49e89e27e05abbdea7ecd6e192497006f813fbfc784f9dcd04a10c21e"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/insertion.csv",
+      "sha256": "da31c236fa8b40b658f9bca7bca7ed54599db0f739a5b4cd2755dfc170a10f2f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/insertion_contacts.jsonl.gz",
+      "sha256": "23d88b267df4ab27600089f25fc1b95658aebbd552648d69d58f3b3172a631a5"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/recovery.csv",
+      "sha256": "cb4f8aeb3e08886bd7133bad1d71a15644ee623eba5f2009850896046e92a987"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/recovery_contacts.jsonl.gz",
+      "sha256": "c4f3fd4595b5c3e8ad843d9a7f8367a3d15c80611d651fd83b0273476ee46336"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/run.json",
+      "sha256": "a17b78422718280f66c690376f893b772349a38247b1e6424174c76222174be9"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/source/simulation/forge_mechanics.py",
+      "sha256": "3fd43f2e07700664eb0c2a4124a88d873dd87e54b6f78b42acb62557dc75d020"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/source/simulation/launch_forge_mechanics.py",
+      "sha256": "264a4f0cb3e3c1a8e088b1e8f5c31dc17462f465666223de766a7c25e391dadb"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/source/simulation/forge_mechanics_backend.py",
+      "sha256": "4d9d058ad5e2807a8a27151498c3f456d81badafce590b10050071e01b01cf1a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/source/research/forge_mechanics_contacts.py",
+      "sha256": "16dcba4012b1d5071ae30f835a5b2eaf0246d2b3aaa3b4571631f3b326047c41"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/source/simulation/forge_mechanics_recovery.py",
+      "sha256": "d6bfc182f1ce17cea871e78143dbda19d0a7cb1bd89a0b1390773344e4c26abe"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/source/research/forge_mechanics_motion.py",
+      "sha256": "b03db0bdf9d1f697442bd2032cbea8c64bae0f3fa8c5f162ee054f4910bf17a4"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/source/research/forge_mechanics_plan.py",
+      "sha256": "b738155535c4ff11e9e4e8ad470b0da82f154b789f8cece4ba2a330f8348fdca"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/source/research/forge_mechanics_metrics.py",
+      "sha256": "d2924bfe32e2a1b14b073cd8393b310f47d3274b6dff44a28c47a2501ec13e60"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/source/research/forge_mechanics_protocol.py",
+      "sha256": "0df8a8d32cdaf88ff4a8d3076ea81713367d1c23fd07992f71efe624be902fad"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/source/simulation/forge_backend.py",
+      "sha256": "5a0c3fb5f1c5d330c90fdc2a22e6d48cda1713156d134c5ba533b5fa6ce3a45f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/source/simulation/forge_experiment.py",
+      "sha256": "54ac5813d9dba93c4ac6aaf907d67e53d84a039d47000386cfc57434b1e76618"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/source/simulation/contact.py",
+      "sha256": "a23500505916cf97fe792258fedae0ea583f03b2652dc42121e2d761fbb6e522"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/source/research/forge_protocol.py",
+      "sha256": "3e112d13a94bfb85f82ec7beec0c9750792042b222b07d7277df1c32503006a1"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/source/research/phase2_protocol.py",
+      "sha256": "3d05bd187320591bb9e69d38f9dc3263925608f17213c945caf8c7a6adcc84ca"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/source/research/forge_gap_metrics.py",
+      "sha256": "ed4dcde065a52732492fd5169eb408875c9d9b5f0850cafd76137ffef9462edc"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/source/research/forge_geometry.py",
+      "sha256": "d37caa904ae3bfcc2360ed31294f4d700fe412a127e030f6fe76dc6bb8751078"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/source/research/forge_events.py",
+      "sha256": "88361f3eacacda079fd3e9f7bc075dcc0a61ccbf7019b1891b670764d0b11022"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/source/research/future_stall.py",
+      "sha256": "7d6466b6e452beed65930aadcb6552d123947038ddac9bb18416b09e25a63d3c"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/source/research/forge_gap_study.py",
+      "sha256": "2dbea013ab35053fff628126fd36775a75aa782fad98e443e0b4f1409bb17fc9"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/source/research/forge_collection.py",
+      "sha256": "f06901e0c9d55df411981a27ee4ad512f089aaf8bd6fecec00d3da9a0d4c890f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/source/research/phase2b.py",
+      "sha256": "0dfa4d32fd924a72576a7f1316198352147a389e5fe4e328727eb0637a94949a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/source/research/forge_budget.py",
+      "sha256": "40192b23c229040c8b1115a64576b0ff163ba2b53e4989c765891eafc59d22e1"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/source/simulation/forge_budget.py",
+      "sha256": "149ebc16d1847c2d1d538d69c14a3d6f2e2e4dcce35e4f3c3f9221b31e0a4c8f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/source/simulation/launch_forge_budget.py",
+      "sha256": "cde311c34739495cdead06d5cbcc1e7eece78a3e41a69f81e5600c4902188233"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/source/simulation/run_budget_study.py",
+      "sha256": "07b415b85597cc1ed4cd4f824aca37ab158cf295c43222fb7b8a2c0785be1794"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/source/forge_budget.sh",
+      "sha256": "63655fe98a2091aaca7006247e5dbbded9810e330ea52adb9a91f75dc333c37b"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/insertion_contacts.jsonl.gz",
+      "sha256": "4eda9d3981d9b81d2c6853ca69868f719a23927098d8f6b75b828bfb3fdfeaae"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/scene.json",
+      "sha256": "6f98d3c75ebb596f646968867110d8eff96d11415d7139f483f1093ba58bd83f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/insertion.csv",
+      "sha256": "da31c236fa8b40b658f9bca7bca7ed54599db0f739a5b4cd2755dfc170a10f2f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/recovery.csv",
+      "sha256": "c4181679f9aad1e4f7f3944afad79d67bcd58e5bfbf31990cf2fd9f5c6297b38"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/recovery_contacts.jsonl.gz",
+      "sha256": "1f6119a80200f4e84b5dbfe57d9e85ef7f686b62357da31f04fea23b995072ce"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/config.json",
+      "sha256": "cd93edc727aed75b58a87a3527669c91cae13b593b2d4f654029f57879e07101"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/insertion.csv",
+      "sha256": "da31c236fa8b40b658f9bca7bca7ed54599db0f739a5b4cd2755dfc170a10f2f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/insertion_contacts.jsonl.gz",
+      "sha256": "4eda9d3981d9b81d2c6853ca69868f719a23927098d8f6b75b828bfb3fdfeaae"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/recovery.csv",
+      "sha256": "c4181679f9aad1e4f7f3944afad79d67bcd58e5bfbf31990cf2fd9f5c6297b38"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/recovery_contacts.jsonl.gz",
+      "sha256": "1f6119a80200f4e84b5dbfe57d9e85ef7f686b62357da31f04fea23b995072ce"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/run.json",
+      "sha256": "b3e649739ba67b997f2ce4f4bea476384cc83bf7fed7cf07a899b227211212b0"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/source/simulation/forge_mechanics.py",
+      "sha256": "3fd43f2e07700664eb0c2a4124a88d873dd87e54b6f78b42acb62557dc75d020"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/source/simulation/launch_forge_mechanics.py",
+      "sha256": "264a4f0cb3e3c1a8e088b1e8f5c31dc17462f465666223de766a7c25e391dadb"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/source/simulation/forge_mechanics_backend.py",
+      "sha256": "4d9d058ad5e2807a8a27151498c3f456d81badafce590b10050071e01b01cf1a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/source/research/forge_mechanics_contacts.py",
+      "sha256": "16dcba4012b1d5071ae30f835a5b2eaf0246d2b3aaa3b4571631f3b326047c41"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/source/simulation/forge_mechanics_recovery.py",
+      "sha256": "d6bfc182f1ce17cea871e78143dbda19d0a7cb1bd89a0b1390773344e4c26abe"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/source/research/forge_mechanics_motion.py",
+      "sha256": "b03db0bdf9d1f697442bd2032cbea8c64bae0f3fa8c5f162ee054f4910bf17a4"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/source/research/forge_mechanics_plan.py",
+      "sha256": "b738155535c4ff11e9e4e8ad470b0da82f154b789f8cece4ba2a330f8348fdca"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/source/research/forge_mechanics_metrics.py",
+      "sha256": "d2924bfe32e2a1b14b073cd8393b310f47d3274b6dff44a28c47a2501ec13e60"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/source/research/forge_mechanics_protocol.py",
+      "sha256": "0df8a8d32cdaf88ff4a8d3076ea81713367d1c23fd07992f71efe624be902fad"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/source/simulation/forge_backend.py",
+      "sha256": "5a0c3fb5f1c5d330c90fdc2a22e6d48cda1713156d134c5ba533b5fa6ce3a45f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/source/simulation/forge_experiment.py",
+      "sha256": "54ac5813d9dba93c4ac6aaf907d67e53d84a039d47000386cfc57434b1e76618"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/source/simulation/contact.py",
+      "sha256": "a23500505916cf97fe792258fedae0ea583f03b2652dc42121e2d761fbb6e522"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/source/research/forge_protocol.py",
+      "sha256": "3e112d13a94bfb85f82ec7beec0c9750792042b222b07d7277df1c32503006a1"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/source/research/phase2_protocol.py",
+      "sha256": "3d05bd187320591bb9e69d38f9dc3263925608f17213c945caf8c7a6adcc84ca"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/source/research/forge_gap_metrics.py",
+      "sha256": "ed4dcde065a52732492fd5169eb408875c9d9b5f0850cafd76137ffef9462edc"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/source/research/forge_geometry.py",
+      "sha256": "d37caa904ae3bfcc2360ed31294f4d700fe412a127e030f6fe76dc6bb8751078"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/source/research/forge_events.py",
+      "sha256": "88361f3eacacda079fd3e9f7bc075dcc0a61ccbf7019b1891b670764d0b11022"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/source/research/future_stall.py",
+      "sha256": "7d6466b6e452beed65930aadcb6552d123947038ddac9bb18416b09e25a63d3c"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/source/research/forge_gap_study.py",
+      "sha256": "2dbea013ab35053fff628126fd36775a75aa782fad98e443e0b4f1409bb17fc9"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/source/research/forge_collection.py",
+      "sha256": "f06901e0c9d55df411981a27ee4ad512f089aaf8bd6fecec00d3da9a0d4c890f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/source/research/phase2b.py",
+      "sha256": "0dfa4d32fd924a72576a7f1316198352147a389e5fe4e328727eb0637a94949a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/source/research/forge_budget.py",
+      "sha256": "40192b23c229040c8b1115a64576b0ff163ba2b53e4989c765891eafc59d22e1"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/source/simulation/forge_budget.py",
+      "sha256": "149ebc16d1847c2d1d538d69c14a3d6f2e2e4dcce35e4f3c3f9221b31e0a4c8f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/source/simulation/launch_forge_budget.py",
+      "sha256": "cde311c34739495cdead06d5cbcc1e7eece78a3e41a69f81e5600c4902188233"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/source/simulation/run_budget_study.py",
+      "sha256": "07b415b85597cc1ed4cd4f824aca37ab158cf295c43222fb7b8a2c0785be1794"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/source/forge_budget.sh",
+      "sha256": "63655fe98a2091aaca7006247e5dbbded9810e330ea52adb9a91f75dc333c37b"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/insertion_contacts.jsonl.gz",
+      "sha256": "1034bc58568666be41bb77622665c8b5e86d751f19dafea6ced7ec54dc8034e9"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/scene.json",
+      "sha256": "69edce797fdf7ad33be4a2e30b5db7fc54c43c26100043a6c610f5f8acbf3e2f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/insertion.csv",
+      "sha256": "da31c236fa8b40b658f9bca7bca7ed54599db0f739a5b4cd2755dfc170a10f2f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/recovery.csv",
+      "sha256": "4b489ffa48f591ceef0bacc44aa24b18c4cfc24801871bc2ba2c0e779ee028c3"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/recovery_contacts.jsonl.gz",
+      "sha256": "3837cc97f560b0657de2cf3f7bf2e2f4d5aac52ce9bdb95a5f7d8a1871e0d49e"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/config.json",
+      "sha256": "f2395fa5a207f7a3454f9e18aae6843301b87e6e2c33e0471449318699a6be10"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/insertion.csv",
+      "sha256": "da31c236fa8b40b658f9bca7bca7ed54599db0f739a5b4cd2755dfc170a10f2f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/insertion_contacts.jsonl.gz",
+      "sha256": "1034bc58568666be41bb77622665c8b5e86d751f19dafea6ced7ec54dc8034e9"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/recovery.csv",
+      "sha256": "4b489ffa48f591ceef0bacc44aa24b18c4cfc24801871bc2ba2c0e779ee028c3"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/recovery_contacts.jsonl.gz",
+      "sha256": "3837cc97f560b0657de2cf3f7bf2e2f4d5aac52ce9bdb95a5f7d8a1871e0d49e"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/run.json",
+      "sha256": "e6f3461e7460b9e3fedfdf108350a8ae25e67b55dda49b79fbb0ef95ce55164f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/source/simulation/forge_mechanics.py",
+      "sha256": "3fd43f2e07700664eb0c2a4124a88d873dd87e54b6f78b42acb62557dc75d020"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/source/simulation/launch_forge_mechanics.py",
+      "sha256": "264a4f0cb3e3c1a8e088b1e8f5c31dc17462f465666223de766a7c25e391dadb"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/source/simulation/forge_mechanics_backend.py",
+      "sha256": "4d9d058ad5e2807a8a27151498c3f456d81badafce590b10050071e01b01cf1a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/source/research/forge_mechanics_contacts.py",
+      "sha256": "16dcba4012b1d5071ae30f835a5b2eaf0246d2b3aaa3b4571631f3b326047c41"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/source/simulation/forge_mechanics_recovery.py",
+      "sha256": "d6bfc182f1ce17cea871e78143dbda19d0a7cb1bd89a0b1390773344e4c26abe"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/source/research/forge_mechanics_motion.py",
+      "sha256": "b03db0bdf9d1f697442bd2032cbea8c64bae0f3fa8c5f162ee054f4910bf17a4"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/source/research/forge_mechanics_plan.py",
+      "sha256": "b738155535c4ff11e9e4e8ad470b0da82f154b789f8cece4ba2a330f8348fdca"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/source/research/forge_mechanics_metrics.py",
+      "sha256": "d2924bfe32e2a1b14b073cd8393b310f47d3274b6dff44a28c47a2501ec13e60"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/source/research/forge_mechanics_protocol.py",
+      "sha256": "0df8a8d32cdaf88ff4a8d3076ea81713367d1c23fd07992f71efe624be902fad"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/source/simulation/forge_backend.py",
+      "sha256": "5a0c3fb5f1c5d330c90fdc2a22e6d48cda1713156d134c5ba533b5fa6ce3a45f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/source/simulation/forge_experiment.py",
+      "sha256": "54ac5813d9dba93c4ac6aaf907d67e53d84a039d47000386cfc57434b1e76618"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/source/simulation/contact.py",
+      "sha256": "a23500505916cf97fe792258fedae0ea583f03b2652dc42121e2d761fbb6e522"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/source/research/forge_protocol.py",
+      "sha256": "3e112d13a94bfb85f82ec7beec0c9750792042b222b07d7277df1c32503006a1"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/source/research/phase2_protocol.py",
+      "sha256": "3d05bd187320591bb9e69d38f9dc3263925608f17213c945caf8c7a6adcc84ca"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/source/research/forge_gap_metrics.py",
+      "sha256": "ed4dcde065a52732492fd5169eb408875c9d9b5f0850cafd76137ffef9462edc"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/source/research/forge_geometry.py",
+      "sha256": "d37caa904ae3bfcc2360ed31294f4d700fe412a127e030f6fe76dc6bb8751078"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/source/research/forge_events.py",
+      "sha256": "88361f3eacacda079fd3e9f7bc075dcc0a61ccbf7019b1891b670764d0b11022"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/source/research/future_stall.py",
+      "sha256": "7d6466b6e452beed65930aadcb6552d123947038ddac9bb18416b09e25a63d3c"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/source/research/forge_gap_study.py",
+      "sha256": "2dbea013ab35053fff628126fd36775a75aa782fad98e443e0b4f1409bb17fc9"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/source/research/forge_collection.py",
+      "sha256": "f06901e0c9d55df411981a27ee4ad512f089aaf8bd6fecec00d3da9a0d4c890f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/source/research/phase2b.py",
+      "sha256": "0dfa4d32fd924a72576a7f1316198352147a389e5fe4e328727eb0637a94949a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/source/research/forge_budget.py",
+      "sha256": "40192b23c229040c8b1115a64576b0ff163ba2b53e4989c765891eafc59d22e1"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/source/simulation/forge_budget.py",
+      "sha256": "149ebc16d1847c2d1d538d69c14a3d6f2e2e4dcce35e4f3c3f9221b31e0a4c8f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/source/simulation/launch_forge_budget.py",
+      "sha256": "cde311c34739495cdead06d5cbcc1e7eece78a3e41a69f81e5600c4902188233"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/source/simulation/run_budget_study.py",
+      "sha256": "07b415b85597cc1ed4cd4f824aca37ab158cf295c43222fb7b8a2c0785be1794"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/source/forge_budget.sh",
+      "sha256": "63655fe98a2091aaca7006247e5dbbded9810e330ea52adb9a91f75dc333c37b"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/insertion_contacts.jsonl.gz",
+      "sha256": "3a6c574327057762ed151118bbbc2ebd20b1e25e9920cac5b2bb3ba82f5ee508"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/scene.json",
+      "sha256": "3db97a67f151c8720a75e84acf72c8efcf2742ce331cb3ae21e9a8701b9ca79c"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/insertion.csv",
+      "sha256": "da31c236fa8b40b658f9bca7bca7ed54599db0f739a5b4cd2755dfc170a10f2f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/recovery.csv",
+      "sha256": "c4181679f9aad1e4f7f3944afad79d67bcd58e5bfbf31990cf2fd9f5c6297b38"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/recovery_contacts.jsonl.gz",
+      "sha256": "1ce5d7513cb6c411e298d08351314f4d780c10b3019ab4b8d4e6ba4a096a5312"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/config.json",
+      "sha256": "70e631d02273b962645e74a9211e4eaf29cb8edba959504baff1eb9d781d5993"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/insertion.csv",
+      "sha256": "da31c236fa8b40b658f9bca7bca7ed54599db0f739a5b4cd2755dfc170a10f2f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/insertion_contacts.jsonl.gz",
+      "sha256": "3a6c574327057762ed151118bbbc2ebd20b1e25e9920cac5b2bb3ba82f5ee508"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/recovery.csv",
+      "sha256": "c4181679f9aad1e4f7f3944afad79d67bcd58e5bfbf31990cf2fd9f5c6297b38"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/recovery_contacts.jsonl.gz",
+      "sha256": "1ce5d7513cb6c411e298d08351314f4d780c10b3019ab4b8d4e6ba4a096a5312"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/run.json",
+      "sha256": "8d71f6eb91f503bf791da45d3bc287fe508dafb6d0c032cd87fd8347fe897e4b"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/source/simulation/forge_mechanics.py",
+      "sha256": "3fd43f2e07700664eb0c2a4124a88d873dd87e54b6f78b42acb62557dc75d020"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/source/simulation/launch_forge_mechanics.py",
+      "sha256": "264a4f0cb3e3c1a8e088b1e8f5c31dc17462f465666223de766a7c25e391dadb"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/source/simulation/forge_mechanics_backend.py",
+      "sha256": "4d9d058ad5e2807a8a27151498c3f456d81badafce590b10050071e01b01cf1a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/source/research/forge_mechanics_contacts.py",
+      "sha256": "16dcba4012b1d5071ae30f835a5b2eaf0246d2b3aaa3b4571631f3b326047c41"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/source/simulation/forge_mechanics_recovery.py",
+      "sha256": "d6bfc182f1ce17cea871e78143dbda19d0a7cb1bd89a0b1390773344e4c26abe"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/source/research/forge_mechanics_motion.py",
+      "sha256": "b03db0bdf9d1f697442bd2032cbea8c64bae0f3fa8c5f162ee054f4910bf17a4"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/source/research/forge_mechanics_plan.py",
+      "sha256": "b738155535c4ff11e9e4e8ad470b0da82f154b789f8cece4ba2a330f8348fdca"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/source/research/forge_mechanics_metrics.py",
+      "sha256": "d2924bfe32e2a1b14b073cd8393b310f47d3274b6dff44a28c47a2501ec13e60"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/source/research/forge_mechanics_protocol.py",
+      "sha256": "0df8a8d32cdaf88ff4a8d3076ea81713367d1c23fd07992f71efe624be902fad"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/source/simulation/forge_backend.py",
+      "sha256": "5a0c3fb5f1c5d330c90fdc2a22e6d48cda1713156d134c5ba533b5fa6ce3a45f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/source/simulation/forge_experiment.py",
+      "sha256": "54ac5813d9dba93c4ac6aaf907d67e53d84a039d47000386cfc57434b1e76618"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/source/simulation/contact.py",
+      "sha256": "a23500505916cf97fe792258fedae0ea583f03b2652dc42121e2d761fbb6e522"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/source/research/forge_protocol.py",
+      "sha256": "3e112d13a94bfb85f82ec7beec0c9750792042b222b07d7277df1c32503006a1"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/source/research/phase2_protocol.py",
+      "sha256": "3d05bd187320591bb9e69d38f9dc3263925608f17213c945caf8c7a6adcc84ca"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/source/research/forge_gap_metrics.py",
+      "sha256": "ed4dcde065a52732492fd5169eb408875c9d9b5f0850cafd76137ffef9462edc"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/source/research/forge_geometry.py",
+      "sha256": "d37caa904ae3bfcc2360ed31294f4d700fe412a127e030f6fe76dc6bb8751078"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/source/research/forge_events.py",
+      "sha256": "88361f3eacacda079fd3e9f7bc075dcc0a61ccbf7019b1891b670764d0b11022"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/source/research/future_stall.py",
+      "sha256": "7d6466b6e452beed65930aadcb6552d123947038ddac9bb18416b09e25a63d3c"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/source/research/forge_gap_study.py",
+      "sha256": "2dbea013ab35053fff628126fd36775a75aa782fad98e443e0b4f1409bb17fc9"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/source/research/forge_collection.py",
+      "sha256": "f06901e0c9d55df411981a27ee4ad512f089aaf8bd6fecec00d3da9a0d4c890f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/source/research/phase2b.py",
+      "sha256": "0dfa4d32fd924a72576a7f1316198352147a389e5fe4e328727eb0637a94949a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/source/research/forge_budget.py",
+      "sha256": "40192b23c229040c8b1115a64576b0ff163ba2b53e4989c765891eafc59d22e1"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/source/simulation/forge_budget.py",
+      "sha256": "149ebc16d1847c2d1d538d69c14a3d6f2e2e4dcce35e4f3c3f9221b31e0a4c8f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/source/simulation/launch_forge_budget.py",
+      "sha256": "cde311c34739495cdead06d5cbcc1e7eece78a3e41a69f81e5600c4902188233"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/source/simulation/run_budget_study.py",
+      "sha256": "07b415b85597cc1ed4cd4f824aca37ab158cf295c43222fb7b8a2c0785be1794"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/source/forge_budget.sh",
+      "sha256": "63655fe98a2091aaca7006247e5dbbded9810e330ea52adb9a91f75dc333c37b"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/insertion_contacts.jsonl.gz",
+      "sha256": "9225787fdf640a21982d2c8b741cea7277fb4b114cee32190c0f8ee281fbcb1a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/scene.json",
+      "sha256": "97e5117226f5cb93a4da043f653f37d241a246d14faf6c0461e13ec4c6fea0f3"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/insertion.csv",
+      "sha256": "78a169998dd24456cac891cf58beb9944225c16fa658570f2fcc62fc726ac853"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/recovery.csv",
+      "sha256": "d641602e3190f6f1da320b75ecc93e26a384a17a774f655ca4a3a88210c65896"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/recovery_contacts.jsonl.gz",
+      "sha256": "a467c520c4516dd6b13954124c2a58fe7989d264dfee8e13b026e9915001ed41"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/config.json",
+      "sha256": "74e7ca649c340447f27f0b0be6c769097358c041a1c90c36057bbc089c0d3a26"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/insertion.csv",
+      "sha256": "78a169998dd24456cac891cf58beb9944225c16fa658570f2fcc62fc726ac853"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/insertion_contacts.jsonl.gz",
+      "sha256": "9225787fdf640a21982d2c8b741cea7277fb4b114cee32190c0f8ee281fbcb1a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/recovery.csv",
+      "sha256": "d641602e3190f6f1da320b75ecc93e26a384a17a774f655ca4a3a88210c65896"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/recovery_contacts.jsonl.gz",
+      "sha256": "a467c520c4516dd6b13954124c2a58fe7989d264dfee8e13b026e9915001ed41"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/run.json",
+      "sha256": "e3ca4a365808ce0ec7685760a2e3160152cc06fbf66e4dd573e348a3030f819a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/source/simulation/forge_mechanics.py",
+      "sha256": "3fd43f2e07700664eb0c2a4124a88d873dd87e54b6f78b42acb62557dc75d020"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/source/simulation/launch_forge_mechanics.py",
+      "sha256": "264a4f0cb3e3c1a8e088b1e8f5c31dc17462f465666223de766a7c25e391dadb"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/source/simulation/forge_mechanics_backend.py",
+      "sha256": "4d9d058ad5e2807a8a27151498c3f456d81badafce590b10050071e01b01cf1a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/source/research/forge_mechanics_contacts.py",
+      "sha256": "16dcba4012b1d5071ae30f835a5b2eaf0246d2b3aaa3b4571631f3b326047c41"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/source/simulation/forge_mechanics_recovery.py",
+      "sha256": "d6bfc182f1ce17cea871e78143dbda19d0a7cb1bd89a0b1390773344e4c26abe"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/source/research/forge_mechanics_motion.py",
+      "sha256": "b03db0bdf9d1f697442bd2032cbea8c64bae0f3fa8c5f162ee054f4910bf17a4"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/source/research/forge_mechanics_plan.py",
+      "sha256": "b738155535c4ff11e9e4e8ad470b0da82f154b789f8cece4ba2a330f8348fdca"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/source/research/forge_mechanics_metrics.py",
+      "sha256": "d2924bfe32e2a1b14b073cd8393b310f47d3274b6dff44a28c47a2501ec13e60"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/source/research/forge_mechanics_protocol.py",
+      "sha256": "0df8a8d32cdaf88ff4a8d3076ea81713367d1c23fd07992f71efe624be902fad"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/source/simulation/forge_backend.py",
+      "sha256": "5a0c3fb5f1c5d330c90fdc2a22e6d48cda1713156d134c5ba533b5fa6ce3a45f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/source/simulation/forge_experiment.py",
+      "sha256": "54ac5813d9dba93c4ac6aaf907d67e53d84a039d47000386cfc57434b1e76618"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/source/simulation/contact.py",
+      "sha256": "a23500505916cf97fe792258fedae0ea583f03b2652dc42121e2d761fbb6e522"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/source/research/forge_protocol.py",
+      "sha256": "3e112d13a94bfb85f82ec7beec0c9750792042b222b07d7277df1c32503006a1"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/source/research/phase2_protocol.py",
+      "sha256": "3d05bd187320591bb9e69d38f9dc3263925608f17213c945caf8c7a6adcc84ca"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/source/research/forge_gap_metrics.py",
+      "sha256": "ed4dcde065a52732492fd5169eb408875c9d9b5f0850cafd76137ffef9462edc"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/source/research/forge_geometry.py",
+      "sha256": "d37caa904ae3bfcc2360ed31294f4d700fe412a127e030f6fe76dc6bb8751078"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/source/research/forge_events.py",
+      "sha256": "88361f3eacacda079fd3e9f7bc075dcc0a61ccbf7019b1891b670764d0b11022"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/source/research/future_stall.py",
+      "sha256": "7d6466b6e452beed65930aadcb6552d123947038ddac9bb18416b09e25a63d3c"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/source/research/forge_gap_study.py",
+      "sha256": "2dbea013ab35053fff628126fd36775a75aa782fad98e443e0b4f1409bb17fc9"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/source/research/forge_collection.py",
+      "sha256": "f06901e0c9d55df411981a27ee4ad512f089aaf8bd6fecec00d3da9a0d4c890f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/source/research/phase2b.py",
+      "sha256": "0dfa4d32fd924a72576a7f1316198352147a389e5fe4e328727eb0637a94949a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/source/research/forge_budget.py",
+      "sha256": "40192b23c229040c8b1115a64576b0ff163ba2b53e4989c765891eafc59d22e1"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/source/simulation/forge_budget.py",
+      "sha256": "149ebc16d1847c2d1d538d69c14a3d6f2e2e4dcce35e4f3c3f9221b31e0a4c8f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/source/simulation/launch_forge_budget.py",
+      "sha256": "cde311c34739495cdead06d5cbcc1e7eece78a3e41a69f81e5600c4902188233"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/source/simulation/run_budget_study.py",
+      "sha256": "07b415b85597cc1ed4cd4f824aca37ab158cf295c43222fb7b8a2c0785be1794"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/source/forge_budget.sh",
+      "sha256": "63655fe98a2091aaca7006247e5dbbded9810e330ea52adb9a91f75dc333c37b"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/insertion_contacts.jsonl.gz",
+      "sha256": "4bf6fce8ada8fe4d42e32e0a45b4c201e622c3b8557cb79a933e750dd79e9e00"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/scene.json",
+      "sha256": "355bcc7783b1da593a4b74f9ee82cd30375bf51de2641344c0919f11f3261ea3"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/insertion.csv",
+      "sha256": "78a169998dd24456cac891cf58beb9944225c16fa658570f2fcc62fc726ac853"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/recovery.csv",
+      "sha256": "e7ce2c6ceefdbed76f12fdffa42c295e59fec0dd5836d909adee6c892636a7f9"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/recovery_contacts.jsonl.gz",
+      "sha256": "e71bd75293d9e53e721bf95a41a6e9419317735643b1c117d2e0550b2ad8385b"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/config.json",
+      "sha256": "f73d7bfc7294e050971c15f07920fb31cf323763f59ac6b70ff6ab2dd80db7c5"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/insertion.csv",
+      "sha256": "78a169998dd24456cac891cf58beb9944225c16fa658570f2fcc62fc726ac853"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/insertion_contacts.jsonl.gz",
+      "sha256": "4bf6fce8ada8fe4d42e32e0a45b4c201e622c3b8557cb79a933e750dd79e9e00"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/recovery.csv",
+      "sha256": "e7ce2c6ceefdbed76f12fdffa42c295e59fec0dd5836d909adee6c892636a7f9"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/recovery_contacts.jsonl.gz",
+      "sha256": "e71bd75293d9e53e721bf95a41a6e9419317735643b1c117d2e0550b2ad8385b"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs050_fd050_a1p5__b04/straight/run.json",
+      "sha256": "041b323ba55cbd07a3d8ba2d1e05e61a5ff2e9dc35e5965b9dec2862a12a4744"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs050_fd050_a1p5__b04/straight/source/simulation/forge_mechanics.py",
+      "sha256": "3fd43f2e07700664eb0c2a4124a88d873dd87e54b6f78b42acb62557dc75d020"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs050_fd050_a1p5__b04/straight/source/simulation/launch_forge_mechanics.py",
+      "sha256": "264a4f0cb3e3c1a8e088b1e8f5c31dc17462f465666223de766a7c25e391dadb"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs050_fd050_a1p5__b04/straight/source/simulation/forge_mechanics_backend.py",
+      "sha256": "4d9d058ad5e2807a8a27151498c3f456d81badafce590b10050071e01b01cf1a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs050_fd050_a1p5__b04/straight/source/research/forge_mechanics_contacts.py",
+      "sha256": "16dcba4012b1d5071ae30f835a5b2eaf0246d2b3aaa3b4571631f3b326047c41"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs050_fd050_a1p5__b04/straight/source/simulation/forge_mechanics_recovery.py",
+      "sha256": "d6bfc182f1ce17cea871e78143dbda19d0a7cb1bd89a0b1390773344e4c26abe"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs050_fd050_a1p5__b04/straight/source/research/forge_mechanics_motion.py",
+      "sha256": "b03db0bdf9d1f697442bd2032cbea8c64bae0f3fa8c5f162ee054f4910bf17a4"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs050_fd050_a1p5__b04/straight/source/research/forge_mechanics_plan.py",
+      "sha256": "b738155535c4ff11e9e4e8ad470b0da82f154b789f8cece4ba2a330f8348fdca"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs050_fd050_a1p5__b04/straight/source/research/forge_mechanics_metrics.py",
+      "sha256": "d2924bfe32e2a1b14b073cd8393b310f47d3274b6dff44a28c47a2501ec13e60"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs050_fd050_a1p5__b04/straight/source/research/forge_mechanics_protocol.py",
+      "sha256": "0df8a8d32cdaf88ff4a8d3076ea81713367d1c23fd07992f71efe624be902fad"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs050_fd050_a1p5__b04/straight/source/simulation/forge_backend.py",
+      "sha256": "5a0c3fb5f1c5d330c90fdc2a22e6d48cda1713156d134c5ba533b5fa6ce3a45f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs050_fd050_a1p5__b04/straight/source/simulation/forge_experiment.py",
+      "sha256": "54ac5813d9dba93c4ac6aaf907d67e53d84a039d47000386cfc57434b1e76618"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs050_fd050_a1p5__b04/straight/source/simulation/contact.py",
+      "sha256": "a23500505916cf97fe792258fedae0ea583f03b2652dc42121e2d761fbb6e522"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs050_fd050_a1p5__b04/straight/source/research/forge_protocol.py",
+      "sha256": "3e112d13a94bfb85f82ec7beec0c9750792042b222b07d7277df1c32503006a1"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs050_fd050_a1p5__b04/straight/source/research/phase2_protocol.py",
+      "sha256": "3d05bd187320591bb9e69d38f9dc3263925608f17213c945caf8c7a6adcc84ca"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs050_fd050_a1p5__b04/straight/source/research/forge_gap_metrics.py",
+      "sha256": "ed4dcde065a52732492fd5169eb408875c9d9b5f0850cafd76137ffef9462edc"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs050_fd050_a1p5__b04/straight/source/research/forge_geometry.py",
+      "sha256": "d37caa904ae3bfcc2360ed31294f4d700fe412a127e030f6fe76dc6bb8751078"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs050_fd050_a1p5__b04/straight/source/research/forge_events.py",
+      "sha256": "88361f3eacacda079fd3e9f7bc075dcc0a61ccbf7019b1891b670764d0b11022"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs050_fd050_a1p5__b04/straight/source/research/future_stall.py",
+      "sha256": "7d6466b6e452beed65930aadcb6552d123947038ddac9bb18416b09e25a63d3c"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs050_fd050_a1p5__b04/straight/source/research/forge_gap_study.py",
+      "sha256": "2dbea013ab35053fff628126fd36775a75aa782fad98e443e0b4f1409bb17fc9"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs050_fd050_a1p5__b04/straight/source/research/forge_collection.py",
+      "sha256": "f06901e0c9d55df411981a27ee4ad512f089aaf8bd6fecec00d3da9a0d4c890f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs050_fd050_a1p5__b04/straight/source/research/phase2b.py",
+      "sha256": "0dfa4d32fd924a72576a7f1316198352147a389e5fe4e328727eb0637a94949a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs050_fd050_a1p5__b04/straight/source/research/forge_budget.py",
+      "sha256": "40192b23c229040c8b1115a64576b0ff163ba2b53e4989c765891eafc59d22e1"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs050_fd050_a1p5__b04/straight/source/simulation/forge_budget.py",
+      "sha256": "149ebc16d1847c2d1d538d69c14a3d6f2e2e4dcce35e4f3c3f9221b31e0a4c8f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs050_fd050_a1p5__b04/straight/source/simulation/launch_forge_budget.py",
+      "sha256": "cde311c34739495cdead06d5cbcc1e7eece78a3e41a69f81e5600c4902188233"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs050_fd050_a1p5__b04/straight/source/simulation/run_budget_study.py",
+      "sha256": "07b415b85597cc1ed4cd4f824aca37ab158cf295c43222fb7b8a2c0785be1794"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs050_fd050_a1p5__b04/straight/source/forge_budget.sh",
+      "sha256": "63655fe98a2091aaca7006247e5dbbded9810e330ea52adb9a91f75dc333c37b"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs050_fd050_a1p5__b04/straight/insertion_contacts.jsonl.gz",
+      "sha256": "617a378a31992405eff109e325f8431e82364c1bfa8c9bbd1650abd9c4bc5b0a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs050_fd050_a1p5__b04/straight/scene.json",
+      "sha256": "f3ebbc733afc6abadc2f25c02aca75af07a9a1a3997ff2de368ea234dcdb35f4"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs050_fd050_a1p5__b04/straight/insertion.csv",
+      "sha256": "106c4408878a2731694fc628250b1146250d5a00a4ee381fdaaeaa3c47b9e915"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs050_fd050_a1p5__b04/straight/config.json",
+      "sha256": "6784c3bdf0eae581a5ec183ca7c271bc11fe34188666b1b019239588cfc2a768"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs050_fd050_a1p5__b04/straight/insertion.csv",
+      "sha256": "106c4408878a2731694fc628250b1146250d5a00a4ee381fdaaeaa3c47b9e915"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs050_fd050_a1p5__b04/straight/insertion_contacts.jsonl.gz",
+      "sha256": "617a378a31992405eff109e325f8431e82364c1bfa8c9bbd1650abd9c4bc5b0a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/run.json",
+      "sha256": "cba9f93b37c93e83871352b55970f772cd5fc034580cd9d35027bca7769843da"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/source/simulation/forge_mechanics.py",
+      "sha256": "3fd43f2e07700664eb0c2a4124a88d873dd87e54b6f78b42acb62557dc75d020"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/source/simulation/launch_forge_mechanics.py",
+      "sha256": "264a4f0cb3e3c1a8e088b1e8f5c31dc17462f465666223de766a7c25e391dadb"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/source/simulation/forge_mechanics_backend.py",
+      "sha256": "4d9d058ad5e2807a8a27151498c3f456d81badafce590b10050071e01b01cf1a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/source/research/forge_mechanics_contacts.py",
+      "sha256": "16dcba4012b1d5071ae30f835a5b2eaf0246d2b3aaa3b4571631f3b326047c41"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/source/simulation/forge_mechanics_recovery.py",
+      "sha256": "d6bfc182f1ce17cea871e78143dbda19d0a7cb1bd89a0b1390773344e4c26abe"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/source/research/forge_mechanics_motion.py",
+      "sha256": "b03db0bdf9d1f697442bd2032cbea8c64bae0f3fa8c5f162ee054f4910bf17a4"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/source/research/forge_mechanics_plan.py",
+      "sha256": "b738155535c4ff11e9e4e8ad470b0da82f154b789f8cece4ba2a330f8348fdca"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/source/research/forge_mechanics_metrics.py",
+      "sha256": "d2924bfe32e2a1b14b073cd8393b310f47d3274b6dff44a28c47a2501ec13e60"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/source/research/forge_mechanics_protocol.py",
+      "sha256": "0df8a8d32cdaf88ff4a8d3076ea81713367d1c23fd07992f71efe624be902fad"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/source/simulation/forge_backend.py",
+      "sha256": "5a0c3fb5f1c5d330c90fdc2a22e6d48cda1713156d134c5ba533b5fa6ce3a45f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/source/simulation/forge_experiment.py",
+      "sha256": "54ac5813d9dba93c4ac6aaf907d67e53d84a039d47000386cfc57434b1e76618"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/source/simulation/contact.py",
+      "sha256": "a23500505916cf97fe792258fedae0ea583f03b2652dc42121e2d761fbb6e522"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/source/research/forge_protocol.py",
+      "sha256": "3e112d13a94bfb85f82ec7beec0c9750792042b222b07d7277df1c32503006a1"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/source/research/phase2_protocol.py",
+      "sha256": "3d05bd187320591bb9e69d38f9dc3263925608f17213c945caf8c7a6adcc84ca"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/source/research/forge_gap_metrics.py",
+      "sha256": "ed4dcde065a52732492fd5169eb408875c9d9b5f0850cafd76137ffef9462edc"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/source/research/forge_geometry.py",
+      "sha256": "d37caa904ae3bfcc2360ed31294f4d700fe412a127e030f6fe76dc6bb8751078"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/source/research/forge_events.py",
+      "sha256": "88361f3eacacda079fd3e9f7bc075dcc0a61ccbf7019b1891b670764d0b11022"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/source/research/future_stall.py",
+      "sha256": "7d6466b6e452beed65930aadcb6552d123947038ddac9bb18416b09e25a63d3c"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/source/research/forge_gap_study.py",
+      "sha256": "2dbea013ab35053fff628126fd36775a75aa782fad98e443e0b4f1409bb17fc9"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/source/research/forge_collection.py",
+      "sha256": "f06901e0c9d55df411981a27ee4ad512f089aaf8bd6fecec00d3da9a0d4c890f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/source/research/phase2b.py",
+      "sha256": "0dfa4d32fd924a72576a7f1316198352147a389e5fe4e328727eb0637a94949a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/source/research/forge_budget.py",
+      "sha256": "40192b23c229040c8b1115a64576b0ff163ba2b53e4989c765891eafc59d22e1"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/source/simulation/forge_budget.py",
+      "sha256": "149ebc16d1847c2d1d538d69c14a3d6f2e2e4dcce35e4f3c3f9221b31e0a4c8f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/source/simulation/launch_forge_budget.py",
+      "sha256": "cde311c34739495cdead06d5cbcc1e7eece78a3e41a69f81e5600c4902188233"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/source/simulation/run_budget_study.py",
+      "sha256": "07b415b85597cc1ed4cd4f824aca37ab158cf295c43222fb7b8a2c0785be1794"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/source/forge_budget.sh",
+      "sha256": "63655fe98a2091aaca7006247e5dbbded9810e330ea52adb9a91f75dc333c37b"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/insertion_contacts.jsonl.gz",
+      "sha256": "aac7f46c576635eacf5d60da85578a37f3bfd3e82fd85f2c4b7ed66bf96620fe"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/scene.json",
+      "sha256": "efd1221c7a7326e493e489835128a742a0745cdacbd5f90d543f938d0115b96d"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/insertion.csv",
+      "sha256": "5bcb980bb791bf2dc38d27fd8320f0d344f05d0b8e9f570787102f5109aacad6"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/config.json",
+      "sha256": "4e0d8da3df3e8498d560d1be09115c68dcd6b0db420cd749b10d839c9fcbe946"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/insertion.csv",
+      "sha256": "5bcb980bb791bf2dc38d27fd8320f0d344f05d0b8e9f570787102f5109aacad6"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/insertion_contacts.jsonl.gz",
+      "sha256": "aac7f46c576635eacf5d60da85578a37f3bfd3e82fd85f2c4b7ed66bf96620fe"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b03/straight/run.json",
+      "sha256": "ef20cab4d820cd6c379967c80bc21bcf028db923e8fef208a53381872db91bce"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b03/straight/source/simulation/forge_mechanics.py",
+      "sha256": "3fd43f2e07700664eb0c2a4124a88d873dd87e54b6f78b42acb62557dc75d020"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b03/straight/source/simulation/launch_forge_mechanics.py",
+      "sha256": "264a4f0cb3e3c1a8e088b1e8f5c31dc17462f465666223de766a7c25e391dadb"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b03/straight/source/simulation/forge_mechanics_backend.py",
+      "sha256": "4d9d058ad5e2807a8a27151498c3f456d81badafce590b10050071e01b01cf1a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b03/straight/source/research/forge_mechanics_contacts.py",
+      "sha256": "16dcba4012b1d5071ae30f835a5b2eaf0246d2b3aaa3b4571631f3b326047c41"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b03/straight/source/simulation/forge_mechanics_recovery.py",
+      "sha256": "d6bfc182f1ce17cea871e78143dbda19d0a7cb1bd89a0b1390773344e4c26abe"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b03/straight/source/research/forge_mechanics_motion.py",
+      "sha256": "b03db0bdf9d1f697442bd2032cbea8c64bae0f3fa8c5f162ee054f4910bf17a4"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b03/straight/source/research/forge_mechanics_plan.py",
+      "sha256": "b738155535c4ff11e9e4e8ad470b0da82f154b789f8cece4ba2a330f8348fdca"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b03/straight/source/research/forge_mechanics_metrics.py",
+      "sha256": "d2924bfe32e2a1b14b073cd8393b310f47d3274b6dff44a28c47a2501ec13e60"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b03/straight/source/research/forge_mechanics_protocol.py",
+      "sha256": "0df8a8d32cdaf88ff4a8d3076ea81713367d1c23fd07992f71efe624be902fad"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b03/straight/source/simulation/forge_backend.py",
+      "sha256": "5a0c3fb5f1c5d330c90fdc2a22e6d48cda1713156d134c5ba533b5fa6ce3a45f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b03/straight/source/simulation/forge_experiment.py",
+      "sha256": "54ac5813d9dba93c4ac6aaf907d67e53d84a039d47000386cfc57434b1e76618"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b03/straight/source/simulation/contact.py",
+      "sha256": "a23500505916cf97fe792258fedae0ea583f03b2652dc42121e2d761fbb6e522"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b03/straight/source/research/forge_protocol.py",
+      "sha256": "3e112d13a94bfb85f82ec7beec0c9750792042b222b07d7277df1c32503006a1"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b03/straight/source/research/phase2_protocol.py",
+      "sha256": "3d05bd187320591bb9e69d38f9dc3263925608f17213c945caf8c7a6adcc84ca"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b03/straight/source/research/forge_gap_metrics.py",
+      "sha256": "ed4dcde065a52732492fd5169eb408875c9d9b5f0850cafd76137ffef9462edc"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b03/straight/source/research/forge_geometry.py",
+      "sha256": "d37caa904ae3bfcc2360ed31294f4d700fe412a127e030f6fe76dc6bb8751078"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b03/straight/source/research/forge_events.py",
+      "sha256": "88361f3eacacda079fd3e9f7bc075dcc0a61ccbf7019b1891b670764d0b11022"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b03/straight/source/research/future_stall.py",
+      "sha256": "7d6466b6e452beed65930aadcb6552d123947038ddac9bb18416b09e25a63d3c"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b03/straight/source/research/forge_gap_study.py",
+      "sha256": "2dbea013ab35053fff628126fd36775a75aa782fad98e443e0b4f1409bb17fc9"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b03/straight/source/research/forge_collection.py",
+      "sha256": "f06901e0c9d55df411981a27ee4ad512f089aaf8bd6fecec00d3da9a0d4c890f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b03/straight/source/research/phase2b.py",
+      "sha256": "0dfa4d32fd924a72576a7f1316198352147a389e5fe4e328727eb0637a94949a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b03/straight/source/research/forge_budget.py",
+      "sha256": "40192b23c229040c8b1115a64576b0ff163ba2b53e4989c765891eafc59d22e1"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b03/straight/source/simulation/forge_budget.py",
+      "sha256": "149ebc16d1847c2d1d538d69c14a3d6f2e2e4dcce35e4f3c3f9221b31e0a4c8f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b03/straight/source/simulation/launch_forge_budget.py",
+      "sha256": "cde311c34739495cdead06d5cbcc1e7eece78a3e41a69f81e5600c4902188233"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b03/straight/source/simulation/run_budget_study.py",
+      "sha256": "07b415b85597cc1ed4cd4f824aca37ab158cf295c43222fb7b8a2c0785be1794"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b03/straight/source/forge_budget.sh",
+      "sha256": "63655fe98a2091aaca7006247e5dbbded9810e330ea52adb9a91f75dc333c37b"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b03/straight/insertion_contacts.jsonl.gz",
+      "sha256": "9778a20715e81d5a4e61348f98db6559915240d4101911e80d14060df3924529"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b03/straight/scene.json",
+      "sha256": "364e577433dd6870c75e551a9da7e2f597d459fb2504644543b979914d70f180"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b03/straight/insertion.csv",
+      "sha256": "ad419b796e6ea638e71a503bd69584e340ce724c2c944481ef11d9890ed37b8e"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b03/straight/config.json",
+      "sha256": "29658c179aabb972e574cbee2d16d192da02f9d21bf1952d3b4da9c78085adfc"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b03/straight/insertion.csv",
+      "sha256": "ad419b796e6ea638e71a503bd69584e340ce724c2c944481ef11d9890ed37b8e"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b03/straight/insertion_contacts.jsonl.gz",
+      "sha256": "9778a20715e81d5a4e61348f98db6559915240d4101911e80d14060df3924529"
+    }
+  ],
+  "checked_streams": [
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/insertion.csv",
+      "csv_samples": 2811,
+      "contact_samples": 2811
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/straight/recovery.csv",
+      "csv_samples": 1137,
+      "contact_samples": 1137
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/insertion.csv",
+      "csv_samples": 2811,
+      "contact_samples": 2811
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a00__b04/realign/recovery.csv",
+      "csv_samples": 1617,
+      "contact_samples": 1617
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/insertion.csv",
+      "csv_samples": 2811,
+      "contact_samples": 2811
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/straight/recovery.csv",
+      "csv_samples": 1145,
+      "contact_samples": 1145
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/insertion.csv",
+      "csv_samples": 2811,
+      "contact_samples": 2811
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a01__b04/realign/recovery.csv",
+      "csv_samples": 1622,
+      "contact_samples": 1622
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/insertion.csv",
+      "csv_samples": 2811,
+      "contact_samples": 2811
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/recovery.csv",
+      "csv_samples": 174,
+      "contact_samples": 174
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/insertion.csv",
+      "csv_samples": 2811,
+      "contact_samples": 2811
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/recovery.csv",
+      "csv_samples": 1631,
+      "contact_samples": 1631
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/insertion.csv",
+      "csv_samples": 2811,
+      "contact_samples": 2811
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/straight/recovery.csv",
+      "csv_samples": 1159,
+      "contact_samples": 1159
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/insertion.csv",
+      "csv_samples": 2811,
+      "contact_samples": 2811
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b05/realign/recovery.csv",
+      "csv_samples": 1631,
+      "contact_samples": 1631
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/insertion.csv",
+      "csv_samples": 2466,
+      "contact_samples": 2466
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/recovery.csv",
+      "csv_samples": 871,
+      "contact_samples": 871
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/insertion.csv",
+      "csv_samples": 2466,
+      "contact_samples": 2466
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/recovery.csv",
+      "csv_samples": 1334,
+      "contact_samples": 1334
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs050_fd050_a1p5__b04/straight/insertion.csv",
+      "csv_samples": 2714,
+      "contact_samples": 2714
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/insertion.csv",
+      "csv_samples": 2485,
+      "contact_samples": 2485
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b03/straight/insertion.csv",
+      "csv_samples": 2712,
+      "contact_samples": 2712
+    }
+  ],
+  "actual_branch_results": [
+    {
+      "condition_id": "m_d18_fs100_fd100_a00__b04",
+      "policy": "straight",
+      "outcome": {
+        "outcome": "clear_safe",
+        "recovery_safe": true,
+        "task_safe": true,
+        "reference_eligible": true,
+        "recovery_present": true,
+        "flags": {
+          "reference_numerically_valid": true,
+          "reference_budget_signals_finite": true,
+          "reference_grasp_retained": true,
+          "reference_force_budget_exceeded": false,
+          "reference_torque_budget_exceeded": false,
+          "reference_budget_exceeded": false,
+          "recovery_numerically_valid": true,
+          "recovery_budget_signals_finite": true,
+          "recovery_grasp_retained": true,
+          "recovery_force_budget_exceeded": false,
+          "recovery_torque_budget_exceeded": false,
+          "recovery_budget_exceeded": false
+        }
+      },
+      "recovery_present": true,
+      "first_reference_budget_crossing": null,
+      "first_recovery_budget_crossing": null
+    },
+    {
+      "condition_id": "m_d18_fs100_fd100_a00__b04",
+      "policy": "realign",
+      "outcome": {
+        "outcome": "clear_safe",
+        "recovery_safe": true,
+        "task_safe": true,
+        "reference_eligible": true,
+        "recovery_present": true,
+        "flags": {
+          "reference_numerically_valid": true,
+          "reference_budget_signals_finite": true,
+          "reference_grasp_retained": true,
+          "reference_force_budget_exceeded": false,
+          "reference_torque_budget_exceeded": false,
+          "reference_budget_exceeded": false,
+          "recovery_numerically_valid": true,
+          "recovery_budget_signals_finite": true,
+          "recovery_grasp_retained": true,
+          "recovery_force_budget_exceeded": false,
+          "recovery_torque_budget_exceeded": false,
+          "recovery_budget_exceeded": false
+        }
+      },
+      "recovery_present": true,
+      "first_reference_budget_crossing": null,
+      "first_recovery_budget_crossing": null
+    },
+    {
+      "condition_id": "m_d18_fs100_fd100_a01__b04",
+      "policy": "straight",
+      "outcome": {
+        "outcome": "clear_safe",
+        "recovery_safe": true,
+        "task_safe": true,
+        "reference_eligible": true,
+        "recovery_present": true,
+        "flags": {
+          "reference_numerically_valid": true,
+          "reference_budget_signals_finite": true,
+          "reference_grasp_retained": true,
+          "reference_force_budget_exceeded": false,
+          "reference_torque_budget_exceeded": false,
+          "reference_budget_exceeded": false,
+          "recovery_numerically_valid": true,
+          "recovery_budget_signals_finite": true,
+          "recovery_grasp_retained": true,
+          "recovery_force_budget_exceeded": false,
+          "recovery_torque_budget_exceeded": false,
+          "recovery_budget_exceeded": false
+        }
+      },
+      "recovery_present": true,
+      "first_reference_budget_crossing": null,
+      "first_recovery_budget_crossing": null
+    },
+    {
+      "condition_id": "m_d18_fs100_fd100_a01__b04",
+      "policy": "realign",
+      "outcome": {
+        "outcome": "clear_safe",
+        "recovery_safe": true,
+        "task_safe": true,
+        "reference_eligible": true,
+        "recovery_present": true,
+        "flags": {
+          "reference_numerically_valid": true,
+          "reference_budget_signals_finite": true,
+          "reference_grasp_retained": true,
+          "reference_force_budget_exceeded": false,
+          "reference_torque_budget_exceeded": false,
+          "reference_budget_exceeded": false,
+          "recovery_numerically_valid": true,
+          "recovery_budget_signals_finite": true,
+          "recovery_grasp_retained": true,
+          "recovery_force_budget_exceeded": false,
+          "recovery_torque_budget_exceeded": false,
+          "recovery_budget_exceeded": false
+        }
+      },
+      "recovery_present": true,
+      "first_reference_budget_crossing": null,
+      "first_recovery_budget_crossing": null
+    },
+    {
+      "condition_id": "m_d18_fs100_fd100_a1p5__b04",
+      "policy": "straight",
+      "outcome": {
+        "outcome": "recovery_budget_exceeded",
+        "recovery_safe": false,
+        "task_safe": false,
+        "reference_eligible": true,
+        "recovery_present": true,
+        "flags": {
+          "reference_numerically_valid": true,
+          "reference_budget_signals_finite": true,
+          "reference_grasp_retained": true,
+          "reference_force_budget_exceeded": false,
+          "reference_torque_budget_exceeded": false,
+          "reference_budget_exceeded": false,
+          "recovery_numerically_valid": true,
+          "recovery_budget_signals_finite": true,
+          "recovery_grasp_retained": true,
+          "recovery_force_budget_exceeded": true,
+          "recovery_torque_budget_exceeded": false,
+          "recovery_budget_exceeded": true
+        }
+      },
+      "recovery_present": true,
+      "first_reference_budget_crossing": null,
+      "first_recovery_budget_crossing": {
+        "index": 173,
+        "executed_step": true,
+        "time_s": 12.429166666665964,
+        "physics_time_s": 12.429167314898223,
+        "recovery_time_s": 0.7208333333333333,
+        "phase": "retreat",
+        "wrist_force_n": 4.54149055480957,
+        "wrist_torque_nm": 0.07623995095491409,
+        "depth_mm": 18.091173470020294,
+        "grasp_slip_mm": 0.016516196410520934,
+        "grasp_slip_deg": 0.03956468118525214,
+        "force_budget_exceeded": true,
+        "torque_budget_exceeded": false,
+        "force_overshoot_n": 0.5414905548095703,
+        "torque_overshoot_nm": 0.0,
+        "initial_state_already_over_budget": false,
+        "budget_signals_finite": true
+      }
+    },
+    {
+      "condition_id": "m_d18_fs100_fd100_a1p5__b04",
+      "policy": "realign",
+      "outcome": {
+        "outcome": "clear_safe",
+        "recovery_safe": true,
+        "task_safe": true,
+        "reference_eligible": true,
+        "recovery_present": true,
+        "flags": {
+          "reference_numerically_valid": true,
+          "reference_budget_signals_finite": true,
+          "reference_grasp_retained": true,
+          "reference_force_budget_exceeded": false,
+          "reference_torque_budget_exceeded": false,
+          "reference_budget_exceeded": false,
+          "recovery_numerically_valid": true,
+          "recovery_budget_signals_finite": true,
+          "recovery_grasp_retained": true,
+          "recovery_force_budget_exceeded": false,
+          "recovery_torque_budget_exceeded": false,
+          "recovery_budget_exceeded": false
+        }
+      },
+      "recovery_present": true,
+      "first_reference_budget_crossing": null,
+      "first_recovery_budget_crossing": null
+    },
+    {
+      "condition_id": "m_d18_fs100_fd100_a1p5__b05",
+      "policy": "straight",
+      "outcome": {
+        "outcome": "clear_safe",
+        "recovery_safe": true,
+        "task_safe": true,
+        "reference_eligible": true,
+        "recovery_present": true,
+        "flags": {
+          "reference_numerically_valid": true,
+          "reference_budget_signals_finite": true,
+          "reference_grasp_retained": true,
+          "reference_force_budget_exceeded": false,
+          "reference_torque_budget_exceeded": false,
+          "reference_budget_exceeded": false,
+          "recovery_numerically_valid": true,
+          "recovery_budget_signals_finite": true,
+          "recovery_grasp_retained": true,
+          "recovery_force_budget_exceeded": false,
+          "recovery_torque_budget_exceeded": false,
+          "recovery_budget_exceeded": false
+        }
+      },
+      "recovery_present": true,
+      "first_reference_budget_crossing": null,
+      "first_recovery_budget_crossing": null
+    },
+    {
+      "condition_id": "m_d18_fs100_fd100_a1p5__b05",
+      "policy": "realign",
+      "outcome": {
+        "outcome": "clear_safe",
+        "recovery_safe": true,
+        "task_safe": true,
+        "reference_eligible": true,
+        "recovery_present": true,
+        "flags": {
+          "reference_numerically_valid": true,
+          "reference_budget_signals_finite": true,
+          "reference_grasp_retained": true,
+          "reference_force_budget_exceeded": false,
+          "reference_torque_budget_exceeded": false,
+          "reference_budget_exceeded": false,
+          "recovery_numerically_valid": true,
+          "recovery_budget_signals_finite": true,
+          "recovery_grasp_retained": true,
+          "recovery_force_budget_exceeded": false,
+          "recovery_torque_budget_exceeded": false,
+          "recovery_budget_exceeded": false
+        }
+      },
+      "recovery_present": true,
+      "first_reference_budget_crossing": null,
+      "first_recovery_budget_crossing": null
+    },
+    {
+      "condition_id": "m_d12_fs100_fd100_a1p5__b04",
+      "policy": "straight",
+      "outcome": {
+        "outcome": "clear_safe",
+        "recovery_safe": true,
+        "task_safe": true,
+        "reference_eligible": true,
+        "recovery_present": true,
+        "flags": {
+          "reference_numerically_valid": true,
+          "reference_budget_signals_finite": true,
+          "reference_grasp_retained": true,
+          "reference_force_budget_exceeded": false,
+          "reference_torque_budget_exceeded": false,
+          "reference_budget_exceeded": false,
+          "recovery_numerically_valid": true,
+          "recovery_budget_signals_finite": true,
+          "recovery_grasp_retained": true,
+          "recovery_force_budget_exceeded": false,
+          "recovery_torque_budget_exceeded": false,
+          "recovery_budget_exceeded": false
+        }
+      },
+      "recovery_present": true,
+      "first_reference_budget_crossing": null,
+      "first_recovery_budget_crossing": null
+    },
+    {
+      "condition_id": "m_d12_fs100_fd100_a1p5__b04",
+      "policy": "realign",
+      "outcome": {
+        "outcome": "clear_safe",
+        "recovery_safe": true,
+        "task_safe": true,
+        "reference_eligible": true,
+        "recovery_present": true,
+        "flags": {
+          "reference_numerically_valid": true,
+          "reference_budget_signals_finite": true,
+          "reference_grasp_retained": true,
+          "reference_force_budget_exceeded": false,
+          "reference_torque_budget_exceeded": false,
+          "reference_budget_exceeded": false,
+          "recovery_numerically_valid": true,
+          "recovery_budget_signals_finite": true,
+          "recovery_grasp_retained": true,
+          "recovery_force_budget_exceeded": false,
+          "recovery_torque_budget_exceeded": false,
+          "recovery_budget_exceeded": false
+        }
+      },
+      "recovery_present": true,
+      "first_reference_budget_crossing": null,
+      "first_recovery_budget_crossing": null
+    },
+    {
+      "condition_id": "m_d18_fs050_fd050_a1p5__b04",
+      "policy": "straight",
+      "outcome": {
+        "outcome": "reference_budget_exceeded",
+        "recovery_safe": null,
+        "task_safe": false,
+        "reference_eligible": false,
+        "recovery_present": false,
+        "flags": {
+          "reference_numerically_valid": true,
+          "reference_budget_signals_finite": true,
+          "reference_grasp_retained": true,
+          "reference_force_budget_exceeded": true,
+          "reference_torque_budget_exceeded": false,
+          "reference_budget_exceeded": true,
+          "recovery_numerically_valid": null,
+          "recovery_budget_signals_finite": null,
+          "recovery_grasp_retained": null,
+          "recovery_force_budget_exceeded": null,
+          "recovery_torque_budget_exceeded": null,
+          "recovery_budget_exceeded": false
+        }
+      },
+      "recovery_present": false,
+      "first_reference_budget_crossing": {
+        "index": 2713,
+        "executed_step": true,
+        "time_s": 11.304166666666028,
+        "physics_time_s": 11.3041672562249,
+        "recovery_time_s": null,
+        "phase": "hold",
+        "wrist_force_n": 8.914762496948242,
+        "wrist_torque_nm": 0.2979847490787506,
+        "depth_mm": 18.098516017198563,
+        "grasp_slip_mm": 0.015508916476392187,
+        "grasp_slip_deg": 0.03956468118525214,
+        "force_budget_exceeded": true,
+        "torque_budget_exceeded": false,
+        "force_overshoot_n": 4.914762496948242,
+        "torque_overshoot_nm": 0.0,
+        "initial_state_already_over_budget": false,
+        "budget_signals_finite": true
+      },
+      "first_recovery_budget_crossing": null
+    },
+    {
+      "condition_id": "m_d18_fs100_fd100_a02__b04",
+      "policy": "straight",
+      "outcome": {
+        "outcome": "reference_budget_exceeded",
+        "recovery_safe": null,
+        "task_safe": false,
+        "reference_eligible": false,
+        "recovery_present": false,
+        "flags": {
+          "reference_numerically_valid": true,
+          "reference_budget_signals_finite": true,
+          "reference_grasp_retained": true,
+          "reference_force_budget_exceeded": true,
+          "reference_torque_budget_exceeded": false,
+          "reference_budget_exceeded": true,
+          "recovery_numerically_valid": null,
+          "recovery_budget_signals_finite": null,
+          "recovery_grasp_retained": null,
+          "recovery_force_budget_exceeded": null,
+          "recovery_torque_budget_exceeded": null,
+          "recovery_budget_exceeded": false
+        }
+      },
+      "recovery_present": false,
+      "first_reference_budget_crossing": {
+        "index": 2484,
+        "executed_step": true,
+        "time_s": 10.349999999999415,
+        "physics_time_s": 10.350000539794564,
+        "recovery_time_s": null,
+        "phase": "tilt",
+        "wrist_force_n": 4.677492618560791,
+        "wrist_torque_nm": 0.21855463087558746,
+        "depth_mm": 17.966145277023315,
+        "grasp_slip_mm": 0.00447437196271494,
+        "grasp_slip_deg": 0.03956468118525214,
+        "force_budget_exceeded": true,
+        "torque_budget_exceeded": false,
+        "force_overshoot_n": 0.677492618560791,
+        "torque_overshoot_nm": 0.0,
+        "initial_state_already_over_budget": false,
+        "budget_signals_finite": true
+      },
+      "first_recovery_budget_crossing": null
+    },
+    {
+      "condition_id": "m_d18_fs100_fd100_a1p5__b03",
+      "policy": "straight",
+      "outcome": {
+        "outcome": "reference_budget_exceeded",
+        "recovery_safe": null,
+        "task_safe": false,
+        "reference_eligible": false,
+        "recovery_present": false,
+        "flags": {
+          "reference_numerically_valid": true,
+          "reference_budget_signals_finite": true,
+          "reference_grasp_retained": true,
+          "reference_force_budget_exceeded": true,
+          "reference_torque_budget_exceeded": false,
+          "reference_budget_exceeded": true,
+          "recovery_numerically_valid": null,
+          "recovery_budget_signals_finite": null,
+          "recovery_grasp_retained": null,
+          "recovery_force_budget_exceeded": null,
+          "recovery_torque_budget_exceeded": null,
+          "recovery_budget_exceeded": false
+        }
+      },
+      "recovery_present": false,
+      "first_reference_budget_crossing": {
+        "index": 2711,
+        "executed_step": true,
+        "time_s": 11.295833333332695,
+        "physics_time_s": 11.29583392245695,
+        "recovery_time_s": null,
+        "phase": "hold",
+        "wrist_force_n": 3.228872776031494,
+        "wrist_torque_nm": 0.0873490646481514,
+        "depth_mm": 18.218690156936646,
+        "grasp_slip_mm": 0.0047125677156145684,
+        "grasp_slip_deg": 0.055952909680744456,
+        "force_budget_exceeded": true,
+        "torque_budget_exceeded": false,
+        "force_overshoot_n": 0.22887277603149414,
+        "torque_overshoot_nm": 0.0,
+        "initial_state_already_over_budget": false,
+        "budget_signals_finite": true
+      },
+      "first_recovery_budget_crossing": null
+    }
+  ],
+  "independent_policy_pair_checks": [
+    {
+      "condition_id": "m_d18_fs100_fd100_a00__b04",
+      "full_reference_prefix_matched": true,
+      "paired_policy_comparison_eligible": true,
+      "straight_actual_outcome": {
+        "outcome": "clear_safe",
+        "recovery_safe": true,
+        "task_safe": true,
+        "reference_eligible": true,
+        "recovery_present": true,
+        "flags": {
+          "reference_numerically_valid": true,
+          "reference_budget_signals_finite": true,
+          "reference_grasp_retained": true,
+          "reference_force_budget_exceeded": false,
+          "reference_torque_budget_exceeded": false,
+          "reference_budget_exceeded": false,
+          "recovery_numerically_valid": true,
+          "recovery_budget_signals_finite": true,
+          "recovery_grasp_retained": true,
+          "recovery_force_budget_exceeded": false,
+          "recovery_torque_budget_exceeded": false,
+          "recovery_budget_exceeded": false
+        }
+      },
+      "realign_actual_outcome": {
+        "outcome": "clear_safe",
+        "recovery_safe": true,
+        "task_safe": true,
+        "reference_eligible": true,
+        "recovery_present": true,
+        "flags": {
+          "reference_numerically_valid": true,
+          "reference_budget_signals_finite": true,
+          "reference_grasp_retained": true,
+          "reference_force_budget_exceeded": false,
+          "reference_torque_budget_exceeded": false,
+          "reference_budget_exceeded": false,
+          "recovery_numerically_valid": true,
+          "recovery_budget_signals_finite": true,
+          "recovery_grasp_retained": true,
+          "recovery_force_budget_exceeded": false,
+          "recovery_torque_budget_exceeded": false,
+          "recovery_budget_exceeded": false
+        }
+      },
+      "status": "checked",
+      "checks": {
+        "replay_matched": true,
+        "replay_errors": {
+          "position_mm": 0.0,
+          "orientation_deg": 0.0,
+          "joint_rad": 0.0,
+          "joint_velocity_rad_s": 0.0,
+          "linear_velocity_m_s": 0.0,
+          "angular_velocity_rad_s": 0.0,
+          "force_n": 0.0,
+          "torque_nm": 0.0,
+          "normal_load_n": 0.0,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.0,
+          "finger_position": 0.0,
+          "finger_velocity": 0.0,
+          "grasp_position": 0.0,
+          "hand_pose": 0.0,
+          "wrist_raw_child": 0.0,
+          "grasp_quat_angle_deg": 0.0,
+          "hand_pose_angle_deg": 0.0
+        },
+        "replay_prefix_matched": true,
+        "replay_prefix_equal": true,
+        "replay_prefix_first_mismatch_index": null,
+        "replay_prefix_max_errors": {
+          "position_mm": 0.0,
+          "orientation_deg": 0.0,
+          "joint_rad": 0.0,
+          "joint_velocity_rad_s": 0.0,
+          "linear_velocity_m_s": 0.0,
+          "angular_velocity_rad_s": 0.0,
+          "force_n": 0.0,
+          "torque_nm": 0.0,
+          "normal_load_n": 0.0,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.0,
+          "finger_position": 0.0,
+          "finger_velocity": 0.0,
+          "grasp_position": 0.0,
+          "hand_pose": 0.0,
+          "wrist_raw_child": 0.0,
+          "grasp_quat_angle_deg": 0.0,
+          "hand_pose_angle_deg": 0.0
+        },
+        "reference_sample_count": 2811,
+        "replay_sample_count": 2811
+      }
+    },
+    {
+      "condition_id": "m_d18_fs100_fd100_a01__b04",
+      "full_reference_prefix_matched": true,
+      "paired_policy_comparison_eligible": true,
+      "straight_actual_outcome": {
+        "outcome": "clear_safe",
+        "recovery_safe": true,
+        "task_safe": true,
+        "reference_eligible": true,
+        "recovery_present": true,
+        "flags": {
+          "reference_numerically_valid": true,
+          "reference_budget_signals_finite": true,
+          "reference_grasp_retained": true,
+          "reference_force_budget_exceeded": false,
+          "reference_torque_budget_exceeded": false,
+          "reference_budget_exceeded": false,
+          "recovery_numerically_valid": true,
+          "recovery_budget_signals_finite": true,
+          "recovery_grasp_retained": true,
+          "recovery_force_budget_exceeded": false,
+          "recovery_torque_budget_exceeded": false,
+          "recovery_budget_exceeded": false
+        }
+      },
+      "realign_actual_outcome": {
+        "outcome": "clear_safe",
+        "recovery_safe": true,
+        "task_safe": true,
+        "reference_eligible": true,
+        "recovery_present": true,
+        "flags": {
+          "reference_numerically_valid": true,
+          "reference_budget_signals_finite": true,
+          "reference_grasp_retained": true,
+          "reference_force_budget_exceeded": false,
+          "reference_torque_budget_exceeded": false,
+          "reference_budget_exceeded": false,
+          "recovery_numerically_valid": true,
+          "recovery_budget_signals_finite": true,
+          "recovery_grasp_retained": true,
+          "recovery_force_budget_exceeded": false,
+          "recovery_torque_budget_exceeded": false,
+          "recovery_budget_exceeded": false
+        }
+      },
+      "status": "checked",
+      "checks": {
+        "replay_matched": true,
+        "replay_errors": {
+          "position_mm": 0.0,
+          "orientation_deg": 0.0,
+          "joint_rad": 0.0,
+          "joint_velocity_rad_s": 0.0,
+          "linear_velocity_m_s": 0.0,
+          "angular_velocity_rad_s": 0.0,
+          "force_n": 0.0,
+          "torque_nm": 0.0,
+          "normal_load_n": 0.0,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.0,
+          "finger_position": 0.0,
+          "finger_velocity": 0.0,
+          "grasp_position": 0.0,
+          "hand_pose": 0.0,
+          "wrist_raw_child": 0.0,
+          "grasp_quat_angle_deg": 0.0,
+          "hand_pose_angle_deg": 0.0
+        },
+        "replay_prefix_matched": true,
+        "replay_prefix_equal": true,
+        "replay_prefix_first_mismatch_index": null,
+        "replay_prefix_max_errors": {
+          "position_mm": 0.0,
+          "orientation_deg": 0.0,
+          "joint_rad": 0.0,
+          "joint_velocity_rad_s": 0.0,
+          "linear_velocity_m_s": 0.0,
+          "angular_velocity_rad_s": 0.0,
+          "force_n": 0.0,
+          "torque_nm": 0.0,
+          "normal_load_n": 0.0,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.0,
+          "finger_position": 0.0,
+          "finger_velocity": 0.0,
+          "grasp_position": 0.0,
+          "hand_pose": 0.0,
+          "wrist_raw_child": 0.0,
+          "grasp_quat_angle_deg": 0.0,
+          "hand_pose_angle_deg": 0.0
+        },
+        "reference_sample_count": 2811,
+        "replay_sample_count": 2811
+      }
+    },
+    {
+      "condition_id": "m_d18_fs100_fd100_a1p5__b04",
+      "full_reference_prefix_matched": true,
+      "paired_policy_comparison_eligible": true,
+      "straight_actual_outcome": {
+        "outcome": "recovery_budget_exceeded",
+        "recovery_safe": false,
+        "task_safe": false,
+        "reference_eligible": true,
+        "recovery_present": true,
+        "flags": {
+          "reference_numerically_valid": true,
+          "reference_budget_signals_finite": true,
+          "reference_grasp_retained": true,
+          "reference_force_budget_exceeded": false,
+          "reference_torque_budget_exceeded": false,
+          "reference_budget_exceeded": false,
+          "recovery_numerically_valid": true,
+          "recovery_budget_signals_finite": true,
+          "recovery_grasp_retained": true,
+          "recovery_force_budget_exceeded": true,
+          "recovery_torque_budget_exceeded": false,
+          "recovery_budget_exceeded": true
+        }
+      },
+      "realign_actual_outcome": {
+        "outcome": "clear_safe",
+        "recovery_safe": true,
+        "task_safe": true,
+        "reference_eligible": true,
+        "recovery_present": true,
+        "flags": {
+          "reference_numerically_valid": true,
+          "reference_budget_signals_finite": true,
+          "reference_grasp_retained": true,
+          "reference_force_budget_exceeded": false,
+          "reference_torque_budget_exceeded": false,
+          "reference_budget_exceeded": false,
+          "recovery_numerically_valid": true,
+          "recovery_budget_signals_finite": true,
+          "recovery_grasp_retained": true,
+          "recovery_force_budget_exceeded": false,
+          "recovery_torque_budget_exceeded": false,
+          "recovery_budget_exceeded": false
+        }
+      },
+      "status": "checked",
+      "checks": {
+        "replay_matched": true,
+        "replay_errors": {
+          "position_mm": 0.0,
+          "orientation_deg": 0.0,
+          "joint_rad": 0.0,
+          "joint_velocity_rad_s": 0.0,
+          "linear_velocity_m_s": 0.0,
+          "angular_velocity_rad_s": 0.0,
+          "force_n": 0.0,
+          "torque_nm": 0.0,
+          "normal_load_n": 0.0,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.0,
+          "finger_position": 0.0,
+          "finger_velocity": 0.0,
+          "grasp_position": 0.0,
+          "hand_pose": 0.0,
+          "wrist_raw_child": 0.0,
+          "grasp_quat_angle_deg": 0.0,
+          "hand_pose_angle_deg": 0.0
+        },
+        "replay_prefix_matched": true,
+        "replay_prefix_equal": true,
+        "replay_prefix_first_mismatch_index": null,
+        "replay_prefix_max_errors": {
+          "position_mm": 0.0,
+          "orientation_deg": 0.0,
+          "joint_rad": 0.0,
+          "joint_velocity_rad_s": 0.0,
+          "linear_velocity_m_s": 0.0,
+          "angular_velocity_rad_s": 0.0,
+          "force_n": 0.0,
+          "torque_nm": 0.0,
+          "normal_load_n": 0.0,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.0,
+          "finger_position": 0.0,
+          "finger_velocity": 0.0,
+          "grasp_position": 0.0,
+          "hand_pose": 0.0,
+          "wrist_raw_child": 0.0,
+          "grasp_quat_angle_deg": 0.0,
+          "hand_pose_angle_deg": 0.0
+        },
+        "reference_sample_count": 2811,
+        "replay_sample_count": 2811
+      }
+    },
+    {
+      "condition_id": "m_d18_fs100_fd100_a1p5__b05",
+      "full_reference_prefix_matched": true,
+      "paired_policy_comparison_eligible": true,
+      "straight_actual_outcome": {
+        "outcome": "clear_safe",
+        "recovery_safe": true,
+        "task_safe": true,
+        "reference_eligible": true,
+        "recovery_present": true,
+        "flags": {
+          "reference_numerically_valid": true,
+          "reference_budget_signals_finite": true,
+          "reference_grasp_retained": true,
+          "reference_force_budget_exceeded": false,
+          "reference_torque_budget_exceeded": false,
+          "reference_budget_exceeded": false,
+          "recovery_numerically_valid": true,
+          "recovery_budget_signals_finite": true,
+          "recovery_grasp_retained": true,
+          "recovery_force_budget_exceeded": false,
+          "recovery_torque_budget_exceeded": false,
+          "recovery_budget_exceeded": false
+        }
+      },
+      "realign_actual_outcome": {
+        "outcome": "clear_safe",
+        "recovery_safe": true,
+        "task_safe": true,
+        "reference_eligible": true,
+        "recovery_present": true,
+        "flags": {
+          "reference_numerically_valid": true,
+          "reference_budget_signals_finite": true,
+          "reference_grasp_retained": true,
+          "reference_force_budget_exceeded": false,
+          "reference_torque_budget_exceeded": false,
+          "reference_budget_exceeded": false,
+          "recovery_numerically_valid": true,
+          "recovery_budget_signals_finite": true,
+          "recovery_grasp_retained": true,
+          "recovery_force_budget_exceeded": false,
+          "recovery_torque_budget_exceeded": false,
+          "recovery_budget_exceeded": false
+        }
+      },
+      "status": "checked",
+      "checks": {
+        "replay_matched": true,
+        "replay_errors": {
+          "position_mm": 0.0,
+          "orientation_deg": 0.0,
+          "joint_rad": 0.0,
+          "joint_velocity_rad_s": 0.0,
+          "linear_velocity_m_s": 0.0,
+          "angular_velocity_rad_s": 0.0,
+          "force_n": 0.0,
+          "torque_nm": 0.0,
+          "normal_load_n": 0.0,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.0,
+          "finger_position": 0.0,
+          "finger_velocity": 0.0,
+          "grasp_position": 0.0,
+          "hand_pose": 0.0,
+          "wrist_raw_child": 0.0,
+          "grasp_quat_angle_deg": 0.0,
+          "hand_pose_angle_deg": 0.0
+        },
+        "replay_prefix_matched": true,
+        "replay_prefix_equal": true,
+        "replay_prefix_first_mismatch_index": null,
+        "replay_prefix_max_errors": {
+          "position_mm": 0.0,
+          "orientation_deg": 0.0,
+          "joint_rad": 0.0,
+          "joint_velocity_rad_s": 0.0,
+          "linear_velocity_m_s": 0.0,
+          "angular_velocity_rad_s": 0.0,
+          "force_n": 0.0,
+          "torque_nm": 0.0,
+          "normal_load_n": 0.0,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.0,
+          "finger_position": 0.0,
+          "finger_velocity": 0.0,
+          "grasp_position": 0.0,
+          "hand_pose": 0.0,
+          "wrist_raw_child": 0.0,
+          "grasp_quat_angle_deg": 0.0,
+          "hand_pose_angle_deg": 0.0
+        },
+        "reference_sample_count": 2811,
+        "replay_sample_count": 2811
+      }
+    },
+    {
+      "condition_id": "m_d12_fs100_fd100_a1p5__b04",
+      "full_reference_prefix_matched": true,
+      "paired_policy_comparison_eligible": true,
+      "straight_actual_outcome": {
+        "outcome": "clear_safe",
+        "recovery_safe": true,
+        "task_safe": true,
+        "reference_eligible": true,
+        "recovery_present": true,
+        "flags": {
+          "reference_numerically_valid": true,
+          "reference_budget_signals_finite": true,
+          "reference_grasp_retained": true,
+          "reference_force_budget_exceeded": false,
+          "reference_torque_budget_exceeded": false,
+          "reference_budget_exceeded": false,
+          "recovery_numerically_valid": true,
+          "recovery_budget_signals_finite": true,
+          "recovery_grasp_retained": true,
+          "recovery_force_budget_exceeded": false,
+          "recovery_torque_budget_exceeded": false,
+          "recovery_budget_exceeded": false
+        }
+      },
+      "realign_actual_outcome": {
+        "outcome": "clear_safe",
+        "recovery_safe": true,
+        "task_safe": true,
+        "reference_eligible": true,
+        "recovery_present": true,
+        "flags": {
+          "reference_numerically_valid": true,
+          "reference_budget_signals_finite": true,
+          "reference_grasp_retained": true,
+          "reference_force_budget_exceeded": false,
+          "reference_torque_budget_exceeded": false,
+          "reference_budget_exceeded": false,
+          "recovery_numerically_valid": true,
+          "recovery_budget_signals_finite": true,
+          "recovery_grasp_retained": true,
+          "recovery_force_budget_exceeded": false,
+          "recovery_torque_budget_exceeded": false,
+          "recovery_budget_exceeded": false
+        }
+      },
+      "status": "checked",
+      "checks": {
+        "replay_matched": true,
+        "replay_errors": {
+          "position_mm": 0.0,
+          "orientation_deg": 0.0,
+          "joint_rad": 0.0,
+          "joint_velocity_rad_s": 0.0,
+          "linear_velocity_m_s": 0.0,
+          "angular_velocity_rad_s": 0.0,
+          "force_n": 0.0,
+          "torque_nm": 0.0,
+          "normal_load_n": 0.0,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.0,
+          "finger_position": 0.0,
+          "finger_velocity": 0.0,
+          "grasp_position": 0.0,
+          "hand_pose": 0.0,
+          "wrist_raw_child": 0.0,
+          "grasp_quat_angle_deg": 0.0,
+          "hand_pose_angle_deg": 0.0
+        },
+        "replay_prefix_matched": true,
+        "replay_prefix_equal": true,
+        "replay_prefix_first_mismatch_index": null,
+        "replay_prefix_max_errors": {
+          "position_mm": 0.0,
+          "orientation_deg": 0.0,
+          "joint_rad": 0.0,
+          "joint_velocity_rad_s": 0.0,
+          "linear_velocity_m_s": 0.0,
+          "angular_velocity_rad_s": 0.0,
+          "force_n": 0.0,
+          "torque_nm": 0.0,
+          "normal_load_n": 0.0,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.0,
+          "finger_position": 0.0,
+          "finger_velocity": 0.0,
+          "grasp_position": 0.0,
+          "hand_pose": 0.0,
+          "wrist_raw_child": 0.0,
+          "grasp_quat_angle_deg": 0.0,
+          "hand_pose_angle_deg": 0.0
+        },
+        "reference_sample_count": 2466,
+        "replay_sample_count": 2466
+      }
+    },
+    {
+      "condition_id": "m_d18_fs050_fd050_a1p5__b04",
+      "full_reference_prefix_matched": null,
+      "paired_policy_comparison_eligible": false,
+      "straight_actual_outcome": {
+        "outcome": "reference_budget_exceeded",
+        "recovery_safe": null,
+        "task_safe": false,
+        "reference_eligible": false,
+        "recovery_present": false,
+        "flags": {
+          "reference_numerically_valid": true,
+          "reference_budget_signals_finite": true,
+          "reference_grasp_retained": true,
+          "reference_force_budget_exceeded": true,
+          "reference_torque_budget_exceeded": false,
+          "reference_budget_exceeded": true,
+          "recovery_numerically_valid": null,
+          "recovery_budget_signals_finite": null,
+          "recovery_grasp_retained": null,
+          "recovery_force_budget_exceeded": null,
+          "recovery_torque_budget_exceeded": null,
+          "recovery_budget_exceeded": false
+        }
+      },
+      "realign_actual_outcome": null,
+      "status": "two_completed_branches_unavailable"
+    },
+    {
+      "condition_id": "m_d18_fs100_fd100_a02__b04",
+      "full_reference_prefix_matched": null,
+      "paired_policy_comparison_eligible": false,
+      "straight_actual_outcome": {
+        "outcome": "reference_budget_exceeded",
+        "recovery_safe": null,
+        "task_safe": false,
+        "reference_eligible": false,
+        "recovery_present": false,
+        "flags": {
+          "reference_numerically_valid": true,
+          "reference_budget_signals_finite": true,
+          "reference_grasp_retained": true,
+          "reference_force_budget_exceeded": true,
+          "reference_torque_budget_exceeded": false,
+          "reference_budget_exceeded": true,
+          "recovery_numerically_valid": null,
+          "recovery_budget_signals_finite": null,
+          "recovery_grasp_retained": null,
+          "recovery_force_budget_exceeded": null,
+          "recovery_torque_budget_exceeded": null,
+          "recovery_budget_exceeded": false
+        }
+      },
+      "realign_actual_outcome": null,
+      "status": "two_completed_branches_unavailable"
+    },
+    {
+      "condition_id": "m_d18_fs100_fd100_a1p5__b03",
+      "full_reference_prefix_matched": null,
+      "paired_policy_comparison_eligible": false,
+      "straight_actual_outcome": {
+        "outcome": "reference_budget_exceeded",
+        "recovery_safe": null,
+        "task_safe": false,
+        "reference_eligible": false,
+        "recovery_present": false,
+        "flags": {
+          "reference_numerically_valid": true,
+          "reference_budget_signals_finite": true,
+          "reference_grasp_retained": true,
+          "reference_force_budget_exceeded": true,
+          "reference_torque_budget_exceeded": false,
+          "reference_budget_exceeded": true,
+          "recovery_numerically_valid": null,
+          "recovery_budget_signals_finite": null,
+          "recovery_grasp_retained": null,
+          "recovery_force_budget_exceeded": null,
+          "recovery_torque_budget_exceeded": null,
+          "recovery_budget_exceeded": false
+        }
+      },
+      "realign_actual_outcome": null,
+      "status": "two_completed_branches_unavailable"
+    }
+  ],
+  "scope": "Closed saved evidence only. A successful audit is not physical calibration, a braking guarantee, or proof of paired causal effects. Prefix mismatch never changes a branch observation."
+}

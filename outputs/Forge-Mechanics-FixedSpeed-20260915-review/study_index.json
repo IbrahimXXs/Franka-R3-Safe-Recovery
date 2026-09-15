@@ -1,0 +1,98 @@
+{
+  "schema": "mechanics-delivery-index-v1",
+  "studies": [
+    {
+      "role": "primary",
+      "study_dir": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915",
+      "review_dir": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915-review",
+      "status": "complete",
+      "counts": {
+        "planned_cases": 24,
+        "completed_cases": 24,
+        "numerically_valid_completed_cases": 24,
+        "reference_state_counts": {
+          "valid_protocol_completed": 20,
+          "grasp_failed": 4
+        },
+        "pair_state_counts": {
+          "matched_results_known": 7,
+          "replay_endpoint_unmatched": 13,
+          "reference_protocol_incomplete": 4
+        },
+        "valid_depth_gates_passed": 24,
+        "valid_protocol_completed": 20,
+        "valid_continuous_straight_safe": 20,
+        "matched_policy_pairs": 7,
+        "matched_complete_cost_pairs": 7,
+        "matched_both_policies_safe": 7,
+        "matched_straight_failed_realign_safe": 0
+      },
+      "recorded_wall_seconds": 3762.620985310001,
+      "validation_passed": true,
+      "validation_checks": 3131451
+    },
+    {
+      "role": "boundary",
+      "study_dir": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Boundary-20260915",
+      "review_dir": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Boundary-20260915-review",
+      "status": "complete",
+      "counts": {
+        "planned_cases": 3,
+        "completed_cases": 3,
+        "numerically_valid_completed_cases": 3,
+        "reference_state_counts": {
+          "valid_protocol_completed": 3
+        },
+        "pair_state_counts": {
+          "matched_results_known": 3
+        },
+        "valid_depth_gates_passed": 3,
+        "valid_protocol_completed": 3,
+        "valid_continuous_straight_safe": 3,
+        "matched_policy_pairs": 3,
+        "matched_complete_cost_pairs": 3,
+        "matched_both_policies_safe": 3,
+        "matched_straight_failed_realign_safe": 0
+      },
+      "recorded_wall_seconds": 737.6700909019964,
+      "validation_passed": true,
+      "validation_checks": 655017
+    },
+    {
+      "role": "rate_check",
+      "study_dir": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915",
+      "review_dir": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915-review",
+      "status": "complete",
+      "counts": {
+        "planned_cases": 2,
+        "completed_cases": 2,
+        "numerically_valid_completed_cases": 2,
+        "reference_state_counts": {
+          "valid_protocol_completed": 2
+        },
+        "pair_state_counts": {
+          "matched_results_known": 2
+        },
+        "valid_depth_gates_passed": 2,
+        "valid_protocol_completed": 2,
+        "valid_continuous_straight_safe": 2,
+        "matched_policy_pairs": 2,
+        "matched_complete_cost_pairs": 2,
+        "matched_both_policies_safe": 2,
+        "matched_straight_failed_realign_safe": 0
+      },
+      "recorded_wall_seconds": 973.5834754740026,
+      "validation_passed": true,
+      "validation_checks": 871411
+    }
+  ],
+  "planned_condition_records": 29,
+  "counts_caveat": "Study-local condition records include repeated physical settings across studies; they are not independent replicates.",
+  "all_complete": true,
+  "all_output_validations_passed": true,
+  "total_recorded_wall_seconds": 5473.874551686,
+  "unit_test_count": 176,
+  "unit_test_status": "passed",
+  "unit_test_log": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915-review/unit_tests.txt",
+  "conclusion": "Exploratory short withdrawal obstruction at 240 Hz; no observed 20 N withdrawal-budget failure. Recentring/alignment lowers the 1.5-degree withdrawal-phase peak at both rates, but the whole-recovery benefit and same near-stall window are not preserved at 480 Hz. Different initial states and coupled control/physics rates prevent pure timestep attribution."
+}

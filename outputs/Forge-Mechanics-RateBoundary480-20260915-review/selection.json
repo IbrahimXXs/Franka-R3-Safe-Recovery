@@ -1,0 +1,15 @@
+{
+  "selected_utc": "2026-09-15T13:05:23.416067+00:00",
+  "selection": "adaptive frequency diagnostic based on completed 240 Hz reference and straight recovery",
+  "case_plan": "experiments/forge_mechanics_rate_boundary_check.json",
+  "case_ids": [
+    "m_d18_fs100_fd100_a00",
+    "m_d18_fs100_fd100_a1p5"
+  ],
+  "reason": "The 18 mm, mu=(1,1), target 1.5 deg case retained grasp and completed straight withdrawal with a 4.583499 N peak and 2.202601 N 100 ms peak. Test this measured higher-resistance case and its aligned control at 480 Hz.",
+  "source_study": "Forge-Mechanics-Boundary-20260915",
+  "source_case_id": "m_d18_fs100_fd100_a1p5",
+  "superseded_study": "Forge-Mechanics-Rate480-20260915",
+  "superseded_reason": "Original 0/2 deg diagnostic had just started; interrupted its first control and retained records, without changing its frozen plan.",
+  "interpretation": "Exploratory selection based on 240 Hz data; not a prespecified population sample or proof of convergence."
+}

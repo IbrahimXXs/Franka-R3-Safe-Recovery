@@ -1,0 +1,154 @@
+{
+  "final_pdf": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/output/pdf/safe_recovery_motion_planning_control.pdf",
+  "pages": 15,
+  "main_slides": 12,
+  "appendix_pages": 3,
+  "research_priority": "First prevent insertion-induced jamming; then restore withdrawability under an operation-force budget.",
+  "planned_talk_seconds": 600,
+  "slides": [
+    {
+      "number": 1,
+      "title": "Preventing insertion-induced jamming",
+      "section": "Motion Planning and Control",
+      "seconds": 25,
+      "speaker_notes": "The primary objective is an insertion planning and control policy that avoids insertion-induced jamming. The secondary objective, if progress becomes blocked, is to adjust the pose and restore withdrawability within the available operation-force budget. Existing experiments establish a useful adverse scenario and preliminary recovery feasibility; they do not validate a preventive insertion policy."
+    },
+    {
+      "number": 2,
+      "title": "Prevention first, recovery second",
+      "section": "Research priorities",
+      "seconds": 50,
+      "speaker_notes": "First develop the insertion operation policy: choose pose, speed and compliance to avoid jam-prone states. Next, when progress is blocked, adjust posture to restore withdrawability under a bounded operation force, including both adjustment and extraction. The intended hardware is a metal peg and tight plastic socket. Limited grip and part strength motivate task budgets, but the current rigid model and raw wrist signal do not implement fracture or calibrated grip capacity. The cutaway exaggerates clearance for explanation."
+    },
+    {
+      "number": 3,
+      "title": "Research context",
+      "section": "Selected literature",
+      "seconds": 50,
+      "speaker_notes": "Assembly and extraction mechanics connect geometry, contact and compliance. Our primary question is how an insertion policy avoids risky contact states before a jam develops. Force-limited recovery is the secondary objective. Contact-aware optimization, impedance control and sim-to-real assembly provide candidate tools, not evidence that our measured forces are physically calibrated or that prevention has been validated."
+    },
+    {
+      "number": 4,
+      "title": "Plan insertion to preserve a feasible exit",
+      "section": "Course concepts",
+      "seconds": 65,
+      "speaker_notes": "Represent joint and task states together with pose and force history. The primary planner should advance insertion while avoiding jam-prone states and retaining a predicted feasible exit. If progress is blocked, switch objectives to restoring withdrawability within the force budget. This planning capability is proposed. The existing controller maps Cartesian pose error to joint torques using a Jacobian transpose and null-space term. Recovery feasibility remains policy-specific, not a claim of global physical irrecoverability."
+    },
+    {
+      "number": 5,
+      "title": "Current testbed and recovery probes",
+      "section": "Testbed and protocol",
+      "seconds": 50,
+      "speaker_notes": "Show the actual recorded states in the unchanged simulation scene. The reference reaches a depth gate before applying tilt for one second. Then STOP holds the attained pose, and a chosen policy retreats directly or recenters and realigns. Each policy runs in an independent process; the complete recorded reference prefix is compared offline. The budget starts at recorded reference time zero and excludes preparation."
+    },
+    {
+      "number": 6,
+      "title": "Evidence: the exit depends on the motion",
+      "section": "Preliminary evidence",
+      "seconds": 65,
+      "speaker_notes": "Both policies start at the same fully matched reference state. The common full-reference peak, including tilt and hold, is 3.56 N. Direct withdrawal crosses 4 N at 0.721 seconds, while recentering and realignment completes with a 3.75 N full-recovery peak and 1.15 N withdrawal-only peak. The direct record is censored at the first violation. This is an alternative selected at the reference state, not a rescue started after the violation. Different horizontal time scales are explicit."
+    },
+    {
+      "number": 7,
+      "title": "The budget changes feasibility",
+      "section": "Task-dependent labels",
+      "seconds": 45,
+      "speaker_notes": "For the same planned physical path, 3 N is too tight even for the reference hold. At 4 N the two recovery strategies separate. At 5 N both complete. The 4 and 5 N direct paths share 174 identical recorded recovery samples up to the 4 N stopping frame. Higher-budget data never fills the missing future of the lower-budget record. Budget must be a model input."
+    },
+    {
+      "number": 8,
+      "title": "Embedding depth changes the recovery cost",
+      "section": "Parameter evidence",
+      "seconds": 50,
+      "speaker_notes": "At the shallower 12 mm target the direct path completes at roughly 0.32 N. The 18 mm direct path reaches the 4.54 N violation. Actual reference tilts differ slightly, so this is a descriptive controlled depth comparison rather than an identical-state force experiment. Realignment can itself add cost: at 12 mm its complete peak exceeds direct withdrawal. The optimizer must evaluate the whole recovery, not only the final pull phase."
+    },
+    {
+      "number": 9,
+      "title": "A 6\u00b0 command does not produce a 6\u00b0 state",
+      "section": "Angle extension",
+      "seconds": 45,
+      "speaker_notes": "The plan now permits targets to six degrees. All 2 to 6 degree branches terminate during the tilt before recovery. For the six-degree target, the last issued command is 3.743 degrees, actual peg tilt is 1.469 degrees, and the force is 4.694 N. The ramp duration stays one second, so larger targets also increase commanded angular speed. These are precursor-risk samples, not high-angle withdrawal tests or a universal angular boundary."
+    },
+    {
+      "number": 10,
+      "title": "A dataset for prevention and recovery",
+      "section": "Proposed dataset design",
+      "seconds": 45,
+      "speaker_notes": "Build insertion histories from actual pose, force, contact, tracking and next commanded action. Future prevention labels should combine persistent restricted progress despite commanded insertion, elevated load, and a separate withdrawal probe. These are candidate operational risk indicators, not certified mechanical jam labels. Distinguish them from policy-conditioned recovery completion and whole-path force cost. Current reference failures have no recovery label; invalid numerics, grip loss, untested actions and stopped futures remain separate. Group shared physical paths across data splits. New insertion trials are required to validate prevention labels."
+    },
+    {
+      "number": 11,
+      "title": "A proposed planning and control loop",
+      "section": "Technical route",
+      "seconds": 65,
+      "speaker_notes": "The primary mode selects insertion motions before a jam develops. Pose and force history are candidate predictors of rising insertion risk. A mode supervisor should change the objective to restoring withdrawability if progress becomes blocked. Start with a small library of advancing, recentering, tilting and withdrawing actions, then use constrained local MPC and an uncertainty-aware predictive filter. Adjustments and withdrawal share the operation-force budget. A barrier-function filter is only a later option if contact dynamics and feasibility assumptions are validated. This entire preventive and predictive architecture is proposed, beyond current scripted baselines and sampled stopping."
+    },
+    {
+      "number": 12,
+      "title": "Ready to validate jam-avoiding insertion",
+      "section": "Milestones and conclusion",
+      "seconds": 45,
+      "speaker_notes": "Current experiments demonstrate a useful adverse scenario and preliminary recovery feasibility. The primary prevention objective is not yet validated. First compare baseline insertion against a risk-aware insertion policy under matched disturbances, measuring insertion completion, peak load and later exit cost. This avoids rewarding a policy that merely stops and never inserts. Next evaluate force-limited restoration of withdrawability from matched blocked states, constraining the full adjustment-and-exit path. Numerical sensitivity, calibrated task budgets and hardware transfer are essential across both stages. Separate physics and control frequencies. Rigid-body simulation currently excludes plastic damage and fracture."
+    },
+    {
+      "number": 13,
+      "title": "Complete evidence coverage",
+      "section": "Appendix A",
+      "seconds": 0,
+      "speaker_notes": "Reference for questions. Do not pool deterministic reruns as independent statistical trials. The original budget matrix executed 13 branches. The angle extension executed 7, of which three repeat prior anchors. Both preserve planned but untested alternatives."
+    },
+    {
+      "number": 14,
+      "title": "References",
+      "section": "Appendix B",
+      "seconds": 0,
+      "speaker_notes": ""
+    },
+    {
+      "number": 15,
+      "title": "References continued",
+      "section": "Appendix C",
+      "seconds": 0,
+      "speaker_notes": ""
+    }
+  ],
+  "chart_placements": [
+    {
+      "page": 5,
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/tmp/pdfs/safe_recovery_talk/figures/paired_recovery_force.pdf",
+      "scale": 0.8882783882783882,
+      "x": 96.26373626373629,
+      "y": 117.0
+    },
+    {
+      "page": 6,
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/tmp/pdfs/safe_recovery_talk/figures/budget_comparison.pdf",
+      "scale": 1.0011574074074074,
+      "x": 48.0,
+      "y": 121.41666666666663
+    },
+    {
+      "page": 7,
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/tmp/pdfs/safe_recovery_talk/figures/depth_comparison.pdf",
+      "scale": 0.9468157181571816,
+      "x": 38.0,
+      "y": 136.6371951219512
+    },
+    {
+      "page": 8,
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/tmp/pdfs/safe_recovery_talk/figures/angle_scan.pdf",
+      "scale": 0.9876543209876543,
+      "x": 52.83333333333337,
+      "y": 115.0
+    },
+    {
+      "page": 12,
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/tmp/pdfs/safe_recovery_talk/figures/condition_outcomes.pdf",
+      "scale": 0.7407407407407407,
+      "x": 159.5,
+      "y": 148.0
+    }
+  ],
+  "builder_sha256": "0b72e217ac5ef8bc456117b6b7bdce915cad087d109a6d2fdab9ddf391787595",
+  "pdf_sha256": "01f3bda24c397f2b146759f0678d26218bc1112b4fe107c208326e160d97c8fc"
+}

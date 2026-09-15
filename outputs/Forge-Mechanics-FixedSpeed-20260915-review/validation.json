@@ -1,0 +1,1935 @@
+{
+  "schema": "Forge-mechanics-output-validation-v1",
+  "source_study": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915",
+  "source_manifest_sha256": "5f4aaa38303a0a673695331fc77785bafd2f86f33bb7d2ddd4098333a28256cb",
+  "source_status": "complete",
+  "passed": true,
+  "deep": true,
+  "planned_cases": 24,
+  "completed_cases_checked": 24,
+  "skipped_cases_checked": 0,
+  "incomplete_attempts_not_opened": 0,
+  "pending_cases": 0,
+  "check_count": 3131451,
+  "error_count": 0,
+  "errors": [],
+  "checked_files": [
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/source/simulation/forge_mechanics.py",
+      "sha256": "3fd43f2e07700664eb0c2a4124a88d873dd87e54b6f78b42acb62557dc75d020"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/source/simulation/launch_forge_mechanics.py",
+      "sha256": "264a4f0cb3e3c1a8e088b1e8f5c31dc17462f465666223de766a7c25e391dadb"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/source/simulation/forge_mechanics_backend.py",
+      "sha256": "4d9d058ad5e2807a8a27151498c3f456d81badafce590b10050071e01b01cf1a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/source/research/forge_mechanics_contacts.py",
+      "sha256": "16dcba4012b1d5071ae30f835a5b2eaf0246d2b3aaa3b4571631f3b326047c41"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/source/simulation/forge_mechanics_recovery.py",
+      "sha256": "d6bfc182f1ce17cea871e78143dbda19d0a7cb1bd89a0b1390773344e4c26abe"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/source/research/forge_mechanics_motion.py",
+      "sha256": "b03db0bdf9d1f697442bd2032cbea8c64bae0f3fa8c5f162ee054f4910bf17a4"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/source/research/forge_mechanics_plan.py",
+      "sha256": "82c9617044d0c3298a98c1cc0ae2f4bf72dde6330cd06992f38196a2571beb3f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/source/research/forge_mechanics_metrics.py",
+      "sha256": "d2924bfe32e2a1b14b073cd8393b310f47d3274b6dff44a28c47a2501ec13e60"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/source/research/forge_mechanics_protocol.py",
+      "sha256": "0df8a8d32cdaf88ff4a8d3076ea81713367d1c23fd07992f71efe624be902fad"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/source/simulation/forge_backend.py",
+      "sha256": "5a0c3fb5f1c5d330c90fdc2a22e6d48cda1713156d134c5ba533b5fa6ce3a45f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/source/simulation/forge_experiment.py",
+      "sha256": "54ac5813d9dba93c4ac6aaf907d67e53d84a039d47000386cfc57434b1e76618"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/source/simulation/contact.py",
+      "sha256": "a23500505916cf97fe792258fedae0ea583f03b2652dc42121e2d761fbb6e522"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/source/research/forge_protocol.py",
+      "sha256": "3e112d13a94bfb85f82ec7beec0c9750792042b222b07d7277df1c32503006a1"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/source/research/phase2_protocol.py",
+      "sha256": "3d05bd187320591bb9e69d38f9dc3263925608f17213c945caf8c7a6adcc84ca"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/source/research/forge_gap_metrics.py",
+      "sha256": "ed4dcde065a52732492fd5169eb408875c9d9b5f0850cafd76137ffef9462edc"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/source/research/forge_geometry.py",
+      "sha256": "d37caa904ae3bfcc2360ed31294f4d700fe412a127e030f6fe76dc6bb8751078"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/source/research/forge_events.py",
+      "sha256": "88361f3eacacda079fd3e9f7bc075dcc0a61ccbf7019b1891b670764d0b11022"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/source/research/future_stall.py",
+      "sha256": "7d6466b6e452beed65930aadcb6552d123947038ddac9bb18416b09e25a63d3c"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/source/research/forge_gap_study.py",
+      "sha256": "2dbea013ab35053fff628126fd36775a75aa782fad98e443e0b4f1409bb17fc9"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/source/research/forge_collection.py",
+      "sha256": "f06901e0c9d55df411981a27ee4ad512f089aaf8bd6fecec00d3da9a0d4c890f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/source/research/phase2b.py",
+      "sha256": "0dfa4d32fd924a72576a7f1316198352147a389e5fe4e328727eb0637a94949a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs050_fd050_a00_try00/trajectory.json",
+      "sha256": "3668ae5720efbaece47f8f7d280819921a5ed859bac07a9a61f6a5d9c3fb980e"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs050_fd050_a00_try00/insertion.csv",
+      "sha256": "efd07c56ea3cc1ce45ef64348ac1ffd5ef8c2bebac364a1556ee3b70d647ebed"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs050_fd050_a00_try00/insertion_contacts.jsonl.gz",
+      "sha256": "ccc9809fa654f36ceed58d5c4d7a0a5e3457ca430738167bb0d13b6af3102d59"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs050_fd050_a00_try00/final_retreat.csv",
+      "sha256": "526acd5211540225668624034bc4e8d730465e7818a9043b21c7f3a64a265ec4"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs050_fd050_a00_try00/final_retreat_contacts.jsonl.gz",
+      "sha256": "3e17339fa6b4646ce15133772df250852867bd61da49aa7ac0de6cb5482ee172"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs050_fd050_a00_try00/terminal_realign_prefix.csv",
+      "sha256": "4d08cc53e93d94834184b6d7fbb18ec3ada9523a2953bf5a5b55287ac7db2eec"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs050_fd050_a00_try00/terminal_realign_prefix_contacts.jsonl.gz",
+      "sha256": "1a64a9d2f71520cb60075f2316ef34ed4560b0944d094de7d0be6bf514837d5d"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs050_fd050_a00_try00/terminal_realign_recovery.csv",
+      "sha256": "fcb609f0aa49f10a7c069b70353fc027719fafbcb09c2fbc61c692c75d872844"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs050_fd050_a00_try00/terminal_realign_recovery_contacts.jsonl.gz",
+      "sha256": "efbbd6b9f3c20b0b3cecc741ca59ae594de9a6f6d892a77d10809be636eaabf7"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs075_fd075_a00_try00/trajectory.json",
+      "sha256": "fa0829ca2ba88bdc5f63d141e24ef75d05993502e0903b5072e25010dabadfdf"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs075_fd075_a00_try00/insertion.csv",
+      "sha256": "240dea7c40f57b6fe2753c66c31c4ccf515aa85a10759b1316045bc63eec5bc0"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs075_fd075_a00_try00/insertion_contacts.jsonl.gz",
+      "sha256": "39ddedbf8cbb6724d0528d635019b77c478ecaf8250c4dac39f1772d051bb724"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs075_fd075_a00_try00/final_retreat.csv",
+      "sha256": "2755ef3192048986f68d43ebd4cf282a4bf8be54639bcd7f69d178f9319b745d"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs075_fd075_a00_try00/final_retreat_contacts.jsonl.gz",
+      "sha256": "79a5f3426502901a3bb0361cfcaac982fad2bb9d8dea3f04c56d4206d9fd4ef3"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs075_fd075_a00_try00/terminal_realign_prefix.csv",
+      "sha256": "3118306bea8f0363332e3130e4cb2b40dd0e4a09cffc8073b8b982d2173f95f5"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs075_fd075_a00_try00/terminal_realign_prefix_contacts.jsonl.gz",
+      "sha256": "d2db58ab5ae54af81930bb1712b2cc43ee2234074420a95c9954351559ec6193"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs075_fd075_a02_try00/trajectory.json",
+      "sha256": "b6a7c626c8aaabdbdb8a06766ae5b0e82e723bb94ce77e290b1bdebf59f32366"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs075_fd075_a02_try00/insertion.csv",
+      "sha256": "094736b26fc2e0ffa258b3119e9cfeb9a30d9dc566c77485c87b2be339b97cf6"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs075_fd075_a02_try00/insertion_contacts.jsonl.gz",
+      "sha256": "0111a61c298e7f2ee8ea5e5104e55100897d56ebdcb94a2f6c9215c731695f1a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs075_fd075_a02_try00/final_retreat.csv",
+      "sha256": "55da2dd695c5601503fdf6ac9dec52fb0aa331647245fff939803faec2d1888d"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs075_fd075_a02_try00/final_retreat_contacts.jsonl.gz",
+      "sha256": "0c1b82db320a990856f6288104859d9a2067de3ce0912ff71263bdb5ab1b2228"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs075_fd075_a02_try00/terminal_realign_prefix.csv",
+      "sha256": "4e3dde7a3f43061b0c7b90fb735a8f875bb13ebe885b0c7bca929781c2942116"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs075_fd075_a02_try00/terminal_realign_prefix_contacts.jsonl.gz",
+      "sha256": "bb862552ef49275e6b0fa3dc1fc453488e68f6bc7b9be3ae6eae79298e7e143b"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd100_a00_try00/trajectory.json",
+      "sha256": "d7f25798807437aa860b7d40f51267e3c0404458395f83c37533a7773a6b1842"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd100_a00_try00/insertion.csv",
+      "sha256": "bc7ba687d47cef5bb83262256db5a92c89c0d54aaf267f500f5cba37d82ac52d"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd100_a00_try00/insertion_contacts.jsonl.gz",
+      "sha256": "d76cbabd991ec94e57bd91a01eff9c7cee0ddae4286846d39255c0e085f613a3"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd100_a00_try00/final_retreat.csv",
+      "sha256": "d23f76d89b6f059584e7d8e57951f99b7e0f432f3930061e59200da653000dc7"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd100_a00_try00/final_retreat_contacts.jsonl.gz",
+      "sha256": "09af2f8b446b3ccf5915ca271840b593bc2f775bbf792b389a5b2ef2382eac6f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd100_a00_try00/terminal_realign_prefix.csv",
+      "sha256": "97adbc9a6d6a1cc55fdf90edfef27f3ec820fbec537865211c5ded5fcbc82370"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd100_a00_try00/terminal_realign_prefix_contacts.jsonl.gz",
+      "sha256": "4ac9b6bea20f1a8d3d20a6b711afae496bb49e0843ae28242fe1750ce19a94b2"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd100_a00_try00/terminal_realign_recovery.csv",
+      "sha256": "ad05481cfad57a2049d9836660dd38e92caef777903ee3fa504b61c368cb9890"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd100_a00_try00/terminal_realign_recovery_contacts.jsonl.gz",
+      "sha256": "2429a4016dd9cd9702059f0c25b20204e7e816444e45dcd4a5ec54752e030e6f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd050_a00_try00/trajectory.json",
+      "sha256": "b3223dd10f94c959d019ed0a083cb9d63e3f01b07b14955080a78f554ad69a8c"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd050_a00_try00/insertion.csv",
+      "sha256": "b9d3cfe6e68b45b1fc94981f8941f14a9f34a464e2ae382153940519da22c635"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd050_a00_try00/insertion_contacts.jsonl.gz",
+      "sha256": "1aad7c33dba90bcf7eda9b0f479b08de0a7aea15ad491f0e3c87a9d3a3503960"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd050_a00_try00/final_retreat.csv",
+      "sha256": "da620951c08f08834a09cd0c27a9b7a6c4893c1fc7dc7a0054f7e8ff38e74dcf"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd050_a00_try00/final_retreat_contacts.jsonl.gz",
+      "sha256": "bfa81cc86eb962487994042b9ae5fbef47a9d738094a53ee87b87d6627c10973"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd050_a00_try00/terminal_realign_prefix.csv",
+      "sha256": "616fc50815ef4bdc8f1ae4c6085498cc507f562f230d8012251558419862b08a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd050_a00_try00/terminal_realign_prefix_contacts.jsonl.gz",
+      "sha256": "022eb48b0a9b70ca5e59228614990843f01d3dd13f6a3c5bfd78cca64ce919c2"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd100_a02_try00/trajectory.json",
+      "sha256": "b21be35c3c6de5b59ef3dc46bb88b3349ba98158fb6b06bbb82960689bfefec7"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd100_a02_try00/insertion.csv",
+      "sha256": "c89e4f6ad787a4119f53005d9be4b998744899be0a4664286639448e9ed1f4f5"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd100_a02_try00/insertion_contacts.jsonl.gz",
+      "sha256": "25873f0e6e97cbef6e994a1a00187cf5e1ffecce4483321e40c4a6f4946033f3"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd100_a02_try00/final_retreat.csv",
+      "sha256": "c8e44ccfbd71b7f6f7ccf6e425ee2887cd8632a080f341b3d1b669d429997cf2"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd100_a02_try00/final_retreat_contacts.jsonl.gz",
+      "sha256": "c3a72fbaf26fa8c8b517a41e9b9af769bcdf7a08f4b1f63dc06227420c8cce68"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd050_a02_try00/trajectory.json",
+      "sha256": "a8f3fcbde8c9b190ee7219c9ff673c9d04fa8cc037e49d3d183651a6e6b5baae"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd050_a02_try00/insertion.csv",
+      "sha256": "666e6d4f48f7d28287be79f8390c40572bdedd0bee3816ae0299d3ed716ea752"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd050_a02_try00/insertion_contacts.jsonl.gz",
+      "sha256": "164acb1710e2c9e1de33ce2dcf8f8b21de8e5945442c592155618e59bf9c518f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd050_a02_try00/final_retreat.csv",
+      "sha256": "c3af6659f1e042e231c2280eb619a623d62486d6115a212ecdc4a6e0fd53f268"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd050_a02_try00/final_retreat_contacts.jsonl.gz",
+      "sha256": "81357acfc0c24b8395db1ed26efcbd641740a152f9394b4ca1e28372cad2ff8f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs075_fd075_a00_try00/trajectory.json",
+      "sha256": "cae9c13884777d974b2a68ebbdd82fb81f59826d1227aab18be6cba9d6cedb99"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs075_fd075_a00_try00/insertion.csv",
+      "sha256": "c9ef1aa39876b4c1929e36aa1d3d56d0759d90209ef20dff40816d458898ae92"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs075_fd075_a00_try00/insertion_contacts.jsonl.gz",
+      "sha256": "c43b0cf693ef54bb4314d314fd6a484481e4d3ae55b05f4196c282937be0fdbc"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs075_fd075_a00_try00/final_retreat.csv",
+      "sha256": "ee884a60544aebbd65c83624e88a2e17d41b50b5f1f14423d7e6716b0b67e02a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs075_fd075_a00_try00/final_retreat_contacts.jsonl.gz",
+      "sha256": "d431026aa89c39b45fcf000d7e172a0465914e9f81545cdcc71c9e57192a0f2c"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs075_fd075_a00_try00/terminal_realign_prefix.csv",
+      "sha256": "cc124afd3b651d1b36b3c9eadf759b45d80fefad76f9c99b4145d7f5b096a5a9"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs075_fd075_a00_try00/terminal_realign_prefix_contacts.jsonl.gz",
+      "sha256": "51133d8173cd18a2ae1ed6979dbb52f8d1c33a4b7a58a6e322d8847dcbf471ae"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs075_fd075_a00_try00/terminal_realign_recovery.csv",
+      "sha256": "c98519e98c0a01aa93b13656dd30a41207de44827f3afbb751e4f5125a8bed60"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs075_fd075_a00_try00/terminal_realign_recovery_contacts.jsonl.gz",
+      "sha256": "c82566559a2c4faf2b75db27d13485997412a7aea07dfc1a5807304fd4532bec"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd100_a00_try00/trajectory.json",
+      "sha256": "e50dab5b041a7af8c0bf8392bb7aefd234764bdff819828196b95e71a161144b"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd100_a00_try00/insertion.csv",
+      "sha256": "87098096a264ff84c514e842410f8413b15aff021dd88ab61b57731ac3df1f12"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd100_a00_try00/insertion_contacts.jsonl.gz",
+      "sha256": "c48fc366e08261d9a9e311a1375e289dc5c10c5876885562b55a264b5b8c7492"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd100_a00_try00/final_retreat.csv",
+      "sha256": "456898a4bf633a7d0d15fca6fcd881b2fe02a5d92efc321736778caff0b9a5ac"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd100_a00_try00/final_retreat_contacts.jsonl.gz",
+      "sha256": "8073f8119c44490810dcca6c13a53f7239566180d4db648aec9d7f7c57c52696"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd100_a00_try00/terminal_realign_prefix.csv",
+      "sha256": "dde9a730f732c9b2d35279aceaefa90f28ac4ae72629323dc42ccab569471cbb"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd100_a00_try00/terminal_realign_prefix_contacts.jsonl.gz",
+      "sha256": "92d27338b9f892c1a503cfdf4b29b2c71f00c6644dd5ccb1ccd0e331c93c5a5f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd050_a00_try00/trajectory.json",
+      "sha256": "714620267089516a049f7dd21f564d7c5ad51405b6f0ce6b069c0eb21de73df3"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd050_a00_try00/insertion.csv",
+      "sha256": "58c69c605c0d242f4204846cad8976d6ee79520840545b2f7796c7f8b7949a81"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd050_a00_try00/insertion_contacts.jsonl.gz",
+      "sha256": "ff8f8080fb356fd10d4d00ab4a1854884e5e31c544111ebb1e87fcea22ea3163"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd050_a00_try00/final_retreat.csv",
+      "sha256": "1aac17b3957a9bbe927952b41fe26cf57411c3f5acd272e1cadc9511f435a75f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd050_a00_try00/final_retreat_contacts.jsonl.gz",
+      "sha256": "c13f4c64126a20368160fda8433cfe2a87b62de24f38bf78215e980a84f5d73e"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd050_a00_try00/terminal_realign_prefix.csv",
+      "sha256": "275de62eb04cd703158de1e6e1f364788fe1a6b9f62d84fa0f5c4eb679b664c4"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd050_a00_try00/terminal_realign_prefix_contacts.jsonl.gz",
+      "sha256": "814e765408d101b48fc38d6327f8ecba9906c1654e429003b6a30b6eb54b0055"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs050_fd050_a00_try00/trajectory.json",
+      "sha256": "3049b5a289f4ddf7ab73480ad6a852f5c1e0194af4329a54af9215babc02a9ea"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs050_fd050_a00_try00/insertion.csv",
+      "sha256": "1624ff893989406d074d2a3dd4e0e94fd4e8b821e96acd88b0df306301965c65"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs050_fd050_a00_try00/insertion_contacts.jsonl.gz",
+      "sha256": "4ca1728be679e5306fb018a4ba8bb3f065cdfb7f3a37c91c2e007a571f409409"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs050_fd050_a00_try00/final_retreat.csv",
+      "sha256": "c8c2658efcbc56369ecdc0c7c33bfa03e981fe831b231eb0452856a1ff9cf1a7"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs050_fd050_a00_try00/final_retreat_contacts.jsonl.gz",
+      "sha256": "a6c0b784c4029fc69d969b29de1fb425b718a84ba987a297ce2b7fd468121e9d"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs050_fd050_a00_try00/terminal_realign_prefix.csv",
+      "sha256": "1624ff893989406d074d2a3dd4e0e94fd4e8b821e96acd88b0df306301965c65"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs050_fd050_a00_try00/terminal_realign_prefix_contacts.jsonl.gz",
+      "sha256": "15712d2e4aa15d9a92b32c22b6c8d0833826cd0371d2463f37d38f93b1ce7146"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs050_fd050_a00_try00/terminal_realign_recovery.csv",
+      "sha256": "0227c852dcaf56a76899b9665edb597653058a43c680f3d716af31e541c32a54"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs050_fd050_a00_try00/terminal_realign_recovery_contacts.jsonl.gz",
+      "sha256": "ea9a5d403f8c795090027525a0c1e8210d6e60bba36e6a02855ce8004c7574eb"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd100_a00_try00/trajectory.json",
+      "sha256": "0cda0e8acbf428b40b662472a2e43a1563fca1562daaa25d111f92ae32454def"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd100_a00_try00/insertion.csv",
+      "sha256": "f9055ae1c72eb3c2a0a954e84fb015ca96386156b0be296b235e1d72a1e59eb1"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd100_a00_try00/insertion_contacts.jsonl.gz",
+      "sha256": "a9e35e3db569df8572655f8d52e3e0737d3040099dda561a8e28f83836000391"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd100_a00_try00/final_retreat.csv",
+      "sha256": "47b39f4d47325cf7611a5a5e69ae6bdaa146881561dd03b8ea51fd02be358ec9"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd100_a00_try00/final_retreat_contacts.jsonl.gz",
+      "sha256": "85b70c59eca5d120bf33fd9864ce3df8e4c9c3c7e8e79a89d0516a038222e6ca"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd100_a00_try00/terminal_realign_prefix.csv",
+      "sha256": "ae39af7e33383dd973a1ca625f2ddd26783dc06009022e319f787d7401fefef2"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd100_a00_try00/terminal_realign_prefix_contacts.jsonl.gz",
+      "sha256": "ce9ff4af28d9ca4d393241296e95a9e631398388f3040b69c4dcb8ff0a209d42"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd050_a00_try00/trajectory.json",
+      "sha256": "188a1066fef5a23c828533dd621380779558bab3b164dd16f84e1a6d1d036334"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd050_a00_try00/insertion.csv",
+      "sha256": "aae866d9e211b90cac092ec742b198201492cd0ddc78fd7b72b51497fc754c7f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd050_a00_try00/insertion_contacts.jsonl.gz",
+      "sha256": "54e50e7f3c17031a255bea8c753a06f9f2bde86001b8e68fb734194615f2e761"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd050_a00_try00/final_retreat.csv",
+      "sha256": "800a55d3544ff2e9c450917e8c33a7a6188b2189ea5cf9b6a9572a01eedc35e5"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd050_a00_try00/final_retreat_contacts.jsonl.gz",
+      "sha256": "596e4983e0b090135320e08f61848cca8702142a5abc341b8dc48a84400fdb7d"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd050_a00_try00/terminal_realign_prefix.csv",
+      "sha256": "209456b55642c65795f7731dcfc368c87a87dcd0017f7f23d819bc5b7fe2e6ec"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd050_a00_try00/terminal_realign_prefix_contacts.jsonl.gz",
+      "sha256": "5c5797e22b6e04e0a7b19c72b3317cd7d0a70b7701c30d5e122c68e0dcf8e00a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs050_fd050_a00_try00/trajectory.json",
+      "sha256": "a959f13cd33566e59dc8550707200f8f5a0df9041d9d181dec4ec4482cc74c32"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs050_fd050_a00_try00/insertion.csv",
+      "sha256": "29cd8a3e0c6ad31f3e8236f69076134d1f98476f9c8c2231708066fda9598c61"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs050_fd050_a00_try00/insertion_contacts.jsonl.gz",
+      "sha256": "55453433f3d14e89a314dd56837faa97b1dc4c663e483148bb426e5a2ea85db1"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs050_fd050_a00_try00/final_retreat.csv",
+      "sha256": "94444acb58ba140ab2fda7dc9f872d68199342b7c47fcd4bb12fd28e1ab91444"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs050_fd050_a00_try00/final_retreat_contacts.jsonl.gz",
+      "sha256": "c78e10280d6979489e264845257b8eb504205c1f096d426c72e0a8c964b81dae"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs050_fd050_a00_try00/terminal_realign_prefix.csv",
+      "sha256": "29cd8a3e0c6ad31f3e8236f69076134d1f98476f9c8c2231708066fda9598c61"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs050_fd050_a00_try00/terminal_realign_prefix_contacts.jsonl.gz",
+      "sha256": "ad925f8a18e7cefd807213bf915570c9b2d0c0cbf88f061560d4f3a8686bf48e"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs050_fd050_a00_try00/terminal_realign_recovery.csv",
+      "sha256": "f5b63fa5bbd3d3877ee9ba59a230c383715427ef8a735ec5bba9519a6951928b"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs050_fd050_a00_try00/terminal_realign_recovery_contacts.jsonl.gz",
+      "sha256": "1b22359b3f06acc36971cb1248aaf211a9a7eb6ec94eb4f1e1014871c011e262"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs075_fd075_a00_try00/trajectory.json",
+      "sha256": "61338b3ac4934317e9e1d746cea609035d826c9d18bc2dd15802dfc9c9c73264"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs075_fd075_a00_try00/insertion.csv",
+      "sha256": "69bd30fc676f67564768231fd32ab387f7bc876161c00acd0aa220b7acf65403"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs075_fd075_a00_try00/insertion_contacts.jsonl.gz",
+      "sha256": "73f01487e667434ed975d48a3a62faa03bc80692598a9b91101247b97952db79"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs075_fd075_a00_try00/final_retreat.csv",
+      "sha256": "562f1945a8c5fdf65494ff2a44dda5f36b14967d007a86773e2a2141d89378c0"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs075_fd075_a00_try00/final_retreat_contacts.jsonl.gz",
+      "sha256": "16f3a5ad370bcd1a25ac117a84270e25a5f79a51124a2fd222774df43eb49f2a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs075_fd075_a00_try00/terminal_realign_prefix.csv",
+      "sha256": "20aef9e119e684f521fedcef5d1fde844f4fc773d95c16fb878ee4fda3c5c3d1"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs075_fd075_a00_try00/terminal_realign_prefix_contacts.jsonl.gz",
+      "sha256": "ccf8020ef7643e291157c2ca95fa2b79890d939634165ba0750a6d25571f384c"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs050_fd050_a02_try00/trajectory.json",
+      "sha256": "34f95971f633d1dd9ea3bdf619e7bc07971b0ccc2398dd0acca6020e2de9eee3"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs050_fd050_a02_try00/insertion.csv",
+      "sha256": "dbb1f4e861104353bf768700604ca1c965fb5fca5f1c97e67cbd3d79bb6f88d5"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs050_fd050_a02_try00/insertion_contacts.jsonl.gz",
+      "sha256": "03420c2089639d86ba0f1722b29c9e139c81c2fc311d56d083ee5fdc2b2b2273"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs050_fd050_a02_try00/final_retreat.csv",
+      "sha256": "78a5bdc82678dc4b478d3889d11cdd3fbb687c1926e0db3ff86dd56b2b2f7362"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs050_fd050_a02_try00/final_retreat_contacts.jsonl.gz",
+      "sha256": "d2751a20b43ac3ecd761d9a1f9aa390d17037f57632c012f55c5896d21ea2201"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs050_fd050_a02_try00/terminal_realign_prefix.csv",
+      "sha256": "9300539f9e69215d05a09d2faa73676bc10a190c4bce0be77c516710090424c4"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs050_fd050_a02_try00/terminal_realign_prefix_contacts.jsonl.gz",
+      "sha256": "d5fe12cb04304ef1771f781265614902a727a33fd215fd0ec6ed87cefbd5c283"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs075_fd075_a02_try00/trajectory.json",
+      "sha256": "02035f06a91c731d796f46339444e0b44e5c100504afeda928f083e43d56daf0"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs075_fd075_a02_try00/insertion.csv",
+      "sha256": "2a984b500ba5e0d460dc46f88216adc9ebb19f0674694876ff778cbe7452b8ed"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs075_fd075_a02_try00/insertion_contacts.jsonl.gz",
+      "sha256": "6fb7eb5a08bbf7308fbf27907629f1f32dcb24c489df51e5d3869bc184d9eff6"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs075_fd075_a02_try00/final_retreat.csv",
+      "sha256": "b3725c98b2fac83c77175eeba624a6c0fc14f2bb1b5940472be545a31a77bd33"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs075_fd075_a02_try00/final_retreat_contacts.jsonl.gz",
+      "sha256": "5cf49e274ecffe168a0f6d3b0b2d121f715f848575ff7f35f2177d862de67cef"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs075_fd075_a02_try00/terminal_realign_prefix.csv",
+      "sha256": "2a984b500ba5e0d460dc46f88216adc9ebb19f0674694876ff778cbe7452b8ed"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs075_fd075_a02_try00/terminal_realign_prefix_contacts.jsonl.gz",
+      "sha256": "7844c445950ae3fac413be6096f5850b68d7daa4bac653fd9f504d888a7c0b9b"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs075_fd075_a02_try00/terminal_realign_recovery.csv",
+      "sha256": "56e761c56736c6d326f996694fd486d793916d583b0331d43074aeb2d7d69522"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs075_fd075_a02_try00/terminal_realign_recovery_contacts.jsonl.gz",
+      "sha256": "debf787ac5cce3ec199489a97e7b9e0ecd19963ba44ae9982420494db596b773"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd100_a02_try00/trajectory.json",
+      "sha256": "706d2225058f4e6684558fff75f2192bb6faa2339eac9eab8d3356a3ea05b5c1"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd100_a02_try00/insertion.csv",
+      "sha256": "daa2253fab38a566ae54f77c198ddb57a8f0390a3056bfb1f44f1fcd8a2f7c5c"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd100_a02_try00/insertion_contacts.jsonl.gz",
+      "sha256": "09aa0637869534d8864bf352186abfef6f88b82a1ef34dd64b00ad4a939a9107"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd100_a02_try00/final_retreat.csv",
+      "sha256": "b0fd1f3deaed9092f1422b56f5e345f39e2cd8c69d90c2dc286037116c22bb7a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd100_a02_try00/final_retreat_contacts.jsonl.gz",
+      "sha256": "c8614401520e162d380ed171b26f96d1ee701d8873157d8db5618e295491a98f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd100_a02_try00/terminal_realign_prefix.csv",
+      "sha256": "65aff6e18d374338b4bbeb97138a42305bbfba6c17befdbb329a34588c256e42"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd100_a02_try00/terminal_realign_prefix_contacts.jsonl.gz",
+      "sha256": "4371e4b7273d4408991855f17d4b43099119b23477618b0720e63463d3ae9223"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd050_a02_try00/trajectory.json",
+      "sha256": "3a82ae8a1f10e0217face0d14e2158b5a8ad786e63c41820b5650a95a68482e2"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd050_a02_try00/insertion.csv",
+      "sha256": "ced1848efd9add5e98c97cc8d28618ebda7a741dd982ec4c0784fd8bbcf4b506"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd050_a02_try00/insertion_contacts.jsonl.gz",
+      "sha256": "53dbe10c9aa16e69de97fedb17b081270ae2f352efd2aee93532431cd2bc63b8"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd050_a02_try00/final_retreat.csv",
+      "sha256": "d3757e9571e885371d0d429f1749e34b1be0d65b6e1f974ccacc95e910884f25"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd050_a02_try00/final_retreat_contacts.jsonl.gz",
+      "sha256": "211d15512a404fcfef537ef8757176e4e911f7b25c596688068ed7974779db85"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd050_a02_try00/terminal_realign_prefix.csv",
+      "sha256": "2213fa3ff48f2f035ee47992db4a256adfc47af046e9468a731205af3b9e0634"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd050_a02_try00/terminal_realign_prefix_contacts.jsonl.gz",
+      "sha256": "831a22dde81746ea611ebc8405ed36190e510715ca156acf94075d764a79ee62"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs050_fd050_a02_try00/trajectory.json",
+      "sha256": "1fdf0ede62d4e52353e1259984f7b1019f61be6a975789444a739a02c113fd89"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs050_fd050_a02_try00/insertion.csv",
+      "sha256": "b516e63c5a56a40cf6c2a3bed0ebc09eeeec8d3e5a3b1268fb263fbfda060abc"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs050_fd050_a02_try00/insertion_contacts.jsonl.gz",
+      "sha256": "40a78807aef44a995430e8a6448935c5e7959d5998d8a2d16a07b098b977655d"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs050_fd050_a02_try00/final_retreat.csv",
+      "sha256": "169e7815b97306c18d8fd0e2fdd3f6027a41d8c77dca5dd2b7235938a310a53b"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs050_fd050_a02_try00/final_retreat_contacts.jsonl.gz",
+      "sha256": "9d186eb5eb1e6f14a7e0f515de960721e5fe87c0a1fe188c90273e338c7e3c25"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs050_fd050_a02_try00/terminal_realign_prefix.csv",
+      "sha256": "b516e63c5a56a40cf6c2a3bed0ebc09eeeec8d3e5a3b1268fb263fbfda060abc"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs050_fd050_a02_try00/terminal_realign_prefix_contacts.jsonl.gz",
+      "sha256": "69b68f9101bd6123e7979d42553fab58ba2c9bb5d789b760659e0ccabe60e7fb"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs050_fd050_a02_try00/terminal_realign_recovery.csv",
+      "sha256": "c5febc7550f208bc0a64c79cf69e4a115feadc78923f531390252ebab85dad45"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs050_fd050_a02_try00/terminal_realign_recovery_contacts.jsonl.gz",
+      "sha256": "25f772262f05e19364bc8fc653871a324e0285bf3f4318542383272fe3e774db"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd100_a02_try00/trajectory.json",
+      "sha256": "7b9c14601d4bb3d61b411417cc2fab4eb33227667cc5c7b10ec3978d2724154d"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd100_a02_try00/insertion.csv",
+      "sha256": "5034ae0ed05af3fa1edea10e22a350ae6e56b8a55882abac9225d52dc4b34c26"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd100_a02_try00/insertion_contacts.jsonl.gz",
+      "sha256": "db95e612fc713724df88d32985016d57dcdcfda8bb1b7968e84d815f862a3d93"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd100_a02_try00/final_retreat.csv",
+      "sha256": "1ef0c967d9648986b8af30fbc88bafffe994e3fe35054ac66250892ee7d0ff6f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd100_a02_try00/final_retreat_contacts.jsonl.gz",
+      "sha256": "d4cbf207e3ec6afa8e14cdf9bff3df618d97befe9d719ffae27b7500ef07969a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd100_a02_try00/terminal_realign_prefix.csv",
+      "sha256": "f56fa3c1ac777f544d5e41f3f9d04d6b375c6c777d870faae01da28314bd152b"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd100_a02_try00/terminal_realign_prefix_contacts.jsonl.gz",
+      "sha256": "2e0ac0babc5a7c373c9891a4c4e63103ba4e04b76a748167333bbf36945d94d6"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd050_a02_try00/trajectory.json",
+      "sha256": "1da6a2af72378984b690e0673dc4f947cc5b2a40e9f45f2380cabb94e774c21f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd050_a02_try00/insertion.csv",
+      "sha256": "4116a6c1bf4eb1e268ecbd73f569884aea7166faeb980ab3b2d2aa6f43b01e73"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd050_a02_try00/insertion_contacts.jsonl.gz",
+      "sha256": "643600cdc6b6eaac0d6c56e08c7248540872e01add91e450760c61c407a4294e"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd050_a02_try00/final_retreat.csv",
+      "sha256": "98ac6abe4538f63002d499a9541b03aebcd8cf24fd3bc42d0bec9cb28b6ae916"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd050_a02_try00/final_retreat_contacts.jsonl.gz",
+      "sha256": "64fefbfc43b7f775284afa9993f9c70975d9bfa610fce9ca39aa8de8303910e1"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd050_a02_try00/terminal_realign_prefix.csv",
+      "sha256": "4ddf11208c7d2d6b6c96309e400bdffdfcc8b7221f3096838c20c8f92b76aa16"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd050_a02_try00/terminal_realign_prefix_contacts.jsonl.gz",
+      "sha256": "455edadd25126226cf1f0127bd298385480955d48fc8123e22f5cc362f4b9eba"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs050_fd050_a02_try00/trajectory.json",
+      "sha256": "77544bfaf5c9017a1c5498850ee2d3f29119cc5563855dd842027dbd17e91d5a"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs050_fd050_a02_try00/insertion.csv",
+      "sha256": "3bc21cd623e99675a22e6fbcfda9f221916f21386b173ffd3672519174bcf1b8"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs050_fd050_a02_try00/insertion_contacts.jsonl.gz",
+      "sha256": "13c185c4f0a8872d7e6610fd5054a07e674b80bcfb7541eb3fa1d79fdf5784fd"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs050_fd050_a02_try00/final_retreat.csv",
+      "sha256": "137fbd36bb60c5261c73c6ce3902f2a6f40d0352fcaa703b445d82b54b9df799"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs050_fd050_a02_try00/final_retreat_contacts.jsonl.gz",
+      "sha256": "ba597aa6001d1791984e9dc4dc29f112ab0eca4f289e8c4b583595ad006798ab"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs075_fd075_a02_try00/trajectory.json",
+      "sha256": "47c2666c94bfeb071c6698f5f76d72a576336a7899c90396de9e6bf5a7a1e525"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs075_fd075_a02_try00/insertion.csv",
+      "sha256": "96b1c25f300a75e0dd2c85f6c7f821b2eedb2b4c4ac471cc1bdee0321e4652a3"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs075_fd075_a02_try00/insertion_contacts.jsonl.gz",
+      "sha256": "c87d660c0580c0a9dc83565105ae57be1dbbebe2567e3873fe82f423c889c88f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs075_fd075_a02_try00/final_retreat.csv",
+      "sha256": "786ecf2676da429601a941b3aa2427beefd9d6ffa8768b1e45e440dbade8b61f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs075_fd075_a02_try00/final_retreat_contacts.jsonl.gz",
+      "sha256": "3e5e70924e4e28a8f010443a9ce1ed670f495f9f9282f5fa53cc00124150f48f"
+    }
+  ],
+  "checked_streams": [
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs050_fd050_a00_try00/insertion.csv",
+      "csv_samples": 2106,
+      "contact_samples": 2106
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs050_fd050_a00_try00/final_retreat.csv",
+      "csv_samples": 563,
+      "contact_samples": 563
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs050_fd050_a00_try00/terminal_realign_prefix.csv",
+      "csv_samples": 2106,
+      "contact_samples": 2106
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs050_fd050_a00_try00/terminal_realign_recovery.csv",
+      "csv_samples": 1040,
+      "contact_samples": 1040
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs075_fd075_a00_try00/insertion.csv",
+      "csv_samples": 2473,
+      "contact_samples": 2473
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs075_fd075_a00_try00/final_retreat.csv",
+      "csv_samples": 856,
+      "contact_samples": 856
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs075_fd075_a00_try00/terminal_realign_prefix.csv",
+      "csv_samples": 2473,
+      "contact_samples": 2473
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs075_fd075_a02_try00/insertion.csv",
+      "csv_samples": 2493,
+      "contact_samples": 2493
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs075_fd075_a02_try00/final_retreat.csv",
+      "csv_samples": 867,
+      "contact_samples": 867
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs075_fd075_a02_try00/terminal_realign_prefix.csv",
+      "csv_samples": 2473,
+      "contact_samples": 2473
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd100_a00_try00/insertion.csv",
+      "csv_samples": 2811,
+      "contact_samples": 2811
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd100_a00_try00/final_retreat.csv",
+      "csv_samples": 1137,
+      "contact_samples": 1137
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd100_a00_try00/terminal_realign_prefix.csv",
+      "csv_samples": 2811,
+      "contact_samples": 2811
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd100_a00_try00/terminal_realign_recovery.csv",
+      "csv_samples": 1617,
+      "contact_samples": 1617
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd050_a00_try00/insertion.csv",
+      "csv_samples": 2876,
+      "contact_samples": 2876
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd050_a00_try00/final_retreat.csv",
+      "csv_samples": 1144,
+      "contact_samples": 1144
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd050_a00_try00/terminal_realign_prefix.csv",
+      "csv_samples": 2876,
+      "contact_samples": 2876
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd100_a02_try00/insertion.csv",
+      "csv_samples": 2641,
+      "contact_samples": 2641
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd100_a02_try00/final_retreat.csv",
+      "csv_samples": 1,
+      "contact_samples": 1
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd050_a02_try00/insertion.csv",
+      "csv_samples": 2703,
+      "contact_samples": 2703
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs100_fd050_a02_try00/final_retreat.csv",
+      "csv_samples": 1,
+      "contact_samples": 1
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs075_fd075_a00_try00/insertion.csv",
+      "csv_samples": 2070,
+      "contact_samples": 2070
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs075_fd075_a00_try00/final_retreat.csv",
+      "csv_samples": 562,
+      "contact_samples": 562
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs075_fd075_a00_try00/terminal_realign_prefix.csv",
+      "csv_samples": 2070,
+      "contact_samples": 2070
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs075_fd075_a00_try00/terminal_realign_recovery.csv",
+      "csv_samples": 1041,
+      "contact_samples": 1041
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd100_a00_try00/insertion.csv",
+      "csv_samples": 2101,
+      "contact_samples": 2101
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd100_a00_try00/final_retreat.csv",
+      "csv_samples": 569,
+      "contact_samples": 569
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd100_a00_try00/terminal_realign_prefix.csv",
+      "csv_samples": 2101,
+      "contact_samples": 2101
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd050_a00_try00/insertion.csv",
+      "csv_samples": 2087,
+      "contact_samples": 2087
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd050_a00_try00/final_retreat.csv",
+      "csv_samples": 568,
+      "contact_samples": 568
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd050_a00_try00/terminal_realign_prefix.csv",
+      "csv_samples": 2087,
+      "contact_samples": 2087
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs050_fd050_a00_try00/insertion.csv",
+      "csv_samples": 2441,
+      "contact_samples": 2441
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs050_fd050_a00_try00/final_retreat.csv",
+      "csv_samples": 852,
+      "contact_samples": 852
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs050_fd050_a00_try00/terminal_realign_prefix.csv",
+      "csv_samples": 2441,
+      "contact_samples": 2441
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs050_fd050_a00_try00/terminal_realign_recovery.csv",
+      "csv_samples": 1330,
+      "contact_samples": 1330
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd100_a00_try00/insertion.csv",
+      "csv_samples": 2455,
+      "contact_samples": 2455
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd100_a00_try00/final_retreat.csv",
+      "csv_samples": 855,
+      "contact_samples": 855
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd100_a00_try00/terminal_realign_prefix.csv",
+      "csv_samples": 2455,
+      "contact_samples": 2455
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd050_a00_try00/insertion.csv",
+      "csv_samples": 2487,
+      "contact_samples": 2487
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd050_a00_try00/final_retreat.csv",
+      "csv_samples": 856,
+      "contact_samples": 856
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd050_a00_try00/terminal_realign_prefix.csv",
+      "csv_samples": 2479,
+      "contact_samples": 2479
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs050_fd050_a00_try00/insertion.csv",
+      "csv_samples": 2801,
+      "contact_samples": 2801
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs050_fd050_a00_try00/final_retreat.csv",
+      "csv_samples": 1154,
+      "contact_samples": 1154
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs050_fd050_a00_try00/terminal_realign_prefix.csv",
+      "csv_samples": 2801,
+      "contact_samples": 2801
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs050_fd050_a00_try00/terminal_realign_recovery.csv",
+      "csv_samples": 1619,
+      "contact_samples": 1619
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs075_fd075_a00_try00/insertion.csv",
+      "csv_samples": 2801,
+      "contact_samples": 2801
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs075_fd075_a00_try00/final_retreat.csv",
+      "csv_samples": 1150,
+      "contact_samples": 1150
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs075_fd075_a00_try00/terminal_realign_prefix.csv",
+      "csv_samples": 2801,
+      "contact_samples": 2801
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs050_fd050_a02_try00/insertion.csv",
+      "csv_samples": 2106,
+      "contact_samples": 2106
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs050_fd050_a02_try00/final_retreat.csv",
+      "csv_samples": 583,
+      "contact_samples": 583
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs050_fd050_a02_try00/terminal_realign_prefix.csv",
+      "csv_samples": 2106,
+      "contact_samples": 2106
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs075_fd075_a02_try00/insertion.csv",
+      "csv_samples": 2070,
+      "contact_samples": 2070
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs075_fd075_a02_try00/final_retreat.csv",
+      "csv_samples": 574,
+      "contact_samples": 574
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs075_fd075_a02_try00/terminal_realign_prefix.csv",
+      "csv_samples": 2070,
+      "contact_samples": 2070
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs075_fd075_a02_try00/terminal_realign_recovery.csv",
+      "csv_samples": 1045,
+      "contact_samples": 1045
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd100_a02_try00/insertion.csv",
+      "csv_samples": 2101,
+      "contact_samples": 2101
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd100_a02_try00/final_retreat.csv",
+      "csv_samples": 578,
+      "contact_samples": 578
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd100_a02_try00/terminal_realign_prefix.csv",
+      "csv_samples": 2101,
+      "contact_samples": 2101
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd050_a02_try00/insertion.csv",
+      "csv_samples": 2087,
+      "contact_samples": 2087
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd050_a02_try00/final_retreat.csv",
+      "csv_samples": 574,
+      "contact_samples": 574
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d06_fs100_fd050_a02_try00/terminal_realign_prefix.csv",
+      "csv_samples": 2087,
+      "contact_samples": 2087
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs050_fd050_a02_try00/insertion.csv",
+      "csv_samples": 2441,
+      "contact_samples": 2441
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs050_fd050_a02_try00/final_retreat.csv",
+      "csv_samples": 865,
+      "contact_samples": 865
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs050_fd050_a02_try00/terminal_realign_prefix.csv",
+      "csv_samples": 2441,
+      "contact_samples": 2441
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs050_fd050_a02_try00/terminal_realign_recovery.csv",
+      "csv_samples": 1336,
+      "contact_samples": 1336
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd100_a02_try00/insertion.csv",
+      "csv_samples": 2455,
+      "contact_samples": 2455
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd100_a02_try00/final_retreat.csv",
+      "csv_samples": 875,
+      "contact_samples": 875
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd100_a02_try00/terminal_realign_prefix.csv",
+      "csv_samples": 2455,
+      "contact_samples": 2455
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd050_a02_try00/insertion.csv",
+      "csv_samples": 2487,
+      "contact_samples": 2487
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd050_a02_try00/final_retreat.csv",
+      "csv_samples": 868,
+      "contact_samples": 868
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d12_fs100_fd050_a02_try00/terminal_realign_prefix.csv",
+      "csv_samples": 2479,
+      "contact_samples": 2479
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs050_fd050_a02_try00/insertion.csv",
+      "csv_samples": 2631,
+      "contact_samples": 2631
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs050_fd050_a02_try00/final_retreat.csv",
+      "csv_samples": 1,
+      "contact_samples": 1
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs075_fd075_a02_try00/insertion.csv",
+      "csv_samples": 2631,
+      "contact_samples": 2631
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/m_d18_fs075_fd075_a02_try00/final_retreat.csv",
+      "csv_samples": 1,
+      "contact_samples": 1
+    }
+  ],
+  "control_prefix_checks": [
+    {
+      "case_id": "m_d06_fs050_fd050_a02",
+      "control_case_id": "m_d06_fs050_fd050_a00",
+      "target_depth_mm": 6.0,
+      "pair_static_friction": 0.5,
+      "pair_dynamic_friction": 0.5,
+      "analysis_prefix_matched": true,
+      "exact_prefix_equal": false,
+      "control_depth_gate_step": 1625,
+      "tilted_depth_gate_step": 1625,
+      "status": "checked",
+      "control_sample_count": 1626,
+      "tilted_sample_count": 1626,
+      "checks": {
+        "replay_matched": true,
+        "replay_errors": {
+          "position_mm": 0.0,
+          "orientation_deg": 0.0,
+          "joint_rad": 0.0,
+          "joint_velocity_rad_s": 0.0,
+          "linear_velocity_m_s": 0.0,
+          "angular_velocity_rad_s": 0.0,
+          "force_n": 0.0,
+          "torque_nm": 0.0,
+          "normal_load_n": 0.0,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.0,
+          "finger_position": 0.0,
+          "finger_velocity": 0.0,
+          "grasp_position": 0.0,
+          "hand_pose": 0.0,
+          "wrist_raw_child": 0.0,
+          "grasp_quat_angle_deg": 0.0,
+          "hand_pose_angle_deg": 0.0
+        },
+        "replay_prefix_matched": true,
+        "replay_prefix_equal": false,
+        "replay_prefix_first_mismatch_index": null,
+        "replay_prefix_max_errors": {
+          "position_mm": 0.0,
+          "orientation_deg": 0.0,
+          "joint_rad": 0.0,
+          "joint_velocity_rad_s": 0.0,
+          "linear_velocity_m_s": 0.0,
+          "angular_velocity_rad_s": 0.0,
+          "force_n": 0.0,
+          "torque_nm": 0.0,
+          "normal_load_n": 0.0,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.0,
+          "finger_position": 0.0,
+          "finger_velocity": 0.0,
+          "grasp_position": 0.0,
+          "hand_pose": 0.0,
+          "wrist_raw_child": 0.0,
+          "grasp_quat_angle_deg": 0.0,
+          "hand_pose_angle_deg": 0.0
+        },
+        "reference_sample_count": 1626,
+        "replay_sample_count": 1626
+      },
+      "interpretation": "Pre-tilt physical/command prefixes match within configured tolerances; exact equality is diagnostic."
+    },
+    {
+      "case_id": "m_d06_fs075_fd075_a02",
+      "control_case_id": "m_d06_fs075_fd075_a00",
+      "target_depth_mm": 6.0,
+      "pair_static_friction": 0.75,
+      "pair_dynamic_friction": 0.75,
+      "analysis_prefix_matched": true,
+      "exact_prefix_equal": false,
+      "control_depth_gate_step": 1589,
+      "tilted_depth_gate_step": 1589,
+      "status": "checked",
+      "control_sample_count": 1590,
+      "tilted_sample_count": 1590,
+      "checks": {
+        "replay_matched": true,
+        "replay_errors": {
+          "position_mm": 0.0,
+          "orientation_deg": 0.0,
+          "joint_rad": 0.0,
+          "joint_velocity_rad_s": 0.0,
+          "linear_velocity_m_s": 0.0,
+          "angular_velocity_rad_s": 0.0,
+          "force_n": 0.0,
+          "torque_nm": 0.0,
+          "normal_load_n": 0.0,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.0,
+          "finger_position": 0.0,
+          "finger_velocity": 0.0,
+          "grasp_position": 0.0,
+          "hand_pose": 0.0,
+          "wrist_raw_child": 0.0,
+          "grasp_quat_angle_deg": 0.0,
+          "hand_pose_angle_deg": 0.0
+        },
+        "replay_prefix_matched": true,
+        "replay_prefix_equal": false,
+        "replay_prefix_first_mismatch_index": null,
+        "replay_prefix_max_errors": {
+          "position_mm": 0.0,
+          "orientation_deg": 0.0,
+          "joint_rad": 0.0,
+          "joint_velocity_rad_s": 0.0,
+          "linear_velocity_m_s": 0.0,
+          "angular_velocity_rad_s": 0.0,
+          "force_n": 0.0,
+          "torque_nm": 0.0,
+          "normal_load_n": 0.0,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.0,
+          "finger_position": 0.0,
+          "finger_velocity": 0.0,
+          "grasp_position": 0.0,
+          "hand_pose": 0.0,
+          "wrist_raw_child": 0.0,
+          "grasp_quat_angle_deg": 0.0,
+          "hand_pose_angle_deg": 0.0
+        },
+        "reference_sample_count": 1590,
+        "replay_sample_count": 1590
+      },
+      "interpretation": "Pre-tilt physical/command prefixes match within configured tolerances; exact equality is diagnostic."
+    },
+    {
+      "case_id": "m_d06_fs100_fd100_a02",
+      "control_case_id": "m_d06_fs100_fd100_a00",
+      "target_depth_mm": 6.0,
+      "pair_static_friction": 1.0,
+      "pair_dynamic_friction": 1.0,
+      "analysis_prefix_matched": true,
+      "exact_prefix_equal": false,
+      "control_depth_gate_step": 1620,
+      "tilted_depth_gate_step": 1620,
+      "status": "checked",
+      "control_sample_count": 1621,
+      "tilted_sample_count": 1621,
+      "checks": {
+        "replay_matched": true,
+        "replay_errors": {
+          "position_mm": 0.0,
+          "orientation_deg": 0.0,
+          "joint_rad": 0.0,
+          "joint_velocity_rad_s": 0.0,
+          "linear_velocity_m_s": 0.0,
+          "angular_velocity_rad_s": 0.0,
+          "force_n": 0.0,
+          "torque_nm": 0.0,
+          "normal_load_n": 0.0,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.0,
+          "finger_position": 0.0,
+          "finger_velocity": 0.0,
+          "grasp_position": 0.0,
+          "hand_pose": 0.0,
+          "wrist_raw_child": 0.0,
+          "grasp_quat_angle_deg": 0.0,
+          "hand_pose_angle_deg": 0.0
+        },
+        "replay_prefix_matched": true,
+        "replay_prefix_equal": false,
+        "replay_prefix_first_mismatch_index": null,
+        "replay_prefix_max_errors": {
+          "position_mm": 0.0,
+          "orientation_deg": 0.0,
+          "joint_rad": 0.0,
+          "joint_velocity_rad_s": 0.0,
+          "linear_velocity_m_s": 0.0,
+          "angular_velocity_rad_s": 0.0,
+          "force_n": 0.0,
+          "torque_nm": 0.0,
+          "normal_load_n": 0.0,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.0,
+          "finger_position": 0.0,
+          "finger_velocity": 0.0,
+          "grasp_position": 0.0,
+          "hand_pose": 0.0,
+          "wrist_raw_child": 0.0,
+          "grasp_quat_angle_deg": 0.0,
+          "hand_pose_angle_deg": 0.0
+        },
+        "reference_sample_count": 1621,
+        "replay_sample_count": 1621
+      },
+      "interpretation": "Pre-tilt physical/command prefixes match within configured tolerances; exact equality is diagnostic."
+    },
+    {
+      "case_id": "m_d06_fs100_fd050_a02",
+      "control_case_id": "m_d06_fs100_fd050_a00",
+      "target_depth_mm": 6.0,
+      "pair_static_friction": 1.0,
+      "pair_dynamic_friction": 0.5,
+      "analysis_prefix_matched": true,
+      "exact_prefix_equal": false,
+      "control_depth_gate_step": 1606,
+      "tilted_depth_gate_step": 1606,
+      "status": "checked",
+      "control_sample_count": 1607,
+      "tilted_sample_count": 1607,
+      "checks": {
+        "replay_matched": true,
+        "replay_errors": {
+          "position_mm": 0.0,
+          "orientation_deg": 0.0,
+          "joint_rad": 0.0,
+          "joint_velocity_rad_s": 0.0,
+          "linear_velocity_m_s": 0.0,
+          "angular_velocity_rad_s": 0.0,
+          "force_n": 0.0,
+          "torque_nm": 0.0,
+          "normal_load_n": 0.0,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.0,
+          "finger_position": 0.0,
+          "finger_velocity": 0.0,
+          "grasp_position": 0.0,
+          "hand_pose": 0.0,
+          "wrist_raw_child": 0.0,
+          "grasp_quat_angle_deg": 0.0,
+          "hand_pose_angle_deg": 0.0
+        },
+        "replay_prefix_matched": true,
+        "replay_prefix_equal": false,
+        "replay_prefix_first_mismatch_index": null,
+        "replay_prefix_max_errors": {
+          "position_mm": 0.0,
+          "orientation_deg": 0.0,
+          "joint_rad": 0.0,
+          "joint_velocity_rad_s": 0.0,
+          "linear_velocity_m_s": 0.0,
+          "angular_velocity_rad_s": 0.0,
+          "force_n": 0.0,
+          "torque_nm": 0.0,
+          "normal_load_n": 0.0,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.0,
+          "finger_position": 0.0,
+          "finger_velocity": 0.0,
+          "grasp_position": 0.0,
+          "hand_pose": 0.0,
+          "wrist_raw_child": 0.0,
+          "grasp_quat_angle_deg": 0.0,
+          "hand_pose_angle_deg": 0.0
+        },
+        "reference_sample_count": 1607,
+        "replay_sample_count": 1607
+      },
+      "interpretation": "Pre-tilt physical/command prefixes match within configured tolerances; exact equality is diagnostic."
+    },
+    {
+      "case_id": "m_d12_fs050_fd050_a02",
+      "control_case_id": "m_d12_fs050_fd050_a00",
+      "target_depth_mm": 12.0,
+      "pair_static_friction": 0.5,
+      "pair_dynamic_friction": 0.5,
+      "analysis_prefix_matched": true,
+      "exact_prefix_equal": false,
+      "control_depth_gate_step": 1960,
+      "tilted_depth_gate_step": 1960,
+      "status": "checked",
+      "control_sample_count": 1961,
+      "tilted_sample_count": 1961,
+      "checks": {
+        "replay_matched": true,
+        "replay_errors": {
+          "position_mm": 0.0,
+          "orientation_deg": 0.0,
+          "joint_rad": 0.0,
+          "joint_velocity_rad_s": 0.0,
+          "linear_velocity_m_s": 0.0,
+          "angular_velocity_rad_s": 0.0,
+          "force_n": 0.0,
+          "torque_nm": 0.0,
+          "normal_load_n": 0.0,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.0,
+          "finger_position": 0.0,
+          "finger_velocity": 0.0,
+          "grasp_position": 0.0,
+          "hand_pose": 0.0,
+          "wrist_raw_child": 0.0,
+          "grasp_quat_angle_deg": 0.0,
+          "hand_pose_angle_deg": 0.0
+        },
+        "replay_prefix_matched": true,
+        "replay_prefix_equal": false,
+        "replay_prefix_first_mismatch_index": null,
+        "replay_prefix_max_errors": {
+          "position_mm": 0.0,
+          "orientation_deg": 0.0,
+          "joint_rad": 0.0,
+          "joint_velocity_rad_s": 0.0,
+          "linear_velocity_m_s": 0.0,
+          "angular_velocity_rad_s": 0.0,
+          "force_n": 0.0,
+          "torque_nm": 0.0,
+          "normal_load_n": 0.0,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.0,
+          "finger_position": 0.0,
+          "finger_velocity": 0.0,
+          "grasp_position": 0.0,
+          "hand_pose": 0.0,
+          "wrist_raw_child": 0.0,
+          "grasp_quat_angle_deg": 0.0,
+          "hand_pose_angle_deg": 0.0
+        },
+        "reference_sample_count": 1961,
+        "replay_sample_count": 1961
+      },
+      "interpretation": "Pre-tilt physical/command prefixes match within configured tolerances; exact equality is diagnostic."
+    },
+    {
+      "case_id": "m_d12_fs075_fd075_a02",
+      "control_case_id": "m_d12_fs075_fd075_a00",
+      "target_depth_mm": 12.0,
+      "pair_static_friction": 0.75,
+      "pair_dynamic_friction": 0.75,
+      "analysis_prefix_matched": false,
+      "exact_prefix_equal": false,
+      "control_depth_gate_step": 1992,
+      "tilted_depth_gate_step": 2012,
+      "status": "checked",
+      "control_sample_count": 1993,
+      "tilted_sample_count": 2013,
+      "checks": {
+        "replay_matched": false,
+        "replay_errors": {
+          "position_mm": 0.011160581248529311,
+          "orientation_deg": 0.017361962276693906,
+          "joint_rad": 0.00027441978454589844,
+          "joint_velocity_rad_s": 0.0006253033643588424,
+          "linear_velocity_m_s": 5.6495731321824686e-05,
+          "angular_velocity_rad_s": 0.0038557715435395593,
+          "force_n": 0.0,
+          "torque_nm": 0.0,
+          "normal_load_n": 0.0,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.00011092572049165028,
+          "finger_position": 3.259629011154175e-08,
+          "finger_velocity": 4.496541805565357e-09,
+          "grasp_position": 6.183981895446777e-07,
+          "hand_pose": 8.804781828075647e-06,
+          "wrist_raw_child": 0.0008995312382467091,
+          "grasp_quat_angle_deg": 0.00035847921053249,
+          "hand_pose_angle_deg": 0.01702033404208401
+        },
+        "replay_prefix_matched": false,
+        "replay_prefix_equal": false,
+        "replay_prefix_first_mismatch_index": 1594,
+        "replay_prefix_max_errors": {
+          "position_mm": 0.09867723679996704,
+          "orientation_deg": 0.027627126384180755,
+          "joint_rad": 0.00032138824462890625,
+          "joint_velocity_rad_s": 0.0030131174717098475,
+          "linear_velocity_m_s": 0.023171565755071497,
+          "angular_velocity_rad_s": 1.5781239726482075,
+          "force_n": 0.45527350662857785,
+          "torque_nm": 0.0012107702753178606,
+          "normal_load_n": 0.3642188012599945,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.02215909492224455,
+          "finger_position": 4.294794052839279e-06,
+          "finger_velocity": 0.02278831132571213,
+          "grasp_position": 3.402512811589986e-05,
+          "hand_pose": 7.259845733642578e-05,
+          "wrist_raw_child": 0.25212401896715164,
+          "grasp_quat_angle_deg": 0.01797288465946019,
+          "hand_pose_angle_deg": 0.019030254009052772
+        },
+        "reference_sample_count": 1993,
+        "replay_sample_count": 2013
+      },
+      "interpretation": "Pre-tilt prefixes differ; factor comparisons are descriptive and must not be called strict paired causal effects."
+    },
+    {
+      "case_id": "m_d12_fs100_fd100_a02",
+      "control_case_id": "m_d12_fs100_fd100_a00",
+      "target_depth_mm": 12.0,
+      "pair_static_friction": 1.0,
+      "pair_dynamic_friction": 1.0,
+      "analysis_prefix_matched": true,
+      "exact_prefix_equal": false,
+      "control_depth_gate_step": 1974,
+      "tilted_depth_gate_step": 1974,
+      "status": "checked",
+      "control_sample_count": 1975,
+      "tilted_sample_count": 1975,
+      "checks": {
+        "replay_matched": true,
+        "replay_errors": {
+          "position_mm": 0.0,
+          "orientation_deg": 0.0,
+          "joint_rad": 0.0,
+          "joint_velocity_rad_s": 0.0,
+          "linear_velocity_m_s": 0.0,
+          "angular_velocity_rad_s": 0.0,
+          "force_n": 0.0,
+          "torque_nm": 0.0,
+          "normal_load_n": 0.0,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.0,
+          "finger_position": 0.0,
+          "finger_velocity": 0.0,
+          "grasp_position": 0.0,
+          "hand_pose": 0.0,
+          "wrist_raw_child": 0.0,
+          "grasp_quat_angle_deg": 0.0,
+          "hand_pose_angle_deg": 0.0
+        },
+        "replay_prefix_matched": true,
+        "replay_prefix_equal": false,
+        "replay_prefix_first_mismatch_index": null,
+        "replay_prefix_max_errors": {
+          "position_mm": 0.0,
+          "orientation_deg": 0.0,
+          "joint_rad": 0.0,
+          "joint_velocity_rad_s": 0.0,
+          "linear_velocity_m_s": 0.0,
+          "angular_velocity_rad_s": 0.0,
+          "force_n": 0.0,
+          "torque_nm": 0.0,
+          "normal_load_n": 0.0,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.0,
+          "finger_position": 0.0,
+          "finger_velocity": 0.0,
+          "grasp_position": 0.0,
+          "hand_pose": 0.0,
+          "wrist_raw_child": 0.0,
+          "grasp_quat_angle_deg": 0.0,
+          "hand_pose_angle_deg": 0.0
+        },
+        "reference_sample_count": 1975,
+        "replay_sample_count": 1975
+      },
+      "interpretation": "Pre-tilt physical/command prefixes match within configured tolerances; exact equality is diagnostic."
+    },
+    {
+      "case_id": "m_d12_fs100_fd050_a02",
+      "control_case_id": "m_d12_fs100_fd050_a00",
+      "target_depth_mm": 12.0,
+      "pair_static_friction": 1.0,
+      "pair_dynamic_friction": 0.5,
+      "analysis_prefix_matched": true,
+      "exact_prefix_equal": false,
+      "control_depth_gate_step": 2006,
+      "tilted_depth_gate_step": 2006,
+      "status": "checked",
+      "control_sample_count": 2007,
+      "tilted_sample_count": 2007,
+      "checks": {
+        "replay_matched": true,
+        "replay_errors": {
+          "position_mm": 0.0,
+          "orientation_deg": 0.0,
+          "joint_rad": 0.0,
+          "joint_velocity_rad_s": 0.0,
+          "linear_velocity_m_s": 0.0,
+          "angular_velocity_rad_s": 0.0,
+          "force_n": 0.0,
+          "torque_nm": 0.0,
+          "normal_load_n": 0.0,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.0,
+          "finger_position": 0.0,
+          "finger_velocity": 0.0,
+          "grasp_position": 0.0,
+          "hand_pose": 0.0,
+          "wrist_raw_child": 0.0,
+          "grasp_quat_angle_deg": 0.0,
+          "hand_pose_angle_deg": 0.0
+        },
+        "replay_prefix_matched": true,
+        "replay_prefix_equal": false,
+        "replay_prefix_first_mismatch_index": null,
+        "replay_prefix_max_errors": {
+          "position_mm": 0.0,
+          "orientation_deg": 0.0,
+          "joint_rad": 0.0,
+          "joint_velocity_rad_s": 0.0,
+          "linear_velocity_m_s": 0.0,
+          "angular_velocity_rad_s": 0.0,
+          "force_n": 0.0,
+          "torque_nm": 0.0,
+          "normal_load_n": 0.0,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.0,
+          "finger_position": 0.0,
+          "finger_velocity": 0.0,
+          "grasp_position": 0.0,
+          "hand_pose": 0.0,
+          "wrist_raw_child": 0.0,
+          "grasp_quat_angle_deg": 0.0,
+          "hand_pose_angle_deg": 0.0
+        },
+        "reference_sample_count": 2007,
+        "replay_sample_count": 2007
+      },
+      "interpretation": "Pre-tilt physical/command prefixes match within configured tolerances; exact equality is diagnostic."
+    },
+    {
+      "case_id": "m_d18_fs050_fd050_a02",
+      "control_case_id": "m_d18_fs050_fd050_a00",
+      "target_depth_mm": 18.0,
+      "pair_static_friction": 0.5,
+      "pair_dynamic_friction": 0.5,
+      "analysis_prefix_matched": true,
+      "exact_prefix_equal": false,
+      "control_depth_gate_step": 2320,
+      "tilted_depth_gate_step": 2320,
+      "status": "checked",
+      "control_sample_count": 2321,
+      "tilted_sample_count": 2321,
+      "checks": {
+        "replay_matched": true,
+        "replay_errors": {
+          "position_mm": 0.0,
+          "orientation_deg": 0.0,
+          "joint_rad": 0.0,
+          "joint_velocity_rad_s": 0.0,
+          "linear_velocity_m_s": 0.0,
+          "angular_velocity_rad_s": 0.0,
+          "force_n": 0.0,
+          "torque_nm": 0.0,
+          "normal_load_n": 0.0,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.0,
+          "finger_position": 0.0,
+          "finger_velocity": 0.0,
+          "grasp_position": 0.0,
+          "hand_pose": 0.0,
+          "wrist_raw_child": 0.0,
+          "grasp_quat_angle_deg": 0.0,
+          "hand_pose_angle_deg": 0.0
+        },
+        "replay_prefix_matched": true,
+        "replay_prefix_equal": false,
+        "replay_prefix_first_mismatch_index": null,
+        "replay_prefix_max_errors": {
+          "position_mm": 0.0,
+          "orientation_deg": 0.0,
+          "joint_rad": 0.0,
+          "joint_velocity_rad_s": 0.0,
+          "linear_velocity_m_s": 0.0,
+          "angular_velocity_rad_s": 0.0,
+          "force_n": 0.0,
+          "torque_nm": 0.0,
+          "normal_load_n": 0.0,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.0,
+          "finger_position": 0.0,
+          "finger_velocity": 0.0,
+          "grasp_position": 0.0,
+          "hand_pose": 0.0,
+          "wrist_raw_child": 0.0,
+          "grasp_quat_angle_deg": 0.0,
+          "hand_pose_angle_deg": 0.0
+        },
+        "reference_sample_count": 2321,
+        "replay_sample_count": 2321
+      },
+      "interpretation": "Pre-tilt physical/command prefixes match within configured tolerances; exact equality is diagnostic."
+    },
+    {
+      "case_id": "m_d18_fs075_fd075_a02",
+      "control_case_id": "m_d18_fs075_fd075_a00",
+      "target_depth_mm": 18.0,
+      "pair_static_friction": 0.75,
+      "pair_dynamic_friction": 0.75,
+      "analysis_prefix_matched": false,
+      "exact_prefix_equal": false,
+      "control_depth_gate_step": 2320,
+      "tilted_depth_gate_step": 2329,
+      "status": "checked",
+      "control_sample_count": 2321,
+      "tilted_sample_count": 2330,
+      "checks": {
+        "replay_matched": false,
+        "replay_errors": {
+          "position_mm": 0.026782441692847513,
+          "orientation_deg": 0.017702555063004704,
+          "joint_rad": 0.0003497600555419922,
+          "joint_velocity_rad_s": 0.0005972580402158201,
+          "linear_velocity_m_s": 0.0003568770625814284,
+          "angular_velocity_rad_s": 0.025219581657966478,
+          "force_n": 0.0,
+          "torque_nm": 0.0,
+          "normal_load_n": 0.0,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.00019944193627452478,
+          "finger_position": 2.6402994990348816e-07,
+          "finger_velocity": 9.362702257931232e-08,
+          "grasp_position": 6.82033714838326e-07,
+          "hand_pose": 1.5562841781502357e-05,
+          "wrist_raw_child": 0.0051069944456685334,
+          "grasp_quat_angle_deg": 0.0003375376591153292,
+          "hand_pose_angle_deg": 0.018026335136139396
+        },
+        "replay_prefix_matched": false,
+        "replay_prefix_equal": false,
+        "replay_prefix_first_mismatch_index": 1867,
+        "replay_prefix_max_errors": {
+          "position_mm": 0.1077739233077966,
+          "orientation_deg": 0.04467284191063434,
+          "joint_rad": 0.0005328655242919922,
+          "joint_velocity_rad_s": 0.005635529494611546,
+          "linear_velocity_m_s": 0.019832381589624196,
+          "angular_velocity_rad_s": 1.3386248918948513,
+          "force_n": 0.4725214230241051,
+          "torque_nm": 0.0012566704907479133,
+          "normal_load_n": 0.37801697850227356,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.02670493524055928,
+          "finger_position": 4.381872713565826e-06,
+          "finger_velocity": 0.022952825223910622,
+          "grasp_position": 3.0110670195426792e-05,
+          "hand_pose": 8.094310760498047e-05,
+          "wrist_raw_child": 0.2563152499496937,
+          "grasp_quat_angle_deg": 0.01708469445056354,
+          "hand_pose_angle_deg": 0.035363579745131705
+        },
+        "reference_sample_count": 2321,
+        "replay_sample_count": 2330
+      },
+      "interpretation": "Pre-tilt prefixes differ; factor comparisons are descriptive and must not be called strict paired causal effects."
+    },
+    {
+      "case_id": "m_d18_fs100_fd100_a02",
+      "control_case_id": "m_d18_fs100_fd100_a00",
+      "target_depth_mm": 18.0,
+      "pair_static_friction": 1.0,
+      "pair_dynamic_friction": 1.0,
+      "analysis_prefix_matched": true,
+      "exact_prefix_equal": false,
+      "control_depth_gate_step": 2330,
+      "tilted_depth_gate_step": 2330,
+      "status": "checked",
+      "control_sample_count": 2331,
+      "tilted_sample_count": 2331,
+      "checks": {
+        "replay_matched": true,
+        "replay_errors": {
+          "position_mm": 0.0,
+          "orientation_deg": 0.0,
+          "joint_rad": 0.0,
+          "joint_velocity_rad_s": 0.0,
+          "linear_velocity_m_s": 0.0,
+          "angular_velocity_rad_s": 0.0,
+          "force_n": 0.0,
+          "torque_nm": 0.0,
+          "normal_load_n": 0.0,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.0,
+          "finger_position": 0.0,
+          "finger_velocity": 0.0,
+          "grasp_position": 0.0,
+          "hand_pose": 0.0,
+          "wrist_raw_child": 0.0,
+          "grasp_quat_angle_deg": 0.0,
+          "hand_pose_angle_deg": 0.0
+        },
+        "replay_prefix_matched": true,
+        "replay_prefix_equal": false,
+        "replay_prefix_first_mismatch_index": null,
+        "replay_prefix_max_errors": {
+          "position_mm": 0.0,
+          "orientation_deg": 0.0,
+          "joint_rad": 0.0,
+          "joint_velocity_rad_s": 0.0,
+          "linear_velocity_m_s": 0.0,
+          "angular_velocity_rad_s": 0.0,
+          "force_n": 0.0,
+          "torque_nm": 0.0,
+          "normal_load_n": 0.0,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.0,
+          "finger_position": 0.0,
+          "finger_velocity": 0.0,
+          "grasp_position": 0.0,
+          "hand_pose": 0.0,
+          "wrist_raw_child": 0.0,
+          "grasp_quat_angle_deg": 0.0,
+          "hand_pose_angle_deg": 0.0
+        },
+        "reference_sample_count": 2331,
+        "replay_sample_count": 2331
+      },
+      "interpretation": "Pre-tilt physical/command prefixes match within configured tolerances; exact equality is diagnostic."
+    },
+    {
+      "case_id": "m_d18_fs100_fd050_a02",
+      "control_case_id": "m_d18_fs100_fd050_a00",
+      "target_depth_mm": 18.0,
+      "pair_static_friction": 1.0,
+      "pair_dynamic_friction": 0.5,
+      "analysis_prefix_matched": true,
+      "exact_prefix_equal": false,
+      "control_depth_gate_step": 2395,
+      "tilted_depth_gate_step": 2395,
+      "status": "checked",
+      "control_sample_count": 2396,
+      "tilted_sample_count": 2396,
+      "checks": {
+        "replay_matched": true,
+        "replay_errors": {
+          "position_mm": 0.0,
+          "orientation_deg": 0.0,
+          "joint_rad": 0.0,
+          "joint_velocity_rad_s": 0.0,
+          "linear_velocity_m_s": 0.0,
+          "angular_velocity_rad_s": 0.0,
+          "force_n": 0.0,
+          "torque_nm": 0.0,
+          "normal_load_n": 0.0,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.0,
+          "finger_position": 0.0,
+          "finger_velocity": 0.0,
+          "grasp_position": 0.0,
+          "hand_pose": 0.0,
+          "wrist_raw_child": 0.0,
+          "grasp_quat_angle_deg": 0.0,
+          "hand_pose_angle_deg": 0.0
+        },
+        "replay_prefix_matched": true,
+        "replay_prefix_equal": false,
+        "replay_prefix_first_mismatch_index": null,
+        "replay_prefix_max_errors": {
+          "position_mm": 0.0,
+          "orientation_deg": 0.0,
+          "joint_rad": 0.0,
+          "joint_velocity_rad_s": 0.0,
+          "linear_velocity_m_s": 0.0,
+          "angular_velocity_rad_s": 0.0,
+          "force_n": 0.0,
+          "torque_nm": 0.0,
+          "normal_load_n": 0.0,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.0,
+          "finger_position": 0.0,
+          "finger_velocity": 0.0,
+          "grasp_position": 0.0,
+          "hand_pose": 0.0,
+          "wrist_raw_child": 0.0,
+          "grasp_quat_angle_deg": 0.0,
+          "hand_pose_angle_deg": 0.0
+        },
+        "reference_sample_count": 2396,
+        "replay_sample_count": 2396
+      },
+      "interpretation": "Pre-tilt physical/command prefixes match within configured tolerances; exact equality is diagnostic."
+    }
+  ],
+  "control_prefix_interpretation": "Analysis-only checks from initial sample through each reference depth gate. Mismatch limits causal pairing; it does not invalidate observations or change recovery-policy labels.",
+  "scope": "Serialized evidence consistency for completed attempts only; not a certification of physics, sensor calibration, or the research hypothesis."
+}

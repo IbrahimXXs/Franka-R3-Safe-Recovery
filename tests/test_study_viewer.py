@@ -7,6 +7,49 @@ from visualization.view_study import build_dashboard, load_study
 
 
 class StudyViewerTests(unittest.TestCase):
+    def test_gap_event_profiles_use_event_names_even_at_equal_depths(self):
+        with tempfile.TemporaryDirectory() as d:
+            p=Path(d);folder=p/'gap000_try00';folder.mkdir()
+            kinds=('fixed_depth','pre_tilt','ramp_complete','first_stall','terminal')
+            probe=dict(policy='straight',replay_matched=True,label_eligible=True,numerically_valid=True)
+            cps=[]
+            for force,kind in enumerate(kinds,1):
+                stem='d12' if kind=='fixed_depth' else kind
+                (folder/f'{stem}_straight_recovery.csv').write_text(
+                    f'time_s,recovery_time_s,phase,force_norm_n\n11,0,retreat,{force}\n')
+                cps.append(dict(depth_mm=12.,checkpoint_kind=kind,reached=True,
+                                prefix_numerically_valid=True,probes=[probe]))
+            (p/'study.json').write_text(json.dumps(dict(study='Forge-Controlled-Phase2-v1',
+                attempts=[dict(folder=folder.name,family='gap_tilt',status='complete',
+                    metrics={'numerically_valid':True},checkpoints=cps)])))
+            profiles=load_study(p)['trials'][0]['profiles']
+            for force,kind in enumerate(kinds,1):
+                stem='d12' if kind=='fixed_depth' else kind
+                self.assertEqual(profiles[f'{stem}_straight']['series']['force_norm_n'],[float(force)])
+                self.assertTrue(profiles[f'{stem}_straight']['eligible'])
+
+    def test_unreached_gap_events_keep_missing_depth_without_format_errors(self):
+        with tempfile.TemporaryDirectory() as d:
+            p=Path(d);folder=p/'gap000_try00';folder.mkdir()
+            cps=[dict(depth_mm=None,checkpoint_kind=kind,reached=False,state=None,
+                      prefix_numerically_valid=False,probes=[])
+                 for kind in ('pre_tilt','ramp_complete','first_stall','terminal','fixed_depth')]
+            # Even an incomplete probe entry must render without formatting None
+            # as a float or turning the unreachable event into an eligible result.
+            cps[2]['probes']=[dict(policy='straight',reason='not_recorded',replay_matched=True,
+                                   label_eligible=True,numerically_valid=True)]
+            (p/'study.json').write_text(json.dumps(dict(study='Forge-Controlled-Phase2-v1',
+                attempts=[dict(folder=folder.name,family='gap_tilt',status='complete',
+                    metrics={'numerically_valid':True},checkpoints=cps)])))
+            data=load_study(p)
+            self.assertEqual(len(data['phase2']),5)
+            self.assertTrue(all(cp['depth_mm'] is None for cp in data['phase2']))
+            profile=data['trials'][0]['profiles']['first_stall_straight']
+            self.assertFalse(profile['eligible'])
+            self.assertEqual(profile['series'],{})
+            self.assertEqual(profile['label'],'First confirmed stall · straight')
+            self.assertTrue(build_dashboard(p).is_file())
+
     def test_phase2b_terminal_profile_does_not_alias_fixed_depth(self):
         with tempfile.TemporaryDirectory() as d:
             p=Path(d);folder=p/'b000_try00';folder.mkdir()

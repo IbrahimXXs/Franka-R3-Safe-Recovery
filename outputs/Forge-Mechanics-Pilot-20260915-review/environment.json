@@ -1,0 +1,11 @@
+{
+  "python_executable": "/home/zephyr/miniforge3/envs/franka-safe-recovery/bin/python",
+  "packages": {
+    "torch": "2.7.0+cu128",
+    "isaaclab": "0.47.2",
+    "isaacsim": "5.1.0.0"
+  },
+  "isaaclab_git_head": "3c6e67bb5c7ada942a6d1884ab69338f57596f77",
+  "isaaclab_git_status": "",
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU, 580.178.04, 8151 MiB"
+}

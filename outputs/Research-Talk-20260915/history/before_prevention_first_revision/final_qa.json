@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "pdf_sha256": "a8d5121ad7f4dc75a64b7afe8df5d66209cb13d2d574c0e3f94ec788e99f0042",
+  "page_count": 15,
+  "format_points": [
+    960,
+    540
+  ],
+  "main_slides": 12,
+  "appendix_slides": 3,
+  "planned_main_seconds": 600,
+  "visual_review": {
+    "renderer": "Poppler pdftoppm -r 90 -png",
+    "all_latest_pages_inspected": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "checks": [
+      "Layout, margins, typography and diagram connections",
+      "Chart legends, axis labels, censoring and numerical callouts",
+      "Reference links, formula glyphs and page numbering"
+    ]
+  },
+  "independent_scientific_review": "Passed after replacing insertion peak with reference peak on slide6 and notes.",
+  "independent_data_review": "Passed: source numbers and 52 input hashes, 12 figure hashes and figure-builder hash matched. 30 raw CSVs checked against 19 run manifests. These checks do not certify the physical simulator.",
+  "scene_review": "Passed: original socket geometry matches, authored peg poses match recorded transforms, no physics clock advance across captures.",
+  "generated_utc": "2026-09-15T17:52:47.861139+00:00"
+}

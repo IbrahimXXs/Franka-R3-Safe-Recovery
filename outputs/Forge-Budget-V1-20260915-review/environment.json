@@ -1,0 +1,15 @@
+{
+  "recorded_utc": "2026-09-15T14:19:49.458207+00:00",
+  "python_executable": "/home/zephyr/miniforge3/envs/franka-safe-recovery/bin/python",
+  "python_version": "3.11.16 (main, Sep  2 2026, 23:39:52) [GCC 15.3.0]",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "packages": {
+    "isaacsim": "5.1.0.0",
+    "isaaclab": "0.47.2",
+    "torch": "2.7.0+cu128",
+    "numpy": "1.26.0",
+    "matplotlib": "3.10.3"
+  },
+  "isaaclab_git_commit": "3c6e67bb5c7ada942a6d1884ab69338f57596f77",
+  "gpu_driver_snapshot": "NVIDIA GeForce RTX 5060 Laptop GPU, 580.178.04, 8151 MiB"
+}

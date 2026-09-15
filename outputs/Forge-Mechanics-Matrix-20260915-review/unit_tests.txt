@@ -1,0 +1,21 @@
+...............................................................................Review required at gap_0200: numerical_review; perturbations paused.
+Review required at gap_0100: aligned_insertion_review; perturbations paused.
+Review required at gap_0200: numerical_review; perturbations paused.
+Review required at gap_0100: aligned_insertion_review; perturbations paused.
+..Prepared 23 cases in 5 geometry groups: /tmp/tmpb0l9r54j/pilot
+Starting gap_0507 perturbations; log: /tmp/tmpb0l9r54j/pilot/logs/gap_0507_perturbations_000.log
+Finished gap_0507: 0.0s, baseline=passed, exit=0
+.Prepared 23 cases in 5 geometry groups: /tmp/tmpo4g8gpf5/pilot
+Starting gap_0507 controls; log: /tmp/tmpo4g8gpf5/pilot/logs/gap_0507_controls_000.log
+Finished gap_0507: 0.0s, baseline=not_run, exit=0
+.........................................................
+----------------------------------------------------------------------
+Ran 139 tests in 1.936s
+
+OK
+Prepared 23 cases in 5 geometry groups: /tmp/tmpnfjemdfd/pilot
+Prepared 23 cases in 5 geometry groups: /tmp/tmpfrygui1a/pilot
+Prepared 23 cases in 5 geometry groups: /tmp/tmp4rbb5e05/pilot
+Prepared 23 cases in 5 geometry groups: /tmp/tmpw0ps43m8/pilot
+Prepared 23 cases in 5 geometry groups: /tmp/tmp0jvi6a23/pilot
+Prepared 23 cases in 5 geometry groups: /tmp/tmp0jvi6a23/pilot

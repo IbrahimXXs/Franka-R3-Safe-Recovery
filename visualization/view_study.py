@@ -12,6 +12,8 @@ import webbrowser
 
 HERE = Path(__file__).resolve().parent
 COMPLETE = {'cleared_within_budget', 'cleared_over_budget', 'not_cleared', 'did_not_enter'}
+EVENT_PROFILE_LABELS = {'terminal':'Terminal', 'first_stall':'First confirmed stall',
+                        'pre_tilt':'Before tilt', 'ramp_complete':'Tilt ramp complete'}
 SERIES = ('time_s', 'phase', 'depth_mm', 'command_depth_mm', 'tilt_deg', 'command_tilt_deg',
           'tip_x_mm', 'tip_y_mm', 'fx', 'fy', 'fz', 'taux', 'tauy', 'tauz',
           'force_norm_n', 'torque_norm_nm', 'normal_load_n', 'min_separation_mm',
@@ -76,25 +78,35 @@ def load_phase2(directory, manifest):
                 status=final.get('reason','not_recorded'),eligible=eligible and final.get('numerically_valid') is True and final.get('label_eligible') is True,
                 series=read_series(directory/folder/'final_retreat.csv'))}
         for cp in attempt.get('checkpoints', []):
-            state=cp.get('state', {})
+            state=cp.get('state') or {}
             checkpoints.append(dict(trajectory_id=folder,family=attempt['family'],depth_mm=state.get('depth_mm'),
-                requested_depth_mm=cp['depth_mm'],time_s=state.get('time_s'),force_n=state.get('force_norm_n'),
+                requested_depth_mm=cp.get('depth_mm'),time_s=state.get('time_s'),force_n=state.get('force_norm_n'),
                 checkpoint_kind=cp.get('checkpoint_kind','fixed_depth'),
                 torque_nm=state.get('torque_norm_nm'),reached=cp['reached'],parent_valid=eligible,
                 Y_R_tested=cp.get('Y_R_tested') if eligible else None,
                 label_reason=cp.get('label_reason') if eligible else 'Parent invalid/incomplete; '+str(cp.get('label_reason')), 
                 probes=cp.get('probes', [])))
             if 'profiles' in trial:
-                depth=cp['depth_mm']
-                if not isinstance(depth,(int,float)) or not math.isfinite(depth):continue
+                depth=cp.get('depth_mm')
+                finite_depth=isinstance(depth,(int,float)) and math.isfinite(depth)
+                kind=cp.get('checkpoint_kind') or 'fixed_depth'
+                if kind in EVENT_PROFILE_LABELS:
+                    stem=kind
+                    label_prefix=EVENT_PROFILE_LABELS[kind]+' · '
+                elif kind=='fixed_depth' and finite_depth:
+                    stem=f'd{depth:g}'
+                    label_prefix=''
+                else:
+                    # Unknown kinds must never become arbitrary filesystem paths.
+                    continue
                 for probe in cp.get('probes',[]):
                     policy=probe.get('policy')
                     if policy not in ('straight','realign'):continue
-                    tag=f'terminal_{policy}' if cp.get('checkpoint_kind')=='terminal' else f'd{depth:g}_{policy}'
-                    label=f'{depth:g} mm · {policy}'
-                    if cp.get('checkpoint_kind')=='terminal':label='Terminal · '+label
+                    tag=f'{stem}_{policy}'
+                    depth_label=f'{depth:g} mm · ' if finite_depth else ''
+                    label=f'{label_prefix}{depth_label}{policy}'
                     trial['profiles'][tag]=dict(label=label,status=probe.get('reason','unknown'),
-                        eligible=eligible and cp.get('prefix_numerically_valid') is True
+                        eligible=eligible and cp.get('reached') is True and cp.get('prefix_numerically_valid') is True
                             and probe.get('label_eligible') is True and probe.get('replay_matched') is True
                             and probe.get('numerically_valid') is True,
                         series=read_series(directory/folder/f'{tag}_recovery.csv'))

@@ -1,0 +1,71 @@
+{
+  "schema": "budget-delivery-scope-v1",
+  "task_started_utc": "2026-09-15T13:54:57+00:00",
+  "logged_at_utc": "2026-09-15T14:11:09.014945+00:00",
+  "historical_design_analysis": "outputs/Forge-Budget-Design-20260915-review",
+  "prospective_study": "outputs/Forge-Budget-V1-20260915",
+  "prospective_review": "outputs/Forge-Budget-V1-20260915-review",
+  "protocol_document": "docs/forge_budget_study.md",
+  "physical_scope_document": "docs/forge_budget_physical_scope_zh.md",
+  "planned_conditions": 8,
+  "planned_policy_branches": 16,
+  "attempts_are_independent_replications": false,
+  "force_budgets_n": [
+    3,
+    4,
+    5
+  ],
+  "physics_hz": 240,
+  "physical_contact_and_gripper_models_changed": false,
+  "raw_wrist_norm_budget_is_calibrated_fragile_object_limit": false,
+  "budget_covers_preparatory_grasp": false,
+  "runtime_stops_after_first_observed_budget_violation": true,
+  "status": "complete",
+  "finished_utc": "2026-09-15T14:32:15.562359+00:00",
+  "total_elapsed_wall_seconds": 2238.562359,
+  "simulation_started_utc": "2026-09-15T14:02:09.685828+00:00",
+  "simulation_finished_utc": "2026-09-15T14:29:30.843518+00:00",
+  "simulation_active_wall_seconds": 1618.135869859998,
+  "counts": {
+    "planned_conditions": 8,
+    "planned_branches": 16,
+    "closed_branches": 13,
+    "branch_status_counts": {
+      "complete": 13,
+      "not_tested": 3
+    },
+    "observed_branch_outcome_counts": {
+      "clear_safe": 9,
+      "recovery_budget_exceeded": 1,
+      "reference_budget_exceeded": 3
+    },
+    "pair_state_counts": {
+      "paired_both_clear_safe": 4,
+      "paired_straight_overbudget_realign_safe": 1,
+      "alternative_not_tested_reference_ineligible": 3
+    },
+    "paired_complete_costs": 4
+  },
+  "tests_passed": 149,
+  "additional_subtests_passed": 4,
+  "output_deep_validation_passed": true,
+  "output_validation_assertions": 1362463,
+  "output_validation_errors": 0,
+  "plots_visually_reviewed": [
+    "budget_outcomes.png",
+    "budget_candidate_4n_profiles.png"
+  ],
+  "new_document_local_links_checked": 46,
+  "new_document_broken_local_links": 0,
+  "main_report": "outputs/Forge-Budget-V1-20260915-review/results_zh.md",
+  "delivery_files_sha256": {
+    "outputs/Forge-Budget-V1-20260915-review/results_zh.md": "a294030b42fe9a85a3cbdffe701893e621e06ce5ca127a0875342dd314deaa9f",
+    "outputs/Forge-Budget-V1-20260915-review/summary.json": "05351cbdab05e04c67e622c7f495fd4226e57dc576c05f1d942d166afd196731",
+    "outputs/Forge-Budget-V1-20260915-review/budget_validation.json": "ad89b06829323a237cfe864b1a1a412d943238768c60bd2bd58a856ecdad871c",
+    "outputs/Forge-Budget-V1-20260915-review/parameter_comparisons.json": "1839f829ded41eac4e182f23874186b4392aaa9af210038e9244ab8d7fb8a9f0",
+    "outputs/Forge-Budget-V1-20260915-review/low_friction_terminal_audit.json": "b50537613a0041eca904be198883cbc404b98e6d1c217e7b4242ae61ea4d8a0b",
+    "README.md": "2b2922d38eea131b9313f4e77cbf542fd08b060ccd1691a88b6e70abba045740",
+    "docs/forge_budget_study.md": "8f53b093c97f02c235e9d9a1045faf230b38f6e605211e788d9092c74e663f87",
+    "docs/forge_budget_physical_scope_zh.md": "c724357c83d97fa0ab4232ed59e652fff02715a47a81f2776eee4ef7e4696463"
+  }
+}

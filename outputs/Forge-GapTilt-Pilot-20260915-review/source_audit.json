@@ -1,0 +1,32 @@
+[
+  {
+    "study": "gap_0100",
+    "source_mismatches": [],
+    "attempts": 19,
+    "status": "target_not_met"
+  },
+  {
+    "study": "gap_0200",
+    "source_mismatches": [],
+    "attempts": 11,
+    "status": "target_not_met"
+  },
+  {
+    "study": "gap_0300",
+    "source_mismatches": [],
+    "attempts": 1,
+    "status": "complete"
+  },
+  {
+    "study": "gap_0400",
+    "source_mismatches": [],
+    "attempts": 1,
+    "status": "complete"
+  },
+  {
+    "study": "gap_0507",
+    "source_mismatches": [],
+    "attempts": 7,
+    "status": "complete"
+  }
+]

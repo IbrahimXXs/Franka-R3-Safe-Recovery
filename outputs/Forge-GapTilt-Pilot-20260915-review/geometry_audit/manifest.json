@@ -1,0 +1,92 @@
+{
+  "created_utc": "2026-09-15T10:27:32.467636+00:00",
+  "case_id": "g0200_d30_pitch_pos20_try00",
+  "read_only_diagnostic": true,
+  "files": {
+    "README.md": {
+      "sha256": "0ef02d54ce2845ae392d72df2f4ab83db498c902d46ccb040e2f21ecb96deda3",
+      "bytes": 4303
+    },
+    "assets/factory_hole_8mm.usd": {
+      "sha256": "4bad48cde5a2e523454f9ed584023fae53d619a5ffb3d6ab08f29a6240014c28",
+      "bytes": 7508864
+    },
+    "assets/factory_peg_8mm.usd": {
+      "sha256": "b5040c8c639f3dc0731adfb6022c0d63383b7550354e413dc24e7417b600869d",
+      "bytes": 1690754
+    },
+    "crosscheck.py": {
+      "sha256": "d0ac9fa652b6db3f6abbdb6ced0b08321a8ae4f695f09921e17c502d51cc1751",
+      "bytes": 8526
+    },
+    "crosscheck_original.py": {
+      "sha256": "739879172c47e1dc91a9421396443fd2ddae8316bdcde5f7875cffb15dcf347f",
+      "bytes": 6665
+    },
+    "forge_geometry.py": {
+      "sha256": "d37caa904ae3bfcc2360ed31294f4d700fe412a127e030f6fe76dc6bb8751078",
+      "bytes": 4997
+    },
+    "inputs/final_retreat.csv": {
+      "sha256": "c11546e0ebbb207fe9b3ee2d1096914d48bea894634597f1af0ddfe003ab06bc",
+      "bytes": 878425
+    },
+    "inputs/insertion.csv": {
+      "sha256": "0b506cf4c7e604196f08cd7f598f8fc4a27c256aca922689fd69736919f8393c",
+      "bytes": 2235892
+    },
+    "inputs/scene.json": {
+      "sha256": "9e83a8112682f2d5467236c57433d0e11ded49f8569b25d8a8db01b5eb473bfe",
+      "bytes": 9431
+    },
+    "results/candidate_insertion.json": {
+      "sha256": "a34fb803828e36b11ac1b462b0cffa2ab10c1a5660797838258d8e20e183e989",
+      "bytes": 7484
+    },
+    "results/candidate_retreat.json": {
+      "sha256": "bfddfeaee72046fc36eae4021d219873aa24a375437295f34b72ddefaebc68e1",
+      "bytes": 7737
+    }
+  },
+  "usd_sources": {
+    "assets/factory_hole_8mm.usd": {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/IsaacLab/Factory/factory_hole_8mm.usd",
+      "sha256": "4bad48cde5a2e523454f9ed584023fae53d619a5ffb3d6ab08f29a6240014c28"
+    },
+    "assets/factory_peg_8mm.usd": {
+      "url": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/IsaacLab/Factory/factory_peg_8mm.usd",
+      "sha256": "b5040c8c639f3dc0731adfb6022c0d63383b7550354e413dc24e7417b600869d"
+    }
+  },
+  "input_sources": {
+    "inputs/insertion.csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0200/g0200_d30_pitch_pos20_try00/insertion.csv",
+    "inputs/final_retreat.csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0200/g0200_d30_pitch_pos20_try00/final_retreat.csv",
+    "inputs/scene.json": "outputs/Forge-GapTilt-Pilot-20260915/gap_0200/scene.json"
+  },
+  "script_provenance": {
+    "original": "/tmp/forge_geometry_crosscheck.py",
+    "archived_original": "crosscheck_original.py",
+    "runnable": "crosscheck.py",
+    "changes": [
+      "Use adjacent archived geometry helper rather than working repository",
+      "Add phase-filtered peak selection to exclude stop residual insertion load",
+      "Check generated mesh hash against saved runtime scene",
+      "Record profile hash, depth, force direction and timing caveat"
+    ]
+  },
+  "helper_source": "research/forge_geometry.py",
+  "assumptions": [
+    "Fixed-hole identity rotation",
+    "Metre-scale audited Factory geometry",
+    "Local planar wall violations are not complete mesh penetration depth",
+    "Contact-cache timing inference is unconfirmed; no global frame shifting",
+    "Passing 25-percent screening does not establish physical accuracy"
+  ],
+  "validation": {
+    "executed_from_archive_directory": true,
+    "runtime_mesh_hash_verified": true,
+    "retreat_peak_sample_index": 226,
+    "retreat_peak_wrist_force_n": 2.5436744689941406,
+    "initial_stop_peak_excluded": true
+  }
+}

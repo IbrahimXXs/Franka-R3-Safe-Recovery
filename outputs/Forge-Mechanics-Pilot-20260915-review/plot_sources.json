@@ -1,0 +1,69 @@
+{
+  "source_study": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Pilot-20260915",
+  "source_status": "paused",
+  "source_manifest_snapshot": "source_study_snapshot.json",
+  "source_manifest_sha256": "9d0f6b91144122396c55058bfea03e039f44933807b306b67f933b8e838dea3d",
+  "source_case_ids": [
+    "m_d06_fs050_fd050_a00",
+    "m_d06_fs075_fd075_a00",
+    "m_d06_fs100_fd100_a00",
+    "m_d06_fs100_fd050_a00",
+    "m_d12_fs050_fd050_a00",
+    "m_d12_fs075_fd075_a00",
+    "m_d12_fs100_fd100_a00",
+    "m_d12_fs100_fd050_a00",
+    "m_d18_fs050_fd050_a00",
+    "m_d18_fs075_fd075_a00",
+    "m_d18_fs100_fd100_a00",
+    "m_d18_fs100_fd050_a00",
+    "m_d06_fs050_fd050_a02",
+    "m_d06_fs075_fd075_a02",
+    "m_d06_fs100_fd100_a02",
+    "m_d06_fs100_fd050_a02",
+    "m_d12_fs050_fd050_a02",
+    "m_d12_fs075_fd075_a02",
+    "m_d12_fs100_fd100_a02",
+    "m_d12_fs100_fd050_a02",
+    "m_d18_fs050_fd050_a02",
+    "m_d18_fs075_fd075_a02",
+    "m_d18_fs100_fd100_a02",
+    "m_d18_fs100_fd050_a02"
+  ],
+  "source_trajectory_ids": [
+    "m_d06_fs075_fd075_a00_try00"
+  ],
+  "source_simulation_hashes": {
+    "simulation/forge_mechanics.py": "317964ce21aabfb9c25798b29ce9bf7f6e8e20f4315faeb42d0c409d75063dd0",
+    "simulation/launch_forge_mechanics.py": "264a4f0cb3e3c1a8e088b1e8f5c31dc17462f465666223de766a7c25e391dadb",
+    "simulation/forge_mechanics_backend.py": "4d9d058ad5e2807a8a27151498c3f456d81badafce590b10050071e01b01cf1a",
+    "research/forge_mechanics_contacts.py": "16dcba4012b1d5071ae30f835a5b2eaf0246d2b3aaa3b4571631f3b326047c41",
+    "research/forge_mechanics_plan.py": "82c9617044d0c3298a98c1cc0ae2f4bf72dde6330cd06992f38196a2571beb3f",
+    "research/forge_mechanics_metrics.py": "d2924bfe32e2a1b14b073cd8393b310f47d3274b6dff44a28c47a2501ec13e60",
+    "research/forge_mechanics_protocol.py": "4c8fd71c8a093882ad053ab16dd724891dd9eadc2ee79d5b4630e470b054659a",
+    "simulation/forge_backend.py": "5a0c3fb5f1c5d330c90fdc2a22e6d48cda1713156d134c5ba533b5fa6ce3a45f",
+    "simulation/forge_experiment.py": "54ac5813d9dba93c4ac6aaf907d67e53d84a039d47000386cfc57434b1e76618",
+    "simulation/contact.py": "a23500505916cf97fe792258fedae0ea583f03b2652dc42121e2d761fbb6e522",
+    "research/forge_protocol.py": "3e112d13a94bfb85f82ec7beec0c9750792042b222b07d7277df1c32503006a1",
+    "research/phase2_protocol.py": "3d05bd187320591bb9e69d38f9dc3263925608f17213c945caf8c7a6adcc84ca",
+    "research/forge_gap_metrics.py": "ed4dcde065a52732492fd5169eb408875c9d9b5f0850cafd76137ffef9462edc",
+    "research/forge_geometry.py": "d37caa904ae3bfcc2360ed31294f4d700fe412a127e030f6fe76dc6bb8751078",
+    "research/forge_events.py": "88361f3eacacda079fd3e9f7bc075dcc0a61ccbf7019b1891b670764d0b11022",
+    "research/future_stall.py": "7d6466b6e452beed65930aadcb6552d123947038ddac9bb18416b09e25a63d3c",
+    "research/forge_gap_study.py": "2dbea013ab35053fff628126fd36775a75aa782fad98e443e0b4f1409bb17fc9",
+    "research/forge_collection.py": "f06901e0c9d55df411981a27ee4ad512f089aaf8bd6fecec00d3da9a0d4c890f",
+    "research/phase2b.py": "0dfa4d32fd924a72576a7f1316198352147a389e5fe4e328727eb0637a94949a"
+  },
+  "review_source_sha256": {
+    "simulation/summarize_mechanics_study.py": "815ef79059faea18f5236e209dcf1f49dc3be8622e0bb1dbb278e03e07d0ade4",
+    "simulation/plot_mechanics_study.py": "9eeca3217b5bec107c8081d3f447c4ae40f3c2c7a4d187ea0af16ae17899631b"
+  },
+  "artifacts": [
+    "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Pilot-20260915-review/mechanics_straight_force_grid.png",
+    "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Pilot-20260915-review/mechanics_straight_force_grid.pdf",
+    "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Pilot-20260915-review/mechanics_tilt_depth_grid.png",
+    "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Pilot-20260915-review/mechanics_tilt_depth_grid.pdf",
+    "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Pilot-20260915-review/mechanics_paired_policy_costs.png",
+    "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Pilot-20260915-review/mechanics_paired_policy_costs.pdf"
+  ],
+  "interpretation": "A read-only snapshot; pending, excluded, invalid and censored results are not plotted as zero. Descriptive, not significance testing."
+}

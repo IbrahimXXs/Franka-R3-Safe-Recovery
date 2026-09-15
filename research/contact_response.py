@@ -218,8 +218,12 @@ def discover(root):
     for path in sorted(root.rglob('study.json')):
         # Only ledgers identify cohorts; no glob over recovery or replay CSVs.
         m=json.loads(path.read_text())
-        phase2b=(m.get('case_plan') or {}).get('schema')=='Forge-Phase2B-depth-drift-v1'
-        if m.get('study')!='Forge-Controlled-Phase2-v1' or not (phase2b or m.get('mode')=='collect'):
+        plan=m.get('case_plan')
+        phase2b=isinstance(plan,dict) and plan.get('schema')=='Forge-Phase2B-depth-drift-v1'
+        # New factor studies reuse the FORGE ledger envelope. Their geometry
+        # and command factors are outside this legacy Phase 2A/2B analysis.
+        phase2a=m.get('mode')=='collect' and plan is None
+        if m.get('study')!='Forge-Controlled-Phase2-v1' or not (phase2a or phase2b):
             excluded.append(str(path.parent));continue
         selected.append((path,m,'Phase2B' if phase2b else 'Phase2A'))
     return selected,excluded

@@ -1,0 +1,454 @@
+{
+  "colliders": [
+    {
+      "path": "/World/envs/env_0/Robot/panda_link0/collisions",
+      "settings": {
+        "physics:approximation": "convexHull",
+        "physxCollision:contactOffset": "0.004999999888241291",
+        "physxCollision:restOffset": "0.0"
+      }
+    },
+    {
+      "path": "/World/envs/env_0/Robot/panda_link1/collisions",
+      "settings": {
+        "physics:approximation": "convexHull",
+        "physxCollision:contactOffset": "0.004999999888241291",
+        "physxCollision:restOffset": "0.0"
+      }
+    },
+    {
+      "path": "/World/envs/env_0/Robot/panda_link2/collisions",
+      "settings": {
+        "physics:approximation": "convexHull",
+        "physxCollision:contactOffset": "0.004999999888241291",
+        "physxCollision:restOffset": "0.0"
+      }
+    },
+    {
+      "path": "/World/envs/env_0/Robot/panda_link3/collisions",
+      "settings": {
+        "physics:approximation": "convexHull",
+        "physxCollision:contactOffset": "0.004999999888241291",
+        "physxCollision:restOffset": "0.0"
+      }
+    },
+    {
+      "path": "/World/envs/env_0/Robot/panda_link4/collisions",
+      "settings": {
+        "physics:approximation": "convexHull",
+        "physxCollision:contactOffset": "0.004999999888241291",
+        "physxCollision:restOffset": "0.0"
+      }
+    },
+    {
+      "path": "/World/envs/env_0/Robot/panda_link5/collisions",
+      "settings": {
+        "physics:approximation": "convexHull",
+        "physxCollision:contactOffset": "0.004999999888241291",
+        "physxCollision:restOffset": "0.0"
+      }
+    },
+    {
+      "path": "/World/envs/env_0/Robot/panda_link6/collisions",
+      "settings": {
+        "physics:approximation": "convexHull",
+        "physxCollision:contactOffset": "0.004999999888241291",
+        "physxCollision:restOffset": "0.0"
+      }
+    },
+    {
+      "path": "/World/envs/env_0/Robot/panda_link7/collisions",
+      "settings": {
+        "physics:approximation": "convexHull",
+        "physxCollision:contactOffset": "0.004999999888241291",
+        "physxCollision:restOffset": "0.0"
+      }
+    },
+    {
+      "path": "/World/envs/env_0/Robot/force_sensor/collisions",
+      "settings": {
+        "physxCollision:contactOffset": "0.004999999888241291",
+        "physxCollision:restOffset": "0.0"
+      }
+    },
+    {
+      "path": "/World/envs/env_0/Robot/panda_hand/collisions",
+      "settings": {
+        "physics:approximation": "convexHull",
+        "physxCollision:contactOffset": "0.004999999888241291",
+        "physxCollision:restOffset": "0.0"
+      }
+    },
+    {
+      "path": "/World/envs/env_0/Robot/panda_leftfinger/collisions",
+      "settings": {
+        "physics:approximation": "convexHull",
+        "physxCollision:contactOffset": "0.004999999888241291",
+        "physxCollision:restOffset": "0.0"
+      }
+    },
+    {
+      "path": "/World/envs/env_0/Robot/panda_rightfinger/collisions",
+      "settings": {
+        "physics:approximation": "convexHull",
+        "physxCollision:contactOffset": "0.004999999888241291",
+        "physxCollision:restOffset": "0.0"
+      }
+    },
+    {
+      "path": "/World/envs/env_0/FixedAsset/forge_hole_8mm/forge_hole_8mm/mesh",
+      "settings": {
+        "physics:approximation": "sdf",
+        "physxCollision:contactOffset": "0.004999999888241291",
+        "physxCollision:restOffset": "0.0",
+        "physxSDFMeshCollision:sdfBitsPerSubgridPixel": "BitsPerPixel16",
+        "physxSDFMeshCollision:sdfEnableRemeshing": "False",
+        "physxSDFMeshCollision:sdfMargin": "0.009999999776482582",
+        "physxSDFMeshCollision:sdfNarrowBandThickness": "0.009999999776482582",
+        "physxSDFMeshCollision:sdfResolution": "256",
+        "physxSDFMeshCollision:sdfSubgridResolution": "6",
+        "physxSDFMeshCollision:sdfTriangleCountReductionFactor": "1.0"
+      }
+    },
+    {
+      "path": "/World/envs/env_0/HeldAsset/forge_round_peg_8mm/mesh",
+      "settings": {
+        "physics:approximation": "sdf",
+        "physxCollision:contactOffset": "0.004999999888241291",
+        "physxCollision:restOffset": "0.0",
+        "physxSDFMeshCollision:sdfBitsPerSubgridPixel": "BitsPerPixel16",
+        "physxSDFMeshCollision:sdfEnableRemeshing": "False",
+        "physxSDFMeshCollision:sdfMargin": "0.009999999776482582",
+        "physxSDFMeshCollision:sdfNarrowBandThickness": "0.009999999776482582",
+        "physxSDFMeshCollision:sdfResolution": "256",
+        "physxSDFMeshCollision:sdfSubgridResolution": "6",
+        "physxSDFMeshCollision:sdfTriangleCountReductionFactor": "1.0"
+      }
+    }
+  ],
+  "joints": [
+    {
+      "path": "/World/envs/env_0/Robot/panda_link7/panda_hand_joint",
+      "child": [
+        "/World/envs/env_0/Robot/force_sensor"
+      ],
+      "rotation_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "position_m": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "geometry_variant": {
+    "source_usd": "https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/5.1/Isaac/IsaacLab/Factory/factory_hole_8mm.usd",
+    "geometry_modified": true,
+    "clearance_definition": "radial_vertex_clearance_mm",
+    "requested_radial_clearance_mm": 0.2,
+    "generated_usd": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/realign/geometry/socket_radial_0.200000mm.usda",
+    "generated_usd_sha256": "7bc16f25d1f4722ef73c7abd3a6d4d5c696fea9917d9af74796c474f9e35e4f9",
+    "source_mesh_sha256": "60103bbf5a01d7693dee4fe9d0c6ab8a626dba5778de8b59313e6b879a811416",
+    "generated_mesh_sha256": "8241aad76384b8c880b75008758ac2eb2c34334472ae70db41ca31428d3145c9",
+    "blocked_cooked_data_attributes": [
+      "physxCookedData:convexHull:buffer",
+      "physxCookedData:triangleMesh:buffer"
+    ],
+    "pre_spawn_audit": {
+      "measured_bore_diameter_mm": 8.386000332698446,
+      "measured_peg_diameter_mm": 7.986,
+      "measured_radial_vertex_clearance_mm": 0.19999427978451523,
+      "measured_bore_inradius_mm": 4.191998604106215,
+      "conservative_radial_clearance_mm": 0.19899860410621442,
+      "bore_wall_sides": 144,
+      "socket_chamfer_axial_mm": 1.0,
+      "socket_chamfer_radial_mm": 1.0000001644513927
+    },
+    "runtime_mesh_sha256": "8241aad76384b8c880b75008758ac2eb2c34334472ae70db41ca31428d3145c9"
+  },
+  "stage_meters_per_unit": 1.0,
+  "stage_up_axis": "Z",
+  "socket_mesh_world_transform": "( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0.6000000238418579, 0, 0.05000000074505806, 1) )",
+  "socket_mesh_world_scales": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "measured_bore_diameter_mm": 8.386000332698446,
+  "measured_peg_diameter_mm": 7.986009194001048,
+  "measured_radial_vertex_clearance_mm": 0.19998968278399104,
+  "measured_bore_inradius_mm": 4.191998604106215,
+  "conservative_radial_clearance_mm": 0.19899400710569026,
+  "bore_wall_sides": 144,
+  "socket_chamfer_axial_mm": 1.0,
+  "socket_chamfer_radial_mm": 1.0000001644513927,
+  "socket_mesh_sha256": "8241aad76384b8c880b75008758ac2eb2c34334472ae70db41ca31428d3145c9",
+  "effective_assets": {
+    "robot": {
+      "bodies": [
+        "panda_link0",
+        "panda_link1",
+        "panda_link2",
+        "panda_link3",
+        "panda_link4",
+        "panda_link5",
+        "panda_link6",
+        "panda_link7",
+        "force_sensor",
+        "panda_hand",
+        "panda_leftfinger",
+        "panda_rightfinger",
+        "panda_fingertip_centered"
+      ],
+      "masses": [
+        [
+          0.6297690272331238,
+          4.970684051513672,
+          0.6469259858131409,
+          3.2286038398742676,
+          3.587894916534424,
+          1.2259459495544434,
+          1.6665550470352173,
+          0.7355219721794128,
+          0.009999999776482582,
+          0.7300000190734863,
+          0.02970000170171261,
+          0.02970000170171261,
+          9.999999974752427e-07
+        ]
+      ],
+      "materials": [
+        [
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ]
+        ]
+      ]
+    },
+    "fixed_asset": {
+      "bodies": [
+        "forge_hole_8mm"
+      ],
+      "masses": [
+        [
+          0.05000000074505806
+        ]
+      ],
+      "materials": [
+        [
+          [
+            0.75,
+            0.75,
+            0.0
+          ]
+        ]
+      ]
+    },
+    "held_asset": {
+      "bodies": [
+        "forge_round_peg_8mm"
+      ],
+      "masses": [
+        [
+          0.01899999938905239
+        ]
+      ],
+      "materials": [
+        [
+          [
+            0.75,
+            0.75,
+            0.0
+          ]
+        ]
+      ]
+    }
+  },
+  "mechanics_materials": {
+    "requested_pair_static_friction": 0.75,
+    "requested_pair_dynamic_friction": 0.75,
+    "effective_pair_static_friction": 0.75,
+    "effective_pair_dynamic_friction": 0.75,
+    "effective_pair_basis": "runtime per-shape coefficients + resolved explicitly bound average material modes; not a separately measured contact-pair coefficient",
+    "bindings": {
+      "hole": {
+        "collider_path": "/World/envs/env_0/FixedAsset/forge_hole_8mm/forge_hole_8mm/mesh",
+        "material_path": "/World/MechanicsMaterials/hole",
+        "previous_bound_material_path": null,
+        "bound_before_physics_initialization": true,
+        "usd_static_friction": 0.75,
+        "usd_dynamic_friction": 0.75,
+        "resolved_friction_combine_mode": "average"
+      },
+      "peg": {
+        "collider_path": "/World/envs/env_0/HeldAsset/forge_round_peg_8mm/mesh",
+        "material_path": "/World/MechanicsMaterials/peg",
+        "previous_bound_material_path": "/World/envs/env_0/HeldAsset/forge_round_peg_8mm/Looks/material__980392_0_713725_0_003922_0_000000_0_000000",
+        "bound_before_physics_initialization": true,
+        "usd_static_friction": 0.75,
+        "usd_dynamic_friction": 0.75,
+        "resolved_friction_combine_mode": "average"
+      }
+    },
+    "runtime_materials": {
+      "hole": [
+        [
+          [
+            0.75,
+            0.75,
+            0.0
+          ]
+        ]
+      ],
+      "peg": [
+        [
+          [
+            0.75,
+            0.75,
+            0.0
+          ]
+        ]
+      ],
+      "robot": [
+        [
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ]
+        ]
+      ]
+    }
+  },
+  "mechanics_contact_schema": {
+    "version": 1,
+    "world_force_sign": "fixture_on_peg; world +Z points upward",
+    "torque_origin": "peg rigid-body root, identical to legacy contact torque",
+    "socket_origin": "hole floor; straight wall z=0..24mm, mouth z=25mm",
+    "point_load_threshold_n": 1e-06,
+    "side_load_threshold_n": 0.01,
+    "wall_axial_margin_m": 5e-05,
+    "wall_radial_band_m": 0.0005,
+    "wall_max_abs_normal_z": 0.15,
+    "side_sector_cosine": 0.5,
+    "centroid_definition": "normal-load weighted straight-wall regions; not two paired contacts",
+    "geometry_estimate": "full-radius analytic cylinder envelope against actual polygon walls; omits finite end caps and peg chamfers; not exact mesh penetration or material deformation",
+    "timing": "contact and post-step pose sampled without a global shift; API synchronization within the solver step is not independently established"
+  }
+}

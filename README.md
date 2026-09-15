@@ -67,6 +67,67 @@ Physical failures are retained; unknown recovery labels remain unknown. See
 bounded paths for changes in tested recoverability. It also provides a causal
 future-stall label extractor for the completed Phase 2A references.
 
+The [gap and insertion-tilt study](docs/forge_gap_study.md) reduces the actual
+bore clearance to 0.1 mm radial clearance and introduces smooth pitch commands
+at 30/50/70% of actual insertion depth. Its 23-case pilot runs aligned controls
+before tilted cases and records first-stall and terminal recovery probes:
+
+```bash
+python3 simulation/run_gap_study.py --output-dir outputs/Forge-GapTilt-Pilot
+```
+
+The [fixed-depth mechanics study](docs/forge_mechanics_study.md) tests 24
+depth/friction/tilt combinations at an explicit 240 Hz. It reaches 6/12/18 mm
+before applying tilt, audits the peg–hole friction pair while changing only
+the hole material, and records separate normal/friction contact streams.
+Continuous straight withdrawal is compared with a fully matched replay followed
+by XY recentering and upright alignment. See the
+[analysis criteria](docs/forge_mechanics_analysis_zh.md) for force, contact,
+numerical-validity and recovery interpretations.
+
+The completed 2026-09-15 main matrix has 24 recorded conditions: 20 completed
+straight withdrawals and four references stopped by the grasp-slip limit before
+withdrawal. See the [Chinese results report](outputs/Forge-Mechanics-FixedSpeed-20260915-review/results_zh.md)
+and [compact condition table](outputs/Forge-Mechanics-FixedSpeed-20260915-review/mechanics_overview.csv).
+Three independent boundary-angle records and two 480 Hz records are also
+complete. At 240 Hz, the 18 mm / 1.5° case briefly obstructed withdrawal and
+recentring/alignment reduced its full recovery peak from 4.58 N to 3.75 N.
+The full-path benefit and the same near-stall window did not persist at 480 Hz;
+initial states and controller update rates also differed. These are exploratory
+mechanics results, not validated over-budget recovery labels. The report keeps
+each study's denominator separate and links the full frequency audit.
+
+```bash
+./forge_mechanics.sh --headless --output-dir outputs/Forge-Mechanics-New
+python3 simulation/summarize_mechanics_study.py --study-dir outputs/Forge-Mechanics-New \
+  --output-dir outputs/Forge-Mechanics-New-review --plots
+```
+
+The [prospective force-budget study](docs/forge_budget_study.md) keeps the
+mechanics controllers and gripper model unchanged while applying 3/4/5 N raw
+wrist-load budgets from the recorded reference through the whole recovery.
+Eight conditions cover depth, angle, friction and budget controls. Each policy
+uses a fresh simulator process, and the exporter checks full observed prefixes
+before comparing outcomes. Threshold crossings stop subsequent task commands;
+truncated peaks and untested branches remain explicit. See the
+[Chinese budget results](outputs/Forge-Budget-V1-20260915-review/results_zh.md).
+The completed study contains 13 executed branches and 3 planned branches left
+untested after reference-stage violations. At 18 mm / 1.5° / friction 1, the
+4 N straight branch stops at 4.54 N while recentering/alignment clears with a
+3.75 N full-recovery peak; their complete recorded reference prefixes match.
+The 5 N straight branch clears. These sampled wrist-load results do not
+calibrate fragile-part strength or finger gripping capacity.
+
+The [6-degree angle extension](docs/forge_budget_angle6_study.md) adds a separate
+1.5/2/3/4/5/6-degree command sweep at 18 mm and 4 N. Logs distinguish the target
+angle from the actually attained pose and retain reference-stage terminations.
+The inherited 1-second tilt ramp also increases commanded angular speed as the
+target angle rises. See the [angle extension results](outputs/Forge-Budget-Angle6-20260915-review/results_zh.md).
+
+```bash
+python3 simulation/run_budget_study.py --output-dir outputs/Forge-Budget-New
+```
+
 ```bash
 ./run.sh --study --headless
 ```

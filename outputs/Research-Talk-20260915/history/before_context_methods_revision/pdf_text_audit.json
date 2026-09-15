@@ -1,0 +1,120 @@
+{
+  "text_checks_status": "passed",
+  "pages": [
+    {
+      "page": 1,
+      "words": 42,
+      "text_characters": 325
+    },
+    {
+      "page": 2,
+      "words": 97,
+      "text_characters": 645
+    },
+    {
+      "page": 3,
+      "words": 94,
+      "text_characters": 651
+    },
+    {
+      "page": 4,
+      "words": 99,
+      "text_characters": 647
+    },
+    {
+      "page": 5,
+      "words": 82,
+      "text_characters": 492
+    },
+    {
+      "page": 6,
+      "words": 133,
+      "text_characters": 716
+    },
+    {
+      "page": 7,
+      "words": 85,
+      "text_characters": 536
+    },
+    {
+      "page": 8,
+      "words": 97,
+      "text_characters": 578
+    },
+    {
+      "page": 9,
+      "words": 126,
+      "text_characters": 702
+    },
+    {
+      "page": 10,
+      "words": 99,
+      "text_characters": 735
+    },
+    {
+      "page": 11,
+      "words": 110,
+      "text_characters": 773
+    },
+    {
+      "page": 12,
+      "words": 98,
+      "text_characters": 726
+    },
+    {
+      "page": 13,
+      "words": 151,
+      "text_characters": 881
+    },
+    {
+      "page": 14,
+      "words": 131,
+      "text_characters": 882
+    },
+    {
+      "page": 15,
+      "words": 123,
+      "text_characters": 829
+    }
+  ],
+  "main_slides": 12,
+  "planned_talk_seconds": 600,
+  "reference_links": [
+    "https://doi.org/10.1115/1.3149634",
+    "https://doi.org/10.1098/rsos.240956",
+    "https://doi.org/10.1115/1.3140702",
+    "https://doi.org/10.1177/0278364913506757",
+    "https://doi.org/10.1109/TAC.2016.2638961",
+    "https://arxiv.org/abs/2305.17110",
+    "https://arxiv.org/abs/2205.03532",
+    "https://doi.org/10.1016/j.automatica.2021.109597"
+  ],
+  "out_of_bounds_or_missing_glyph_issues": [],
+  "unchanged_figure_scene_assets": [
+    "figures/paired_recovery_force.pdf",
+    "figures/restricted_progress.pdf",
+    "figures/restricted_progress.png",
+    "figures/angle_scan.pdf",
+    "figures/depth_comparison.png",
+    "figures/build_figures.py",
+    "figures/paired_recovery_force.png",
+    "figures/budget_comparison.pdf",
+    "figures/depth_comparison.pdf",
+    "figures/angle_scan.png",
+    "figures/budget_comparison.png",
+    "figures/figure_manifest.json",
+    "figures/condition_outcomes.pdf",
+    "figures/condition_outcomes.png",
+    "scene/closeup_realigned.png",
+    "scene/README.md",
+    "scene/render_recorded_scene.py",
+    "scene/audit_replay.py",
+    "scene/closeup_reference.png",
+    "scene/closeup_clear.png",
+    "scene/replay_audit.json",
+    "scene/provenance.json",
+    "scene/render.log",
+    "scene/bench_reference.png"
+  ],
+  "pdf_sha256": "01f3bda24c397f2b146759f0678d26218bc1112b4fe107c208326e160d97c8fc"
+}

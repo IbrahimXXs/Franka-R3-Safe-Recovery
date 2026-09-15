@@ -1,0 +1,24 @@
+{
+  "case_id": "g0200_d30_pitch_pos20",
+  "reference_sha256": "0b506cf4c7e604196f08cd7f598f8fc4a27c256aca922689fd69736919f8393c",
+  "comparison": "exact recorded field strings excluding accumulated time_s",
+  "branches": [
+    {
+      "file": "outputs/Forge-GapTilt-Pilot-20260915/gap_0200/g0200_d30_pitch_pos20_try00/terminal_straight_prefix.csv",
+      "sha256": "e6e5e867a7ada1b816be4f8c2d9c7ed92700a31901c5ffd71e4dde5dcc8aa1d1",
+      "rows": 1321,
+      "reference_rows": 1321,
+      "different_rows_ignoring_time_s": 0,
+      "same_columns": true
+    },
+    {
+      "file": "outputs/Forge-GapTilt-Pilot-20260915/gap_0200/g0200_d30_pitch_pos20_try00/terminal_realign_prefix.csv",
+      "sha256": "831816973fbce29dea177cb844ab6ec174a8a13a05c9b98b5bf81cdf8d25d473",
+      "rows": 1321,
+      "reference_rows": 1321,
+      "different_rows_ignoring_time_s": 0,
+      "same_columns": true
+    }
+  ],
+  "limitation": "This compares recorded histories; it does not certify equality of unobserved solver memory."
+}

@@ -1,0 +1,16 @@
+{
+  "python": "3.11.16",
+  "platform": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "packages": {
+    "isaaclab": "0.47.2",
+    "isaaclab_assets": "0.2.3",
+    "isaaclab_tasks": "0.11.6",
+    "isaacsim": "5.1.0.0",
+    "torch": "2.7.0+cu128",
+    "numpy": "1.26.0",
+    "matplotlib": "3.10.3"
+  },
+  "isaaclab_git_commit": "3c6e67bb5c7ada942a6d1884ab69338f57596f77",
+  "isaaclab_tracked_changes": "",
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU, 580.178.04, 8151 MiB"
+}

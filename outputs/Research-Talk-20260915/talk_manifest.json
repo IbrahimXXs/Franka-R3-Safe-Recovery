@@ -1,0 +1,154 @@
+{
+  "final_pdf": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/output/pdf/safe_recovery_motion_planning_control.pdf",
+  "pages": 16,
+  "main_slides": 12,
+  "appendix_pages": 4,
+  "research_priority": "First prevent insertion-induced jamming; then restore withdrawability under an operation-force budget.",
+  "planned_talk_seconds": 600,
+  "slides": [
+    {
+      "number": 1,
+      "title": "Preventing insertion-induced jamming",
+      "section": "Motion Planning and Control",
+      "seconds": 20,
+      "speaker_notes": "The primary objective is an insertion planning and control policy that avoids insertion-induced jamming. The secondary objective, if progress becomes blocked, is to adjust the pose and restore withdrawability within the available operation-force budget. Existing experiments establish a useful adverse scenario and preliminary recovery feasibility; they do not validate a preventive insertion policy."
+    },
+    {
+      "number": 2,
+      "title": "A tight insertion can create a difficult exit",
+      "section": "Physical scenario",
+      "seconds": 55,
+      "speaker_notes": "The intended hardware is a metal peg in a tight plastic socket. Pose error and deeper engagement can create restrictive edge or wall contacts. Normal reactions and friction may oppose insertion and extraction; a straight pull may preserve an unfavorable contact geometry. This is a qualitative rigid-contact explanation, not a universal monotonic law. Plastic deformation could create additional obstacles in real hardware but is absent from the current rigid-body simulation. The schematic exaggerates clearance and marks possible contacts, not measured locations."
+    },
+    {
+      "number": 3,
+      "title": "Why pulling harder is not a general solution",
+      "section": "Task-specific load limits",
+      "seconds": 55,
+      "speaker_notes": "A friction grip can transmit only a finite pulling load. Increasing pull can require more squeeze, while gripper capacity and allowable contact pressure limit squeeze. The metal peg need not be fragile: the plastic socket, finish or fixture may set the damage limit. Strong extraction can also elastically deflect the robot, gripper or fixture; abrupt release can convert stored strain energy into motion. These mechanisms motivate a task-calibrated limit rather than the arm maximum. The ideal friction bound omits gravity, acceleration and moments. Grip squeeze, axial pull and raw wrist-force norm differ. No damage or release-risk model is validated by current experiments."
+    },
+    {
+      "number": 4,
+      "title": "Research context",
+      "section": "Selected literature",
+      "seconds": 45,
+      "speaker_notes": "Assembly and extraction mechanics connect geometry, contact and compliance. Our primary question is how an insertion policy avoids risky contact states before a jam develops. Force-limited recovery is the secondary objective. Contact-aware optimization, impedance control and sim-to-real assembly provide candidate tools, not evidence that our measured forces are physically calibrated or that prevention has been validated."
+    },
+    {
+      "number": 5,
+      "title": "Current testbed and recovery probes",
+      "section": "Testbed and protocol",
+      "seconds": 45,
+      "speaker_notes": "Show the actual recorded states in the unchanged simulation scene. The reference reaches a depth gate before applying tilt for one second. Then STOP holds the attained pose, and a chosen policy retreats directly or recenters and realigns. Each policy runs in an independent process; the complete recorded reference prefix is compared offline. The budget starts at recorded reference time zero and excludes preparation."
+    },
+    {
+      "number": 6,
+      "title": "Evidence: the exit depends on the motion",
+      "section": "Preliminary evidence",
+      "seconds": 65,
+      "speaker_notes": "Both policies start at the same fully matched reference state. The common full-reference peak, including tilt and hold, is 3.56 N. Direct withdrawal crosses 4 N at 0.721 seconds, while recentering and realignment completes with a 3.75 N full-recovery peak and 1.15 N withdrawal-only peak. The direct record is censored at the first violation. This is an alternative selected at the reference state, not a rescue started after the violation. Different horizontal time scales are explicit."
+    },
+    {
+      "number": 7,
+      "title": "The budget changes feasibility",
+      "section": "Task-dependent labels",
+      "seconds": 45,
+      "speaker_notes": "For the same planned physical path, 3 N is too tight even for the reference hold. At 4 N the two recovery strategies separate. At 5 N both complete. The 4 and 5 N direct paths share 174 identical recorded recovery samples up to the 4 N stopping frame. Higher-budget data never fills the missing future of the lower-budget record. Budget must be a model input."
+    },
+    {
+      "number": 8,
+      "title": "Learn when insertion becomes costly to undo",
+      "section": "Proposed method 1: risk prediction",
+      "seconds": 60,
+      "speaker_notes": "Use observable insertion history to predict near-term load and whether a tested exit motion remains feasible. Candidate inputs are actual depth and tilt, commanded versus actual progress, wrist force and torque trends, and budget margin. Simulator contact decomposition is privileged diagnostic data, not assumed hardware input. During new simulation collection, replay matched insertion prefixes to selected checkpoints, then branch independent recovery probes. Label persistent restricted progress and load growth as candidate risk indicators; label policy-specific exit completion and full-path peak separately. Censored peaks are lower bounds, not completed-path targets. Start with interpretable rules or a small classifier and use a temporal model or ensemble only with enough data. None is trained yet."
+    },
+    {
+      "number": 9,
+      "title": "Prevent jamming before advancing deeper",
+      "section": "Proposed method 2: insertion planning",
+      "seconds": 70,
+      "speaker_notes": "Start with a risk-triggered finite-state baseline, then evaluate local model predictive control. At every cycle propose short advance, slow, recenter and rotate actions. Predict insertion progress, next-step wrist load and the cost of a tested exit. Reject motions that consume the available force margin or predicted exit feasibility, execute only the first short admissible segment and replan. Smaller advance near load growth limits further penetration; lateral and rotational compliance may help align the peg rather than forcing pose error against the walls. Compliance alone cannot guarantee a force ceiling. The model predicts the closed-loop robot/contact response, with identified uncertainty margins. Compare progress and aborts so a controller that never inserts cannot appear successful."
+    },
+    {
+      "number": 10,
+      "title": "Restore withdrawability under the same limit",
+      "section": "Proposed method 3: constrained recovery",
+      "seconds": 65,
+      "speaker_notes": "When progress is persistently blocked, stop advancing and assess the attained state. Search small lateral and angular adjustments followed by withdrawal, and compare maximum load across the complete adjustment-and-exit path. The depth study shows that realignment is not always cheaper, so it must be evaluated rather than always applied. A predictive safety filter can modify or reject references before a predicted violation; current sampled stopping only reacts after observing one. Execute a short segment then reassess. A failed library search means no validated candidate in that library, not physical irrecoverability. The existing 4 N pair starts from a matched reference before the straight-path violation; restoration from post-violation blocked states still needs testing."
+    },
+    {
+      "number": 11,
+      "title": "Validate the mechanism, then the policy",
+      "section": "Evaluation and transfer",
+      "seconds": 50,
+      "speaker_notes": "Before learning from force peaks, independently vary physics rate, controller rate, solver settings and movement speed. Then compare ordinary insertion with a risk-aware policy under matched disturbances and held-out depth, clearance and friction groups. Measure insertion completion, peak load, premature aborts and subsequent bounded-force exit, so stopping early cannot win by itself. Recovery comparisons use matched blocked states and full-path peak, overshoot and grasp retention. On hardware first measure grasp friction/capacity and allowable socket/fixture loads, identify stiffness/friction uncertainty, then randomize identified ranges for transfer. CBF filtering is a later option only when contact dynamics, feasible backup actions and invariance assumptions can be defended."
+    },
+    {
+      "number": 12,
+      "title": "Prevent first. Recover within limits if needed.",
+      "section": "Research conclusion",
+      "seconds": 25,
+      "speaker_notes": "The central objective is to learn and control insertion so that restrictive contact states are avoided. Recovery is the second objective: if progress becomes blocked, restore withdrawability without exceeding the available operation force. Existing matched trials give an adverse scenario and preliminary recovery feasibility. They do not demonstrate preventive insertion control. The next study links insertion history to future exit cost, then compares a risk-aware insertion policy against the current baseline. Robustness and hardware calibration remain essential."
+    },
+    {
+      "number": 13,
+      "title": "Embedding depth changes the recovery cost",
+      "section": "Appendix A: parameter evidence",
+      "seconds": 0,
+      "speaker_notes": "At the shallower 12 mm target the direct path completes at roughly 0.32 N. The 18 mm direct path reaches the 4.54 N violation. Actual reference tilts differ slightly, so this is a descriptive controlled depth comparison rather than an identical-state force experiment. Realignment can itself add cost: at 12 mm its complete peak exceeds direct withdrawal. The optimizer must evaluate the whole recovery, not only the final pull phase."
+    },
+    {
+      "number": 14,
+      "title": "Budget-study evidence coverage",
+      "section": "Appendix B",
+      "seconds": 0,
+      "speaker_notes": "Reference for questions. Do not pool deterministic reruns as independent statistical trials. The original budget matrix executed 13 branches. Preserve planned but untested alternatives."
+    },
+    {
+      "number": 15,
+      "title": "References",
+      "section": "Appendix C",
+      "seconds": 0,
+      "speaker_notes": ""
+    },
+    {
+      "number": 16,
+      "title": "References continued",
+      "section": "Appendix D",
+      "seconds": 0,
+      "speaker_notes": ""
+    }
+  ],
+  "chart_placements": [
+    {
+      "page": 5,
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/tmp/pdfs/safe_recovery_talk/figures/paired_recovery_force.pdf",
+      "scale": 0.8882783882783882,
+      "x": 96.26373626373629,
+      "y": 117.0
+    },
+    {
+      "page": 6,
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/tmp/pdfs/safe_recovery_talk/figures/budget_comparison.pdf",
+      "scale": 1.0011574074074074,
+      "x": 48.0,
+      "y": 121.41666666666663
+    },
+    {
+      "page": 12,
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/tmp/pdfs/safe_recovery_talk/figures/depth_comparison.pdf",
+      "scale": 0.9468157181571816,
+      "x": 38.0,
+      "y": 136.6371951219512
+    },
+    {
+      "page": 13,
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/tmp/pdfs/safe_recovery_talk/figures/condition_outcomes.pdf",
+      "scale": 0.7407407407407407,
+      "x": 159.5,
+      "y": 148.0
+    }
+  ],
+  "builder_sha256": "927037acc22b993f3a0b13d77711e276b0839be7b9a688dcddfdc8a6e1ddb4dc",
+  "pdf_sha256": "9b1357d312ab0836b81fb6ea0ac613811e2269f63351c675dc6de6653107a8ac"
+}

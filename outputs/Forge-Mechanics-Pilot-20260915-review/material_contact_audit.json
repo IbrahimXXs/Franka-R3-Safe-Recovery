@@ -1,0 +1,384 @@
+{
+  "audit_schema": "mechanics_material_contact_readonly_v1",
+  "created_utc": "2026-09-15T11:37:03.698302+00:00",
+  "scope": {
+    "study_path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Pilot-20260915",
+    "case": "m_d06_fs075_fd075_a00_try00",
+    "case_status_at_audit": "complete",
+    "profiles": [
+      "insertion",
+      "final_retreat"
+    ],
+    "all_planned_cases_verified": false
+  },
+  "scene_sha256": "c35f6e8f07a14e58ce82613f1453c074edf0415773fe0161c0c68760e4ba2815",
+  "scene_materials": {
+    "requested_pair_static_friction": 0.75,
+    "requested_pair_dynamic_friction": 0.75,
+    "effective_pair_static_friction": 0.75,
+    "effective_pair_dynamic_friction": 0.75,
+    "effective_pair_basis": "runtime per-shape coefficients + resolved explicitly bound average material modes; not a separately measured contact-pair coefficient",
+    "bindings": {
+      "hole": {
+        "collider_path": "/World/envs/env_0/FixedAsset/forge_hole_8mm/forge_hole_8mm/mesh",
+        "material_path": "/World/MechanicsMaterials/hole",
+        "previous_bound_material_path": null,
+        "bound_before_physics_initialization": true,
+        "usd_static_friction": 0.75,
+        "usd_dynamic_friction": 0.75,
+        "resolved_friction_combine_mode": "average"
+      },
+      "peg": {
+        "collider_path": "/World/envs/env_0/HeldAsset/forge_round_peg_8mm/mesh",
+        "material_path": "/World/MechanicsMaterials/peg",
+        "previous_bound_material_path": "/World/envs/env_0/HeldAsset/forge_round_peg_8mm/Looks/material__980392_0_713725_0_003922_0_000000_0_000000",
+        "bound_before_physics_initialization": true,
+        "usd_static_friction": 0.75,
+        "usd_dynamic_friction": 0.75,
+        "resolved_friction_combine_mode": "average"
+      }
+    },
+    "runtime_materials": {
+      "hole": [
+        [
+          [
+            0.75,
+            0.75,
+            0.0
+          ]
+        ]
+      ],
+      "peg": [
+        [
+          [
+            0.75,
+            0.75,
+            0.0
+          ]
+        ]
+      ],
+      "robot": [
+        [
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ]
+        ]
+      ]
+    }
+  },
+  "case_material_readback": {
+    "requested_pair_static_friction": 0.75,
+    "requested_pair_dynamic_friction": 0.75,
+    "effective_pair_static_friction": 0.75,
+    "effective_pair_dynamic_friction": 0.75,
+    "effective_pair_basis": "runtime per-shape coefficients + resolved explicitly bound average material modes; not a separately measured contact-pair coefficient",
+    "bindings": {
+      "hole": {
+        "collider_path": "/World/envs/env_0/FixedAsset/forge_hole_8mm/forge_hole_8mm/mesh",
+        "material_path": "/World/MechanicsMaterials/hole",
+        "previous_bound_material_path": null,
+        "bound_before_physics_initialization": true,
+        "usd_static_friction": 0.75,
+        "usd_dynamic_friction": 0.75,
+        "resolved_friction_combine_mode": "average"
+      },
+      "peg": {
+        "collider_path": "/World/envs/env_0/HeldAsset/forge_round_peg_8mm/mesh",
+        "material_path": "/World/MechanicsMaterials/peg",
+        "previous_bound_material_path": "/World/envs/env_0/HeldAsset/forge_round_peg_8mm/Looks/material__980392_0_713725_0_003922_0_000000_0_000000",
+        "bound_before_physics_initialization": true,
+        "usd_static_friction": 0.75,
+        "usd_dynamic_friction": 0.75,
+        "resolved_friction_combine_mode": "average"
+      }
+    },
+    "runtime_materials": {
+      "hole": [
+        [
+          [
+            0.75,
+            0.75,
+            0.0
+          ]
+        ]
+      ],
+      "peg": [
+        [
+          [
+            0.75,
+            0.75,
+            0.0
+          ]
+        ]
+      ],
+      "robot": [
+        [
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ],
+          [
+            0.75,
+            0.75,
+            0.0
+          ]
+        ]
+      ]
+    }
+  },
+  "socket_mesh_sha256": "8241aad76384b8c880b75008758ac2eb2c34334472ae70db41ca31428d3145c9",
+  "conservative_radial_clearance_mm": 0.19899400710569026,
+  "profiles": [
+    {
+      "csv_path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Pilot-20260915/m_d06_fs075_fd075_a00_try00/insertion.csv",
+      "raw_path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Pilot-20260915/m_d06_fs075_fd075_a00_try00/insertion_contacts.jsonl.gz",
+      "csv_sha256": "c9ef1aa39876b4c1929e36aa1d3d56d0759d90209ef20dff40816d458898ae92",
+      "raw_sha256": "c4a0c6e8ee86b33f29df1f2e46930605d7ed5380cd20db9f3f2240fd2fabfc4f",
+      "gzip_closed_crc_verified": true,
+      "input_bytes_stable_during_audit": true,
+      "samples": 2070,
+      "sample_index_range": [
+        0,
+        2069
+      ],
+      "state_time_range_s": [
+        0.0,
+        8.620833333332843
+      ],
+      "normal_loaded_samples": 14,
+      "friction_loaded_samples": 75,
+      "both_straight_wall_sides_loaded_samples": 0,
+      "point_counts": {
+        "normal_all_max": 119,
+        "friction_all_max": 43,
+        "normal_loaded_max": 2,
+        "friction_loaded_max": 6
+      },
+      "max_absolute_errors": {
+        "force_additivity_n": 1.1845258995890617e-08,
+        "torque_additivity_nm": 5.820766091346741e-11,
+        "raw_normal_n": 2.1535856375987095e-08,
+        "raw_friction_n": 1.4901161193847656e-08,
+        "raw_normal_torque_nm": 1.6328952259575945e-11,
+        "raw_friction_torque_nm": 8.56524590836516e-11,
+        "raw_load_n": 8.32369551062584e-09,
+        "point_transform_m": 8.673617379884035e-19,
+        "tip_x_mm": 3.874830289962716e-09,
+        "tip_y_mm": 6.11244288517554e-09,
+        "depth_mm": 1.7763568394002505e-15,
+        "wall_load_n": 0.0,
+        "wall_centroid_mm": 3.552713678800501e-15,
+        "contact_axial_span_mm": 0.0,
+        "raw_csv_time_s": 0.0,
+        "raw_csv_physics_time_s": 0.0,
+        "snapshot_outer_time_s": 0.0,
+        "snapshot_outer_physics_time_s": 0.0,
+        "recording_time_s": 0.0,
+        "physics_step_error_s": 2.1730860080143577e-10,
+        "physics_vs_state_clock_s": 4.496119849761726e-07
+      },
+      "structural_mismatches": [],
+      "copied_endpoint_snapshots": [],
+      "first_loaded_sample": {
+        "sample_index": 1366,
+        "time_s": 5.691666666666344,
+        "depth_mm": 5.145260691642763,
+        "raw_normal_count": 2,
+        "normal_count_all": 55,
+        "raw_friction_count": 2,
+        "friction_count_all": 22,
+        "wall_both_sides_loaded": false,
+        "contact_axial_span_mm": 0.0,
+        "geometry_signed_estimate_mm": -0.0011918900680923591
+      }
+    },
+    {
+      "csv_path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Pilot-20260915/m_d06_fs075_fd075_a00_try00/final_retreat.csv",
+      "raw_path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Pilot-20260915/m_d06_fs075_fd075_a00_try00/final_retreat_contacts.jsonl.gz",
+      "csv_sha256": "ff731b53109d25f10bca30cd8699e7ed145beb0518c451e0e996118f9e51d336",
+      "raw_sha256": "2d49e9909d16023d3e85a6258074f305653ec4df389f9d310ddb5488c506781e",
+      "gzip_closed_crc_verified": true,
+      "input_bytes_stable_during_audit": true,
+      "samples": 840,
+      "sample_index_range": [
+        0,
+        839
+      ],
+      "state_time_range_s": [
+        8.620833333332843,
+        12.116666666665981
+      ],
+      "normal_loaded_samples": 45,
+      "friction_loaded_samples": 123,
+      "both_straight_wall_sides_loaded_samples": 0,
+      "point_counts": {
+        "normal_all_max": 103,
+        "friction_all_max": 42,
+        "normal_loaded_max": 2,
+        "friction_loaded_max": 4
+      },
+      "max_absolute_errors": {
+        "force_additivity_n": 2.6688212528824806e-08,
+        "torque_additivity_nm": 5.820766091346741e-11,
+        "raw_normal_n": 4.7497019872722035e-08,
+        "raw_friction_n": 2.9802322387695312e-08,
+        "raw_normal_torque_nm": 6.290468825144758e-11,
+        "raw_friction_torque_nm": 7.96800334046388e-11,
+        "raw_load_n": 2.514570951461792e-08,
+        "point_transform_m": 8.673617379884035e-19,
+        "tip_x_mm": 3.2549414274996025e-09,
+        "tip_y_mm": 7.275861441113918e-09,
+        "depth_mm": 1.7763568394002505e-15,
+        "wall_load_n": 0.0,
+        "wall_centroid_mm": 3.552713678800501e-15,
+        "contact_axial_span_mm": 0.0,
+        "raw_csv_time_s": 0.0,
+        "raw_csv_physics_time_s": 0.0,
+        "snapshot_outer_time_s": 0.0,
+        "snapshot_outer_physics_time_s": 0.0,
+        "recording_time_s": 1.949551631241775e-13,
+        "physics_step_error_s": 2.1730860080143577e-10,
+        "physics_vs_state_clock_s": 6.319340961624675e-07
+      },
+      "structural_mismatches": [],
+      "copied_endpoint_snapshots": [
+        {
+          "sample_index": 0,
+          "snapshot_phase": "hold",
+          "csv_phase": "stop",
+          "reason": "same physical state copied from reference endpoint"
+        }
+      ],
+      "first_loaded_sample": {
+        "sample_index": 173,
+        "time_s": 9.34166666666614,
+        "depth_mm": 5.688579380512239,
+        "raw_normal_count": 2,
+        "normal_count_all": 52,
+        "raw_friction_count": 2,
+        "friction_count_all": 21,
+        "wall_both_sides_loaded": false,
+        "contact_axial_span_mm": 0.0,
+        "geometry_signed_estimate_mm": -0.0004128469437026522
+      }
+    }
+  ],
+  "limits": [
+    "Only the named closed profiles and recorded material readbacks are checked; this is not a full-batch validation.",
+    "Effective pair friction is calculated from runtime shape coefficients and resolved explicitly bound average modes, not measured by a separate friction experiment.",
+    "Raw files retain only points or anchors above 1e-6 N. All-contact counts include unloaded entries; small reconstruction residuals are expected.",
+    "Normal points and friction anchors have independent counts and positions and are never matched by index.",
+    "Weighted wall centers describe loaded regions, not distinct paired point contacts. Coincident normal points can yield a zero all-point span.",
+    "Geometry estimate coordinates are checked against logged tip pose and hole floor. The analytic cylinder envelope is not an exact mesh penetration, deformation, or physical-accuracy criterion.",
+    "Timestamp consistency does not independently establish when PhysX contact data were computed within a step; no global shift is applied.",
+    "The first recovery snapshot is copied from the insertion endpoint without an extra simulation step; its inner phase retains the original phase."
+  ]
+}

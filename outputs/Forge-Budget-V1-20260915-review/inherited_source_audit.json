@@ -1,0 +1,134 @@
+{
+  "schema": "budget-inherited-source-audit-v1",
+  "unchanged_inherited_source_count": 21,
+  "all_inherited_sources_unchanged": true,
+  "comparisons": [
+    {
+      "path": "simulation/forge_mechanics.py",
+      "previous_sha256": "3fd43f2e07700664eb0c2a4124a88d873dd87e54b6f78b42acb62557dc75d020",
+      "new_sha256": "3fd43f2e07700664eb0c2a4124a88d873dd87e54b6f78b42acb62557dc75d020",
+      "equal": true
+    },
+    {
+      "path": "simulation/launch_forge_mechanics.py",
+      "previous_sha256": "264a4f0cb3e3c1a8e088b1e8f5c31dc17462f465666223de766a7c25e391dadb",
+      "new_sha256": "264a4f0cb3e3c1a8e088b1e8f5c31dc17462f465666223de766a7c25e391dadb",
+      "equal": true
+    },
+    {
+      "path": "simulation/forge_mechanics_backend.py",
+      "previous_sha256": "4d9d058ad5e2807a8a27151498c3f456d81badafce590b10050071e01b01cf1a",
+      "new_sha256": "4d9d058ad5e2807a8a27151498c3f456d81badafce590b10050071e01b01cf1a",
+      "equal": true
+    },
+    {
+      "path": "research/forge_mechanics_contacts.py",
+      "previous_sha256": "16dcba4012b1d5071ae30f835a5b2eaf0246d2b3aaa3b4571631f3b326047c41",
+      "new_sha256": "16dcba4012b1d5071ae30f835a5b2eaf0246d2b3aaa3b4571631f3b326047c41",
+      "equal": true
+    },
+    {
+      "path": "simulation/forge_mechanics_recovery.py",
+      "previous_sha256": "d6bfc182f1ce17cea871e78143dbda19d0a7cb1bd89a0b1390773344e4c26abe",
+      "new_sha256": "d6bfc182f1ce17cea871e78143dbda19d0a7cb1bd89a0b1390773344e4c26abe",
+      "equal": true
+    },
+    {
+      "path": "research/forge_mechanics_motion.py",
+      "previous_sha256": "b03db0bdf9d1f697442bd2032cbea8c64bae0f3fa8c5f162ee054f4910bf17a4",
+      "new_sha256": "b03db0bdf9d1f697442bd2032cbea8c64bae0f3fa8c5f162ee054f4910bf17a4",
+      "equal": true
+    },
+    {
+      "path": "research/forge_mechanics_plan.py",
+      "previous_sha256": "b738155535c4ff11e9e4e8ad470b0da82f154b789f8cece4ba2a330f8348fdca",
+      "new_sha256": "b738155535c4ff11e9e4e8ad470b0da82f154b789f8cece4ba2a330f8348fdca",
+      "equal": true
+    },
+    {
+      "path": "research/forge_mechanics_metrics.py",
+      "previous_sha256": "d2924bfe32e2a1b14b073cd8393b310f47d3274b6dff44a28c47a2501ec13e60",
+      "new_sha256": "d2924bfe32e2a1b14b073cd8393b310f47d3274b6dff44a28c47a2501ec13e60",
+      "equal": true
+    },
+    {
+      "path": "research/forge_mechanics_protocol.py",
+      "previous_sha256": "0df8a8d32cdaf88ff4a8d3076ea81713367d1c23fd07992f71efe624be902fad",
+      "new_sha256": "0df8a8d32cdaf88ff4a8d3076ea81713367d1c23fd07992f71efe624be902fad",
+      "equal": true
+    },
+    {
+      "path": "simulation/forge_backend.py",
+      "previous_sha256": "5a0c3fb5f1c5d330c90fdc2a22e6d48cda1713156d134c5ba533b5fa6ce3a45f",
+      "new_sha256": "5a0c3fb5f1c5d330c90fdc2a22e6d48cda1713156d134c5ba533b5fa6ce3a45f",
+      "equal": true
+    },
+    {
+      "path": "simulation/forge_experiment.py",
+      "previous_sha256": "54ac5813d9dba93c4ac6aaf907d67e53d84a039d47000386cfc57434b1e76618",
+      "new_sha256": "54ac5813d9dba93c4ac6aaf907d67e53d84a039d47000386cfc57434b1e76618",
+      "equal": true
+    },
+    {
+      "path": "simulation/contact.py",
+      "previous_sha256": "a23500505916cf97fe792258fedae0ea583f03b2652dc42121e2d761fbb6e522",
+      "new_sha256": "a23500505916cf97fe792258fedae0ea583f03b2652dc42121e2d761fbb6e522",
+      "equal": true
+    },
+    {
+      "path": "research/forge_protocol.py",
+      "previous_sha256": "3e112d13a94bfb85f82ec7beec0c9750792042b222b07d7277df1c32503006a1",
+      "new_sha256": "3e112d13a94bfb85f82ec7beec0c9750792042b222b07d7277df1c32503006a1",
+      "equal": true
+    },
+    {
+      "path": "research/phase2_protocol.py",
+      "previous_sha256": "3d05bd187320591bb9e69d38f9dc3263925608f17213c945caf8c7a6adcc84ca",
+      "new_sha256": "3d05bd187320591bb9e69d38f9dc3263925608f17213c945caf8c7a6adcc84ca",
+      "equal": true
+    },
+    {
+      "path": "research/forge_gap_metrics.py",
+      "previous_sha256": "ed4dcde065a52732492fd5169eb408875c9d9b5f0850cafd76137ffef9462edc",
+      "new_sha256": "ed4dcde065a52732492fd5169eb408875c9d9b5f0850cafd76137ffef9462edc",
+      "equal": true
+    },
+    {
+      "path": "research/forge_geometry.py",
+      "previous_sha256": "d37caa904ae3bfcc2360ed31294f4d700fe412a127e030f6fe76dc6bb8751078",
+      "new_sha256": "d37caa904ae3bfcc2360ed31294f4d700fe412a127e030f6fe76dc6bb8751078",
+      "equal": true
+    },
+    {
+      "path": "research/forge_events.py",
+      "previous_sha256": "88361f3eacacda079fd3e9f7bc075dcc0a61ccbf7019b1891b670764d0b11022",
+      "new_sha256": "88361f3eacacda079fd3e9f7bc075dcc0a61ccbf7019b1891b670764d0b11022",
+      "equal": true
+    },
+    {
+      "path": "research/future_stall.py",
+      "previous_sha256": "7d6466b6e452beed65930aadcb6552d123947038ddac9bb18416b09e25a63d3c",
+      "new_sha256": "7d6466b6e452beed65930aadcb6552d123947038ddac9bb18416b09e25a63d3c",
+      "equal": true
+    },
+    {
+      "path": "research/forge_gap_study.py",
+      "previous_sha256": "2dbea013ab35053fff628126fd36775a75aa782fad98e443e0b4f1409bb17fc9",
+      "new_sha256": "2dbea013ab35053fff628126fd36775a75aa782fad98e443e0b4f1409bb17fc9",
+      "equal": true
+    },
+    {
+      "path": "research/forge_collection.py",
+      "previous_sha256": "f06901e0c9d55df411981a27ee4ad512f089aaf8bd6fecec00d3da9a0d4c890f",
+      "new_sha256": "f06901e0c9d55df411981a27ee4ad512f089aaf8bd6fecec00d3da9a0d4c890f",
+      "equal": true
+    },
+    {
+      "path": "research/phase2b.py",
+      "previous_sha256": "0dfa4d32fd924a72576a7f1316198352147a389e5fe4e328727eb0637a94949a",
+      "new_sha256": "0dfa4d32fd924a72576a7f1316198352147a389e5fe4e328727eb0637a94949a",
+      "equal": true
+    }
+  ],
+  "meaning": "Existing geometry/contact/pose-control/recovery code is unchanged. The new wrapper changes the task force-budget parameter and executes each policy in a fresh process; it does not change gripper mechanics or introduce fracture."
+}

@@ -1,0 +1,215 @@
+{
+  "schema": "Forge-budget-review-v1",
+  "source_study": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-Angle6-20260915",
+  "source_status": "complete",
+  "study_id": "Forge-budget-angle6-v1",
+  "selection_provenance": {
+    "selection_type": "post_pilot_user_requested_angle_extension",
+    "source_study": "outputs/Forge-Budget-V1-20260915",
+    "source_plan": "experiments/forge_budget_v1.json",
+    "source_plan_canonical_sha256": "dd4ca9c20b16ebdaa54c513f06f16f9d202bed63f5484137537ea4c3e1115690",
+    "source_plan_canonical_encoding": "sorted_keys_compact_json_utf8",
+    "maximum_command_tilt_deg": 6.0,
+    "anchor_condition_id": "m_d18_fs100_fd100_a1p5__b04",
+    "anchor_definition": "rerun of the completed 1.5 degree 4 N candidate in independent policy processes",
+    "angle_definition": "command target; actual tilt can remain below target when a guard terminates the reference",
+    "parameter_validation_change": "mechanics make_case allowlist adds 3, 4, 5 and 6 degrees; physical model and state/control equations unchanged",
+    "independent_random_replications": false
+  },
+  "source_study_sha256": "5dafb1f5a9585f929d425adbb4c5decb885927cd668708766a601d4687e671d3",
+  "elapsed_wall_seconds": 743.0663036660044,
+  "counts": {
+    "planned_conditions": 6,
+    "planned_branches": 12,
+    "closed_branches": 7,
+    "branch_status_counts": {
+      "complete": 7,
+      "not_tested": 5
+    },
+    "observed_branch_outcome_counts": {
+      "recovery_budget_exceeded": 1,
+      "clear_safe": 1,
+      "reference_budget_exceeded": 5
+    },
+    "pair_state_counts": {
+      "paired_straight_overbudget_realign_safe": 1,
+      "alternative_not_tested_reference_ineligible": 5
+    },
+    "paired_complete_costs": 0
+  },
+  "budget_definition": {
+    "scope": "recorded_reference_and_entire_recovery",
+    "activation": "reference_initial_sample_t0",
+    "covered_segments": [
+      "reference",
+      "stop",
+      "realign",
+      "retreat",
+      "clear_hold"
+    ],
+    "excluded_preparation": "scene reset, grasp preparation and three-second stabilization",
+    "force_signal": "raw_wrist_force_norm_n",
+    "torque_signal": "raw_wrist_torque_norm_nm",
+    "allowed_comparison": "<=",
+    "termination_comparison": ">",
+    "equality_allowed": true,
+    "monitoring": "check initial sample; save each completed physics-step sample before checking; no next task step after crossing",
+    "overshoot": "sampled monitoring may observe overshoot; forces are not clipped",
+    "initial_sample": "observed state, not a newly executed task step",
+    "policy_comparison": "independent process per policy; full-reference-prefix matching required for paired conclusions",
+    "preparatory_physics_changed": false
+  },
+  "interpretation": {
+    "branch": "Each policy is an original continuous reference + recovery in its own process. Its source outcome remains visible even when the two policy references do not match.",
+    "pair": "Full sampled reference prefixes and endpoint physical tolerances must match; equal seed alone is insufficient. Both recovery records must also be numerically valid with grasp retained for clean budget-policy labels. Concurrent budget/grasp events are mixed_constraints. Bitwise prefix equality is diagnostic. Matching observed fields does not certify hidden solver-state identity.",
+    "censor": "Observed recovery peaks include the initial snapshot and every executed phase. After budget-triggered termination, they are lower bounds on the unobserved complete-motion peak. Cost differences are supplied only for two matched, uncensored safe clearances.",
+    "not_tested": "The canonical driver skips the alternative policy if the straight branch reference is ineligible. The planned branch remains in the denominator with null recovery labels.",
+    "budget": "Raw sampled wrist norm, strict > threshold, including complete reference and recovery. A threshold-crossing sample may overshoot; shutdown after detection is not validated hardware braking.",
+    "realign": "XY recentering plus orientation alignment; it is not an angle-only intervention.",
+    "unknown": "Numerical rejection, mismatch, missing and incomplete branches are explicit unknown/unpaired states, not recovery failures.",
+    "selection": "Conditions and budgets were selected from prior historical trajectories. These are exploratory online tests, not a blinded holdout or independent stochastic replications.",
+    "dataset_split": "Keep shared physical paths/references together across train/validation/test. B=3/4/5 N variants and both policies reuse the same planned path (path_group_id); split_group_id also groups the related depth/friction family. Do not randomly split individual rows or time samples across these groups.",
+    "budget_as_input": "force_budget_n and torque_budget_nm are condition inputs to safety/recoverability. The same state/path at different budgets can legitimately have different labels; omitting the budget would create apparent contradictions. Matching and outcome eligibility remain separate from the planned group IDs."
+  },
+  "prefix_audits": [
+    {
+      "condition_id": "m_d18_fs100_fd100_a1p5__b04",
+      "audit": {
+        "replay_matched": true,
+        "replay_errors": {
+          "position_mm": 0.0,
+          "orientation_deg": 0.0,
+          "joint_rad": 0.0,
+          "joint_velocity_rad_s": 0.0,
+          "linear_velocity_m_s": 0.0,
+          "angular_velocity_rad_s": 0.0,
+          "force_n": 0.0,
+          "torque_nm": 0.0,
+          "normal_load_n": 0.0,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.0,
+          "finger_position": 0.0,
+          "finger_velocity": 0.0,
+          "grasp_position": 0.0,
+          "hand_pose": 0.0,
+          "wrist_raw_child": 0.0,
+          "grasp_quat_angle_deg": 0.0,
+          "hand_pose_angle_deg": 0.0
+        },
+        "replay_prefix_matched": true,
+        "replay_prefix_equal": true,
+        "replay_prefix_first_mismatch_index": null,
+        "replay_prefix_max_errors": {
+          "position_mm": 0.0,
+          "orientation_deg": 0.0,
+          "joint_rad": 0.0,
+          "joint_velocity_rad_s": 0.0,
+          "linear_velocity_m_s": 0.0,
+          "angular_velocity_rad_s": 0.0,
+          "force_n": 0.0,
+          "torque_nm": 0.0,
+          "normal_load_n": 0.0,
+          "min_separation_mm": 0.0,
+          "wrist_torque_nm": 0.0,
+          "finger_position": 0.0,
+          "finger_velocity": 0.0,
+          "grasp_position": 0.0,
+          "hand_pose": 0.0,
+          "wrist_raw_child": 0.0,
+          "grasp_quat_angle_deg": 0.0,
+          "hand_pose_angle_deg": 0.0
+        },
+        "reference_sample_count": 2811,
+        "replay_sample_count": 2811
+      }
+    },
+    {
+      "condition_id": "m_d18_fs100_fd100_a02__b04",
+      "audit": null
+    },
+    {
+      "condition_id": "m_d18_fs100_fd100_a03__b04",
+      "audit": null
+    },
+    {
+      "condition_id": "m_d18_fs100_fd100_a04__b04",
+      "audit": null
+    },
+    {
+      "condition_id": "m_d18_fs100_fd100_a05__b04",
+      "audit": null
+    },
+    {
+      "condition_id": "m_d18_fs100_fd100_a06__b04",
+      "audit": null
+    }
+  ],
+  "input_files": [
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-Angle6-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/run.json",
+      "sha256": "f9a751c82a58cfa32f1e97b0671e99fdfa8c6af70d426d3efab050ec4a00bb24"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-Angle6-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/insertion.csv",
+      "sha256": "da31c236fa8b40b658f9bca7bca7ed54599db0f739a5b4cd2755dfc170a10f2f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-Angle6-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/recovery.csv",
+      "sha256": "cb4f8aeb3e08886bd7133bad1d71a15644ee623eba5f2009850896046e92a987"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-Angle6-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/run.json",
+      "sha256": "5afb408ddce487b25dce3530a7d7dd800745a9ef78b171caba9edca479619cc4"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-Angle6-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/insertion.csv",
+      "sha256": "da31c236fa8b40b658f9bca7bca7ed54599db0f739a5b4cd2755dfc170a10f2f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-Angle6-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/recovery.csv",
+      "sha256": "c4181679f9aad1e4f7f3944afad79d67bcd58e5bfbf31990cf2fd9f5c6297b38"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-Angle6-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/run.json",
+      "sha256": "8989998d2b7bdff880ef4676fe12e19a99fc355fde477550fac1578baec8bddd"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-Angle6-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/insertion.csv",
+      "sha256": "5bcb980bb791bf2dc38d27fd8320f0d344f05d0b8e9f570787102f5109aacad6"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-Angle6-20260915/runs/m_d18_fs100_fd100_a03__b04/straight/run.json",
+      "sha256": "e88a690f6a7c2d2398ca8029265c65038ac1058d64c2406bad4bca80e3a2041b"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-Angle6-20260915/runs/m_d18_fs100_fd100_a03__b04/straight/insertion.csv",
+      "sha256": "dff4e23e2c18bc89bd33b224a24e967407fc050a80a5178e0d36705765b3f7ec"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-Angle6-20260915/runs/m_d18_fs100_fd100_a04__b04/straight/run.json",
+      "sha256": "8bde41e2099ccf184b1f7bb6579cd4161283b77be0553811e5a000427612317d"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-Angle6-20260915/runs/m_d18_fs100_fd100_a04__b04/straight/insertion.csv",
+      "sha256": "fdc04235ac592d3b2e0c25cd83306202791737d9f8735c92b520ee237c5abbee"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-Angle6-20260915/runs/m_d18_fs100_fd100_a05__b04/straight/run.json",
+      "sha256": "fad52d47469d2589c7f945a4f58144ac50588204bc1f7cda409fabdbe9bba005"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-Angle6-20260915/runs/m_d18_fs100_fd100_a05__b04/straight/insertion.csv",
+      "sha256": "964bb3747fc3239906d31f0f6981ade6a1c40b79301847d6e83da6951f361276"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-Angle6-20260915/runs/m_d18_fs100_fd100_a06__b04/straight/run.json",
+      "sha256": "80dcf5e2d44022e20ceb387107760d7243f79127319bb36048252c812c1f8411"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-Angle6-20260915/runs/m_d18_fs100_fd100_a06__b04/straight/insertion.csv",
+      "sha256": "0e5bf6d98b30c9cb60720ef80830d1f4860c19ad9533fd8ef847ef324630fa9b"
+    }
+  ],
+  "exporter_sha256": "de3d0cd60c3a3173abce3a96bba75c278e717358cbc43d4c8687245c682b5bcd",
+  "matching_helper_sha256": "0df8a8d32cdaf88ff4a8d3076ea81713367d1c23fd07992f71efe624be902fad"
+}

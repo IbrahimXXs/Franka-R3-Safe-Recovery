@@ -1,0 +1,70 @@
+{
+  "source_study_sha256": "5dafb1f5a9585f929d425adbb4c5decb885927cd668708766a601d4687e671d3",
+  "exporter_sha256": "de3d0cd60c3a3173abce3a96bba75c278e717358cbc43d4c8687245c682b5bcd",
+  "input_files": [
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-Angle6-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/run.json",
+      "sha256": "f9a751c82a58cfa32f1e97b0671e99fdfa8c6af70d426d3efab050ec4a00bb24"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-Angle6-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/insertion.csv",
+      "sha256": "da31c236fa8b40b658f9bca7bca7ed54599db0f739a5b4cd2755dfc170a10f2f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-Angle6-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/recovery.csv",
+      "sha256": "cb4f8aeb3e08886bd7133bad1d71a15644ee623eba5f2009850896046e92a987"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-Angle6-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/run.json",
+      "sha256": "5afb408ddce487b25dce3530a7d7dd800745a9ef78b171caba9edca479619cc4"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-Angle6-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/insertion.csv",
+      "sha256": "da31c236fa8b40b658f9bca7bca7ed54599db0f739a5b4cd2755dfc170a10f2f"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-Angle6-20260915/runs/m_d18_fs100_fd100_a1p5__b04/realign/recovery.csv",
+      "sha256": "c4181679f9aad1e4f7f3944afad79d67bcd58e5bfbf31990cf2fd9f5c6297b38"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-Angle6-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/run.json",
+      "sha256": "8989998d2b7bdff880ef4676fe12e19a99fc355fde477550fac1578baec8bddd"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-Angle6-20260915/runs/m_d18_fs100_fd100_a02__b04/straight/insertion.csv",
+      "sha256": "5bcb980bb791bf2dc38d27fd8320f0d344f05d0b8e9f570787102f5109aacad6"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-Angle6-20260915/runs/m_d18_fs100_fd100_a03__b04/straight/run.json",
+      "sha256": "e88a690f6a7c2d2398ca8029265c65038ac1058d64c2406bad4bca80e3a2041b"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-Angle6-20260915/runs/m_d18_fs100_fd100_a03__b04/straight/insertion.csv",
+      "sha256": "dff4e23e2c18bc89bd33b224a24e967407fc050a80a5178e0d36705765b3f7ec"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-Angle6-20260915/runs/m_d18_fs100_fd100_a04__b04/straight/run.json",
+      "sha256": "8bde41e2099ccf184b1f7bb6579cd4161283b77be0553811e5a000427612317d"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-Angle6-20260915/runs/m_d18_fs100_fd100_a04__b04/straight/insertion.csv",
+      "sha256": "fdc04235ac592d3b2e0c25cd83306202791737d9f8735c92b520ee237c5abbee"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-Angle6-20260915/runs/m_d18_fs100_fd100_a05__b04/straight/run.json",
+      "sha256": "fad52d47469d2589c7f945a4f58144ac50588204bc1f7cda409fabdbe9bba005"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-Angle6-20260915/runs/m_d18_fs100_fd100_a05__b04/straight/insertion.csv",
+      "sha256": "964bb3747fc3239906d31f0f6981ade6a1c40b79301847d6e83da6951f361276"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-Angle6-20260915/runs/m_d18_fs100_fd100_a06__b04/straight/run.json",
+      "sha256": "80dcf5e2d44022e20ceb387107760d7243f79127319bb36048252c812c1f8411"
+    },
+    {
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-Angle6-20260915/runs/m_d18_fs100_fd100_a06__b04/straight/insertion.csv",
+      "sha256": "0e5bf6d98b30c9cb60720ef80830d1f4860c19ad9533fd8ef847ef324630fa9b"
+    }
+  ]
+}

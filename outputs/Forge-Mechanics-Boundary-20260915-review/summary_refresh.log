@@ -1,0 +1,55 @@
+{
+  "schema": "Forge-mechanics-review-v1",
+  "source_status": "complete",
+  "recorded_attempts": 3,
+  "elapsed_wall_seconds": 737.6700909019964,
+  "counts": {
+    "planned_cases": 3,
+    "completed_cases": 3,
+    "numerically_valid_completed_cases": 3,
+    "reference_state_counts": {
+      "valid_protocol_completed": 3
+    },
+    "pair_state_counts": {
+      "matched_results_known": 3
+    },
+    "valid_depth_gates_passed": 3,
+    "valid_protocol_completed": 3,
+    "valid_continuous_straight_safe": 3,
+    "matched_policy_pairs": 3,
+    "matched_complete_cost_pairs": 3,
+    "matched_both_policies_safe": 3,
+    "matched_straight_failed_realign_safe": 0
+  },
+  "interpretation": {
+    "unit": "latest attempt per frozen planned condition; retries are not independent experiments",
+    "entry": "aligned target-depth dwell is separate from tilt-window depth loss and numerical/grasp acceptance",
+    "pair": "continuous straight is compared with realign only when endpoint and full-prefix tolerances match and both policy outcomes are eligible; bitwise prefix equality is diagnostic only",
+    "cost": "recorded peaks from censored motions are partial; paired_costs_complete identifies two completed clearances",
+    "controls": "theta=0 control shares target depth and effective static/dynamic friction pair; differences are descriptive, not significance tests",
+    "missing": "absent measurements remain null, never zero; excluded cases remain in the planned denominator"
+  },
+  "by_target_depth": [
+    {
+      "target_depth_mm": 18.0,
+      "planned_cases": 3,
+      "completed_cases": 3,
+      "numerically_valid_completed_cases": 3,
+      "reference_state_counts": {
+        "valid_protocol_completed": 3
+      },
+      "pair_state_counts": {
+        "matched_results_known": 3
+      },
+      "valid_depth_gates_passed": 3,
+      "valid_protocol_completed": 3,
+      "valid_continuous_straight_safe": 3,
+      "matched_policy_pairs": 3,
+      "matched_complete_cost_pairs": 3,
+      "matched_both_policies_safe": 3,
+      "matched_straight_failed_realign_safe": 0
+    }
+  ],
+  "source_study": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Boundary-20260915",
+  "source_manifest_sha256": "c884ba01432ed49ac1635ea0cecad5f5a483ff48e853942ea85c994d3267f8b2"
+}

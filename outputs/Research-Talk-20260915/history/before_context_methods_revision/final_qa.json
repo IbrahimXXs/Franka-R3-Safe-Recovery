@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "revision": "prevention_first",
+  "pdf_sha256": "01f3bda24c397f2b146759f0678d26218bc1112b4fe107c208326e160d97c8fc",
+  "page_count": 15,
+  "format_points": [
+    960,
+    540
+  ],
+  "main_slides": 12,
+  "appendix_slides": 3,
+  "planned_main_seconds": 600,
+  "research_priority": "First prevent insertion-induced jamming; then restore withdrawability under an operation-force budget.",
+  "visual_review": {
+    "renderer": "Poppler pdftoppm -r 90 -png",
+    "all_latest_pages_inspected": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "independent_agent_pages": [
+      3,
+      4,
+      9,
+      10,
+      11,
+      12
+    ],
+    "final_adjustment": "Slide12 column spacing corrected. All other final page renders are pixel-identical to the inspected revision."
+  },
+  "evidence_boundary": "Existing paired recovery tests establish a useful adverse scenario and preliminary force-limited recovery feasibility. Jam-preventing insertion control remains unvalidated.",
+  "preservation": "All plotted data and scene assets remain byte-identical to the prior version. Earlier PDF, source bundle and audit retained in history/before_prevention_first_revision.",
+  "generated_utc": "2026-09-15T18:10:56.106404+00:00"
+}

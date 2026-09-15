@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "revision": "expanded_context_methods",
+  "pdf_sha256": "9b1357d312ab0836b81fb6ea0ac613811e2269f63351c675dc6de6653107a8ac",
+  "page_count": 16,
+  "main_slides": 12,
+  "appendix_slides": 4,
+  "planned_main_seconds": 600,
+  "visual_review": {
+    "all_latest_pages_inspected": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "independent_review_pages": [
+      2,
+      3,
+      8,
+      9,
+      10,
+      11,
+      12,
+      16
+    ],
+    "final_changes": "Fixed flow-box title wrapping, expanded CBF abbreviation, added recovery completion metric and corrected Robotiq section labels. Last render changed only page11; all other final renders pixel-identical to inspected versions."
+  },
+  "changes": [
+    "Expanded metal-peg/plastic-socket contact scenario",
+    "Explained finite friction grip, part/fixture damage and uncontrolled release as physical motivations",
+    "Removed angle-extension page and its displayed study coverage",
+    "Added three detailed proposed methods: risk/exit-cost model, insertion planning/control, full-path force-limited recovery",
+    "Moved depth comparison to Appendix A; retained 10-minute main pacing"
+  ],
+  "evidence_boundary": "Physical motivation is separate from unmodeled failure modes. Prevention models, MPC and predictive safety filtering remain proposed. Existing quantitative recovery data are unchanged.",
+  "new_sources": "Original Robotiq and HSE PDFs retrieved directly. URL/hash/section checks retained in reference_checks/verification.json. Full documents excluded from source bundle.",
+  "generated_utc": "2026-09-15T18:25:02.334028+00:00"
+}

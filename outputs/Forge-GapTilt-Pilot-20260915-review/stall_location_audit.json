@@ -1,0 +1,2713 @@
+{
+  "schema": "offline-stall-location-audit-v1",
+  "generated_utc": "2026-09-15T10:49:39.446940+00:00",
+  "audit_source_sha256": "b34829b67ca211a26ba1821b4f671c1d31217e28113b37cbd11ef603c3717581",
+  "interpretation": "Original first_stall is generic command tracking; in-hole tracking stall is not itself proof of jamming.",
+  "derivation": "Apply the saved trailing progress predicate; independently require every depth in its trailing window to be >0 mm.",
+  "prohibition": "Do not inherit a recovery label or force cost from an earlier free-space checkpoint for a later in-hole event. Derived events without a matching recorded recovery checkpoint have unknown recovery outcomes.",
+  "pilot_summary": {
+    "completed_reference_attempts": 39,
+    "distinct_cases": 23,
+    "numerically_valid_attempts": 19,
+    "numerically_invalid_attempts": 20,
+    "raw_first_stall_locations": {
+      "no_generic_stall": 17,
+      "fully_in_hole": 22
+    },
+    "valid_attempts_with_in_hole_stall": 2,
+    "invalid_attempts_with_in_hole_stall": 20
+  },
+  "pilot_studies": [
+    {
+      "study": "outputs/Forge-GapTilt-Pilot-20260915/gap_0100/study.json",
+      "study_sha256": "d6485694def72d9b1827c04b567e0488adff71b59fbdefe6930bb30d8ab9515a",
+      "physics_hz": 120,
+      "study_status_at_read": "target_not_met",
+      "attempts": [
+        {
+          "trajectory_id": "g0100_aligned_try00",
+          "case_id": "g0100_aligned",
+          "status": "complete",
+          "parent_numerically_valid": true,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0100/g0100_aligned_try00/insertion.csv",
+          "raw_csv_sha256": "2ff27664e336b5c08dd79ced8eb4e437f34026eab49d1765080cbfef17a1677f",
+          "generic_stall_events": [],
+          "derived_full_window_in_hole_events": [],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "no_generic_stall",
+          "raw_first_stall_is_first_in_hole_event": false,
+          "first_in_hole_has_recorded_recovery_checkpoint": false,
+          "first_in_hole_has_recorded_recovery_probe": false
+        },
+        {
+          "trajectory_id": "g0100_d30_pitch_pos05_try00",
+          "case_id": "g0100_d30_pitch_pos05",
+          "status": "complete",
+          "parent_numerically_valid": true,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0100/g0100_d30_pitch_pos05_try00/insertion.csv",
+          "raw_csv_sha256": "2df98020a0cb25dd82cefe20cd909f03d5e683930ba8568183b683008bd9a3b9",
+          "generic_stall_events": [],
+          "derived_full_window_in_hole_events": [],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "no_generic_stall",
+          "raw_first_stall_is_first_in_hole_event": false,
+          "first_in_hole_has_recorded_recovery_checkpoint": false,
+          "first_in_hole_has_recorded_recovery_probe": false
+        },
+        {
+          "trajectory_id": "g0100_d30_pitch_pos20_try00",
+          "case_id": "g0100_d30_pitch_pos20",
+          "status": "complete",
+          "parent_numerically_valid": false,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0100/g0100_d30_pitch_pos20_try00/insertion.csv",
+          "raw_csv_sha256": "4d6b374a6b760a395291c03caf691cdb651f95dbd242f17854e8260b5e25f506",
+          "generic_stall_events": [
+            {
+              "index": 925,
+              "raw_confirmation": {
+                "time_s": 7.7083333333329875,
+                "phase": "insert",
+                "depth_mm": 10.848467797040941,
+                "command_depth_mm": 14.025124443901909,
+                "normal_load_n": 8.68655014038086,
+                "contact_count": 52.0,
+                "force_norm_n": 2.063504457473755,
+                "wrist_force_n": 2.0320892333984375,
+                "wrist_torque_nm": 0.008399954997003078,
+                "tilt_deg": 1.7420367340894216,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -10.969853370012988,
+                "reference_step": 925.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 865,
+              "window_start_time_s": 7.208333333333016,
+              "window_depth_min_mm": 10.759530216455461,
+              "window_depth_max_mm": 10.84892973303795,
+              "actual_window_progress_mm": 0.08893758058547974,
+              "command_window_progress_mm": 2.43499755859375,
+              "window_max_normal_load_n": 9.162424087524414,
+              "window_max_contact_count": 52.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -10.970223262382568,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": []
+                }
+              ]
+            }
+          ],
+          "derived_full_window_in_hole_events": [
+            {
+              "index": 925,
+              "raw_confirmation": {
+                "time_s": 7.7083333333329875,
+                "phase": "insert",
+                "depth_mm": 10.848467797040941,
+                "command_depth_mm": 14.025124443901909,
+                "normal_load_n": 8.68655014038086,
+                "contact_count": 52.0,
+                "force_norm_n": 2.063504457473755,
+                "wrist_force_n": 2.0320892333984375,
+                "wrist_torque_nm": 0.008399954997003078,
+                "tilt_deg": 1.7420367340894216,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -10.969853370012988,
+                "reference_step": 925.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 865,
+              "window_start_time_s": 7.208333333333016,
+              "window_depth_min_mm": 10.759530216455461,
+              "window_depth_max_mm": 10.84892973303795,
+              "actual_window_progress_mm": 0.08893758058547974,
+              "command_window_progress_mm": 2.43499755859375,
+              "window_max_normal_load_n": 9.162424087524414,
+              "window_max_contact_count": 52.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -10.970223262382568,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": []
+                }
+              ]
+            }
+          ],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "fully_in_hole",
+          "raw_first_stall_is_first_in_hole_event": true,
+          "first_in_hole_has_recorded_recovery_checkpoint": true,
+          "first_in_hole_has_recorded_recovery_probe": false
+        },
+        {
+          "trajectory_id": "g0100_d30_pitch_pos20_try01",
+          "case_id": "g0100_d30_pitch_pos20",
+          "status": "complete",
+          "parent_numerically_valid": false,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0100/g0100_d30_pitch_pos20_try01/insertion.csv",
+          "raw_csv_sha256": "22c7853d1de570d57b558c30fdba909be8ad8a767612454ec7ead17484d05980",
+          "generic_stall_events": [
+            {
+              "index": 925,
+              "raw_confirmation": {
+                "time_s": 7.708333333332895,
+                "phase": "insert",
+                "depth_mm": 10.848467797040941,
+                "command_depth_mm": 14.025124443901909,
+                "normal_load_n": 8.68655014038086,
+                "contact_count": 52.0,
+                "force_norm_n": 2.063504457473755,
+                "wrist_force_n": 2.0320892333984375,
+                "wrist_torque_nm": 0.008399954997003078,
+                "tilt_deg": 1.7420367340894216,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -10.969853370012988,
+                "reference_step": 925.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 865,
+              "window_start_time_s": 7.208333333332924,
+              "window_depth_min_mm": 10.759530216455461,
+              "window_depth_max_mm": 10.84892973303795,
+              "actual_window_progress_mm": 0.08893758058547974,
+              "command_window_progress_mm": 2.43499755859375,
+              "window_max_normal_load_n": 9.162424087524414,
+              "window_max_contact_count": 52.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -10.970223262382568,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": []
+                }
+              ]
+            }
+          ],
+          "derived_full_window_in_hole_events": [
+            {
+              "index": 925,
+              "raw_confirmation": {
+                "time_s": 7.708333333332895,
+                "phase": "insert",
+                "depth_mm": 10.848467797040941,
+                "command_depth_mm": 14.025124443901909,
+                "normal_load_n": 8.68655014038086,
+                "contact_count": 52.0,
+                "force_norm_n": 2.063504457473755,
+                "wrist_force_n": 2.0320892333984375,
+                "wrist_torque_nm": 0.008399954997003078,
+                "tilt_deg": 1.7420367340894216,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -10.969853370012988,
+                "reference_step": 925.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 865,
+              "window_start_time_s": 7.208333333332924,
+              "window_depth_min_mm": 10.759530216455461,
+              "window_depth_max_mm": 10.84892973303795,
+              "actual_window_progress_mm": 0.08893758058547974,
+              "command_window_progress_mm": 2.43499755859375,
+              "window_max_normal_load_n": 9.162424087524414,
+              "window_max_contact_count": 52.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -10.970223262382568,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": []
+                }
+              ]
+            }
+          ],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "fully_in_hole",
+          "raw_first_stall_is_first_in_hole_event": true,
+          "first_in_hole_has_recorded_recovery_checkpoint": true,
+          "first_in_hole_has_recorded_recovery_probe": false
+        },
+        {
+          "trajectory_id": "g0100_d30_pitch_pos20_try02",
+          "case_id": "g0100_d30_pitch_pos20",
+          "status": "complete",
+          "parent_numerically_valid": false,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0100/g0100_d30_pitch_pos20_try02/insertion.csv",
+          "raw_csv_sha256": "f76a568a86a1c4c7fa4e14f5b95ae3a69abdd8f4e3286552d2959fe53dff5351",
+          "generic_stall_events": [
+            {
+              "index": 925,
+              "raw_confirmation": {
+                "time_s": 7.708333333332895,
+                "phase": "insert",
+                "depth_mm": 10.850621014833452,
+                "command_depth_mm": 14.025124443901909,
+                "normal_load_n": 8.800093650817871,
+                "contact_count": 51.0,
+                "force_norm_n": 2.9524519443511963,
+                "wrist_force_n": 2.8051657676696777,
+                "wrist_torque_nm": 0.035346679389476776,
+                "tilt_deg": 1.7497710398903603,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -10.972545349063218,
+                "reference_step": 925.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 865,
+              "window_start_time_s": 7.208333333332924,
+              "window_depth_min_mm": 10.751796513795854,
+              "window_depth_max_mm": 10.850628465414049,
+              "actual_window_progress_mm": 0.09882450103759766,
+              "command_window_progress_mm": 2.43499755859375,
+              "window_max_normal_load_n": 9.756875991821289,
+              "window_max_contact_count": 53.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -10.972545349063218,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": []
+                }
+              ]
+            }
+          ],
+          "derived_full_window_in_hole_events": [
+            {
+              "index": 925,
+              "raw_confirmation": {
+                "time_s": 7.708333333332895,
+                "phase": "insert",
+                "depth_mm": 10.850621014833452,
+                "command_depth_mm": 14.025124443901909,
+                "normal_load_n": 8.800093650817871,
+                "contact_count": 51.0,
+                "force_norm_n": 2.9524519443511963,
+                "wrist_force_n": 2.8051657676696777,
+                "wrist_torque_nm": 0.035346679389476776,
+                "tilt_deg": 1.7497710398903603,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -10.972545349063218,
+                "reference_step": 925.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 865,
+              "window_start_time_s": 7.208333333332924,
+              "window_depth_min_mm": 10.751796513795854,
+              "window_depth_max_mm": 10.850628465414049,
+              "actual_window_progress_mm": 0.09882450103759766,
+              "command_window_progress_mm": 2.43499755859375,
+              "window_max_normal_load_n": 9.756875991821289,
+              "window_max_contact_count": 53.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -10.972545349063218,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": []
+                }
+              ]
+            }
+          ],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "fully_in_hole",
+          "raw_first_stall_is_first_in_hole_event": true,
+          "first_in_hole_has_recorded_recovery_checkpoint": true,
+          "first_in_hole_has_recorded_recovery_probe": false
+        },
+        {
+          "trajectory_id": "g0100_d30_pitch_pos20_try03",
+          "case_id": "g0100_d30_pitch_pos20",
+          "status": "complete",
+          "parent_numerically_valid": false,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0100/g0100_d30_pitch_pos20_try03/insertion.csv",
+          "raw_csv_sha256": "c54ed9ec3f12a6a0587a01c8fe4237df9257b83ec4ed00dc228b78bf2da7ae39",
+          "generic_stall_events": [
+            {
+              "index": 925,
+              "raw_confirmation": {
+                "time_s": 7.708333333332895,
+                "phase": "insert",
+                "depth_mm": 10.848467797040941,
+                "command_depth_mm": 14.025124443901909,
+                "normal_load_n": 8.68655014038086,
+                "contact_count": 52.0,
+                "force_norm_n": 2.063504457473755,
+                "wrist_force_n": 2.0320892333984375,
+                "wrist_torque_nm": 0.008399954997003078,
+                "tilt_deg": 1.7420367340894216,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -10.969853370012988,
+                "reference_step": 925.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 865,
+              "window_start_time_s": 7.208333333332924,
+              "window_depth_min_mm": 10.759530216455461,
+              "window_depth_max_mm": 10.84892973303795,
+              "actual_window_progress_mm": 0.08893758058547974,
+              "command_window_progress_mm": 2.43499755859375,
+              "window_max_normal_load_n": 9.162424087524414,
+              "window_max_contact_count": 52.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -10.970223262382568,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": []
+                }
+              ]
+            }
+          ],
+          "derived_full_window_in_hole_events": [
+            {
+              "index": 925,
+              "raw_confirmation": {
+                "time_s": 7.708333333332895,
+                "phase": "insert",
+                "depth_mm": 10.848467797040941,
+                "command_depth_mm": 14.025124443901909,
+                "normal_load_n": 8.68655014038086,
+                "contact_count": 52.0,
+                "force_norm_n": 2.063504457473755,
+                "wrist_force_n": 2.0320892333984375,
+                "wrist_torque_nm": 0.008399954997003078,
+                "tilt_deg": 1.7420367340894216,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -10.969853370012988,
+                "reference_step": 925.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 865,
+              "window_start_time_s": 7.208333333332924,
+              "window_depth_min_mm": 10.759530216455461,
+              "window_depth_max_mm": 10.84892973303795,
+              "actual_window_progress_mm": 0.08893758058547974,
+              "command_window_progress_mm": 2.43499755859375,
+              "window_max_normal_load_n": 9.162424087524414,
+              "window_max_contact_count": 52.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -10.970223262382568,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": []
+                }
+              ]
+            }
+          ],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "fully_in_hole",
+          "raw_first_stall_is_first_in_hole_event": true,
+          "first_in_hole_has_recorded_recovery_checkpoint": true,
+          "first_in_hole_has_recorded_recovery_probe": false
+        },
+        {
+          "trajectory_id": "g0100_d30_pitch_pos20_try04",
+          "case_id": "g0100_d30_pitch_pos20",
+          "status": "complete",
+          "parent_numerically_valid": false,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0100/g0100_d30_pitch_pos20_try04/insertion.csv",
+          "raw_csv_sha256": "65e1079062340804d1fdfe122dc5a7c3d6d5fb5065b62ce909d78c895dd43951",
+          "generic_stall_events": [
+            {
+              "index": 925,
+              "raw_confirmation": {
+                "time_s": 7.708333333339468,
+                "phase": "insert",
+                "depth_mm": 10.848467797040941,
+                "command_depth_mm": 14.025124443901909,
+                "normal_load_n": 8.68655014038086,
+                "contact_count": 52.0,
+                "force_norm_n": 2.063504457473755,
+                "wrist_force_n": 2.0320892333984375,
+                "wrist_torque_nm": 0.008399954997003078,
+                "tilt_deg": 1.7420367340894216,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -10.969853370012988,
+                "reference_step": 925.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 865,
+              "window_start_time_s": 7.20833333333907,
+              "window_depth_min_mm": 10.759530216455461,
+              "window_depth_max_mm": 10.84892973303795,
+              "actual_window_progress_mm": 0.08893758058547974,
+              "command_window_progress_mm": 2.43499755859375,
+              "window_max_normal_load_n": 9.162424087524414,
+              "window_max_contact_count": 52.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -10.970223262382568,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": []
+                }
+              ]
+            }
+          ],
+          "derived_full_window_in_hole_events": [
+            {
+              "index": 925,
+              "raw_confirmation": {
+                "time_s": 7.708333333339468,
+                "phase": "insert",
+                "depth_mm": 10.848467797040941,
+                "command_depth_mm": 14.025124443901909,
+                "normal_load_n": 8.68655014038086,
+                "contact_count": 52.0,
+                "force_norm_n": 2.063504457473755,
+                "wrist_force_n": 2.0320892333984375,
+                "wrist_torque_nm": 0.008399954997003078,
+                "tilt_deg": 1.7420367340894216,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -10.969853370012988,
+                "reference_step": 925.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 865,
+              "window_start_time_s": 7.20833333333907,
+              "window_depth_min_mm": 10.759530216455461,
+              "window_depth_max_mm": 10.84892973303795,
+              "actual_window_progress_mm": 0.08893758058547974,
+              "command_window_progress_mm": 2.43499755859375,
+              "window_max_normal_load_n": 9.162424087524414,
+              "window_max_contact_count": 52.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -10.970223262382568,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": []
+                }
+              ]
+            }
+          ],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "fully_in_hole",
+          "raw_first_stall_is_first_in_hole_event": true,
+          "first_in_hole_has_recorded_recovery_checkpoint": true,
+          "first_in_hole_has_recorded_recovery_probe": false
+        },
+        {
+          "trajectory_id": "g0100_d50_pitch_pos05_try00",
+          "case_id": "g0100_d50_pitch_pos05",
+          "status": "complete",
+          "parent_numerically_valid": true,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0100/g0100_d50_pitch_pos05_try00/insertion.csv",
+          "raw_csv_sha256": "c8ecae14fa5cf5e1312ed5b68cd83fdbc892797033104bd6481d833455c65330",
+          "generic_stall_events": [],
+          "derived_full_window_in_hole_events": [],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "no_generic_stall",
+          "raw_first_stall_is_first_in_hole_event": false,
+          "first_in_hole_has_recorded_recovery_checkpoint": false,
+          "first_in_hole_has_recorded_recovery_probe": false
+        },
+        {
+          "trajectory_id": "g0100_d50_pitch_pos20_try00",
+          "case_id": "g0100_d50_pitch_pos20",
+          "status": "complete",
+          "parent_numerically_valid": false,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0100/g0100_d50_pitch_pos20_try00/insertion.csv",
+          "raw_csv_sha256": "695a7128f4a8d66c71e1ec274d0fad799a4fa1c26304c07d3d8e88d4af0a68f2",
+          "generic_stall_events": [
+            {
+              "index": 992,
+              "raw_confirmation": {
+                "time_s": 8.266666666659148,
+                "phase": "insert",
+                "depth_mm": 13.669443875551226,
+                "command_depth_mm": 16.385277777777773,
+                "normal_load_n": 14.846199035644531,
+                "contact_count": 45.0,
+                "force_norm_n": 2.3703432083129883,
+                "wrist_force_n": 2.266960382461548,
+                "wrist_torque_nm": 0.009660592302680016,
+                "tilt_deg": 1.5025896644262984,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -13.774148844488865,
+                "reference_step": 992.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 932,
+              "window_start_time_s": 7.766666666659603,
+              "window_depth_min_mm": 13.579414784908296,
+              "window_depth_max_mm": 13.670129328966143,
+              "actual_window_progress_mm": 0.09002909064292908,
+              "command_window_progress_mm": 2.093945312499997,
+              "window_max_normal_load_n": 15.008428573608398,
+              "window_max_contact_count": 58.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -13.774148844488865,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": []
+                }
+              ]
+            }
+          ],
+          "derived_full_window_in_hole_events": [
+            {
+              "index": 992,
+              "raw_confirmation": {
+                "time_s": 8.266666666659148,
+                "phase": "insert",
+                "depth_mm": 13.669443875551226,
+                "command_depth_mm": 16.385277777777773,
+                "normal_load_n": 14.846199035644531,
+                "contact_count": 45.0,
+                "force_norm_n": 2.3703432083129883,
+                "wrist_force_n": 2.266960382461548,
+                "wrist_torque_nm": 0.009660592302680016,
+                "tilt_deg": 1.5025896644262984,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -13.774148844488865,
+                "reference_step": 992.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 932,
+              "window_start_time_s": 7.766666666659603,
+              "window_depth_min_mm": 13.579414784908296,
+              "window_depth_max_mm": 13.670129328966143,
+              "actual_window_progress_mm": 0.09002909064292908,
+              "command_window_progress_mm": 2.093945312499997,
+              "window_max_normal_load_n": 15.008428573608398,
+              "window_max_contact_count": 58.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -13.774148844488865,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": []
+                }
+              ]
+            }
+          ],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "fully_in_hole",
+          "raw_first_stall_is_first_in_hole_event": true,
+          "first_in_hole_has_recorded_recovery_checkpoint": true,
+          "first_in_hole_has_recorded_recovery_probe": false
+        },
+        {
+          "trajectory_id": "g0100_d50_pitch_pos20_try01",
+          "case_id": "g0100_d50_pitch_pos20",
+          "status": "complete",
+          "parent_numerically_valid": false,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0100/g0100_d50_pitch_pos20_try01/insertion.csv",
+          "raw_csv_sha256": "fc7ea242201a4583a1a54fe5ad31990689ca47778b629d89cd489814e33fa4f4",
+          "generic_stall_events": [
+            {
+              "index": 992,
+              "raw_confirmation": {
+                "time_s": 8.266666666659148,
+                "phase": "insert",
+                "depth_mm": 13.647047430276873,
+                "command_depth_mm": 16.385277777777773,
+                "normal_load_n": 13.198858261108398,
+                "contact_count": 44.0,
+                "force_norm_n": 1.4890471696853638,
+                "wrist_force_n": 1.5174570083618164,
+                "wrist_torque_nm": 0.06776317954063416,
+                "tilt_deg": 1.5081794652578353,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -13.752141823555387,
+                "reference_step": 992.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 932,
+              "window_start_time_s": 7.766666666659603,
+              "window_depth_min_mm": 13.57850953936577,
+              "window_depth_max_mm": 13.648686558008196,
+              "actual_window_progress_mm": 0.0685378909111023,
+              "command_window_progress_mm": 2.093945312499997,
+              "window_max_normal_load_n": 14.881120681762695,
+              "window_max_contact_count": 60.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -13.75313702922682,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": []
+                }
+              ]
+            }
+          ],
+          "derived_full_window_in_hole_events": [
+            {
+              "index": 992,
+              "raw_confirmation": {
+                "time_s": 8.266666666659148,
+                "phase": "insert",
+                "depth_mm": 13.647047430276873,
+                "command_depth_mm": 16.385277777777773,
+                "normal_load_n": 13.198858261108398,
+                "contact_count": 44.0,
+                "force_norm_n": 1.4890471696853638,
+                "wrist_force_n": 1.5174570083618164,
+                "wrist_torque_nm": 0.06776317954063416,
+                "tilt_deg": 1.5081794652578353,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -13.752141823555387,
+                "reference_step": 992.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 932,
+              "window_start_time_s": 7.766666666659603,
+              "window_depth_min_mm": 13.57850953936577,
+              "window_depth_max_mm": 13.648686558008196,
+              "actual_window_progress_mm": 0.0685378909111023,
+              "command_window_progress_mm": 2.093945312499997,
+              "window_max_normal_load_n": 14.881120681762695,
+              "window_max_contact_count": 60.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -13.75313702922682,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": []
+                }
+              ]
+            }
+          ],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "fully_in_hole",
+          "raw_first_stall_is_first_in_hole_event": true,
+          "first_in_hole_has_recorded_recovery_checkpoint": true,
+          "first_in_hole_has_recorded_recovery_probe": false
+        },
+        {
+          "trajectory_id": "g0100_d50_pitch_pos20_try02",
+          "case_id": "g0100_d50_pitch_pos20",
+          "status": "complete",
+          "parent_numerically_valid": false,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0100/g0100_d50_pitch_pos20_try02/insertion.csv",
+          "raw_csv_sha256": "fc7ea242201a4583a1a54fe5ad31990689ca47778b629d89cd489814e33fa4f4",
+          "generic_stall_events": [
+            {
+              "index": 992,
+              "raw_confirmation": {
+                "time_s": 8.266666666659148,
+                "phase": "insert",
+                "depth_mm": 13.647047430276873,
+                "command_depth_mm": 16.385277777777773,
+                "normal_load_n": 13.198858261108398,
+                "contact_count": 44.0,
+                "force_norm_n": 1.4890471696853638,
+                "wrist_force_n": 1.5174570083618164,
+                "wrist_torque_nm": 0.06776317954063416,
+                "tilt_deg": 1.5081794652578353,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -13.752141823555387,
+                "reference_step": 992.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 932,
+              "window_start_time_s": 7.766666666659603,
+              "window_depth_min_mm": 13.57850953936577,
+              "window_depth_max_mm": 13.648686558008196,
+              "actual_window_progress_mm": 0.0685378909111023,
+              "command_window_progress_mm": 2.093945312499997,
+              "window_max_normal_load_n": 14.881120681762695,
+              "window_max_contact_count": 60.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -13.75313702922682,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": []
+                }
+              ]
+            }
+          ],
+          "derived_full_window_in_hole_events": [
+            {
+              "index": 992,
+              "raw_confirmation": {
+                "time_s": 8.266666666659148,
+                "phase": "insert",
+                "depth_mm": 13.647047430276873,
+                "command_depth_mm": 16.385277777777773,
+                "normal_load_n": 13.198858261108398,
+                "contact_count": 44.0,
+                "force_norm_n": 1.4890471696853638,
+                "wrist_force_n": 1.5174570083618164,
+                "wrist_torque_nm": 0.06776317954063416,
+                "tilt_deg": 1.5081794652578353,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -13.752141823555387,
+                "reference_step": 992.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 932,
+              "window_start_time_s": 7.766666666659603,
+              "window_depth_min_mm": 13.57850953936577,
+              "window_depth_max_mm": 13.648686558008196,
+              "actual_window_progress_mm": 0.0685378909111023,
+              "command_window_progress_mm": 2.093945312499997,
+              "window_max_normal_load_n": 14.881120681762695,
+              "window_max_contact_count": 60.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -13.75313702922682,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": []
+                }
+              ]
+            }
+          ],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "fully_in_hole",
+          "raw_first_stall_is_first_in_hole_event": true,
+          "first_in_hole_has_recorded_recovery_checkpoint": true,
+          "first_in_hole_has_recorded_recovery_probe": false
+        },
+        {
+          "trajectory_id": "g0100_d50_pitch_pos20_try03",
+          "case_id": "g0100_d50_pitch_pos20",
+          "status": "complete",
+          "parent_numerically_valid": false,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0100/g0100_d50_pitch_pos20_try03/insertion.csv",
+          "raw_csv_sha256": "695a7128f4a8d66c71e1ec274d0fad799a4fa1c26304c07d3d8e88d4af0a68f2",
+          "generic_stall_events": [
+            {
+              "index": 992,
+              "raw_confirmation": {
+                "time_s": 8.266666666659148,
+                "phase": "insert",
+                "depth_mm": 13.669443875551226,
+                "command_depth_mm": 16.385277777777773,
+                "normal_load_n": 14.846199035644531,
+                "contact_count": 45.0,
+                "force_norm_n": 2.3703432083129883,
+                "wrist_force_n": 2.266960382461548,
+                "wrist_torque_nm": 0.009660592302680016,
+                "tilt_deg": 1.5025896644262984,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -13.774148844488865,
+                "reference_step": 992.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 932,
+              "window_start_time_s": 7.766666666659603,
+              "window_depth_min_mm": 13.579414784908296,
+              "window_depth_max_mm": 13.670129328966143,
+              "actual_window_progress_mm": 0.09002909064292908,
+              "command_window_progress_mm": 2.093945312499997,
+              "window_max_normal_load_n": 15.008428573608398,
+              "window_max_contact_count": 58.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -13.774148844488865,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": []
+                }
+              ]
+            }
+          ],
+          "derived_full_window_in_hole_events": [
+            {
+              "index": 992,
+              "raw_confirmation": {
+                "time_s": 8.266666666659148,
+                "phase": "insert",
+                "depth_mm": 13.669443875551226,
+                "command_depth_mm": 16.385277777777773,
+                "normal_load_n": 14.846199035644531,
+                "contact_count": 45.0,
+                "force_norm_n": 2.3703432083129883,
+                "wrist_force_n": 2.266960382461548,
+                "wrist_torque_nm": 0.009660592302680016,
+                "tilt_deg": 1.5025896644262984,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -13.774148844488865,
+                "reference_step": 992.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 932,
+              "window_start_time_s": 7.766666666659603,
+              "window_depth_min_mm": 13.579414784908296,
+              "window_depth_max_mm": 13.670129328966143,
+              "actual_window_progress_mm": 0.09002909064292908,
+              "command_window_progress_mm": 2.093945312499997,
+              "window_max_normal_load_n": 15.008428573608398,
+              "window_max_contact_count": 58.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -13.774148844488865,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": []
+                }
+              ]
+            }
+          ],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "fully_in_hole",
+          "raw_first_stall_is_first_in_hole_event": true,
+          "first_in_hole_has_recorded_recovery_checkpoint": true,
+          "first_in_hole_has_recorded_recovery_probe": false
+        },
+        {
+          "trajectory_id": "g0100_d50_pitch_pos20_try04",
+          "case_id": "g0100_d50_pitch_pos20",
+          "status": "complete",
+          "parent_numerically_valid": false,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0100/g0100_d50_pitch_pos20_try04/insertion.csv",
+          "raw_csv_sha256": "fc7ea242201a4583a1a54fe5ad31990689ca47778b629d89cd489814e33fa4f4",
+          "generic_stall_events": [
+            {
+              "index": 992,
+              "raw_confirmation": {
+                "time_s": 8.266666666659148,
+                "phase": "insert",
+                "depth_mm": 13.647047430276873,
+                "command_depth_mm": 16.385277777777773,
+                "normal_load_n": 13.198858261108398,
+                "contact_count": 44.0,
+                "force_norm_n": 1.4890471696853638,
+                "wrist_force_n": 1.5174570083618164,
+                "wrist_torque_nm": 0.06776317954063416,
+                "tilt_deg": 1.5081794652578353,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -13.752141823555387,
+                "reference_step": 992.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 932,
+              "window_start_time_s": 7.766666666659603,
+              "window_depth_min_mm": 13.57850953936577,
+              "window_depth_max_mm": 13.648686558008196,
+              "actual_window_progress_mm": 0.0685378909111023,
+              "command_window_progress_mm": 2.093945312499997,
+              "window_max_normal_load_n": 14.881120681762695,
+              "window_max_contact_count": 60.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -13.75313702922682,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": []
+                }
+              ]
+            }
+          ],
+          "derived_full_window_in_hole_events": [
+            {
+              "index": 992,
+              "raw_confirmation": {
+                "time_s": 8.266666666659148,
+                "phase": "insert",
+                "depth_mm": 13.647047430276873,
+                "command_depth_mm": 16.385277777777773,
+                "normal_load_n": 13.198858261108398,
+                "contact_count": 44.0,
+                "force_norm_n": 1.4890471696853638,
+                "wrist_force_n": 1.5174570083618164,
+                "wrist_torque_nm": 0.06776317954063416,
+                "tilt_deg": 1.5081794652578353,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -13.752141823555387,
+                "reference_step": 992.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 932,
+              "window_start_time_s": 7.766666666659603,
+              "window_depth_min_mm": 13.57850953936577,
+              "window_depth_max_mm": 13.648686558008196,
+              "actual_window_progress_mm": 0.0685378909111023,
+              "command_window_progress_mm": 2.093945312499997,
+              "window_max_normal_load_n": 14.881120681762695,
+              "window_max_contact_count": 60.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -13.75313702922682,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": []
+                }
+              ]
+            }
+          ],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "fully_in_hole",
+          "raw_first_stall_is_first_in_hole_event": true,
+          "first_in_hole_has_recorded_recovery_checkpoint": true,
+          "first_in_hole_has_recorded_recovery_probe": false
+        },
+        {
+          "trajectory_id": "g0100_d70_pitch_pos05_try00",
+          "case_id": "g0100_d70_pitch_pos05",
+          "status": "complete",
+          "parent_numerically_valid": true,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0100/g0100_d70_pitch_pos05_try00/insertion.csv",
+          "raw_csv_sha256": "76ea74f408f12e3b305df9966055fcc2be122308c7d2707ce08b4f73f94f92e5",
+          "generic_stall_events": [],
+          "derived_full_window_in_hole_events": [],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "no_generic_stall",
+          "raw_first_stall_is_first_in_hole_event": false,
+          "first_in_hole_has_recorded_recovery_checkpoint": false,
+          "first_in_hole_has_recorded_recovery_probe": false
+        },
+        {
+          "trajectory_id": "g0100_d70_pitch_pos20_try00",
+          "case_id": "g0100_d70_pitch_pos20",
+          "status": "complete",
+          "parent_numerically_valid": false,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0100/g0100_d70_pitch_pos20_try00/insertion.csv",
+          "raw_csv_sha256": "9a2e503e6d96c418cc71e6541bdd6ad4d73c6bbec3051c9807531cbf607f5497",
+          "generic_stall_events": [
+            {
+              "index": 1074,
+              "raw_confirmation": {
+                "time_s": 8.94999999999186,
+                "phase": "insert",
+                "depth_mm": 16.68236181139946,
+                "command_depth_mm": 18.5852685546875,
+                "normal_load_n": 16.42829132080078,
+                "contact_count": 49.0,
+                "force_norm_n": 1.7753863334655762,
+                "wrist_force_n": 1.7093677520751953,
+                "wrist_torque_nm": 0.024089757353067398,
+                "tilt_deg": 1.2626907043021722,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -16.770352862564494,
+                "reference_step": 1074.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 1014,
+              "window_start_time_s": 8.449999999992315,
+              "window_depth_min_mm": 16.587340831756592,
+              "window_depth_max_mm": 16.684727370738983,
+              "actual_window_progress_mm": 0.09502097964286804,
+              "command_window_progress_mm": 1.5273925781249993,
+              "window_max_normal_load_n": 19.057680130004883,
+              "window_max_contact_count": 58.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -16.77091522671111,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": []
+                }
+              ]
+            }
+          ],
+          "derived_full_window_in_hole_events": [
+            {
+              "index": 1074,
+              "raw_confirmation": {
+                "time_s": 8.94999999999186,
+                "phase": "insert",
+                "depth_mm": 16.68236181139946,
+                "command_depth_mm": 18.5852685546875,
+                "normal_load_n": 16.42829132080078,
+                "contact_count": 49.0,
+                "force_norm_n": 1.7753863334655762,
+                "wrist_force_n": 1.7093677520751953,
+                "wrist_torque_nm": 0.024089757353067398,
+                "tilt_deg": 1.2626907043021722,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -16.770352862564494,
+                "reference_step": 1074.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 1014,
+              "window_start_time_s": 8.449999999992315,
+              "window_depth_min_mm": 16.587340831756592,
+              "window_depth_max_mm": 16.684727370738983,
+              "actual_window_progress_mm": 0.09502097964286804,
+              "command_window_progress_mm": 1.5273925781249993,
+              "window_max_normal_load_n": 19.057680130004883,
+              "window_max_contact_count": 58.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -16.77091522671111,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": []
+                }
+              ]
+            }
+          ],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "fully_in_hole",
+          "raw_first_stall_is_first_in_hole_event": true,
+          "first_in_hole_has_recorded_recovery_checkpoint": true,
+          "first_in_hole_has_recorded_recovery_probe": false
+        },
+        {
+          "trajectory_id": "g0100_d70_pitch_pos20_try01",
+          "case_id": "g0100_d70_pitch_pos20",
+          "status": "complete",
+          "parent_numerically_valid": false,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0100/g0100_d70_pitch_pos20_try01/insertion.csv",
+          "raw_csv_sha256": "66e93645d865851ad2ccf86c0f66585231c291d08f6350244653121cb6807e48",
+          "generic_stall_events": [
+            {
+              "index": 1074,
+              "raw_confirmation": {
+                "time_s": 8.94999999999186,
+                "phase": "insert",
+                "depth_mm": 16.671908646821976,
+                "command_depth_mm": 18.5852685546875,
+                "normal_load_n": 15.317440032958984,
+                "contact_count": 50.0,
+                "force_norm_n": 2.1035139560699463,
+                "wrist_force_n": 1.9965705871582031,
+                "wrist_torque_nm": 0.026148859411478043,
+                "tilt_deg": 1.1910760932241684,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -16.754909948840265,
+                "reference_step": 1074.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 1014,
+              "window_start_time_s": 8.449999999992315,
+              "window_depth_min_mm": 16.58255010843277,
+              "window_depth_max_mm": 16.67560413479805,
+              "actual_window_progress_mm": 0.08935853838920593,
+              "command_window_progress_mm": 1.5273925781249993,
+              "window_max_normal_load_n": 17.22130584716797,
+              "window_max_contact_count": 61.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -16.759653753703716,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": []
+                }
+              ]
+            }
+          ],
+          "derived_full_window_in_hole_events": [
+            {
+              "index": 1074,
+              "raw_confirmation": {
+                "time_s": 8.94999999999186,
+                "phase": "insert",
+                "depth_mm": 16.671908646821976,
+                "command_depth_mm": 18.5852685546875,
+                "normal_load_n": 15.317440032958984,
+                "contact_count": 50.0,
+                "force_norm_n": 2.1035139560699463,
+                "wrist_force_n": 1.9965705871582031,
+                "wrist_torque_nm": 0.026148859411478043,
+                "tilt_deg": 1.1910760932241684,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -16.754909948840265,
+                "reference_step": 1074.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 1014,
+              "window_start_time_s": 8.449999999992315,
+              "window_depth_min_mm": 16.58255010843277,
+              "window_depth_max_mm": 16.67560413479805,
+              "actual_window_progress_mm": 0.08935853838920593,
+              "command_window_progress_mm": 1.5273925781249993,
+              "window_max_normal_load_n": 17.22130584716797,
+              "window_max_contact_count": 61.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -16.759653753703716,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": []
+                }
+              ]
+            }
+          ],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "fully_in_hole",
+          "raw_first_stall_is_first_in_hole_event": true,
+          "first_in_hole_has_recorded_recovery_checkpoint": true,
+          "first_in_hole_has_recorded_recovery_probe": false
+        },
+        {
+          "trajectory_id": "g0100_d70_pitch_pos20_try02",
+          "case_id": "g0100_d70_pitch_pos20",
+          "status": "complete",
+          "parent_numerically_valid": false,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0100/g0100_d70_pitch_pos20_try02/insertion.csv",
+          "raw_csv_sha256": "9a2e503e6d96c418cc71e6541bdd6ad4d73c6bbec3051c9807531cbf607f5497",
+          "generic_stall_events": [
+            {
+              "index": 1074,
+              "raw_confirmation": {
+                "time_s": 8.94999999999186,
+                "phase": "insert",
+                "depth_mm": 16.68236181139946,
+                "command_depth_mm": 18.5852685546875,
+                "normal_load_n": 16.42829132080078,
+                "contact_count": 49.0,
+                "force_norm_n": 1.7753863334655762,
+                "wrist_force_n": 1.7093677520751953,
+                "wrist_torque_nm": 0.024089757353067398,
+                "tilt_deg": 1.2626907043021722,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -16.770352862564494,
+                "reference_step": 1074.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 1014,
+              "window_start_time_s": 8.449999999992315,
+              "window_depth_min_mm": 16.587340831756592,
+              "window_depth_max_mm": 16.684727370738983,
+              "actual_window_progress_mm": 0.09502097964286804,
+              "command_window_progress_mm": 1.5273925781249993,
+              "window_max_normal_load_n": 19.057680130004883,
+              "window_max_contact_count": 58.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -16.77091522671111,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": []
+                }
+              ]
+            }
+          ],
+          "derived_full_window_in_hole_events": [
+            {
+              "index": 1074,
+              "raw_confirmation": {
+                "time_s": 8.94999999999186,
+                "phase": "insert",
+                "depth_mm": 16.68236181139946,
+                "command_depth_mm": 18.5852685546875,
+                "normal_load_n": 16.42829132080078,
+                "contact_count": 49.0,
+                "force_norm_n": 1.7753863334655762,
+                "wrist_force_n": 1.7093677520751953,
+                "wrist_torque_nm": 0.024089757353067398,
+                "tilt_deg": 1.2626907043021722,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -16.770352862564494,
+                "reference_step": 1074.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 1014,
+              "window_start_time_s": 8.449999999992315,
+              "window_depth_min_mm": 16.587340831756592,
+              "window_depth_max_mm": 16.684727370738983,
+              "actual_window_progress_mm": 0.09502097964286804,
+              "command_window_progress_mm": 1.5273925781249993,
+              "window_max_normal_load_n": 19.057680130004883,
+              "window_max_contact_count": 58.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -16.77091522671111,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": []
+                }
+              ]
+            }
+          ],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "fully_in_hole",
+          "raw_first_stall_is_first_in_hole_event": true,
+          "first_in_hole_has_recorded_recovery_checkpoint": true,
+          "first_in_hole_has_recorded_recovery_probe": false
+        },
+        {
+          "trajectory_id": "g0100_d70_pitch_pos20_try03",
+          "case_id": "g0100_d70_pitch_pos20",
+          "status": "complete",
+          "parent_numerically_valid": false,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0100/g0100_d70_pitch_pos20_try03/insertion.csv",
+          "raw_csv_sha256": "9a2e503e6d96c418cc71e6541bdd6ad4d73c6bbec3051c9807531cbf607f5497",
+          "generic_stall_events": [
+            {
+              "index": 1074,
+              "raw_confirmation": {
+                "time_s": 8.94999999999186,
+                "phase": "insert",
+                "depth_mm": 16.68236181139946,
+                "command_depth_mm": 18.5852685546875,
+                "normal_load_n": 16.42829132080078,
+                "contact_count": 49.0,
+                "force_norm_n": 1.7753863334655762,
+                "wrist_force_n": 1.7093677520751953,
+                "wrist_torque_nm": 0.024089757353067398,
+                "tilt_deg": 1.2626907043021722,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -16.770352862564494,
+                "reference_step": 1074.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 1014,
+              "window_start_time_s": 8.449999999992315,
+              "window_depth_min_mm": 16.587340831756592,
+              "window_depth_max_mm": 16.684727370738983,
+              "actual_window_progress_mm": 0.09502097964286804,
+              "command_window_progress_mm": 1.5273925781249993,
+              "window_max_normal_load_n": 19.057680130004883,
+              "window_max_contact_count": 58.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -16.77091522671111,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": []
+                }
+              ]
+            }
+          ],
+          "derived_full_window_in_hole_events": [
+            {
+              "index": 1074,
+              "raw_confirmation": {
+                "time_s": 8.94999999999186,
+                "phase": "insert",
+                "depth_mm": 16.68236181139946,
+                "command_depth_mm": 18.5852685546875,
+                "normal_load_n": 16.42829132080078,
+                "contact_count": 49.0,
+                "force_norm_n": 1.7753863334655762,
+                "wrist_force_n": 1.7093677520751953,
+                "wrist_torque_nm": 0.024089757353067398,
+                "tilt_deg": 1.2626907043021722,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -16.770352862564494,
+                "reference_step": 1074.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 1014,
+              "window_start_time_s": 8.449999999992315,
+              "window_depth_min_mm": 16.587340831756592,
+              "window_depth_max_mm": 16.684727370738983,
+              "actual_window_progress_mm": 0.09502097964286804,
+              "command_window_progress_mm": 1.5273925781249993,
+              "window_max_normal_load_n": 19.057680130004883,
+              "window_max_contact_count": 58.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -16.77091522671111,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": []
+                }
+              ]
+            }
+          ],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "fully_in_hole",
+          "raw_first_stall_is_first_in_hole_event": true,
+          "first_in_hole_has_recorded_recovery_checkpoint": true,
+          "first_in_hole_has_recorded_recovery_probe": false
+        },
+        {
+          "trajectory_id": "g0100_d70_pitch_pos20_try04",
+          "case_id": "g0100_d70_pitch_pos20",
+          "status": "complete",
+          "parent_numerically_valid": false,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0100/g0100_d70_pitch_pos20_try04/insertion.csv",
+          "raw_csv_sha256": "66e93645d865851ad2ccf86c0f66585231c291d08f6350244653121cb6807e48",
+          "generic_stall_events": [
+            {
+              "index": 1074,
+              "raw_confirmation": {
+                "time_s": 8.94999999999186,
+                "phase": "insert",
+                "depth_mm": 16.671908646821976,
+                "command_depth_mm": 18.5852685546875,
+                "normal_load_n": 15.317440032958984,
+                "contact_count": 50.0,
+                "force_norm_n": 2.1035139560699463,
+                "wrist_force_n": 1.9965705871582031,
+                "wrist_torque_nm": 0.026148859411478043,
+                "tilt_deg": 1.1910760932241684,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -16.754909948840265,
+                "reference_step": 1074.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 1014,
+              "window_start_time_s": 8.449999999992315,
+              "window_depth_min_mm": 16.58255010843277,
+              "window_depth_max_mm": 16.67560413479805,
+              "actual_window_progress_mm": 0.08935853838920593,
+              "command_window_progress_mm": 1.5273925781249993,
+              "window_max_normal_load_n": 17.22130584716797,
+              "window_max_contact_count": 61.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -16.759653753703716,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": []
+                }
+              ]
+            }
+          ],
+          "derived_full_window_in_hole_events": [
+            {
+              "index": 1074,
+              "raw_confirmation": {
+                "time_s": 8.94999999999186,
+                "phase": "insert",
+                "depth_mm": 16.671908646821976,
+                "command_depth_mm": 18.5852685546875,
+                "normal_load_n": 15.317440032958984,
+                "contact_count": 50.0,
+                "force_norm_n": 2.1035139560699463,
+                "wrist_force_n": 1.9965705871582031,
+                "wrist_torque_nm": 0.026148859411478043,
+                "tilt_deg": 1.1910760932241684,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -16.754909948840265,
+                "reference_step": 1074.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 1014,
+              "window_start_time_s": 8.449999999992315,
+              "window_depth_min_mm": 16.58255010843277,
+              "window_depth_max_mm": 16.67560413479805,
+              "actual_window_progress_mm": 0.08935853838920593,
+              "command_window_progress_mm": 1.5273925781249993,
+              "window_max_normal_load_n": 17.22130584716797,
+              "window_max_contact_count": 61.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -16.759653753703716,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": []
+                }
+              ]
+            }
+          ],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "fully_in_hole",
+          "raw_first_stall_is_first_in_hole_event": true,
+          "first_in_hole_has_recorded_recovery_checkpoint": true,
+          "first_in_hole_has_recorded_recovery_probe": false
+        }
+      ]
+    },
+    {
+      "study": "outputs/Forge-GapTilt-Pilot-20260915/gap_0200/study.json",
+      "study_sha256": "0b8d70074b5a9bb406fab2ad63a75dae01d3bbe25c5de0721cc31fc75df91b0a",
+      "physics_hz": 120,
+      "study_status_at_read": "target_not_met",
+      "attempts": [
+        {
+          "trajectory_id": "g0200_aligned_try00",
+          "case_id": "g0200_aligned",
+          "status": "complete",
+          "parent_numerically_valid": true,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0200/g0200_aligned_try00/insertion.csv",
+          "raw_csv_sha256": "17b276e314c3f2dbcd3913bc358c59b1760052e1e0b822ad84d4f29376f6f1e8",
+          "generic_stall_events": [],
+          "derived_full_window_in_hole_events": [],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "no_generic_stall",
+          "raw_first_stall_is_first_in_hole_event": false,
+          "first_in_hole_has_recorded_recovery_checkpoint": false,
+          "first_in_hole_has_recorded_recovery_probe": false
+        },
+        {
+          "trajectory_id": "g0200_d30_pitch_pos05_try00",
+          "case_id": "g0200_d30_pitch_pos05",
+          "status": "complete",
+          "parent_numerically_valid": true,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0200/g0200_d30_pitch_pos05_try00/insertion.csv",
+          "raw_csv_sha256": "e256f149b68f16dae13fc6c66be6e36a9e5a9e0164a7c43a6cf07642e97bba76",
+          "generic_stall_events": [],
+          "derived_full_window_in_hole_events": [],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "no_generic_stall",
+          "raw_first_stall_is_first_in_hole_event": false,
+          "first_in_hole_has_recorded_recovery_checkpoint": false,
+          "first_in_hole_has_recorded_recovery_probe": false
+        },
+        {
+          "trajectory_id": "g0200_d30_pitch_pos20_try00",
+          "case_id": "g0200_d30_pitch_pos20",
+          "status": "complete",
+          "parent_numerically_valid": true,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0200/g0200_d30_pitch_pos20_try00/insertion.csv",
+          "raw_csv_sha256": "0b506cf4c7e604196f08cd7f598f8fc4a27c256aca922689fd69736919f8393c",
+          "generic_stall_events": [
+            {
+              "index": 995,
+              "raw_confirmation": {
+                "time_s": 8.291666666666288,
+                "phase": "insert",
+                "depth_mm": 13.91783505678177,
+                "command_depth_mm": 16.480246649848088,
+                "normal_load_n": 3.4175097942352295,
+                "contact_count": 52.0,
+                "force_norm_n": 1.7130950689315796,
+                "wrist_force_n": 1.6716580390930176,
+                "wrist_torque_nm": 0.020262885838747025,
+                "tilt_deg": 1.9489306679887877,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -14.053631787655256,
+                "reference_step": 995.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 935,
+              "window_start_time_s": 7.791666666666316,
+              "window_depth_min_mm": 13.830249756574633,
+              "window_depth_max_mm": 13.91928791999817,
+              "actual_window_progress_mm": 0.08758530020713806,
+              "command_window_progress_mm": 2.0761108398437464,
+              "window_max_normal_load_n": 3.5356180667877197,
+              "window_max_contact_count": 61.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -14.054748512717643,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": 1,
+                  "probes": [
+                    {
+                      "policy": "straight",
+                      "label_eligible": true,
+                      "replay_matched": true,
+                      "safe_recovery": true,
+                      "reason": "cleared"
+                    },
+                    {
+                      "policy": "realign",
+                      "label_eligible": false,
+                      "replay_matched": false,
+                      "safe_recovery": null,
+                      "reason": "replay_mismatch"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "derived_full_window_in_hole_events": [
+            {
+              "index": 995,
+              "raw_confirmation": {
+                "time_s": 8.291666666666288,
+                "phase": "insert",
+                "depth_mm": 13.91783505678177,
+                "command_depth_mm": 16.480246649848088,
+                "normal_load_n": 3.4175097942352295,
+                "contact_count": 52.0,
+                "force_norm_n": 1.7130950689315796,
+                "wrist_force_n": 1.6716580390930176,
+                "wrist_torque_nm": 0.020262885838747025,
+                "tilt_deg": 1.9489306679887877,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -14.053631787655256,
+                "reference_step": 995.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 935,
+              "window_start_time_s": 7.791666666666316,
+              "window_depth_min_mm": 13.830249756574633,
+              "window_depth_max_mm": 13.91928791999817,
+              "actual_window_progress_mm": 0.08758530020713806,
+              "command_window_progress_mm": 2.0761108398437464,
+              "window_max_normal_load_n": 3.5356180667877197,
+              "window_max_contact_count": 61.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -14.054748512717643,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": 1,
+                  "probes": [
+                    {
+                      "policy": "straight",
+                      "label_eligible": true,
+                      "replay_matched": true,
+                      "safe_recovery": true,
+                      "reason": "cleared"
+                    },
+                    {
+                      "policy": "realign",
+                      "label_eligible": false,
+                      "replay_matched": false,
+                      "safe_recovery": null,
+                      "reason": "replay_mismatch"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "fully_in_hole",
+          "raw_first_stall_is_first_in_hole_event": true,
+          "first_in_hole_has_recorded_recovery_checkpoint": true,
+          "first_in_hole_has_recorded_recovery_probe": true
+        },
+        {
+          "trajectory_id": "g0200_d50_pitch_pos05_try00",
+          "case_id": "g0200_d50_pitch_pos05",
+          "status": "complete",
+          "parent_numerically_valid": true,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0200/g0200_d50_pitch_pos05_try00/insertion.csv",
+          "raw_csv_sha256": "75b65fce3a66b446ebecf9efa62c77d4c753ca196d57c0c32d7360cc1e9c2a31",
+          "generic_stall_events": [],
+          "derived_full_window_in_hole_events": [],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "no_generic_stall",
+          "raw_first_stall_is_first_in_hole_event": false,
+          "first_in_hole_has_recorded_recovery_checkpoint": false,
+          "first_in_hole_has_recorded_recovery_probe": false
+        },
+        {
+          "trajectory_id": "g0200_d50_pitch_pos20_try00",
+          "case_id": "g0200_d50_pitch_pos20",
+          "status": "complete",
+          "parent_numerically_valid": true,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0200/g0200_d50_pitch_pos20_try00/insertion.csv",
+          "raw_csv_sha256": "0a2ae80d16d37e274968a67c98ab60731c9fe4e171839bd9efc21028356758af",
+          "generic_stall_events": [
+            {
+              "index": 1045,
+              "raw_confirmation": {
+                "time_s": 8.708333333325413,
+                "phase": "insert",
+                "depth_mm": 15.457151085138323,
+                "command_depth_mm": 17.906350029839412,
+                "normal_load_n": 6.745903968811035,
+                "contact_count": 62.0,
+                "force_norm_n": 1.2620540857315063,
+                "wrist_force_n": 1.2816946506500244,
+                "wrist_torque_nm": 0.033529531210660934,
+                "tilt_deg": 1.8342971552295455,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -15.584963247046256,
+                "reference_step": 1045.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 985,
+              "window_start_time_s": 8.208333333325868,
+              "window_depth_min_mm": 15.379691123962404,
+              "window_depth_max_mm": 15.460738539695742,
+              "actual_window_progress_mm": 0.07745996117591858,
+              "command_window_progress_mm": 1.74652099609375,
+              "window_max_normal_load_n": 6.917654991149902,
+              "window_max_contact_count": 65.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -15.588223290197345,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": [
+                    {
+                      "policy": "straight",
+                      "label_eligible": false,
+                      "replay_matched": false,
+                      "safe_recovery": null,
+                      "reason": "replay_mismatch"
+                    },
+                    {
+                      "policy": "realign",
+                      "label_eligible": false,
+                      "replay_matched": false,
+                      "safe_recovery": null,
+                      "reason": "replay_mismatch"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "derived_full_window_in_hole_events": [
+            {
+              "index": 1045,
+              "raw_confirmation": {
+                "time_s": 8.708333333325413,
+                "phase": "insert",
+                "depth_mm": 15.457151085138323,
+                "command_depth_mm": 17.906350029839412,
+                "normal_load_n": 6.745903968811035,
+                "contact_count": 62.0,
+                "force_norm_n": 1.2620540857315063,
+                "wrist_force_n": 1.2816946506500244,
+                "wrist_torque_nm": 0.033529531210660934,
+                "tilt_deg": 1.8342971552295455,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -15.584963247046256,
+                "reference_step": 1045.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 985,
+              "window_start_time_s": 8.208333333325868,
+              "window_depth_min_mm": 15.379691123962404,
+              "window_depth_max_mm": 15.460738539695742,
+              "actual_window_progress_mm": 0.07745996117591858,
+              "command_window_progress_mm": 1.74652099609375,
+              "window_max_normal_load_n": 6.917654991149902,
+              "window_max_contact_count": 65.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -15.588223290197345,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": [
+                    {
+                      "policy": "straight",
+                      "label_eligible": false,
+                      "replay_matched": false,
+                      "safe_recovery": null,
+                      "reason": "replay_mismatch"
+                    },
+                    {
+                      "policy": "realign",
+                      "label_eligible": false,
+                      "replay_matched": false,
+                      "safe_recovery": null,
+                      "reason": "replay_mismatch"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "fully_in_hole",
+          "raw_first_stall_is_first_in_hole_event": true,
+          "first_in_hole_has_recorded_recovery_checkpoint": true,
+          "first_in_hole_has_recorded_recovery_probe": true
+        },
+        {
+          "trajectory_id": "g0200_d70_pitch_pos05_try00",
+          "case_id": "g0200_d70_pitch_pos05",
+          "status": "complete",
+          "parent_numerically_valid": true,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0200/g0200_d70_pitch_pos05_try00/insertion.csv",
+          "raw_csv_sha256": "bbc136cfebf33a50a905edb0859b612b8b6d6e4dca373a741e629365e403498f",
+          "generic_stall_events": [],
+          "derived_full_window_in_hole_events": [],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "no_generic_stall",
+          "raw_first_stall_is_first_in_hole_event": false,
+          "first_in_hole_has_recorded_recovery_checkpoint": false,
+          "first_in_hole_has_recorded_recovery_probe": false
+        },
+        {
+          "trajectory_id": "g0200_d70_pitch_pos20_try00",
+          "case_id": "g0200_d70_pitch_pos20",
+          "status": "complete",
+          "parent_numerically_valid": false,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0200/g0200_d70_pitch_pos20_try00/insertion.csv",
+          "raw_csv_sha256": "66b4376444cd2581fcb305906f4829be5b059077a9f9500bbe314d1af5b5fa78",
+          "generic_stall_events": [
+            {
+              "index": 1116,
+              "raw_confirmation": {
+                "time_s": 9.299999999991542,
+                "phase": "insert",
+                "depth_mm": 17.483526468276978,
+                "command_depth_mm": 19.3511328125,
+                "normal_load_n": 8.253311157226562,
+                "contact_count": 53.0,
+                "force_norm_n": 1.0066454410552979,
+                "wrist_force_n": 1.0175427198410034,
+                "wrist_torque_nm": 0.024693801999092102,
+                "tilt_deg": 1.684582472415784,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -17.600909786678027,
+                "reference_step": 1116.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 1056,
+              "window_start_time_s": 8.799999999991996,
+              "window_depth_min_mm": 17.395590990781784,
+              "window_depth_max_mm": 17.48405545949936,
+              "actual_window_progress_mm": 0.08793547749519348,
+              "command_window_progress_mm": 1.1736328124999993,
+              "window_max_normal_load_n": 8.26810073852539,
+              "window_max_contact_count": 61.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -17.601560103175665,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": [
+                    {
+                      "policy": "straight",
+                      "label_eligible": false,
+                      "replay_matched": false,
+                      "safe_recovery": null,
+                      "reason": "replay_mismatch"
+                    },
+                    {
+                      "policy": "realign",
+                      "label_eligible": true,
+                      "replay_matched": true,
+                      "safe_recovery": false,
+                      "reason": "grasp_retention_limit"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "derived_full_window_in_hole_events": [
+            {
+              "index": 1116,
+              "raw_confirmation": {
+                "time_s": 9.299999999991542,
+                "phase": "insert",
+                "depth_mm": 17.483526468276978,
+                "command_depth_mm": 19.3511328125,
+                "normal_load_n": 8.253311157226562,
+                "contact_count": 53.0,
+                "force_norm_n": 1.0066454410552979,
+                "wrist_force_n": 1.0175427198410034,
+                "wrist_torque_nm": 0.024693801999092102,
+                "tilt_deg": 1.684582472415784,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -17.600909786678027,
+                "reference_step": 1116.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 1056,
+              "window_start_time_s": 8.799999999991996,
+              "window_depth_min_mm": 17.395590990781784,
+              "window_depth_max_mm": 17.48405545949936,
+              "actual_window_progress_mm": 0.08793547749519348,
+              "command_window_progress_mm": 1.1736328124999993,
+              "window_max_normal_load_n": 8.26810073852539,
+              "window_max_contact_count": 61.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -17.601560103175665,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": [
+                    {
+                      "policy": "straight",
+                      "label_eligible": false,
+                      "replay_matched": false,
+                      "safe_recovery": null,
+                      "reason": "replay_mismatch"
+                    },
+                    {
+                      "policy": "realign",
+                      "label_eligible": true,
+                      "replay_matched": true,
+                      "safe_recovery": false,
+                      "reason": "grasp_retention_limit"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "fully_in_hole",
+          "raw_first_stall_is_first_in_hole_event": true,
+          "first_in_hole_has_recorded_recovery_checkpoint": true,
+          "first_in_hole_has_recorded_recovery_probe": true
+        },
+        {
+          "trajectory_id": "g0200_d70_pitch_pos20_try01",
+          "case_id": "g0200_d70_pitch_pos20",
+          "status": "complete",
+          "parent_numerically_valid": false,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0200/g0200_d70_pitch_pos20_try01/insertion.csv",
+          "raw_csv_sha256": "66b4376444cd2581fcb305906f4829be5b059077a9f9500bbe314d1af5b5fa78",
+          "generic_stall_events": [
+            {
+              "index": 1116,
+              "raw_confirmation": {
+                "time_s": 9.299999999991542,
+                "phase": "insert",
+                "depth_mm": 17.483526468276978,
+                "command_depth_mm": 19.3511328125,
+                "normal_load_n": 8.253311157226562,
+                "contact_count": 53.0,
+                "force_norm_n": 1.0066454410552979,
+                "wrist_force_n": 1.0175427198410034,
+                "wrist_torque_nm": 0.024693801999092102,
+                "tilt_deg": 1.684582472415784,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -17.600909786678027,
+                "reference_step": 1116.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 1056,
+              "window_start_time_s": 8.799999999991996,
+              "window_depth_min_mm": 17.395590990781784,
+              "window_depth_max_mm": 17.48405545949936,
+              "actual_window_progress_mm": 0.08793547749519348,
+              "command_window_progress_mm": 1.1736328124999993,
+              "window_max_normal_load_n": 8.26810073852539,
+              "window_max_contact_count": 61.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -17.601560103175665,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": [
+                    {
+                      "policy": "straight",
+                      "label_eligible": false,
+                      "replay_matched": false,
+                      "safe_recovery": null,
+                      "reason": "replay_mismatch"
+                    },
+                    {
+                      "policy": "realign",
+                      "label_eligible": true,
+                      "replay_matched": true,
+                      "safe_recovery": false,
+                      "reason": "grasp_retention_limit"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "derived_full_window_in_hole_events": [
+            {
+              "index": 1116,
+              "raw_confirmation": {
+                "time_s": 9.299999999991542,
+                "phase": "insert",
+                "depth_mm": 17.483526468276978,
+                "command_depth_mm": 19.3511328125,
+                "normal_load_n": 8.253311157226562,
+                "contact_count": 53.0,
+                "force_norm_n": 1.0066454410552979,
+                "wrist_force_n": 1.0175427198410034,
+                "wrist_torque_nm": 0.024693801999092102,
+                "tilt_deg": 1.684582472415784,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -17.600909786678027,
+                "reference_step": 1116.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 1056,
+              "window_start_time_s": 8.799999999991996,
+              "window_depth_min_mm": 17.395590990781784,
+              "window_depth_max_mm": 17.48405545949936,
+              "actual_window_progress_mm": 0.08793547749519348,
+              "command_window_progress_mm": 1.1736328124999993,
+              "window_max_normal_load_n": 8.26810073852539,
+              "window_max_contact_count": 61.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -17.601560103175665,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": [
+                    {
+                      "policy": "straight",
+                      "label_eligible": false,
+                      "replay_matched": false,
+                      "safe_recovery": null,
+                      "reason": "replay_mismatch"
+                    },
+                    {
+                      "policy": "realign",
+                      "label_eligible": true,
+                      "replay_matched": true,
+                      "safe_recovery": false,
+                      "reason": "grasp_retention_limit"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "fully_in_hole",
+          "raw_first_stall_is_first_in_hole_event": true,
+          "first_in_hole_has_recorded_recovery_checkpoint": true,
+          "first_in_hole_has_recorded_recovery_probe": true
+        },
+        {
+          "trajectory_id": "g0200_d70_pitch_pos20_try02",
+          "case_id": "g0200_d70_pitch_pos20",
+          "status": "complete",
+          "parent_numerically_valid": false,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0200/g0200_d70_pitch_pos20_try02/insertion.csv",
+          "raw_csv_sha256": "66b4376444cd2581fcb305906f4829be5b059077a9f9500bbe314d1af5b5fa78",
+          "generic_stall_events": [
+            {
+              "index": 1116,
+              "raw_confirmation": {
+                "time_s": 9.299999999991542,
+                "phase": "insert",
+                "depth_mm": 17.483526468276978,
+                "command_depth_mm": 19.3511328125,
+                "normal_load_n": 8.253311157226562,
+                "contact_count": 53.0,
+                "force_norm_n": 1.0066454410552979,
+                "wrist_force_n": 1.0175427198410034,
+                "wrist_torque_nm": 0.024693801999092102,
+                "tilt_deg": 1.684582472415784,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -17.600909786678027,
+                "reference_step": 1116.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 1056,
+              "window_start_time_s": 8.799999999991996,
+              "window_depth_min_mm": 17.395590990781784,
+              "window_depth_max_mm": 17.48405545949936,
+              "actual_window_progress_mm": 0.08793547749519348,
+              "command_window_progress_mm": 1.1736328124999993,
+              "window_max_normal_load_n": 8.26810073852539,
+              "window_max_contact_count": 61.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -17.601560103175665,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": [
+                    {
+                      "policy": "straight",
+                      "label_eligible": false,
+                      "replay_matched": false,
+                      "safe_recovery": null,
+                      "reason": "replay_mismatch"
+                    },
+                    {
+                      "policy": "realign",
+                      "label_eligible": true,
+                      "replay_matched": true,
+                      "safe_recovery": false,
+                      "reason": "grasp_retention_limit"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "derived_full_window_in_hole_events": [
+            {
+              "index": 1116,
+              "raw_confirmation": {
+                "time_s": 9.299999999991542,
+                "phase": "insert",
+                "depth_mm": 17.483526468276978,
+                "command_depth_mm": 19.3511328125,
+                "normal_load_n": 8.253311157226562,
+                "contact_count": 53.0,
+                "force_norm_n": 1.0066454410552979,
+                "wrist_force_n": 1.0175427198410034,
+                "wrist_torque_nm": 0.024693801999092102,
+                "tilt_deg": 1.684582472415784,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -17.600909786678027,
+                "reference_step": 1116.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 1056,
+              "window_start_time_s": 8.799999999991996,
+              "window_depth_min_mm": 17.395590990781784,
+              "window_depth_max_mm": 17.48405545949936,
+              "actual_window_progress_mm": 0.08793547749519348,
+              "command_window_progress_mm": 1.1736328124999993,
+              "window_max_normal_load_n": 8.26810073852539,
+              "window_max_contact_count": 61.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -17.601560103175665,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": [
+                    {
+                      "policy": "straight",
+                      "label_eligible": false,
+                      "replay_matched": false,
+                      "safe_recovery": null,
+                      "reason": "replay_mismatch"
+                    },
+                    {
+                      "policy": "realign",
+                      "label_eligible": true,
+                      "replay_matched": true,
+                      "safe_recovery": false,
+                      "reason": "grasp_retention_limit"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "fully_in_hole",
+          "raw_first_stall_is_first_in_hole_event": true,
+          "first_in_hole_has_recorded_recovery_checkpoint": true,
+          "first_in_hole_has_recorded_recovery_probe": true
+        },
+        {
+          "trajectory_id": "g0200_d70_pitch_pos20_try03",
+          "case_id": "g0200_d70_pitch_pos20",
+          "status": "complete",
+          "parent_numerically_valid": false,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0200/g0200_d70_pitch_pos20_try03/insertion.csv",
+          "raw_csv_sha256": "66b4376444cd2581fcb305906f4829be5b059077a9f9500bbe314d1af5b5fa78",
+          "generic_stall_events": [
+            {
+              "index": 1116,
+              "raw_confirmation": {
+                "time_s": 9.299999999991542,
+                "phase": "insert",
+                "depth_mm": 17.483526468276978,
+                "command_depth_mm": 19.3511328125,
+                "normal_load_n": 8.253311157226562,
+                "contact_count": 53.0,
+                "force_norm_n": 1.0066454410552979,
+                "wrist_force_n": 1.0175427198410034,
+                "wrist_torque_nm": 0.024693801999092102,
+                "tilt_deg": 1.684582472415784,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -17.600909786678027,
+                "reference_step": 1116.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 1056,
+              "window_start_time_s": 8.799999999991996,
+              "window_depth_min_mm": 17.395590990781784,
+              "window_depth_max_mm": 17.48405545949936,
+              "actual_window_progress_mm": 0.08793547749519348,
+              "command_window_progress_mm": 1.1736328124999993,
+              "window_max_normal_load_n": 8.26810073852539,
+              "window_max_contact_count": 61.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -17.601560103175665,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": [
+                    {
+                      "policy": "straight",
+                      "label_eligible": false,
+                      "replay_matched": false,
+                      "safe_recovery": null,
+                      "reason": "replay_mismatch"
+                    },
+                    {
+                      "policy": "realign",
+                      "label_eligible": true,
+                      "replay_matched": true,
+                      "safe_recovery": false,
+                      "reason": "grasp_retention_limit"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "derived_full_window_in_hole_events": [
+            {
+              "index": 1116,
+              "raw_confirmation": {
+                "time_s": 9.299999999991542,
+                "phase": "insert",
+                "depth_mm": 17.483526468276978,
+                "command_depth_mm": 19.3511328125,
+                "normal_load_n": 8.253311157226562,
+                "contact_count": 53.0,
+                "force_norm_n": 1.0066454410552979,
+                "wrist_force_n": 1.0175427198410034,
+                "wrist_torque_nm": 0.024693801999092102,
+                "tilt_deg": 1.684582472415784,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -17.600909786678027,
+                "reference_step": 1116.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 1056,
+              "window_start_time_s": 8.799999999991996,
+              "window_depth_min_mm": 17.395590990781784,
+              "window_depth_max_mm": 17.48405545949936,
+              "actual_window_progress_mm": 0.08793547749519348,
+              "command_window_progress_mm": 1.1736328124999993,
+              "window_max_normal_load_n": 8.26810073852539,
+              "window_max_contact_count": 61.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -17.601560103175665,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": [
+                    {
+                      "policy": "straight",
+                      "label_eligible": false,
+                      "replay_matched": false,
+                      "safe_recovery": null,
+                      "reason": "replay_mismatch"
+                    },
+                    {
+                      "policy": "realign",
+                      "label_eligible": true,
+                      "replay_matched": true,
+                      "safe_recovery": false,
+                      "reason": "grasp_retention_limit"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "fully_in_hole",
+          "raw_first_stall_is_first_in_hole_event": true,
+          "first_in_hole_has_recorded_recovery_checkpoint": true,
+          "first_in_hole_has_recorded_recovery_probe": true
+        },
+        {
+          "trajectory_id": "g0200_d70_pitch_pos20_try04",
+          "case_id": "g0200_d70_pitch_pos20",
+          "status": "complete",
+          "parent_numerically_valid": false,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0200/g0200_d70_pitch_pos20_try04/insertion.csv",
+          "raw_csv_sha256": "66b4376444cd2581fcb305906f4829be5b059077a9f9500bbe314d1af5b5fa78",
+          "generic_stall_events": [
+            {
+              "index": 1116,
+              "raw_confirmation": {
+                "time_s": 9.299999999991542,
+                "phase": "insert",
+                "depth_mm": 17.483526468276978,
+                "command_depth_mm": 19.3511328125,
+                "normal_load_n": 8.253311157226562,
+                "contact_count": 53.0,
+                "force_norm_n": 1.0066454410552979,
+                "wrist_force_n": 1.0175427198410034,
+                "wrist_torque_nm": 0.024693801999092102,
+                "tilt_deg": 1.684582472415784,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -17.600909786678027,
+                "reference_step": 1116.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 1056,
+              "window_start_time_s": 8.799999999991996,
+              "window_depth_min_mm": 17.395590990781784,
+              "window_depth_max_mm": 17.48405545949936,
+              "actual_window_progress_mm": 0.08793547749519348,
+              "command_window_progress_mm": 1.1736328124999993,
+              "window_max_normal_load_n": 8.26810073852539,
+              "window_max_contact_count": 61.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -17.601560103175665,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": [
+                    {
+                      "policy": "straight",
+                      "label_eligible": false,
+                      "replay_matched": false,
+                      "safe_recovery": null,
+                      "reason": "replay_mismatch"
+                    },
+                    {
+                      "policy": "realign",
+                      "label_eligible": true,
+                      "replay_matched": true,
+                      "safe_recovery": false,
+                      "reason": "grasp_retention_limit"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "derived_full_window_in_hole_events": [
+            {
+              "index": 1116,
+              "raw_confirmation": {
+                "time_s": 9.299999999991542,
+                "phase": "insert",
+                "depth_mm": 17.483526468276978,
+                "command_depth_mm": 19.3511328125,
+                "normal_load_n": 8.253311157226562,
+                "contact_count": 53.0,
+                "force_norm_n": 1.0066454410552979,
+                "wrist_force_n": 1.0175427198410034,
+                "wrist_torque_nm": 0.024693801999092102,
+                "tilt_deg": 1.684582472415784,
+                "command_tilt_deg": 2.0,
+                "lowest_peg_z_above_mouth_mm": -17.600909786678027,
+                "reference_step": 1116.0
+              },
+              "classification": "in_hole_tracking_stall",
+              "window_location": "fully_in_hole",
+              "window_start_index": 1056,
+              "window_start_time_s": 8.799999999991996,
+              "window_depth_min_mm": 17.395590990781784,
+              "window_depth_max_mm": 17.48405545949936,
+              "actual_window_progress_mm": 0.08793547749519348,
+              "command_window_progress_mm": 1.1736328124999993,
+              "window_max_normal_load_n": 8.26810073852539,
+              "window_max_contact_count": 61.0,
+              "window_min_lowest_peg_z_above_mouth_mm": -17.601560103175665,
+              "contact_observed_in_window": true,
+              "matching_recorded_checkpoints": [
+                {
+                  "checkpoint_kind": "first_stall",
+                  "checkpoint_id": "first_stall",
+                  "Y_R_tested": null,
+                  "probes": [
+                    {
+                      "policy": "straight",
+                      "label_eligible": false,
+                      "replay_matched": false,
+                      "safe_recovery": null,
+                      "reason": "replay_mismatch"
+                    },
+                    {
+                      "policy": "realign",
+                      "label_eligible": true,
+                      "replay_matched": true,
+                      "safe_recovery": false,
+                      "reason": "grasp_retention_limit"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "fully_in_hole",
+          "raw_first_stall_is_first_in_hole_event": true,
+          "first_in_hole_has_recorded_recovery_checkpoint": true,
+          "first_in_hole_has_recorded_recovery_probe": true
+        }
+      ]
+    },
+    {
+      "study": "outputs/Forge-GapTilt-Pilot-20260915/gap_0300/study.json",
+      "study_sha256": "590d42be839785e034ddca4b739ef3c5e7c1dbbcf57e849fd4e6431856769aa5",
+      "physics_hz": 120,
+      "study_status_at_read": "complete",
+      "attempts": [
+        {
+          "trajectory_id": "g0300_aligned_try00",
+          "case_id": "g0300_aligned",
+          "status": "complete",
+          "parent_numerically_valid": true,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0300/g0300_aligned_try00/insertion.csv",
+          "raw_csv_sha256": "b00ca52380a8abf383f0ab2e0907da8b4a8484eee884eb5fa30b4c022931db93",
+          "generic_stall_events": [],
+          "derived_full_window_in_hole_events": [],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "no_generic_stall",
+          "raw_first_stall_is_first_in_hole_event": false,
+          "first_in_hole_has_recorded_recovery_checkpoint": false,
+          "first_in_hole_has_recorded_recovery_probe": false
+        }
+      ]
+    },
+    {
+      "study": "outputs/Forge-GapTilt-Pilot-20260915/gap_0400/study.json",
+      "study_sha256": "a3b3ac5082c1f67f01c3484681628778abbeea8f979afbdce65dc8a7fad35d09",
+      "physics_hz": 120,
+      "study_status_at_read": "complete",
+      "attempts": [
+        {
+          "trajectory_id": "g0400_aligned_try00",
+          "case_id": "g0400_aligned",
+          "status": "complete",
+          "parent_numerically_valid": true,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0400/g0400_aligned_try00/insertion.csv",
+          "raw_csv_sha256": "1e868125cac7a2fc019b529c2e3154d5cec1d33b86952d596aaf5ccc16a66cfa",
+          "generic_stall_events": [],
+          "derived_full_window_in_hole_events": [],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "no_generic_stall",
+          "raw_first_stall_is_first_in_hole_event": false,
+          "first_in_hole_has_recorded_recovery_checkpoint": false,
+          "first_in_hole_has_recorded_recovery_probe": false
+        }
+      ]
+    },
+    {
+      "study": "outputs/Forge-GapTilt-Pilot-20260915/gap_0507/study.json",
+      "study_sha256": "4d1ca94d3b943106d0a8ab96ce7bb209197414069723b7e77ecda6ffb546ea51",
+      "physics_hz": 120,
+      "study_status_at_read": "complete",
+      "attempts": [
+        {
+          "trajectory_id": "g0507_aligned_try00",
+          "case_id": "g0507_aligned",
+          "status": "complete",
+          "parent_numerically_valid": true,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0507/g0507_aligned_try00/insertion.csv",
+          "raw_csv_sha256": "0b7513b49019b105f8cf7e410391bf03d66db3dce3e051ab7e15311459ea07a4",
+          "generic_stall_events": [],
+          "derived_full_window_in_hole_events": [],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "no_generic_stall",
+          "raw_first_stall_is_first_in_hole_event": false,
+          "first_in_hole_has_recorded_recovery_checkpoint": false,
+          "first_in_hole_has_recorded_recovery_probe": false
+        },
+        {
+          "trajectory_id": "g0507_d30_pitch_pos05_try00",
+          "case_id": "g0507_d30_pitch_pos05",
+          "status": "complete",
+          "parent_numerically_valid": true,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0507/g0507_d30_pitch_pos05_try00/insertion.csv",
+          "raw_csv_sha256": "c1996ba8a34eaf3f34104828125709a13dbe3b1bd193130cf0843c06ba4424ba",
+          "generic_stall_events": [],
+          "derived_full_window_in_hole_events": [],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "no_generic_stall",
+          "raw_first_stall_is_first_in_hole_event": false,
+          "first_in_hole_has_recorded_recovery_checkpoint": false,
+          "first_in_hole_has_recorded_recovery_probe": false
+        },
+        {
+          "trajectory_id": "g0507_d30_pitch_pos20_try00",
+          "case_id": "g0507_d30_pitch_pos20",
+          "status": "complete",
+          "parent_numerically_valid": true,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0507/g0507_d30_pitch_pos20_try00/insertion.csv",
+          "raw_csv_sha256": "784df05e002a2ddfecfc4cfe6906eadad5c32d96e4ac0ffbde3e77b0ff4ccfa6",
+          "generic_stall_events": [],
+          "derived_full_window_in_hole_events": [],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "no_generic_stall",
+          "raw_first_stall_is_first_in_hole_event": false,
+          "first_in_hole_has_recorded_recovery_checkpoint": false,
+          "first_in_hole_has_recorded_recovery_probe": false
+        },
+        {
+          "trajectory_id": "g0507_d50_pitch_pos05_try00",
+          "case_id": "g0507_d50_pitch_pos05",
+          "status": "complete",
+          "parent_numerically_valid": true,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0507/g0507_d50_pitch_pos05_try00/insertion.csv",
+          "raw_csv_sha256": "95cf65fb8d018a4711e797dccb396dd3082124debd77435456518432b383f9c0",
+          "generic_stall_events": [],
+          "derived_full_window_in_hole_events": [],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "no_generic_stall",
+          "raw_first_stall_is_first_in_hole_event": false,
+          "first_in_hole_has_recorded_recovery_checkpoint": false,
+          "first_in_hole_has_recorded_recovery_probe": false
+        },
+        {
+          "trajectory_id": "g0507_d50_pitch_pos20_try00",
+          "case_id": "g0507_d50_pitch_pos20",
+          "status": "complete",
+          "parent_numerically_valid": true,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0507/g0507_d50_pitch_pos20_try00/insertion.csv",
+          "raw_csv_sha256": "de3e18196244ce9b65a45b03bed86186be6e8cafee24367cfe3cc6364054715a",
+          "generic_stall_events": [],
+          "derived_full_window_in_hole_events": [],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "no_generic_stall",
+          "raw_first_stall_is_first_in_hole_event": false,
+          "first_in_hole_has_recorded_recovery_checkpoint": false,
+          "first_in_hole_has_recorded_recovery_probe": false
+        },
+        {
+          "trajectory_id": "g0507_d70_pitch_pos05_try00",
+          "case_id": "g0507_d70_pitch_pos05",
+          "status": "complete",
+          "parent_numerically_valid": true,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0507/g0507_d70_pitch_pos05_try00/insertion.csv",
+          "raw_csv_sha256": "85118e2c9a97d5e51fa80c334d71cb400bd5c33d8205ebc95f2c60de2f29a32d",
+          "generic_stall_events": [],
+          "derived_full_window_in_hole_events": [],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "no_generic_stall",
+          "raw_first_stall_is_first_in_hole_event": false,
+          "first_in_hole_has_recorded_recovery_checkpoint": false,
+          "first_in_hole_has_recorded_recovery_probe": false
+        },
+        {
+          "trajectory_id": "g0507_d70_pitch_pos20_try00",
+          "case_id": "g0507_d70_pitch_pos20",
+          "status": "complete",
+          "parent_numerically_valid": true,
+          "raw_csv": "outputs/Forge-GapTilt-Pilot-20260915/gap_0507/g0507_d70_pitch_pos20_try00/insertion.csv",
+          "raw_csv_sha256": "bf2f549816d85da97d5d7d5413bb6a81b200251a1663a22b41be9dbf38a3ebaf",
+          "generic_stall_events": [],
+          "derived_full_window_in_hole_events": [],
+          "first_stall_scope": "generic_command_tracking_stall",
+          "raw_first_stall_location": "no_generic_stall",
+          "raw_first_stall_is_first_in_hole_event": false,
+          "first_in_hole_has_recorded_recovery_checkpoint": false,
+          "first_in_hole_has_recorded_recovery_probe": false
+        }
+      ]
+    }
+  ],
+  "diagnostic": {
+    "study": "outputs/Forge-GapTilt-Diagnostic-240Hz-20260915/study.json",
+    "study_sha256": "6aca20f2e9b40ea0a0ebe5d2fd4bc9597f96d49480bd17276081c2040beea5f3",
+    "physics_hz": 240,
+    "study_status_at_read": "complete",
+    "attempts": [
+      {
+        "trajectory_id": "g0200_d30_pitch_pos20_try00",
+        "case_id": "g0200_d30_pitch_pos20",
+        "status": "complete",
+        "parent_numerically_valid": true,
+        "raw_csv": "outputs/Forge-GapTilt-Diagnostic-240Hz-20260915/g0200_d30_pitch_pos20_try00/insertion.csv",
+        "raw_csv_sha256": "b899fb31fc22ff823e01ba49920e79615759f39a090658ede49bd0ccb1af250b",
+        "generic_stall_events": [
+          {
+            "index": 631,
+            "raw_confirmation": {
+              "time_s": 2.629166666666518,
+              "phase": "insert",
+              "depth_mm": -9.744337201118467,
+              "command_depth_mm": -9.472521218193902,
+              "normal_load_n": 0.0,
+              "contact_count": 0.0,
+              "force_norm_n": 0.0,
+              "wrist_force_n": 0.015878872945904732,
+              "wrist_torque_nm": 0.0016924438532441854,
+              "tilt_deg": 0.048456642643301504,
+              "command_tilt_deg": 0.0,
+              "lowest_peg_z_above_mouth_mm": 9.740960209782394,
+              "reference_step": 631.0
+            },
+            "classification": "pre_entry_no_contact_tracking_stall",
+            "window_location": "before_entry",
+            "window_start_index": 511,
+            "window_start_time_s": 2.1291666666665465,
+            "window_depth_min_mm": -9.825950860977171,
+            "window_depth_max_mm": -9.744337201118467,
+            "actual_window_progress_mm": 0.025607645511627197,
+            "command_window_progress_mm": 0.5042694091796864,
+            "window_max_normal_load_n": 0.0,
+            "window_max_contact_count": 0.0,
+            "window_min_lowest_peg_z_above_mouth_mm": 9.740960209782394,
+            "contact_observed_in_window": false,
+            "matching_recorded_checkpoints": [
+              {
+                "checkpoint_kind": "first_stall",
+                "checkpoint_id": "first_stall",
+                "Y_R_tested": 1,
+                "probes": [
+                  {
+                    "policy": "straight",
+                    "label_eligible": true,
+                    "replay_matched": true,
+                    "safe_recovery": true,
+                    "reason": "cleared"
+                  },
+                  {
+                    "policy": "realign",
+                    "label_eligible": true,
+                    "replay_matched": true,
+                    "safe_recovery": true,
+                    "reason": "cleared"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "index": 1978,
+            "raw_confirmation": {
+              "time_s": 8.241666666666198,
+              "phase": "insert",
+              "depth_mm": 13.649494946002962,
+              "command_depth_mm": 16.28931281195747,
+              "normal_load_n": 6.957180976867676,
+              "contact_count": 52.0,
+              "force_norm_n": 1.0800166130065918,
+              "wrist_force_n": 1.1384458541870117,
+              "wrist_torque_nm": 0.041131339967250824,
+              "tilt_deg": 1.9433998182309393,
+              "command_tilt_deg": 2.0,
+              "lowest_peg_z_above_mouth_mm": -13.78490644877913,
+              "reference_step": 1978.0
+            },
+            "classification": "in_hole_tracking_stall",
+            "window_location": "fully_in_hole",
+            "window_start_index": 1858,
+            "window_start_time_s": 7.7416666666662275,
+            "window_depth_min_mm": 13.554686307907106,
+            "window_depth_max_mm": 13.650828599929811,
+            "actual_window_progress_mm": 0.09480863809585571,
+            "command_window_progress_mm": 2.11156005859376,
+            "window_max_normal_load_n": 11.656587600708008,
+            "window_max_contact_count": 56.0,
+            "window_min_lowest_peg_z_above_mouth_mm": -13.786078681583586,
+            "contact_observed_in_window": true,
+            "matching_recorded_checkpoints": []
+          }
+        ],
+        "derived_full_window_in_hole_events": [
+          {
+            "index": 1978,
+            "raw_confirmation": {
+              "time_s": 8.241666666666198,
+              "phase": "insert",
+              "depth_mm": 13.649494946002962,
+              "command_depth_mm": 16.28931281195747,
+              "normal_load_n": 6.957180976867676,
+              "contact_count": 52.0,
+              "force_norm_n": 1.0800166130065918,
+              "wrist_force_n": 1.1384458541870117,
+              "wrist_torque_nm": 0.041131339967250824,
+              "tilt_deg": 1.9433998182309393,
+              "command_tilt_deg": 2.0,
+              "lowest_peg_z_above_mouth_mm": -13.78490644877913,
+              "reference_step": 1978.0
+            },
+            "classification": "in_hole_tracking_stall",
+            "window_location": "fully_in_hole",
+            "window_start_index": 1858,
+            "window_start_time_s": 7.7416666666662275,
+            "window_depth_min_mm": 13.554686307907106,
+            "window_depth_max_mm": 13.650828599929811,
+            "actual_window_progress_mm": 0.09480863809585571,
+            "command_window_progress_mm": 2.11156005859376,
+            "window_max_normal_load_n": 11.656587600708008,
+            "window_max_contact_count": 56.0,
+            "window_min_lowest_peg_z_above_mouth_mm": -13.786078681583586,
+            "contact_observed_in_window": true,
+            "matching_recorded_checkpoints": []
+          }
+        ],
+        "first_stall_scope": "generic_command_tracking_stall",
+        "raw_first_stall_location": "before_entry",
+        "raw_first_stall_is_first_in_hole_event": false,
+        "first_in_hole_has_recorded_recovery_checkpoint": false,
+        "first_in_hole_has_recorded_recovery_probe": false
+      }
+    ]
+  }
+}

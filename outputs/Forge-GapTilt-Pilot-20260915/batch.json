@@ -1,0 +1,368 @@
+{
+  "schema": "Forge-gap-batch-v1",
+  "status": "target_not_met",
+  "plan_sha256": "2dd1e854c47ae278f242b82efe74feb129831751ef9b8869c924598e5f83a677",
+  "physics_hz": null,
+  "planned_references": 23,
+  "groups": [
+    {
+      "radial_clearance_mm": 0.507,
+      "folder": "gap_0507",
+      "plan": "plans/gap_0507.json",
+      "baseline_status": "passed",
+      "complete_references": 7,
+      "valid_references": 7,
+      "study_status": "complete"
+    },
+    {
+      "radial_clearance_mm": 0.4,
+      "folder": "gap_0400",
+      "plan": "plans/gap_0400.json",
+      "baseline_status": "passed",
+      "complete_references": 1,
+      "valid_references": 1,
+      "study_status": "complete"
+    },
+    {
+      "radial_clearance_mm": 0.3,
+      "folder": "gap_0300",
+      "plan": "plans/gap_0300.json",
+      "baseline_status": "passed",
+      "complete_references": 1,
+      "valid_references": 1,
+      "study_status": "complete"
+    },
+    {
+      "radial_clearance_mm": 0.2,
+      "folder": "gap_0200",
+      "plan": "plans/gap_0200.json",
+      "baseline_status": "passed",
+      "complete_references": 11,
+      "valid_references": 6,
+      "study_status": "target_not_met"
+    },
+    {
+      "radial_clearance_mm": 0.1,
+      "folder": "gap_0100",
+      "plan": "plans/gap_0100.json",
+      "baseline_status": "passed",
+      "complete_references": 19,
+      "valid_references": 4,
+      "study_status": "target_not_met"
+    }
+  ],
+  "executions": [
+    {
+      "group": "gap_0507",
+      "stage": "controls",
+      "command": [
+        "bash",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/forge_study.sh",
+        "--headless",
+        "--mode",
+        "collect",
+        "--case-plan",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-GapTilt-Pilot-20260915/plans/gap_0507.json",
+        "--output-dir",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-GapTilt-Pilot-20260915/gap_0507",
+        "--radial-clearance-mm",
+        "0.507",
+        "--max-new-attempts",
+        "1"
+      ],
+      "log": "logs/gap_0507_controls_000.log",
+      "status": "complete",
+      "started_unix_s": 1789464620.8707788,
+      "pid": 16323,
+      "exit_code": 0,
+      "elapsed_wall_seconds": 170.41973028699977
+    },
+    {
+      "group": "gap_0400",
+      "stage": "controls",
+      "command": [
+        "bash",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/forge_study.sh",
+        "--headless",
+        "--mode",
+        "collect",
+        "--case-plan",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-GapTilt-Pilot-20260915/plans/gap_0400.json",
+        "--output-dir",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-GapTilt-Pilot-20260915/gap_0400",
+        "--radial-clearance-mm",
+        "0.4",
+        "--max-new-attempts",
+        "1"
+      ],
+      "log": "logs/gap_0400_controls_001.log",
+      "status": "complete",
+      "started_unix_s": 1789464791.2925832,
+      "pid": 16700,
+      "exit_code": 0,
+      "elapsed_wall_seconds": 171.45752736400027
+    },
+    {
+      "group": "gap_0300",
+      "stage": "controls",
+      "command": [
+        "bash",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/forge_study.sh",
+        "--headless",
+        "--mode",
+        "collect",
+        "--case-plan",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-GapTilt-Pilot-20260915/plans/gap_0300.json",
+        "--output-dir",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-GapTilt-Pilot-20260915/gap_0300",
+        "--radial-clearance-mm",
+        "0.3",
+        "--max-new-attempts",
+        "1"
+      ],
+      "log": "logs/gap_0300_controls_002.log",
+      "status": "complete",
+      "started_unix_s": 1789464962.7552998,
+      "pid": 17330,
+      "exit_code": 0,
+      "elapsed_wall_seconds": 170.9703198219995
+    },
+    {
+      "group": "gap_0200",
+      "stage": "controls",
+      "command": [
+        "bash",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/forge_study.sh",
+        "--headless",
+        "--mode",
+        "collect",
+        "--case-plan",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-GapTilt-Pilot-20260915/plans/gap_0200.json",
+        "--output-dir",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-GapTilt-Pilot-20260915/gap_0200",
+        "--radial-clearance-mm",
+        "0.2",
+        "--max-new-attempts",
+        "1"
+      ],
+      "log": "logs/gap_0200_controls_003.log",
+      "status": "complete",
+      "started_unix_s": 1789465133.7313838,
+      "pid": 17875,
+      "exit_code": 0,
+      "elapsed_wall_seconds": 171.4750884770001
+    },
+    {
+      "group": "gap_0100",
+      "stage": "controls",
+      "command": [
+        "bash",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/forge_study.sh",
+        "--headless",
+        "--mode",
+        "collect",
+        "--case-plan",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-GapTilt-Pilot-20260915/plans/gap_0100.json",
+        "--output-dir",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-GapTilt-Pilot-20260915/gap_0100",
+        "--radial-clearance-mm",
+        "0.1",
+        "--max-new-attempts",
+        "1"
+      ],
+      "log": "logs/gap_0100_controls_004.log",
+      "status": "complete",
+      "started_unix_s": 1789465305.2128158,
+      "pid": 18318,
+      "exit_code": 0,
+      "elapsed_wall_seconds": 156.59814861900122
+    },
+    {
+      "group": "gap_0507",
+      "stage": "perturbations",
+      "command": [
+        "bash",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/forge_study.sh",
+        "--headless",
+        "--mode",
+        "collect",
+        "--case-plan",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-GapTilt-Pilot-20260915/plans/gap_0507.json",
+        "--output-dir",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-GapTilt-Pilot-20260915/gap_0507",
+        "--radial-clearance-mm",
+        "0.507",
+        "--resume",
+        "--max-new-attempts",
+        "1"
+      ],
+      "log": "logs/gap_0507_perturbations_005.log",
+      "status": "complete",
+      "started_unix_s": 1789465468.8868165,
+      "pid": 18780,
+      "process_identity": {
+        "boot_id": "941b0bdd-5733-4a29-bd34-932ab69a5122",
+        "start_time_ticks": 1552819,
+        "started_unix_s": 1789465468.19
+      },
+      "exit_code": 0,
+      "elapsed_wall_seconds": 178.28456377200018
+    },
+    {
+      "group": "gap_0200",
+      "stage": "perturbations",
+      "command": [
+        "bash",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/forge_study.sh",
+        "--headless",
+        "--mode",
+        "collect",
+        "--case-plan",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-GapTilt-Pilot-20260915/plans/gap_0200.json",
+        "--output-dir",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-GapTilt-Pilot-20260915/gap_0200",
+        "--radial-clearance-mm",
+        "0.2",
+        "--resume",
+        "--max-new-attempts",
+        "1"
+      ],
+      "log": "logs/gap_0200_perturbations_006.log",
+      "status": "complete",
+      "started_unix_s": 1789465647.181288,
+      "pid": 19180,
+      "process_identity": {
+        "boot_id": "941b0bdd-5733-4a29-bd34-932ab69a5122",
+        "start_time_ticks": 1570648,
+        "started_unix_s": 1789465646.48
+      },
+      "exit_code": 0,
+      "elapsed_wall_seconds": 158.65285528200002
+    },
+    {
+      "group": "gap_0100",
+      "stage": "perturbations",
+      "command": [
+        "bash",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/forge_study.sh",
+        "--headless",
+        "--mode",
+        "collect",
+        "--case-plan",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-GapTilt-Pilot-20260915/plans/gap_0100.json",
+        "--output-dir",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-GapTilt-Pilot-20260915/gap_0100",
+        "--radial-clearance-mm",
+        "0.1",
+        "--resume",
+        "--max-new-attempts",
+        "1"
+      ],
+      "log": "logs/gap_0100_perturbations_007.log",
+      "status": "complete",
+      "started_unix_s": 1789465805.8441439,
+      "pid": 19503,
+      "process_identity": {
+        "boot_id": "941b0bdd-5733-4a29-bd34-932ab69a5122",
+        "start_time_ticks": 1586514,
+        "started_unix_s": 1789465805.14
+      },
+      "exit_code": 0,
+      "elapsed_wall_seconds": 159.76171948400042
+    },
+    {
+      "group": "gap_0507",
+      "stage": "perturbations",
+      "command": [
+        "bash",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/forge_study.sh",
+        "--headless",
+        "--mode",
+        "collect",
+        "--case-plan",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-GapTilt-Pilot-20260915/plans/gap_0507.json",
+        "--output-dir",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-GapTilt-Pilot-20260915/gap_0507",
+        "--radial-clearance-mm",
+        "0.507",
+        "--resume"
+      ],
+      "log": "logs/gap_0507_perturbations_008.log",
+      "status": "complete",
+      "started_unix_s": 1789466015.226657,
+      "pid": 19904,
+      "process_identity": {
+        "boot_id": "941b0bdd-5733-4a29-bd34-932ab69a5122",
+        "start_time_ticks": 1607453,
+        "started_unix_s": 1789466014.53
+      },
+      "exit_code": 0,
+      "elapsed_wall_seconds": 745.1003589709999
+    },
+    {
+      "group": "gap_0200",
+      "stage": "perturbations",
+      "command": [
+        "bash",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/forge_study.sh",
+        "--headless",
+        "--mode",
+        "collect",
+        "--case-plan",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-GapTilt-Pilot-20260915/plans/gap_0200.json",
+        "--output-dir",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-GapTilt-Pilot-20260915/gap_0200",
+        "--radial-clearance-mm",
+        "0.2",
+        "--resume"
+      ],
+      "log": "logs/gap_0200_perturbations_009.log",
+      "status": "complete",
+      "started_unix_s": 1789466760.3410146,
+      "pid": 20996,
+      "process_identity": {
+        "boot_id": "941b0bdd-5733-4a29-bd34-932ab69a5122",
+        "start_time_ticks": 1681964,
+        "started_unix_s": 1789466759.64
+      },
+      "exit_code": 0,
+      "elapsed_wall_seconds": 1227.4471717870001
+    },
+    {
+      "group": "gap_0100",
+      "stage": "perturbations",
+      "command": [
+        "bash",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/forge_study.sh",
+        "--headless",
+        "--mode",
+        "collect",
+        "--case-plan",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-GapTilt-Pilot-20260915/plans/gap_0100.json",
+        "--output-dir",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-GapTilt-Pilot-20260915/gap_0100",
+        "--radial-clearance-mm",
+        "0.1",
+        "--resume"
+      ],
+      "log": "logs/gap_0100_perturbations_010.log",
+      "status": "complete",
+      "started_unix_s": 1789467987.8107867,
+      "pid": 22202,
+      "process_identity": {
+        "boot_id": "941b0bdd-5733-4a29-bd34-932ab69a5122",
+        "start_time_ticks": 1804712,
+        "started_unix_s": 1789467987.12
+      },
+      "exit_code": 0,
+      "elapsed_wall_seconds": 845.782455675002
+    }
+  ],
+  "complete_references": 39,
+  "valid_references": 19,
+  "exhausted_groups": [
+    "gap_0200",
+    "gap_0100"
+  ],
+  "review_required_groups": []
+}

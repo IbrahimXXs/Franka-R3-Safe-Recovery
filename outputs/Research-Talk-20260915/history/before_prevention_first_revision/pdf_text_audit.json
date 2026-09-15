@@ -1,0 +1,108 @@
+{
+  "pages": [
+    {
+      "page": 1,
+      "words": 46,
+      "text_characters": 315,
+      "title": "MOTION PLANNING AND CONTROL"
+    },
+    {
+      "page": 2,
+      "words": 93,
+      "text_characters": 526,
+      "title": "The task needs an affordable exit"
+    },
+    {
+      "page": 3,
+      "words": 90,
+      "text_characters": 649,
+      "title": "Research context"
+    },
+    {
+      "page": 4,
+      "words": 100,
+      "text_characters": 665,
+      "title": "A constrained planning and control problem"
+    },
+    {
+      "page": 5,
+      "words": 80,
+      "text_characters": 481,
+      "title": "The simulated experiment"
+    },
+    {
+      "page": 6,
+      "words": 132,
+      "text_characters": 725,
+      "title": "A recovery choice changes the outcome"
+    },
+    {
+      "page": 7,
+      "words": 85,
+      "text_characters": 536,
+      "title": "The budget changes feasibility"
+    },
+    {
+      "page": 8,
+      "words": 99,
+      "text_characters": 576,
+      "title": "Embedding depth changes the recovery cost"
+    },
+    {
+      "page": 9,
+      "words": 125,
+      "text_characters": 689,
+      "title": "A 6\u00b0 command does not produce a 6\u00b0 state"
+    },
+    {
+      "page": 10,
+      "words": 108,
+      "text_characters": 757,
+      "title": "A dataset for recovery decisions"
+    },
+    {
+      "page": 11,
+      "words": 106,
+      "text_characters": 757,
+      "title": "A proposed planning and control loop"
+    },
+    {
+      "page": 12,
+      "words": 94,
+      "text_characters": 693,
+      "title": "Feasibility is established at the concept level"
+    },
+    {
+      "page": 13,
+      "words": 151,
+      "text_characters": 881,
+      "title": "Complete evidence coverage"
+    },
+    {
+      "page": 14,
+      "words": 131,
+      "text_characters": 882,
+      "title": "References"
+    },
+    {
+      "page": 15,
+      "words": 123,
+      "text_characters": 829,
+      "title": "References continued"
+    }
+  ],
+  "main_slides": 12,
+  "planned_talk_seconds": 600,
+  "reference_links": [
+    "https://doi.org/10.1115/1.3149634",
+    "https://doi.org/10.1098/rsos.240956",
+    "https://doi.org/10.1115/1.3140702",
+    "https://doi.org/10.1177/0278364913506757",
+    "https://doi.org/10.1109/TAC.2016.2638961",
+    "https://arxiv.org/abs/2305.17110",
+    "https://arxiv.org/abs/2205.03532",
+    "https://doi.org/10.1016/j.automatica.2021.109597"
+  ],
+  "out_of_bounds_or_missing_glyph_issues": [],
+  "text_checks_status": "passed"
+}

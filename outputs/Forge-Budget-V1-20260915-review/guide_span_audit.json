@@ -1,0 +1,36 @@
+{
+  "schema": "budget-guide-span-illustration-v1",
+  "rows": [
+    {
+      "condition_id": "m_d12_fs100_fd100_a1p5__b04",
+      "target_depth_mm": 12.0,
+      "actual_terminal_depth_mm": 12.050883471965792,
+      "actual_terminal_tilt_deg": 1.5244408888051508,
+      "effective_guide_span_estimate_mm": 10.551060452320927,
+      "diametral_clearance_mm": 0.3979880142113805,
+      "illustrative_transverse_spread_mm": 0.28079318614365545,
+      "spread_over_diametral_clearance": 0.7055317650709948,
+      "geometry_overlap_estimate_mm": 0.0,
+      "source": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d12_fs100_fd100_a1p5__b04/straight/insertion.csv",
+      "sha256": "78a169998dd24456cac891cf58beb9944225c16fa658570f2fcc62fc726ac853",
+      "run_sha256": "8d71f6eb91f503bf791da45d3bc287fe508dafb6d0c032cd87fd8347fe897e4b"
+    },
+    {
+      "condition_id": "m_d18_fs100_fd100_a1p5__b04",
+      "target_depth_mm": 18.0,
+      "actual_terminal_depth_mm": 18.227891623973846,
+      "actual_terminal_tilt_deg": 1.4391266526571378,
+      "effective_guide_span_estimate_mm": 16.728049336054553,
+      "diametral_clearance_mm": 0.3979880142113805,
+      "illustrative_transverse_spread_mm": 0.4202551349304257,
+      "spread_over_diametral_clearance": 1.0559492244085988,
+      "geometry_overlap_estimate_mm": 0.01694403415462148,
+      "source": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Budget-V1-20260915/runs/m_d18_fs100_fd100_a1p5__b04/straight/insertion.csv",
+      "sha256": "da31c236fa8b40b658f9bca7bca7ed54599db0f739a5b4cd2755dfc170a10f2f",
+      "run_sha256": "964716ad178dbd81c964405945a5473b5d258a7c1e34c77e1421380727331087"
+    }
+  ],
+  "expression": "transverse_spread = Lg * tan(actual tilt); ratio = transverse_spread / (2 * effective radial clearance)",
+  "interpretation": "Approximate geometric illustration only. Lg is an analytic guide overlap, not the distance between actual loaded contacts. The ratio is not a jamming, self-locking, fracture or force prediction criterion.",
+  "script_sha256": "dae9ad9dc3057bb5ac0fca08740d33a37e150e301c7ad4ef4d7b2eb44233ce43"
+}

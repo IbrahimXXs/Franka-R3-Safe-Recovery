@@ -143,6 +143,26 @@ class ContactResponseTests(unittest.TestCase):
             chosen,excluded=discover(root)
             self.assertEqual([x[2] for x in chosen],['Phase2A','Phase2B']);self.assertEqual(len(excluded),2)
 
+    def test_discovery_keeps_new_factor_studies_out_of_legacy_cohorts(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            manifests={
+                'legacy_absent_plan':dict(mode='collect'),
+                'legacy_null_plan':dict(mode='collect',case_plan=None),
+                'phase2b':dict(mode='collect',case_plan={'schema':'Forge-Phase2B-depth-drift-v1'}),
+                'gap_tilt':dict(mode='collect',case_plan={'schema':'Forge-gap-tilt-v1'}),
+                'future_factor_study':dict(mode='collect',case_plan={'schema':'Future-factor-study-v1'}),
+                'unrecognized_plan':dict(mode='collect',case_plan={}),
+            }
+            for name,fields in manifests.items():
+                (root/name).mkdir()
+                (root/name/'study.json').write_text(json.dumps(dict(study='Forge-Controlled-Phase2-v1',**fields)))
+            chosen,excluded=discover(root)
+            self.assertEqual({p.parent.name:cohort for p,_,cohort in chosen},
+                {'legacy_absent_plan':'Phase2A','legacy_null_plan':'Phase2A','phase2b':'Phase2B'})
+            self.assertEqual({Path(p).name for p in excluded},
+                {'gap_tilt','future_factor_study','unrecognized_plan'})
+
     def test_settings_reject_invalid_scales(self):
         for settings in (Settings(length_scale_m=0),Settings(motion_floor_m=-1),Settings(rank_relative_tolerance=2),Settings(lag_steps=0)):
             with self.assertRaises(ValueError):settings.validate()

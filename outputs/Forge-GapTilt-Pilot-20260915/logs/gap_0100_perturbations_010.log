@@ -1,0 +1,143 @@
+[INFO][AppLauncher]: Using device: cuda:0
+[INFO][AppLauncher]: Loading experience file: /home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/.deps/IsaacLab/apps/isaaclab.python.headless.kit
+Loading user config located at: '/home/zephyr/miniforge3/envs/franka-safe-recovery/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: /home/zephyr/miniforge3/envs/franka-safe-recovery/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20260915_142628.log
+2026-09-15T10:26:28Z [87ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-09-15T10:26:29Z [480ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-09-15T10:26:29Z [625ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+2026-09-15T10:26:33Z [4,583ms] [Warning] [gpu.foundation.plugin] Skipping unsupported non-NVIDIA GPU: AMD Unknown (RADV RAPHAEL_MENDOCINO)
+2026-09-15T10:26:33Z [4,583ms] [Warning] [gpu.foundation.plugin] Skipping unsupported non-NVIDIA GPU: AMD Unknown (RADV RAPHAEL_MENDOCINO)
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 580.178.04    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA GeForce RTX 5060 Laptop.. | Yes: 0 |     | 8151    MB | 10de      | 0          |
+|     |                                  |        |     |            | 2d59      | 15f9a3c9.. |
+|     |                                  |        |     |            | 1         |            |
+|---------------------------------------------------------------------------------------------|
+| 1   | AMD Unknown (RADV RAPHAEL_MEND.. |        |     | 10799   MB | 1002      | 0          |
+|     |                                  |        |     |            | 164e      | 00000000.. |
+|     |                                  |        |     |            | 6         |            |
+|=============================================================================================|
+| OS: 22.04.5 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.5, Kernel: 6.8.0-138-generic
+| XServer Vendor: The X.Org Foundation, XServer Version: 12101004 (1.21.1.4)
+| Processor: AMD Ryzen 9 8940HX with Radeon Graphics
+| Cores: 16 | Logical Cores: 32
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 31374 | Free Memory: 24573
+| Total Page/Swap (MB): 2047 | Free Page/Swap: 2047
+|---------------------------------------------------------------------------------------------|
+2026-09-15T10:26:33Z [4,862ms] [Warning] [gpu.foundation.plugin] CPU performance profile is set to powersave. This profile sets the CPU to the lowest frequency reducing performance.
+2026-09-15T10:26:33Z [4,871ms] [Warning] [gpu.foundation.plugin] PCIe link width current (8) and maximum (16) for device 0 don't match.
+2026-09-15T10:26:33Z [4,872ms] [Warning] [gpu.foundation.plugin] IOMMU is enabled.
+2026-09-15T10:26:33Z [4,872ms] [Warning] [gpu.foundation.plugin] Detected IOMMU is enabled. Running CUDA peer-to-peer bandwidth and latency validation.
+Unidirectional P2P=Enabled Bandwidth (P2P Writes) Matrix (GB/s)
+   D\D     0 
+     0 263.94 
+P2P=Enabled Latency (P2P Writes) Matrix (us)
+   GPU     0 
+     0   2.06 
+
+   CPU     0 
+     0   1.78 
+FORGE physics: 120 Hz (upstream_default); installed scene default: 120 Hz
+Setting seed: 20260913
+[INFO]: Base environment:
+	Environment device    : cuda:0
+	Environment seed      : 20260913
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.03333333333333333
+	Environment step-size : 0.06666666666666667
+2026-09-15T10:26:35Z [6,569ms] [Warning] [isaaclab.envs.direct_rl_env] The render interval (4) is smaller than the decimation (8). Multiple render calls will happen for each environment step.If this is not intended, set the render interval to be equal to the decimation.
+[INFO]: Time taken for scene creation : 1.000714 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 2.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 0.550831 seconds
+[INFO]: Completed setting up the environment...
+Setting seed: 20260913
+Controlled FORGE: g0100_d30_pitch_pos20_try00 / tilt_only
+Setting seed: 20260913
+  {'insertion_success': False, 'max_force': 6.370643615722656, 'max_torque': 0.07843237370252609, 'max_normal_load': 14.885581016540527, 'max_penetration': 0.06945080531295389, 'max_depth': 10.869023948907854, 'stalled': True, 'force_budget_exceeded': False, 'torque_budget_exceeded': False, 'numerically_valid': False, 'outcome_trustworthy': False, 'grasp_retained': False, 'max_grasp_slip_mm': 0.10285995085723698, 'max_grasp_slip_deg': 0.19382658799830615, 'max_wrist_force_n': 6.205750942230225, 'max_wrist_torque_nm': 0.1081528291106224, 'tilt_applicable': True, 'tilt_triggered': True, 'tilt_ramp_completed': True, 'max_actual_tilt_deg': 1.9925268723052167, 'max_command_tilt_deg': 2.0, 'terminal_actual_tilt_deg': 1.9896763965319024, 'terminal_command_tilt_deg': 2.0, 'tilt_trigger_time_s': 6.25, 'tilt_trigger_actual_depth_mm': 6.02589324116707, 'tilt_trigger_actual_tilt_deg': 0.027976455118293345, 'tilt_trigger_command_tilt_deg': 0.0, 'tilt_completion_time_s': 7.24999999999968, 'tilt_completion_actual_depth_mm': 10.828746110200884, 'tilt_completion_actual_tilt_deg': 1.3835251713299739, 'tilt_completion_command_tilt_deg': 2.0}; final retreat numerical_screen_failed
+Collection: 2/7 valid references
+Controlled FORGE: g0100_d30_pitch_pos20_try01 / tilt_only
+Setting seed: 20260913
+  {'insertion_success': False, 'max_force': 6.370643615722656, 'max_torque': 0.07843237370252609, 'max_normal_load': 14.885581016540527, 'max_penetration': 0.06945080531295389, 'max_depth': 10.869023948907854, 'stalled': True, 'force_budget_exceeded': False, 'torque_budget_exceeded': False, 'numerically_valid': False, 'outcome_trustworthy': False, 'grasp_retained': False, 'max_grasp_slip_mm': 0.10285995085723698, 'max_grasp_slip_deg': 0.19382658799830615, 'max_wrist_force_n': 6.205750942230225, 'max_wrist_torque_nm': 0.1081528291106224, 'tilt_applicable': True, 'tilt_triggered': True, 'tilt_ramp_completed': True, 'max_actual_tilt_deg': 1.9925268723052167, 'max_command_tilt_deg': 2.0, 'terminal_actual_tilt_deg': 1.9896763965319024, 'terminal_command_tilt_deg': 2.0, 'tilt_trigger_time_s': 6.25, 'tilt_trigger_actual_depth_mm': 6.02589324116707, 'tilt_trigger_actual_tilt_deg': 0.027976455118293345, 'tilt_trigger_command_tilt_deg': 0.0, 'tilt_completion_time_s': 7.249999999999588, 'tilt_completion_actual_depth_mm': 10.828746110200884, 'tilt_completion_actual_tilt_deg': 1.3835251713299739, 'tilt_completion_command_tilt_deg': 2.0}; final retreat numerical_screen_failed
+Collection: 2/7 valid references
+Controlled FORGE: g0100_d30_pitch_pos20_try02 / tilt_only
+Setting seed: 20260913
+  {'insertion_success': False, 'max_force': 6.115177154541016, 'max_torque': 0.07148847728967667, 'max_normal_load': 15.096609115600586, 'max_penetration': 0.06951451359782368, 'max_depth': 10.867086797952654, 'stalled': True, 'force_budget_exceeded': False, 'torque_budget_exceeded': False, 'numerically_valid': False, 'outcome_trustworthy': False, 'grasp_retained': True, 'max_grasp_slip_mm': 0.09157139720628038, 'max_grasp_slip_deg': 0.19382658799830615, 'max_wrist_force_n': 5.993310928344727, 'max_wrist_torque_nm': 0.13491438329219818, 'tilt_applicable': True, 'tilt_triggered': True, 'tilt_ramp_completed': True, 'max_actual_tilt_deg': 1.9971379724330434, 'max_command_tilt_deg': 2.0, 'terminal_actual_tilt_deg': 1.9901681490278635, 'terminal_command_tilt_deg': 2.0, 'tilt_trigger_time_s': 6.25, 'tilt_trigger_actual_depth_mm': 6.02589324116707, 'tilt_trigger_actual_tilt_deg': 0.027976455118293345, 'tilt_trigger_command_tilt_deg': 0.0, 'tilt_completion_time_s': 7.249999999999588, 'tilt_completion_actual_depth_mm': 10.833074897527696, 'tilt_completion_actual_tilt_deg': 1.3832422570278182, 'tilt_completion_command_tilt_deg': 2.0}; final retreat numerical_screen_failed
+Collection: 2/7 valid references
+Controlled FORGE: g0100_d30_pitch_pos20_try03 / tilt_only
+Setting seed: 20260913
+  {'insertion_success': False, 'max_force': 6.370643615722656, 'max_torque': 0.07843237370252609, 'max_normal_load': 14.885581016540527, 'max_penetration': 0.06945080531295389, 'max_depth': 10.869023948907854, 'stalled': True, 'force_budget_exceeded': False, 'torque_budget_exceeded': False, 'numerically_valid': False, 'outcome_trustworthy': False, 'grasp_retained': False, 'max_grasp_slip_mm': 0.10285995085723698, 'max_grasp_slip_deg': 0.19382658799830615, 'max_wrist_force_n': 6.205750942230225, 'max_wrist_torque_nm': 0.1081528291106224, 'tilt_applicable': True, 'tilt_triggered': True, 'tilt_ramp_completed': True, 'max_actual_tilt_deg': 1.9925268723052167, 'max_command_tilt_deg': 2.0, 'terminal_actual_tilt_deg': 1.9896763965319024, 'terminal_command_tilt_deg': 2.0, 'tilt_trigger_time_s': 6.25, 'tilt_trigger_actual_depth_mm': 6.02589324116707, 'tilt_trigger_actual_tilt_deg': 0.027976455118293345, 'tilt_trigger_command_tilt_deg': 0.0, 'tilt_completion_time_s': 7.249999999999588, 'tilt_completion_actual_depth_mm': 10.828746110200884, 'tilt_completion_actual_tilt_deg': 1.3835251713299739, 'tilt_completion_command_tilt_deg': 2.0}; final retreat numerical_screen_failed
+Collection: 2/7 valid references
+Controlled FORGE: g0100_d30_pitch_pos20_try04 / tilt_only
+Setting seed: 20260913
+  {'insertion_success': False, 'max_force': 6.370643615722656, 'max_torque': 0.07843237370252609, 'max_normal_load': 14.885581016540527, 'max_penetration': 0.06945080531295389, 'max_depth': 10.869023948907854, 'stalled': True, 'force_budget_exceeded': False, 'torque_budget_exceeded': False, 'numerically_valid': False, 'outcome_trustworthy': False, 'grasp_retained': False, 'max_grasp_slip_mm': 0.10285995085723698, 'max_grasp_slip_deg': 0.19382658799830615, 'max_wrist_force_n': 6.205750942230225, 'max_wrist_torque_nm': 0.1081528291106224, 'tilt_applicable': True, 'tilt_triggered': True, 'tilt_ramp_completed': True, 'max_actual_tilt_deg': 1.9925268723052167, 'max_command_tilt_deg': 2.0, 'terminal_actual_tilt_deg': 1.9896763965319024, 'terminal_command_tilt_deg': 2.0, 'tilt_trigger_time_s': 6.25, 'tilt_trigger_actual_depth_mm': 6.02589324116707, 'tilt_trigger_actual_tilt_deg': 0.027976455118293345, 'tilt_trigger_command_tilt_deg': 0.0, 'tilt_completion_time_s': 7.25000000000577, 'tilt_completion_actual_depth_mm': 10.828746110200884, 'tilt_completion_actual_tilt_deg': 1.3835251713299739, 'tilt_completion_command_tilt_deg': 2.0}; final retreat numerical_screen_failed
+Collection: 2/7 valid references
+Controlled FORGE: g0100_d50_pitch_pos05_try00 / tilt_only
+Setting seed: 20260913
+Setting seed: 20260913
+  d=20.0463 straight: replay_mismatch; matched=False
+Setting seed: 20260913
+  d=20.0463 realign: replay_mismatch; matched=False
+  {'insertion_success': True, 'max_force': 1.4848074913024902, 'max_torque': 0.024136129766702652, 'max_normal_load': 1.187849521636963, 'max_penetration': 0.008632322533230763, 'max_depth': 20.115555822849274, 'stalled': False, 'force_budget_exceeded': False, 'torque_budget_exceeded': False, 'numerically_valid': True, 'outcome_trustworthy': True, 'grasp_retained': True, 'max_grasp_slip_mm': 0.019816709027509205, 'max_grasp_slip_deg': 0.07912936237050427, 'max_wrist_force_n': 1.2917340993881226, 'max_wrist_torque_nm': 0.10099271684885025, 'tilt_applicable': True, 'tilt_triggered': True, 'tilt_ramp_completed': True, 'max_actual_tilt_deg': 0.5241405410628864, 'max_command_tilt_deg': 0.5, 'terminal_actual_tilt_deg': 0.5078340434824566, 'terminal_command_tilt_deg': 0.5, 'tilt_trigger_time_s': 6.975, 'tilt_trigger_actual_depth_mm': 10.008891671895983, 'tilt_trigger_actual_tilt_deg': 0.027976455118293345, 'tilt_trigger_command_tilt_deg': 0.0, 'tilt_completion_time_s': 7.975000000006347, 'tilt_completion_actual_depth_mm': 14.824339747428896, 'tilt_completion_actual_tilt_deg': 0.3636945235202828, 'tilt_completion_command_tilt_deg': 0.5}; final retreat cleared
+Collection: 3/7 valid references
+Controlled FORGE: g0100_d50_pitch_pos20_try00 / tilt_only
+Setting seed: 20260913
+  {'insertion_success': False, 'max_force': 4.63930082321167, 'max_torque': 0.12304961681365967, 'max_normal_load': 21.099672317504883, 'max_penetration': 0.09232172305928543, 'max_depth': 13.680932670831682, 'stalled': True, 'force_budget_exceeded': False, 'torque_budget_exceeded': False, 'numerically_valid': False, 'outcome_trustworthy': False, 'grasp_retained': False, 'max_grasp_slip_mm': 0.19563348905649036, 'max_grasp_slip_deg': 0.3449170292053863, 'max_wrist_force_n': 4.493859767913818, 'max_wrist_torque_nm': 0.1259090155363083, 'tilt_applicable': True, 'tilt_triggered': True, 'tilt_ramp_completed': True, 'max_actual_tilt_deg': 1.7078877422169543, 'max_command_tilt_deg': 2.0, 'terminal_actual_tilt_deg': 1.701458847513645, 'terminal_command_tilt_deg': 2.0, 'tilt_trigger_time_s': 6.975, 'tilt_trigger_actual_depth_mm': 10.008891671895983, 'tilt_trigger_actual_tilt_deg': 0.027976455118293345, 'tilt_trigger_command_tilt_deg': 0.0, 'tilt_completion_time_s': 7.974999999992747, 'tilt_completion_actual_depth_mm': 13.66105452179909, 'tilt_completion_actual_tilt_deg': 1.2924063847537213, 'tilt_completion_command_tilt_deg': 2.0}; final retreat numerical_screen_failed
+Collection: 3/7 valid references
+Controlled FORGE: g0100_d50_pitch_pos20_try01 / tilt_only
+Setting seed: 20260913
+  {'insertion_success': False, 'max_force': 4.761714935302734, 'max_torque': 0.12659597396850586, 'max_normal_load': 21.6124324798584, 'max_penetration': 0.0938506709644571, 'max_depth': 13.665342330932619, 'stalled': True, 'force_budget_exceeded': False, 'torque_budget_exceeded': False, 'numerically_valid': False, 'outcome_trustworthy': False, 'grasp_retained': False, 'max_grasp_slip_mm': 0.19076518947258592, 'max_grasp_slip_deg': 0.3380409230214611, 'max_wrist_force_n': 4.6486310958862305, 'max_wrist_torque_nm': 0.12210096418857574, 'tilt_applicable': True, 'tilt_triggered': True, 'tilt_ramp_completed': True, 'max_actual_tilt_deg': 1.7172580708394787, 'max_command_tilt_deg': 2.0, 'terminal_actual_tilt_deg': 1.7096056637333013, 'terminal_command_tilt_deg': 2.0, 'tilt_trigger_time_s': 6.975, 'tilt_trigger_actual_depth_mm': 10.008891671895983, 'tilt_trigger_actual_tilt_deg': 0.027976455118293345, 'tilt_trigger_command_tilt_deg': 0.0, 'tilt_completion_time_s': 7.974999999992747, 'tilt_completion_actual_depth_mm': 13.640565425157549, 'tilt_completion_actual_tilt_deg': 1.2976950200818615, 'tilt_completion_command_tilt_deg': 2.0}; final retreat numerical_screen_failed
+Collection: 3/7 valid references
+Controlled FORGE: g0100_d50_pitch_pos20_try02 / tilt_only
+Setting seed: 20260913
+  {'insertion_success': False, 'max_force': 4.761714935302734, 'max_torque': 0.12659597396850586, 'max_normal_load': 21.6124324798584, 'max_penetration': 0.0938506709644571, 'max_depth': 13.665342330932619, 'stalled': True, 'force_budget_exceeded': False, 'torque_budget_exceeded': False, 'numerically_valid': False, 'outcome_trustworthy': False, 'grasp_retained': False, 'max_grasp_slip_mm': 0.19076518947258592, 'max_grasp_slip_deg': 0.3380409230214611, 'max_wrist_force_n': 4.6486310958862305, 'max_wrist_torque_nm': 0.12210096418857574, 'tilt_applicable': True, 'tilt_triggered': True, 'tilt_ramp_completed': True, 'max_actual_tilt_deg': 1.7172580708394787, 'max_command_tilt_deg': 2.0, 'terminal_actual_tilt_deg': 1.7096056637333013, 'terminal_command_tilt_deg': 2.0, 'tilt_trigger_time_s': 6.975, 'tilt_trigger_actual_depth_mm': 10.008891671895983, 'tilt_trigger_actual_tilt_deg': 0.027976455118293345, 'tilt_trigger_command_tilt_deg': 0.0, 'tilt_completion_time_s': 7.974999999992747, 'tilt_completion_actual_depth_mm': 13.640565425157549, 'tilt_completion_actual_tilt_deg': 1.2976950200818615, 'tilt_completion_command_tilt_deg': 2.0}; final retreat numerical_screen_failed
+Collection: 3/7 valid references
+Controlled FORGE: g0100_d50_pitch_pos20_try03 / tilt_only
+Setting seed: 20260913
+  {'insertion_success': False, 'max_force': 4.63930082321167, 'max_torque': 0.12304961681365967, 'max_normal_load': 21.099672317504883, 'max_penetration': 0.09232172305928543, 'max_depth': 13.680932670831682, 'stalled': True, 'force_budget_exceeded': False, 'torque_budget_exceeded': False, 'numerically_valid': False, 'outcome_trustworthy': False, 'grasp_retained': False, 'max_grasp_slip_mm': 0.19563348905649036, 'max_grasp_slip_deg': 0.3449170292053863, 'max_wrist_force_n': 4.493859767913818, 'max_wrist_torque_nm': 0.1259090155363083, 'tilt_applicable': True, 'tilt_triggered': True, 'tilt_ramp_completed': True, 'max_actual_tilt_deg': 1.7078877422169543, 'max_command_tilt_deg': 2.0, 'terminal_actual_tilt_deg': 1.701458847513645, 'terminal_command_tilt_deg': 2.0, 'tilt_trigger_time_s': 6.975, 'tilt_trigger_actual_depth_mm': 10.008891671895983, 'tilt_trigger_actual_tilt_deg': 0.027976455118293345, 'tilt_trigger_command_tilt_deg': 0.0, 'tilt_completion_time_s': 7.974999999992747, 'tilt_completion_actual_depth_mm': 13.66105452179909, 'tilt_completion_actual_tilt_deg': 1.2924063847537213, 'tilt_completion_command_tilt_deg': 2.0}; final retreat numerical_screen_failed
+Collection: 3/7 valid references
+Controlled FORGE: g0100_d50_pitch_pos20_try04 / tilt_only
+Setting seed: 20260913
+  {'insertion_success': False, 'max_force': 4.761714935302734, 'max_torque': 0.12659597396850586, 'max_normal_load': 21.6124324798584, 'max_penetration': 0.0938506709644571, 'max_depth': 13.665342330932619, 'stalled': True, 'force_budget_exceeded': False, 'torque_budget_exceeded': False, 'numerically_valid': False, 'outcome_trustworthy': False, 'grasp_retained': False, 'max_grasp_slip_mm': 0.19076518947258592, 'max_grasp_slip_deg': 0.3380409230214611, 'max_wrist_force_n': 4.6486310958862305, 'max_wrist_torque_nm': 0.12210096418857574, 'tilt_applicable': True, 'tilt_triggered': True, 'tilt_ramp_completed': True, 'max_actual_tilt_deg': 1.7172580708394787, 'max_command_tilt_deg': 2.0, 'terminal_actual_tilt_deg': 1.7096056637333013, 'terminal_command_tilt_deg': 2.0, 'tilt_trigger_time_s': 6.975, 'tilt_trigger_actual_depth_mm': 10.008891671895983, 'tilt_trigger_actual_tilt_deg': 0.027976455118293345, 'tilt_trigger_command_tilt_deg': 0.0, 'tilt_completion_time_s': 7.974999999992747, 'tilt_completion_actual_depth_mm': 13.640565425157549, 'tilt_completion_actual_tilt_deg': 1.2976950200818615, 'tilt_completion_command_tilt_deg': 2.0}; final retreat numerical_screen_failed
+Collection: 3/7 valid references
+Controlled FORGE: g0100_d70_pitch_pos05_try00 / tilt_only
+Setting seed: 20260913
+Setting seed: 20260913
+  d=20.019 straight: replay_mismatch; matched=False
+Setting seed: 20260913
+  d=20.019 realign: cleared; matched=True
+  {'insertion_success': True, 'max_force': 1.1256053447723389, 'max_torque': 0.017628079280257225, 'max_normal_load': 0.9003845453262329, 'max_penetration': 0.0039379547160933726, 'max_depth': 20.081458240747452, 'stalled': False, 'force_budget_exceeded': False, 'torque_budget_exceeded': False, 'numerically_valid': True, 'outcome_trustworthy': True, 'grasp_retained': True, 'max_grasp_slip_mm': 0.019456456357147545, 'max_grasp_slip_deg': 0.08846931922527276, 'max_wrist_force_n': 0.978836178779602, 'max_wrist_torque_nm': 0.08627519011497498, 'tilt_applicable': True, 'tilt_triggered': True, 'tilt_ramp_completed': True, 'max_actual_tilt_deg': 0.5282311221780417, 'max_command_tilt_deg': 0.5, 'terminal_actual_tilt_deg': 0.49810818577135096, 'terminal_command_tilt_deg': 0.5, 'tilt_trigger_time_s': 7.7749999999999995, 'tilt_trigger_actual_depth_mm': 14.036787301301958, 'tilt_trigger_actual_tilt_deg': 0.03956468264845247, 'tilt_trigger_command_tilt_deg': 0.0, 'tilt_completion_time_s': 8.77499999999202, 'tilt_completion_actual_depth_mm': 17.809142917394638, 'tilt_completion_actual_tilt_deg': 0.362076891766538, 'tilt_completion_command_tilt_deg': 0.5}; final retreat cleared
+Collection: 4/7 valid references
+Controlled FORGE: g0100_d70_pitch_pos20_try00 / tilt_only
+Setting seed: 20260913
+  {'insertion_success': False, 'max_force': 3.733891725540161, 'max_torque': 0.15294528007507324, 'max_normal_load': 19.807392120361328, 'max_penetration': 0.07849721441743895, 'max_depth': 16.684727370738983, 'stalled': True, 'force_budget_exceeded': False, 'torque_budget_exceeded': False, 'numerically_valid': False, 'outcome_trustworthy': False, 'grasp_retained': False, 'max_grasp_slip_mm': 0.5288641550578177, 'max_grasp_slip_deg': 0.898739129435315, 'max_wrist_force_n': 3.5327248573303223, 'max_wrist_torque_nm': 0.19175247848033905, 'tilt_applicable': True, 'tilt_triggered': True, 'tilt_ramp_completed': True, 'max_actual_tilt_deg': 1.2739537048022755, 'max_command_tilt_deg': 2.0, 'terminal_actual_tilt_deg': 1.1691884335484601, 'terminal_command_tilt_deg': 2.0, 'tilt_trigger_time_s': 7.7749999999999995, 'tilt_trigger_actual_depth_mm': 14.036787301301958, 'tilt_trigger_actual_tilt_deg': 0.03956468264845247, 'tilt_trigger_command_tilt_deg': 0.0, 'tilt_completion_time_s': 8.77499999999202, 'tilt_completion_actual_depth_mm': 16.682682186365128, 'tilt_completion_actual_tilt_deg': 1.1386638871140904, 'tilt_completion_command_tilt_deg': 2.0}; final retreat numerical_screen_failed
+Collection: 4/7 valid references
+Controlled FORGE: g0100_d70_pitch_pos20_try01 / tilt_only
+Setting seed: 20260913
+  {'insertion_success': False, 'max_force': 4.879324436187744, 'max_torque': 0.1490664780139923, 'max_normal_load': 17.849042892456055, 'max_penetration': 0.07868833199609071, 'max_depth': 16.67729914188385, 'stalled': True, 'force_budget_exceeded': False, 'torque_budget_exceeded': False, 'numerically_valid': False, 'outcome_trustworthy': False, 'grasp_retained': False, 'max_grasp_slip_mm': 0.5308905965648592, 'max_grasp_slip_deg': 0.8550020130851383, 'max_wrist_force_n': 4.558471202850342, 'max_wrist_torque_nm': 0.19161425530910492, 'tilt_applicable': True, 'tilt_triggered': True, 'tilt_ramp_completed': True, 'max_actual_tilt_deg': 1.2620706493793126, 'max_command_tilt_deg': 2.0, 'terminal_actual_tilt_deg': 1.1740320581045396, 'terminal_command_tilt_deg': 2.0, 'tilt_trigger_time_s': 7.7749999999999995, 'tilt_trigger_actual_depth_mm': 14.036787301301958, 'tilt_trigger_actual_tilt_deg': 0.03956468264845247, 'tilt_trigger_command_tilt_deg': 0.0, 'tilt_completion_time_s': 8.77499999999202, 'tilt_completion_actual_depth_mm': 16.673476994037628, 'tilt_completion_actual_tilt_deg': 1.146883194547437, 'tilt_completion_command_tilt_deg': 2.0}; final retreat numerical_screen_failed
+Collection: 4/7 valid references
+Controlled FORGE: g0100_d70_pitch_pos20_try02 / tilt_only
+Setting seed: 20260913
+  {'insertion_success': False, 'max_force': 3.733891725540161, 'max_torque': 0.15294528007507324, 'max_normal_load': 19.807392120361328, 'max_penetration': 0.07849721441743895, 'max_depth': 16.684727370738983, 'stalled': True, 'force_budget_exceeded': False, 'torque_budget_exceeded': False, 'numerically_valid': False, 'outcome_trustworthy': False, 'grasp_retained': False, 'max_grasp_slip_mm': 0.5288641550578177, 'max_grasp_slip_deg': 0.898739129435315, 'max_wrist_force_n': 3.5327248573303223, 'max_wrist_torque_nm': 0.19175247848033905, 'tilt_applicable': True, 'tilt_triggered': True, 'tilt_ramp_completed': True, 'max_actual_tilt_deg': 1.2739537048022755, 'max_command_tilt_deg': 2.0, 'terminal_actual_tilt_deg': 1.1691884335484601, 'terminal_command_tilt_deg': 2.0, 'tilt_trigger_time_s': 7.7749999999999995, 'tilt_trigger_actual_depth_mm': 14.036787301301958, 'tilt_trigger_actual_tilt_deg': 0.03956468264845247, 'tilt_trigger_command_tilt_deg': 0.0, 'tilt_completion_time_s': 8.77499999999202, 'tilt_completion_actual_depth_mm': 16.682682186365128, 'tilt_completion_actual_tilt_deg': 1.1386638871140904, 'tilt_completion_command_tilt_deg': 2.0}; final retreat numerical_screen_failed
+Collection: 4/7 valid references
+Controlled FORGE: g0100_d70_pitch_pos20_try03 / tilt_only
+Setting seed: 20260913
+  {'insertion_success': False, 'max_force': 3.733891725540161, 'max_torque': 0.15294528007507324, 'max_normal_load': 19.807392120361328, 'max_penetration': 0.07849721441743895, 'max_depth': 16.684727370738983, 'stalled': True, 'force_budget_exceeded': False, 'torque_budget_exceeded': False, 'numerically_valid': False, 'outcome_trustworthy': False, 'grasp_retained': False, 'max_grasp_slip_mm': 0.5288641550578177, 'max_grasp_slip_deg': 0.898739129435315, 'max_wrist_force_n': 3.5327248573303223, 'max_wrist_torque_nm': 0.19175247848033905, 'tilt_applicable': True, 'tilt_triggered': True, 'tilt_ramp_completed': True, 'max_actual_tilt_deg': 1.2739537048022755, 'max_command_tilt_deg': 2.0, 'terminal_actual_tilt_deg': 1.1691884335484601, 'terminal_command_tilt_deg': 2.0, 'tilt_trigger_time_s': 7.7749999999999995, 'tilt_trigger_actual_depth_mm': 14.036787301301958, 'tilt_trigger_actual_tilt_deg': 0.03956468264845247, 'tilt_trigger_command_tilt_deg': 0.0, 'tilt_completion_time_s': 8.77499999999202, 'tilt_completion_actual_depth_mm': 16.682682186365128, 'tilt_completion_actual_tilt_deg': 1.1386638871140904, 'tilt_completion_command_tilt_deg': 2.0}; final retreat numerical_screen_failed
+Collection: 4/7 valid references
+Controlled FORGE: g0100_d70_pitch_pos20_try04 / tilt_only
+Setting seed: 20260913
+  {'insertion_success': False, 'max_force': 4.879324436187744, 'max_torque': 0.1490664780139923, 'max_normal_load': 17.849042892456055, 'max_penetration': 0.07868833199609071, 'max_depth': 16.67729914188385, 'stalled': True, 'force_budget_exceeded': False, 'torque_budget_exceeded': False, 'numerically_valid': False, 'outcome_trustworthy': False, 'grasp_retained': False, 'max_grasp_slip_mm': 0.5308905965648592, 'max_grasp_slip_deg': 0.8550020130851383, 'max_wrist_force_n': 4.558471202850342, 'max_wrist_torque_nm': 0.19161425530910492, 'tilt_applicable': True, 'tilt_triggered': True, 'tilt_ramp_completed': True, 'max_actual_tilt_deg': 1.2620706493793126, 'max_command_tilt_deg': 2.0, 'terminal_actual_tilt_deg': 1.1740320581045396, 'terminal_command_tilt_deg': 2.0, 'tilt_trigger_time_s': 7.7749999999999995, 'tilt_trigger_actual_depth_mm': 14.036787301301958, 'tilt_trigger_actual_tilt_deg': 0.03956468264845247, 'tilt_trigger_command_tilt_deg': 0.0, 'tilt_completion_time_s': 8.77499999999202, 'tilt_completion_actual_depth_mm': 16.673476994037628, 'tilt_completion_actual_tilt_deg': 1.146883194547437, 'tilt_completion_command_tilt_deg': 2.0}; final retreat numerical_screen_failed
+Collection: 4/7 valid references
+Controlled FORGE results: /home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-GapTilt-Pilot-20260915/gap_0100

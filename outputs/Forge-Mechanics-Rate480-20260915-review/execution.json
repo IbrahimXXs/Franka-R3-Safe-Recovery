@@ -1,0 +1,51 @@
+{
+  "schema": "mechanics-isolated-execution-v1",
+  "one_new_condition_per_process": true,
+  "case_plan": "experiments/forge_mechanics_rate_check.json",
+  "physics_hz": 480,
+  "invocations": [
+    {
+      "index": 0,
+      "command": [
+        "bash",
+        "forge_mechanics.sh",
+        "--headless",
+        "--case-plan",
+        "experiments/forge_mechanics_rate_check.json",
+        "--physics-hz",
+        "480",
+        "--output-dir",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Rate480-20260915",
+        "--max-new-attempts",
+        "1"
+      ],
+      "started_utc": "2026-09-15T13:04:02.433508+00:00",
+      "log": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Rate480-20260915-isolated-00.log",
+      "return_code": 0,
+      "elapsed_wall_seconds": 81.56562782200126,
+      "finished_utc": "2026-09-15T13:05:23.999238+00:00"
+    },
+    {
+      "index": 1,
+      "command": [
+        "bash",
+        "forge_mechanics.sh",
+        "--headless",
+        "--case-plan",
+        "experiments/forge_mechanics_rate_check.json",
+        "--physics-hz",
+        "480",
+        "--output-dir",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Rate480-20260915",
+        "--max-new-attempts",
+        "1",
+        "--resume"
+      ],
+      "started_utc": "2026-09-15T13:05:23.999722+00:00",
+      "log": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Rate480-20260915-isolated-01.log",
+      "return_code": 0,
+      "elapsed_wall_seconds": 26.673381728000095,
+      "finished_utc": "2026-09-15T13:05:50.675506+00:00"
+    }
+  ]
+}

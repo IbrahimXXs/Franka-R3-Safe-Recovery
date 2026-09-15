@@ -1,0 +1,110 @@
+{
+  "text_checks_status": "passed",
+  "pdf_sha256": "9b1357d312ab0836b81fb6ea0ac613811e2269f63351c675dc6de6653107a8ac",
+  "pages": [
+    {
+      "page": 1,
+      "words": 42
+    },
+    {
+      "page": 2,
+      "words": 87
+    },
+    {
+      "page": 3,
+      "words": 136
+    },
+    {
+      "page": 4,
+      "words": 94
+    },
+    {
+      "page": 5,
+      "words": 82
+    },
+    {
+      "page": 6,
+      "words": 133
+    },
+    {
+      "page": 7,
+      "words": 85
+    },
+    {
+      "page": 8,
+      "words": 127
+    },
+    {
+      "page": 9,
+      "words": 123
+    },
+    {
+      "page": 10,
+      "words": 124
+    },
+    {
+      "page": 11,
+      "words": 110
+    },
+    {
+      "page": 12,
+      "words": 80
+    },
+    {
+      "page": 13,
+      "words": 97
+    },
+    {
+      "page": 14,
+      "words": 139
+    },
+    {
+      "page": 15,
+      "words": 163
+    },
+    {
+      "page": 16,
+      "words": 138
+    }
+  ],
+  "reference_links": [
+    "https://doi.org/10.1115/1.3149634",
+    "https://doi.org/10.1098/rsos.240956",
+    "https://doi.org/10.1115/1.3140702",
+    "https://doi.org/10.1177/0278364913506757",
+    "https://doi.org/10.1109/TAC.2016.2638961",
+    "https://arxiv.org/abs/2305.17110",
+    "https://arxiv.org/abs/2205.03532",
+    "https://doi.org/10.1016/j.automatica.2021.109597",
+    "https://assets.robotiq.com/website-assets/support_documents/document/2F-85_2F-140_General_PDF_20200211.pdf",
+    "https://www.hse.gov.uk/pubns/priced/hsg253.pdf"
+  ],
+  "issues": [],
+  "angle_test_page_removed": true,
+  "unchanged_data_and_scene_assets": [
+    "figures/paired_recovery_force.pdf",
+    "figures/restricted_progress.pdf",
+    "figures/restricted_progress.png",
+    "figures/angle_scan.pdf",
+    "figures/depth_comparison.png",
+    "figures/build_figures.py",
+    "figures/paired_recovery_force.png",
+    "figures/budget_comparison.pdf",
+    "figures/depth_comparison.pdf",
+    "figures/angle_scan.png",
+    "figures/budget_comparison.png",
+    "figures/figure_manifest.json",
+    "figures/condition_outcomes.pdf",
+    "figures/condition_outcomes.png",
+    "scene/closeup_realigned.png",
+    "scene/README.md",
+    "scene/render_recorded_scene.py",
+    "scene/audit_replay.py",
+    "scene/closeup_reference.png",
+    "scene/closeup_clear.png",
+    "scene/replay_audit.json",
+    "scene/provenance.json",
+    "scene/render.log",
+    "scene/bench_reference.png"
+  ]
+}

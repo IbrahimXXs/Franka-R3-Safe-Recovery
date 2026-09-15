@@ -1,0 +1,1106 @@
+{
+  "schema": "boundary_motion_audit_v1",
+  "study_dir": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Boundary-20260915",
+  "study_sha256": "c884ba01432ed49ac1635ea0cecad5f5a483ff48e853942ea85c994d3267f8b2",
+  "scene_sha256": "12f258497271db3d252afa5222c2d435407dad6a3fb61042beda6e916b3de45e",
+  "analyzer_sha256": "b7e9fc4dedfc74425cbf642695db5b832b0ba85a642a4e1710c4c3dcbfbc2e34",
+  "input_hashes": {
+    "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Boundary-20260915/m_d18_fs100_fd100_a00_try00/final_retreat.csv": "d23f76d89b6f059584e7d8e57951f99b7e0f432f3930061e59200da653000dc7",
+    "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Boundary-20260915/m_d18_fs100_fd100_a01_try00/final_retreat.csv": "67d86aef37866e8a4c8f20945bb7a6db3e802ec4884c63d7ae2bef5096db73eb",
+    "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Boundary-20260915/m_d18_fs100_fd100_a1p5_try00/final_retreat.csv": "4b489ffa48f591ceef0bacc44aa24b18c4cfc24801871bc2ba2c0e779ee028c3",
+    "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Boundary-20260915/m_d18_fs100_fd100_a1p5_try00/final_retreat_contacts.jsonl.gz": "ab2a895dfb6b8ea12d64f8deeef1b37ae5131e38b83d8a86f9d23e792409d6c6"
+  },
+  "methods": [
+    "Retreat elapsed zero is the end of executed .25s STOP. Motion comparisons use the prior sample to cover N*dt, while first/last-only differences are separately retained.",
+    "Command withdrawal is change in logged command depth; actual withdrawal is the opposite change in measured peg-base depth. Hand command and peg displacement need not coincide during pose-control tracking lag.",
+    "Positive downward resistance=max(0,-contact_world_fz). Signed mean fz is retained separately to expose alternating pulses; average positive-only resistance is not signed net resistance.",
+    "Fixed-time window .5-.75s is compared across all three completed cases. The wrist-maximum100ms window is selected independently within each case; no same-state cross-case comparison is implied.",
+    "Region definitions match analyze_mechanics_contact_regions.py; side threshold .01N, retained point threshold1e-6N. These are estimated loaded regions, not paired contacts.",
+    "Recorded geometry and force signals remain simulator observations with unverified contact/pose within-step timing, not physical calibration."
+  ],
+  "cases": [
+    {
+      "case_id": "m_d18_fs100_fd100_a00",
+      "tilt_amplitude_deg": 0.0,
+      "source_csv": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Boundary-20260915/m_d18_fs100_fd100_a00_try00/final_retreat.csv",
+      "profile_sample_count": 1137,
+      "checkpoints": [
+        {
+          "sample_index": 84,
+          "retreat_elapsed_s": 0.09999999999999998,
+          "command_withdrawal_from_stop_mm": 0.018000000000000682,
+          "actual_withdrawal_from_stop_mm": 0.00030174851417541504,
+          "depth_minus_command_mm": 0.015112900018692699,
+          "depth_mm": 17.945320904254913,
+          "command_depth_mm": 17.93020800423622,
+          "tilt_deg": 0.019782341029446364,
+          "normal_load_n": 0.0,
+          "wrist_force_n": 0.001352932769805193,
+          "fz": 0.0,
+          "grasp_slip_mm": 0.0029616030587931164
+        },
+        {
+          "sample_index": 120,
+          "retreat_elapsed_s": 0.25,
+          "command_withdrawal_from_stop_mm": 0.234375,
+          "actual_withdrawal_from_stop_mm": 0.014912337064743042,
+          "depth_minus_command_mm": 0.2168773114681244,
+          "depth_mm": 17.930710315704346,
+          "command_depth_mm": 17.71383300423622,
+          "tilt_deg": 0.019782341029446364,
+          "normal_load_n": 0.0,
+          "wrist_force_n": 0.01403108611702919,
+          "fz": 0.0,
+          "grasp_slip_mm": 0.003909666702384129
+        },
+        {
+          "sample_index": 180,
+          "retreat_elapsed_s": 0.5,
+          "command_withdrawal_from_stop_mm": 1.25,
+          "actual_withdrawal_from_stop_mm": 0.6310530006885529,
+          "depth_minus_command_mm": 0.6163616478443146,
+          "depth_mm": 17.314569652080536,
+          "command_depth_mm": 16.69820800423622,
+          "tilt_deg": 0.03956468264845247,
+          "normal_load_n": 0.0,
+          "wrist_force_n": 0.014597085304558277,
+          "fz": 0.0,
+          "grasp_slip_mm": 0.007079952411004342
+        },
+        {
+          "sample_index": 220,
+          "retreat_elapsed_s": 0.6666666666666666,
+          "command_withdrawal_from_stop_mm": 2.083333333333332,
+          "actual_withdrawal_from_stop_mm": 1.5436522662639618,
+          "depth_minus_command_mm": 0.5370957156022378,
+          "depth_mm": 16.401970386505127,
+          "command_depth_mm": 15.86487467090289,
+          "tilt_deg": 0.044234660174789026,
+          "normal_load_n": 0.0,
+          "wrist_force_n": 0.003642326220870018,
+          "fz": 0.0,
+          "grasp_slip_mm": 0.004824638835998485
+        },
+        {
+          "sample_index": 240,
+          "retreat_elapsed_s": 0.75,
+          "command_withdrawal_from_stop_mm": 2.5,
+          "actual_withdrawal_from_stop_mm": 2.0413510501384717,
+          "depth_minus_command_mm": 0.4560635983943957,
+          "depth_mm": 15.904271602630617,
+          "command_depth_mm": 15.448208004236221,
+          "tilt_deg": 0.048456642643301504,
+          "normal_load_n": 0.0,
+          "wrist_force_n": 0.005888404790312052,
+          "fz": 0.0,
+          "grasp_slip_mm": 0.0034062900340359192
+        },
+        {
+          "sample_index": 300,
+          "retreat_elapsed_s": 1.0,
+          "command_withdrawal_from_stop_mm": 3.75,
+          "actual_withdrawal_from_stop_mm": 3.4583844244480115,
+          "depth_minus_command_mm": 0.2890302240848559,
+          "depth_mm": 14.487238228321077,
+          "command_depth_mm": 14.198208004236221,
+          "tilt_deg": 0.019782341029446364,
+          "normal_load_n": 0.12896260619163513,
+          "wrist_force_n": 0.12223772704601288,
+          "fz": -0.1289573758840561,
+          "grasp_slip_mm": 0.021902726075495593
+        },
+        {
+          "sample_index": 420,
+          "retreat_elapsed_s": 1.5,
+          "command_withdrawal_from_stop_mm": 6.25,
+          "actual_withdrawal_from_stop_mm": 5.887772887945173,
+          "depth_minus_command_mm": 0.35964176058769404,
+          "depth_mm": 12.057849764823915,
+          "command_depth_mm": 11.698208004236221,
+          "tilt_deg": 0.019782341029446364,
+          "normal_load_n": 0.0,
+          "wrist_force_n": 0.0022376745473593473,
+          "fz": 0.0,
+          "grasp_slip_mm": 0.006699935966025805
+        },
+        {
+          "sample_index": 540,
+          "retreat_elapsed_s": 2.0,
+          "command_withdrawal_from_stop_mm": 8.75,
+          "actual_withdrawal_from_stop_mm": 8.35786387324333,
+          "depth_minus_command_mm": 0.3895507752895373,
+          "depth_mm": 9.587758779525759,
+          "command_depth_mm": 9.198208004236221,
+          "tilt_deg": 0.027976455118293345,
+          "normal_load_n": 0.0,
+          "wrist_force_n": 0.006164729595184326,
+          "fz": -0.0002722992794588208,
+          "grasp_slip_mm": 0.01219619207404321
+        },
+        {
+          "sample_index": 780,
+          "retreat_elapsed_s": 3.0,
+          "command_withdrawal_from_stop_mm": 13.75,
+          "actual_withdrawal_from_stop_mm": 13.477530330419539,
+          "depth_minus_command_mm": 0.2698843181133288,
+          "depth_mm": 4.46809232234955,
+          "command_depth_mm": 4.198208004236221,
+          "tilt_deg": 0.03956468264845247,
+          "normal_load_n": 0.08691900968551636,
+          "wrist_force_n": 0.1740136295557022,
+          "fz": -0.08691500872373581,
+          "grasp_slip_mm": 0.012054994840582367
+        }
+      ],
+      "windows": {
+        "retreat_0_to_0.25s": {
+          "first_sample_index": 61,
+          "last_sample_index": 120,
+          "baseline_sample_index": 60,
+          "sample_count": 60,
+          "sample_support_s": 0.25,
+          "first_retreat_elapsed_s": 0.004166666666666652,
+          "last_retreat_elapsed_s": 0.25,
+          "command_withdrawal_mm": 0.234375,
+          "actual_withdrawal_mm": 0.014912337064743042,
+          "actual_mean_axial_speed_mm_s": 0.05964934825897217,
+          "mean_normal_load_n": 0.0,
+          "mean_wrist_force_n": 0.004052574753101604,
+          "mean_signed_contact_fz_n": 0.0,
+          "mean_positive_downward_resistance_n": 0.0,
+          "mean_positive_friction_downward_resistance_n": 0.0,
+          "normal_loaded_fraction_at_0p01n": 0.0,
+          "downward_resistance_above1n_fraction": 0.0,
+          "start_end_tilt_deg": [
+            0.019782341029446364,
+            0.019782341029446364
+          ],
+          "start_end_depth_mm": [
+            17.94562265276909,
+            17.930710315704346
+          ],
+          "first_last_actual_withdrawal_mm": 0.014893710613250732,
+          "first_last_command_withdrawal_mm": 0.2343735592689029
+        },
+        "retreat_0.25_to_0.5s": {
+          "first_sample_index": 121,
+          "last_sample_index": 180,
+          "baseline_sample_index": 120,
+          "sample_count": 60,
+          "sample_support_s": 0.25,
+          "first_retreat_elapsed_s": 0.25416666666666665,
+          "last_retreat_elapsed_s": 0.5,
+          "command_withdrawal_mm": 1.015625,
+          "actual_withdrawal_mm": 0.6161406636238098,
+          "actual_mean_axial_speed_mm_s": 2.4645626544952393,
+          "mean_normal_load_n": 0.0,
+          "mean_wrist_force_n": 0.0137837380481263,
+          "mean_signed_contact_fz_n": 0.0,
+          "mean_positive_downward_resistance_n": 0.0,
+          "mean_positive_friction_downward_resistance_n": 0.0,
+          "normal_loaded_fraction_at_0p01n": 0.0,
+          "downward_resistance_above1n_fraction": 0.0,
+          "start_end_tilt_deg": [
+            0.019782341029446364,
+            0.03956468264845247
+          ],
+          "start_end_depth_mm": [
+            17.930710315704346,
+            17.314569652080536
+          ],
+          "first_last_actual_withdrawal_mm": 0.6151758134365082,
+          "first_last_command_withdrawal_mm": 1.0050781310281636
+        },
+        "retreat_0.5_to_0.75s": {
+          "first_sample_index": 181,
+          "last_sample_index": 240,
+          "baseline_sample_index": 180,
+          "sample_count": 60,
+          "sample_support_s": 0.25,
+          "first_retreat_elapsed_s": 0.5041666666666667,
+          "last_retreat_elapsed_s": 0.75,
+          "command_withdrawal_mm": 1.25,
+          "actual_withdrawal_mm": 1.4102980494499189,
+          "actual_mean_axial_speed_mm_s": 5.6411921977996755,
+          "mean_normal_load_n": 0.0,
+          "mean_wrist_force_n": 0.007542643626220524,
+          "mean_signed_contact_fz_n": 0.0,
+          "mean_positive_downward_resistance_n": 0.0,
+          "mean_positive_friction_downward_resistance_n": 0.0,
+          "normal_loaded_fraction_at_0p01n": 0.0,
+          "downward_resistance_above1n_fraction": 0.0,
+          "start_end_tilt_deg": [
+            0.03956468264845247,
+            0.048456642643301504
+          ],
+          "start_end_depth_mm": [
+            17.314569652080536,
+            15.904271602630617
+          ],
+          "first_last_actual_withdrawal_mm": 1.3906732201576215,
+          "first_last_command_withdrawal_mm": 1.2291666666666679
+        },
+        "retreat_0.75_to_1s": {
+          "first_sample_index": 241,
+          "last_sample_index": 300,
+          "baseline_sample_index": 240,
+          "sample_count": 60,
+          "sample_support_s": 0.25,
+          "first_retreat_elapsed_s": 0.7541666666666667,
+          "last_retreat_elapsed_s": 1.0,
+          "command_withdrawal_mm": 1.25,
+          "actual_withdrawal_mm": 1.4170333743095398,
+          "actual_mean_axial_speed_mm_s": 5.668133497238159,
+          "mean_normal_load_n": 0.006797223786513011,
+          "mean_wrist_force_n": 0.016047000791877507,
+          "mean_signed_contact_fz_n": -0.006888019959099741,
+          "mean_positive_downward_resistance_n": 0.006888019959099741,
+          "mean_positive_friction_downward_resistance_n": 0.006888019959099741,
+          "normal_loaded_fraction_at_0p01n": 0.03333333333333333,
+          "downward_resistance_above1n_fraction": 0.0,
+          "start_end_tilt_deg": [
+            0.048456642643301504,
+            0.019782341029446364
+          ],
+          "start_end_depth_mm": [
+            15.904271602630617,
+            14.487238228321077
+          ],
+          "first_last_actual_withdrawal_mm": 1.3923421502113342,
+          "first_last_command_withdrawal_mm": 1.2291666666666679
+        },
+        "retreat_1_to_1.5s": {
+          "first_sample_index": 301,
+          "last_sample_index": 420,
+          "baseline_sample_index": 300,
+          "sample_count": 120,
+          "sample_support_s": 0.5,
+          "first_retreat_elapsed_s": 1.0041666666666667,
+          "last_retreat_elapsed_s": 1.5,
+          "command_withdrawal_mm": 2.5,
+          "actual_withdrawal_mm": 2.429388463497162,
+          "actual_mean_axial_speed_mm_s": 4.858776926994324,
+          "mean_normal_load_n": 0.005183114584845801,
+          "mean_wrist_force_n": 0.017098181680194103,
+          "mean_signed_contact_fz_n": -0.005325698159132723,
+          "mean_positive_downward_resistance_n": 0.005325698159132723,
+          "mean_positive_friction_downward_resistance_n": 0.005325698159132723,
+          "normal_loaded_fraction_at_0p01n": 0.025,
+          "downward_resistance_above1n_fraction": 0.0,
+          "start_end_tilt_deg": [
+            0.019782341029446364,
+            0.019782341029446364
+          ],
+          "start_end_depth_mm": [
+            14.487238228321077,
+            12.057849764823915
+          ],
+          "first_last_actual_withdrawal_mm": 2.4236515164375305,
+          "first_last_command_withdrawal_mm": 2.479166666666668
+        },
+        "retreat_1.5_to_2s": {
+          "first_sample_index": 421,
+          "last_sample_index": 540,
+          "baseline_sample_index": 420,
+          "sample_count": 120,
+          "sample_support_s": 0.5,
+          "first_retreat_elapsed_s": 1.5041666666666667,
+          "last_retreat_elapsed_s": 2.0,
+          "command_withdrawal_mm": 2.5,
+          "actual_withdrawal_mm": 2.4700909852981567,
+          "actual_mean_axial_speed_mm_s": 4.9401819705963135,
+          "mean_normal_load_n": 0.012812920073823382,
+          "mean_wrist_force_n": 0.025022029349929652,
+          "mean_signed_contact_fz_n": -0.012895435891520417,
+          "mean_positive_downward_resistance_n": 0.012895435891520417,
+          "mean_positive_friction_downward_resistance_n": 0.012895435891520417,
+          "normal_loaded_fraction_at_0p01n": 0.11666666666666667,
+          "downward_resistance_above1n_fraction": 0.0,
+          "start_end_tilt_deg": [
+            0.019782341029446364,
+            0.027976455118293345
+          ],
+          "start_end_depth_mm": [
+            12.057849764823915,
+            9.587758779525759
+          ],
+          "first_last_actual_withdrawal_mm": 2.447977662086487,
+          "first_last_command_withdrawal_mm": 2.479166666666668
+        },
+        "wrist_peak100ms": {
+          "first_sample_index": 878,
+          "last_sample_index": 901,
+          "baseline_sample_index": 877,
+          "sample_count": 24,
+          "sample_support_s": 0.1,
+          "first_retreat_elapsed_s": 3.408333333333333,
+          "last_retreat_elapsed_s": 3.5041666666666664,
+          "command_withdrawal_mm": 0.4999999999999982,
+          "actual_withdrawal_mm": 0.440746545791626,
+          "actual_mean_axial_speed_mm_s": 4.40746545791626,
+          "mean_normal_load_n": 0.05108299507992342,
+          "mean_wrist_force_n": 0.08199494498937081,
+          "mean_signed_contact_fz_n": -0.05120707081611423,
+          "mean_positive_downward_resistance_n": 0.05120707081611423,
+          "mean_positive_friction_downward_resistance_n": 0.05120707081611423,
+          "normal_loaded_fraction_at_0p01n": 0.2916666666666667,
+          "downward_resistance_above1n_fraction": 0.0,
+          "start_end_tilt_deg": [
+            0.044234660174789026,
+            0.044234660174789026
+          ],
+          "start_end_depth_mm": [
+            2.4497225880622877,
+            2.0089760422706617
+          ],
+          "first_last_actual_withdrawal_mm": 0.4189014434814453,
+          "first_last_command_withdrawal_mm": 0.4791666666666661
+        }
+      },
+      "max_consecutive_downward_resistance_above1n": {
+        "sample_count": 0,
+        "support_s": 0.0,
+        "end_sample_index": null
+      },
+      "maximum_grasp_slip_mm": 0.021902726075495593,
+      "retreat_peak_wrist_force_n": 0.39565563201904297,
+      "retreat_peak_wrist_mean100ms_n": 0.08199494498937081
+    },
+    {
+      "case_id": "m_d18_fs100_fd100_a01",
+      "tilt_amplitude_deg": 1.0,
+      "source_csv": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Boundary-20260915/m_d18_fs100_fd100_a01_try00/final_retreat.csv",
+      "profile_sample_count": 1145,
+      "checkpoints": [
+        {
+          "sample_index": 84,
+          "retreat_elapsed_s": 0.09999999999999998,
+          "command_withdrawal_from_stop_mm": 0.018000000000000682,
+          "actual_withdrawal_from_stop_mm": -9.685754776000977e-05,
+          "depth_minus_command_mm": 0.021155320882797923,
+          "depth_mm": 18.049684911966324,
+          "command_depth_mm": 18.028529591083526,
+          "tilt_deg": 1.005998935404819,
+          "normal_load_n": 0.0,
+          "wrist_force_n": 0.0007711497601121664,
+          "fz": 0.0,
+          "grasp_slip_mm": 0.0022492281459562946
+        },
+        {
+          "sample_index": 120,
+          "retreat_elapsed_s": 0.25,
+          "command_withdrawal_from_stop_mm": 0.234375,
+          "actual_withdrawal_from_stop_mm": 0.014256685972213745,
+          "depth_minus_command_mm": 0.2231767773628235,
+          "depth_mm": 18.03533136844635,
+          "command_depth_mm": 17.812154591083527,
+          "tilt_deg": 1.0022963624323091,
+          "normal_load_n": 0.3291323482990265,
+          "wrist_force_n": 0.3772999346256256,
+          "fz": -0.3280927538871765,
+          "grasp_slip_mm": 0.00555848419026006
+        },
+        {
+          "sample_index": 180,
+          "retreat_elapsed_s": 0.5,
+          "command_withdrawal_from_stop_mm": 1.25,
+          "actual_withdrawal_from_stop_mm": 0.5934052169322968,
+          "depth_minus_command_mm": 0.6596532464027405,
+          "depth_mm": 17.456182837486267,
+          "command_depth_mm": 16.796529591083527,
+          "tilt_deg": 1.0030769871247398,
+          "normal_load_n": 0.0,
+          "wrist_force_n": 0.020326146855950356,
+          "fz": 0.0,
+          "grasp_slip_mm": 0.006387270332197659
+        },
+        {
+          "sample_index": 220,
+          "retreat_elapsed_s": 0.6666666666666666,
+          "command_withdrawal_from_stop_mm": 2.083333333333332,
+          "actual_withdrawal_from_stop_mm": 1.5356428921222687,
+          "depth_minus_command_mm": 0.5507489045461007,
+          "depth_mm": 16.513945162296295,
+          "command_depth_mm": 15.963196257750194,
+          "tilt_deg": 1.0079421955806347,
+          "normal_load_n": 0.0,
+          "wrist_force_n": 0.0042417277581989765,
+          "fz": 0.0,
+          "grasp_slip_mm": 0.001522383399787941
+        },
+        {
+          "sample_index": 240,
+          "retreat_elapsed_s": 0.75,
+          "command_withdrawal_from_stop_mm": 2.5,
+          "actual_withdrawal_from_stop_mm": 2.034321427345276,
+          "depth_minus_command_mm": 0.46873703598976135,
+          "depth_mm": 16.015266627073288,
+          "command_depth_mm": 15.546529591083527,
+          "tilt_deg": 1.009687932350105,
+          "normal_load_n": 0.0,
+          "wrist_force_n": 0.01290111057460308,
+          "fz": 0.0,
+          "grasp_slip_mm": 0.007662323696422391
+        },
+        {
+          "sample_index": 300,
+          "retreat_elapsed_s": 1.0,
+          "command_withdrawal_from_stop_mm": 3.75,
+          "actual_withdrawal_from_stop_mm": 3.4314654767513257,
+          "depth_minus_command_mm": 0.3215929865837115,
+          "depth_mm": 14.618122577667238,
+          "command_depth_mm": 14.296529591083527,
+          "tilt_deg": 1.0286955450578352,
+          "normal_load_n": 0.0,
+          "wrist_force_n": 0.0059168096631765366,
+          "fz": 0.0,
+          "grasp_slip_mm": 0.0070833193603903055
+        },
+        {
+          "sample_index": 420,
+          "retreat_elapsed_s": 1.5,
+          "command_withdrawal_from_stop_mm": 6.25,
+          "actual_withdrawal_from_stop_mm": 5.812373012304304,
+          "depth_minus_command_mm": 0.440685451030733,
+          "depth_mm": 12.23721504211426,
+          "command_depth_mm": 11.796529591083527,
+          "tilt_deg": 0.9903156028558212,
+          "normal_load_n": 0.0,
+          "wrist_force_n": 0.00401625782251358,
+          "fz": 0.0,
+          "grasp_slip_mm": 0.0046964182729425374
+        },
+        {
+          "sample_index": 540,
+          "retreat_elapsed_s": 2.0,
+          "command_withdrawal_from_stop_mm": 8.75,
+          "actual_withdrawal_from_stop_mm": 8.439254015684126,
+          "depth_minus_command_mm": 0.3138044476509112,
+          "depth_mm": 9.610334038734438,
+          "command_depth_mm": 9.296529591083527,
+          "tilt_deg": 0.9930780639017656,
+          "normal_load_n": 0.0,
+          "wrist_force_n": 0.002703102072700858,
+          "fz": 0.0,
+          "grasp_slip_mm": 0.01737503771437332
+        },
+        {
+          "sample_index": 780,
+          "retreat_elapsed_s": 3.0,
+          "command_withdrawal_from_stop_mm": 13.75,
+          "actual_withdrawal_from_stop_mm": 13.496037572622297,
+          "depth_minus_command_mm": 0.2570208907127398,
+          "depth_mm": 4.553550481796266,
+          "command_depth_mm": 4.296529591083527,
+          "tilt_deg": 0.9470871261961538,
+          "normal_load_n": 0.0,
+          "wrist_force_n": 0.0007627113373018801,
+          "fz": 0.0,
+          "grasp_slip_mm": 0.011745854862965643
+        }
+      ],
+      "windows": {
+        "retreat_0_to_0.25s": {
+          "first_sample_index": 61,
+          "last_sample_index": 120,
+          "baseline_sample_index": 60,
+          "sample_count": 60,
+          "sample_support_s": 0.25,
+          "first_retreat_elapsed_s": 0.004166666666666652,
+          "last_retreat_elapsed_s": 0.25,
+          "command_withdrawal_mm": 0.234375,
+          "actual_withdrawal_mm": 0.014256685972213745,
+          "actual_mean_axial_speed_mm_s": 0.05702674388885498,
+          "mean_normal_load_n": 0.016384829408085957,
+          "mean_wrist_force_n": 0.02061103802601186,
+          "mean_signed_contact_fz_n": -0.013094397221478479,
+          "mean_positive_downward_resistance_n": 0.013094397221478479,
+          "mean_positive_friction_downward_resistance_n": 0.013094397221478479,
+          "normal_loaded_fraction_at_0p01n": 0.1,
+          "downward_resistance_above1n_fraction": 0.0,
+          "start_end_tilt_deg": [
+            1.005998935404819,
+            1.0022963624323091
+          ],
+          "start_end_depth_mm": [
+            18.049588054418564,
+            18.03533136844635
+          ],
+          "first_last_actual_withdrawal_mm": 0.014275312423706055,
+          "first_last_command_withdrawal_mm": 0.2343735592689029
+        },
+        "retreat_0.25_to_0.5s": {
+          "first_sample_index": 121,
+          "last_sample_index": 180,
+          "baseline_sample_index": 120,
+          "sample_count": 60,
+          "sample_support_s": 0.25,
+          "first_retreat_elapsed_s": 0.25416666666666665,
+          "last_retreat_elapsed_s": 0.5,
+          "command_withdrawal_mm": 1.015625,
+          "actual_withdrawal_mm": 0.579148530960083,
+          "actual_mean_axial_speed_mm_s": 2.316594123840332,
+          "mean_normal_load_n": 0.052608721206585565,
+          "mean_wrist_force_n": 0.09067453565075993,
+          "mean_signed_contact_fz_n": -0.05230643454416774,
+          "mean_positive_downward_resistance_n": 0.05230643454416774,
+          "mean_positive_friction_downward_resistance_n": 0.052455815704903826,
+          "normal_loaded_fraction_at_0p01n": 0.13333333333333333,
+          "downward_resistance_above1n_fraction": 0.0,
+          "start_end_tilt_deg": [
+            1.0022963624323091,
+            1.0030769871247398
+          ],
+          "start_end_depth_mm": [
+            18.03533136844635,
+            17.456182837486267
+          ],
+          "first_last_actual_withdrawal_mm": 0.5735978484153748,
+          "first_last_command_withdrawal_mm": 1.0050781310281636
+        },
+        "retreat_0.5_to_0.75s": {
+          "first_sample_index": 181,
+          "last_sample_index": 240,
+          "baseline_sample_index": 180,
+          "sample_count": 60,
+          "sample_support_s": 0.25,
+          "first_retreat_elapsed_s": 0.5041666666666667,
+          "last_retreat_elapsed_s": 0.75,
+          "command_withdrawal_mm": 1.25,
+          "actual_withdrawal_mm": 1.4409162104129791,
+          "actual_mean_axial_speed_mm_s": 5.7636648416519165,
+          "mean_normal_load_n": 0.01616988956617812,
+          "mean_wrist_force_n": 0.027640087980156144,
+          "mean_signed_contact_fz_n": -0.016172399293403337,
+          "mean_positive_downward_resistance_n": 0.016172399293403337,
+          "mean_positive_friction_downward_resistance_n": 0.016172399293403337,
+          "normal_loaded_fraction_at_0p01n": 0.1,
+          "downward_resistance_above1n_fraction": 0.0,
+          "start_end_tilt_deg": [
+            1.0030769871247398,
+            1.009687932350105
+          ],
+          "start_end_depth_mm": [
+            17.456182837486267,
+            16.015266627073288
+          ],
+          "first_last_actual_withdrawal_mm": 1.4212168753147125,
+          "first_last_command_withdrawal_mm": 1.2291666666666679
+        },
+        "retreat_0.75_to_1s": {
+          "first_sample_index": 241,
+          "last_sample_index": 300,
+          "baseline_sample_index": 240,
+          "sample_count": 60,
+          "sample_support_s": 0.25,
+          "first_retreat_elapsed_s": 0.7541666666666667,
+          "last_retreat_elapsed_s": 1.0,
+          "command_withdrawal_mm": 1.25,
+          "actual_withdrawal_mm": 1.3971440494060499,
+          "actual_mean_axial_speed_mm_s": 5.588576197624199,
+          "mean_normal_load_n": 0.0,
+          "mean_wrist_force_n": 0.005079164472408593,
+          "mean_signed_contact_fz_n": 0.0,
+          "mean_positive_downward_resistance_n": 0.0,
+          "mean_positive_friction_downward_resistance_n": 0.0,
+          "normal_loaded_fraction_at_0p01n": 0.0,
+          "downward_resistance_above1n_fraction": 0.0,
+          "start_end_tilt_deg": [
+            1.009687932350105,
+            1.0286955450578352
+          ],
+          "start_end_depth_mm": [
+            16.015266627073288,
+            14.618122577667238
+          ],
+          "first_last_actual_withdrawal_mm": 1.3746991753578186,
+          "first_last_command_withdrawal_mm": 1.2291666666666679
+        },
+        "retreat_1_to_1.5s": {
+          "first_sample_index": 301,
+          "last_sample_index": 420,
+          "baseline_sample_index": 300,
+          "sample_count": 120,
+          "sample_support_s": 0.5,
+          "first_retreat_elapsed_s": 1.0041666666666667,
+          "last_retreat_elapsed_s": 1.5,
+          "command_withdrawal_mm": 2.5,
+          "actual_withdrawal_mm": 2.3809075355529785,
+          "actual_mean_axial_speed_mm_s": 4.761815071105957,
+          "mean_normal_load_n": 0.014961540202299754,
+          "mean_wrist_force_n": 0.027960204390304475,
+          "mean_signed_contact_fz_n": -0.015040535080424888,
+          "mean_positive_downward_resistance_n": 0.015040535080424888,
+          "mean_positive_friction_downward_resistance_n": 0.015040535080424888,
+          "normal_loaded_fraction_at_0p01n": 0.016666666666666666,
+          "downward_resistance_above1n_fraction": 0.008333333333333333,
+          "start_end_tilt_deg": [
+            1.0286955450578352,
+            0.9903156028558212
+          ],
+          "start_end_depth_mm": [
+            14.618122577667238,
+            12.23721504211426
+          ],
+          "first_last_actual_withdrawal_mm": 2.3575536906719208,
+          "first_last_command_withdrawal_mm": 2.479166666666668
+        },
+        "retreat_1.5_to_2s": {
+          "first_sample_index": 421,
+          "last_sample_index": 540,
+          "baseline_sample_index": 420,
+          "sample_count": 120,
+          "sample_support_s": 0.5,
+          "first_retreat_elapsed_s": 1.5041666666666667,
+          "last_retreat_elapsed_s": 2.0,
+          "command_withdrawal_mm": 2.5,
+          "actual_withdrawal_mm": 2.6268810033798218,
+          "actual_mean_axial_speed_mm_s": 5.2537620067596436,
+          "mean_normal_load_n": 0.0017373977228999139,
+          "mean_wrist_force_n": 0.007845476879932296,
+          "mean_signed_contact_fz_n": -0.0017674606241901833,
+          "mean_positive_downward_resistance_n": 0.0017674606241901833,
+          "mean_positive_friction_downward_resistance_n": 0.0017674606241901833,
+          "normal_loaded_fraction_at_0p01n": 0.025,
+          "downward_resistance_above1n_fraction": 0.0,
+          "start_end_tilt_deg": [
+            0.9903156028558212,
+            0.9930780639017656
+          ],
+          "start_end_depth_mm": [
+            12.23721504211426,
+            9.610334038734438
+          ],
+          "first_last_actual_withdrawal_mm": 2.6047229766845703,
+          "first_last_command_withdrawal_mm": 2.479166666666668
+        },
+        "wrist_peak100ms": {
+          "first_sample_index": 117,
+          "last_sample_index": 140,
+          "baseline_sample_index": 116,
+          "sample_count": 24,
+          "sample_support_s": 0.1,
+          "first_retreat_elapsed_s": 0.2375,
+          "last_retreat_elapsed_s": 0.33333333333333337,
+          "command_withdrawal_mm": 0.299037037037035,
+          "actual_withdrawal_mm": 0.10832399129867554,
+          "actual_mean_axial_speed_mm_s": 1.0832399129867554,
+          "mean_normal_load_n": 0.12315975595265627,
+          "mean_wrist_force_n": 0.16538632040222487,
+          "mean_signed_contact_fz_n": -0.11642781657432504,
+          "mean_positive_downward_resistance_n": 0.11642781657432504,
+          "mean_positive_friction_downward_resistance_n": 0.11680126947616525,
+          "normal_loaded_fraction_at_0p01n": 0.4166666666666667,
+          "downward_resistance_above1n_fraction": 0.0,
+          "start_end_tilt_deg": [
+            1.005998935404819,
+            1.0001465032246561
+          ],
+          "start_end_depth_mm": [
+            18.043258786201477,
+            17.9349347949028
+          ],
+          "first_last_actual_withdrawal_mm": 0.10741874575614929,
+          "first_last_command_withdrawal_mm": 0.28953077377507697
+        }
+      },
+      "max_consecutive_downward_resistance_above1n": {
+        "sample_count": 1,
+        "support_s": 0.004166666666666667,
+        "end_sample_index": 380
+      },
+      "maximum_grasp_slip_mm": 0.020064375348738395,
+      "retreat_peak_wrist_force_n": 1.0314520597457886,
+      "retreat_peak_wrist_mean100ms_n": 0.16538632040222487
+    },
+    {
+      "case_id": "m_d18_fs100_fd100_a1p5",
+      "tilt_amplitude_deg": 1.5,
+      "source_csv": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Boundary-20260915/m_d18_fs100_fd100_a1p5_try00/final_retreat.csv",
+      "profile_sample_count": 1159,
+      "checkpoints": [
+        {
+          "sample_index": 84,
+          "retreat_elapsed_s": 0.09999999999999998,
+          "command_withdrawal_from_stop_mm": 0.018000000000000682,
+          "actual_withdrawal_from_stop_mm": 0.005256384611129761,
+          "depth_minus_command_mm": 0.006839030265808788,
+          "depth_mm": 18.216730654239655,
+          "command_depth_mm": 18.209891623973846,
+          "tilt_deg": 1.422578060218246,
+          "normal_load_n": 1.6987544298171997,
+          "wrist_force_n": 1.6570918560028076,
+          "fz": 1.6973567008972168,
+          "grasp_slip_mm": 0.008555847671232186
+        },
+        {
+          "sample_index": 120,
+          "retreat_elapsed_s": 0.25,
+          "command_withdrawal_from_stop_mm": 0.234375,
+          "actual_withdrawal_from_stop_mm": 0.01761689782142639,
+          "depth_minus_command_mm": 0.21085351705551147,
+          "depth_mm": 18.204370141029358,
+          "command_depth_mm": 17.993516623973846,
+          "tilt_deg": 1.4299870400885812,
+          "normal_load_n": 1.4387507438659668,
+          "wrist_force_n": 0.4052976965904236,
+          "fz": -0.40205636620521545,
+          "grasp_slip_mm": 0.002044667780864984
+        },
+        {
+          "sample_index": 180,
+          "retreat_elapsed_s": 0.5,
+          "command_withdrawal_from_stop_mm": 1.25,
+          "actual_withdrawal_from_stop_mm": 0.13992935419082642,
+          "depth_minus_command_mm": 1.1041660606861115,
+          "depth_mm": 18.082057684659958,
+          "command_depth_mm": 16.977891623973846,
+          "tilt_deg": 1.405277817813398,
+          "normal_load_n": 0.9628161191940308,
+          "wrist_force_n": 1.2720547914505005,
+          "fz": -0.9238941669464111,
+          "grasp_slip_mm": 0.02049538124992978
+        },
+        {
+          "sample_index": 220,
+          "retreat_elapsed_s": 0.6666666666666666,
+          "command_withdrawal_from_stop_mm": 2.083333333333332,
+          "actual_withdrawal_from_stop_mm": 0.15182793140411377,
+          "depth_minus_command_mm": 1.9256008168061562,
+          "depth_mm": 18.07015910744667,
+          "command_depth_mm": 16.144558290640514,
+          "tilt_deg": 1.3947946975312415,
+          "normal_load_n": 5.264465808868408,
+          "wrist_force_n": 4.583499431610107,
+          "fz": -5.249064922332764,
+          "grasp_slip_mm": 0.020385477910167538
+        },
+        {
+          "sample_index": 240,
+          "retreat_elapsed_s": 0.75,
+          "command_withdrawal_from_stop_mm": 2.5,
+          "actual_withdrawal_from_stop_mm": 0.16181915998458862,
+          "depth_minus_command_mm": 2.3322762548923492,
+          "depth_mm": 18.060167878866196,
+          "command_depth_mm": 15.727891623973846,
+          "tilt_deg": 1.3894530673938883,
+          "normal_load_n": 1.3403526544570923,
+          "wrist_force_n": 0.802923858165741,
+          "fz": -0.677556037902832,
+          "grasp_slip_mm": 0.024238172045443207
+        },
+        {
+          "sample_index": 300,
+          "retreat_elapsed_s": 1.0,
+          "command_withdrawal_from_stop_mm": 3.75,
+          "actual_withdrawal_from_stop_mm": 1.8558353185653687,
+          "depth_minus_command_mm": 1.8882600963115692,
+          "depth_mm": 16.366151720285416,
+          "command_depth_mm": 14.477891623973846,
+          "tilt_deg": 1.4056955168269523,
+          "normal_load_n": 0.05579506233334541,
+          "wrist_force_n": 0.1952284276485443,
+          "fz": -0.05427178740501404,
+          "grasp_slip_mm": 0.018561859178589657
+        },
+        {
+          "sample_index": 420,
+          "retreat_elapsed_s": 1.5,
+          "command_withdrawal_from_stop_mm": 6.25,
+          "actual_withdrawal_from_stop_mm": 5.801480263471602,
+          "depth_minus_command_mm": 0.44261515140533625,
+          "depth_mm": 12.420506775379183,
+          "command_depth_mm": 11.977891623973846,
+          "tilt_deg": 1.3952155343531787,
+          "normal_load_n": 0.0,
+          "wrist_force_n": 0.02090183086693287,
+          "fz": -0.00199314346536994,
+          "grasp_slip_mm": 0.018819964680005796
+        },
+        {
+          "sample_index": 540,
+          "retreat_elapsed_s": 2.0,
+          "command_withdrawal_from_stop_mm": 8.75,
+          "actual_withdrawal_from_stop_mm": 8.388351649045942,
+          "depth_minus_command_mm": 0.35574376583099543,
+          "depth_mm": 9.833635389804842,
+          "command_depth_mm": 9.477891623973846,
+          "tilt_deg": 1.4519872117591615,
+          "normal_load_n": 0.0,
+          "wrist_force_n": 0.031899888068437576,
+          "fz": 0.0,
+          "grasp_slip_mm": 0.011250604984525125
+        },
+        {
+          "sample_index": 780,
+          "retreat_elapsed_s": 3.0,
+          "command_withdrawal_from_stop_mm": 13.75,
+          "actual_withdrawal_from_stop_mm": 13.426635414361952,
+          "depth_minus_command_mm": 0.3174600005149859,
+          "depth_mm": 4.795351624488832,
+          "command_depth_mm": 4.477891623973846,
+          "tilt_deg": 1.4149920077109632,
+          "normal_load_n": 0.0,
+          "wrist_force_n": 0.0033108338247984648,
+          "fz": 0.0,
+          "grasp_slip_mm": 0.014535697118844837
+        }
+      ],
+      "windows": {
+        "retreat_0_to_0.25s": {
+          "first_sample_index": 61,
+          "last_sample_index": 120,
+          "baseline_sample_index": 60,
+          "sample_count": 60,
+          "sample_support_s": 0.25,
+          "first_retreat_elapsed_s": 0.004166666666666652,
+          "last_retreat_elapsed_s": 0.25,
+          "command_withdrawal_mm": 0.234375,
+          "actual_withdrawal_mm": 0.01761689782142639,
+          "actual_mean_axial_speed_mm_s": 0.07046759128570557,
+          "mean_normal_load_n": 1.4816231712698937,
+          "mean_wrist_force_n": 0.6827896811068058,
+          "mean_signed_contact_fz_n": -0.002655164850875735,
+          "mean_positive_downward_resistance_n": 0.3071870849778255,
+          "mean_positive_friction_downward_resistance_n": 0.3071870849778255,
+          "normal_loaded_fraction_at_0p01n": 1.0,
+          "downward_resistance_above1n_fraction": 0.08333333333333333,
+          "start_end_tilt_deg": [
+            1.4291657164585956,
+            1.4299870400885812
+          ],
+          "start_end_depth_mm": [
+            18.221987038850784,
+            18.204370141029358
+          ],
+          "first_last_actual_withdrawal_mm": 0.017970800399780273,
+          "first_last_command_withdrawal_mm": 0.2343735592689029,
+          "region_observations": {
+            "both_wall_rim_sides_loaded_fraction": 0.9166666666666666,
+            "mean_upper_rim_load_n": 0.7531418531545853,
+            "mean_inner_wall_load_n": 0.7284812623630084,
+            "max_abs_raw_normal_sum_minus_csv_n": 7.84493749961257e-07
+          }
+        },
+        "retreat_0.25_to_0.5s": {
+          "first_sample_index": 121,
+          "last_sample_index": 180,
+          "baseline_sample_index": 120,
+          "sample_count": 60,
+          "sample_support_s": 0.25,
+          "first_retreat_elapsed_s": 0.25416666666666665,
+          "last_retreat_elapsed_s": 0.5,
+          "command_withdrawal_mm": 1.015625,
+          "actual_withdrawal_mm": 0.12231245636940002,
+          "actual_mean_axial_speed_mm_s": 0.4892498254776001,
+          "mean_normal_load_n": 1.4698467451458177,
+          "mean_wrist_force_n": 0.7805585052507619,
+          "mean_signed_contact_fz_n": -0.332164954172913,
+          "mean_positive_downward_resistance_n": 0.5042822497858045,
+          "mean_positive_friction_downward_resistance_n": 0.5042822497858045,
+          "normal_loaded_fraction_at_0p01n": 0.9166666666666666,
+          "downward_resistance_above1n_fraction": 0.16666666666666666,
+          "start_end_tilt_deg": [
+            1.4299870400885812,
+            1.405277817813398
+          ],
+          "start_end_depth_mm": [
+            18.204370141029358,
+            18.082057684659958
+          ],
+          "first_last_actual_withdrawal_mm": 0.12258067727088928,
+          "first_last_command_withdrawal_mm": 1.0050781310281636,
+          "region_observations": {
+            "both_wall_rim_sides_loaded_fraction": 0.55,
+            "mean_upper_rim_load_n": 0.7406775732373243,
+            "mean_inner_wall_load_n": 0.7291691344059169,
+            "max_abs_raw_normal_sum_minus_csv_n": 8.632778190076351e-07
+          }
+        },
+        "retreat_0.5_to_0.75s": {
+          "first_sample_index": 181,
+          "last_sample_index": 240,
+          "baseline_sample_index": 180,
+          "sample_count": 60,
+          "sample_support_s": 0.25,
+          "first_retreat_elapsed_s": 0.5041666666666667,
+          "last_retreat_elapsed_s": 0.75,
+          "command_withdrawal_mm": 1.25,
+          "actual_withdrawal_mm": 0.021889805793762207,
+          "actual_mean_axial_speed_mm_s": 0.08755922317504883,
+          "mean_normal_load_n": 2.8166721522808076,
+          "mean_wrist_force_n": 1.5141804113984108,
+          "mean_signed_contact_fz_n": -1.005141846338908,
+          "mean_positive_downward_resistance_n": 1.3109200711051623,
+          "mean_positive_friction_downward_resistance_n": 1.3156051740050316,
+          "normal_loaded_fraction_at_0p01n": 1.0,
+          "downward_resistance_above1n_fraction": 0.48333333333333334,
+          "start_end_tilt_deg": [
+            1.405277817813398,
+            1.3894530673938883
+          ],
+          "start_end_depth_mm": [
+            18.082057684659958,
+            18.060167878866196
+          ],
+          "first_last_actual_withdrawal_mm": 0.022258609533309937,
+          "first_last_command_withdrawal_mm": 1.2291666666666679,
+          "region_observations": {
+            "both_wall_rim_sides_loaded_fraction": 1.0,
+            "mean_upper_rim_load_n": 1.431989293556495,
+            "mean_inner_wall_load_n": 1.3846827630167051,
+            "max_abs_raw_normal_sum_minus_csv_n": 8.316692401422188e-07
+          }
+        },
+        "retreat_0.75_to_1s": {
+          "first_sample_index": 241,
+          "last_sample_index": 300,
+          "baseline_sample_index": 240,
+          "sample_count": 60,
+          "sample_support_s": 0.25,
+          "first_retreat_elapsed_s": 0.7541666666666667,
+          "last_retreat_elapsed_s": 1.0,
+          "command_withdrawal_mm": 1.25,
+          "actual_withdrawal_mm": 1.69401615858078,
+          "actual_mean_axial_speed_mm_s": 6.77606463432312,
+          "mean_normal_load_n": 0.720240056530262,
+          "mean_wrist_force_n": 0.7832708430166045,
+          "mean_signed_contact_fz_n": -0.6483563843551868,
+          "mean_positive_downward_resistance_n": 0.6543183416807248,
+          "mean_positive_friction_downward_resistance_n": 0.6577798321901355,
+          "normal_loaded_fraction_at_0p01n": 0.7833333333333333,
+          "downward_resistance_above1n_fraction": 0.3,
+          "start_end_tilt_deg": [
+            1.3894530673938883,
+            1.4056955168269523
+          ],
+          "start_end_depth_mm": [
+            18.060167878866196,
+            16.366151720285416
+          ],
+          "first_last_actual_withdrawal_mm": 1.6926266252994537,
+          "first_last_command_withdrawal_mm": 1.2291666666666679,
+          "region_observations": {
+            "both_wall_rim_sides_loaded_fraction": 0.3,
+            "mean_upper_rim_load_n": 0.42749471149578916,
+            "mean_inner_wall_load_n": 0.2927453305090542,
+            "max_abs_raw_normal_sum_minus_csv_n": 7.054356956359698e-07
+          }
+        },
+        "retreat_1_to_1.5s": {
+          "first_sample_index": 301,
+          "last_sample_index": 420,
+          "baseline_sample_index": 300,
+          "sample_count": 120,
+          "sample_support_s": 0.5,
+          "first_retreat_elapsed_s": 1.0041666666666667,
+          "last_retreat_elapsed_s": 1.5,
+          "command_withdrawal_mm": 2.5,
+          "actual_withdrawal_mm": 3.945644944906233,
+          "actual_mean_axial_speed_mm_s": 7.891289889812466,
+          "mean_normal_load_n": 0.06966791541005174,
+          "mean_wrist_force_n": 0.10751211559205937,
+          "mean_signed_contact_fz_n": -0.0696600472671283,
+          "mean_positive_downward_resistance_n": 0.0696600472671283,
+          "mean_positive_friction_downward_resistance_n": 0.0696600472671283,
+          "normal_loaded_fraction_at_0p01n": 0.19166666666666668,
+          "downward_resistance_above1n_fraction": 0.0,
+          "start_end_tilt_deg": [
+            1.4056955168269523,
+            1.3952155343531787
+          ],
+          "start_end_depth_mm": [
+            16.366151720285416,
+            12.420506775379183
+          ],
+          "first_last_actual_withdrawal_mm": 3.8832128047943097,
+          "first_last_command_withdrawal_mm": 2.479166666666668,
+          "region_observations": {
+            "both_wall_rim_sides_loaded_fraction": 0.0,
+            "mean_upper_rim_load_n": 0.0,
+            "mean_inner_wall_load_n": 0.06966791491336152,
+            "max_abs_raw_normal_sum_minus_csv_n": 2.922024577856064e-08
+          }
+        },
+        "retreat_1.5_to_2s": {
+          "first_sample_index": 421,
+          "last_sample_index": 540,
+          "baseline_sample_index": 420,
+          "sample_count": 120,
+          "sample_support_s": 0.5,
+          "first_retreat_elapsed_s": 1.5041666666666667,
+          "last_retreat_elapsed_s": 2.0,
+          "command_withdrawal_mm": 2.5,
+          "actual_withdrawal_mm": 2.586871385574341,
+          "actual_mean_axial_speed_mm_s": 5.173742771148682,
+          "mean_normal_load_n": 0.01112354751676321,
+          "mean_wrist_force_n": 0.019895130728400545,
+          "mean_signed_contact_fz_n": -0.011128066674427829,
+          "mean_positive_downward_resistance_n": 0.011128066674427829,
+          "mean_positive_friction_downward_resistance_n": 0.011128066674427829,
+          "normal_loaded_fraction_at_0p01n": 0.058333333333333334,
+          "downward_resistance_above1n_fraction": 0.0,
+          "start_end_tilt_deg": [
+            1.3952155343531787,
+            1.4519872117591615
+          ],
+          "start_end_depth_mm": [
+            12.420506775379183,
+            9.833635389804842
+          ],
+          "first_last_actual_withdrawal_mm": 2.574421465396881,
+          "first_last_command_withdrawal_mm": 2.479166666666668,
+          "region_observations": {
+            "both_wall_rim_sides_loaded_fraction": 0.0,
+            "mean_upper_rim_load_n": 0.0,
+            "mean_inner_wall_load_n": 0.011123547608955656,
+            "max_abs_raw_normal_sum_minus_csv_n": 8.265487849712372e-09
+          }
+        },
+        "wrist_peak100ms": {
+          "first_sample_index": 173,
+          "last_sample_index": 196,
+          "baseline_sample_index": 172,
+          "sample_count": 24,
+          "sample_support_s": 0.1,
+          "first_retreat_elapsed_s": 0.4708333333333333,
+          "last_retreat_elapsed_s": 0.5666666666666667,
+          "command_withdrawal_mm": 0.4992839506172828,
+          "actual_withdrawal_mm": 0.018309801816940308,
+          "actual_mean_axial_speed_mm_s": 0.18309801816940308,
+          "mean_normal_load_n": 4.261387050151825,
+          "mean_wrist_force_n": 2.2026010068754354,
+          "mean_signed_contact_fz_n": -0.8525516179700693,
+          "mean_positive_downward_resistance_n": 1.5112235993146896,
+          "mean_positive_friction_downward_resistance_n": 1.5127752050757408,
+          "normal_loaded_fraction_at_0p01n": 1.0,
+          "downward_resistance_above1n_fraction": 0.5416666666666666,
+          "start_end_tilt_deg": [
+            1.4331310877507477,
+            1.3961969937407326
+          ],
+          "start_end_depth_mm": [
+            18.091396987438202,
+            18.07308718562126
+          ],
+          "first_last_actual_withdrawal_mm": 0.018086284399032593,
+          "first_last_command_withdrawal_mm": 0.47868490186149515,
+          "region_observations": {
+            "both_wall_rim_sides_loaded_fraction": 0.875,
+            "mean_upper_rim_load_n": 2.142054416534658,
+            "mean_inner_wall_load_n": 2.1193326229889258,
+            "max_abs_raw_normal_sum_minus_csv_n": 8.632778190076351e-07
+          }
+        }
+      },
+      "max_consecutive_downward_resistance_above1n": {
+        "sample_count": 4,
+        "support_s": 0.016666666666666666,
+        "end_sample_index": 176
+      },
+      "maximum_grasp_slip_mm": 0.03285043567302637,
+      "retreat_peak_wrist_force_n": 4.583499431610107,
+      "retreat_peak_wrist_mean100ms_n": 2.2026010068754354
+    }
+  ]
+}

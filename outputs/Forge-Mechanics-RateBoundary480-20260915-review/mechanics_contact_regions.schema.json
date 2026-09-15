@@ -1,0 +1,69 @@
+{
+  "schema": "mechanics_contact_regions_v1",
+  "study_dir": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915",
+  "states_path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915-review/mechanics_states.csv",
+  "states_sha256": "dfe320d9ef888d964e0004a0420526ecef630f6b43fb776cd26999d9caa98d48",
+  "scene_path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915/scene.json",
+  "scene_sha256": "2c2f8f01fa5579aad401322ecdb720f6086061e8e9884a5bd01aa1b2f4f4a11a",
+  "analyzer_sha256": "b54b01243226924fa45a0783521601b207b1c4a4d3ab037aeefae376f090b4ad",
+  "state_parser_sha256": "c1a2f0577accc77dc16c4aceb2da31dd15e7798aed08ec80f3b8aee1703e3902",
+  "socket_mesh_sha256": "8241aad76384b8c880b75008758ac2eb2c34334472ae70db41ca31428d3145c9",
+  "measured_bore_radius_mm": 4.193000166349223,
+  "states_exported": 22,
+  "states_observed": 22,
+  "case_ids": [
+    "m_d18_fs100_fd100_a00",
+    "m_d18_fs100_fd100_a1p5"
+  ],
+  "scope": "Only selected states in the supplied mechanics_states.csv; not all frames or all planned cases.",
+  "output_csv": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915-review/mechanics_contact_regions.csv",
+  "raw_sha256": {
+    "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915/m_d18_fs100_fd100_a00_try00/insertion_contacts.jsonl.gz": "d16ba37bc34b363201946a4bf6e30a4ee80f4c196e506c5bc37170eff23d2443",
+    "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915/m_d18_fs100_fd100_a00_try00/final_retreat_contacts.jsonl.gz": "1d83db146f1780300b71ec631af07239f3ef89fe50b207f9e7c26c235dbc15f0",
+    "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915/m_d18_fs100_fd100_a00_try00/terminal_realign_recovery_contacts.jsonl.gz": "b9cab950239fe92a9d62c766316a932adb0b198fa263a0bef21ee5f069a55b79",
+    "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915/m_d18_fs100_fd100_a1p5_try00/insertion_contacts.jsonl.gz": "fb910a4fbf0ca9b6d3df5dd98434356a37a72f981bcea56aff7fdb7d91e3d6f7",
+    "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915/m_d18_fs100_fd100_a1p5_try00/final_retreat_contacts.jsonl.gz": "654702302577b1a5a0ed8b2c9f1e4ed32c5c0f34c127b4867e80de97f2235f88",
+    "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915/m_d18_fs100_fd100_a1p5_try00/terminal_realign_recovery_contacts.jsonl.gz": "81113a65d65c22f9ae7983a511a5b6acaf5c96bd19d3e1b66c7f468be6a14db0"
+  },
+  "raw_file_sample_counts": {
+    "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915/m_d18_fs100_fd100_a00_try00/insertion_contacts.jsonl.gz": 5601,
+    "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915/m_d18_fs100_fd100_a00_try00/final_retreat_contacts.jsonl.gz": 2276,
+    "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915/m_d18_fs100_fd100_a00_try00/terminal_realign_recovery_contacts.jsonl.gz": 3234,
+    "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915/m_d18_fs100_fd100_a1p5_try00/insertion_contacts.jsonl.gz": 5601,
+    "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915/m_d18_fs100_fd100_a1p5_try00/final_retreat_contacts.jsonl.gz": 2321,
+    "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915/m_d18_fs100_fd100_a1p5_try00/terminal_realign_recovery_contacts.jsonl.gz": 3270
+  },
+  "raw_gzip_closed_crc_verified": true,
+  "coordinates": "socket-local metres in raw data; exported positions and spans in mm; z=0 floor, z=24mm transition, z=25mm mouth",
+  "thresholds": {
+    "retained_point_normal_load_gt_n": 1e-06,
+    "wall_rim_side_total_load_ge_n": 0.01,
+    "force_supported_span_point_load_ge_n": 0.01,
+    "upper_rim_center_mm": 24.0,
+    "upper_rim_half_width_mm": 0.05,
+    "near_bore_radial_band_mm": 0.5,
+    "near_horizontal_max_abs_normal_z": 0.15,
+    "fixed_x_sector_cosine": 0.5
+  },
+  "region_partition": {
+    "upper_rim_band": "all retained normal points in z=24mm\u00b10.05mm, irrespective of normal direction/radius; an axial region label, not a mesh-face identification",
+    "inner_straight_wall": "outside rim band: 0.05<z<23.95mm, near-bore and near-horizontal normal",
+    "entrance_chamfer_region": "outside rim band: 24.05<z<=25.05mm and within radial band of the nominal 1:1 entry chamfer",
+    "other": "all remaining retained normal points, including floor or other non-wall contacts"
+  },
+  "span_definitions": {
+    "all_loaded_normal_z_span_mm": "max(z)-min(z) of all >1e-6N normal points; valid when at least two retained records, including possibly coincident points",
+    "force_supported_normal_z_span_mm": "same extrema only for individual points >=0.01N; valid with at least two such records; may omit diffuse load distributed over many weak points",
+    "wall_rim_centroid_axial_span_mm": "normal-load weighted positive/negative socket-X sector centers from near-bore, near-horizontal straight-wall OR upper-rim points; only if each side total >=0.01N",
+    "legacy_strict_wall_point_z_span_mm": "unchanged original contact_axial_span_mm field: strict-wall points only, despite the older generic name"
+  },
+  "limitations": [
+    "Loaded region centers are estimates, not uniquely paired physical contacts or proof of a two-point locking mechanism.",
+    "A false legacy_strict_wall_both_sides_loaded value cannot rule out rim/edge or other contacts.",
+    "A false wall_rim_both_sides_loaded value only describes this selected sample and these sectors/thresholds; it is not a global no-jam label.",
+    "The rim band intentionally catches the straight-wall/entrance transition excluded by the frozen 0.05mm wall margin; no frozen field, physical parameter, or label was changed.",
+    "Friction anchors are not normal contacts and are neither classified here nor paired by index.",
+    "Null means unobserved/undefined; zero load in an observed sample is an actual empty region. Tiny points can expand the unfiltered span; compare the separately thresholded span.",
+    "Contact/pose synchronization within the solver step is not independently established; no global time shift is applied."
+  ]
+}

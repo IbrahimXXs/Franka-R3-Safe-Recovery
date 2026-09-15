@@ -1,0 +1,153 @@
+{
+  "final_pdf": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/output/pdf/safe_recovery_motion_planning_control.pdf",
+  "pages": 15,
+  "main_slides": 12,
+  "appendix_pages": 3,
+  "planned_talk_seconds": 600,
+  "slides": [
+    {
+      "number": 1,
+      "title": "Safe insertion and recovery",
+      "section": "Motion Planning and Control",
+      "seconds": 25,
+      "speaker_notes": "Introduce the finite-load recovery question. Our rigid-body simulator already produces a strategy-dependent proof of concept. The remaining talk distinguishes observed evidence from proposed planning and control methods."
+    },
+    {
+      "number": 2,
+      "title": "The task needs an affordable exit",
+      "section": "Research question",
+      "seconds": 50,
+      "speaker_notes": "The intended physical setup uses a metal peg and tight plastic socket. Grip friction and part strength motivate a finite allowable load. The current study changes the monitored wrist-force budget, not the actual grip drive. The drawing is an explanatory cutaway with exaggerated clearance."
+    },
+    {
+      "number": 3,
+      "title": "Research context",
+      "section": "Selected literature",
+      "seconds": 50,
+      "speaker_notes": "Assembly mechanics and extraction mechanics already connect geometry, contact and compliance. Our question is narrower: which recovery stays within a chosen task budget? Contact-aware optimization, impedance control and sim-to-real assembly provide tools, not evidence that our measured forces are physically calibrated."
+    },
+    {
+      "number": 4,
+      "title": "A constrained planning and control problem",
+      "section": "Course concepts",
+      "seconds": 65,
+      "speaker_notes": "Represent the state in joint and task coordinates, including contact history. A local planner chooses position and orientation paths. The existing controller maps Cartesian pose error to joint torques with a Jacobian transpose and a null-space term. The research objective adds task load and grasp constraints. Feasibility is relative to a tested policy, not a claim of global physical irrecoverability."
+    },
+    {
+      "number": 5,
+      "title": "The simulated experiment",
+      "section": "Testbed and protocol",
+      "seconds": 50,
+      "speaker_notes": "Show the actual recorded states in the unchanged simulation scene. The reference reaches a depth gate before applying tilt for one second. Then STOP holds the attained pose, and a chosen policy retreats directly or recenters and realigns. Each policy runs in an independent process; the complete recorded reference prefix is compared offline. The budget starts at recorded reference time zero and excludes preparation."
+    },
+    {
+      "number": 6,
+      "title": "A recovery choice changes the outcome",
+      "section": "Main proof of concept",
+      "seconds": 65,
+      "speaker_notes": "Both policies start at the same fully matched reference state. The common full-reference peak, including tilt and hold, is 3.56 N. Direct withdrawal crosses 4 N at 0.721 seconds, while recentering and realignment completes with a 3.75 N full-recovery peak and 1.15 N withdrawal-only peak. The direct record is censored at the first violation. This is an alternative selected at the reference state, not a rescue started after the violation. Different horizontal time scales are explicit."
+    },
+    {
+      "number": 7,
+      "title": "The budget changes feasibility",
+      "section": "Task-dependent labels",
+      "seconds": 45,
+      "speaker_notes": "For the same planned physical path, 3 N is too tight even for the reference hold. At 4 N the two recovery strategies separate. At 5 N both complete. The 4 and 5 N direct paths share 174 identical recorded recovery samples up to the 4 N stopping frame. Higher-budget data never fills the missing future of the lower-budget record. Budget must be a model input."
+    },
+    {
+      "number": 8,
+      "title": "Embedding depth changes the recovery cost",
+      "section": "Parameter evidence",
+      "seconds": 50,
+      "speaker_notes": "At the shallower 12 mm target the direct path completes at roughly 0.32 N. The 18 mm direct path reaches the 4.54 N violation. Actual reference tilts differ slightly, so this is a descriptive controlled depth comparison rather than an identical-state force experiment. Realignment can itself add cost: at 12 mm its complete peak exceeds direct withdrawal. The optimizer must evaluate the whole recovery, not only the final pull phase."
+    },
+    {
+      "number": 9,
+      "title": "A 6\u00b0 command does not produce a 6\u00b0 state",
+      "section": "Angle extension",
+      "seconds": 45,
+      "speaker_notes": "The plan now permits targets to six degrees. All 2 to 6 degree branches terminate during the tilt before recovery. For the six-degree target, the last issued command is 3.743 degrees, actual peg tilt is 1.469 degrees, and the force is 4.694 N. The ramp duration stays one second, so larger targets also increase commanded angular speed. These are precursor-risk samples, not high-angle withdrawal tests or a universal angular boundary."
+    },
+    {
+      "number": 10,
+      "title": "A dataset for recovery decisions",
+      "section": "States, actions and labels",
+      "seconds": 45,
+      "speaker_notes": "Keep the recorded history, actual state, budget and candidate policy as inputs. A complete safe reference is a prerequisite for recovery labels. Preserve sample-wise forces, contact data, pose tracking, grasp and numerical flags. Distinguish observed budget violation from numerical unknowns, reference failure and untested recovery. Keep stopped trajectories censored and shared paths together across training and test splits."
+    },
+    {
+      "number": 11,
+      "title": "A proposed planning and control loop",
+      "section": "Technical route",
+      "seconds": 65,
+      "speaker_notes": "Start with a small library of retreat, recentering and orientation actions. Use constrained local MPC to select Cartesian references using a model of the closed-loop interaction. Add an uncertainty-aware predictive safety filter before the Cartesian controller. Later, compare a learned risk ranker and possibly a barrier-function filter only if force dynamics and feasibility assumptions have been validated. This entire predictive architecture is future work, unlike the current scripted baselines and sampled stop."
+    },
+    {
+      "number": 12,
+      "title": "Feasibility is established at the concept level",
+      "section": "Milestones and conclusion",
+      "seconds": 45,
+      "speaker_notes": "The proof of concept is complete for strategy-dependent recovery in this sampled rigid-body simulation. Next comes independent numerical sensitivity and calibrated task-force limits, then predictive motion selection with controlled baselines, then transfer to a metal peg and plastic socket. Evaluate peak and sustained loads, completion, overshoot and grasp retention. Force and control frequencies must be varied separately. The current evidence is not a robust or hardware safety certificate."
+    },
+    {
+      "number": 13,
+      "title": "Complete evidence coverage",
+      "section": "Appendix A",
+      "seconds": 0,
+      "speaker_notes": "Reference for questions. Do not pool deterministic reruns as independent statistical trials. The original budget matrix executed 13 branches. The angle extension executed 7, of which three repeat prior anchors. Both preserve planned but untested alternatives."
+    },
+    {
+      "number": 14,
+      "title": "References",
+      "section": "Appendix B",
+      "seconds": 0,
+      "speaker_notes": ""
+    },
+    {
+      "number": 15,
+      "title": "References continued",
+      "section": "Appendix C",
+      "seconds": 0,
+      "speaker_notes": ""
+    }
+  ],
+  "chart_placements": [
+    {
+      "page": 5,
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/tmp/pdfs/safe_recovery_talk/figures/paired_recovery_force.pdf",
+      "scale": 0.8882783882783882,
+      "x": 96.26373626373629,
+      "y": 117.0
+    },
+    {
+      "page": 6,
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/tmp/pdfs/safe_recovery_talk/figures/budget_comparison.pdf",
+      "scale": 1.0011574074074074,
+      "x": 48.0,
+      "y": 121.41666666666663
+    },
+    {
+      "page": 7,
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/tmp/pdfs/safe_recovery_talk/figures/depth_comparison.pdf",
+      "scale": 0.9468157181571816,
+      "x": 38.0,
+      "y": 136.6371951219512
+    },
+    {
+      "page": 8,
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/tmp/pdfs/safe_recovery_talk/figures/angle_scan.pdf",
+      "scale": 0.9876543209876543,
+      "x": 52.83333333333337,
+      "y": 115.0
+    },
+    {
+      "page": 12,
+      "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/tmp/pdfs/safe_recovery_talk/figures/condition_outcomes.pdf",
+      "scale": 0.7407407407407407,
+      "x": 159.5,
+      "y": 148.0
+    }
+  ],
+  "builder_sha256": "06091ce033365913d7c8cb8dde9f7254fe5e2459fa2de0ed1e81d7821706c393",
+  "pdf_sha256": "a8d5121ad7f4dc75a64b7afe8df5d66209cb13d2d574c0e3f94ec788e99f0042"
+}

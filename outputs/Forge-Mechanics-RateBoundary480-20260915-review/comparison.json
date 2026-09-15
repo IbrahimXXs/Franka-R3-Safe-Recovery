@@ -1,0 +1,1657 @@
+{
+  "schema": "Forge-mechanics-rate-comparison-v1",
+  "study_a": {
+    "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Boundary-20260915",
+    "status": "complete",
+    "study_sha256": "c884ba01432ed49ac1635ea0cecad5f5a483ff48e853942ea85c994d3267f8b2",
+    "config_sha256": "519e73c3c982a54f74a24118c722ff1008d639c7ee8699263a00fffea134ff0a",
+    "source_archives": [
+      {
+        "path": "simulation/forge_mechanics.py",
+        "declared_sha256": "3fd43f2e07700664eb0c2a4124a88d873dd87e54b6f78b42acb62557dc75d020",
+        "actual_sha256": "3fd43f2e07700664eb0c2a4124a88d873dd87e54b6f78b42acb62557dc75d020",
+        "verified": true
+      },
+      {
+        "path": "simulation/launch_forge_mechanics.py",
+        "declared_sha256": "264a4f0cb3e3c1a8e088b1e8f5c31dc17462f465666223de766a7c25e391dadb",
+        "actual_sha256": "264a4f0cb3e3c1a8e088b1e8f5c31dc17462f465666223de766a7c25e391dadb",
+        "verified": true
+      },
+      {
+        "path": "simulation/forge_mechanics_backend.py",
+        "declared_sha256": "4d9d058ad5e2807a8a27151498c3f456d81badafce590b10050071e01b01cf1a",
+        "actual_sha256": "4d9d058ad5e2807a8a27151498c3f456d81badafce590b10050071e01b01cf1a",
+        "verified": true
+      },
+      {
+        "path": "research/forge_mechanics_contacts.py",
+        "declared_sha256": "16dcba4012b1d5071ae30f835a5b2eaf0246d2b3aaa3b4571631f3b326047c41",
+        "actual_sha256": "16dcba4012b1d5071ae30f835a5b2eaf0246d2b3aaa3b4571631f3b326047c41",
+        "verified": true
+      },
+      {
+        "path": "simulation/forge_mechanics_recovery.py",
+        "declared_sha256": "d6bfc182f1ce17cea871e78143dbda19d0a7cb1bd89a0b1390773344e4c26abe",
+        "actual_sha256": "d6bfc182f1ce17cea871e78143dbda19d0a7cb1bd89a0b1390773344e4c26abe",
+        "verified": true
+      },
+      {
+        "path": "research/forge_mechanics_motion.py",
+        "declared_sha256": "b03db0bdf9d1f697442bd2032cbea8c64bae0f3fa8c5f162ee054f4910bf17a4",
+        "actual_sha256": "b03db0bdf9d1f697442bd2032cbea8c64bae0f3fa8c5f162ee054f4910bf17a4",
+        "verified": true
+      },
+      {
+        "path": "research/forge_mechanics_plan.py",
+        "declared_sha256": "b738155535c4ff11e9e4e8ad470b0da82f154b789f8cece4ba2a330f8348fdca",
+        "actual_sha256": "b738155535c4ff11e9e4e8ad470b0da82f154b789f8cece4ba2a330f8348fdca",
+        "verified": true
+      },
+      {
+        "path": "research/forge_mechanics_metrics.py",
+        "declared_sha256": "d2924bfe32e2a1b14b073cd8393b310f47d3274b6dff44a28c47a2501ec13e60",
+        "actual_sha256": "d2924bfe32e2a1b14b073cd8393b310f47d3274b6dff44a28c47a2501ec13e60",
+        "verified": true
+      },
+      {
+        "path": "research/forge_mechanics_protocol.py",
+        "declared_sha256": "0df8a8d32cdaf88ff4a8d3076ea81713367d1c23fd07992f71efe624be902fad",
+        "actual_sha256": "0df8a8d32cdaf88ff4a8d3076ea81713367d1c23fd07992f71efe624be902fad",
+        "verified": true
+      },
+      {
+        "path": "simulation/forge_backend.py",
+        "declared_sha256": "5a0c3fb5f1c5d330c90fdc2a22e6d48cda1713156d134c5ba533b5fa6ce3a45f",
+        "actual_sha256": "5a0c3fb5f1c5d330c90fdc2a22e6d48cda1713156d134c5ba533b5fa6ce3a45f",
+        "verified": true
+      },
+      {
+        "path": "simulation/forge_experiment.py",
+        "declared_sha256": "54ac5813d9dba93c4ac6aaf907d67e53d84a039d47000386cfc57434b1e76618",
+        "actual_sha256": "54ac5813d9dba93c4ac6aaf907d67e53d84a039d47000386cfc57434b1e76618",
+        "verified": true
+      },
+      {
+        "path": "simulation/contact.py",
+        "declared_sha256": "a23500505916cf97fe792258fedae0ea583f03b2652dc42121e2d761fbb6e522",
+        "actual_sha256": "a23500505916cf97fe792258fedae0ea583f03b2652dc42121e2d761fbb6e522",
+        "verified": true
+      },
+      {
+        "path": "research/forge_protocol.py",
+        "declared_sha256": "3e112d13a94bfb85f82ec7beec0c9750792042b222b07d7277df1c32503006a1",
+        "actual_sha256": "3e112d13a94bfb85f82ec7beec0c9750792042b222b07d7277df1c32503006a1",
+        "verified": true
+      },
+      {
+        "path": "research/phase2_protocol.py",
+        "declared_sha256": "3d05bd187320591bb9e69d38f9dc3263925608f17213c945caf8c7a6adcc84ca",
+        "actual_sha256": "3d05bd187320591bb9e69d38f9dc3263925608f17213c945caf8c7a6adcc84ca",
+        "verified": true
+      },
+      {
+        "path": "research/forge_gap_metrics.py",
+        "declared_sha256": "ed4dcde065a52732492fd5169eb408875c9d9b5f0850cafd76137ffef9462edc",
+        "actual_sha256": "ed4dcde065a52732492fd5169eb408875c9d9b5f0850cafd76137ffef9462edc",
+        "verified": true
+      },
+      {
+        "path": "research/forge_geometry.py",
+        "declared_sha256": "d37caa904ae3bfcc2360ed31294f4d700fe412a127e030f6fe76dc6bb8751078",
+        "actual_sha256": "d37caa904ae3bfcc2360ed31294f4d700fe412a127e030f6fe76dc6bb8751078",
+        "verified": true
+      },
+      {
+        "path": "research/forge_events.py",
+        "declared_sha256": "88361f3eacacda079fd3e9f7bc075dcc0a61ccbf7019b1891b670764d0b11022",
+        "actual_sha256": "88361f3eacacda079fd3e9f7bc075dcc0a61ccbf7019b1891b670764d0b11022",
+        "verified": true
+      },
+      {
+        "path": "research/future_stall.py",
+        "declared_sha256": "7d6466b6e452beed65930aadcb6552d123947038ddac9bb18416b09e25a63d3c",
+        "actual_sha256": "7d6466b6e452beed65930aadcb6552d123947038ddac9bb18416b09e25a63d3c",
+        "verified": true
+      },
+      {
+        "path": "research/forge_gap_study.py",
+        "declared_sha256": "2dbea013ab35053fff628126fd36775a75aa782fad98e443e0b4f1409bb17fc9",
+        "actual_sha256": "2dbea013ab35053fff628126fd36775a75aa782fad98e443e0b4f1409bb17fc9",
+        "verified": true
+      },
+      {
+        "path": "research/forge_collection.py",
+        "declared_sha256": "f06901e0c9d55df411981a27ee4ad512f089aaf8bd6fecec00d3da9a0d4c890f",
+        "actual_sha256": "f06901e0c9d55df411981a27ee4ad512f089aaf8bd6fecec00d3da9a0d4c890f",
+        "verified": true
+      },
+      {
+        "path": "research/phase2b.py",
+        "declared_sha256": "0dfa4d32fd924a72576a7f1316198352147a389e5fe4e328727eb0637a94949a",
+        "actual_sha256": "0dfa4d32fd924a72576a7f1316198352147a389e5fe4e328727eb0637a94949a",
+        "verified": true
+      }
+    ],
+    "all_source_archives_verified": true,
+    "rates": {
+      "physics_hz": 240,
+      "custom_closed_loop_control_hz": 240,
+      "force_sampling_hz": 240,
+      "sim_dt_s": 0.004166666666666667,
+      "configured_env_decimation": 16,
+      "configured_env_action_hz": 15.0,
+      "render_interval": 8,
+      "ft_smoothing_factor": 0.1339745962155614,
+      "explanation": "ForgeBackend.tick regenerates controls and records each physics step; env decimation is not the custom controller update period."
+    }
+  },
+  "study_b": {
+    "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915",
+    "status": "complete",
+    "study_sha256": "48a04e1dcebc98fd59337d228bcd9748fbc37e1cb447a11559b40b261db93c07",
+    "config_sha256": "9b483b9c7949ad2702f41f5814fb899d887f25eb1ed9645d78dadf50b44205d3",
+    "source_archives": [
+      {
+        "path": "simulation/forge_mechanics.py",
+        "declared_sha256": "3fd43f2e07700664eb0c2a4124a88d873dd87e54b6f78b42acb62557dc75d020",
+        "actual_sha256": "3fd43f2e07700664eb0c2a4124a88d873dd87e54b6f78b42acb62557dc75d020",
+        "verified": true
+      },
+      {
+        "path": "simulation/launch_forge_mechanics.py",
+        "declared_sha256": "264a4f0cb3e3c1a8e088b1e8f5c31dc17462f465666223de766a7c25e391dadb",
+        "actual_sha256": "264a4f0cb3e3c1a8e088b1e8f5c31dc17462f465666223de766a7c25e391dadb",
+        "verified": true
+      },
+      {
+        "path": "simulation/forge_mechanics_backend.py",
+        "declared_sha256": "4d9d058ad5e2807a8a27151498c3f456d81badafce590b10050071e01b01cf1a",
+        "actual_sha256": "4d9d058ad5e2807a8a27151498c3f456d81badafce590b10050071e01b01cf1a",
+        "verified": true
+      },
+      {
+        "path": "research/forge_mechanics_contacts.py",
+        "declared_sha256": "16dcba4012b1d5071ae30f835a5b2eaf0246d2b3aaa3b4571631f3b326047c41",
+        "actual_sha256": "16dcba4012b1d5071ae30f835a5b2eaf0246d2b3aaa3b4571631f3b326047c41",
+        "verified": true
+      },
+      {
+        "path": "simulation/forge_mechanics_recovery.py",
+        "declared_sha256": "d6bfc182f1ce17cea871e78143dbda19d0a7cb1bd89a0b1390773344e4c26abe",
+        "actual_sha256": "d6bfc182f1ce17cea871e78143dbda19d0a7cb1bd89a0b1390773344e4c26abe",
+        "verified": true
+      },
+      {
+        "path": "research/forge_mechanics_motion.py",
+        "declared_sha256": "b03db0bdf9d1f697442bd2032cbea8c64bae0f3fa8c5f162ee054f4910bf17a4",
+        "actual_sha256": "b03db0bdf9d1f697442bd2032cbea8c64bae0f3fa8c5f162ee054f4910bf17a4",
+        "verified": true
+      },
+      {
+        "path": "research/forge_mechanics_plan.py",
+        "declared_sha256": "b738155535c4ff11e9e4e8ad470b0da82f154b789f8cece4ba2a330f8348fdca",
+        "actual_sha256": "b738155535c4ff11e9e4e8ad470b0da82f154b789f8cece4ba2a330f8348fdca",
+        "verified": true
+      },
+      {
+        "path": "research/forge_mechanics_metrics.py",
+        "declared_sha256": "d2924bfe32e2a1b14b073cd8393b310f47d3274b6dff44a28c47a2501ec13e60",
+        "actual_sha256": "d2924bfe32e2a1b14b073cd8393b310f47d3274b6dff44a28c47a2501ec13e60",
+        "verified": true
+      },
+      {
+        "path": "research/forge_mechanics_protocol.py",
+        "declared_sha256": "0df8a8d32cdaf88ff4a8d3076ea81713367d1c23fd07992f71efe624be902fad",
+        "actual_sha256": "0df8a8d32cdaf88ff4a8d3076ea81713367d1c23fd07992f71efe624be902fad",
+        "verified": true
+      },
+      {
+        "path": "simulation/forge_backend.py",
+        "declared_sha256": "5a0c3fb5f1c5d330c90fdc2a22e6d48cda1713156d134c5ba533b5fa6ce3a45f",
+        "actual_sha256": "5a0c3fb5f1c5d330c90fdc2a22e6d48cda1713156d134c5ba533b5fa6ce3a45f",
+        "verified": true
+      },
+      {
+        "path": "simulation/forge_experiment.py",
+        "declared_sha256": "54ac5813d9dba93c4ac6aaf907d67e53d84a039d47000386cfc57434b1e76618",
+        "actual_sha256": "54ac5813d9dba93c4ac6aaf907d67e53d84a039d47000386cfc57434b1e76618",
+        "verified": true
+      },
+      {
+        "path": "simulation/contact.py",
+        "declared_sha256": "a23500505916cf97fe792258fedae0ea583f03b2652dc42121e2d761fbb6e522",
+        "actual_sha256": "a23500505916cf97fe792258fedae0ea583f03b2652dc42121e2d761fbb6e522",
+        "verified": true
+      },
+      {
+        "path": "research/forge_protocol.py",
+        "declared_sha256": "3e112d13a94bfb85f82ec7beec0c9750792042b222b07d7277df1c32503006a1",
+        "actual_sha256": "3e112d13a94bfb85f82ec7beec0c9750792042b222b07d7277df1c32503006a1",
+        "verified": true
+      },
+      {
+        "path": "research/phase2_protocol.py",
+        "declared_sha256": "3d05bd187320591bb9e69d38f9dc3263925608f17213c945caf8c7a6adcc84ca",
+        "actual_sha256": "3d05bd187320591bb9e69d38f9dc3263925608f17213c945caf8c7a6adcc84ca",
+        "verified": true
+      },
+      {
+        "path": "research/forge_gap_metrics.py",
+        "declared_sha256": "ed4dcde065a52732492fd5169eb408875c9d9b5f0850cafd76137ffef9462edc",
+        "actual_sha256": "ed4dcde065a52732492fd5169eb408875c9d9b5f0850cafd76137ffef9462edc",
+        "verified": true
+      },
+      {
+        "path": "research/forge_geometry.py",
+        "declared_sha256": "d37caa904ae3bfcc2360ed31294f4d700fe412a127e030f6fe76dc6bb8751078",
+        "actual_sha256": "d37caa904ae3bfcc2360ed31294f4d700fe412a127e030f6fe76dc6bb8751078",
+        "verified": true
+      },
+      {
+        "path": "research/forge_events.py",
+        "declared_sha256": "88361f3eacacda079fd3e9f7bc075dcc0a61ccbf7019b1891b670764d0b11022",
+        "actual_sha256": "88361f3eacacda079fd3e9f7bc075dcc0a61ccbf7019b1891b670764d0b11022",
+        "verified": true
+      },
+      {
+        "path": "research/future_stall.py",
+        "declared_sha256": "7d6466b6e452beed65930aadcb6552d123947038ddac9bb18416b09e25a63d3c",
+        "actual_sha256": "7d6466b6e452beed65930aadcb6552d123947038ddac9bb18416b09e25a63d3c",
+        "verified": true
+      },
+      {
+        "path": "research/forge_gap_study.py",
+        "declared_sha256": "2dbea013ab35053fff628126fd36775a75aa782fad98e443e0b4f1409bb17fc9",
+        "actual_sha256": "2dbea013ab35053fff628126fd36775a75aa782fad98e443e0b4f1409bb17fc9",
+        "verified": true
+      },
+      {
+        "path": "research/forge_collection.py",
+        "declared_sha256": "f06901e0c9d55df411981a27ee4ad512f089aaf8bd6fecec00d3da9a0d4c890f",
+        "actual_sha256": "f06901e0c9d55df411981a27ee4ad512f089aaf8bd6fecec00d3da9a0d4c890f",
+        "verified": true
+      },
+      {
+        "path": "research/phase2b.py",
+        "declared_sha256": "0dfa4d32fd924a72576a7f1316198352147a389e5fe4e328727eb0637a94949a",
+        "actual_sha256": "0dfa4d32fd924a72576a7f1316198352147a389e5fe4e328727eb0637a94949a",
+        "verified": true
+      }
+    ],
+    "all_source_archives_verified": true,
+    "rates": {
+      "physics_hz": 480,
+      "custom_closed_loop_control_hz": 480,
+      "force_sampling_hz": 480,
+      "sim_dt_s": 0.0020833333333333333,
+      "configured_env_decimation": 32,
+      "configured_env_action_hz": 15.0,
+      "render_interval": 16,
+      "ft_smoothing_factor": 0.06939514089790044,
+      "explanation": "ForgeBackend.tick regenerates controls and records each physics step; env decimation is not the custom controller update period."
+    }
+  },
+  "common_planned_cases": 2,
+  "both_completed_cases": 2,
+  "only_in_a": [
+    "m_d18_fs100_fd100_a01"
+  ],
+  "only_in_b": [],
+  "configuration_audit": {
+    "protocol": {
+      "equal": true,
+      "differences": []
+    },
+    "effective_protocol": {
+      "equal": true,
+      "differences": []
+    },
+    "seed": {
+      "equal": true,
+      "differences": []
+    },
+    "recovery_motion": {
+      "equal": true,
+      "differences": []
+    },
+    "recovery_policy_definition": {
+      "equal": true,
+      "differences": []
+    },
+    "simulation_options": {
+      "equal": true,
+      "differences": []
+    },
+    "geometry": {
+      "equal": true,
+      "differences": []
+    },
+    "sources": {
+      "equal": true,
+      "differences": []
+    },
+    "acceptance_rule": {
+      "equal": true,
+      "differences": []
+    },
+    "budget_signal": {
+      "equal": true,
+      "differences": []
+    }
+  },
+  "runtime_config_differences": [
+    {
+      "path": "decimation",
+      "a": 16,
+      "b": 32,
+      "category": "rate_derived"
+    },
+    {
+      "path": "ft_smoothing_factor",
+      "a": 0.1339745962155614,
+      "b": 0.06939514089790044,
+      "category": "rate_derived"
+    },
+    {
+      "path": "sim.dt",
+      "a": 0.004166666666666667,
+      "b": 0.0020833333333333333,
+      "category": "rate_derived"
+    },
+    {
+      "path": "sim.render_interval",
+      "a": 8,
+      "b": 16,
+      "category": "rate_derived"
+    },
+    {
+      "path": "task.fixed_asset.spawn.usd_path",
+      "a": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Boundary-20260915/geometry/socket_radial_0.200000mm.usda",
+      "b": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915/geometry/socket_radial_0.200000mm.usda",
+      "category": "study_local_geometry_path"
+    },
+    {
+      "path": "task.fixed_asset_cfg.usd_path",
+      "a": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Boundary-20260915/geometry/socket_radial_0.200000mm.usda",
+      "b": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915/geometry/socket_radial_0.200000mm.usda",
+      "category": "study_local_geometry_path"
+    }
+  ],
+  "ignored_plan_fields": [
+    "case_id",
+    "family",
+    "folder",
+    "path_group_id",
+    "retry",
+    "sample_role",
+    "slot",
+    "source_slot",
+    "split_group_id",
+    "status",
+    "trajectory_id"
+  ],
+  "cases": [
+    {
+      "case_id": "m_d18_fs100_fd100_a00",
+      "physical_parameters_a": {
+        "radial_clearance_mm": 0.2,
+        "clearance_definition": "nominal_radial",
+        "peg_diameter_mm": 7.986,
+        "hole_diameter_mm": 8.386,
+        "hole_depth_mm": 25.0,
+        "hole_type": "blind",
+        "target_depth_mm": 18.0,
+        "pair_static_friction": 1.0,
+        "pair_dynamic_friction": 1.0,
+        "peg_static_friction": 0.75,
+        "peg_dynamic_friction": 0.75,
+        "hole_static_friction": 1.25,
+        "hole_dynamic_friction": 1.25,
+        "friction_combine_mode": "average",
+        "tilt_amplitude_deg": 0.0,
+        "tilt_axis": "pitch",
+        "tilt_sign": 1,
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "approach_duration_s": 2.0,
+        "insertion_start_depth_mm": -10.0,
+        "insertion_duration_s": 7.466666666666667,
+        "insertion_distance_rate_mm_s": 3.75,
+        "settle_tolerance_mm": 0.1,
+        "settle_dwell_s": 0.2,
+        "settle_timeout_s": 2.0,
+        "tilt_ramp_duration_s": 1.0,
+        "post_tilt_hold_s": 1.0
+      },
+      "physical_parameters_b": {
+        "radial_clearance_mm": 0.2,
+        "clearance_definition": "nominal_radial",
+        "peg_diameter_mm": 7.986,
+        "hole_diameter_mm": 8.386,
+        "hole_depth_mm": 25.0,
+        "hole_type": "blind",
+        "target_depth_mm": 18.0,
+        "pair_static_friction": 1.0,
+        "pair_dynamic_friction": 1.0,
+        "peg_static_friction": 0.75,
+        "peg_dynamic_friction": 0.75,
+        "hole_static_friction": 1.25,
+        "hole_dynamic_friction": 1.25,
+        "friction_combine_mode": "average",
+        "tilt_amplitude_deg": 0.0,
+        "tilt_axis": "pitch",
+        "tilt_sign": 1,
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "approach_duration_s": 2.0,
+        "insertion_start_depth_mm": -10.0,
+        "insertion_duration_s": 7.466666666666667,
+        "insertion_distance_rate_mm_s": 3.75,
+        "settle_tolerance_mm": 0.1,
+        "settle_dwell_s": 0.2,
+        "settle_timeout_s": 2.0,
+        "tilt_ramp_duration_s": 1.0,
+        "post_tilt_hold_s": 1.0
+      },
+      "physical_plan_equal": true,
+      "physical_plan_differences": [],
+      "both_complete": true,
+      "a": {
+        "status": "complete",
+        "measurements": {
+          "reference_state": "valid_protocol_completed",
+          "reference_termination_reason": "reference_complete",
+          "numerically_valid": true,
+          "reference_protocol_completed": true,
+          "grasp_retained": true,
+          "reference_within_budget": true,
+          "terminal_depth_mm": 17.94820800423622,
+          "terminal_actual_tilt_deg": 0.019782341029446364,
+          "terminal_command_tilt_deg": 0.0,
+          "tilt_terminal_depth_loss_mm": 0.1023411750793457,
+          "max_normal_load_n": 0.3953914940357208,
+          "reference_peak_wrist_force_n": 0.41461625695228577,
+          "reference_peak_wrist_force_mean100ms_within_phase_n": 0.07732061079392831,
+          "reference_peak_normal_load_mean100ms_within_phase_n": 0.04283254725548128,
+          "insert_peak_wrist_force_n": 0.41461625695228577,
+          "insert_peak_wrist_force_mean100ms_n": 0.07732061079392831,
+          "insert_peak_normal_load_n": 0.3953914940357208,
+          "insert_peak_normal_load_mean100ms_n": 0.04283254725548128,
+          "hold_peak_normal_load_mean100ms_n": 0.0,
+          "hold_peak_wrist_force_mean100ms_n": 0.0031134253905899336,
+          "max_grasp_slip_mm": 0.02331748510187026,
+          "max_grasp_slip_deg": 0.09691328065893987,
+          "max_penetration_mm": 0.0,
+          "straight_retreat_observed": true,
+          "straight_reason": "cleared",
+          "straight_numerically_valid": true,
+          "straight_grasp_retained": true,
+          "straight_label_eligible": true,
+          "straight_safe_recovery": true,
+          "straight_cleared": true,
+          "straight_recovery_censored": false,
+          "straight_duration_s": 4.733333333333333,
+          "straight_stop_peak_wrist_force_n": 0.014567820355296135,
+          "straight_retreat_peak_wrist_force_n": 0.39565563201904297,
+          "straight_retreat_peak_wrist_force_mean100ms_n": 0.08199494498937081,
+          "straight_max_wrist_force_n": 0.39565563201904297,
+          "straight_retreat_peak_contact_downward_resistance_n": 0.3876436948776245,
+          "straight_retreat_peak_contact_downward_resistance_mean100ms_n": 0.05120707081611423,
+          "straight_retreat_peak_contact_normal_axial_resistance_n": 0.0,
+          "straight_retreat_peak_contact_friction_axial_resistance_n": 0.3876436948776245,
+          "straight_retreat_max_depth_tracking_error_mm": 0.6352790693442039,
+          "straight_max_penetration": 0.0004897403300674341,
+          "paired_state": "matched_results_known",
+          "paired_results_known": true,
+          "paired_costs_complete": true,
+          "realign_reason": "cleared",
+          "realign_replay_matched": true,
+          "realign_replay_prefix_matched": true,
+          "realign_replay_prefix_equal": true,
+          "realign_numerically_valid": true,
+          "matched_realign_safe_recovery": true,
+          "matched_realign_cleared": true,
+          "matched_realign_recovery_censored": false,
+          "matched_realign_duration_s": 6.733333333333333,
+          "matched_realign_max_wrist_force_n": 0.4724390208721161,
+          "matched_realign_stop_peak_wrist_force_n": 0.014567820355296135,
+          "matched_realign_realign_peak_wrist_force_n": 0.011637894436717033,
+          "matched_realign_retreat_peak_wrist_force_n": 0.4724390208721161,
+          "matched_realign_retreat_peak_wrist_force_mean100ms_n": 0.07752776386526723
+        },
+        "initial_state": {
+          "phase": "initial",
+          "time_s": 0.0,
+          "physics_time_s": 0.0,
+          "depth_mm": -14.832577109336851,
+          "tip_x_mm": -0.38319826126098633,
+          "tip_y_mm": 0.09010355279315263,
+          "tilt_deg": 0.019782341029446364,
+          "command_depth_mm": -10.0,
+          "command_tilt_deg": 0.0,
+          "grasp_slip_mm": 0.0,
+          "grasp_slip_deg": 0.055952909680744456,
+          "wrist_force_n": 0.0002682181657291949,
+          "wrist_torque_nm": 7.231818017316982e-05,
+          "normal_load_n": 0.0,
+          "qw": -7.778516010148451e-05,
+          "qx": -0.0001881504722405225,
+          "qy": -8.736902236705646e-05,
+          "qz": 0.9999999403953552,
+          "vx": 0.00031435853452421725,
+          "vy": -0.0004160091048106551,
+          "vz": 0.0015787363518029451,
+          "omegax": 0.008009504526853561,
+          "omegay": -0.04087924584746361,
+          "omegaz": -0.017404792830348015,
+          "joint1_rad": -0.4914534091949463,
+          "joint2_rad": 0.48300108313560486,
+          "joint3_rad": 0.5057228207588196,
+          "joint4_rad": -2.0237088203430176,
+          "joint5_rad": -0.34875014424324036,
+          "joint6_rad": 2.4236204624176025,
+          "joint7_rad": 1.0169486999511719,
+          "joint_velocity1_rad_s": 8.036813233047724e-05,
+          "joint_velocity2_rad_s": -0.0006127877277322114,
+          "joint_velocity3_rad_s": -0.00097002083202824,
+          "joint_velocity4_rad_s": -0.00025663827545940876,
+          "joint_velocity5_rad_s": 0.0006393590592779219,
+          "joint_velocity6_rad_s": -0.0006144543294794858,
+          "joint_velocity7_rad_s": -0.0011192745296284556,
+          "hand_pose_0": 0.5996054410934448,
+          "hand_pose_1": 8.516904199495912e-05,
+          "hand_pose_2": 0.12222467362880707,
+          "hand_pose_3": -8.917736704461277e-05,
+          "hand_pose_4": 0.9999999403953552,
+          "hand_pose_5": 7.642256241524592e-05,
+          "hand_pose_6": 0.00019385381892789155,
+          "grasp_position_0": -1.1738657121895812e-06,
+          "grasp_position_1": 8.435617928626016e-07,
+          "grasp_position_2": 0.032392099499702454,
+          "grasp_quat_0": 5.703574970539194e-06,
+          "grasp_quat_1": 1.3624602388517815e-06,
+          "grasp_quat_2": 0.9999999403953552,
+          "grasp_quat_3": -1.80764391188859e-06
+        },
+        "terminal_state": {
+          "depth_mm": 17.94820800423622,
+          "tip_x_mm": 0.059723854064941406,
+          "tip_y_mm": -0.05056197187514044,
+          "tilt_deg": 0.019782341029446364,
+          "command_depth_mm": 18.0,
+          "command_tilt_deg": 0.0,
+          "qw": -0.00019800364680122584,
+          "qx": 0.00012322718976065516,
+          "qy": 0.0001494540920248255,
+          "qz": 0.9999999403953552,
+          "phase": "hold",
+          "time_s": 11.708333333332671
+        },
+        "runtime_material": {
+          "requested_pair_static_friction": 1.0,
+          "requested_pair_dynamic_friction": 1.0,
+          "effective_pair_static_friction": 1.0,
+          "effective_pair_dynamic_friction": 1.0,
+          "effective_pair_basis": "runtime per-shape coefficients + resolved explicitly bound average material modes; not a separately measured contact-pair coefficient",
+          "bindings": {
+            "hole": {
+              "collider_path": "/World/envs/env_0/FixedAsset/forge_hole_8mm/forge_hole_8mm/mesh",
+              "material_path": "/World/MechanicsMaterials/hole",
+              "previous_bound_material_path": null,
+              "bound_before_physics_initialization": true,
+              "usd_static_friction": 1.25,
+              "usd_dynamic_friction": 1.25,
+              "resolved_friction_combine_mode": "average"
+            },
+            "peg": {
+              "collider_path": "/World/envs/env_0/HeldAsset/forge_round_peg_8mm/mesh",
+              "material_path": "/World/MechanicsMaterials/peg",
+              "previous_bound_material_path": "/World/envs/env_0/HeldAsset/forge_round_peg_8mm/Looks/material__980392_0_713725_0_003922_0_000000_0_000000",
+              "bound_before_physics_initialization": true,
+              "usd_static_friction": 0.75,
+              "usd_dynamic_friction": 0.75,
+              "resolved_friction_combine_mode": "average"
+            }
+          },
+          "runtime_materials": {
+            "hole": [
+              [
+                [
+                  1.25,
+                  1.25,
+                  0.0
+                ]
+              ]
+            ],
+            "peg": [
+              [
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ]
+              ]
+            ],
+            "robot": [
+              [
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ]
+              ]
+            ]
+          }
+        },
+        "effective_radial_clearance_mm": 0.19899400710569026,
+        "trajectory_id": "m_d18_fs100_fd100_a00_try00",
+        "input_files": [
+          {
+            "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Boundary-20260915/m_d18_fs100_fd100_a00_try00/trajectory.json",
+            "sha256": "d5e8bbf9c52c6b3e0964e76ce00a1b199d8c5c6520eb87bce9f412d9493817d9"
+          },
+          {
+            "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Boundary-20260915/m_d18_fs100_fd100_a00_try00/insertion.csv",
+            "sha256": "bc7ba687d47cef5bb83262256db5a92c89c0d54aaf267f500f5cba37d82ac52d"
+          }
+        ]
+      },
+      "b": {
+        "status": "complete",
+        "measurements": {
+          "reference_state": "valid_protocol_completed",
+          "reference_termination_reason": "reference_complete",
+          "numerically_valid": true,
+          "reference_protocol_completed": true,
+          "grasp_retained": true,
+          "reference_within_budget": true,
+          "terminal_depth_mm": 17.991246283054352,
+          "terminal_actual_tilt_deg": 0.048456642643301504,
+          "terminal_command_tilt_deg": 0.0,
+          "tilt_terminal_depth_loss_mm": -7.82310962677002e-05,
+          "max_normal_load_n": 10.935748100280762,
+          "reference_peak_wrist_force_n": 13.150410652160645,
+          "reference_peak_wrist_force_mean100ms_within_phase_n": 0.3405984735970075,
+          "reference_peak_normal_load_mean100ms_within_phase_n": 0.22782808542251587,
+          "insert_peak_wrist_force_n": 13.150410652160645,
+          "insert_peak_wrist_force_mean100ms_n": 0.3405984735970075,
+          "insert_peak_normal_load_n": 10.935748100280762,
+          "insert_peak_normal_load_mean100ms_n": 0.22782808542251587,
+          "hold_peak_normal_load_mean100ms_n": 0.0,
+          "hold_peak_wrist_force_mean100ms_n": 0.002551420447161945,
+          "max_grasp_slip_mm": 0.0252191075560404,
+          "max_grasp_slip_deg": 0.09691328065893987,
+          "max_penetration_mm": 0.004385027295938926,
+          "straight_retreat_observed": true,
+          "straight_reason": "cleared",
+          "straight_numerically_valid": true,
+          "straight_grasp_retained": true,
+          "straight_label_eligible": true,
+          "straight_safe_recovery": true,
+          "straight_cleared": true,
+          "straight_recovery_censored": false,
+          "straight_duration_s": 4.739583333333333,
+          "straight_stop_peak_wrist_force_n": 0.02917138859629631,
+          "straight_retreat_peak_wrist_force_n": 3.568729877471924,
+          "straight_retreat_peak_wrist_force_mean100ms_n": 0.36230997456004843,
+          "straight_max_wrist_force_n": 3.568729877471924,
+          "straight_retreat_peak_contact_downward_resistance_n": 2.7886929512023926,
+          "straight_retreat_peak_contact_downward_resistance_mean100ms_n": 0.25089135243068483,
+          "straight_retreat_peak_contact_normal_axial_resistance_n": 0.0,
+          "straight_retreat_peak_contact_friction_axial_resistance_n": 2.7886929512023926,
+          "straight_retreat_max_depth_tracking_error_mm": 1.07267447312673,
+          "straight_max_penetration": 0.0002997324770603882,
+          "paired_state": "matched_results_known",
+          "paired_results_known": true,
+          "paired_costs_complete": true,
+          "realign_reason": "cleared",
+          "realign_replay_matched": true,
+          "realign_replay_prefix_matched": true,
+          "realign_replay_prefix_equal": true,
+          "realign_numerically_valid": true,
+          "matched_realign_safe_recovery": true,
+          "matched_realign_cleared": true,
+          "matched_realign_recovery_censored": false,
+          "matched_realign_duration_s": 6.735416666666667,
+          "matched_realign_max_wrist_force_n": 4.586472988128662,
+          "matched_realign_stop_peak_wrist_force_n": 0.02917138859629631,
+          "matched_realign_realign_peak_wrist_force_n": 0.022031420841813087,
+          "matched_realign_retreat_peak_wrist_force_n": 4.586472988128662,
+          "matched_realign_retreat_peak_wrist_force_mean100ms_n": 0.3983079612565537
+        },
+        "initial_state": {
+          "phase": "initial",
+          "time_s": 0.0,
+          "physics_time_s": 0.0,
+          "depth_mm": -14.496853947639464,
+          "tip_x_mm": -0.8758306503295898,
+          "tip_y_mm": -0.03366207965882495,
+          "tilt_deg": 0.12972151222939818,
+          "command_depth_mm": -10.0,
+          "command_tilt_deg": 0.0,
+          "grasp_slip_mm": 0.0,
+          "grasp_slip_deg": 0.055952909680744456,
+          "wrist_force_n": 0.001229391316883266,
+          "wrist_torque_nm": 7.631890912307426e-05,
+          "normal_load_n": 0.0,
+          "qw": -0.00017538100655656308,
+          "qx": 0.0011252855183556676,
+          "qy": 0.00010924243542831391,
+          "qz": 0.9999993443489075,
+          "vx": 0.009972312487661839,
+          "vy": 0.0007166515570133924,
+          "vz": 0.001999185886234045,
+          "omegax": -0.03187476843595505,
+          "omegay": -0.44371122121810913,
+          "omegaz": -0.17008338868618011,
+          "joint1_rad": -0.4916764795780182,
+          "joint2_rad": 0.48371371626853943,
+          "joint3_rad": 0.5060002207756042,
+          "joint4_rad": -2.0230588912963867,
+          "joint5_rad": -0.34898900985717773,
+          "joint6_rad": 2.4208855628967285,
+          "joint7_rad": 1.015777587890625,
+          "joint_velocity1_rad_s": 0.00035103672416880727,
+          "joint_velocity2_rad_s": 0.0008110594353638589,
+          "joint_velocity3_rad_s": 0.0019283705623820424,
+          "joint_velocity4_rad_s": 0.004159771371632814,
+          "joint_velocity5_rad_s": -0.001044980832375586,
+          "joint_velocity6_rad_s": 0.0010843140771612525,
+          "joint_velocity7_rad_s": 0.005269089248031378,
+          "hand_pose_0": 0.5992055535316467,
+          "hand_pose_1": -3.0102826713118702e-05,
+          "hand_pose_2": 0.12189284712076187,
+          "hand_pose_3": 8.670485840411857e-05,
+          "hand_pose_4": 0.9999991059303284,
+          "hand_pose_5": 0.0006901275482960045,
+          "hand_pose_6": -0.0010862400522455573,
+          "grasp_position_0": -1.0981515515595675e-05,
+          "grasp_position_1": -2.1222472241788637e-06,
+          "grasp_position_2": 0.03239608556032181,
+          "grasp_quat_0": 3.910543455276638e-05,
+          "grasp_quat_1": -0.0005147673073224723,
+          "grasp_quat_2": 0.9999998211860657,
+          "grasp_quat_3": -2.195138586102985e-05
+        },
+        "terminal_state": {
+          "depth_mm": 17.991246283054352,
+          "tip_x_mm": -0.12177228927612305,
+          "tip_y_mm": 0.012386565686028916,
+          "tilt_deg": 0.048456642643301504,
+          "command_depth_mm": 18.0,
+          "command_tilt_deg": 0.0,
+          "qw": -0.0003276829665992409,
+          "qx": 0.0003100028552580625,
+          "qy": 0.00030928567866794765,
+          "qz": 0.9999998211860657,
+          "phase": "hold",
+          "time_s": 11.666666666668302
+        },
+        "runtime_material": {
+          "requested_pair_static_friction": 1.0,
+          "requested_pair_dynamic_friction": 1.0,
+          "effective_pair_static_friction": 1.0,
+          "effective_pair_dynamic_friction": 1.0,
+          "effective_pair_basis": "runtime per-shape coefficients + resolved explicitly bound average material modes; not a separately measured contact-pair coefficient",
+          "bindings": {
+            "hole": {
+              "collider_path": "/World/envs/env_0/FixedAsset/forge_hole_8mm/forge_hole_8mm/mesh",
+              "material_path": "/World/MechanicsMaterials/hole",
+              "previous_bound_material_path": null,
+              "bound_before_physics_initialization": true,
+              "usd_static_friction": 1.25,
+              "usd_dynamic_friction": 1.25,
+              "resolved_friction_combine_mode": "average"
+            },
+            "peg": {
+              "collider_path": "/World/envs/env_0/HeldAsset/forge_round_peg_8mm/mesh",
+              "material_path": "/World/MechanicsMaterials/peg",
+              "previous_bound_material_path": "/World/envs/env_0/HeldAsset/forge_round_peg_8mm/Looks/material__980392_0_713725_0_003922_0_000000_0_000000",
+              "bound_before_physics_initialization": true,
+              "usd_static_friction": 0.75,
+              "usd_dynamic_friction": 0.75,
+              "resolved_friction_combine_mode": "average"
+            }
+          },
+          "runtime_materials": {
+            "hole": [
+              [
+                [
+                  1.25,
+                  1.25,
+                  0.0
+                ]
+              ]
+            ],
+            "peg": [
+              [
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ]
+              ]
+            ],
+            "robot": [
+              [
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ]
+              ]
+            ]
+          }
+        },
+        "effective_radial_clearance_mm": 0.19899400710569026,
+        "trajectory_id": "m_d18_fs100_fd100_a00_try00",
+        "input_files": [
+          {
+            "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915/m_d18_fs100_fd100_a00_try00/trajectory.json",
+            "sha256": "26e80c9c6f50d50084b47db6d90a92234b142de13b97c5fce858726fd967d1e9"
+          },
+          {
+            "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915/m_d18_fs100_fd100_a00_try00/insertion.csv",
+            "sha256": "f926a765bb6d06bb7df1eee5aaed765a6cdbc92d6985b956abba63f3d2d31a3d"
+          }
+        ]
+      },
+      "initial_state_differences_b_minus_a": {
+        "delta_depth_mm": 0.3357231616973877,
+        "delta_tip_x_mm": -0.4926323890686035,
+        "delta_tip_y_mm": -0.12376563245197758,
+        "delta_tilt_deg": 0.10993917119995181,
+        "delta_wrist_force_n": 0.0009611731511540711,
+        "delta_grasp_slip_mm": 0.0,
+        "tip_position_distance_mm": 0.6088634032652712,
+        "peg_orientation_distance_deg": 0.15259602485442084,
+        "hand_position_distance_mm": 0.532265438703047,
+        "hand_orientation_distance_deg": 0.163918405827523,
+        "joint_position_max_difference_rad": 0.0027348995208740234,
+        "joint_velocity_max_difference_rad_s": 0.006388363777659833,
+        "peg_linear_velocity_distance_m_s": 0.00973323032434626,
+        "peg_angular_velocity_distance_rad_s": 0.43263738770857135,
+        "grasp_position_distance_mm": 0.010994302936202132,
+        "grasp_orientation_distance_deg": 0.059312776884636785
+      },
+      "runtime_material_comparison": {
+        "equal": true,
+        "differences": []
+      },
+      "effective_gap_equal": true
+    },
+    {
+      "case_id": "m_d18_fs100_fd100_a1p5",
+      "physical_parameters_a": {
+        "radial_clearance_mm": 0.2,
+        "clearance_definition": "nominal_radial",
+        "peg_diameter_mm": 7.986,
+        "hole_diameter_mm": 8.386,
+        "hole_depth_mm": 25.0,
+        "hole_type": "blind",
+        "target_depth_mm": 18.0,
+        "pair_static_friction": 1.0,
+        "pair_dynamic_friction": 1.0,
+        "peg_static_friction": 0.75,
+        "peg_dynamic_friction": 0.75,
+        "hole_static_friction": 1.25,
+        "hole_dynamic_friction": 1.25,
+        "friction_combine_mode": "average",
+        "tilt_amplitude_deg": 1.5,
+        "tilt_axis": "pitch",
+        "tilt_sign": 1,
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "final_pitch_deg": 1.5,
+        "approach_duration_s": 2.0,
+        "insertion_start_depth_mm": -10.0,
+        "insertion_duration_s": 7.466666666666667,
+        "insertion_distance_rate_mm_s": 3.75,
+        "settle_tolerance_mm": 0.1,
+        "settle_dwell_s": 0.2,
+        "settle_timeout_s": 2.0,
+        "tilt_ramp_duration_s": 1.0,
+        "post_tilt_hold_s": 1.0
+      },
+      "physical_parameters_b": {
+        "radial_clearance_mm": 0.2,
+        "clearance_definition": "nominal_radial",
+        "peg_diameter_mm": 7.986,
+        "hole_diameter_mm": 8.386,
+        "hole_depth_mm": 25.0,
+        "hole_type": "blind",
+        "target_depth_mm": 18.0,
+        "pair_static_friction": 1.0,
+        "pair_dynamic_friction": 1.0,
+        "peg_static_friction": 0.75,
+        "peg_dynamic_friction": 0.75,
+        "hole_static_friction": 1.25,
+        "hole_dynamic_friction": 1.25,
+        "friction_combine_mode": "average",
+        "tilt_amplitude_deg": 1.5,
+        "tilt_axis": "pitch",
+        "tilt_sign": 1,
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "final_pitch_deg": 1.5,
+        "approach_duration_s": 2.0,
+        "insertion_start_depth_mm": -10.0,
+        "insertion_duration_s": 7.466666666666667,
+        "insertion_distance_rate_mm_s": 3.75,
+        "settle_tolerance_mm": 0.1,
+        "settle_dwell_s": 0.2,
+        "settle_timeout_s": 2.0,
+        "tilt_ramp_duration_s": 1.0,
+        "post_tilt_hold_s": 1.0
+      },
+      "physical_plan_equal": true,
+      "physical_plan_differences": [],
+      "both_complete": true,
+      "a": {
+        "status": "complete",
+        "measurements": {
+          "reference_state": "valid_protocol_completed",
+          "reference_termination_reason": "reference_complete",
+          "numerically_valid": true,
+          "reference_protocol_completed": true,
+          "grasp_retained": true,
+          "reference_within_budget": true,
+          "terminal_depth_mm": 18.227891623973846,
+          "terminal_actual_tilt_deg": 1.4391266526571378,
+          "terminal_command_tilt_deg": 1.5,
+          "tilt_terminal_depth_loss_mm": -0.17734244465827942,
+          "max_normal_load_n": 6.308088302612305,
+          "reference_peak_wrist_force_n": 3.5568809509277344,
+          "reference_peak_wrist_force_mean100ms_within_phase_n": 1.8532681713501613,
+          "reference_peak_normal_load_mean100ms_within_phase_n": 3.9039244850476584,
+          "insert_peak_wrist_force_n": 0.41461625695228577,
+          "insert_peak_wrist_force_mean100ms_n": 0.07732061079392831,
+          "insert_peak_normal_load_n": 0.3953914940357208,
+          "insert_peak_normal_load_mean100ms_n": 0.04283254725548128,
+          "hold_peak_normal_load_mean100ms_n": 3.9039244850476584,
+          "hold_peak_wrist_force_mean100ms_n": 1.8532681713501613,
+          "max_grasp_slip_mm": 0.02331748510187026,
+          "max_grasp_slip_deg": 0.09691328065893987,
+          "max_penetration_mm": 0.007583489150420064,
+          "straight_retreat_observed": true,
+          "straight_reason": "cleared",
+          "straight_numerically_valid": true,
+          "straight_grasp_retained": true,
+          "straight_label_eligible": true,
+          "straight_safe_recovery": true,
+          "straight_cleared": true,
+          "straight_recovery_censored": false,
+          "straight_duration_s": 4.825,
+          "straight_stop_peak_wrist_force_n": 3.754587411880493,
+          "straight_retreat_peak_wrist_force_n": 4.583499431610107,
+          "straight_retreat_peak_wrist_force_mean100ms_n": 2.2026010068754354,
+          "straight_max_wrist_force_n": 4.583499431610107,
+          "straight_retreat_peak_contact_downward_resistance_n": 5.249064922332764,
+          "straight_retreat_peak_contact_downward_resistance_mean100ms_n": 1.5112235993146896,
+          "straight_retreat_peak_contact_normal_axial_resistance_n": 0.0,
+          "straight_retreat_peak_contact_friction_axial_resistance_n": 5.249064922332764,
+          "straight_retreat_max_depth_tracking_error_mm": 2.7032494147618618,
+          "straight_max_penetration": 0.02567716728663072,
+          "paired_state": "matched_results_known",
+          "paired_results_known": true,
+          "paired_costs_complete": true,
+          "realign_reason": "cleared",
+          "realign_replay_matched": true,
+          "realign_replay_prefix_matched": true,
+          "realign_replay_prefix_equal": true,
+          "realign_numerically_valid": true,
+          "matched_realign_safe_recovery": true,
+          "matched_realign_cleared": true,
+          "matched_realign_recovery_censored": false,
+          "matched_realign_duration_s": 6.791666666666667,
+          "matched_realign_max_wrist_force_n": 3.754587411880493,
+          "matched_realign_stop_peak_wrist_force_n": 3.754587411880493,
+          "matched_realign_realign_peak_wrist_force_n": 2.282222032546997,
+          "matched_realign_retreat_peak_wrist_force_n": 1.150869369506836,
+          "matched_realign_retreat_peak_wrist_force_mean100ms_n": 0.08816228426682453
+        },
+        "initial_state": {
+          "phase": "initial",
+          "time_s": 0.0,
+          "physics_time_s": 0.0,
+          "depth_mm": -14.832577109336851,
+          "tip_x_mm": -0.38319826126098633,
+          "tip_y_mm": 0.09010355279315263,
+          "tilt_deg": 0.019782341029446364,
+          "command_depth_mm": -10.0,
+          "command_tilt_deg": 0.0,
+          "grasp_slip_mm": 0.0,
+          "grasp_slip_deg": 0.055952909680744456,
+          "wrist_force_n": 0.0002682181657291949,
+          "wrist_torque_nm": 7.231818017316982e-05,
+          "normal_load_n": 0.0,
+          "qw": -7.778516010148451e-05,
+          "qx": -0.0001881504722405225,
+          "qy": -8.736902236705646e-05,
+          "qz": 0.9999999403953552,
+          "vx": 0.00031435853452421725,
+          "vy": -0.0004160091048106551,
+          "vz": 0.0015787363518029451,
+          "omegax": 0.008009504526853561,
+          "omegay": -0.04087924584746361,
+          "omegaz": -0.017404792830348015,
+          "joint1_rad": -0.4914534091949463,
+          "joint2_rad": 0.48300108313560486,
+          "joint3_rad": 0.5057228207588196,
+          "joint4_rad": -2.0237088203430176,
+          "joint5_rad": -0.34875014424324036,
+          "joint6_rad": 2.4236204624176025,
+          "joint7_rad": 1.0169486999511719,
+          "joint_velocity1_rad_s": 8.036813233047724e-05,
+          "joint_velocity2_rad_s": -0.0006127877277322114,
+          "joint_velocity3_rad_s": -0.00097002083202824,
+          "joint_velocity4_rad_s": -0.00025663827545940876,
+          "joint_velocity5_rad_s": 0.0006393590592779219,
+          "joint_velocity6_rad_s": -0.0006144543294794858,
+          "joint_velocity7_rad_s": -0.0011192745296284556,
+          "hand_pose_0": 0.5996054410934448,
+          "hand_pose_1": 8.516904199495912e-05,
+          "hand_pose_2": 0.12222467362880707,
+          "hand_pose_3": -8.917736704461277e-05,
+          "hand_pose_4": 0.9999999403953552,
+          "hand_pose_5": 7.642256241524592e-05,
+          "hand_pose_6": 0.00019385381892789155,
+          "grasp_position_0": -1.1738657121895812e-06,
+          "grasp_position_1": 8.435617928626016e-07,
+          "grasp_position_2": 0.032392099499702454,
+          "grasp_quat_0": 5.703574970539194e-06,
+          "grasp_quat_1": 1.3624602388517815e-06,
+          "grasp_quat_2": 0.9999999403953552,
+          "grasp_quat_3": -1.80764391188859e-06
+        },
+        "terminal_state": {
+          "depth_mm": 18.227891623973846,
+          "tip_x_mm": -0.21821260452270508,
+          "tip_y_mm": 0.00492899380333256,
+          "tilt_deg": 1.4391266526571378,
+          "command_depth_mm": 18.0,
+          "command_tilt_deg": 1.5,
+          "qw": 0.0001279404532397166,
+          "qx": 0.01255823951214552,
+          "qy": 5.182218592381105e-05,
+          "qz": 0.9999210834503174,
+          "phase": "hold",
+          "time_s": 11.708333333332671
+        },
+        "runtime_material": {
+          "requested_pair_static_friction": 1.0,
+          "requested_pair_dynamic_friction": 1.0,
+          "effective_pair_static_friction": 1.0,
+          "effective_pair_dynamic_friction": 1.0,
+          "effective_pair_basis": "runtime per-shape coefficients + resolved explicitly bound average material modes; not a separately measured contact-pair coefficient",
+          "bindings": {
+            "hole": {
+              "collider_path": "/World/envs/env_0/FixedAsset/forge_hole_8mm/forge_hole_8mm/mesh",
+              "material_path": "/World/MechanicsMaterials/hole",
+              "previous_bound_material_path": null,
+              "bound_before_physics_initialization": true,
+              "usd_static_friction": 1.25,
+              "usd_dynamic_friction": 1.25,
+              "resolved_friction_combine_mode": "average"
+            },
+            "peg": {
+              "collider_path": "/World/envs/env_0/HeldAsset/forge_round_peg_8mm/mesh",
+              "material_path": "/World/MechanicsMaterials/peg",
+              "previous_bound_material_path": "/World/envs/env_0/HeldAsset/forge_round_peg_8mm/Looks/material__980392_0_713725_0_003922_0_000000_0_000000",
+              "bound_before_physics_initialization": true,
+              "usd_static_friction": 0.75,
+              "usd_dynamic_friction": 0.75,
+              "resolved_friction_combine_mode": "average"
+            }
+          },
+          "runtime_materials": {
+            "hole": [
+              [
+                [
+                  1.25,
+                  1.25,
+                  0.0
+                ]
+              ]
+            ],
+            "peg": [
+              [
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ]
+              ]
+            ],
+            "robot": [
+              [
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ]
+              ]
+            ]
+          }
+        },
+        "effective_radial_clearance_mm": 0.19899400710569026,
+        "trajectory_id": "m_d18_fs100_fd100_a1p5_try00",
+        "input_files": [
+          {
+            "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Boundary-20260915/m_d18_fs100_fd100_a1p5_try00/trajectory.json",
+            "sha256": "3b9190a0da0c608fd0836d264468460cd959a70db45527aeaa7a4a11b94ee238"
+          },
+          {
+            "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Boundary-20260915/m_d18_fs100_fd100_a1p5_try00/insertion.csv",
+            "sha256": "da31c236fa8b40b658f9bca7bca7ed54599db0f739a5b4cd2755dfc170a10f2f"
+          }
+        ]
+      },
+      "b": {
+        "status": "complete",
+        "measurements": {
+          "reference_state": "valid_protocol_completed",
+          "reference_termination_reason": "reference_complete",
+          "numerically_valid": true,
+          "reference_protocol_completed": true,
+          "grasp_retained": true,
+          "reference_within_budget": true,
+          "terminal_depth_mm": 18.3578222990036,
+          "terminal_actual_tilt_deg": 1.3607061960275437,
+          "terminal_command_tilt_deg": 1.5,
+          "tilt_terminal_depth_loss_mm": -0.36665424704551697,
+          "max_normal_load_n": 20.641307830810547,
+          "reference_peak_wrist_force_n": 13.150410652160645,
+          "reference_peak_wrist_force_mean100ms_within_phase_n": 5.314753787902494,
+          "reference_peak_normal_load_mean100ms_within_phase_n": 7.484918592187266,
+          "insert_peak_wrist_force_n": 13.150410652160645,
+          "insert_peak_wrist_force_mean100ms_n": 0.3405984735970075,
+          "insert_peak_normal_load_n": 10.935748100280762,
+          "insert_peak_normal_load_mean100ms_n": 0.22782808542251587,
+          "hold_peak_normal_load_mean100ms_n": 7.484918592187266,
+          "hold_peak_wrist_force_mean100ms_n": 5.314753787902494,
+          "max_grasp_slip_mm": 0.044269188947509974,
+          "max_grasp_slip_deg": 0.15323335969831878,
+          "max_penetration_mm": 0.0112029865704244,
+          "straight_retreat_observed": true,
+          "straight_reason": "cleared",
+          "straight_numerically_valid": true,
+          "straight_grasp_retained": true,
+          "straight_label_eligible": true,
+          "straight_safe_recovery": true,
+          "straight_cleared": true,
+          "straight_recovery_censored": false,
+          "straight_duration_s": 4.833333333333333,
+          "straight_stop_peak_wrist_force_n": 6.526978015899658,
+          "straight_retreat_peak_wrist_force_n": 5.491099834442139,
+          "straight_retreat_peak_wrist_force_mean100ms_n": 1.0004024273560692,
+          "straight_max_wrist_force_n": 6.526978015899658,
+          "straight_retreat_peak_contact_downward_resistance_n": 5.297093391418457,
+          "straight_retreat_peak_contact_downward_resistance_mean100ms_n": 0.5864966963478461,
+          "straight_retreat_peak_contact_normal_axial_resistance_n": 0.0,
+          "straight_retreat_peak_contact_friction_axial_resistance_n": 5.297093391418457,
+          "straight_retreat_max_depth_tracking_error_mm": 1.1963446239630393,
+          "straight_max_penetration": 0.01869155494205188,
+          "paired_state": "matched_results_known",
+          "paired_results_known": true,
+          "paired_costs_complete": true,
+          "realign_reason": "cleared",
+          "realign_replay_matched": true,
+          "realign_replay_prefix_matched": true,
+          "realign_replay_prefix_equal": true,
+          "realign_numerically_valid": true,
+          "matched_realign_safe_recovery": true,
+          "matched_realign_cleared": true,
+          "matched_realign_recovery_censored": false,
+          "matched_realign_duration_s": 6.810416666666667,
+          "matched_realign_max_wrist_force_n": 8.5201416015625,
+          "matched_realign_stop_peak_wrist_force_n": 6.526978015899658,
+          "matched_realign_realign_peak_wrist_force_n": 8.5201416015625,
+          "matched_realign_retreat_peak_wrist_force_n": 3.229278564453125,
+          "matched_realign_retreat_peak_wrist_force_mean100ms_n": 0.2714643849564406
+        },
+        "initial_state": {
+          "phase": "initial",
+          "time_s": 0.0,
+          "physics_time_s": 0.0,
+          "depth_mm": -14.496853947639464,
+          "tip_x_mm": -0.8758306503295898,
+          "tip_y_mm": -0.03366207965882495,
+          "tilt_deg": 0.12972151222939818,
+          "command_depth_mm": -10.0,
+          "command_tilt_deg": 0.0,
+          "grasp_slip_mm": 0.0,
+          "grasp_slip_deg": 0.055952909680744456,
+          "wrist_force_n": 0.001229391316883266,
+          "wrist_torque_nm": 7.631890912307426e-05,
+          "normal_load_n": 0.0,
+          "qw": -0.00017538100655656308,
+          "qx": 0.0011252855183556676,
+          "qy": 0.00010924243542831391,
+          "qz": 0.9999993443489075,
+          "vx": 0.009972312487661839,
+          "vy": 0.0007166515570133924,
+          "vz": 0.001999185886234045,
+          "omegax": -0.03187476843595505,
+          "omegay": -0.44371122121810913,
+          "omegaz": -0.17008338868618011,
+          "joint1_rad": -0.4916764795780182,
+          "joint2_rad": 0.48371371626853943,
+          "joint3_rad": 0.5060002207756042,
+          "joint4_rad": -2.0230588912963867,
+          "joint5_rad": -0.34898900985717773,
+          "joint6_rad": 2.4208855628967285,
+          "joint7_rad": 1.015777587890625,
+          "joint_velocity1_rad_s": 0.00035103672416880727,
+          "joint_velocity2_rad_s": 0.0008110594353638589,
+          "joint_velocity3_rad_s": 0.0019283705623820424,
+          "joint_velocity4_rad_s": 0.004159771371632814,
+          "joint_velocity5_rad_s": -0.001044980832375586,
+          "joint_velocity6_rad_s": 0.0010843140771612525,
+          "joint_velocity7_rad_s": 0.005269089248031378,
+          "hand_pose_0": 0.5992055535316467,
+          "hand_pose_1": -3.0102826713118702e-05,
+          "hand_pose_2": 0.12189284712076187,
+          "hand_pose_3": 8.670485840411857e-05,
+          "hand_pose_4": 0.9999991059303284,
+          "hand_pose_5": 0.0006901275482960045,
+          "hand_pose_6": -0.0010862400522455573,
+          "grasp_position_0": -1.0981515515595675e-05,
+          "grasp_position_1": -2.1222472241788637e-06,
+          "grasp_position_2": 0.03239608556032181,
+          "grasp_quat_0": 3.910543455276638e-05,
+          "grasp_quat_1": -0.0005147673073224723,
+          "grasp_quat_2": 0.9999998211860657,
+          "grasp_quat_3": -2.195138586102985e-05
+        },
+        "terminal_state": {
+          "depth_mm": 18.3578222990036,
+          "tip_x_mm": -0.2135634422302246,
+          "tip_y_mm": -0.0020935376596753486,
+          "tilt_deg": 1.3607061960275437,
+          "command_depth_mm": 18.0,
+          "command_tilt_deg": 1.5,
+          "qw": -0.0005047316662967205,
+          "qx": 0.011873683892190456,
+          "qy": 8.814549801172689e-05,
+          "qz": 0.9999293088912964,
+          "phase": "hold",
+          "time_s": 11.666666666668302
+        },
+        "runtime_material": {
+          "requested_pair_static_friction": 1.0,
+          "requested_pair_dynamic_friction": 1.0,
+          "effective_pair_static_friction": 1.0,
+          "effective_pair_dynamic_friction": 1.0,
+          "effective_pair_basis": "runtime per-shape coefficients + resolved explicitly bound average material modes; not a separately measured contact-pair coefficient",
+          "bindings": {
+            "hole": {
+              "collider_path": "/World/envs/env_0/FixedAsset/forge_hole_8mm/forge_hole_8mm/mesh",
+              "material_path": "/World/MechanicsMaterials/hole",
+              "previous_bound_material_path": null,
+              "bound_before_physics_initialization": true,
+              "usd_static_friction": 1.25,
+              "usd_dynamic_friction": 1.25,
+              "resolved_friction_combine_mode": "average"
+            },
+            "peg": {
+              "collider_path": "/World/envs/env_0/HeldAsset/forge_round_peg_8mm/mesh",
+              "material_path": "/World/MechanicsMaterials/peg",
+              "previous_bound_material_path": "/World/envs/env_0/HeldAsset/forge_round_peg_8mm/Looks/material__980392_0_713725_0_003922_0_000000_0_000000",
+              "bound_before_physics_initialization": true,
+              "usd_static_friction": 0.75,
+              "usd_dynamic_friction": 0.75,
+              "resolved_friction_combine_mode": "average"
+            }
+          },
+          "runtime_materials": {
+            "hole": [
+              [
+                [
+                  1.25,
+                  1.25,
+                  0.0
+                ]
+              ]
+            ],
+            "peg": [
+              [
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ]
+              ]
+            ],
+            "robot": [
+              [
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ],
+                [
+                  0.75,
+                  0.75,
+                  0.0
+                ]
+              ]
+            ]
+          }
+        },
+        "effective_radial_clearance_mm": 0.19899400710569026,
+        "trajectory_id": "m_d18_fs100_fd100_a1p5_try00",
+        "input_files": [
+          {
+            "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915/m_d18_fs100_fd100_a1p5_try00/trajectory.json",
+            "sha256": "c73fc4d72d00e739203eeccd6679691681ab4e955c5a655b0b995baf0b815f58"
+          },
+          {
+            "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915/m_d18_fs100_fd100_a1p5_try00/insertion.csv",
+            "sha256": "bcaf8ceb57d876a930bac9d354beb8aef63ce3ad347b9eabc4efec5d850fa870"
+          }
+        ]
+      },
+      "initial_state_differences_b_minus_a": {
+        "delta_depth_mm": 0.3357231616973877,
+        "delta_tip_x_mm": -0.4926323890686035,
+        "delta_tip_y_mm": -0.12376563245197758,
+        "delta_tilt_deg": 0.10993917119995181,
+        "delta_wrist_force_n": 0.0009611731511540711,
+        "delta_grasp_slip_mm": 0.0,
+        "tip_position_distance_mm": 0.6088634032652712,
+        "peg_orientation_distance_deg": 0.15259602485442084,
+        "hand_position_distance_mm": 0.532265438703047,
+        "hand_orientation_distance_deg": 0.163918405827523,
+        "joint_position_max_difference_rad": 0.0027348995208740234,
+        "joint_velocity_max_difference_rad_s": 0.006388363777659833,
+        "peg_linear_velocity_distance_m_s": 0.00973323032434626,
+        "peg_angular_velocity_distance_rad_s": 0.43263738770857135,
+        "grasp_position_distance_mm": 0.010994302936202132,
+        "grasp_orientation_distance_deg": 0.059312776884636785
+      },
+      "runtime_material_comparison": {
+        "equal": true,
+        "differences": []
+      },
+      "effective_gap_equal": true
+    }
+  ],
+  "interpretation": {
+    "scope": "Independent-run rate sensitivity, not pure dt convergence or a matched cross-rate causal comparison. Physics, closed-loop control and sample rates change together; reset states can also differ.",
+    "initial_state": "First saved reference sample after reset, before approach; differences are b minus a, distances are nonnegative. Cross-rate prefixes are not matched or relabeled.",
+    "normal_load": "max_normal_load_n is the maximum sum of contact-normal magnitudes; not axial pull force and not wrist force.",
+    "geometry": "max_penetration_mm and straight_max_penetration are contact separation-based numerical overlap diagnostics in mm, not plastic deformation; nominal mesh envelope overlap is a separate quantity.",
+    "whole_peak": "straight_max_wrist_force_n and matched_realign_max_wrist_force_n include copied reference t=0, STOP and all executed phases; retreat fields cover retreat only.",
+    "means": "100 ms values are maxima of full within-phase averaging windows, not single-frame peaks. reference_*_mean100ms_within_phase_n takes the maximum of the approach/insert/settle/tilt/hold phase maxima, never averaging across phase boundaries.",
+    "policy": "matched_realign_* is populated only for within-run endpoint + full-prefix matched, numerically valid, label-eligible policy outcomes. Realign recenters XY and aligns orientation. paired_costs_complete separately marks two completed uncensored clearances.",
+    "grasp": "The existing grasp gate is a relative-slip threshold, not proof the object fell out.",
+    "pending": "Only complete attempts are opened. Other case measurements and initial differences remain null; null never denotes zero or a failed withdrawal.",
+    "source_audit": "Archived source files are hashed without execution; configuration equality is reported independently from case results."
+  },
+  "provenance": {
+    "exporter": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/simulation/compare_mechanics_rates.py",
+    "exporter_sha256": "c0f037d6b5dbd6abf0d75a02deecf5dd4cdb3eabc31a8803aa12b3eb6336c3aa",
+    "summary_helper_sha256": "c51b47705222f11a48ee8b26f951828af3a622682265a90924c3ba648c6fd0da",
+    "completed_input_files": [
+      {
+        "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Boundary-20260915/m_d18_fs100_fd100_a00_try00/trajectory.json",
+        "sha256": "d5e8bbf9c52c6b3e0964e76ce00a1b199d8c5c6520eb87bce9f412d9493817d9"
+      },
+      {
+        "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Boundary-20260915/m_d18_fs100_fd100_a00_try00/insertion.csv",
+        "sha256": "bc7ba687d47cef5bb83262256db5a92c89c0d54aaf267f500f5cba37d82ac52d"
+      },
+      {
+        "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915/m_d18_fs100_fd100_a00_try00/trajectory.json",
+        "sha256": "26e80c9c6f50d50084b47db6d90a92234b142de13b97c5fce858726fd967d1e9"
+      },
+      {
+        "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915/m_d18_fs100_fd100_a00_try00/insertion.csv",
+        "sha256": "f926a765bb6d06bb7df1eee5aaed765a6cdbc92d6985b956abba63f3d2d31a3d"
+      },
+      {
+        "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Boundary-20260915/m_d18_fs100_fd100_a1p5_try00/trajectory.json",
+        "sha256": "3b9190a0da0c608fd0836d264468460cd959a70db45527aeaa7a4a11b94ee238"
+      },
+      {
+        "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Boundary-20260915/m_d18_fs100_fd100_a1p5_try00/insertion.csv",
+        "sha256": "da31c236fa8b40b658f9bca7bca7ed54599db0f739a5b4cd2755dfc170a10f2f"
+      },
+      {
+        "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915/m_d18_fs100_fd100_a1p5_try00/trajectory.json",
+        "sha256": "c73fc4d72d00e739203eeccd6679691681ab4e955c5a655b0b995baf0b815f58"
+      },
+      {
+        "path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915/m_d18_fs100_fd100_a1p5_try00/insertion.csv",
+        "sha256": "bcaf8ceb57d876a930bac9d354beb8aef63ce3ad347b9eabc4efec5d850fa870"
+      }
+    ]
+  }
+}

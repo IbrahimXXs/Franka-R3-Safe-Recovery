@@ -1,0 +1,429 @@
+{
+  "study": "Forge-mechanics-v1",
+  "status": "paused",
+  "physics_hz": 480,
+  "simulation_options": {
+    "stock_buffers": false,
+    "device": "cuda:0"
+  },
+  "recovery_motion": {
+    "profile": "smoothstep_velocity_ramps_with_constant_speed_cruise",
+    "requested_speed_mm_s": 5.0,
+    "ramp_s": 0.5,
+    "distance_definition": "max(0, reference_terminal_depth_mm + 10)",
+    "duration_definition": "distance/speed + ramp for ordinary insertion depths",
+    "inherited_retreat_duration_s_used": false
+  },
+  "physics_rate_selection": {
+    "source": "explicit_override",
+    "upstream_physics_hz": 120,
+    "upstream_action_hz": 15.0
+  },
+  "seed": 20260913,
+  "case_plan": {
+    "schema": "Forge-mechanics-v1",
+    "attempts_per_case": 1,
+    "retries_per_case": 0,
+    "clearance_definition": "nominal_radial",
+    "reference_protocol": "aligned_insert_depth_gate_time_tilt_fixed_depth_hold",
+    "observation_feedback": "previous_completed_physics_step",
+    "depth_gate": "within_target_plus_minus_tolerance_for_contiguous_dwell",
+    "friction_combination": "arithmetic_mean_of_peg_and_hole_coefficients",
+    "source_plan": {
+      "schema": "Forge-mechanics-v1",
+      "case_count": 24,
+      "sha256": "e17de95b015cafc25fd7742e07bad0728b5a0e3e2e4b3ce5ea6e31d64ed11dfc"
+    },
+    "subset_case_ids": [
+      "m_d18_fs100_fd100_a00",
+      "m_d18_fs100_fd100_a02"
+    ],
+    "cases": [
+      {
+        "case_id": "m_d18_fs100_fd100_a00",
+        "family": "centered",
+        "radial_clearance_mm": 0.2,
+        "clearance_definition": "nominal_radial",
+        "peg_diameter_mm": 7.986,
+        "hole_diameter_mm": 8.386,
+        "hole_depth_mm": 25.0,
+        "hole_type": "blind",
+        "target_depth_mm": 18.0,
+        "pair_static_friction": 1.0,
+        "pair_dynamic_friction": 1.0,
+        "peg_static_friction": 0.75,
+        "peg_dynamic_friction": 0.75,
+        "hole_static_friction": 1.25,
+        "hole_dynamic_friction": 1.25,
+        "friction_combine_mode": "average",
+        "tilt_amplitude_deg": 0.0,
+        "tilt_axis": "pitch",
+        "tilt_sign": 1,
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "approach_duration_s": 2.0,
+        "insertion_start_depth_mm": -10.0,
+        "insertion_duration_s": 7.466666666666667,
+        "insertion_distance_rate_mm_s": 3.75,
+        "settle_tolerance_mm": 0.1,
+        "settle_dwell_s": 0.2,
+        "settle_timeout_s": 2.0,
+        "tilt_ramp_duration_s": 1.0,
+        "post_tilt_hold_s": 1.0,
+        "sample_role": "aligned_control",
+        "split_group_id": "m_d18_fs100_fd100",
+        "path_group_id": "m_d18_fs100_fd100_a00",
+        "slot": 0,
+        "source_slot": 10,
+        "retry": 0,
+        "trajectory_id": "m_d18_fs100_fd100_a00_try00"
+      },
+      {
+        "case_id": "m_d18_fs100_fd100_a02",
+        "family": "tilt_only",
+        "radial_clearance_mm": 0.2,
+        "clearance_definition": "nominal_radial",
+        "peg_diameter_mm": 7.986,
+        "hole_diameter_mm": 8.386,
+        "hole_depth_mm": 25.0,
+        "hole_type": "blind",
+        "target_depth_mm": 18.0,
+        "pair_static_friction": 1.0,
+        "pair_dynamic_friction": 1.0,
+        "peg_static_friction": 0.75,
+        "peg_dynamic_friction": 0.75,
+        "hole_static_friction": 1.25,
+        "hole_dynamic_friction": 1.25,
+        "friction_combine_mode": "average",
+        "tilt_amplitude_deg": 2.0,
+        "tilt_axis": "pitch",
+        "tilt_sign": 1,
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "final_pitch_deg": 2.0,
+        "approach_duration_s": 2.0,
+        "insertion_start_depth_mm": -10.0,
+        "insertion_duration_s": 7.466666666666667,
+        "insertion_distance_rate_mm_s": 3.75,
+        "settle_tolerance_mm": 0.1,
+        "settle_dwell_s": 0.2,
+        "settle_timeout_s": 2.0,
+        "tilt_ramp_duration_s": 1.0,
+        "post_tilt_hold_s": 1.0,
+        "sample_role": "depth_friction_tilt_characterization",
+        "split_group_id": "m_d18_fs100_fd100",
+        "path_group_id": "m_d18_fs100_fd100_a02",
+        "slot": 1,
+        "source_slot": 22,
+        "retry": 0,
+        "trajectory_id": "m_d18_fs100_fd100_a02_try00"
+      }
+    ]
+  },
+  "protocol": {
+    "target_valid": 100,
+    "seed": 20260913,
+    "attempts_per_slot": 5,
+    "checkpoints_mm": [
+      5.0,
+      10.0,
+      15.0,
+      20.0
+    ],
+    "offset_range_mm": [
+      0.1,
+      1.0
+    ],
+    "tilt_range_deg": [
+      0.25,
+      4.0
+    ],
+    "insertion_duration_s": [
+      8.0,
+      8.0
+    ],
+    "penetration_fraction": 0.25,
+    "success_depth_mm": 19.5,
+    "success_dwell_s": 0.2,
+    "stall_window_s": 0.5,
+    "stall_progress_mm": 0.1,
+    "stall_command_progress_mm": 0.5,
+    "retreat_duration_s": 6.0,
+    "realign_duration_s": 2.0,
+    "stop_duration_s": 0.25,
+    "clear_hold_s": 0.5,
+    "force_budget_n": 20.0,
+    "torque_budget_nm": 1.0,
+    "replay_position_mm": 0.005,
+    "replay_orientation_deg": 0.02,
+    "replay_joint_rad": 0.0001,
+    "replay_joint_velocity_rad_s": 0.001,
+    "replay_linear_velocity_m_s": 0.001,
+    "replay_angular_velocity_rad_s": 0.005,
+    "replay_force_n": 0.1,
+    "replay_torque_nm": 0.005,
+    "family_weights": {
+      "centered": 8,
+      "x_offset": 18,
+      "y_offset": 18,
+      "diagonal_offset": 18,
+      "tilt_only": 19,
+      "offset_tilt": 19
+    },
+    "effective_radial_clearance_mm": null
+  },
+  "radial_clearance_mm": 0.2,
+  "sources": {
+    "simulation/forge_mechanics.py": "3fd43f2e07700664eb0c2a4124a88d873dd87e54b6f78b42acb62557dc75d020",
+    "simulation/launch_forge_mechanics.py": "264a4f0cb3e3c1a8e088b1e8f5c31dc17462f465666223de766a7c25e391dadb",
+    "simulation/forge_mechanics_backend.py": "4d9d058ad5e2807a8a27151498c3f456d81badafce590b10050071e01b01cf1a",
+    "research/forge_mechanics_contacts.py": "16dcba4012b1d5071ae30f835a5b2eaf0246d2b3aaa3b4571631f3b326047c41",
+    "simulation/forge_mechanics_recovery.py": "d6bfc182f1ce17cea871e78143dbda19d0a7cb1bd89a0b1390773344e4c26abe",
+    "research/forge_mechanics_motion.py": "b03db0bdf9d1f697442bd2032cbea8c64bae0f3fa8c5f162ee054f4910bf17a4",
+    "research/forge_mechanics_plan.py": "b738155535c4ff11e9e4e8ad470b0da82f154b789f8cece4ba2a330f8348fdca",
+    "research/forge_mechanics_metrics.py": "d2924bfe32e2a1b14b073cd8393b310f47d3274b6dff44a28c47a2501ec13e60",
+    "research/forge_mechanics_protocol.py": "0df8a8d32cdaf88ff4a8d3076ea81713367d1c23fd07992f71efe624be902fad",
+    "simulation/forge_backend.py": "5a0c3fb5f1c5d330c90fdc2a22e6d48cda1713156d134c5ba533b5fa6ce3a45f",
+    "simulation/forge_experiment.py": "54ac5813d9dba93c4ac6aaf907d67e53d84a039d47000386cfc57434b1e76618",
+    "simulation/contact.py": "a23500505916cf97fe792258fedae0ea583f03b2652dc42121e2d761fbb6e522",
+    "research/forge_protocol.py": "3e112d13a94bfb85f82ec7beec0c9750792042b222b07d7277df1c32503006a1",
+    "research/phase2_protocol.py": "3d05bd187320591bb9e69d38f9dc3263925608f17213c945caf8c7a6adcc84ca",
+    "research/forge_gap_metrics.py": "ed4dcde065a52732492fd5169eb408875c9d9b5f0850cafd76137ffef9462edc",
+    "research/forge_geometry.py": "d37caa904ae3bfcc2360ed31294f4d700fe412a127e030f6fe76dc6bb8751078",
+    "research/forge_events.py": "88361f3eacacda079fd3e9f7bc075dcc0a61ccbf7019b1891b670764d0b11022",
+    "research/future_stall.py": "7d6466b6e452beed65930aadcb6552d123947038ddac9bb18416b09e25a63d3c",
+    "research/forge_gap_study.py": "2dbea013ab35053fff628126fd36775a75aa782fad98e443e0b4f1409bb17fc9",
+    "research/forge_collection.py": "f06901e0c9d55df411981a27ee4ad512f089aaf8bd6fecec00d3da9a0d4c890f",
+    "research/phase2b.py": "0dfa4d32fd924a72576a7f1316198352147a389e5fe4e328727eb0637a94949a"
+  },
+  "recovery_policy_definition": "Original continuous straight vs replayed terminal XY-recenter-and-upright realign; both begin with 0.25 s attained-pose stop.",
+  "attempts": [
+    {
+      "case_id": "m_d18_fs100_fd100_a00",
+      "family": "centered",
+      "radial_clearance_mm": 0.2,
+      "clearance_definition": "nominal_radial",
+      "peg_diameter_mm": 7.986,
+      "hole_diameter_mm": 8.386,
+      "hole_depth_mm": 25.0,
+      "hole_type": "blind",
+      "target_depth_mm": 18.0,
+      "pair_static_friction": 1.0,
+      "pair_dynamic_friction": 1.0,
+      "peg_static_friction": 0.75,
+      "peg_dynamic_friction": 0.75,
+      "hole_static_friction": 1.25,
+      "hole_dynamic_friction": 1.25,
+      "friction_combine_mode": "average",
+      "tilt_amplitude_deg": 0.0,
+      "tilt_axis": "pitch",
+      "tilt_sign": 1,
+      "offset_x_mm": 0.0,
+      "offset_y_mm": 0.0,
+      "roll_deg": 0.0,
+      "pitch_deg": 0.0,
+      "final_pitch_deg": 0.0,
+      "approach_duration_s": 2.0,
+      "insertion_start_depth_mm": -10.0,
+      "insertion_duration_s": 7.466666666666667,
+      "insertion_distance_rate_mm_s": 3.75,
+      "settle_tolerance_mm": 0.1,
+      "settle_dwell_s": 0.2,
+      "settle_timeout_s": 2.0,
+      "tilt_ramp_duration_s": 1.0,
+      "post_tilt_hold_s": 1.0,
+      "sample_role": "aligned_control",
+      "split_group_id": "m_d18_fs100_fd100",
+      "path_group_id": "m_d18_fs100_fd100_a00",
+      "slot": 0,
+      "source_slot": 10,
+      "retry": 0,
+      "trajectory_id": "m_d18_fs100_fd100_a00_try00",
+      "folder": "m_d18_fs100_fd100_a00_try00",
+      "status": "interrupted",
+      "effective_radial_clearance_mm": 0.19899400710569026,
+      "material": {
+        "requested_pair_static_friction": 1.0,
+        "requested_pair_dynamic_friction": 1.0,
+        "effective_pair_static_friction": 1.0,
+        "effective_pair_dynamic_friction": 1.0,
+        "effective_pair_basis": "runtime per-shape coefficients + resolved explicitly bound average material modes; not a separately measured contact-pair coefficient",
+        "bindings": {
+          "hole": {
+            "collider_path": "/World/envs/env_0/FixedAsset/forge_hole_8mm/forge_hole_8mm/mesh",
+            "material_path": "/World/MechanicsMaterials/hole",
+            "previous_bound_material_path": null,
+            "bound_before_physics_initialization": true,
+            "usd_static_friction": 1.25,
+            "usd_dynamic_friction": 1.25,
+            "resolved_friction_combine_mode": "average"
+          },
+          "peg": {
+            "collider_path": "/World/envs/env_0/HeldAsset/forge_round_peg_8mm/mesh",
+            "material_path": "/World/MechanicsMaterials/peg",
+            "previous_bound_material_path": "/World/envs/env_0/HeldAsset/forge_round_peg_8mm/Looks/material__980392_0_713725_0_003922_0_000000_0_000000",
+            "bound_before_physics_initialization": true,
+            "usd_static_friction": 0.75,
+            "usd_dynamic_friction": 0.75,
+            "resolved_friction_combine_mode": "average"
+          }
+        },
+        "runtime_materials": {
+          "hole": [
+            [
+              [
+                1.25,
+                1.25,
+                0.0
+              ]
+            ]
+          ],
+          "peg": [
+            [
+              [
+                0.75,
+                0.75,
+                0.0
+              ]
+            ]
+          ],
+          "robot": [
+            [
+              [
+                0.75,
+                0.75,
+                0.0
+              ],
+              [
+                0.75,
+                0.75,
+                0.0
+              ],
+              [
+                0.75,
+                0.75,
+                0.0
+              ],
+              [
+                0.75,
+                0.75,
+                0.0
+              ],
+              [
+                0.75,
+                0.75,
+                0.0
+              ],
+              [
+                0.75,
+                0.75,
+                0.0
+              ],
+              [
+                0.75,
+                0.75,
+                0.0
+              ],
+              [
+                0.75,
+                0.75,
+                0.0
+              ],
+              [
+                0.75,
+                0.75,
+                0.0
+              ],
+              [
+                0.75,
+                0.75,
+                0.0
+              ],
+              [
+                0.75,
+                0.75,
+                0.0
+              ],
+              [
+                0.75,
+                0.75,
+                0.0
+              ]
+            ]
+          ]
+        }
+      },
+      "probes": []
+    }
+  ],
+  "skipped_cases": [],
+  "validation_status": "provisional",
+  "budget_signal": "raw wrist force and torque norms",
+  "acceptance_rule": "One completed attempt per physical condition; failures and unknowns remain. All-prefix physical-state matching is required for policy comparison.",
+  "geometry": {
+    "socket_mesh_sha256": "8241aad76384b8c880b75008758ac2eb2c34334472ae70db41ca31428d3145c9",
+    "effective_radial_clearance_mm": 0.19899400710569026
+  },
+  "effective_protocol": {
+    "target_valid": 100,
+    "seed": 20260913,
+    "attempts_per_slot": 5,
+    "checkpoints_mm": [
+      5.0,
+      10.0,
+      15.0,
+      20.0
+    ],
+    "offset_range_mm": [
+      0.1,
+      1.0
+    ],
+    "tilt_range_deg": [
+      0.25,
+      4.0
+    ],
+    "insertion_duration_s": [
+      8.0,
+      8.0
+    ],
+    "penetration_fraction": 0.25,
+    "success_depth_mm": 19.5,
+    "success_dwell_s": 0.2,
+    "stall_window_s": 0.5,
+    "stall_progress_mm": 0.1,
+    "stall_command_progress_mm": 0.5,
+    "retreat_duration_s": 6.0,
+    "realign_duration_s": 2.0,
+    "stop_duration_s": 0.25,
+    "clear_hold_s": 0.5,
+    "force_budget_n": 20.0,
+    "torque_budget_nm": 1.0,
+    "replay_position_mm": 0.005,
+    "replay_orientation_deg": 0.02,
+    "replay_joint_rad": 0.0001,
+    "replay_joint_velocity_rad_s": 0.001,
+    "replay_linear_velocity_m_s": 0.001,
+    "replay_angular_velocity_rad_s": 0.005,
+    "replay_force_n": 0.1,
+    "replay_torque_nm": 0.005,
+    "family_weights": {
+      "centered": 8,
+      "x_offset": 18,
+      "y_offset": 18,
+      "diagonal_offset": 18,
+      "tilt_only": 19,
+      "offset_tilt": 19
+    },
+    "effective_radial_clearance_mm": 0.19899400710569026
+  },
+  "resume_count": 1,
+  "external_stop": {
+    "utc": "2026-09-15T13:06:01.869154+00:00",
+    "reason": "Superseded before any completed condition by the independently planned 0/1.5 deg frequency diagnostic after the 240 Hz boundary result. Interrupted raw files are retained, excluded from evidence counts."
+  }
+}

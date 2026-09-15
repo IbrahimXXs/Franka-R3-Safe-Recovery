@@ -1,0 +1,366 @@
+{
+  "schema": "Forge-gravity-configuration-audit-v1",
+  "generated_utc": "2026-09-15T13:09:38.832824+00:00",
+  "study": "Forge-Mechanics-FixedSpeed-20260915",
+  "source_study": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915",
+  "source_status": "complete",
+  "source_manifest_sha256": "5f4aaa38303a0a673695331fc77785bafd2f86f33bb7d2ddd4098333a28256cb",
+  "scope": {
+    "method": "Read-only local Python source/configuration chain and existing archived output inspection; no simulator launch and no source or recorded trajectory mutation.",
+    "runtime_disable_gravity_flag_readback_performed": false,
+    "runtime_global_gravity_readback_performed": false,
+    "runtime_mass_readback_available": true,
+    "physics_or_sensor_calibration_certified": false,
+    "installed_dependency_hashes_taken_at_audit": true,
+    "installed_dependencies_proven_frozen_at_original_run": false
+  },
+  "conclusions_zh": [
+    "静态继承链与主批保存的 config.json 一致：销和机器人均配置局部 disable_gravity=True；场景全局重力配置为 (0,0,-9.81) m/s²。",
+    "reset 临时关闭并恢复的是场景级重力向量；该操作本身没有重新启用销/机器人的 actor 级重力开关。",
+    "本次核查确认配置与代码路径，没有在运行中的 actor 上读取 disableGravity 标志，不能把静态确认写成运行时标志回读。",
+    "销配置质量为 0.019 kg，保存的运行时质量回读为 0.01899999938905239 kg；质量回读不证明重力已启用。",
+    "不能给现有腕力范数或接触轴向阻力统一加上 mg。重新启用重力会改变相关刚体的受力、控制响应和接触状态；范数也不能通过统一标量相加完成重力校正。"
+  ],
+  "nominal_peg_mass_kg": 0.019,
+  "recorded_peg_mass_kg": 0.01899999938905239,
+  "hypothetical_peg_weight_if_enabled_n": 0.18639,
+  "hypothetical_weight_interpretation_zh": "0.18639 N 仅是 0.019 kg 在 9.81 m/s² 下的量级计算；不是当前测得的销重力，也不是可直接附加到数据的校正量。",
+  "evidence": [
+    {
+      "id": "task_selection",
+      "source_path": ".deps/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/direct/forge/forge_env_cfg.py",
+      "source_sha256": "e28569c32335d71e42311424098472bb3424df8d50631221257fb1dac9a4670b",
+      "line_start": 131,
+      "line_end": 134,
+      "excerpt": "class ForgeTaskPegInsertCfg(ForgeEnvCfg):\n    task_name = \"peg_insert\"\n    task = ForgePegInsert()\n    episode_length_s = 10.0",
+      "finding_zh": "ForgeTaskPegInsertCfg 选择 ForgePegInsert 任务。"
+    },
+    {
+      "id": "environment_inheritance",
+      "source_path": ".deps/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/direct/forge/forge_env_cfg.py",
+      "source_sha256": "e28569c32335d71e42311424098472bb3424df8d50631221257fb1dac9a4670b",
+      "line_start": 92,
+      "line_end": 98,
+      "excerpt": "@configclass\nclass ForgeEnvCfg(FactoryEnvCfg):\n    action_space: int = 7\n    obs_rand: ForgeObsRandCfg = ForgeObsRandCfg()\n    ctrl: ForgeCtrlCfg = ForgeCtrlCfg()\n    task: ForgeTask = ForgeTask()\n    events: EventCfg = EventCfg()",
+      "finding_zh": "ForgeEnvCfg 继承 FactoryEnvCfg；此处未重新声明 robot 或 sim gravity。"
+    },
+    {
+      "id": "peg_task_inheritance",
+      "source_path": ".deps/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/direct/forge/forge_tasks_cfg.py",
+      "source_sha256": "9c1ad06cd537783dcd9b921bc98b74f2a34a25ad6929f3225314fa5f6fac2915",
+      "line_start": 21,
+      "line_end": 23,
+      "excerpt": "@configclass\nclass ForgePegInsert(PegInsert, ForgeTask):\n    contact_penalty_scale: float = 0.2",
+      "finding_zh": "ForgePegInsert 继承 PegInsert 与 ForgeTask，只覆盖 contact_penalty_scale。"
+    },
+    {
+      "id": "held_asset_choice",
+      "source_path": ".deps/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/direct/factory/factory_tasks_cfg.py",
+      "source_sha256": "7ec8b9a66025f757a22fc5629d74918a4aeebd6b1bd68c19234c76bcdabe1366",
+      "line_start": 103,
+      "line_end": 109,
+      "excerpt": "@configclass\nclass PegInsert(FactoryTask):\n    name = \"peg_insert\"\n    fixed_asset_cfg = Hole8mm()\n    held_asset_cfg = Peg8mm()\n    asset_size = 8.0\n    duration_s = 10.0",
+      "finding_zh": "PegInsert.held_asset_cfg 选择 Peg8mm。"
+    },
+    {
+      "id": "peg_mass_config",
+      "source_path": ".deps/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/direct/factory/factory_tasks_cfg.py",
+      "source_sha256": "7ec8b9a66025f757a22fc5629d74918a4aeebd6b1bd68c19234c76bcdabe1366",
+      "line_start": 88,
+      "line_end": 93,
+      "excerpt": "class Peg8mm(HeldAssetCfg):\n    usd_path = f\"{ASSET_DIR}/factory_peg_8mm.usd\"\n    diameter = 0.007986\n    height = 0.050\n    mass = 0.019\n",
+      "finding_zh": "Peg8mm 的配置质量为 0.019 kg。"
+    },
+    {
+      "id": "held_local_gravity_disabled",
+      "source_path": ".deps/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/direct/factory/factory_tasks_cfg.py",
+      "source_sha256": "7ec8b9a66025f757a22fc5629d74918a4aeebd6b1bd68c19234c76bcdabe1366",
+      "line_start": 159,
+      "line_end": 176,
+      "excerpt": "    held_asset: ArticulationCfg = ArticulationCfg(\n        prim_path=\"/World/envs/env_.*/HeldAsset\",\n        spawn=sim_utils.UsdFileCfg(\n            usd_path=held_asset_cfg.usd_path,\n            activate_contact_sensors=True,\n            rigid_props=sim_utils.RigidBodyPropertiesCfg(\n                disable_gravity=True,\n                max_depenetration_velocity=5.0,\n                linear_damping=0.0,\n                angular_damping=0.0,\n                max_linear_velocity=1000.0,\n                max_angular_velocity=3666.0,\n                enable_gyroscopic_forces=True,\n                solver_position_iteration_count=192,\n                solver_velocity_iteration_count=1,\n                max_contact_impulse=1e32,\n            ),\n            mass_props=sim_utils.MassPropertiesCfg(mass=held_asset_cfg.mass),",
+      "finding_zh": "held_asset.spawn.rigid_props.disable_gravity=True；质量配置单独传入 mass_props。"
+    },
+    {
+      "id": "robot_local_gravity_disabled",
+      "source_path": ".deps/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/direct/factory/factory_env_cfg.py",
+      "source_sha256": "58e55b4ec4aab7c486077a29daa396bd4b8c8e08ba657d81467c9f4bc76720d6",
+      "line_start": 121,
+      "line_end": 127,
+      "excerpt": "    robot = ArticulationCfg(\n        prim_path=\"/World/envs/env_.*/Robot\",\n        spawn=sim_utils.UsdFileCfg(\n            usd_path=f\"{ASSET_DIR}/franka_mimic.usd\",\n            activate_contact_sensors=True,\n            rigid_props=sim_utils.RigidBodyPropertiesCfg(\n                disable_gravity=True,",
+      "finding_zh": "机器人 spawn rigid_props 同样配置 disable_gravity=True。"
+    },
+    {
+      "id": "global_gravity",
+      "source_path": ".deps/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/direct/factory/factory_env_cfg.py",
+      "source_sha256": "58e55b4ec4aab7c486077a29daa396bd4b8c8e08ba657d81467c9f4bc76720d6",
+      "line_start": 97,
+      "line_end": 101,
+      "excerpt": "    sim: SimulationCfg = SimulationCfg(\n        device=\"cuda:0\",\n        dt=1 / 120,\n        gravity=(0.0, 0.0, -9.81),\n        physx=PhysxCfg(",
+      "finding_zh": "场景全局 gravity 配置为 (0,0,-9.81) m/s²。"
+    },
+    {
+      "id": "rigid_flag_definition",
+      "source_path": ".deps/IsaacLab/source/isaaclab/isaaclab/sim/schemas/schemas_cfg.py",
+      "source_sha256": "b353e5b29957e3646df121d0095c61f0473dc2e80af7b14776216be76b3aa2c4",
+      "line_start": 80,
+      "line_end": 81,
+      "excerpt": "    disable_gravity: bool | None = None\n    \"\"\"Disable gravity for the actor.\"\"\"",
+      "finding_zh": "disable_gravity 的配置语义是禁用该 actor 的重力。"
+    },
+    {
+      "id": "configured_assets_constructed",
+      "source_path": ".deps/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/direct/factory/factory_env.py",
+      "source_sha256": "52d843bc0dac4c3661ecc0e9c84bfafcfa73d11623337b8c9a74032e1ecf6869",
+      "line_start": 95,
+      "line_end": 97,
+      "excerpt": "        self._robot = Articulation(self.cfg.robot)\n        self._fixed_asset = Articulation(self.cfg_task.fixed_asset)\n        self._held_asset = Articulation(self.cfg_task.held_asset)",
+      "finding_zh": "机器人、孔和销的 Articulation 使用对应配置构造。"
+    },
+    {
+      "id": "spawn_applies_rigid_properties",
+      "source_path": ".deps/IsaacLab/source/isaaclab/isaaclab/sim/spawners/from_files/from_files.py",
+      "source_sha256": "74b5e1d61390cf9bfdad95c745262d158a2636d493b94d42643ecb1aacbc6e63",
+      "line_start": 291,
+      "line_end": 293,
+      "excerpt": "    # modify rigid body properties\n    if cfg.rigid_props is not None:\n        schemas.modify_rigid_body_properties(prim_path, cfg.rigid_props)",
+      "finding_zh": "USD spawner 将 cfg.rigid_props 传给 modify_rigid_body_properties。"
+    },
+    {
+      "id": "rigid_properties_authoring",
+      "source_path": ".deps/IsaacLab/source/isaaclab/isaaclab/sim/schemas/schemas.py",
+      "source_sha256": "3df4ae5d059659847910f412b22e80dda1714665cc05b22bbb0ee199fc92639a",
+      "line_start": 282,
+      "line_end": 297,
+      "excerpt": "    usd_rigid_body_api = UsdPhysics.RigidBodyAPI(rigid_body_prim)\n    # retrieve the physx rigid-body api\n    physx_rigid_body_api = PhysxSchema.PhysxRigidBodyAPI(rigid_body_prim)\n    if not physx_rigid_body_api:\n        physx_rigid_body_api = PhysxSchema.PhysxRigidBodyAPI.Apply(rigid_body_prim)\n\n    # convert to dict\n    cfg = cfg.to_dict()\n    # set into USD API\n    for attr_name in [\"rigid_body_enabled\", \"kinematic_enabled\"]:\n        value = cfg.pop(attr_name, None)\n        safe_set_attribute_on_usd_schema(usd_rigid_body_api, attr_name, value, camel_case=True)\n    # set into PhysX API\n    for attr_name, value in cfg.items():\n        safe_set_attribute_on_usd_schema(physx_rigid_body_api, attr_name, value, camel_case=True)\n    # success",
+      "finding_zh": "刚体配置剩余字段写入 PhysxRigidBodyAPI；disable_gravity 不属于前面单独取出的两个 USD 字段。"
+    },
+    {
+      "id": "reset_global_zero",
+      "source_path": ".deps/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/direct/factory/factory_env.py",
+      "source_sha256": "52d843bc0dac4c3661ecc0e9c84bfafcfa73d11623337b8c9a74032e1ecf6869",
+      "line_start": 614,
+      "line_end": 618,
+      "excerpt": "    def randomize_initial_state(self, env_ids):\n        \"\"\"Randomize initial state and perform any episode-level randomization.\"\"\"\n        # Disable gravity.\n        physics_sim_view = sim_utils.SimulationContext.instance().physics_sim_view\n        physics_sim_view.set_gravity(carb.Float3(0.0, 0.0, 0.0))",
+      "finding_zh": "randomize_initial_state 只把场景级 gravity 暂时设为零。"
+    },
+    {
+      "id": "reset_global_restore",
+      "source_path": ".deps/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/direct/factory/factory_env.py",
+      "source_sha256": "52d843bc0dac4c3661ecc0e9c84bfafcfa73d11623337b8c9a74032e1ecf6869",
+      "line_start": 817,
+      "line_end": 820,
+      "excerpt": "        self.task_prop_gains = self.default_gains\n        self.task_deriv_gains = factory_utils.get_deriv_gains(self.default_gains)\n\n        physics_sim_view.set_gravity(carb.Float3(*self.cfg.sim.gravity))",
+      "finding_zh": "reset 末尾恢复场景级 cfg.sim.gravity；该语句没有改写 actor 的 disable_gravity。"
+    },
+    {
+      "id": "asset_reset_scope",
+      "source_path": ".deps/IsaacLab/source/isaaclab/isaaclab/assets/articulation/articulation.py",
+      "source_sha256": "9cc03b85642c36c801ff9683e94b8ccc3fbef1178761338974b433dacc78ef75",
+      "line_start": 172,
+      "line_end": 182,
+      "excerpt": "    def reset(self, env_ids: Sequence[int] | None = None):\n        # use ellipses object to skip initial indices.\n        if env_ids is None:\n            env_ids = slice(None)\n        # reset actuators\n        for actuator in self.actuators.values():\n            actuator.reset(env_ids)\n        # reset external wrench\n        self._external_force_b[env_ids] = 0.0\n        self._external_torque_b[env_ids] = 0.0\n        self._external_wrench_positions_b[env_ids] = 0.0",
+      "finding_zh": "Articulation.reset 在这里重置 actuator 与外力/力矩缓冲，没有改写局部重力开关。"
+    },
+    {
+      "id": "forge_reset_chain",
+      "source_path": ".deps/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/direct/forge/forge_env.py",
+      "source_sha256": "98a4739a4ce162773f85b7fb42172ca71ba2c60945d4f6e17276dcb0ca31cefd",
+      "line_start": 267,
+      "line_end": 269,
+      "excerpt": "    def _reset_idx(self, env_ids):\n        \"\"\"Perform additional randomizations.\"\"\"\n        super()._reset_idx(env_ids)",
+      "finding_zh": "Forge reset 先进入父类 reset；整段 Forge reset 没有新增局部重力覆盖。"
+    },
+    {
+      "id": "benchmark_configuration",
+      "source_path": "outputs/Forge-Mechanics-FixedSpeed-20260915/source/simulation/forge_backend.py",
+      "source_sha256": "5a0c3fb5f1c5d330c90fdc2a22e6d48cda1713156d134c5ba533b5fa6ce3a45f",
+      "line_start": 83,
+      "line_end": 119,
+      "excerpt": "def configuration(args):\n    cfg=ForgeTaskPegInsertCfg()\n    cfg.seed=args.seed\n    cfg.task.fixed_asset_cfg.diameter=.009  # Correct stale metadata to the actual USD bore.\n    cfg.scene.num_envs=1\n    cfg.scene.clone_in_fabric=False\n    cfg.sim.device=args.device\n    cfg.sim.dt=1/args.physics_hz\n    if not args.stock_buffers:\n        # Capacity only: one environment has tens of active contacts. Keep large\n        # headroom while avoiding the upstream multi-environment allocations.\n        cfg.sim.physx.gpu_max_rigid_contact_count=2**18\n        cfg.sim.physx.gpu_max_rigid_patch_count=2**16\n    cfg.decimation=args.physics_hz//15\n    cfg.sim.render_interval=args.physics_hz//30\n    cfg.episode_length_s=120.\n    cfg.sim.render=sim_utils.RenderCfg(antialiasing_mode='DLSS',dlss_mode=0)\n    cfg.viewer.eye=(1.1,.6,.6);cfg.viewer.lookat=(.6,0.,.1)\n    cfg.events=None\n    cfg.task.hand_init_pos_noise=[0.,0.,0.]\n    cfg.task.hand_init_orn_noise=[0.,0.,0.]\n    cfg.task.fixed_asset_init_pos_noise=[0.,0.,0.]\n    cfg.task.fixed_asset_init_orn_deg=0.\n    cfg.task.fixed_asset_init_orn_range_deg=0.\n    cfg.task.held_asset_pos_noise=[0.,0.,0.]\n    cfg.obs_rand.fixed_asset_pos=[0.,0.,0.]\n    cfg.obs_rand.fingertip_pos=0.\n    cfg.obs_rand.fingertip_rot_deg=0.\n    cfg.obs_rand.ft_force=0.\n    cfg.ctrl.default_dead_zone=[0.]*6\n    cfg.ctrl.task_prop_gains_noise_level=[0.]*6\n    cfg.ctrl.pos_threshold_noise_level=[0.]*3\n    cfg.ctrl.rot_threshold_noise_level=[0.]*3\n    cfg.ctrl.ema_factor_range=[1.,1.]\n    # Preserve the native 120 Hz EMA time constant across physics resolutions.\n    cfg.ft_smoothing_factor=1.-.75**(120./args.physics_hz)\n    return cfg",
+      "finding_zh": "冻结的 benchmark configuration 从 ForgeTaskPegInsertCfg 派生，关闭 events，并覆盖噪声/频率等；此函数未覆盖 gravity 或 disable_gravity。"
+    },
+    {
+      "id": "mass_readback_collection",
+      "source_path": "outputs/Forge-Mechanics-FixedSpeed-20260915/source/simulation/forge_backend.py",
+      "source_sha256": "5a0c3fb5f1c5d330c90fdc2a22e6d48cda1713156d134c5ba533b5fa6ce3a45f",
+      "line_start": 188,
+      "line_end": 193,
+      "excerpt": "        self.geometry_info['runtime_mesh_sha256']=runtime_hash\n        self.contacts=ContactWrench(self.sim,held[0],fixed)\n        self.scene_info['effective_assets']={name:{'bodies':asset.body_names,\n            'masses':asset.root_physx_view.get_masses().tolist(),\n            'materials':asset.root_physx_view.get_material_properties().tolist()}\n            for name,asset in self.env.scene.articulations.items()}",
+      "finding_zh": "scene.effective_assets 的 masses 来自 root_physx_view.get_masses()，不是根据体积或密度估算。"
+    },
+    {
+      "id": "mechanics_subclass",
+      "source_path": "outputs/Forge-Mechanics-FixedSpeed-20260915/source/simulation/forge_mechanics_backend.py",
+      "source_sha256": "4d9d058ad5e2807a8a27151498c3f456d81badafce590b10050071e01b01cf1a",
+      "line_start": 31,
+      "line_end": 34,
+      "excerpt": "class _MechanicsForgeEnv(legacy.ForgeEnv):\n    def _setup_scene(self):\n        super()._setup_scene()\n        if self.scene.num_envs != 1:",
+      "finding_zh": "mechanics 环境调用父类 setup 后添加材质绑定；已检查本文件，未发现 gravity/disable_gravity 覆盖。"
+    }
+  ],
+  "recorded_configuration_and_mass": [
+    {
+      "source_path": "outputs/Forge-Mechanics-FixedSpeed-20260915/config.json",
+      "json_pointer": "/sim/gravity",
+      "value": [
+        0.0,
+        0.0,
+        -9.81
+      ],
+      "evidence_kind": "serialized_configuration",
+      "source_sha256": "71951b3dd1656c45acd739a64b8877499cb2571c80e4740490c1ba14cf464bbe"
+    },
+    {
+      "source_path": "outputs/Forge-Mechanics-FixedSpeed-20260915/config.json",
+      "json_pointer": "/task/held_asset/spawn/rigid_props/disable_gravity",
+      "value": true,
+      "evidence_kind": "serialized_configuration_not_runtime_flag",
+      "source_sha256": "71951b3dd1656c45acd739a64b8877499cb2571c80e4740490c1ba14cf464bbe"
+    },
+    {
+      "source_path": "outputs/Forge-Mechanics-FixedSpeed-20260915/config.json",
+      "json_pointer": "/robot/spawn/rigid_props/disable_gravity",
+      "value": true,
+      "evidence_kind": "serialized_configuration_not_runtime_flag",
+      "source_sha256": "71951b3dd1656c45acd739a64b8877499cb2571c80e4740490c1ba14cf464bbe"
+    },
+    {
+      "source_path": "outputs/Forge-Mechanics-FixedSpeed-20260915/config.json",
+      "json_pointer": "/task/held_asset/spawn/mass_props/mass",
+      "value": 0.019,
+      "units": "kg",
+      "evidence_kind": "serialized_configuration",
+      "source_sha256": "71951b3dd1656c45acd739a64b8877499cb2571c80e4740490c1ba14cf464bbe"
+    },
+    {
+      "source_path": "outputs/Forge-Mechanics-FixedSpeed-20260915/scene.json",
+      "json_pointer": "/effective_assets/held_asset/masses",
+      "value": [
+        [
+          0.01899999938905239
+        ]
+      ],
+      "units": "kg",
+      "evidence_kind": "recorded_runtime_mass_readback_not_gravity_flag_readback",
+      "source_sha256": "7596a0de5f73cad3b4e2753e79b122f3387518070d09861d7d2091510ba9d651"
+    }
+  ],
+  "sources": [
+    {
+      "path": ".deps/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/direct/forge/forge_env_cfg.py",
+      "absolute_path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/.deps/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/direct/forge/forge_env_cfg.py",
+      "sha256": "e28569c32335d71e42311424098472bb3424df8d50631221257fb1dac9a4670b",
+      "kind": "installed_dependency_source_read_at_audit",
+      "line_count": 148
+    },
+    {
+      "path": ".deps/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/direct/forge/forge_tasks_cfg.py",
+      "absolute_path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/.deps/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/direct/forge/forge_tasks_cfg.py",
+      "sha256": "9c1ad06cd537783dcd9b921bc98b74f2a34a25ad6929f3225314fa5f6fac2915",
+      "kind": "installed_dependency_source_read_at_audit",
+      "line_count": 33
+    },
+    {
+      "path": ".deps/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/direct/factory/factory_tasks_cfg.py",
+      "absolute_path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/.deps/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/direct/factory/factory_tasks_cfg.py",
+      "sha256": "7ec8b9a66025f757a22fc5629d74918a4aeebd6b1bd68c19234c76bcdabe1366",
+      "kind": "installed_dependency_source_read_at_audit",
+      "line_count": 447
+    },
+    {
+      "path": ".deps/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/direct/factory/factory_env_cfg.py",
+      "absolute_path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/.deps/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/direct/factory/factory_env_cfg.py",
+      "sha256": "58e55b4ec4aab7c486077a29daa396bd4b8c8e08ba657d81467c9f4bc76720d6",
+      "kind": "installed_dependency_source_read_at_audit",
+      "line_count": 209
+    },
+    {
+      "path": ".deps/IsaacLab/source/isaaclab/isaaclab/sim/schemas/schemas_cfg.py",
+      "absolute_path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/.deps/IsaacLab/source/isaaclab/isaaclab/sim/schemas/schemas_cfg.py",
+      "sha256": "b353e5b29957e3646df121d0095c61f0473dc2e80af7b14776216be76b3aa2c4",
+      "kind": "installed_dependency_source_read_at_audit",
+      "line_count": 627
+    },
+    {
+      "path": ".deps/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/direct/factory/factory_env.py",
+      "absolute_path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/.deps/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/direct/factory/factory_env.py",
+      "sha256": "52d843bc0dac4c3661ecc0e9c84bfafcfa73d11623337b8c9a74032e1ecf6869",
+      "kind": "installed_dependency_source_read_at_audit",
+      "line_count": 820
+    },
+    {
+      "path": ".deps/IsaacLab/source/isaaclab/isaaclab/sim/spawners/from_files/from_files.py",
+      "absolute_path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/.deps/IsaacLab/source/isaaclab/isaaclab/sim/spawners/from_files/from_files.py",
+      "sha256": "74b5e1d61390cf9bfdad95c745262d158a2636d493b94d42643ecb1aacbc6e63",
+      "kind": "installed_dependency_source_read_at_audit",
+      "line_count": 331
+    },
+    {
+      "path": ".deps/IsaacLab/source/isaaclab/isaaclab/sim/schemas/schemas.py",
+      "absolute_path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/.deps/IsaacLab/source/isaaclab/isaaclab/sim/schemas/schemas.py",
+      "sha256": "3df4ae5d059659847910f412b22e80dda1714665cc05b22bbb0ee199fc92639a",
+      "kind": "installed_dependency_source_read_at_audit",
+      "line_count": 1070
+    },
+    {
+      "path": ".deps/IsaacLab/source/isaaclab/isaaclab/assets/articulation/articulation.py",
+      "absolute_path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/.deps/IsaacLab/source/isaaclab/isaaclab/assets/articulation/articulation.py",
+      "sha256": "9cc03b85642c36c801ff9683e94b8ccc3fbef1178761338974b433dacc78ef75",
+      "kind": "installed_dependency_source_read_at_audit",
+      "line_count": 2134
+    },
+    {
+      "path": ".deps/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/direct/forge/forge_env.py",
+      "absolute_path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/.deps/IsaacLab/source/isaaclab_tasks/isaaclab_tasks/direct/forge/forge_env.py",
+      "sha256": "98a4739a4ce162773f85b7fb42172ca71ba2c60945d4f6e17276dcb0ca31cefd",
+      "kind": "installed_dependency_source_read_at_audit",
+      "line_count": 383
+    },
+    {
+      "path": "outputs/Forge-Mechanics-FixedSpeed-20260915/source/simulation/forge_backend.py",
+      "absolute_path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/source/simulation/forge_backend.py",
+      "sha256": "5a0c3fb5f1c5d330c90fdc2a22e6d48cda1713156d134c5ba533b5fa6ce3a45f",
+      "kind": "archived_main_study_source",
+      "line_count": 301
+    },
+    {
+      "path": "outputs/Forge-Mechanics-FixedSpeed-20260915/source/simulation/forge_mechanics_backend.py",
+      "absolute_path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/source/simulation/forge_mechanics_backend.py",
+      "sha256": "4d9d058ad5e2807a8a27151498c3f456d81badafce590b10050071e01b01cf1a",
+      "kind": "archived_main_study_source",
+      "line_count": 314
+    },
+    {
+      "path": "outputs/Forge-Mechanics-FixedSpeed-20260915/config.json",
+      "absolute_path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/config.json",
+      "sha256": "71951b3dd1656c45acd739a64b8877499cb2571c80e4740490c1ba14cf464bbe",
+      "kind": "recorded_main_study_artifact",
+      "line_count": 632
+    },
+    {
+      "path": "outputs/Forge-Mechanics-FixedSpeed-20260915/scene.json",
+      "absolute_path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/scene.json",
+      "sha256": "7596a0de5f73cad3b4e2753e79b122f3387518070d09861d7d2091510ba9d651",
+      "kind": "recorded_main_study_artifact",
+      "line_count": 454
+    },
+    {
+      "path": "outputs/Forge-Mechanics-FixedSpeed-20260915/study.json",
+      "absolute_path": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915/study.json",
+      "sha256": "5f4aaa38303a0a673695331fc77785bafd2f86f33bb7d2ddd4098333a28256cb",
+      "kind": "recorded_main_study_artifact",
+      "line_count": 16085
+    }
+  ],
+  "validation": {
+    "serialized_held_disable_gravity_true": true,
+    "serialized_robot_disable_gravity_true": true,
+    "recorded_mass_matches_nominal_within_1e_8_kg": true,
+    "local_backend_sources_match_archived_main_study_hashes": true
+  },
+  "limitations_zh": [
+    "依赖源码哈希在审计时采集；此次没有独立证明 .deps 文件从主实验开始至今从未改变。冻结的本项目源码与保存的配置提供额外交叉证据。",
+    "未启动仿真，未读取 PhysX actor 的运行时 disableGravity/global gravity 标志，未执行自由落体或重力开关对照。",
+    "仅讨论主矩阵配置及读数解释，不补写 boundary 或 480 Hz 的运行结果，不修改任何恢复标签。"
+  ]
+}

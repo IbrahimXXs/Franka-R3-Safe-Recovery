@@ -1,0 +1,24 @@
+{
+  "final_study": "Forge-Mechanics-FixedSpeed-20260915",
+  "excluded_setup_studies": [
+    {
+      "study": "Forge-Mechanics-Pilot-20260915",
+      "completed_cases": 1,
+      "reason": "Initial integration check with inherited fixed 6 s withdrawal; JSON resume mismatch found and corrected."
+    },
+    {
+      "study": "Forge-Mechanics-Matrix-20260915",
+      "completed_cases": 1,
+      "interrupted_cases": 1,
+      "reason": "Stopped after detecting depth-dependent withdrawal speed under inherited fixed 6 s duration."
+    },
+    {
+      "study": "Forge-Mechanics-Rate480-20260915",
+      "completed_cases": 0,
+      "interrupted_cases": 1,
+      "process_invocations": 2,
+      "reason": "The original 0/2 deg frequency plan was superseded after a valid higher-withdrawal-resistance 1.5 deg boundary case emerged. The first invocation was interrupted; shutdown returned 0, so the driver briefly started a second invocation, also stopped during initialization. No completed condition; original frozen plan and logs retained. New independent study: Forge-Mechanics-RateBoundary480-20260915."
+    }
+  ],
+  "combination_rule": "Setup and superseded diagnostic data are archived and excluded from the main matrix, boundary group, and completed frequency comparison."
+}

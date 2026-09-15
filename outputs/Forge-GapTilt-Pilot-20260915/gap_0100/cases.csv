@@ -1,0 +1,8 @@
+trajectory_id,slot,family,insertion_duration_s,case_id,radial_clearance_mm,hole_diameter_mm,peg_diameter_mm,tilt_onset_fraction,tilt_onset_mm,tilt_amplitude_deg,tilt_sign,tilt_axis,tilt_ramp_duration_s
+g0100_aligned_try00,0,centered,8.0,g0100_aligned,0.1,8.186,7.986,,,0.0,1,pitch,1.0
+g0100_d30_pitch_pos05_try00,1,tilt_only,8.0,g0100_d30_pitch_pos05,0.1,8.186,7.986,0.3,6.0,0.5,1,pitch,1.0
+g0100_d30_pitch_pos20_try00,2,tilt_only,8.0,g0100_d30_pitch_pos20,0.1,8.186,7.986,0.3,6.0,2.0,1,pitch,1.0
+g0100_d50_pitch_pos05_try00,3,tilt_only,8.0,g0100_d50_pitch_pos05,0.1,8.186,7.986,0.5,10.0,0.5,1,pitch,1.0
+g0100_d50_pitch_pos20_try00,4,tilt_only,8.0,g0100_d50_pitch_pos20,0.1,8.186,7.986,0.5,10.0,2.0,1,pitch,1.0
+g0100_d70_pitch_pos05_try00,5,tilt_only,8.0,g0100_d70_pitch_pos05,0.1,8.186,7.986,0.7,14.0,0.5,1,pitch,1.0
+g0100_d70_pitch_pos20_try00,6,tilt_only,8.0,g0100_d70_pitch_pos20,0.1,8.186,7.986,0.7,14.0,2.0,1,pitch,1.0

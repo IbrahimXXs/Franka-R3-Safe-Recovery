@@ -1,0 +1,55 @@
+{
+  "schema": "Forge-mechanics-review-v1",
+  "source_status": "complete",
+  "recorded_attempts": 2,
+  "elapsed_wall_seconds": 973.5834754740026,
+  "counts": {
+    "planned_cases": 2,
+    "completed_cases": 2,
+    "numerically_valid_completed_cases": 2,
+    "reference_state_counts": {
+      "valid_protocol_completed": 2
+    },
+    "pair_state_counts": {
+      "matched_results_known": 2
+    },
+    "valid_depth_gates_passed": 2,
+    "valid_protocol_completed": 2,
+    "valid_continuous_straight_safe": 2,
+    "matched_policy_pairs": 2,
+    "matched_complete_cost_pairs": 2,
+    "matched_both_policies_safe": 2,
+    "matched_straight_failed_realign_safe": 0
+  },
+  "interpretation": {
+    "unit": "latest attempt per frozen planned condition; retries are not independent experiments",
+    "entry": "aligned target-depth dwell is separate from tilt-window depth loss and numerical/grasp acceptance",
+    "pair": "continuous straight is compared with realign only when endpoint and full-prefix tolerances match and both policy outcomes are eligible; bitwise prefix equality is diagnostic only",
+    "cost": "recorded peaks from censored motions are partial; paired_costs_complete identifies two completed clearances",
+    "controls": "theta=0 control shares target depth and effective static/dynamic friction pair; differences are descriptive, not significance tests",
+    "missing": "absent measurements remain null, never zero; excluded cases remain in the planned denominator"
+  },
+  "by_target_depth": [
+    {
+      "target_depth_mm": 18.0,
+      "planned_cases": 2,
+      "completed_cases": 2,
+      "numerically_valid_completed_cases": 2,
+      "reference_state_counts": {
+        "valid_protocol_completed": 2
+      },
+      "pair_state_counts": {
+        "matched_results_known": 2
+      },
+      "valid_depth_gates_passed": 2,
+      "valid_protocol_completed": 2,
+      "valid_continuous_straight_safe": 2,
+      "matched_policy_pairs": 2,
+      "matched_complete_cost_pairs": 2,
+      "matched_both_policies_safe": 2,
+      "matched_straight_failed_realign_safe": 0
+    }
+  ],
+  "source_study": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915",
+  "source_manifest_sha256": "48a04e1dcebc98fd59337d228bcd9748fbc37e1cb447a11559b40b261db93c07"
+}

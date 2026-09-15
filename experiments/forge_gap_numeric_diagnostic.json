@@ -1,0 +1,50 @@
+{
+  "schema": "Forge-gap-tilt-v1",
+  "study_size": "pilot",
+  "clearance_definition": "nominal_radial",
+  "depth_feedback": "actual_depth_previous_step_first_insertion_crossing",
+  "ramp_clock": "elapsed_time_since_first_insertion_depth_crossing",
+  "ramp_shape": "smoothstep",
+  "probe_terminal": true,
+  "probe_first_stall": true,
+  "trigger_observation_note": "The command for the next physics step observes actual depth from the previous completed step. Trigger timing is quantized to the physics step; recorded trigger time/depth are the observed sample.",
+  "source_plan": {
+    "schema": "Forge-gap-tilt-v1",
+    "study_size": "pilot",
+    "case_count": 23,
+    "sha256": "f3d073f545d65a0f38734c800d0e50badf3499bdc03a07fe48fd23cda9ccf11a"
+  },
+  "subset_case_ids": [
+    "g0200_d30_pitch_pos20"
+  ],
+  "cases": [
+    {
+      "case_id": "g0200_d30_pitch_pos20",
+      "family": "tilt_only",
+      "radial_clearance_mm": 0.2,
+      "clearance_definition": "nominal_radial",
+      "hole_diameter_mm": 8.386,
+      "peg_diameter_mm": 7.986,
+      "target_depth_mm": 20.0,
+      "tilt_onset_fraction": 0.3,
+      "tilt_onset_mm": 6.0,
+      "tilt_amplitude_deg": 2.0,
+      "tilt_sign": 1,
+      "tilt_axis": "pitch",
+      "tilt_ramp_duration_s": 1.0,
+      "offset_x_mm": 0.0,
+      "offset_y_mm": 0.0,
+      "roll_deg": 0.0,
+      "pitch_deg": 0.0,
+      "final_pitch_deg": 2.0,
+      "insertion_duration_s": 8.0,
+      "sample_role": "gap_tilt_characterization",
+      "split_group_id": "g0200_d30_pitch",
+      "path_group_id": "g0200_d30_pitch_pos20",
+      "slot": 0,
+      "source_slot": 12,
+      "retry": 0,
+      "trajectory_id": "g0200_d30_pitch_pos20_try00"
+    }
+  ]
+}

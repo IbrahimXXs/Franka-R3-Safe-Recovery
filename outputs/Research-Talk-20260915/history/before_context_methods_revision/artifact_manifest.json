@@ -1,0 +1,8 @@
+{
+  "revision": "prevention_first",
+  "final_pdf": "output/pdf/safe_recovery_motion_planning_control.pdf",
+  "final_pdf_sha256": "01f3bda24c397f2b146759f0678d26218bc1112b4fe107c208326e160d97c8fc",
+  "source_bundle_sha256": "3588232d946c90ce1f4d6ae6e2c9300654f403089f23cf16b15179f9b0be2175",
+  "source_bundle_entries": 60,
+  "qa_status": "passed"
+}

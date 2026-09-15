@@ -1,0 +1,72 @@
+{
+  "schema": "budget-angle6-delivery-v1",
+  "status": "complete",
+  "task_started_utc": "2026-09-15T14:32:57+00:00",
+  "logged_at_utc": "2026-09-15T14:37:35.344789+00:00",
+  "study_id": "Forge-budget-angle6-v1",
+  "source_study": "outputs/Forge-Budget-Angle6-20260915",
+  "planned_conditions": 6,
+  "planned_branches": 12,
+  "physics_hz": 240,
+  "force_budget_n": 4,
+  "command_tilt_degrees": [
+    1.5,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "maximum_command_tilt_deg": 6,
+  "old_study_preserved": true,
+  "physical_contact_and_gripper_models_changed": false,
+  "mechanics_parameter_allowlist_extended": true,
+  "tests_passed": 160,
+  "additional_subtests_passed": 30,
+  "finished_utc": "2026-09-15T14:50:25.695877+00:00",
+  "total_elapsed_wall_seconds": 1048.695877,
+  "simulation_started_utc": "2026-09-15T14:35:55.056293+00:00",
+  "simulation_finished_utc": "2026-09-15T14:48:18.124552+00:00",
+  "simulation_active_wall_seconds": 743.0663036660044,
+  "counts": {
+    "planned_conditions": 6,
+    "planned_branches": 12,
+    "closed_branches": 7,
+    "branch_status_counts": {
+      "complete": 7,
+      "not_tested": 5
+    },
+    "observed_branch_outcome_counts": {
+      "recovery_budget_exceeded": 1,
+      "clear_safe": 1,
+      "reference_budget_exceeded": 5
+    },
+    "pair_state_counts": {
+      "paired_straight_overbudget_realign_safe": 1,
+      "alternative_not_tested_reference_ineligible": 5
+    },
+    "paired_complete_costs": 0
+  },
+  "output_validation_passed": true,
+  "output_validation_assertions": 562563,
+  "output_validation_errors": 0,
+  "previous_anchor_audit_passed": true,
+  "pretilt_prefix_comparisons_passed": 5,
+  "plots_visually_reviewed": [
+    "angle_attainment.png",
+    "budget_outcomes.png",
+    "budget_candidate_4n_profiles.png"
+  ],
+  "new_document_local_links_checked": 17,
+  "new_document_broken_local_links": 0,
+  "delivery_files_sha256": {
+    "outputs/Forge-Budget-Angle6-20260915-review/results_zh.md": "517261ccdba24f38cae99db2171eb4fc698da72482a545171ed260c4cc86ebe6",
+    "outputs/Forge-Budget-Angle6-20260915-review/summary.json": "eb333ee430e8e8c321e973aead1e7fa7e8c1f529389e4cd8ca2f87e7c9ba7286",
+    "outputs/Forge-Budget-Angle6-20260915-review/budget_validation.json": "83fcc2a8a2105b24d19acd4ce059177b1b826daf76ac5565f14624534dd77e8b",
+    "outputs/Forge-Budget-Angle6-20260915-review/parameter_comparisons.json": "90e54d3c98700994612be59ce5a7a775587c5ba4fb81b69a05b59537d6dd9cb1",
+    "outputs/Forge-Budget-Angle6-20260915-review/previous_anchor_audit.json": "45101ab3d9bce3cc17596904b02fc862446e7b6a9e11e14e66e49413dd67fdb2",
+    "outputs/Forge-Budget-Angle6-20260915-review/angle_attainment.csv": "df41bcdb3bd70ffb17d1f14c04632748e2ab2c0664fc76c8b016b01b72b60bf9",
+    "experiments/forge_budget_angle6_v1.json": "d6538985dd6db52461e9e88f5daadc6e5fc4f2fe3c0d510267a647c0db6665d7",
+    "docs/forge_budget_angle6_study.md": "50429403408ebc9418c9fdb0f978060ba1465b836645cda27561e023c95996fe"
+  }
+}

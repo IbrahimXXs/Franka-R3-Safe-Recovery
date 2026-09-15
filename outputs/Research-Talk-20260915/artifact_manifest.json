@@ -1,0 +1,10 @@
+{
+  "revision": "expanded_context_methods",
+  "final_pdf": "output/pdf/safe_recovery_motion_planning_control.pdf",
+  "final_pdf_sha256": "9b1357d312ab0836b81fb6ea0ac613811e2269f63351c675dc6de6653107a8ac",
+  "source_bundle_sha256": "a256c0baa79e03e9c7803f79ee53ea2d9557b9ed48542510b546f8b3ce0998a9",
+  "source_bundle_entries": 64,
+  "qa_status": "passed",
+  "pages": 16,
+  "main_seconds": 600
+}

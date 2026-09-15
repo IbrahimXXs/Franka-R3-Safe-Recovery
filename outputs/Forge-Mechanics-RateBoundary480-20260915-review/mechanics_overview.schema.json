@@ -1,0 +1,43 @@
+{
+  "schema": "Forge-mechanics-overview-v1",
+  "rows": 2,
+  "columns": [
+    "case_id",
+    "target_depth_mm",
+    "terminal_depth_mm",
+    "pair_static_friction",
+    "pair_dynamic_friction",
+    "tilt_amplitude_deg",
+    "terminal_actual_tilt_deg",
+    "reference_state",
+    "reference_reason",
+    "numerically_valid",
+    "max_normal_load_n",
+    "reference_peak_wrist_force_n",
+    "max_grasp_slip_mm",
+    "straight_numerically_valid",
+    "straight_retreat_observed",
+    "straight_reason",
+    "straight_safe_recovery",
+    "straight_retreat_peak_wrist_force_n",
+    "straight_retreat_peak_wrist_force_mean100ms_n",
+    "straight_max_wrist_force_n",
+    "paired_state",
+    "paired_costs_complete",
+    "matched_realign_retreat_peak_wrist_force_n",
+    "matched_realign_max_wrist_force_n",
+    "matched_realign_realign_peak_wrist_force_n"
+  ],
+  "source_study": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-RateBoundary480-20260915",
+  "source_manifest_sha256": "48a04e1dcebc98fd59337d228bcd9748fbc37e1cb447a11559b40b261db93c07",
+  "field_rules": {
+    "identity": "One row for every planned condition; field names/units match cases.csv unless noted.",
+    "reference_reason": "reference_termination_reason, falling back to termination_reason or exclusion_reason when absent.",
+    "matched_realign_*": "Corresponding realign_* value only when paired_results_known is true; otherwise null.",
+    "max_normal_load_n": "Time maximum of the per-frame sum of contact-normal magnitudes during the reference; neither a time-integrated load nor axial withdrawal force.",
+    "*_max_wrist_force_n": "Maximum over all recorded recovery rows, including the copied t=0 reference endpoint, stop and alignment. If no recovery step executed, this is only the initial snapshot, not an executed recovery peak. *_retreat_peak_* covers actual retreat only.",
+    "matched_realign_realign_peak_wrist_force_n": "The recenter + align phase peak; included so a lower retreat peak is not mistaken for lower whole-recovery cost.",
+    "paired_costs_complete": "False means costs are not two complete clearances; a known failed/censored result may still retain recorded partial peaks.",
+    "null": "Missing/unobserved or excluded comparison; never zero. True/False are source labels, not inferred from blank cells."
+  }
+}

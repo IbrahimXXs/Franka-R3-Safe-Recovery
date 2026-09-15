@@ -1,0 +1,101 @@
+{
+  "schema": "Forge-mechanics-review-v1",
+  "source_status": "complete",
+  "recorded_attempts": 24,
+  "elapsed_wall_seconds": 3762.620985310001,
+  "counts": {
+    "planned_cases": 24,
+    "completed_cases": 24,
+    "numerically_valid_completed_cases": 24,
+    "reference_state_counts": {
+      "valid_protocol_completed": 20,
+      "grasp_failed": 4
+    },
+    "pair_state_counts": {
+      "matched_results_known": 7,
+      "replay_endpoint_unmatched": 13,
+      "reference_protocol_incomplete": 4
+    },
+    "valid_depth_gates_passed": 24,
+    "valid_protocol_completed": 20,
+    "valid_continuous_straight_safe": 20,
+    "matched_policy_pairs": 7,
+    "matched_complete_cost_pairs": 7,
+    "matched_both_policies_safe": 7,
+    "matched_straight_failed_realign_safe": 0
+  },
+  "interpretation": {
+    "unit": "latest attempt per frozen planned condition; retries are not independent experiments",
+    "entry": "aligned target-depth dwell is separate from tilt-window depth loss and numerical/grasp acceptance",
+    "pair": "continuous straight is compared with realign only when endpoint and full-prefix tolerances match and both policy outcomes are eligible; bitwise prefix equality is diagnostic only",
+    "cost": "recorded peaks from censored motions are partial; paired_costs_complete identifies two completed clearances",
+    "controls": "theta=0 control shares target depth and effective static/dynamic friction pair; differences are descriptive, not significance tests",
+    "missing": "absent measurements remain null, never zero; excluded cases remain in the planned denominator"
+  },
+  "by_target_depth": [
+    {
+      "target_depth_mm": 6.0,
+      "planned_cases": 8,
+      "completed_cases": 8,
+      "numerically_valid_completed_cases": 8,
+      "reference_state_counts": {
+        "valid_protocol_completed": 8
+      },
+      "pair_state_counts": {
+        "matched_results_known": 3,
+        "replay_endpoint_unmatched": 5
+      },
+      "valid_depth_gates_passed": 8,
+      "valid_protocol_completed": 8,
+      "valid_continuous_straight_safe": 8,
+      "matched_policy_pairs": 3,
+      "matched_complete_cost_pairs": 3,
+      "matched_both_policies_safe": 3,
+      "matched_straight_failed_realign_safe": 0
+    },
+    {
+      "target_depth_mm": 12.0,
+      "planned_cases": 8,
+      "completed_cases": 8,
+      "numerically_valid_completed_cases": 8,
+      "reference_state_counts": {
+        "valid_protocol_completed": 8
+      },
+      "pair_state_counts": {
+        "matched_results_known": 2,
+        "replay_endpoint_unmatched": 6
+      },
+      "valid_depth_gates_passed": 8,
+      "valid_protocol_completed": 8,
+      "valid_continuous_straight_safe": 8,
+      "matched_policy_pairs": 2,
+      "matched_complete_cost_pairs": 2,
+      "matched_both_policies_safe": 2,
+      "matched_straight_failed_realign_safe": 0
+    },
+    {
+      "target_depth_mm": 18.0,
+      "planned_cases": 8,
+      "completed_cases": 8,
+      "numerically_valid_completed_cases": 8,
+      "reference_state_counts": {
+        "valid_protocol_completed": 4,
+        "grasp_failed": 4
+      },
+      "pair_state_counts": {
+        "matched_results_known": 2,
+        "replay_endpoint_unmatched": 2,
+        "reference_protocol_incomplete": 4
+      },
+      "valid_depth_gates_passed": 8,
+      "valid_protocol_completed": 4,
+      "valid_continuous_straight_safe": 4,
+      "matched_policy_pairs": 2,
+      "matched_complete_cost_pairs": 2,
+      "matched_both_policies_safe": 2,
+      "matched_straight_failed_realign_safe": 0
+    }
+  ],
+  "source_study": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-FixedSpeed-20260915",
+  "source_manifest_sha256": "5f4aaa38303a0a673695331fc77785bafd2f86f33bb7d2ddd4098333a28256cb"
+}

@@ -1,0 +1,73 @@
+{
+  "schema": "mechanics-isolated-execution-v1",
+  "one_new_condition_per_process": true,
+  "case_plan": "experiments/forge_mechanics_boundary.json",
+  "physics_hz": 240,
+  "invocations": [
+    {
+      "index": 0,
+      "command": [
+        "bash",
+        "forge_mechanics.sh",
+        "--headless",
+        "--case-plan",
+        "experiments/forge_mechanics_boundary.json",
+        "--physics-hz",
+        "240",
+        "--output-dir",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Boundary-20260915",
+        "--max-new-attempts",
+        "1"
+      ],
+      "started_utc": "2026-09-15T12:51:22.938650+00:00",
+      "log": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Boundary-20260915-isolated-00.log",
+      "return_code": 0,
+      "elapsed_wall_seconds": 253.29406014600318,
+      "finished_utc": "2026-09-15T12:55:36.232831+00:00"
+    },
+    {
+      "index": 1,
+      "command": [
+        "bash",
+        "forge_mechanics.sh",
+        "--headless",
+        "--case-plan",
+        "experiments/forge_mechanics_boundary.json",
+        "--physics-hz",
+        "240",
+        "--output-dir",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Boundary-20260915",
+        "--max-new-attempts",
+        "1",
+        "--resume"
+      ],
+      "started_utc": "2026-09-15T12:55:36.233446+00:00",
+      "log": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Boundary-20260915-isolated-01.log",
+      "return_code": 0,
+      "elapsed_wall_seconds": 253.9576019940032,
+      "finished_utc": "2026-09-15T12:59:50.191183+00:00"
+    },
+    {
+      "index": 2,
+      "command": [
+        "bash",
+        "forge_mechanics.sh",
+        "--headless",
+        "--case-plan",
+        "experiments/forge_mechanics_boundary.json",
+        "--physics-hz",
+        "240",
+        "--output-dir",
+        "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Boundary-20260915",
+        "--max-new-attempts",
+        "1",
+        "--resume"
+      ],
+      "started_utc": "2026-09-15T12:59:50.191985+00:00",
+      "log": "/home/zephyr/Downloads/Franka-R3-Safe-Recovery-main (1)/Franka-R3-Safe-Recovery-main/outputs/Forge-Mechanics-Boundary-20260915-isolated-02.log",
+      "return_code": 0,
+      "elapsed_wall_seconds": 252.2383697490004,
+      "finished_utc": "2026-09-15T13:04:02.432530+00:00"
+    }
+  ]
+}

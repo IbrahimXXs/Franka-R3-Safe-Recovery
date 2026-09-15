@@ -1,0 +1,28 @@
+{
+  "modules": [
+    "tests.test_analyze_mechanics_budget_sweep",
+    "tests.test_budget_comparisons",
+    "tests.test_budget_online_guards",
+    "tests.test_forge_budget",
+    "tests.test_forge_gap_metrics",
+    "tests.test_forge_geometry",
+    "tests.test_forge_mechanics_boundary_plan",
+    "tests.test_forge_mechanics_contacts",
+    "tests.test_forge_mechanics_metrics",
+    "tests.test_forge_mechanics_motion",
+    "tests.test_forge_mechanics_plan",
+    "tests.test_forge_mechanics_protocol",
+    "tests.test_forge_protocol",
+    "tests.test_mechanics_contact_regions",
+    "tests.test_mechanics_state_export",
+    "tests.test_mechanics_stop_unloading",
+    "tests.test_summarize_budget_study",
+    "tests.test_validate_budget_output",
+    "tests.test_validate_mechanics_output"
+  ],
+  "tests_run": 131,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "passed": true
+}
