@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "tests": 80,
+  "new_focused_tests": 9,
+  "per_probe_rows_checked": 4356,
+  "timestep_intervals_checked": 4320,
+  "existing_output_files_checked": 3100,
+  "existing_output_files_changed": [],
+  "existing_tracked_files_unchanged": true,
+  "existing_output_relaunch_refused": true,
+  "command": "./active_probing.sh --headless",
+  "analysis_command": "conda run -n franka-safe-recovery python -m research.active_probing outputs/Active-Probing-Pilot-v1",
+  "python": "3.11.16",
+  "versions": {
+    "numpy": "1.26.0",
+    "matplotlib": "3.10.3",
+    "torch": "2.7.0+cu128",
+    "isaacsim": "5.1.0.0"
+  },
+  "analysis_source_sha256": "2d1bbac3457a1065023b6ec0dc8020a3f7b500ec85bcd7a7d413d98e98b14c78",
+  "provenance_note": "Collection code is frozen in source/. Final offline analysis and tests are in analysis_source/. Added analysis diagnostics and direct paired-state checks after collection started; no collected probe, simulation parameter, or existing dataset was changed."
+}

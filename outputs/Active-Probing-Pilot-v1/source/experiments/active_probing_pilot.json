@@ -1,0 +1,8 @@
+{
+  "schema": "Active-Probing-Pilot-v1",
+  "selection": "Terminal states from successful contact-rich and stalled/high-contact Phase 2B references; re-characterize locally before probing",
+  "cases": [
+    {"case_id": "successful_contact", "study": "outputs/Forge-Phase2B-Stage1", "trajectory_id": "b009_try00"},
+    {"case_id": "stalled_contact", "study": "outputs/Forge-Phase2B-Stage4", "trajectory_id": "b003_try00"}
+  ]
+}

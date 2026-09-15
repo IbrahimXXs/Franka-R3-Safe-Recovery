@@ -1,0 +1,17 @@
+case_id,repeat,valid,reason,axis,before_states_matched,noise_qualified,actual_span_si,input_unit,actual_midpoint_si,off_axis_ratio,d_fx_per_si,d_fy_per_si,d_fz_per_si,d_taux_per_si,d_tauy_per_si,d_tauz_per_si,before_pair_error_position_mm,before_pair_error_orientation_deg,before_pair_error_joint_rad,before_pair_error_joint_velocity_rad_s,before_pair_error_linear_velocity_m_s,before_pair_error_angular_velocity_rad_s,before_pair_error_force_n,before_pair_error_torque_nm,before_pair_error_normal_load_n,before_pair_error_min_separation_mm,before_pair_error_wrist_torque_nm,before_pair_error_finger_position,before_pair_error_finger_velocity,before_pair_error_grasp_position,before_pair_error_hand_pose,before_pair_error_wrist_raw_child,before_pair_error_grasp_quat_angle_deg,before_pair_error_hand_pose_angle_deg
+successful_contact,0,False,ineligible_pair,x,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+successful_contact,0,False,ineligible_pair,y,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+successful_contact,0,False,ineligible_pair,roll,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+successful_contact,0,True,ok,pitch,True,False,0.004219784542795804,rad,-2.941128272502375e-05,0.4641825825902673,-30.500731841753748,-10.311950163903237,-2.016084468833227,0.18396202621264016,-0.6226787684575721,0.022221871069010964,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+successful_contact,1,False,ineligible_pair,x,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+successful_contact,1,False,ineligible_pair,y,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+successful_contact,1,False,coupled_motion,roll,True,False,0.0038048937453835146,rad,0.00014358907218658707,2.5055606932392784,-6.760344044126551,-4.185294962883256,-7.795892865023297,-1.426942889147494,-0.2576686274204807,0.0435623765677637,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+successful_contact,1,True,ok,pitch,True,False,0.004219784542795804,rad,-2.941128272502375e-05,0.4641825825902673,-30.500731841753748,-10.311950163903237,-2.016084468833227,0.18396202621264016,-0.6226787684575721,0.022221871069010964,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+stalled_contact,0,False,ineligible_pair,x,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+stalled_contact,0,False,actual_sign_or_motion_unresolved,y,True,False,-3.5599029312534045e-07,m,-2.973130904138522e-07,,,,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+stalled_contact,0,False,ineligible_pair,roll,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+stalled_contact,0,False,coupled_motion,pitch,True,False,0.0035635490989589626,rad,0.00023649746038146863,0.6359490202329722,-36.198991040248586,1.8979476649753588,26.914619594062344,-0.17712006318951504,-3.932842754670798,0.6330077023238446,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+stalled_contact,1,False,ineligible_pair,x,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+stalled_contact,1,False,actual_sign_or_motion_unresolved,y,True,False,-3.5599029312534045e-07,m,-2.973130904138522e-07,,,,,,,,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+stalled_contact,1,False,coupled_motion,roll,True,False,0.0027518876436472086,rad,-6.627486581591837e-05,1.202893573285459,-4.925313174970017,39.84738071009874,-55.5368368858812,-13.627875336987692,-0.24707945912366222,0.08864383891934982,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+stalled_contact,1,False,ineligible_pair,pitch,,False,,,,,,,,,,,,,,,,,,,,,,,,,,,,

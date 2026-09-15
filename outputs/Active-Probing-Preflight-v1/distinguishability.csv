@@ -1,0 +1,7 @@
+case_id,axis_a,axis_b,passed
+successful_contact,x,y,False
+successful_contact,x,roll,False
+successful_contact,x,pitch,False
+successful_contact,y,roll,False
+successful_contact,y,pitch,False
+successful_contact,roll,pitch,False

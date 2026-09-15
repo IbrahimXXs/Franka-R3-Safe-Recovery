@@ -1,0 +1,16 @@
+{
+  "attempts": 36,
+  "completed": 24,
+  "eligible": 24,
+  "baseline_repeats": 2,
+  "signed_above_baseline": 0,
+  "valid_central_pairs": 2,
+  "noise_qualified_central_pairs": 0,
+  "repeatable_signed_directions": 7,
+  "repeatable_above_baseline_signed_directions": 0,
+  "distinguishable_axis_pairs": 0,
+  "preparation_rejections": 12,
+  "safety_stops": 0,
+  "returned_full_state_matches": 0,
+  "analysis_source_sha256": "2d1bbac3457a1065023b6ec0dc8020a3f7b500ec85bcd7a7d413d98e98b14c78"
+}

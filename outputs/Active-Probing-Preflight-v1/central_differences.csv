@@ -1,0 +1,9 @@
+case_id,repeat,valid,reason,axis
+successful_contact,0,False,ineligible_pair,x
+successful_contact,0,False,ineligible_pair,y
+successful_contact,0,False,ineligible_pair,roll
+successful_contact,0,False,ineligible_pair,pitch
+successful_contact,1,False,ineligible_pair,x
+successful_contact,1,False,ineligible_pair,y
+successful_contact,1,False,ineligible_pair,roll
+successful_contact,1,False,ineligible_pair,pitch

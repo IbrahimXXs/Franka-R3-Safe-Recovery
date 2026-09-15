@@ -1,0 +1,13 @@
+case_id,axis_a,axis_b,passed,distance_n_equiv,separation_threshold_n_equiv
+successful_contact,x,y,False,,
+successful_contact,x,roll,False,,
+successful_contact,x,pitch,False,,
+successful_contact,y,roll,False,,
+successful_contact,y,pitch,False,,
+successful_contact,roll,pitch,False,0.21085843144856492,4.5823962194807555
+stalled_contact,x,y,False,,
+stalled_contact,x,roll,False,,
+stalled_contact,x,pitch,False,,
+stalled_contact,y,roll,False,,
+stalled_contact,y,pitch,False,,
+stalled_contact,roll,pitch,False,,

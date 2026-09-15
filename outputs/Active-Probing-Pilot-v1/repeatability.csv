@@ -1,0 +1,17 @@
+case_id,axis,sign,valid_repeats,passed,min_cosine,relative_repeat_error,repeatable,above_baseline_all
+successful_contact,x,-1,1,False,,,,
+successful_contact,x,1,1,False,,,,
+successful_contact,y,-1,0,False,,,,
+successful_contact,y,1,1,False,,,,
+successful_contact,roll,-1,1,False,,,,
+successful_contact,roll,1,2,False,1.0,0.0,True,False
+successful_contact,pitch,-1,2,False,0.9999999999999998,0.0,True,False
+successful_contact,pitch,1,2,False,0.9999999999999999,0.0,True,False
+stalled_contact,x,-1,1,False,,,,
+stalled_contact,x,1,1,False,,,,
+stalled_contact,y,-1,2,False,0.9999999999999998,0.0,True,False
+stalled_contact,y,1,2,False,1.0000000000000002,0.0,True,False
+stalled_contact,roll,-1,2,False,1.0,0.0,True,False
+stalled_contact,roll,1,1,False,,,,
+stalled_contact,pitch,-1,2,False,0.9999999999999998,0.0,True,False
+stalled_contact,pitch,1,1,False,,,,
