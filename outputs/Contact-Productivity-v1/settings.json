@@ -1,0 +1,22 @@
+{
+  "horizons": [
+    0.25,
+    0.5,
+    1.0
+  ],
+  "history_s": 0.5,
+  "stride_s": 0.1,
+  "min_command_progress_mm": 0.1,
+  "prefix_margin_mm": 0.1,
+  "degradation_eta": 0.5,
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "alphas": [
+    0.001,
+    0.01,
+    0.1
+  ],
+  "target_nonstall_alert_rate": 0.1,
+  "seed": 20260915,
+  "bootstrap": 500
+}

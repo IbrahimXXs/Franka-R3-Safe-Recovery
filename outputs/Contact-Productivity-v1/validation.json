@@ -1,0 +1,31 @@
+{
+  "existing_files_checked": 3247,
+  "existing_files_changed": [],
+  "consumed_files_checked": 195,
+  "consumed_hashes_unchanged": true,
+  "analysis_sha256": "76cb184fbbe133491e4604488edc59297af3a1b7c9252dc26347bb46d09ec960",
+  "trajectories": 170,
+  "windows": 16680,
+  "rejections": {
+    "history_before_entry": 5270,
+    "right_censored_insertion_end": 3060,
+    "shared_preramp_history": 900
+  },
+  "cohort_counts": {
+    "development": 118,
+    "quarantined_shared_path": 39,
+    "stage4": 13
+  },
+  "no_isaac_sim_launched": true,
+  "predictor_privileged_load_excluded": true,
+  "tests_passed": 90,
+  "new_focused_tests": 10,
+  "raw_ratio_windows_recomputed": 16680,
+  "prediction_rows_checked": 148914,
+  "no_post_confirmation_predictions": true,
+  "no_heldout_group_in_development_folds": true,
+  "models_unchanged_after_coverage_correction": true,
+  "numerical_valid_slipping_trajectories_retained": 1,
+  "analysis_notes": "Initial coverage audit caught an overly restrictive grasp-retention filter. Retained that numerically valid Stage 4 trajectory; model coefficients, transforms and alarm thresholds remained byte-identical. Additional hidden-load definitions are descriptive sensitivity checks, not fitting/tuning inputs.",
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 conda run -n franka-safe-recovery python -m research.contact_productivity --outputs-root outputs --output outputs/Contact-Productivity-v1"
+}

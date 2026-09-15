@@ -1,0 +1,24 @@
+H=0.25: 4549 development windows, 104 groups; 1442 held/quarantined windows
+H=0.5: 4314 development windows, 104 groups; 1367 held/quarantined windows
+H=1: 3724 development windows, 104 groups; 1150 held/quarantined windows
+{
+  "existing_files_checked": 3247,
+  "existing_files_changed": [],
+  "consumed_files_checked": 195,
+  "consumed_hashes_unchanged": true,
+  "analysis_sha256": "7c59182ef6b01f23b2d27c466c0afefd65e950711fd6208faa2548914afe7f49",
+  "trajectories": 170,
+  "windows": 16680,
+  "rejections": {
+    "history_before_entry": 5270,
+    "right_censored_insertion_end": 3060,
+    "shared_preramp_history": 900
+  },
+  "cohort_counts": {
+    "development": 118,
+    "quarantined_shared_path": 39,
+    "stage4": 13
+  },
+  "no_isaac_sim_launched": true,
+  "predictor_privileged_load_excluded": true
+}
