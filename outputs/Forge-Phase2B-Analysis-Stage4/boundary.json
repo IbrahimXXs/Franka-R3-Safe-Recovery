@@ -1,0 +1,149 @@
+{
+  "sources": [
+    {
+      "study": "/home/ibrahim.alsarraj/projects/Franka-R3-Safe-Recovery/outputs/Forge-Phase2B-Stage1/study.json",
+      "sha256": "95fc5e677fed0b61c96a7b894189386297dcbff6c421bf05f17e4f80afa798d5"
+    },
+    {
+      "study": "/home/ibrahim.alsarraj/projects/Franka-R3-Safe-Recovery/outputs/Forge-Phase2B-Stage2/study.json",
+      "sha256": "2255d2a0994c7803637faeceefd3f95c3472c8927da73b5ac643e2c85a854fe4"
+    },
+    {
+      "study": "/home/ibrahim.alsarraj/projects/Franka-R3-Safe-Recovery/outputs/Forge-Phase2B-Stage3/study.json",
+      "sha256": "c4e274c670ba4b5c4ebcc8943d75f832932b99421400620af30797cc96e0eca3"
+    },
+    {
+      "study": "/home/ibrahim.alsarraj/projects/Franka-R3-Safe-Recovery/outputs/Forge-Phase2B-Stage4/study.json",
+      "sha256": "48afe9094b7a881d8804bbab2214d80f6c2d66993f7545c28afb915d89272d75"
+    }
+  ],
+  "analysis_sha256": "0dfa4d32fd924a72576a7f1316198352147a389e5fe4e328727eb0637a94949a",
+  "transitions": [],
+  "recommendations": [
+    {
+      "path_group_id": "b_d10_x_pitch_+1_combined",
+      "reason": "Candidate already tested but unresolved; review it instead of skipping uncertainty.",
+      "next_severity_deg": null
+    },
+    {
+      "path_group_id": "b_d10_x_pitch_+1_drift",
+      "reason": "Safe at configured ceiling; no negative found. Do not widen automatically.",
+      "next_severity_deg": null
+    },
+    {
+      "path_group_id": "b_d10_x_pitch_+1_tilt",
+      "reason": "Candidate already tested but unresolved; review it instead of skipping uncertainty.",
+      "next_severity_deg": null
+    },
+    {
+      "path_group_id": "b_d10_x_pitch_-1_combined",
+      "reason": "Unknown only: inspect numerical/replay failures; do not escalate.",
+      "next_severity_deg": null
+    },
+    {
+      "path_group_id": "b_d10_x_pitch_-1_drift",
+      "reason": "Candidate already tested but unresolved; review it instead of skipping uncertainty.",
+      "next_severity_deg": null
+    },
+    {
+      "path_group_id": "b_d10_x_pitch_-1_tilt",
+      "reason": "Candidate already tested but unresolved; review it instead of skipping uncertainty.",
+      "next_severity_deg": null
+    },
+    {
+      "path_group_id": "b_d10_y_roll_+1_combined",
+      "reason": "Candidate already tested but unresolved; review it instead of skipping uncertainty.",
+      "next_severity_deg": null
+    },
+    {
+      "path_group_id": "b_d10_y_roll_+1_drift",
+      "reason": "Candidate already tested but unresolved; review it instead of skipping uncertainty.",
+      "next_severity_deg": null
+    },
+    {
+      "path_group_id": "b_d10_y_roll_+1_tilt",
+      "reason": "Unknown only: inspect numerical/replay failures; do not escalate.",
+      "next_severity_deg": null
+    },
+    {
+      "path_group_id": "b_d10_y_roll_-1_combined",
+      "reason": "Candidate already tested but unresolved; review it instead of skipping uncertainty.",
+      "next_severity_deg": null
+    },
+    {
+      "path_group_id": "b_d10_y_roll_-1_drift",
+      "reason": "Candidate already tested but unresolved; review it instead of skipping uncertainty.",
+      "next_severity_deg": null
+    },
+    {
+      "path_group_id": "b_d10_y_roll_-1_tilt",
+      "reason": "Candidate already tested but unresolved; review it instead of skipping uncertainty.",
+      "next_severity_deg": null
+    },
+    {
+      "path_group_id": "b_d5_x_pitch_+1_combined",
+      "reason": "Unknown only: inspect numerical/replay failures; do not escalate.",
+      "next_severity_deg": null
+    },
+    {
+      "path_group_id": "b_d5_x_pitch_+1_drift",
+      "reason": "Safe at configured ceiling; no negative found. Do not widen automatically.",
+      "next_severity_deg": null
+    },
+    {
+      "path_group_id": "b_d5_x_pitch_+1_tilt",
+      "reason": "Candidate already tested but unresolved; review it instead of skipping uncertainty.",
+      "next_severity_deg": null
+    },
+    {
+      "path_group_id": "b_d5_x_pitch_-1_combined",
+      "reason": "Safe at configured ceiling; no negative found. Do not widen automatically.",
+      "next_severity_deg": null
+    },
+    {
+      "path_group_id": "b_d5_x_pitch_-1_drift",
+      "reason": "Safe at configured ceiling; no negative found. Do not widen automatically.",
+      "next_severity_deg": null
+    },
+    {
+      "path_group_id": "b_d5_x_pitch_-1_tilt",
+      "reason": "Unknown only: inspect numerical/replay failures; do not escalate.",
+      "next_severity_deg": null
+    },
+    {
+      "path_group_id": "b_d5_y_roll_+1_combined",
+      "reason": "Safe at configured ceiling; no negative found. Do not widen automatically.",
+      "next_severity_deg": null
+    },
+    {
+      "path_group_id": "b_d5_y_roll_+1_drift",
+      "reason": "Safe at configured ceiling; no negative found. Do not widen automatically.",
+      "next_severity_deg": null
+    },
+    {
+      "path_group_id": "b_d5_y_roll_+1_tilt",
+      "reason": "Safe at configured ceiling; no negative found. Do not widen automatically.",
+      "next_severity_deg": null
+    },
+    {
+      "path_group_id": "b_d5_y_roll_-1_combined",
+      "reason": "Safe at configured ceiling; no negative found. Do not widen automatically.",
+      "next_severity_deg": null
+    },
+    {
+      "path_group_id": "b_d5_y_roll_-1_drift",
+      "reason": "Safe at configured ceiling; no negative found. Do not widen automatically.",
+      "next_severity_deg": null
+    },
+    {
+      "path_group_id": "b_d5_y_roll_-1_tilt",
+      "reason": "Candidate already tested but unresolved; review it instead of skipping uncertainty.",
+      "next_severity_deg": null
+    }
+  ],
+  "outcomes": {
+    "safe_terminal": 55,
+    "tested_failure": 0,
+    "unknown": 15
+  }
+}

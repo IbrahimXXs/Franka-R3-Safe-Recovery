@@ -1,0 +1,141 @@
+{
+  "sources": [
+    {
+      "study": "/home/ibrahim.alsarraj/projects/Franka-R3-Safe-Recovery/outputs/Forge-Phase2B-Stage1/study.json",
+      "sha256": "95fc5e677fed0b61c96a7b894189386297dcbff6c421bf05f17e4f80afa798d5"
+    },
+    {
+      "study": "/home/ibrahim.alsarraj/projects/Franka-R3-Safe-Recovery/outputs/Forge-Phase2B-Stage2/study.json",
+      "sha256": "2255d2a0994c7803637faeceefd3f95c3472c8927da73b5ac643e2c85a854fe4"
+    }
+  ],
+  "analysis_sha256": "0dfa4d32fd924a72576a7f1316198352147a389e5fe4e328727eb0637a94949a",
+  "transitions": [],
+  "recommendations": [
+    {
+      "path_group_id": "b_d10_x_pitch_+1_combined",
+      "reason": "Advance one bounded ladder step after an observed safe terminal recovery.",
+      "next_severity_deg": 5.0
+    },
+    {
+      "path_group_id": "b_d10_x_pitch_+1_drift",
+      "reason": "Advance one bounded ladder step after an observed safe terminal recovery.",
+      "next_severity_deg": 5.0
+    },
+    {
+      "path_group_id": "b_d10_x_pitch_+1_tilt",
+      "reason": "Candidate already tested but unresolved; review it instead of skipping uncertainty.",
+      "next_severity_deg": null
+    },
+    {
+      "path_group_id": "b_d10_x_pitch_-1_combined",
+      "reason": "Unknown only: inspect numerical/replay failures; do not escalate.",
+      "next_severity_deg": null
+    },
+    {
+      "path_group_id": "b_d10_x_pitch_-1_drift",
+      "reason": "Candidate already tested but unresolved; review it instead of skipping uncertainty.",
+      "next_severity_deg": null
+    },
+    {
+      "path_group_id": "b_d10_x_pitch_-1_tilt",
+      "reason": "Candidate already tested but unresolved; review it instead of skipping uncertainty.",
+      "next_severity_deg": null
+    },
+    {
+      "path_group_id": "b_d10_y_roll_+1_combined",
+      "reason": "Candidate already tested but unresolved; review it instead of skipping uncertainty.",
+      "next_severity_deg": null
+    },
+    {
+      "path_group_id": "b_d10_y_roll_+1_drift",
+      "reason": "Candidate already tested but unresolved; review it instead of skipping uncertainty.",
+      "next_severity_deg": null
+    },
+    {
+      "path_group_id": "b_d10_y_roll_+1_tilt",
+      "reason": "Unknown only: inspect numerical/replay failures; do not escalate.",
+      "next_severity_deg": null
+    },
+    {
+      "path_group_id": "b_d10_y_roll_-1_combined",
+      "reason": "Candidate already tested but unresolved; review it instead of skipping uncertainty.",
+      "next_severity_deg": null
+    },
+    {
+      "path_group_id": "b_d10_y_roll_-1_drift",
+      "reason": "Advance one bounded ladder step after an observed safe terminal recovery.",
+      "next_severity_deg": 5.0
+    },
+    {
+      "path_group_id": "b_d10_y_roll_-1_tilt",
+      "reason": "Advance one bounded ladder step after an observed safe terminal recovery.",
+      "next_severity_deg": 5.0
+    },
+    {
+      "path_group_id": "b_d5_x_pitch_+1_combined",
+      "reason": "Unknown only: inspect numerical/replay failures; do not escalate.",
+      "next_severity_deg": null
+    },
+    {
+      "path_group_id": "b_d5_x_pitch_+1_drift",
+      "reason": "Advance one bounded ladder step after an observed safe terminal recovery.",
+      "next_severity_deg": 5.0
+    },
+    {
+      "path_group_id": "b_d5_x_pitch_+1_tilt",
+      "reason": "Advance one bounded ladder step after an observed safe terminal recovery.",
+      "next_severity_deg": 5.0
+    },
+    {
+      "path_group_id": "b_d5_x_pitch_-1_combined",
+      "reason": "Advance one bounded ladder step after an observed safe terminal recovery.",
+      "next_severity_deg": 5.0
+    },
+    {
+      "path_group_id": "b_d5_x_pitch_-1_drift",
+      "reason": "Advance one bounded ladder step after an observed safe terminal recovery.",
+      "next_severity_deg": 5.0
+    },
+    {
+      "path_group_id": "b_d5_x_pitch_-1_tilt",
+      "reason": "Unknown only: inspect numerical/replay failures; do not escalate.",
+      "next_severity_deg": null
+    },
+    {
+      "path_group_id": "b_d5_y_roll_+1_combined",
+      "reason": "Advance one bounded ladder step after an observed safe terminal recovery.",
+      "next_severity_deg": 5.0
+    },
+    {
+      "path_group_id": "b_d5_y_roll_+1_drift",
+      "reason": "Advance one bounded ladder step after an observed safe terminal recovery.",
+      "next_severity_deg": 5.0
+    },
+    {
+      "path_group_id": "b_d5_y_roll_+1_tilt",
+      "reason": "Advance one bounded ladder step after an observed safe terminal recovery.",
+      "next_severity_deg": 5.0
+    },
+    {
+      "path_group_id": "b_d5_y_roll_-1_combined",
+      "reason": "Advance one bounded ladder step after an observed safe terminal recovery.",
+      "next_severity_deg": 5.0
+    },
+    {
+      "path_group_id": "b_d5_y_roll_-1_drift",
+      "reason": "Advance one bounded ladder step after an observed safe terminal recovery.",
+      "next_severity_deg": 5.0
+    },
+    {
+      "path_group_id": "b_d5_y_roll_-1_tilt",
+      "reason": "Candidate already tested but unresolved; review it instead of skipping uncertainty.",
+      "next_severity_deg": null
+    }
+  ],
+  "outcomes": {
+    "safe_terminal": 33,
+    "tested_failure": 0,
+    "unknown": 11
+  }
+}
