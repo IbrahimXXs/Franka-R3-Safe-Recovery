@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "runs": 24,
+  "physics_rows": 52075,
+  "causal_checks_recomputed": 4334,
+  "interventions_verified": 24,
+  "completed_retraction_measurements_verified": 22,
+  "calibration_sources_sha256_verified": 123,
+  "runtime_sources_sha256_verified": 13,
+  "preexisting_outputs_checked": 3278,
+  "preexisting_outputs_changed": [],
+  "exact_prior_scene_and_configuration_match": true,
+  "hard_safety_priority_verified": true,
+  "no_stage4_shared_groups_in_calibration": true,
+  "eta_not_clipped": true,
+  "normal_load_not_a_predictor": true,
+  "unit_tests": 103,
+  "unit_test_status": "passed",
+  "postprocessing_sources_sha256": {
+    "research/productivity_control_report.py": "d3cdf8e1a1c823cf616de3c567c5143a53c80f744e7cdadf53b30c49cc57e70a",
+    "tests/test_productivity_control.py": "373237f9666dcb21d15782388950e845006ebed6c71bbe31e18cb7f97e77c626",
+    "tests/test_productivity_control_execution.py": "874a813ef6a1da249f37f44090ec069107c444b78c160a060025055fccdfc6ce",
+    "docs/productivity_control.md": "57267ef5dcab2bd8fc650d7c8b250d9a955dbb24da73630599dcee23db60e710"
+  },
+  "raw_artifacts_sha256_recorded": 76,
+  "simulation_exit_code": 0,
+  "plots_visually_checked": true,
+  "collection_sources_preserved": true,
+  "controller_sources_unchanged_after_collection": true
+}

@@ -1,0 +1,1 @@
+./productivity_control.sh --headless --calibration experiments/productivity_control_calibration.json --output-dir outputs/Contact-Productivity-Control-v1

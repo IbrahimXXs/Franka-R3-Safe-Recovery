@@ -1,0 +1,41 @@
+[
+  {
+    "policy": "nominal",
+    "runs": 8,
+    "successes": 2,
+    "stalled_runs": 6,
+    "safety_stops": 0,
+    "interventions": 0,
+    "mean_final_depth_mm": 17.554394993931055,
+    "mean_elapsed_insertion_s": 16.96354166665644,
+    "max_wrist_force_n": 3.8601417541503906,
+    "max_wrist_torque_nm": 0.16994065046310425,
+    "max_normal_load_n": 16.698932647705078
+  },
+  {
+    "policy": "force",
+    "runs": 8,
+    "successes": 2,
+    "stalled_runs": 6,
+    "safety_stops": 0,
+    "interventions": 12,
+    "mean_final_depth_mm": 17.37259291112423,
+    "mean_elapsed_insertion_s": 16.96458333332054,
+    "max_wrist_force_n": 3.92124342918396,
+    "max_wrist_torque_nm": 0.24335092306137085,
+    "max_normal_load_n": 16.652925491333008
+  },
+  {
+    "policy": "productivity",
+    "runs": 8,
+    "successes": 2,
+    "stalled_runs": 6,
+    "safety_stops": 2,
+    "interventions": 12,
+    "mean_final_depth_mm": 17.54760565236211,
+    "mean_elapsed_insertion_s": 14.291666666656305,
+    "max_wrist_force_n": 3.6798341274261475,
+    "max_wrist_torque_nm": 0.18105126917362213,
+    "max_normal_load_n": 16.67090606689453
+  }
+]
