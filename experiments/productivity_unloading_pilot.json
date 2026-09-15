@@ -1,0 +1,11 @@
+{
+  "schema": "Contact-Productivity-Unloading-v1",
+  "case_plan": "experiments/productivity_control_pilot.json",
+  "previous_experiment": "outputs/Contact-Productivity-Control-v1",
+  "order_seed": 20260915,
+  "actual_target_mm": 0.5,
+  "max_command_mm": 5.0,
+  "command_ramp_s": 4.0,
+  "recovery_timeout_s": 5.0,
+  "verification_hold_s": 0.25
+}

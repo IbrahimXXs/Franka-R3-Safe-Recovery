@@ -1,0 +1,11 @@
+{
+  "schema": "Contact-Productivity-Control-v1",
+  "selection": "Frozen Stage4 paths: three archived stalled cases across signed X/Y tilt and combined modes, plus one successful drift control. No outcome-driven replacement.",
+  "order_seed": 20260915,
+  "cases": [
+    {"case_id": "x_positive_combined", "study": "outputs/Forge-Phase2B-Stage4", "trajectory_id": "b000_try00"},
+    {"case_id": "y_negative_tilt", "study": "outputs/Forge-Phase2B-Stage4", "trajectory_id": "b003_try00"},
+    {"case_id": "y_positive_combined", "study": "outputs/Forge-Phase2B-Stage4", "trajectory_id": "b008_try00"},
+    {"case_id": "x_positive_drift_control", "study": "outputs/Forge-Phase2B-Stage4", "trajectory_id": "b001_try00"}
+  ]
+}

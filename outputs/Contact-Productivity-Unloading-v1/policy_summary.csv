@@ -1,0 +1,4 @@
+policy,runs,successes,stalled_runs,safety_stops,recovery_budget_stops,interventions,safe_0_5_mm_crossings,verified_unloadings,verified_load_decreases,retries,evaluable_retries,stalled_retries,mean_final_depth_mm,max_wrist_force_n,max_wrist_torque_nm,max_normal_load_n
+nominal,8,2,6,0,0,0,0,0,0,0,0,0,17.554394993931055,3.8601417541503906,0.16994065046310425,16.698932647705078
+fixed,8,2,6,2,0,12,0,0,0,10,10,10,17.551250383257866,3.891838550567627,0.18105126917362213,16.67090606689453
+verified,8,2,2,0,6,6,0,0,0,0,0,0,17.52938386052847,3.9279191493988037,0.16994065046310425,13.962629318237305

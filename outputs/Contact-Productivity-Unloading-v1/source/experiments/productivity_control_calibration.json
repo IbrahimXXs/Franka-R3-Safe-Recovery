@@ -1,0 +1,896 @@
+{
+  "schema": "Contact-Productivity-Control-Calibration-v1",
+  "design": {
+    "history_s": 0.5,
+    "check_s": 0.1,
+    "minimum_command_mm": 0.1,
+    "contact_margin_mm": 0.1,
+    "consecutive_checks": 2,
+    "stop_s": 0.25,
+    "retract_mm": 1.0,
+    "retract_s": 0.5,
+    "rejoin_s": 0.5,
+    "max_interventions": 2,
+    "insertion_budget_s": 20.0,
+    "nonstall_alert_budget": 0.1
+  },
+  "eta_threshold": 0.4212659765112803,
+  "force_threshold_n": 1.035449028015137,
+  "development_trajectories": 118,
+  "development_groups": 104,
+  "development_windows": 4903,
+  "development_by_study": {
+    "Forge-Phase2-100": 100,
+    "Forge-Phase2B-Stage1": 11,
+    "Forge-Phase2B-Stage2": 7
+  },
+  "excluded": {
+    "quarantined_shared_path": 39,
+    "stage4": 13
+  },
+  "stress_groups": [
+    "Phase2B:b_d10_x_pitch_+1_combined",
+    "Phase2B:b_d10_x_pitch_+1_drift",
+    "Phase2B:b_d10_y_roll_-1_drift",
+    "Phase2B:b_d10_y_roll_-1_tilt",
+    "Phase2B:b_d5_x_pitch_+1_drift",
+    "Phase2B:b_d5_x_pitch_+1_tilt",
+    "Phase2B:b_d5_x_pitch_-1_combined",
+    "Phase2B:b_d5_x_pitch_-1_drift",
+    "Phase2B:b_d5_y_roll_+1_combined",
+    "Phase2B:b_d5_y_roll_+1_drift",
+    "Phase2B:b_d5_y_roll_+1_tilt",
+    "Phase2B:b_d5_y_roll_-1_combined",
+    "Phase2B:b_d5_y_roll_-1_drift"
+  ],
+  "development": [
+    {
+      "trajectory_id": "Forge-Phase2-100/slot000_try00",
+      "group_id": "Phase2A:centered_controls",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot001_try00",
+      "group_id": "Phase2A:slot001",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot002_try00",
+      "group_id": "Phase2A:slot002",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot003_try00",
+      "group_id": "Phase2A:slot003",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot004_try00",
+      "group_id": "Phase2A:slot004",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot005_try00",
+      "group_id": "Phase2A:slot005",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot006_try00",
+      "group_id": "Phase2A:centered_controls",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot007_try00",
+      "group_id": "Phase2A:slot007",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot008_try00",
+      "group_id": "Phase2A:slot008",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot009_try00",
+      "group_id": "Phase2A:slot009",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot010_try00",
+      "group_id": "Phase2A:slot010",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot011_try00",
+      "group_id": "Phase2A:slot011",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot012_try00",
+      "group_id": "Phase2A:centered_controls",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot013_try00",
+      "group_id": "Phase2A:slot013",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot014_try00",
+      "group_id": "Phase2A:slot014",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot015_try00",
+      "group_id": "Phase2A:slot015",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot016_try00",
+      "group_id": "Phase2A:slot016",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot017_try00",
+      "group_id": "Phase2A:slot017",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot018_try00",
+      "group_id": "Phase2A:centered_controls",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot019_try00",
+      "group_id": "Phase2A:slot019",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot020_try00",
+      "group_id": "Phase2A:slot020",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot021_try00",
+      "group_id": "Phase2A:slot021",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot022_try00",
+      "group_id": "Phase2A:slot022",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot023_try00",
+      "group_id": "Phase2A:slot023",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot024_try00",
+      "group_id": "Phase2A:centered_controls",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot025_try00",
+      "group_id": "Phase2A:slot025",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot026_try00",
+      "group_id": "Phase2A:slot026",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot027_try00",
+      "group_id": "Phase2A:slot027",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot028_try00",
+      "group_id": "Phase2A:slot028",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot029_try00",
+      "group_id": "Phase2A:slot029",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot030_try00",
+      "group_id": "Phase2A:centered_controls",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot031_try00",
+      "group_id": "Phase2A:slot031",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot032_try00",
+      "group_id": "Phase2A:slot032",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot033_try00",
+      "group_id": "Phase2A:slot033",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot034_try00",
+      "group_id": "Phase2A:slot034",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot035_try00",
+      "group_id": "Phase2A:slot035",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot036_try00",
+      "group_id": "Phase2A:centered_controls",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot037_try00",
+      "group_id": "Phase2A:slot037",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot038_try00",
+      "group_id": "Phase2A:slot038",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot039_try00",
+      "group_id": "Phase2A:slot039",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot040_try00",
+      "group_id": "Phase2A:slot040",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot041_try00",
+      "group_id": "Phase2A:slot041",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot042_try00",
+      "group_id": "Phase2A:centered_controls",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot043_try00",
+      "group_id": "Phase2A:slot043",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot044_try00",
+      "group_id": "Phase2A:slot044",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot045_try00",
+      "group_id": "Phase2A:slot045",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot046_try00",
+      "group_id": "Phase2A:slot046",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot047_try00",
+      "group_id": "Phase2A:slot047",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot048_try00",
+      "group_id": "Phase2A:slot048",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot049_try00",
+      "group_id": "Phase2A:slot049",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot050_try00",
+      "group_id": "Phase2A:slot050",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot051_try00",
+      "group_id": "Phase2A:slot051",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot052_try00",
+      "group_id": "Phase2A:slot052",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot053_try00",
+      "group_id": "Phase2A:slot053",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot054_try00",
+      "group_id": "Phase2A:slot054",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot055_try00",
+      "group_id": "Phase2A:slot055",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot056_try00",
+      "group_id": "Phase2A:slot056",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot057_try00",
+      "group_id": "Phase2A:slot057",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot058_try00",
+      "group_id": "Phase2A:slot058",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot059_try00",
+      "group_id": "Phase2A:slot059",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot060_try00",
+      "group_id": "Phase2A:slot060",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot061_try00",
+      "group_id": "Phase2A:slot061",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot062_try00",
+      "group_id": "Phase2A:slot062",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot063_try00",
+      "group_id": "Phase2A:slot063",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot064_try00",
+      "group_id": "Phase2A:slot064",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot065_try00",
+      "group_id": "Phase2A:slot065",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot066_try00",
+      "group_id": "Phase2A:slot066",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot067_try00",
+      "group_id": "Phase2A:slot067",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot068_try00",
+      "group_id": "Phase2A:slot068",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot069_try00",
+      "group_id": "Phase2A:slot069",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot070_try00",
+      "group_id": "Phase2A:slot070",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot071_try00",
+      "group_id": "Phase2A:slot071",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot072_try00",
+      "group_id": "Phase2A:slot072",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot073_try00",
+      "group_id": "Phase2A:slot073",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot074_try00",
+      "group_id": "Phase2A:slot074",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot075_try00",
+      "group_id": "Phase2A:slot075",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot076_try00",
+      "group_id": "Phase2A:slot076",
+      "study": "Forge-Phase2-100",
+      "stalled": true
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot077_try00",
+      "group_id": "Phase2A:slot077",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot078_try00",
+      "group_id": "Phase2A:slot078",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot079_try00",
+      "group_id": "Phase2A:slot079",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot080_try00",
+      "group_id": "Phase2A:slot080",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot081_try00",
+      "group_id": "Phase2A:slot081",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot082_try00",
+      "group_id": "Phase2A:slot082",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot083_try00",
+      "group_id": "Phase2A:slot083",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot084_try00",
+      "group_id": "Phase2A:slot084",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot085_try00",
+      "group_id": "Phase2A:slot085",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot086_try00",
+      "group_id": "Phase2A:slot086",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot087_try00",
+      "group_id": "Phase2A:slot087",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot088_try00",
+      "group_id": "Phase2A:slot088",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot089_try00",
+      "group_id": "Phase2A:slot089",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot090_try00",
+      "group_id": "Phase2A:slot090",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot091_try00",
+      "group_id": "Phase2A:slot091",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot092_try00",
+      "group_id": "Phase2A:slot092",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot093_try00",
+      "group_id": "Phase2A:slot093",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot094_try00",
+      "group_id": "Phase2A:slot094",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot095_try00",
+      "group_id": "Phase2A:slot095",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot096_try00",
+      "group_id": "Phase2A:slot096",
+      "study": "Forge-Phase2-100",
+      "stalled": true
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot097_try00",
+      "group_id": "Phase2A:slot097",
+      "study": "Forge-Phase2-100",
+      "stalled": true
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot098_try00",
+      "group_id": "Phase2A:slot098",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2-100/slot099_try00",
+      "group_id": "Phase2A:slot099",
+      "study": "Forge-Phase2-100",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2B-Stage1/b002_try00",
+      "group_id": "Phase2B:b_d5_x_pitch_+1_combined",
+      "study": "Forge-Phase2B-Stage1",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2B-Stage1/b003_try00",
+      "group_id": "Phase2B:b_d5_x_pitch_-1_tilt",
+      "study": "Forge-Phase2B-Stage1",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2B-Stage1/b009_try00",
+      "group_id": "Phase2B:b_d5_y_roll_-1_tilt",
+      "study": "Forge-Phase2B-Stage1",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2B-Stage1/b012_try00",
+      "group_id": "Phase2B:b_d10_x_pitch_+1_tilt",
+      "study": "Forge-Phase2B-Stage1",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2B-Stage1/b015_try00",
+      "group_id": "Phase2B:b_d10_x_pitch_-1_tilt",
+      "study": "Forge-Phase2B-Stage1",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2B-Stage1/b016_try00",
+      "group_id": "Phase2B:b_d10_x_pitch_-1_drift",
+      "study": "Forge-Phase2B-Stage1",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2B-Stage1/b017_try00",
+      "group_id": "Phase2B:b_d10_x_pitch_-1_combined",
+      "study": "Forge-Phase2B-Stage1",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2B-Stage1/b018_try00",
+      "group_id": "Phase2B:b_d10_y_roll_+1_tilt",
+      "study": "Forge-Phase2B-Stage1",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2B-Stage1/b019_try00",
+      "group_id": "Phase2B:b_d10_y_roll_+1_drift",
+      "study": "Forge-Phase2B-Stage1",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2B-Stage1/b020_try00",
+      "group_id": "Phase2B:b_d10_y_roll_+1_combined",
+      "study": "Forge-Phase2B-Stage1",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2B-Stage1/b023_try00",
+      "group_id": "Phase2B:b_d10_y_roll_-1_combined",
+      "study": "Forge-Phase2B-Stage1",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2B-Stage2/b002_try00",
+      "group_id": "Phase2B:b_d10_x_pitch_+1_tilt",
+      "study": "Forge-Phase2B-Stage2",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2B-Stage2/b003_try00",
+      "group_id": "Phase2B:b_d10_x_pitch_-1_drift",
+      "study": "Forge-Phase2B-Stage2",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2B-Stage2/b004_try00",
+      "group_id": "Phase2B:b_d10_x_pitch_-1_tilt",
+      "study": "Forge-Phase2B-Stage2",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2B-Stage2/b005_try00",
+      "group_id": "Phase2B:b_d10_y_roll_+1_combined",
+      "study": "Forge-Phase2B-Stage2",
+      "stalled": true
+    },
+    {
+      "trajectory_id": "Forge-Phase2B-Stage2/b006_try00",
+      "group_id": "Phase2B:b_d10_y_roll_+1_drift",
+      "study": "Forge-Phase2B-Stage2",
+      "stalled": false
+    },
+    {
+      "trajectory_id": "Forge-Phase2B-Stage2/b007_try00",
+      "group_id": "Phase2B:b_d10_y_roll_-1_combined",
+      "study": "Forge-Phase2B-Stage2",
+      "stalled": true
+    },
+    {
+      "trajectory_id": "Forge-Phase2B-Stage2/b019_try00",
+      "group_id": "Phase2B:b_d5_y_roll_-1_tilt",
+      "study": "Forge-Phase2B-Stage2",
+      "stalled": true
+    }
+  ],
+  "diagnostics": [
+    {
+      "policy": "force",
+      "group_weighted_nonstall_alert_rate": 0.09405940594059406,
+      "stalled_alerts": 3,
+      "stalled_total": 6
+    },
+    {
+      "policy": "productivity",
+      "group_weighted_nonstall_alert_rate": 0.09405940594059406,
+      "stalled_alerts": 6,
+      "stalled_total": 6
+    }
+  ],
+  "source_sha256": {
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/study.json": "16471dd38d275a530d22b9a282084c38d19a8b33be7bcdf939442155212a7048",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot000_try00/insertion.csv": "9e9c9c58479e428d51118561df7f16d225ef47995d56eb1fdb54696ef987c1aa",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot001_try00/insertion.csv": "576188b444ffdf425c9f17f5fff2dbb487cb398921458d077d6f359c9574d451",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot002_try00/insertion.csv": "927915228fb701a6fdcf85903f58ff6dbc421ab2ad62882d32127e1fda95bee5",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot003_try00/insertion.csv": "f7ac4affd6ef64261bafb1b0f60af574d9f5bb5ce417c88b99ec58e23282ac0d",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot004_try00/insertion.csv": "bf7a4ef15d9a57a517094fb2406a421f5400409fab22473e66616399b4077cee",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot005_try00/insertion.csv": "77a876e3f251a57c5561747ee41e19bd6ef9debbb7444af34fbf07e87e5caa1d",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot006_try00/insertion.csv": "861901c04250382eeada97ff743012f2a1986443f47389e5d40f784062e4bd39",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot007_try00/insertion.csv": "6ad924edd14d5ff80f6817ec4eeb078101a04a8f1c6919dfd1910642dc8a801b",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot008_try00/insertion.csv": "a7673b07b1cbbc797abdf9e41e9cca94b1c71807c7032d56c6d3e4cd4655d1a0",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot009_try00/insertion.csv": "e31fd2b39f4287715dd096ab559ad89ac16ecccba3b4b64460664368cd0ea138",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot010_try00/insertion.csv": "602e615a1110f3aa6a1ba364df30acf99dbc20b5535b76574884c14af9c61ed8",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot011_try00/insertion.csv": "798a855d8f6735af1cef085734a0be2a46011e85889025b67a8f0807efdc8df1",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot012_try00/insertion.csv": "86c159a7cc02abb87d91e001752323ce3bc9723703f98ebb4c28ef9d55bc2162",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot013_try00/insertion.csv": "9bf6676fcc5df4d9e4cdf4bfaadd7f0bbc02dc7507413a25518829c801b21301",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot014_try00/insertion.csv": "636f440ee74f572da4d71ed921771ce39f55545a28d4610831d30789a8e3eb2b",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot015_try00/insertion.csv": "9b82b39f81a2cb893a97b948920ffe9fa4fa8470f905c77a977258854c21f689",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot016_try00/insertion.csv": "007d7e6b34b76d6b828646e66b045b43bd2203ef0c790b4ff79a23c6854a7a0e",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot017_try00/insertion.csv": "683a401bd66778b3280f5cfb37ad7936cb23fa7ca6e61cc983dac83f2d028db2",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot018_try00/insertion.csv": "69b5c7e7feaa472a3132e61dcbcec2b8105f1acdccd7c9e1e769e8e3b0879cea",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot019_try00/insertion.csv": "2f0bf19d062faae1d6999a6370426b91054c89ccad67e27c7426bb0cb1addf43",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot020_try00/insertion.csv": "d4cbd30e6c4587ae4e7db86c880e6e0debbf6210c634c3657fd0abb8cdaa3a02",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot021_try00/insertion.csv": "a5abe768e6f9746168726bef29a093758fc43d926dabb02996b815f0a3183e7c",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot022_try00/insertion.csv": "edeae0be4d80a4591b2b4f53dc99a8f487ea570f4461bab8fccbebdd67433cd8",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot023_try00/insertion.csv": "2c5d0b0c4d45bdf13e998ee23caa5eed7c049ab83c0e6d2643051776ae57fc62",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot024_try00/insertion.csv": "69b5c7e7feaa472a3132e61dcbcec2b8105f1acdccd7c9e1e769e8e3b0879cea",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot025_try00/insertion.csv": "7706054401a2a5f6c032bd96b1788483a9f78435f6d6788a64c245a302f1adc5",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot026_try00/insertion.csv": "8dbcb364078e875e50c5825ffac5c786fdfff19ed04b23d89a181c471559b4d1",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot027_try00/insertion.csv": "e437a79385477690c5858cd3952547c7962a7600067267de31e0cbebd2c99017",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot028_try00/insertion.csv": "d9a99eb57d31025f65c7e333032178e88b58dca67d361134dc253e1e0f64cf38",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot029_try00/insertion.csv": "a4891ba92812a13197ef8d3f498c8c783144f62a6eb27f1e50adabe7431f09d9",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot030_try00/insertion.csv": "69b5c7e7feaa472a3132e61dcbcec2b8105f1acdccd7c9e1e769e8e3b0879cea",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot031_try00/insertion.csv": "c2e74570f23a14c0714d805918f819aaee268e120417d439a9f361b9b6501cbb",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot032_try00/insertion.csv": "a757352265d5ba45178157059b67146f1506fae82cb1d25090ace16a1786d8de",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot033_try00/insertion.csv": "9ffdaa6bb67266010af9248f42ebb44c7020f083dce778d923dde48f412ab4f9",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot034_try00/insertion.csv": "98e51f62ff32906bd7fa8d059e4a1349e5e294af57bb7973df99fcaac57ab12a",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot035_try00/insertion.csv": "1d84c641894fe00d198548ae993dc88f305672b18f730f0c31d5447adceaa518",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot036_try00/insertion.csv": "69b5c7e7feaa472a3132e61dcbcec2b8105f1acdccd7c9e1e769e8e3b0879cea",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot037_try00/insertion.csv": "32a24ce8e87579dc6d9bbb97fabdc45301bcb4ca96137b8781efdc750b8f8e06",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot038_try00/insertion.csv": "5638bfff6df0f52eba63498afd29ed52a313a999e50637bda58ad3b2d10f644c",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot039_try00/insertion.csv": "e5b85ad6661fa27693c44fd5b58d390bd3b117d1ef35c412eb40f926d1379169",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot040_try00/insertion.csv": "d89d6adfc5b68f2a8fb3ea920afb7559fb9bfebac0d3d3e5f9ce94cccdd83577",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot041_try00/insertion.csv": "48c5e289ae2896a3fc448b4f18d5b279f1af815334bc96cd743d4bac5ca74455",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot042_try00/insertion.csv": "69b5c7e7feaa472a3132e61dcbcec2b8105f1acdccd7c9e1e769e8e3b0879cea",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot043_try00/insertion.csv": "59be091936000eedb9dda4e0cb5bb5378a9c8a256edfd057a6e9ac8de2d690a8",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot044_try00/insertion.csv": "ba068f0274188f7357b38a1d3a0f78060b642f993833324ec16d81f1658094c3",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot045_try00/insertion.csv": "ffa541c32b9e3277126a4fb00b439d03bc48029e51c2833372b3e10efbfca85a",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot046_try00/insertion.csv": "affd27468369109b4e8b2ede1e91e21700f14abf65a9577ffd13ce832ecbabe7",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot047_try00/insertion.csv": "70c8bc89fbd6fd9c454ebca5e2420c030dd420510d4820be7a8ed0b23f2e7287",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot048_try00/insertion.csv": "a7c1d7a4f5b7a29db388c04175328b43e248dcd5cd88086ef3475d4abe4968d6",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot049_try00/insertion.csv": "3da9ef6dbff57eee22816d354577cd2b4b5116634efb5776735c879afbe32cf9",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot050_try00/insertion.csv": "0803513a528b9221b1356608f6e58e8db152848b1fc9339d40d8efc3f5b1a445",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot051_try00/insertion.csv": "3482cee6e431ac0487c2397972f0513d822231825e083e1e2a5904a87b37b5e0",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot052_try00/insertion.csv": "61b270c75d1e9e00331530490f65063767b1a14a20c81d64ba91048297525278",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot053_try00/insertion.csv": "57a34d1c5c386caccd9983fdb9a33855ffeff3bc99fd05f25b62597f65209505",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot054_try00/insertion.csv": "760530aed5615c6ea6389e1f5f90198f2370cd4229ce35acc5fb1062a5666a7f",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot055_try00/insertion.csv": "d6fc65cb0444c09693c0e568d287122d472e1897c5a0b134681d4997d1862146",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot056_try00/insertion.csv": "171bb697b1210f7d99341302d07aa477a03b8677d6c5a0865a7b5ac4a1bab402",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot057_try00/insertion.csv": "6dc346b1f0624c5cd4e9d57c0b4f8e33f56b1e4e2382224d2aa94072c4eea2da",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot058_try00/insertion.csv": "1702622be98a02df2851bee9bde1c39ad494f900e6343f8d03d8b17b0d77fce3",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot059_try00/insertion.csv": "c1665b946affa6752eebf41e8e9a5caf51cbc3235cf69d8a82154994d2dcd17c",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot060_try00/insertion.csv": "5c4a573c41d461d3a7a67d2a0f2d18726418968a6e67810c4a1a936eb523eab2",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot061_try00/insertion.csv": "ad9469e8cd0b292eba5bcfaee71899028ee5f03e0bdd0640adfc6f4ea5131060",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot062_try00/insertion.csv": "cd56bd0bd8ba07d9ab4898f8e69cd349385886d73346612b38848ea2de4a1700",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot063_try00/insertion.csv": "2ed8e9bfc59a0d05bde08df98d36818d686c2a474d5f86c04b05a9e661cd24d1",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot064_try00/insertion.csv": "b46d24cd3a032a2287a989daa92aa0eba3a13f92d35a782915ef9332eab47cc5",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot065_try00/insertion.csv": "c0471090faea820a94a8d6a4c7da424cc131e44f5d8c4e36bf74da9189c1894d",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot066_try00/insertion.csv": "e94ac739234a28aecd1dc3a612d0ec7577a4f3e61a727090cfe51ba132002b7c",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot067_try00/insertion.csv": "78db3e586d8d50473e4b44642db609b9c55c5e29f82dfe9aa74b008dadfe7951",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot068_try00/insertion.csv": "5216b712e76c6c7ad66009f8a3670eeb25c66055869e6ea2e522969789053207",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot069_try00/insertion.csv": "4e9f8228d141024f9081aafee45c020368d218678d078bf97dde1e007ed78bc0",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot070_try00/insertion.csv": "faaffe96635561a1ea561b9c144f37ecb708fdfb59d13e86fe1ff782c4081de5",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot071_try00/insertion.csv": "46324fdd89eb53038f90ab9608a4ef0546f971aa86f2c3d2258a02c46459f95c",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot072_try00/insertion.csv": "b5315dab5a87c11ea381142476374326bff5307ffe149cf524347ea3d9644ddd",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot073_try00/insertion.csv": "f443a1996159a61bb736c88eadf9c26d025cb3a1ed8536544d816e9c63113e67",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot074_try00/insertion.csv": "8b46c7adfa6059ade7787a09c1d9afd7d33c8fb4bfcb493ad55a1bb85e8f5248",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot075_try00/insertion.csv": "778ffe0aaa5f974c99c3bd15e6144cdc401c75ee5dc93fbce44803a2d4fcae07",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot076_try00/insertion.csv": "8bef55f9762bd14d993acb8045550165e0cdc9b828e256b19281049ecc2a3706",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot077_try00/insertion.csv": "5a1e58cdc084223f1f72840382015b986132df11ddef6eba9a91fb353b1a05b8",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot078_try00/insertion.csv": "9eb79883d3790071c614acd808e01dad41273985913a5c031c0ee858ba04bec1",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot079_try00/insertion.csv": "88e8ca9156aafffe6dd65a83f5e3980205c6d0c6d29cd3eb5bd3c7f226bf9297",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot080_try00/insertion.csv": "b6995d941d066fd069b980c68a32fd29f438e303dc89abe25cc66cc9d8c5d681",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot081_try00/insertion.csv": "dad79e8fda24ded443dfd1f2b5d8f848a9b852375bfbdd244895ada432884aea",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot082_try00/insertion.csv": "41d31ca4993cd6b4c63074c260289053eafe7c26400de3ce6eadbc1cb4022d79",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot083_try00/insertion.csv": "3652356573a6578be43c859b5bdc651a53218a40ceb38c75106c35824f616caa",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot084_try00/insertion.csv": "af572216bc6d6f6515c076d8d95bbd905a29bdaa6aa2786bd6263d3bcaa180a0",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot085_try00/insertion.csv": "3b0265bf58e79eca12b1ee9a3b502999a0e6e3c44b68fee70976ea6188b278f7",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot086_try00/insertion.csv": "b6a109fcd8738577f42249cb9e3fe916305023499c470f2db2fd0d0b0a517fa4",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot087_try00/insertion.csv": "07908657756714179ca589a1d17b389e17a180198fbacf983efe6bf74dd9997c",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot088_try00/insertion.csv": "ee9bc84afd0ef08450398d676381a40200731e5bb5751dbba706f8c450e43a2c",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot089_try00/insertion.csv": "9b0827adf5fb9fab4d7d7445960be40b679cb6016a2385ee5260918089cdbaae",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot090_try00/insertion.csv": "390da7c239765495ac53042f2770ecaccd406d4c3e7d9b021e65c33e65604e86",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot091_try00/insertion.csv": "eca1f96d7baee300a44cd436f662364b37dd046906743e14d1159ffa393d780b",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot092_try00/insertion.csv": "f75beba11d272fb673b69bf996ab65ec485632db805b33c4e750bc2b794089dd",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot093_try00/insertion.csv": "670bc5404d21d18369dda4451942dfa70231e96e06ddafe0dd732f355b3e727d",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot094_try00/insertion.csv": "6e9d2d1f661959abf97e1c4e7b5917aae1d9184252c07d483b194148a980a6d6",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot095_try00/insertion.csv": "e2678f95fb47a64483db215cfe79258945f396fb710d7fa641db60ec6395db15",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot096_try00/insertion.csv": "70c698754f6024c8e75f94ab9d08ad32173e1215d0f4219d1a5da700c9cf8b37",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot097_try00/insertion.csv": "4d1b9ca5bec502fda2044e17de59ca77def05ee58e2facc59733289a3420eb25",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot098_try00/insertion.csv": "5defd6f96d97276990936fb8dad5165ed88b417526cb51c31ce8cc7cf9d00da6",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2-100/slot099_try00/insertion.csv": "616eb9551e81655f1ff88b42548d9936b22b561863ef8557461d35b2b84e54fe",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2B-Stage1/study.json": "95fc5e677fed0b61c96a7b894189386297dcbff6c421bf05f17e4f80afa798d5",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2B-Stage1/b002_try00/insertion.csv": "628c7f3548d09d98b8135f641d519fd6018848a28fbd65b62820aa0b6f7a46c6",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2B-Stage1/b003_try00/insertion.csv": "8ecc29c764135801d18adba66ee163f93d5b52f1bd7a0b53139d6020182997c0",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2B-Stage1/b009_try00/insertion.csv": "e396fcc9f85de52b6b47f506f410757856b03166f675ff62727eb7367e13ee5b",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2B-Stage1/b012_try00/insertion.csv": "cb92710e3ceec32c3dbe78e71866e3daf6ccc1c013bfd00c443eb1b5c488c13e",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2B-Stage1/b015_try00/insertion.csv": "c5bd2f4c7242898bbf7a78a16d125125a6014afe5d14c03a33bc9bdfab39b6e2",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2B-Stage1/b016_try00/insertion.csv": "16b135d5fb39e3109fad70084e06b0f0aa56b130dee2def96442e6973b6f6fd5",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2B-Stage1/b017_try00/insertion.csv": "db6870ec575131b87a8df9815cd69e3f70d9f8b59fdfbea44c99f3fbcde0b876",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2B-Stage1/b018_try00/insertion.csv": "521eb87df3485a9bb25c802fac4b79ee79fec8b439d788c436b06186daaa3303",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2B-Stage1/b019_try00/insertion.csv": "00d943a3c05c1c5c4c07b1a8cabbab5b0b59024b77f400a7a52ca019a5753983",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2B-Stage1/b020_try00/insertion.csv": "0683e4c47f3b552221fdea5cbe15305d43fcd881c637af3256b41f29f541b752",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2B-Stage1/b023_try00/insertion.csv": "d3bffc6af358881f63b27b6ea75c6be843e41d21a3d7a68b046f6d9306be5ed0",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2B-Stage2/study.json": "2255d2a0994c7803637faeceefd3f95c3472c8927da73b5ac643e2c85a854fe4",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2B-Stage2/b002_try00/insertion.csv": "66c91b747fa632d7b1bc64f6fb55771581ccb4dccf81def886334314f82828f5",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2B-Stage2/b003_try00/insertion.csv": "70d34204ae1769dceb7afd1a0eb1aa4c112ac46a6b9b8e12c3766b13b75a2edb",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2B-Stage2/b004_try00/insertion.csv": "7890a96ad94e7b5c89e7eb0a937269688f5285b4e8cff86a3d3dbeadf5d2470e",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2B-Stage2/b005_try00/insertion.csv": "19a75e61e77cc52ff29ba371439c9a5de2a7e7afbeaab3f9e214bf1eae509514",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2B-Stage2/b006_try00/insertion.csv": "b263314a8d1b7850fadfed3969b0ff38082897d0843926adc5ea0f647d7a606c",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2B-Stage2/b007_try00/insertion.csv": "c16e3d18b2211fa9e0fa0b9f67ddb19106017d5419aa077a5cbd88352cf902aa",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2B-Stage2/b019_try00/insertion.csv": "35afcfd397cf313cd9e73ec1da262f31a24572cd2fba88d623cd812c6a641f43",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2B-Stage3/study.json": "c4e274c670ba4b5c4ebcc8943d75f832932b99421400620af30797cc96e0eca3",
+    "/home/ibrahim/Documents/Franka-Safe-Recovery/outputs/Forge-Phase2B-Stage4/study.json": "48afe9094b7a881d8804bbab2214d80f6c2d66993f7545c28afb915d89272d75"
+  },
+  "method": "No ML. Two consecutive checks; maximum alert sensitivity within 10% group-weighted non-stalled trajectory alert budget; entire nominal insertion histories, including post-stall. Stage4 and shared path groups excluded. Raw unclipped eta."
+}
