@@ -1,0 +1,4 @@
+policy,runs,successes,stalled_runs,safety_stops,recovery_budget_stops,interventions,safe_0_5_mm_crossings,verified_unloadings,ready_unloadings,retry_successes,verified_load_decreases,retries,evaluable_retries,stalled_retries,mean_final_depth_mm,max_wrist_force_n,max_wrist_torque_nm,max_normal_load_n
+nominal,8,2,6,0,0,0,0,0,0,0,0,0,0,0,17.554394993931055,3.8601417541503906,0.16994065046310425,16.698932647705078
+axial,8,2,2,0,6,6,0,0,0,0,0,0,0,0,17.541320621967316,4.0522942543029785,0.16668827831745148,14.065284729003906
+dewedge,8,8,2,0,0,6,6,6,6,6,6,6,6,0,19.735242798924446,3.4483203887939453,0.1959102600812912,13.962629318237305

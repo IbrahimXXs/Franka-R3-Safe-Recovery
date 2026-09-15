@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "runs": 24,
+  "physics_rows": 42452,
+  "causal_checks": 3526,
+  "interventions": 12,
+  "retry_ready_unloadings": 6,
+  "no_unverified_retry": true,
+  "command_cap_enforced": true,
+  "hard_safety_priority": true,
+  "unchanged_axial_baseline": true,
+  "peg_pivot_relaxation_verified": true,
+  "retry_pose_retained": true,
+  "calibration_unchanged": true,
+  "scene_config_unchanged": true,
+  "source_archives_verified": 23,
+  "preexisting_outputs_checked": 3501,
+  "preexisting_outputs_changed": []
+}

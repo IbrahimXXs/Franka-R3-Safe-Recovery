@@ -1,0 +1,10 @@
+{
+  "schema": "Contact-Productivity-Dewedge-v1",
+  "case_plan": "experiments/productivity_control_pilot.json",
+  "previous_experiment": "outputs/Contact-Productivity-Unloading-v1",
+  "order_seed": 20260915,
+  "relaxation_s": 0.5,
+  "post_verification_hold_s": 0.25,
+  "relaxation_target": "zero peg x/y and relative roll/pitch, preserve relative yaw, fixed commanded peg depth",
+  "retry_pose": "latch measured peg lateral position, orientation and grasp after verified unloading; do not restore original imposed ramp"
+}
