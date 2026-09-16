@@ -1,0 +1,10 @@
+split,policy,conditions,successes,stalled_runs,safety_failures,safety_during_recovery,safety_before_any_recovery,added_branch_recovery_safety_stops,terminal_timeouts,intervened_runs,recoveries,verified_unloadings,successful_retries,repeated_stalls,normal_interventions,urgent_interventions,terminal_interventions,nominal_failures,nominal_failures_alerted,nominal_safety_failures,nominal_safety_alerted,nominal_safety_alerted_at_least_0_1s_early,median_safety_lead_s,nominal_successes_for_false_alert,false_alert_trajectories,interventions_on_nominal_success,matched_interventions_on_nominal_success
+all,nominal,80,29,18,37,0,37,0,14,0,0,0,0,0,0,0,0,0,0,0,0,0,,0,0,0,0
+all,v1,80,53,8,22,3,19,0,5,26,26,23,23,0,26,0,0,51,25,37,16,11,0.2166666666664696,29,0,0,0
+all,v2,80,58,8,22,2,20,1,0,31,31,29,29,0,24,1,6,51,30,37,16,12,0.2166666666664696,29,0,0,0
+calibration,nominal,60,22,15,27,0,27,0,11,0,0,0,0,0,0,0,0,0,0,0,0,0,,0,0,0,0
+calibration,v1,60,39,5,18,3,15,0,3,19,19,16,16,0,19,0,0,38,19,27,11,8,0.22499999999979536,22,0,0,0
+calibration,v2,60,43,6,17,2,15,1,0,23,23,21,21,0,18,1,4,38,22,27,11,9,0.22499999999979536,22,0,0,0
+validation,nominal,20,7,3,10,0,10,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,,0,0,0,0
+validation,v1,20,14,3,4,0,4,0,2,7,7,7,7,0,7,0,0,13,6,10,5,3,0.20833333333314386,7,0,0,0
+validation,v2,20,15,2,5,0,5,0,0,8,8,8,8,0,6,0,2,13,8,10,5,3,0.20833333333314386,7,0,0,0

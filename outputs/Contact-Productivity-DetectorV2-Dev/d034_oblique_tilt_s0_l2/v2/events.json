@@ -1,0 +1,74 @@
+[
+  {
+    "intervention": 1,
+    "trigger_time_s": 9.0,
+    "trigger_depth_mm": 16.407934576272964,
+    "trigger_command_depth_mm": 18.710937500000338,
+    "eta_raw": 0.18318856116569304,
+    "wrist_force_n": 1.336090087890625,
+    "wrist_torque_nm": 0.0160555187612772,
+    "normal_load_n": 15.478226661682129,
+    "unloading_status": "safety_stop",
+    "max_commanded_retract_mm": 0.0,
+    "max_actual_retract_mm": 0.0013187527656555176,
+    "trigger_peg_position": [
+      0.600567638874054,
+      0.00027396768564358354,
+      0.058592066168785095
+    ],
+    "trigger_peg_quaternion": [
+      -0.0013638001400977373,
+      -0.03385850787162781,
+      -0.01615138351917267,
+      0.999295175075531
+    ],
+    "neutral_peg_position": [
+      0.6000000238418579,
+      0.0,
+      0.058592066168785095
+    ],
+    "neutral_peg_quaternion": [
+      -0.0008178545976988971,
+      0.0,
+      0.0,
+      0.9999996423721313
+    ],
+    "captured_grasp_position": [
+      -9.403470903635025e-05,
+      1.6367295756936073e-05,
+      0.032393552362918854
+    ],
+    "captured_grasp_quaternion": [
+      0.0012117746518924832,
+      0.0008455204661004245,
+      0.9999987483024597,
+      -0.0004211688647046685
+    ],
+    "nominal_peg_quaternion": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "trigger_nominal_misalignment": {
+      "offset_x_mm": 0.0,
+      "offset_y_mm": 0.0,
+      "roll_deg": 2.0498945010148035,
+      "pitch_deg": -4.396012943740734
+    },
+    "previous_stall": false,
+    "actual_retract_at_last_sample_mm": -0.0003725290298461914,
+    "first_crossing_time_s": null,
+    "time_to_0_5_mm_s": null,
+    "verification_time_s": null,
+    "retry_ready_time_s": null,
+    "hold_rebounds": 0,
+    "max_relax_fraction": 0.0,
+    "after_time_s": 9.025,
+    "after_depth_mm": 16.40830710530281,
+    "after_wrist_force_n": 0.568859875202179,
+    "after_wrist_torque_nm": 0.038582801818847656,
+    "after_normal_load_n": 15.108142852783203,
+    "after_contact_force_n": 0.5730800628662109
+  }
+]

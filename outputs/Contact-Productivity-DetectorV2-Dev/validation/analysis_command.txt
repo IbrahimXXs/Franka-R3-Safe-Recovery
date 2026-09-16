@@ -1,0 +1,1 @@
+/home/ibrahim/miniconda3/envs/franka-safe-recovery/bin/python -m research.productivity_detector_v2_report outputs/Contact-Productivity-DetectorV2-Dev

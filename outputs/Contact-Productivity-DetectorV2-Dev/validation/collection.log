@@ -1,0 +1,773 @@
+WARNING: overwriting environment variables set in the machine
+overwriting variable ['IsaacLab_PATH']
+[INFO][AppLauncher]: Using device: cuda:0
+[INFO][AppLauncher]: Loading experience file: /home/ibrahim/Documents/Franka-Safe-Recovery/.deps/IsaacLab/apps/isaaclab.python.headless.kit
+Loading user config located at: '/home/ibrahim/miniconda3/envs/franka-safe-recovery/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: /home/ibrahim/miniconda3/envs/franka-safe-recovery/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20260915_222030.log
+2026-09-15T18:20:30Z [60ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-09-15T18:20:31Z [355ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-09-15T18:20:31Z [475ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 580.178.04    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA GeForce RTX 3080          | Yes: 0 |     | 10486   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2206      | 20805ce9.. |
+|     |                                  |        |     |            | 1         |            |
+|=============================================================================================|
+| OS: 22.04.5 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.5, Kernel: 6.8.0-138-generic
+| XServer Vendor: The X.Org Foundation, XServer Version: 12101004 (1.21.1.4)
+| Processor: Intel(R) Core(TM) i5-14600KF
+| Bare Metal Cores: 14 | Bare Metal Logical Cores: 28
+| Available Cores:  20 
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 31923 | Free Memory: 21603
+| Total Page/Swap (MB): 2047 | Free Page/Swap: 2046
+|---------------------------------------------------------------------------------------------|
+2026-09-15T18:20:33Z [3,302ms] [Warning] [gpu.foundation.plugin] CPU performance profile is set to powersave. This profile sets the CPU to the lowest frequency reducing performance.
+2026-09-15T18:20:33Z [3,310ms] [Warning] [gpu.foundation.plugin] IOMMU is enabled.
+FORGE physics: 120 Hz (upstream_default); installed scene default: 120 Hz
+Setting seed: 20260913
+[INFO]: Base environment:
+	Environment device    : cuda:0
+	Environment seed      : 20260913
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.03333333333333333
+	Environment step-size : 0.06666666666666667
+2026-09-15T18:20:34Z [4,005ms] [Warning] [isaaclab.envs.direct_rl_env] The render interval (4) is smaller than the decimation (8). Multiple render calls will happen for each environment step.If this is not intended, set the render interval to be equal to the decimation.
+[INFO]: Time taken for scene creation : 2.144829 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 2.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 0.336548 seconds
+[INFO]: Completed setting up the environment...
+Setting seed: 20260913
+[detector-v2] 1/240 d025_terminal_band_s2_l1/nominal (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.545 recoveries=0 verified=0
+[detector-v2] 2/240 d056_combined_s2_l0/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=18.679 recoveries=0 verified=0
+[detector-v2] 3/240 d005_successful_controls_s1_l1/nominal (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.718 recoveries=0 verified=0
+[detector-v2] 4/240 d041_oblique_tilt_s2_l1/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] time_budget_exhausted; depth=17.739 recoveries=0 verified=0
+[detector-v2] 5/240 d021_terminal_band_s1_l1/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.748 recoveries=0 verified=0
+[detector-v2] 6/240 d034_oblique_tilt_s0_l2/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=16.403 recoveries=0 verified=0
+[detector-v2] 7/240 d028_terminal_band_s3_l0/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.687 recoveries=0 verified=0
+[detector-v2] 8/240 d060_combined_s3_l0/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=19.092 recoveries=0 verified=0
+[detector-v2] 9/240 d074_rapid_ramp_s2_l2/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=19.218 recoveries=0 verified=0
+[detector-v2] 10/240 d019_terminal_band_s0_l3/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] time_budget_exhausted; depth=19.025 recoveries=0 verified=0
+[detector-v2] 11/240 d004_successful_controls_s1_l0/nominal (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.850 recoveries=0 verified=0
+[detector-v2] 12/240 d011_successful_controls_s2_l3/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.745 recoveries=0 verified=0
+[detector-v2] 13/240 d035_oblique_tilt_s0_l3/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=16.037 recoveries=0 verified=0
+[detector-v2] 14/240 d040_oblique_tilt_s2_l0/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] time_budget_exhausted; depth=18.100 recoveries=0 verified=0
+[detector-v2] 15/240 d054_combined_s1_l2/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=17.321 recoveries=0 verified=0
+[detector-v2] 16/240 d006_successful_controls_s1_l2/nominal (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.761 recoveries=0 verified=0
+[detector-v2] 17/240 d069_rapid_ramp_s1_l1/nominal (validation)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=19.292 recoveries=0 verified=0
+[detector-v2] 18/240 d020_terminal_band_s1_l0/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.755 recoveries=0 verified=0
+[detector-v2] 19/240 d037_oblique_tilt_s1_l1/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] time_budget_exhausted; depth=17.181 recoveries=0 verified=0
+[detector-v2] 20/240 d048_combined_s0_l0/nominal (validation)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=17.539 recoveries=0 verified=0
+[detector-v2] 21/240 d008_successful_controls_s2_l0/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.716 recoveries=0 verified=0
+[detector-v2] 22/240 d068_rapid_ramp_s1_l0/nominal (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.518 recoveries=0 verified=0
+[detector-v2] 23/240 d038_oblique_tilt_s1_l2/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=16.885 recoveries=0 verified=0
+[detector-v2] 24/240 d051_combined_s0_l3/nominal (validation)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=15.972 recoveries=0 verified=0
+[detector-v2] 25/240 d045_oblique_tilt_s3_l1/nominal (validation)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=18.803 recoveries=0 verified=0
+[detector-v2] 26/240 d057_combined_s2_l1/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=18.423 recoveries=0 verified=0
+[detector-v2] 27/240 d003_successful_controls_s0_l3/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.766 recoveries=0 verified=0
+[detector-v2] 28/240 d062_combined_s3_l2/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=18.713 recoveries=0 verified=0
+[detector-v2] 29/240 d058_combined_s2_l2/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=18.205 recoveries=0 verified=0
+[detector-v2] 30/240 d017_terminal_band_s0_l1/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.564 recoveries=0 verified=0
+[detector-v2] 31/240 d044_oblique_tilt_s3_l0/nominal (validation)
+Setting seed: 20260913
+[detector-v2] time_budget_exhausted; depth=18.885 recoveries=0 verified=0
+[detector-v2] 32/240 d013_successful_controls_s3_l1/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.777 recoveries=0 verified=0
+[detector-v2] 33/240 d015_successful_controls_s3_l3/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.798 recoveries=0 verified=0
+[detector-v2] 34/240 d032_oblique_tilt_s0_l0/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] time_budget_exhausted; depth=17.172 recoveries=0 verified=0
+[detector-v2] 35/240 d024_terminal_band_s2_l0/nominal (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.646 recoveries=0 verified=0
+[detector-v2] 36/240 d059_combined_s2_l3/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=18.027 recoveries=0 verified=0
+[detector-v2] 37/240 d043_oblique_tilt_s2_l3/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=17.403 recoveries=0 verified=0
+[detector-v2] 38/240 d029_terminal_band_s3_l1/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.716 recoveries=0 verified=0
+[detector-v2] 39/240 d067_rapid_ramp_s0_l3/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=18.591 recoveries=0 verified=0
+[detector-v2] 40/240 d012_successful_controls_s3_l0/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.788 recoveries=0 verified=0
+[detector-v2] 41/240 d014_successful_controls_s3_l2/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.740 recoveries=0 verified=0
+[detector-v2] 42/240 d079_rapid_ramp_s3_l3/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=19.358 recoveries=0 verified=0
+[detector-v2] 43/240 d022_terminal_band_s1_l2/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] time_budget_exhausted; depth=19.499 recoveries=0 verified=0
+[detector-v2] 44/240 d055_combined_s1_l3/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=16.952 recoveries=0 verified=0
+[detector-v2] 45/240 d010_successful_controls_s2_l2/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.838 recoveries=0 verified=0
+[detector-v2] 46/240 d076_rapid_ramp_s3_l0/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.679 recoveries=0 verified=0
+[detector-v2] 47/240 d077_rapid_ramp_s3_l1/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.528 recoveries=0 verified=0
+[detector-v2] 48/240 d052_combined_s1_l0/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=18.119 recoveries=0 verified=0
+[detector-v2] 49/240 d073_rapid_ramp_s2_l1/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=19.385 recoveries=0 verified=0
+[detector-v2] 50/240 d065_rapid_ramp_s0_l1/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=19.004 recoveries=0 verified=0
+[detector-v2] 51/240 d031_terminal_band_s3_l3/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.746 recoveries=0 verified=0
+[detector-v2] 52/240 d001_successful_controls_s0_l1/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.755 recoveries=0 verified=0
+[detector-v2] 53/240 d064_rapid_ramp_s0_l0/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] time_budget_exhausted; depth=19.317 recoveries=0 verified=0
+[detector-v2] 54/240 d072_rapid_ramp_s2_l0/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] time_budget_exhausted; depth=19.438 recoveries=0 verified=0
+[detector-v2] 55/240 d007_successful_controls_s1_l3/nominal (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.792 recoveries=0 verified=0
+[detector-v2] 56/240 d049_combined_s0_l1/nominal (validation)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=16.902 recoveries=0 verified=0
+[detector-v2] 57/240 d036_oblique_tilt_s1_l0/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] time_budget_exhausted; depth=17.112 recoveries=0 verified=0
+[detector-v2] 58/240 d053_combined_s1_l1/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=17.742 recoveries=0 verified=0
+[detector-v2] 59/240 d009_successful_controls_s2_l1/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.727 recoveries=0 verified=0
+[detector-v2] 60/240 d063_combined_s3_l3/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=18.506 recoveries=0 verified=0
+[detector-v2] 61/240 d075_rapid_ramp_s2_l3/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=18.973 recoveries=0 verified=0
+[detector-v2] 62/240 d046_oblique_tilt_s3_l2/nominal (validation)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=18.620 recoveries=0 verified=0
+[detector-v2] 63/240 d023_terminal_band_s1_l3/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] time_budget_exhausted; depth=19.213 recoveries=0 verified=0
+[detector-v2] 64/240 d002_successful_controls_s0_l2/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.851 recoveries=0 verified=0
+[detector-v2] 65/240 d050_combined_s0_l2/nominal (validation)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=16.402 recoveries=0 verified=0
+[detector-v2] 66/240 d061_combined_s3_l1/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=18.838 recoveries=0 verified=0
+[detector-v2] 67/240 d027_terminal_band_s2_l3/nominal (validation)
+Setting seed: 20260913
+[detector-v2] time_budget_exhausted; depth=19.370 recoveries=0 verified=0
+[detector-v2] 68/240 d026_terminal_band_s2_l2/nominal (validation)
+Setting seed: 20260913
+[detector-v2] time_budget_exhausted; depth=19.474 recoveries=0 verified=0
+[detector-v2] 69/240 d066_rapid_ramp_s0_l2/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=18.670 recoveries=0 verified=0
+[detector-v2] 70/240 d042_oblique_tilt_s2_l2/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=17.537 recoveries=0 verified=0
+[detector-v2] 71/240 d070_rapid_ramp_s1_l2/nominal (validation)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=19.051 recoveries=0 verified=0
+[detector-v2] 72/240 d047_oblique_tilt_s3_l3/nominal (validation)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=18.488 recoveries=0 verified=0
+[detector-v2] 73/240 d018_terminal_band_s0_l2/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] time_budget_exhausted; depth=19.261 recoveries=0 verified=0
+[detector-v2] 74/240 d000_successful_controls_s0_l0/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.717 recoveries=0 verified=0
+[detector-v2] 75/240 d030_terminal_band_s3_l2/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.716 recoveries=0 verified=0
+[detector-v2] 76/240 d071_rapid_ramp_s1_l3/nominal (validation)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=18.849 recoveries=0 verified=0
+[detector-v2] 77/240 d033_oblique_tilt_s0_l1/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=16.782 recoveries=0 verified=0
+[detector-v2] 78/240 d039_oblique_tilt_s1_l3/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=16.673 recoveries=0 verified=0
+[detector-v2] 79/240 d016_terminal_band_s0_l0/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.622 recoveries=0 verified=0
+[detector-v2] 80/240 d078_rapid_ramp_s3_l2/nominal (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=19.450 recoveries=0 verified=0
+[detector-v2] CONFIG FROZEN {"normal_eta_threshold": 0.4212659765112803, "normal_consecutive_checks": 2, "urgent_eta_threshold": 0.2, "urgent_deficit_acceleration_mm_s2": 2.0, "terminal_rate_mm_s": 0.01, "additional_success_alerts": 0, "total_success_alerts": 0, "successful_calibration_trajectories": 22, "covered_failures": 20, "improved_failure_alerts": 4, "capped_lead_gain_s": 3.099999999999909, "admissible": true}
+[detector-v2] 81/240 d044_oblique_tilt_s3_l0/v1 (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.832 recoveries=1 verified=1
+[detector-v2] 82/240 d044_oblique_tilt_s3_l0/v2 (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.824 recoveries=1 verified=1
+[detector-v2] 83/240 d039_oblique_tilt_s1_l3/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.847 recoveries=1 verified=1
+[detector-v2] 84/240 d039_oblique_tilt_s1_l3/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=16.671 recoveries=1 verified=0
+[detector-v2] 85/240 d077_rapid_ramp_s3_l1/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.528 recoveries=0 verified=0
+[detector-v2] 86/240 d077_rapid_ramp_s3_l1/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.528 recoveries=0 verified=0
+[detector-v2] 87/240 d009_successful_controls_s2_l1/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.727 recoveries=0 verified=0
+[detector-v2] 88/240 d009_successful_controls_s2_l1/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.727 recoveries=0 verified=0
+[detector-v2] 89/240 d057_combined_s2_l1/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=18.423 recoveries=0 verified=0
+[detector-v2] 90/240 d057_combined_s2_l1/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=18.452 recoveries=0 verified=0
+[detector-v2] 91/240 d049_combined_s0_l1/v2 (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.748 recoveries=1 verified=1
+[detector-v2] 92/240 d049_combined_s0_l1/v1 (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.748 recoveries=1 verified=1
+[detector-v2] 93/240 d029_terminal_band_s3_l1/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.746 recoveries=0 verified=0
+[detector-v2] 94/240 d029_terminal_band_s3_l1/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.716 recoveries=0 verified=0
+[detector-v2] 95/240 d067_rapid_ramp_s0_l3/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.711 recoveries=1 verified=1
+[detector-v2] 96/240 d067_rapid_ramp_s0_l3/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=18.591 recoveries=0 verified=0
+[detector-v2] 97/240 d040_oblique_tilt_s2_l0/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.784 recoveries=1 verified=1
+[detector-v2] 98/240 d040_oblique_tilt_s2_l0/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.784 recoveries=1 verified=1
+[detector-v2] 99/240 d003_successful_controls_s0_l3/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.766 recoveries=0 verified=0
+[detector-v2] 100/240 d003_successful_controls_s0_l3/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.749 recoveries=0 verified=0
+[detector-v2] 101/240 d013_successful_controls_s3_l1/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.777 recoveries=0 verified=0
+[detector-v2] 102/240 d013_successful_controls_s3_l1/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.777 recoveries=0 verified=0
+[detector-v2] 103/240 d055_combined_s1_l3/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=16.952 recoveries=0 verified=0
+[detector-v2] 104/240 d055_combined_s1_l3/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=16.952 recoveries=0 verified=0
+[detector-v2] 105/240 d024_terminal_band_s2_l0/v1 (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.610 recoveries=0 verified=0
+[detector-v2] 106/240 d024_terminal_band_s2_l0/v2 (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.646 recoveries=0 verified=0
+[detector-v2] 107/240 d052_combined_s1_l0/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.770 recoveries=1 verified=1
+[detector-v2] 108/240 d052_combined_s1_l0/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.759 recoveries=1 verified=1
+[detector-v2] 109/240 d063_combined_s3_l3/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=18.496 recoveries=0 verified=0
+[detector-v2] 110/240 d063_combined_s3_l3/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=18.496 recoveries=0 verified=0
+[detector-v2] 111/240 d005_successful_controls_s1_l1/v2 (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.718 recoveries=0 verified=0
+[detector-v2] 112/240 d005_successful_controls_s1_l1/v1 (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.718 recoveries=0 verified=0
+[detector-v2] 113/240 d032_oblique_tilt_s0_l0/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.751 recoveries=1 verified=1
+[detector-v2] 114/240 d032_oblique_tilt_s0_l0/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.748 recoveries=1 verified=1
+[detector-v2] 115/240 d060_combined_s3_l0/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=19.092 recoveries=0 verified=0
+[detector-v2] 116/240 d060_combined_s3_l0/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=19.092 recoveries=0 verified=0
+[detector-v2] 117/240 d064_rapid_ramp_s0_l0/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] time_budget_exhausted; depth=19.277 recoveries=0 verified=0
+[detector-v2] 118/240 d064_rapid_ramp_s0_l0/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=19.311 recoveries=1 verified=0
+[detector-v2] 119/240 d022_terminal_band_s1_l2/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.987 recoveries=1 verified=1
+[detector-v2] 120/240 d022_terminal_band_s1_l2/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.524 recoveries=0 verified=0
+[detector-v2] 121/240 d071_rapid_ramp_s1_l3/v1 (validation)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=18.849 recoveries=0 verified=0
+[detector-v2] 122/240 d071_rapid_ramp_s1_l3/v2 (validation)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=18.849 recoveries=0 verified=0
+[detector-v2] 123/240 d000_successful_controls_s0_l0/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.717 recoveries=0 verified=0
+[detector-v2] 124/240 d000_successful_controls_s0_l0/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.717 recoveries=0 verified=0
+[detector-v2] 125/240 d001_successful_controls_s0_l1/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.755 recoveries=0 verified=0
+[detector-v2] 126/240 d001_successful_controls_s0_l1/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.755 recoveries=0 verified=0
+[detector-v2] 127/240 d054_combined_s1_l2/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=17.285 recoveries=0 verified=0
+[detector-v2] 128/240 d054_combined_s1_l2/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=17.285 recoveries=0 verified=0
+[detector-v2] 129/240 d014_successful_controls_s3_l2/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.740 recoveries=0 verified=0
+[detector-v2] 130/240 d014_successful_controls_s3_l2/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.740 recoveries=0 verified=0
+[detector-v2] 131/240 d004_successful_controls_s1_l0/v2 (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.850 recoveries=0 verified=0
+[detector-v2] 132/240 d004_successful_controls_s1_l0/v1 (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.850 recoveries=0 verified=0
+[detector-v2] 133/240 d058_combined_s2_l2/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=18.205 recoveries=0 verified=0
+[detector-v2] 134/240 d058_combined_s2_l2/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=18.205 recoveries=0 verified=0
+[detector-v2] 135/240 d078_rapid_ramp_s3_l2/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=19.408 recoveries=0 verified=0
+[detector-v2] 136/240 d078_rapid_ramp_s3_l2/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=19.450 recoveries=0 verified=0
+[detector-v2] 137/240 d030_terminal_band_s3_l2/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.732 recoveries=0 verified=0
+[detector-v2] 138/240 d030_terminal_band_s3_l2/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.716 recoveries=0 verified=0
+[detector-v2] 139/240 d046_oblique_tilt_s3_l2/v2 (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.834 recoveries=1 verified=1
+[detector-v2] 140/240 d046_oblique_tilt_s3_l2/v1 (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.834 recoveries=1 verified=1
+[detector-v2] 141/240 d068_rapid_ramp_s1_l0/v1 (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.520 recoveries=0 verified=0
+[detector-v2] 142/240 d068_rapid_ramp_s1_l0/v2 (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.518 recoveries=0 verified=0
+[detector-v2] 143/240 d011_successful_controls_s2_l3/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.745 recoveries=0 verified=0
+[detector-v2] 144/240 d011_successful_controls_s2_l3/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.745 recoveries=0 verified=0
+[detector-v2] 145/240 d015_successful_controls_s3_l3/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.798 recoveries=0 verified=0
+[detector-v2] 146/240 d015_successful_controls_s3_l3/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.798 recoveries=0 verified=0
+[detector-v2] 147/240 d012_successful_controls_s3_l0/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.788 recoveries=0 verified=0
+[detector-v2] 148/240 d012_successful_controls_s3_l0/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.788 recoveries=0 verified=0
+[detector-v2] 149/240 d041_oblique_tilt_s2_l1/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.725 recoveries=1 verified=1
+[detector-v2] 150/240 d041_oblique_tilt_s2_l1/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.725 recoveries=1 verified=1
+[detector-v2] 151/240 d033_oblique_tilt_s0_l1/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.824 recoveries=1 verified=1
+[detector-v2] 152/240 d033_oblique_tilt_s0_l1/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.824 recoveries=1 verified=1
+[detector-v2] 153/240 d042_oblique_tilt_s2_l2/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.704 recoveries=1 verified=1
+[detector-v2] 154/240 d042_oblique_tilt_s2_l2/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.704 recoveries=1 verified=1
+[detector-v2] 155/240 d034_oblique_tilt_s0_l2/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=16.408 recoveries=1 verified=0
+[detector-v2] 156/240 d034_oblique_tilt_s0_l2/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.782 recoveries=1 verified=1
+[detector-v2] 157/240 d076_rapid_ramp_s3_l0/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.679 recoveries=0 verified=0
+[detector-v2] 158/240 d076_rapid_ramp_s3_l0/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.679 recoveries=0 verified=0
+[detector-v2] 159/240 d069_rapid_ramp_s1_l1/v2 (validation)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=19.277 recoveries=0 verified=0
+[detector-v2] 160/240 d069_rapid_ramp_s1_l1/v1 (validation)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=19.292 recoveries=0 verified=0
+[detector-v2] 161/240 d020_terminal_band_s1_l0/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.737 recoveries=0 verified=0
+[detector-v2] 162/240 d020_terminal_band_s1_l0/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.755 recoveries=0 verified=0
+[detector-v2] 163/240 d047_oblique_tilt_s3_l3/v2 (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.794 recoveries=1 verified=1
+[detector-v2] 164/240 d047_oblique_tilt_s3_l3/v1 (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.794 recoveries=1 verified=1
+[detector-v2] 165/240 d006_successful_controls_s1_l2/v1 (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.761 recoveries=0 verified=0
+[detector-v2] 166/240 d006_successful_controls_s1_l2/v2 (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.761 recoveries=0 verified=0
+[detector-v2] 167/240 d043_oblique_tilt_s2_l3/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.700 recoveries=1 verified=1
+[detector-v2] 168/240 d043_oblique_tilt_s2_l3/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=17.408 recoveries=1 verified=0
+[detector-v2] 169/240 d072_rapid_ramp_s2_l0/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] time_budget_exhausted; depth=19.429 recoveries=0 verified=0
+[detector-v2] 170/240 d072_rapid_ramp_s2_l0/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.962 recoveries=1 verified=1
+[detector-v2] 171/240 d048_combined_s0_l0/v2 (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.707 recoveries=1 verified=1
+[detector-v2] 172/240 d048_combined_s0_l0/v1 (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.701 recoveries=1 verified=1
+[detector-v2] 173/240 d025_terminal_band_s2_l1/v1 (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.545 recoveries=0 verified=0
+[detector-v2] 174/240 d025_terminal_band_s2_l1/v2 (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.537 recoveries=0 verified=0
+[detector-v2] 175/240 d056_combined_s2_l0/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=18.679 recoveries=0 verified=0
+[detector-v2] 176/240 d056_combined_s2_l0/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=18.679 recoveries=0 verified=0
+[detector-v2] 177/240 d008_successful_controls_s2_l0/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.716 recoveries=0 verified=0
+[detector-v2] 178/240 d008_successful_controls_s2_l0/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.716 recoveries=0 verified=0
+[detector-v2] 179/240 d051_combined_s0_l3/v2 (validation)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=15.975 recoveries=0 verified=0
+[detector-v2] 180/240 d051_combined_s0_l3/v1 (validation)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=15.972 recoveries=0 verified=0
+[detector-v2] 181/240 d066_rapid_ramp_s0_l2/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=18.647 recoveries=0 verified=0
+[detector-v2] 182/240 d066_rapid_ramp_s0_l2/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=18.647 recoveries=0 verified=0
+[detector-v2] 183/240 d018_terminal_band_s0_l2/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.969 recoveries=1 verified=1
+[detector-v2] 184/240 d018_terminal_band_s0_l2/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] time_budget_exhausted; depth=19.261 recoveries=0 verified=0
+[detector-v2] 185/240 d061_combined_s3_l1/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=18.859 recoveries=1 verified=0
+[detector-v2] 186/240 d061_combined_s3_l1/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.832 recoveries=1 verified=1
+[detector-v2] 187/240 d010_successful_controls_s2_l2/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.838 recoveries=0 verified=0
+[detector-v2] 188/240 d010_successful_controls_s2_l2/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.838 recoveries=0 verified=0
+[detector-v2] 189/240 d045_oblique_tilt_s3_l1/v1 (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.821 recoveries=1 verified=1
+[detector-v2] 190/240 d045_oblique_tilt_s3_l1/v2 (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.836 recoveries=1 verified=1
+[detector-v2] 191/240 d007_successful_controls_s1_l3/v2 (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.792 recoveries=0 verified=0
+[detector-v2] 192/240 d007_successful_controls_s1_l3/v1 (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.792 recoveries=0 verified=0
+[detector-v2] 193/240 d079_rapid_ramp_s3_l3/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=19.322 recoveries=0 verified=0
+[detector-v2] 194/240 d079_rapid_ramp_s3_l3/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=19.322 recoveries=0 verified=0
+[detector-v2] 195/240 d019_terminal_band_s0_l3/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.984 recoveries=1 verified=1
+[detector-v2] 196/240 d019_terminal_band_s0_l3/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.970 recoveries=1 verified=1
+[detector-v2] 197/240 d075_rapid_ramp_s2_l3/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.935 recoveries=1 verified=1
+[detector-v2] 198/240 d075_rapid_ramp_s2_l3/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.952 recoveries=1 verified=1
+[detector-v2] 199/240 d023_terminal_band_s1_l3/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.917 recoveries=1 verified=1
+[detector-v2] 200/240 d023_terminal_band_s1_l3/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.917 recoveries=1 verified=1
+[detector-v2] 201/240 d017_terminal_band_s0_l1/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.564 recoveries=0 verified=0
+[detector-v2] 202/240 d017_terminal_band_s0_l1/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.574 recoveries=0 verified=0
+[detector-v2] 203/240 d016_terminal_band_s0_l0/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.622 recoveries=0 verified=0
+[detector-v2] 204/240 d016_terminal_band_s0_l0/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.645 recoveries=0 verified=0
+[detector-v2] 205/240 d026_terminal_band_s2_l2/v1 (validation)
+Setting seed: 20260913
+[detector-v2] time_budget_exhausted; depth=19.474 recoveries=0 verified=0
+[detector-v2] 206/240 d026_terminal_band_s2_l2/v2 (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.975 recoveries=1 verified=1
+[detector-v2] 207/240 d059_combined_s2_l3/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=18.027 recoveries=0 verified=0
+[detector-v2] 208/240 d059_combined_s2_l3/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=18.025 recoveries=0 verified=0
+[detector-v2] 209/240 d065_rapid_ramp_s0_l1/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=19.004 recoveries=0 verified=0
+[detector-v2] 210/240 d065_rapid_ramp_s0_l1/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=18.960 recoveries=0 verified=0
+[detector-v2] 211/240 d037_oblique_tilt_s1_l1/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.807 recoveries=1 verified=1
+[detector-v2] 212/240 d037_oblique_tilt_s1_l1/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.807 recoveries=1 verified=1
+[detector-v2] 213/240 d036_oblique_tilt_s1_l0/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.715 recoveries=1 verified=1
+[detector-v2] 214/240 d036_oblique_tilt_s1_l0/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.709 recoveries=1 verified=1
+[detector-v2] 215/240 d031_terminal_band_s3_l3/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.646 recoveries=0 verified=0
+[detector-v2] 216/240 d031_terminal_band_s3_l3/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.746 recoveries=0 verified=0
+[detector-v2] 217/240 d002_successful_controls_s0_l2/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.851 recoveries=0 verified=0
+[detector-v2] 218/240 d002_successful_controls_s0_l2/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.851 recoveries=0 verified=0
+[detector-v2] 219/240 d028_terminal_band_s3_l0/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.704 recoveries=0 verified=0
+[detector-v2] 220/240 d028_terminal_band_s3_l0/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.687 recoveries=0 verified=0
+[detector-v2] 221/240 d021_terminal_band_s1_l1/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.748 recoveries=0 verified=0
+[detector-v2] 222/240 d021_terminal_band_s1_l1/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.748 recoveries=0 verified=0
+[detector-v2] 223/240 d027_terminal_band_s2_l3/v2 (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.966 recoveries=1 verified=1
+[detector-v2] 224/240 d027_terminal_band_s2_l3/v1 (validation)
+Setting seed: 20260913
+[detector-v2] time_budget_exhausted; depth=19.370 recoveries=0 verified=0
+[detector-v2] 225/240 d053_combined_s1_l1/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.711 recoveries=1 verified=1
+[detector-v2] 226/240 d053_combined_s1_l1/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=17.742 recoveries=0 verified=0
+[detector-v2] 227/240 d070_rapid_ramp_s1_l2/v2 (validation)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=19.051 recoveries=0 verified=0
+[detector-v2] 228/240 d070_rapid_ramp_s1_l2/v1 (validation)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=19.039 recoveries=0 verified=0
+[detector-v2] 229/240 d073_rapid_ramp_s2_l1/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.931 recoveries=1 verified=1
+[detector-v2] 230/240 d073_rapid_ramp_s2_l1/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.931 recoveries=1 verified=1
+[detector-v2] 231/240 d035_oblique_tilt_s0_l3/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=16.037 recoveries=0 verified=0
+[detector-v2] 232/240 d035_oblique_tilt_s0_l3/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=16.037 recoveries=0 verified=0
+[detector-v2] 233/240 d062_combined_s3_l2/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=18.713 recoveries=0 verified=0
+[detector-v2] 234/240 d062_combined_s3_l2/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=18.668 recoveries=0 verified=0
+[detector-v2] 235/240 d038_oblique_tilt_s1_l2/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.755 recoveries=1 verified=1
+[detector-v2] 236/240 d038_oblique_tilt_s1_l2/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.755 recoveries=1 verified=1
+[detector-v2] 237/240 d074_rapid_ramp_s2_l2/v1 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.958 recoveries=1 verified=1
+[detector-v2] 238/240 d074_rapid_ramp_s2_l2/v2 (calibration)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.952 recoveries=1 verified=1
+[detector-v2] 239/240 d050_combined_s0_l2/v2 (validation)
+Setting seed: 20260913
+[detector-v2] grasp_retention_limit; depth=16.402 recoveries=0 verified=0
+[detector-v2] 240/240 d050_combined_s0_l2/v1 (validation)
+Setting seed: 20260913
+[detector-v2] insertion_success; depth=19.792 recoveries=1 verified=1

@@ -1,0 +1,74 @@
+[
+  {
+    "intervention": 1,
+    "trigger_time_s": 9.7,
+    "trigger_depth_mm": 18.857931345701218,
+    "trigger_command_depth_mm": 19.87660156250014,
+    "eta_raw": 0.2014646740693154,
+    "wrist_force_n": 0.4476548433303833,
+    "wrist_torque_nm": 0.132509246468544,
+    "normal_load_n": 17.036991119384766,
+    "unloading_status": "safety_stop",
+    "max_commanded_retract_mm": 0.0,
+    "max_actual_retract_mm": 0.0,
+    "trigger_peg_position": [
+      0.5997350811958313,
+      0.0005987681215628982,
+      0.05614206939935684
+    ],
+    "trigger_peg_quaternion": [
+      0.0009540567407384515,
+      0.014067219570279121,
+      -0.030182257294654846,
+      0.9994450211524963
+    ],
+    "neutral_peg_position": [
+      0.6000000238418579,
+      0.0,
+      0.05614206939935684
+    ],
+    "neutral_peg_quaternion": [
+      0.0005291569395922124,
+      0.0,
+      0.0,
+      0.9999998807907104
+    ],
+    "captured_grasp_position": [
+      6.005412433296442e-05,
+      6.546778604388237e-05,
+      0.032394446432590485
+    ],
+    "captured_grasp_quaternion": [
+      -0.0008027576259337366,
+      -0.00047989722224883735,
+      0.9999988675117493,
+      -0.0012439106358215213
+    ],
+    "nominal_peg_quaternion": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "trigger_nominal_misalignment": {
+      "offset_x_mm": -0.30224711544361915,
+      "offset_y_mm": 0.6481710307728927,
+      "roll_deg": 4.051068942330579,
+      "pitch_deg": 1.8890444715226196
+    },
+    "previous_stall": false,
+    "actual_retract_at_last_sample_mm": -0.0011436641216278076,
+    "first_crossing_time_s": null,
+    "time_to_0_5_mm_s": null,
+    "verification_time_s": null,
+    "retry_ready_time_s": null,
+    "hold_rebounds": 0,
+    "max_relax_fraction": 0.0,
+    "after_time_s": 9.758333333333333,
+    "after_depth_mm": 18.859075009822845,
+    "after_wrist_force_n": 0.27963632345199585,
+    "after_wrist_torque_nm": 0.1535208374261856,
+    "after_normal_load_n": 17.068946838378906,
+    "after_contact_force_n": 0.36734166741371155
+  }
+]

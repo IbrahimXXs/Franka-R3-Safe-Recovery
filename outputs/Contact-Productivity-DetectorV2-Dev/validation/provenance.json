@@ -1,0 +1,40 @@
+{
+  "captured_at_utc": "2026-09-15T21:14:17.616049+00:00",
+  "collection_exit_code": 0,
+  "final_offline_analysis_exit_code": 0,
+  "collection_status": "complete",
+  "audit_status": "passed",
+  "tests_passed": 154,
+  "raw_artifacts": 726,
+  "raw_hash_manifest": "validation/raw_sha256.json",
+  "frozen_config_sha256": "189da99e1ba35a73a68221683cf0d6d215b3443d332c906e7e1afd231194de1d",
+  "configuration_frozen_at_utc": "2026-09-15T19:19:19.555318+00:00",
+  "configuration_unchanged_after_selection": true,
+  "calibration_inputs_only_new_nominal_calibration_groups": true,
+  "no_final_generalization_test": true,
+  "collection_source_archives_verified": 28,
+  "current_sources_differing_from_collection_snapshot": [
+    "research/productivity_detector_v2_report.py"
+  ],
+  "postprocessing_note": "Report-only refinements during collection/final review add recovery-phase safety diagnostics, new-branch versus unchanged-normal-action discordances, branch-use tables and calibration/validation success tables. No detector, calibration, collection, recovery, safety or physics changes; original collection-time source snapshots are retained.",
+  "final_analysis_source": "source/postprocessing/research/productivity_detector_v2_report.py",
+  "final_analysis_source_sha256": "de2e2fff2de954e91a48008f2aba80af68c82c1b1e045f9fed3820298fe2893c",
+  "preexisting_outputs_checked": 4299,
+  "preexisting_outputs_changed": [],
+  "artifact_sha256": {
+    "trigger_analysis.csv": "c4e1f58fc440a187caf2d0e366f52ba95ff334325fa2e61db3ae14e885033e06",
+    "false_trigger_analysis.csv": "7e606eeb48119cb6fd9a5dc55d3fa7f7f5b6861d1143aafe9553257266f8abe2",
+    "summary.csv": "74534a4594d02283469207c97fbbb2d55fc872e1d040cb8f66f9eff3b8694716",
+    "failure_cases.csv": "1a58066f020cc62998b5e55d38f7e8c8de7bcb62f279f6b7b607bf8e62a77860",
+    "policy_summary.csv": "bcae29ef46ede3e6df2604709f775927bbb24b9fb60ce20aad5f81ee3907e8f1",
+    "paired_comparisons.csv": "f26a30296975edcd519e30730c5f4d3835857f03bbd02e74efd034b0002f15c9",
+    "recovery_events.csv": "55f255b9fa0808aec18fa38c4aa7a50760a52939ffd5730f4a50b5a95383cc6c",
+    "calibration_candidates.csv": "5c64d285fd2057ef06961e7653e2b12f5f0b1089529ac53a6ad78117aa02474e",
+    "report.md": "f6991b1191b9a76e2efa828fa9d859d76b49d3a071223e97b32992a043ef526c",
+    "validation.json": "ea69859294c879829d9e953e95059bebc057d5d4d2d2da3614a7a78062b305ad",
+    "validation/tests.log": "a7832f5fdf0643b458abdb99a14a0e9848e6ee947736ad0701e756f88234a390",
+    "validation/collection.log": "727306cba733e4bbd472ed177244b1579fc79b30691cf2cc186e9c29319e21d3",
+    "validation/analysis.log": "dfcf7be00441b742cff0c8498654378e5aaa850d294aee9d8323abe63f19fea3",
+    "validation/raw_sha256.json": "983630bf7ebb2fda9d1962e3df220fcd4dc373f93ceb6513b435a1f1a000d037"
+  }
+}

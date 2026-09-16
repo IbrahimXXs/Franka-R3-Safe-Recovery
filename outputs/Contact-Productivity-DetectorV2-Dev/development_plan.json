@@ -1,0 +1,3127 @@
+{
+  "schema": "Contact-Productivity-DetectorV2-Dev",
+  "frozen_at_utc": "2026-09-15T18:18:23.980309+00:00",
+  "cases": [
+    {
+      "case_id": "d000_successful_controls_s0_l0",
+      "family": "successful_controls",
+      "group_id": "successful_controls_sign_onset_0",
+      "split": "calibration",
+      "case": {
+        "family": "successful_controls",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 6.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.18126155740733,
+        "final_offset_y_mm": 0.0845236523481399,
+        "final_roll_deg": 0.42261826174069944,
+        "final_pitch_deg": -0.9063077870366499,
+        "path_group_id": "successful_controls_sign_onset_0",
+        "split_group_id": "successful_controls_sign_onset_0",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d001_successful_controls_s0_l1",
+      "family": "successful_controls",
+      "group_id": "successful_controls_sign_onset_0",
+      "split": "calibration",
+      "case": {
+        "family": "successful_controls",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 6.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.290018491851728,
+        "final_offset_y_mm": 0.13523784375702383,
+        "final_roll_deg": 0.6339273926110491,
+        "final_pitch_deg": -1.3594616805549748,
+        "path_group_id": "successful_controls_sign_onset_0",
+        "split_group_id": "successful_controls_sign_onset_0",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d002_successful_controls_s0_l2",
+      "family": "successful_controls",
+      "group_id": "successful_controls_sign_onset_0",
+      "split": "calibration",
+      "case": {
+        "family": "successful_controls",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 6.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.398775426296126,
+        "final_offset_y_mm": 0.18595203516590775,
+        "final_roll_deg": 0.8452365234813989,
+        "final_pitch_deg": -1.8126155740732999,
+        "path_group_id": "successful_controls_sign_onset_0",
+        "split_group_id": "successful_controls_sign_onset_0",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d003_successful_controls_s0_l3",
+      "family": "successful_controls",
+      "group_id": "successful_controls_sign_onset_0",
+      "split": "calibration",
+      "case": {
+        "family": "successful_controls",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 6.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.507532360740524,
+        "final_offset_y_mm": 0.23666622657479172,
+        "final_roll_deg": 1.0565456543517486,
+        "final_pitch_deg": -2.2657694675916247,
+        "path_group_id": "successful_controls_sign_onset_0",
+        "split_group_id": "successful_controls_sign_onset_0",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d004_successful_controls_s1_l0",
+      "family": "successful_controls",
+      "group_id": "successful_controls_sign_onset_1",
+      "split": "validation",
+      "case": {
+        "family": "successful_controls",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 9.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.11471528727020924,
+        "final_offset_y_mm": -0.16383040885779837,
+        "final_roll_deg": -0.8191520442889918,
+        "final_pitch_deg": 0.5735764363510462,
+        "path_group_id": "successful_controls_sign_onset_1",
+        "split_group_id": "successful_controls_sign_onset_1",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d005_successful_controls_s1_l1",
+      "family": "successful_controls",
+      "group_id": "successful_controls_sign_onset_1",
+      "split": "validation",
+      "case": {
+        "family": "successful_controls",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 9.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.18354445963233476,
+        "final_offset_y_mm": -0.2621286541724774,
+        "final_roll_deg": -1.2287280664334876,
+        "final_pitch_deg": 0.8603646545265693,
+        "path_group_id": "successful_controls_sign_onset_1",
+        "split_group_id": "successful_controls_sign_onset_1",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d006_successful_controls_s1_l2",
+      "family": "successful_controls",
+      "group_id": "successful_controls_sign_onset_1",
+      "split": "validation",
+      "case": {
+        "family": "successful_controls",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 9.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.25237363199446033,
+        "final_offset_y_mm": -0.3604268994871564,
+        "final_roll_deg": -1.6383040885779836,
+        "final_pitch_deg": 1.1471528727020923,
+        "path_group_id": "successful_controls_sign_onset_1",
+        "split_group_id": "successful_controls_sign_onset_1",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d007_successful_controls_s1_l3",
+      "family": "successful_controls",
+      "group_id": "successful_controls_sign_onset_1",
+      "split": "validation",
+      "case": {
+        "family": "successful_controls",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 9.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.3212028043565859,
+        "final_offset_y_mm": -0.45872514480183546,
+        "final_roll_deg": -2.0478801107224793,
+        "final_pitch_deg": 1.4339410908776153,
+        "path_group_id": "successful_controls_sign_onset_1",
+        "split_group_id": "successful_controls_sign_onset_1",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d008_successful_controls_s2_l0",
+      "family": "successful_controls",
+      "group_id": "successful_controls_sign_onset_2",
+      "split": "calibration",
+      "case": {
+        "family": "successful_controls",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 11.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.16383040885779837,
+        "final_offset_y_mm": -0.11471528727020922,
+        "final_roll_deg": -0.573576436351046,
+        "final_pitch_deg": -0.8191520442889918,
+        "path_group_id": "successful_controls_sign_onset_2",
+        "split_group_id": "successful_controls_sign_onset_2",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d009_successful_controls_s2_l1",
+      "family": "successful_controls",
+      "group_id": "successful_controls_sign_onset_2",
+      "split": "calibration",
+      "case": {
+        "family": "successful_controls",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 11.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.2621286541724774,
+        "final_offset_y_mm": -0.18354445963233473,
+        "final_roll_deg": -0.8603646545265691,
+        "final_pitch_deg": -1.2287280664334876,
+        "path_group_id": "successful_controls_sign_onset_2",
+        "split_group_id": "successful_controls_sign_onset_2",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d010_successful_controls_s2_l2",
+      "family": "successful_controls",
+      "group_id": "successful_controls_sign_onset_2",
+      "split": "calibration",
+      "case": {
+        "family": "successful_controls",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 11.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.3604268994871564,
+        "final_offset_y_mm": -0.2523736319944603,
+        "final_roll_deg": -1.147152872702092,
+        "final_pitch_deg": -1.6383040885779836,
+        "path_group_id": "successful_controls_sign_onset_2",
+        "split_group_id": "successful_controls_sign_onset_2",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d011_successful_controls_s2_l3",
+      "family": "successful_controls",
+      "group_id": "successful_controls_sign_onset_2",
+      "split": "calibration",
+      "case": {
+        "family": "successful_controls",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 11.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.45872514480183546,
+        "final_offset_y_mm": -0.3212028043565858,
+        "final_roll_deg": -1.4339410908776151,
+        "final_pitch_deg": -2.0478801107224793,
+        "path_group_id": "successful_controls_sign_onset_2",
+        "split_group_id": "successful_controls_sign_onset_2",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d012_successful_controls_s3_l0",
+      "family": "successful_controls",
+      "group_id": "successful_controls_sign_onset_3",
+      "split": "calibration",
+      "case": {
+        "family": "successful_controls",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 13.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.0845236523481399,
+        "final_offset_y_mm": 0.18126155740733,
+        "final_roll_deg": 0.9063077870366499,
+        "final_pitch_deg": 0.42261826174069944,
+        "path_group_id": "successful_controls_sign_onset_3",
+        "split_group_id": "successful_controls_sign_onset_3",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d013_successful_controls_s3_l1",
+      "family": "successful_controls",
+      "group_id": "successful_controls_sign_onset_3",
+      "split": "calibration",
+      "case": {
+        "family": "successful_controls",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 13.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.13523784375702383,
+        "final_offset_y_mm": 0.290018491851728,
+        "final_roll_deg": 1.3594616805549748,
+        "final_pitch_deg": 0.6339273926110491,
+        "path_group_id": "successful_controls_sign_onset_3",
+        "split_group_id": "successful_controls_sign_onset_3",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d014_successful_controls_s3_l2",
+      "family": "successful_controls",
+      "group_id": "successful_controls_sign_onset_3",
+      "split": "calibration",
+      "case": {
+        "family": "successful_controls",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 13.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.18595203516590775,
+        "final_offset_y_mm": 0.398775426296126,
+        "final_roll_deg": 1.8126155740732999,
+        "final_pitch_deg": 0.8452365234813989,
+        "path_group_id": "successful_controls_sign_onset_3",
+        "split_group_id": "successful_controls_sign_onset_3",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d015_successful_controls_s3_l3",
+      "family": "successful_controls",
+      "group_id": "successful_controls_sign_onset_3",
+      "split": "calibration",
+      "case": {
+        "family": "successful_controls",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 13.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.23666622657479172,
+        "final_offset_y_mm": 0.507532360740524,
+        "final_roll_deg": 2.2657694675916247,
+        "final_pitch_deg": 1.0565456543517486,
+        "path_group_id": "successful_controls_sign_onset_3",
+        "split_group_id": "successful_controls_sign_onset_3",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d016_terminal_band_s0_l0",
+      "family": "terminal_band",
+      "group_id": "terminal_band_sign_onset_0",
+      "split": "calibration",
+      "case": {
+        "family": "terminal_band",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 6.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 1.3101166113961682,
+        "final_pitch_deg": -2.809554139813615,
+        "path_group_id": "terminal_band_sign_onset_0",
+        "split_group_id": "terminal_band_sign_onset_0",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d017_terminal_band_s0_l1",
+      "family": "terminal_band",
+      "group_id": "terminal_band_sign_onset_0",
+      "split": "calibration",
+      "case": {
+        "family": "terminal_band",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 6.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 1.4157711768313432,
+        "final_pitch_deg": -3.0361310865727775,
+        "path_group_id": "terminal_band_sign_onset_0",
+        "split_group_id": "terminal_band_sign_onset_0",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d018_terminal_band_s0_l2",
+      "family": "terminal_band",
+      "group_id": "terminal_band_sign_onset_0",
+      "split": "calibration",
+      "case": {
+        "family": "terminal_band",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 6.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 1.542556655353553,
+        "final_pitch_deg": -3.3080234226837724,
+        "path_group_id": "terminal_band_sign_onset_0",
+        "split_group_id": "terminal_band_sign_onset_0",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d019_terminal_band_s0_l3",
+      "family": "terminal_band",
+      "group_id": "terminal_band_sign_onset_0",
+      "split": "calibration",
+      "case": {
+        "family": "terminal_band",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 6.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 1.6482112207887278,
+        "final_pitch_deg": -3.5346003694429347,
+        "path_group_id": "terminal_band_sign_onset_0",
+        "split_group_id": "terminal_band_sign_onset_0",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d020_terminal_band_s1_l0",
+      "family": "terminal_band",
+      "group_id": "terminal_band_sign_onset_1",
+      "split": "calibration",
+      "case": {
+        "family": "terminal_band",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 9.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.25810939635797076,
+        "final_offset_y_mm": -0.3686184199300463,
+        "final_roll_deg": -2.539371337295875,
+        "final_pitch_deg": 1.7780869526882432,
+        "path_group_id": "terminal_band_sign_onset_1",
+        "split_group_id": "terminal_band_sign_onset_1",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d021_terminal_band_s1_l1",
+      "family": "terminal_band",
+      "group_id": "terminal_band_sign_onset_1",
+      "split": "calibration",
+      "case": {
+        "family": "terminal_band",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 9.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.30399551126605445,
+        "final_offset_y_mm": -0.43415058347316565,
+        "final_roll_deg": -2.7441593483681226,
+        "final_pitch_deg": 1.9214810617760048,
+        "path_group_id": "terminal_band_sign_onset_1",
+        "split_group_id": "terminal_band_sign_onset_1",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d022_terminal_band_s1_l2",
+      "family": "terminal_band",
+      "group_id": "terminal_band_sign_onset_1",
+      "split": "calibration",
+      "case": {
+        "family": "terminal_band",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 9.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.34988162617413815,
+        "final_offset_y_mm": -0.499682747016285,
+        "final_roll_deg": -2.98990496165482,
+        "final_pitch_deg": 2.0935539926813185,
+        "path_group_id": "terminal_band_sign_onset_1",
+        "split_group_id": "terminal_band_sign_onset_1",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d023_terminal_band_s1_l3",
+      "family": "terminal_band",
+      "group_id": "terminal_band_sign_onset_1",
+      "split": "calibration",
+      "case": {
+        "family": "terminal_band",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 9.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.39576774108222185,
+        "final_offset_y_mm": -0.5652149105594043,
+        "final_roll_deg": -3.194692972727068,
+        "final_pitch_deg": 2.2369481017690798,
+        "path_group_id": "terminal_band_sign_onset_1",
+        "split_group_id": "terminal_band_sign_onset_1",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d024_terminal_band_s2_l0",
+      "family": "terminal_band",
+      "group_id": "terminal_band_sign_onset_2",
+      "split": "validation",
+      "case": {
+        "family": "terminal_band",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 13.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": -0.0,
+        "final_roll_deg": -1.7780869526882428,
+        "final_pitch_deg": -2.539371337295875,
+        "path_group_id": "terminal_band_sign_onset_2",
+        "split_group_id": "terminal_band_sign_onset_2",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d025_terminal_band_s2_l1",
+      "family": "terminal_band",
+      "group_id": "terminal_band_sign_onset_2",
+      "split": "validation",
+      "case": {
+        "family": "terminal_band",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 13.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": -0.0,
+        "final_roll_deg": -1.9214810617760043,
+        "final_pitch_deg": -2.7441593483681226,
+        "path_group_id": "terminal_band_sign_onset_2",
+        "split_group_id": "terminal_band_sign_onset_2",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d026_terminal_band_s2_l2",
+      "family": "terminal_band",
+      "group_id": "terminal_band_sign_onset_2",
+      "split": "validation",
+      "case": {
+        "family": "terminal_band",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 13.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": -0.0,
+        "final_roll_deg": -2.093553992681318,
+        "final_pitch_deg": -2.98990496165482,
+        "path_group_id": "terminal_band_sign_onset_2",
+        "split_group_id": "terminal_band_sign_onset_2",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d027_terminal_band_s2_l3",
+      "family": "terminal_band",
+      "group_id": "terminal_band_sign_onset_2",
+      "split": "validation",
+      "case": {
+        "family": "terminal_band",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 13.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": -0.0,
+        "final_roll_deg": -2.2369481017690793,
+        "final_pitch_deg": -3.194692972727068,
+        "path_group_id": "terminal_band_sign_onset_2",
+        "split_group_id": "terminal_band_sign_onset_2",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d028_terminal_band_s3_l0",
+      "family": "terminal_band",
+      "group_id": "terminal_band_sign_onset_3",
+      "split": "calibration",
+      "case": {
+        "family": "terminal_band",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 16.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.19017821778331476,
+        "final_offset_y_mm": 0.4078385041664925,
+        "final_roll_deg": 2.809554139813615,
+        "final_pitch_deg": 1.3101166113961682,
+        "path_group_id": "terminal_band_sign_onset_3",
+        "split_group_id": "terminal_band_sign_onset_3",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d029_terminal_band_s3_l1",
+      "family": "terminal_band",
+      "group_id": "terminal_band_sign_onset_3",
+      "split": "calibration",
+      "case": {
+        "family": "terminal_band",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 16.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.22398767872257072,
+        "final_offset_y_mm": 0.4803431271294245,
+        "final_roll_deg": 3.0361310865727775,
+        "final_pitch_deg": 1.4157711768313432,
+        "path_group_id": "terminal_band_sign_onset_3",
+        "split_group_id": "terminal_band_sign_onset_3",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d030_terminal_band_s3_l2",
+      "family": "terminal_band",
+      "group_id": "terminal_band_sign_onset_3",
+      "split": "calibration",
+      "case": {
+        "family": "terminal_band",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 16.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.25779713966182666,
+        "final_offset_y_mm": 0.5528477500923564,
+        "final_roll_deg": 3.3080234226837724,
+        "final_pitch_deg": 1.542556655353553,
+        "path_group_id": "terminal_band_sign_onset_3",
+        "split_group_id": "terminal_band_sign_onset_3",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d031_terminal_band_s3_l3",
+      "family": "terminal_band",
+      "group_id": "terminal_band_sign_onset_3",
+      "split": "calibration",
+      "case": {
+        "family": "terminal_band",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 16.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.29160660060108257,
+        "final_offset_y_mm": 0.6253523730552885,
+        "final_roll_deg": 3.5346003694429347,
+        "final_pitch_deg": 1.6482112207887278,
+        "path_group_id": "terminal_band_sign_onset_3",
+        "split_group_id": "terminal_band_sign_onset_3",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d032_oblique_tilt_s0_l0",
+      "family": "oblique_tilt",
+      "group_id": "oblique_tilt_sign_onset_0",
+      "split": "calibration",
+      "case": {
+        "family": "oblique_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 9.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 2.5357095704441965,
+        "final_pitch_deg": -5.437846722219899,
+        "path_group_id": "oblique_tilt_sign_onset_0",
+        "split_group_id": "oblique_tilt_sign_onset_0",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d033_oblique_tilt_s0_l1",
+      "family": "oblique_tilt",
+      "group_id": "oblique_tilt_sign_onset_0",
+      "split": "calibration",
+      "case": {
+        "family": "oblique_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 9.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 2.789280527488616,
+        "final_pitch_deg": -5.981631394441889,
+        "path_group_id": "oblique_tilt_sign_onset_0",
+        "split_group_id": "oblique_tilt_sign_onset_0",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d034_oblique_tilt_s0_l2",
+      "family": "oblique_tilt",
+      "group_id": "oblique_tilt_sign_onset_0",
+      "split": "calibration",
+      "case": {
+        "family": "oblique_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 9.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 3.042851484533036,
+        "final_pitch_deg": -6.52541606666388,
+        "path_group_id": "oblique_tilt_sign_onset_0",
+        "split_group_id": "oblique_tilt_sign_onset_0",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d035_oblique_tilt_s0_l3",
+      "family": "oblique_tilt",
+      "group_id": "oblique_tilt_sign_onset_0",
+      "split": "calibration",
+      "case": {
+        "family": "oblique_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 9.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 3.2964224415774557,
+        "final_pitch_deg": -7.069200738885869,
+        "path_group_id": "oblique_tilt_sign_onset_0",
+        "split_group_id": "oblique_tilt_sign_onset_0",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d036_oblique_tilt_s1_l0",
+      "family": "oblique_tilt",
+      "group_id": "oblique_tilt_sign_onset_1",
+      "split": "calibration",
+      "case": {
+        "family": "oblique_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 11.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.0,
+        "final_offset_y_mm": -0.0,
+        "final_roll_deg": -4.914912265733951,
+        "final_pitch_deg": 3.441458618106277,
+        "path_group_id": "oblique_tilt_sign_onset_1",
+        "split_group_id": "oblique_tilt_sign_onset_1",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d037_oblique_tilt_s1_l1",
+      "family": "oblique_tilt",
+      "group_id": "oblique_tilt_sign_onset_1",
+      "split": "calibration",
+      "case": {
+        "family": "oblique_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 11.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.0,
+        "final_offset_y_mm": -0.0,
+        "final_roll_deg": -5.406403492307345,
+        "final_pitch_deg": 3.7856044799169046,
+        "path_group_id": "oblique_tilt_sign_onset_1",
+        "split_group_id": "oblique_tilt_sign_onset_1",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d038_oblique_tilt_s1_l2",
+      "family": "oblique_tilt",
+      "group_id": "oblique_tilt_sign_onset_1",
+      "split": "calibration",
+      "case": {
+        "family": "oblique_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 11.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.0,
+        "final_offset_y_mm": -0.0,
+        "final_roll_deg": -5.897894718880741,
+        "final_pitch_deg": 4.129750341727532,
+        "path_group_id": "oblique_tilt_sign_onset_1",
+        "split_group_id": "oblique_tilt_sign_onset_1",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d039_oblique_tilt_s1_l3",
+      "family": "oblique_tilt",
+      "group_id": "oblique_tilt_sign_onset_1",
+      "split": "calibration",
+      "case": {
+        "family": "oblique_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 11.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.0,
+        "final_offset_y_mm": -0.0,
+        "final_roll_deg": -6.389385945454136,
+        "final_pitch_deg": 4.4738962035381595,
+        "path_group_id": "oblique_tilt_sign_onset_1",
+        "split_group_id": "oblique_tilt_sign_onset_1",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d040_oblique_tilt_s2_l0",
+      "family": "oblique_tilt",
+      "group_id": "oblique_tilt_sign_onset_2",
+      "split": "calibration",
+      "case": {
+        "family": "oblique_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 13.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": -0.0,
+        "final_roll_deg": -3.4414586181062763,
+        "final_pitch_deg": -4.914912265733951,
+        "path_group_id": "oblique_tilt_sign_onset_2",
+        "split_group_id": "oblique_tilt_sign_onset_2",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d041_oblique_tilt_s2_l1",
+      "family": "oblique_tilt",
+      "group_id": "oblique_tilt_sign_onset_2",
+      "split": "calibration",
+      "case": {
+        "family": "oblique_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 13.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": -0.0,
+        "final_roll_deg": -3.7856044799169037,
+        "final_pitch_deg": -5.406403492307345,
+        "path_group_id": "oblique_tilt_sign_onset_2",
+        "split_group_id": "oblique_tilt_sign_onset_2",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d042_oblique_tilt_s2_l2",
+      "family": "oblique_tilt",
+      "group_id": "oblique_tilt_sign_onset_2",
+      "split": "calibration",
+      "case": {
+        "family": "oblique_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 13.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": -0.0,
+        "final_roll_deg": -4.129750341727532,
+        "final_pitch_deg": -5.897894718880741,
+        "path_group_id": "oblique_tilt_sign_onset_2",
+        "split_group_id": "oblique_tilt_sign_onset_2",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d043_oblique_tilt_s2_l3",
+      "family": "oblique_tilt",
+      "group_id": "oblique_tilt_sign_onset_2",
+      "split": "calibration",
+      "case": {
+        "family": "oblique_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 13.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": -0.0,
+        "final_roll_deg": -4.473896203538159,
+        "final_pitch_deg": -6.389385945454136,
+        "path_group_id": "oblique_tilt_sign_onset_2",
+        "split_group_id": "oblique_tilt_sign_onset_2",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d044_oblique_tilt_s3_l0",
+      "family": "oblique_tilt",
+      "group_id": "oblique_tilt_sign_onset_3",
+      "split": "validation",
+      "case": {
+        "family": "oblique_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 16.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 5.437846722219899,
+        "final_pitch_deg": 2.5357095704441965,
+        "path_group_id": "oblique_tilt_sign_onset_3",
+        "split_group_id": "oblique_tilt_sign_onset_3",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d045_oblique_tilt_s3_l1",
+      "family": "oblique_tilt",
+      "group_id": "oblique_tilt_sign_onset_3",
+      "split": "validation",
+      "case": {
+        "family": "oblique_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 16.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 5.981631394441889,
+        "final_pitch_deg": 2.789280527488616,
+        "path_group_id": "oblique_tilt_sign_onset_3",
+        "split_group_id": "oblique_tilt_sign_onset_3",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d046_oblique_tilt_s3_l2",
+      "family": "oblique_tilt",
+      "group_id": "oblique_tilt_sign_onset_3",
+      "split": "validation",
+      "case": {
+        "family": "oblique_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 16.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 6.52541606666388,
+        "final_pitch_deg": 3.042851484533036,
+        "path_group_id": "oblique_tilt_sign_onset_3",
+        "split_group_id": "oblique_tilt_sign_onset_3",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d047_oblique_tilt_s3_l3",
+      "family": "oblique_tilt",
+      "group_id": "oblique_tilt_sign_onset_3",
+      "split": "validation",
+      "case": {
+        "family": "oblique_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 16.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 7.069200738885869,
+        "final_pitch_deg": 3.2964224415774557,
+        "path_group_id": "oblique_tilt_sign_onset_3",
+        "split_group_id": "oblique_tilt_sign_onset_3",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d048_combined_s0_l0",
+      "family": "combined",
+      "group_id": "combined_sign_onset_0",
+      "split": "validation",
+      "case": {
+        "family": "combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 8.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.7703616189811524,
+        "final_offset_y_mm": 0.3592255224795945,
+        "final_roll_deg": 2.324400439573847,
+        "final_pitch_deg": -4.984692828701575,
+        "path_group_id": "combined_sign_onset_0",
+        "split_group_id": "combined_sign_onset_0",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d049_combined_s0_l1",
+      "family": "combined",
+      "group_id": "combined_sign_onset_0",
+      "split": "validation",
+      "case": {
+        "family": "combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 8.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.9063077870366499,
+        "final_offset_y_mm": 0.42261826174069944,
+        "final_roll_deg": 2.6413641358793716,
+        "final_pitch_deg": -5.664423668979062,
+        "path_group_id": "combined_sign_onset_0",
+        "split_group_id": "combined_sign_onset_0",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d050_combined_s0_l2",
+      "family": "combined",
+      "group_id": "combined_sign_onset_0",
+      "split": "validation",
+      "case": {
+        "family": "combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 8.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 1.0422539550921472,
+        "final_offset_y_mm": 0.48601100100180433,
+        "final_roll_deg": 2.9583278321848963,
+        "final_pitch_deg": -6.3441545092565494,
+        "path_group_id": "combined_sign_onset_0",
+        "split_group_id": "combined_sign_onset_0",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d051_combined_s0_l3",
+      "family": "combined",
+      "group_id": "combined_sign_onset_0",
+      "split": "validation",
+      "case": {
+        "family": "combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 8.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 1.1782001231476447,
+        "final_offset_y_mm": 0.5494037402629092,
+        "final_roll_deg": 3.2752915284904205,
+        "final_pitch_deg": -7.023885349534037,
+        "path_group_id": "combined_sign_onset_0",
+        "split_group_id": "combined_sign_onset_0",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d052_combined_s1_l0",
+      "family": "combined",
+      "group_id": "combined_sign_onset_1",
+      "split": "calibration",
+      "case": {
+        "family": "combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 11.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.48753997089838924,
+        "final_offset_y_mm": -0.696279237645643,
+        "final_roll_deg": -4.505336243589455,
+        "final_pitch_deg": 3.1546703999307537,
+        "path_group_id": "combined_sign_onset_1",
+        "split_group_id": "combined_sign_onset_1",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d053_combined_s1_l1",
+      "family": "combined",
+      "group_id": "combined_sign_onset_1",
+      "split": "calibration",
+      "case": {
+        "family": "combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 11.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.5735764363510462,
+        "final_offset_y_mm": -0.8191520442889918,
+        "final_roll_deg": -5.119700276806198,
+        "final_pitch_deg": 3.5848527271940385,
+        "path_group_id": "combined_sign_onset_1",
+        "split_group_id": "combined_sign_onset_1",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d054_combined_s1_l2",
+      "family": "combined",
+      "group_id": "combined_sign_onset_1",
+      "split": "calibration",
+      "case": {
+        "family": "combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 11.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.659612901803703,
+        "final_offset_y_mm": -0.9420248509323405,
+        "final_roll_deg": -5.7340643100229425,
+        "final_pitch_deg": 4.015035054457323,
+        "path_group_id": "combined_sign_onset_1",
+        "split_group_id": "combined_sign_onset_1",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d055_combined_s1_l3",
+      "family": "combined",
+      "group_id": "combined_sign_onset_1",
+      "split": "calibration",
+      "case": {
+        "family": "combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 11.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.7456493672563599,
+        "final_offset_y_mm": -1.0648976575756892,
+        "final_roll_deg": -6.348428343239687,
+        "final_pitch_deg": 4.4452173817206075,
+        "path_group_id": "combined_sign_onset_1",
+        "split_group_id": "combined_sign_onset_1",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d056_combined_s2_l0",
+      "family": "combined",
+      "group_id": "combined_sign_onset_2",
+      "split": "calibration",
+      "case": {
+        "family": "combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 14.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.696279237645643,
+        "final_offset_y_mm": -0.48753997089838913,
+        "final_roll_deg": -3.1546703999307533,
+        "final_pitch_deg": -4.505336243589455,
+        "path_group_id": "combined_sign_onset_2",
+        "split_group_id": "combined_sign_onset_2",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d057_combined_s2_l1",
+      "family": "combined",
+      "group_id": "combined_sign_onset_2",
+      "split": "calibration",
+      "case": {
+        "family": "combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 14.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.8191520442889918,
+        "final_offset_y_mm": -0.573576436351046,
+        "final_roll_deg": -3.584852727194038,
+        "final_pitch_deg": -5.119700276806198,
+        "path_group_id": "combined_sign_onset_2",
+        "split_group_id": "combined_sign_onset_2",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d058_combined_s2_l2",
+      "family": "combined",
+      "group_id": "combined_sign_onset_2",
+      "split": "calibration",
+      "case": {
+        "family": "combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 14.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.9420248509323405,
+        "final_offset_y_mm": -0.6596129018037029,
+        "final_roll_deg": -4.015035054457322,
+        "final_pitch_deg": -5.7340643100229425,
+        "path_group_id": "combined_sign_onset_2",
+        "split_group_id": "combined_sign_onset_2",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d059_combined_s2_l3",
+      "family": "combined",
+      "group_id": "combined_sign_onset_2",
+      "split": "calibration",
+      "case": {
+        "family": "combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 14.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 1.0648976575756892,
+        "final_offset_y_mm": -0.7456493672563598,
+        "final_roll_deg": -4.445217381720607,
+        "final_pitch_deg": -6.348428343239687,
+        "path_group_id": "combined_sign_onset_2",
+        "split_group_id": "combined_sign_onset_2",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d060_combined_s3_l0",
+      "family": "combined",
+      "group_id": "combined_sign_onset_3",
+      "split": "calibration",
+      "case": {
+        "family": "combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 16.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.3592255224795945,
+        "final_offset_y_mm": 0.7703616189811524,
+        "final_roll_deg": 4.984692828701575,
+        "final_pitch_deg": 2.324400439573847,
+        "path_group_id": "combined_sign_onset_3",
+        "split_group_id": "combined_sign_onset_3",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d061_combined_s3_l1",
+      "family": "combined",
+      "group_id": "combined_sign_onset_3",
+      "split": "calibration",
+      "case": {
+        "family": "combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 16.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.42261826174069944,
+        "final_offset_y_mm": 0.9063077870366499,
+        "final_roll_deg": 5.664423668979062,
+        "final_pitch_deg": 2.6413641358793716,
+        "path_group_id": "combined_sign_onset_3",
+        "split_group_id": "combined_sign_onset_3",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d062_combined_s3_l2",
+      "family": "combined",
+      "group_id": "combined_sign_onset_3",
+      "split": "calibration",
+      "case": {
+        "family": "combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 16.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.48601100100180433,
+        "final_offset_y_mm": 1.0422539550921472,
+        "final_roll_deg": 6.3441545092565494,
+        "final_pitch_deg": 2.9583278321848963,
+        "path_group_id": "combined_sign_onset_3",
+        "split_group_id": "combined_sign_onset_3",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d063_combined_s3_l3",
+      "family": "combined",
+      "group_id": "combined_sign_onset_3",
+      "split": "calibration",
+      "case": {
+        "family": "combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 16.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.5494037402629092,
+        "final_offset_y_mm": 1.1782001231476447,
+        "final_roll_deg": 7.023885349534037,
+        "final_pitch_deg": 3.2752915284904205,
+        "path_group_id": "combined_sign_onset_3",
+        "split_group_id": "combined_sign_onset_3",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d064_rapid_ramp_s0_l0",
+      "family": "rapid_ramp",
+      "group_id": "rapid_ramp_sign_onset_0",
+      "split": "calibration",
+      "case": {
+        "family": "rapid_ramp",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 15.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 1.9017821778331474,
+        "final_pitch_deg": -4.078385041664925,
+        "path_group_id": "rapid_ramp_sign_onset_0",
+        "split_group_id": "rapid_ramp_sign_onset_0",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d065_rapid_ramp_s0_l1",
+      "family": "rapid_ramp",
+      "group_id": "rapid_ramp_sign_onset_0",
+      "split": "calibration",
+      "case": {
+        "family": "rapid_ramp",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 15.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 2.324400439573847,
+        "final_pitch_deg": -4.984692828701575,
+        "path_group_id": "rapid_ramp_sign_onset_0",
+        "split_group_id": "rapid_ramp_sign_onset_0",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d066_rapid_ramp_s0_l2",
+      "family": "rapid_ramp",
+      "group_id": "rapid_ramp_sign_onset_0",
+      "split": "calibration",
+      "case": {
+        "family": "rapid_ramp",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 15.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 2.747018701314546,
+        "final_pitch_deg": -5.891000615738225,
+        "path_group_id": "rapid_ramp_sign_onset_0",
+        "split_group_id": "rapid_ramp_sign_onset_0",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d067_rapid_ramp_s0_l3",
+      "family": "rapid_ramp",
+      "group_id": "rapid_ramp_sign_onset_0",
+      "split": "calibration",
+      "case": {
+        "family": "rapid_ramp",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 15.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 3.169636963055246,
+        "final_pitch_deg": -6.797308402774875,
+        "path_group_id": "rapid_ramp_sign_onset_0",
+        "split_group_id": "rapid_ramp_sign_onset_0",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d068_rapid_ramp_s1_l0",
+      "family": "rapid_ramp",
+      "group_id": "rapid_ramp_sign_onset_1",
+      "split": "validation",
+      "case": {
+        "family": "rapid_ramp",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 16.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.3441458618106277,
+        "final_offset_y_mm": -0.49149122657339506,
+        "final_roll_deg": -3.686184199300463,
+        "final_pitch_deg": 2.5810939635797077,
+        "path_group_id": "rapid_ramp_sign_onset_1",
+        "split_group_id": "rapid_ramp_sign_onset_1",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d069_rapid_ramp_s1_l1",
+      "family": "rapid_ramp",
+      "group_id": "rapid_ramp_sign_onset_1",
+      "split": "validation",
+      "case": {
+        "family": "rapid_ramp",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 16.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.43018232726328465,
+        "final_offset_y_mm": -0.6143640332167438,
+        "final_roll_deg": -4.505336243589455,
+        "final_pitch_deg": 3.1546703999307537,
+        "path_group_id": "rapid_ramp_sign_onset_1",
+        "split_group_id": "rapid_ramp_sign_onset_1",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d070_rapid_ramp_s1_l2",
+      "family": "rapid_ramp",
+      "group_id": "rapid_ramp_sign_onset_1",
+      "split": "validation",
+      "case": {
+        "family": "rapid_ramp",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 16.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.5162187927159415,
+        "final_offset_y_mm": -0.7372368398600926,
+        "final_roll_deg": -5.324488287878447,
+        "final_pitch_deg": 3.7282468362818,
+        "path_group_id": "rapid_ramp_sign_onset_1",
+        "split_group_id": "rapid_ramp_sign_onset_1",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d071_rapid_ramp_s1_l3",
+      "family": "rapid_ramp",
+      "group_id": "rapid_ramp_sign_onset_1",
+      "split": "validation",
+      "case": {
+        "family": "rapid_ramp",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 16.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.6022552581685984,
+        "final_offset_y_mm": -0.8601096465034412,
+        "final_roll_deg": -6.143640332167439,
+        "final_pitch_deg": 4.301823272632846,
+        "path_group_id": "rapid_ramp_sign_onset_1",
+        "split_group_id": "rapid_ramp_sign_onset_1",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d072_rapid_ramp_s2_l0",
+      "family": "rapid_ramp",
+      "group_id": "rapid_ramp_sign_onset_2",
+      "split": "calibration",
+      "case": {
+        "family": "rapid_ramp",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 17.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": -0.0,
+        "final_roll_deg": -2.581093963579707,
+        "final_pitch_deg": -3.686184199300463,
+        "path_group_id": "rapid_ramp_sign_onset_2",
+        "split_group_id": "rapid_ramp_sign_onset_2",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d073_rapid_ramp_s2_l1",
+      "family": "rapid_ramp",
+      "group_id": "rapid_ramp_sign_onset_2",
+      "split": "calibration",
+      "case": {
+        "family": "rapid_ramp",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 17.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": -0.0,
+        "final_roll_deg": -3.1546703999307533,
+        "final_pitch_deg": -4.505336243589455,
+        "path_group_id": "rapid_ramp_sign_onset_2",
+        "split_group_id": "rapid_ramp_sign_onset_2",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d074_rapid_ramp_s2_l2",
+      "family": "rapid_ramp",
+      "group_id": "rapid_ramp_sign_onset_2",
+      "split": "calibration",
+      "case": {
+        "family": "rapid_ramp",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 17.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": -0.0,
+        "final_roll_deg": -3.7282468362817993,
+        "final_pitch_deg": -5.324488287878447,
+        "path_group_id": "rapid_ramp_sign_onset_2",
+        "split_group_id": "rapid_ramp_sign_onset_2",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d075_rapid_ramp_s2_l3",
+      "family": "rapid_ramp",
+      "group_id": "rapid_ramp_sign_onset_2",
+      "split": "calibration",
+      "case": {
+        "family": "rapid_ramp",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 17.5,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": -0.0,
+        "final_roll_deg": -4.301823272632845,
+        "final_pitch_deg": -6.143640332167439,
+        "path_group_id": "rapid_ramp_sign_onset_2",
+        "split_group_id": "rapid_ramp_sign_onset_2",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d076_rapid_ramp_s3_l0",
+      "family": "rapid_ramp",
+      "group_id": "rapid_ramp_sign_onset_3",
+      "split": "calibration",
+      "case": {
+        "family": "rapid_ramp",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 18.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.2535709570444197,
+        "final_offset_y_mm": 0.5437846722219899,
+        "final_roll_deg": 4.078385041664925,
+        "final_pitch_deg": 1.9017821778331474,
+        "path_group_id": "rapid_ramp_sign_onset_3",
+        "split_group_id": "rapid_ramp_sign_onset_3",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d077_rapid_ramp_s3_l1",
+      "family": "rapid_ramp",
+      "group_id": "rapid_ramp_sign_onset_3",
+      "split": "calibration",
+      "case": {
+        "family": "rapid_ramp",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 18.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.31696369630552457,
+        "final_offset_y_mm": 0.6797308402774874,
+        "final_roll_deg": 4.984692828701575,
+        "final_pitch_deg": 2.324400439573847,
+        "path_group_id": "rapid_ramp_sign_onset_3",
+        "split_group_id": "rapid_ramp_sign_onset_3",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d078_rapid_ramp_s3_l2",
+      "family": "rapid_ramp",
+      "group_id": "rapid_ramp_sign_onset_3",
+      "split": "calibration",
+      "case": {
+        "family": "rapid_ramp",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 18.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.38035643556662946,
+        "final_offset_y_mm": 0.8156770083329848,
+        "final_roll_deg": 5.891000615738225,
+        "final_pitch_deg": 2.747018701314546,
+        "path_group_id": "rapid_ramp_sign_onset_3",
+        "split_group_id": "rapid_ramp_sign_onset_3",
+        "sample_role": "detector_v2_development"
+      }
+    },
+    {
+      "case_id": "d079_rapid_ramp_s3_l3",
+      "family": "rapid_ramp",
+      "group_id": "rapid_ramp_sign_onset_3",
+      "split": "calibration",
+      "case": {
+        "family": "rapid_ramp",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 18.0,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.44374917482773435,
+        "final_offset_y_mm": 0.9516231763884823,
+        "final_roll_deg": 6.797308402774875,
+        "final_pitch_deg": 3.169636963055246,
+        "path_group_id": "rapid_ramp_sign_onset_3",
+        "split_group_id": "rapid_ramp_sign_onset_3",
+        "sample_role": "detector_v2_development"
+      }
+    }
+  ],
+  "nominal_schedule": [
+    {
+      "case_id": "d025_terminal_band_s2_l1",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d056_combined_s2_l0",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d005_successful_controls_s1_l1",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d041_oblique_tilt_s2_l1",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d021_terminal_band_s1_l1",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d034_oblique_tilt_s0_l2",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d028_terminal_band_s3_l0",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d060_combined_s3_l0",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d074_rapid_ramp_s2_l2",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d019_terminal_band_s0_l3",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d004_successful_controls_s1_l0",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d011_successful_controls_s2_l3",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d035_oblique_tilt_s0_l3",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d040_oblique_tilt_s2_l0",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d054_combined_s1_l2",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d006_successful_controls_s1_l2",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d069_rapid_ramp_s1_l1",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d020_terminal_band_s1_l0",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d037_oblique_tilt_s1_l1",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d048_combined_s0_l0",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d008_successful_controls_s2_l0",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d068_rapid_ramp_s1_l0",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d038_oblique_tilt_s1_l2",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d051_combined_s0_l3",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d045_oblique_tilt_s3_l1",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d057_combined_s2_l1",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d003_successful_controls_s0_l3",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d062_combined_s3_l2",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d058_combined_s2_l2",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d017_terminal_band_s0_l1",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d044_oblique_tilt_s3_l0",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d013_successful_controls_s3_l1",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d015_successful_controls_s3_l3",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d032_oblique_tilt_s0_l0",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d024_terminal_band_s2_l0",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d059_combined_s2_l3",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d043_oblique_tilt_s2_l3",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d029_terminal_band_s3_l1",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d067_rapid_ramp_s0_l3",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d012_successful_controls_s3_l0",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d014_successful_controls_s3_l2",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d079_rapid_ramp_s3_l3",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d022_terminal_band_s1_l2",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d055_combined_s1_l3",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d010_successful_controls_s2_l2",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d076_rapid_ramp_s3_l0",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d077_rapid_ramp_s3_l1",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d052_combined_s1_l0",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d073_rapid_ramp_s2_l1",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d065_rapid_ramp_s0_l1",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d031_terminal_band_s3_l3",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d001_successful_controls_s0_l1",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d064_rapid_ramp_s0_l0",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d072_rapid_ramp_s2_l0",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d007_successful_controls_s1_l3",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d049_combined_s0_l1",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d036_oblique_tilt_s1_l0",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d053_combined_s1_l1",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d009_successful_controls_s2_l1",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d063_combined_s3_l3",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d075_rapid_ramp_s2_l3",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d046_oblique_tilt_s3_l2",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d023_terminal_band_s1_l3",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d002_successful_controls_s0_l2",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d050_combined_s0_l2",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d061_combined_s3_l1",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d027_terminal_band_s2_l3",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d026_terminal_band_s2_l2",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d066_rapid_ramp_s0_l2",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d042_oblique_tilt_s2_l2",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d070_rapid_ramp_s1_l2",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d047_oblique_tilt_s3_l3",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d018_terminal_band_s0_l2",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d000_successful_controls_s0_l0",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d030_terminal_band_s3_l2",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d071_rapid_ramp_s1_l3",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d033_oblique_tilt_s0_l1",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d039_oblique_tilt_s1_l3",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d016_terminal_band_s0_l0",
+      "policy": "nominal",
+      "stage": "reference"
+    },
+    {
+      "case_id": "d078_rapid_ramp_s3_l2",
+      "policy": "nominal",
+      "stage": "reference"
+    }
+  ],
+  "comparison_schedule": [
+    {
+      "case_id": "d044_oblique_tilt_s3_l0",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d044_oblique_tilt_s3_l0",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d039_oblique_tilt_s1_l3",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d039_oblique_tilt_s1_l3",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d077_rapid_ramp_s3_l1",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d077_rapid_ramp_s3_l1",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d009_successful_controls_s2_l1",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d009_successful_controls_s2_l1",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d057_combined_s2_l1",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d057_combined_s2_l1",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d049_combined_s0_l1",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d049_combined_s0_l1",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d029_terminal_band_s3_l1",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d029_terminal_band_s3_l1",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d067_rapid_ramp_s0_l3",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d067_rapid_ramp_s0_l3",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d040_oblique_tilt_s2_l0",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d040_oblique_tilt_s2_l0",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d003_successful_controls_s0_l3",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d003_successful_controls_s0_l3",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d013_successful_controls_s3_l1",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d013_successful_controls_s3_l1",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d055_combined_s1_l3",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d055_combined_s1_l3",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d024_terminal_band_s2_l0",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d024_terminal_band_s2_l0",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d052_combined_s1_l0",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d052_combined_s1_l0",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d063_combined_s3_l3",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d063_combined_s3_l3",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d005_successful_controls_s1_l1",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d005_successful_controls_s1_l1",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d032_oblique_tilt_s0_l0",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d032_oblique_tilt_s0_l0",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d060_combined_s3_l0",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d060_combined_s3_l0",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d064_rapid_ramp_s0_l0",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d064_rapid_ramp_s0_l0",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d022_terminal_band_s1_l2",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d022_terminal_band_s1_l2",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d071_rapid_ramp_s1_l3",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d071_rapid_ramp_s1_l3",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d000_successful_controls_s0_l0",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d000_successful_controls_s0_l0",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d001_successful_controls_s0_l1",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d001_successful_controls_s0_l1",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d054_combined_s1_l2",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d054_combined_s1_l2",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d014_successful_controls_s3_l2",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d014_successful_controls_s3_l2",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d004_successful_controls_s1_l0",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d004_successful_controls_s1_l0",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d058_combined_s2_l2",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d058_combined_s2_l2",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d078_rapid_ramp_s3_l2",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d078_rapid_ramp_s3_l2",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d030_terminal_band_s3_l2",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d030_terminal_band_s3_l2",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d046_oblique_tilt_s3_l2",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d046_oblique_tilt_s3_l2",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d068_rapid_ramp_s1_l0",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d068_rapid_ramp_s1_l0",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d011_successful_controls_s2_l3",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d011_successful_controls_s2_l3",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d015_successful_controls_s3_l3",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d015_successful_controls_s3_l3",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d012_successful_controls_s3_l0",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d012_successful_controls_s3_l0",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d041_oblique_tilt_s2_l1",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d041_oblique_tilt_s2_l1",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d033_oblique_tilt_s0_l1",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d033_oblique_tilt_s0_l1",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d042_oblique_tilt_s2_l2",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d042_oblique_tilt_s2_l2",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d034_oblique_tilt_s0_l2",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d034_oblique_tilt_s0_l2",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d076_rapid_ramp_s3_l0",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d076_rapid_ramp_s3_l0",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d069_rapid_ramp_s1_l1",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d069_rapid_ramp_s1_l1",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d020_terminal_band_s1_l0",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d020_terminal_band_s1_l0",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d047_oblique_tilt_s3_l3",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d047_oblique_tilt_s3_l3",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d006_successful_controls_s1_l2",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d006_successful_controls_s1_l2",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d043_oblique_tilt_s2_l3",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d043_oblique_tilt_s2_l3",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d072_rapid_ramp_s2_l0",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d072_rapid_ramp_s2_l0",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d048_combined_s0_l0",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d048_combined_s0_l0",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d025_terminal_band_s2_l1",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d025_terminal_band_s2_l1",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d056_combined_s2_l0",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d056_combined_s2_l0",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d008_successful_controls_s2_l0",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d008_successful_controls_s2_l0",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d051_combined_s0_l3",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d051_combined_s0_l3",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d066_rapid_ramp_s0_l2",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d066_rapid_ramp_s0_l2",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d018_terminal_band_s0_l2",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d018_terminal_band_s0_l2",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d061_combined_s3_l1",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d061_combined_s3_l1",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d010_successful_controls_s2_l2",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d010_successful_controls_s2_l2",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d045_oblique_tilt_s3_l1",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d045_oblique_tilt_s3_l1",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d007_successful_controls_s1_l3",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d007_successful_controls_s1_l3",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d079_rapid_ramp_s3_l3",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d079_rapid_ramp_s3_l3",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d019_terminal_band_s0_l3",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d019_terminal_band_s0_l3",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d075_rapid_ramp_s2_l3",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d075_rapid_ramp_s2_l3",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d023_terminal_band_s1_l3",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d023_terminal_band_s1_l3",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d017_terminal_band_s0_l1",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d017_terminal_band_s0_l1",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d016_terminal_band_s0_l0",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d016_terminal_band_s0_l0",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d026_terminal_band_s2_l2",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d026_terminal_band_s2_l2",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d059_combined_s2_l3",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d059_combined_s2_l3",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d065_rapid_ramp_s0_l1",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d065_rapid_ramp_s0_l1",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d037_oblique_tilt_s1_l1",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d037_oblique_tilt_s1_l1",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d036_oblique_tilt_s1_l0",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d036_oblique_tilt_s1_l0",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d031_terminal_band_s3_l3",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d031_terminal_band_s3_l3",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d002_successful_controls_s0_l2",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d002_successful_controls_s0_l2",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d028_terminal_band_s3_l0",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d028_terminal_band_s3_l0",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d021_terminal_band_s1_l1",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d021_terminal_band_s1_l1",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d027_terminal_band_s2_l3",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d027_terminal_band_s2_l3",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d053_combined_s1_l1",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d053_combined_s1_l1",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d070_rapid_ramp_s1_l2",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d070_rapid_ramp_s1_l2",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d073_rapid_ramp_s2_l1",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d073_rapid_ramp_s2_l1",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d035_oblique_tilt_s0_l3",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d035_oblique_tilt_s0_l3",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d062_combined_s3_l2",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d062_combined_s3_l2",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d038_oblique_tilt_s1_l2",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d038_oblique_tilt_s1_l2",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d074_rapid_ramp_s2_l2",
+      "policy": "v1",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d074_rapid_ramp_s2_l2",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d050_combined_s0_l2",
+      "policy": "v2",
+      "stage": "comparison"
+    },
+    {
+      "case_id": "d050_combined_s0_l2",
+      "policy": "v1",
+      "stage": "comparison"
+    }
+  ],
+  "design": {
+    "history_s": 0.5,
+    "check_s": 0.1,
+    "minimum_command_mm": 0.1,
+    "contact_margin_mm": 0.1,
+    "consecutive_checks": 2,
+    "stop_s": 0.25,
+    "retract_mm": 1.0,
+    "retract_s": 0.5,
+    "rejoin_s": 0.5,
+    "max_interventions": 2,
+    "insertion_budget_s": 20.0,
+    "nonstall_alert_budget": 0.1
+  },
+  "unloading_design": {
+    "actual_target_mm": 0.5,
+    "max_command_mm": 5.0,
+    "command_ramp_s": 4.0,
+    "recovery_timeout_s": 5.0,
+    "verification_hold_s": 0.25
+  },
+  "dewedge_design": {
+    "relaxation_s": 0.5,
+    "post_verification_hold_s": 0.25
+  },
+  "policy_source_sha256": {
+    "research/productivity_control.py": "03f4fd21ca6adb2f88f9649477d2b12370e6cb2c4556dcc22631b58dd2c3a262",
+    "simulation/productivity_control.py": "085fd486208fe80b88d1314729a4ab6d9edd312445508f0c55cbec9809fd5d4b",
+    "research/productivity_unloading.py": "0317b208c963e52bc2c30b614fca0cdd4e54a67fe43888c9035fd2f77c12420f",
+    "simulation/productivity_unloading.py": "8ddd17fc748c8f116772210de0d44c6e6a448c88153d097de55904690321e8f2",
+    "research/productivity_dewedge.py": "85ea24f65e566baeb3ccb2b6d5b315ebab567a5a4e3f8d286e277cf37635ab71",
+    "simulation/productivity_dewedge.py": "c5f658c8ee25a9bd05e2fca91f619c41e128c04f9b448e7c2b693a19b90f2e89",
+    "simulation/forge_backend.py": "fa60db0c72e74cb79a0b76e5e2819dbc3419c53e0ec56c20f36e88d85712887e",
+    "simulation/contact.py": "a23500505916cf97fe792258fedae0ea583f03b2652dc42121e2d761fbb6e522",
+    "simulation/forge_experiment.py": "f6e94fb4c1ee614ef1e6cc7424583bb6149774a4a881257ff5c1b2999f935357",
+    "research/forge_protocol.py": "c636047d37dfffad068ad5f30a4a592aee70abcdf4b58ec99086e554b10d194d",
+    "research/phase2_protocol.py": "3d05bd187320591bb9e69d38f9dc3263925608f17213c945caf8c7a6adcc84ca",
+    "research/phase2b.py": "0dfa4d32fd924a72576a7f1316198352147a389e5fe4e328727eb0637a94949a",
+    "experiments/forge_phase2.json": "3657344364a049517872c72d572e583499b39bf6488ef679f9432baeae505557",
+    "experiments/productivity_control_calibration.json": "64b95b05689507778eee00807f171c74ea9d33d157221a6d561ae2ee1d07ab92"
+  },
+  "previous_experiment": "outputs/Contact-Productivity-Dewedge-v1",
+  "previous_manifest_sha256": "6ca4f556da5f0bb2e3aef0be05bc43980a7b5c16cd43022a4b393d4e37995bb5",
+  "excluded_benchmark_plan_sha256": "ed84d146fdefb44997ff39584e05516c85885ec0ac81e27da3be59f3b2ff9fb7",
+  "exact_benchmark_path_overlaps": 0,
+  "calibration_grid": {
+    "urgent_eta_threshold": [
+      0.025,
+      0.05,
+      0.1,
+      0.15,
+      0.2
+    ],
+    "urgent_deficit_acceleration_mm_s2": [
+      0.1,
+      0.25,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "terminal_rate_mm_s": [
+      0.01,
+      0.025,
+      0.05,
+      0.1
+    ]
+  },
+  "selection": {
+    "max_additional_successful_trajectory_alerts": 0,
+    "minimum_useful_lead_s": 0.1,
+    "objective": "Maximize failed nominal trajectories newly covered safely or alerted >=0.1 s earlier; zero additional alerts on successful calibration trajectories. Then maximize capped lead, then prefer conservative thresholds.",
+    "calibration_groups": 15,
+    "validation_groups": 5,
+    "freeze_before_closed_loop": true
+  },
+  "no_old_result_inputs": true,
+  "no_final_generalization_test": true
+}

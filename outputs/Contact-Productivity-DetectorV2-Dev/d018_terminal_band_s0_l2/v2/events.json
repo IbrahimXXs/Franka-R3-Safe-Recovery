@@ -1,0 +1,101 @@
+[
+  {
+    "intervention": 1,
+    "trigger_time_s": 10.9,
+    "trigger_depth_mm": 19.283776730298996,
+    "trigger_command_depth_mm": 20.0,
+    "eta_raw": null,
+    "wrist_force_n": 1.05446195602417,
+    "wrist_torque_nm": 0.016431735828518867,
+    "normal_load_n": 4.400633335113525,
+    "unloading_status": "verified",
+    "max_commanded_retract_mm": 0.6024537037037021,
+    "max_actual_retract_mm": 0.7011815905570984,
+    "trigger_peg_position": [
+      0.6005069017410278,
+      0.00024115628912113607,
+      0.055716224014759064
+    ],
+    "trigger_peg_quaternion": [
+      -0.0002817386412061751,
+      -0.026454657316207886,
+      -0.01248373743146658,
+      0.9995720386505127
+    ],
+    "neutral_peg_position": [
+      0.6000000238418579,
+      0.0,
+      0.055716224014759064
+    ],
+    "neutral_peg_quaternion": [
+      4.870310294791125e-05,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "captured_grasp_position": [
+      -2.5599729269742966e-05,
+      -2.735876478254795e-06,
+      0.032395873218774796
+    ],
+    "captured_grasp_quaternion": [
+      0.0002711173438001424,
+      0.00011089623876614496,
+      1.0,
+      -9.591596608515829e-05
+    ],
+    "nominal_peg_quaternion": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "trigger_nominal_misalignment": {
+      "offset_x_mm": 0.0,
+      "offset_y_mm": 0.0,
+      "roll_deg": 1.4610011505813603,
+      "pitch_deg": -3.1331270782941547
+    },
+    "previous_stall": false,
+    "actual_retract_at_last_sample_mm": 0.6131231784820557,
+    "first_crossing_time_s": 12.516666666666666,
+    "time_to_0_5_mm_s": 1.6166666666666654,
+    "verification_time_s": 12.766666666666666,
+    "retry_ready_time_s": 13.016666666666666,
+    "hold_rebounds": 0,
+    "max_relax_fraction": 1.0,
+    "after_time_s": 13.016666666666666,
+    "after_depth_mm": 18.67065355181694,
+    "after_wrist_force_n": 0.0043745399452745914,
+    "after_wrist_torque_nm": 0.0002081185084534809,
+    "after_normal_load_n": 0.0,
+    "after_contact_force_n": 0.0,
+    "retract_end_time_s": 13.01666666647725,
+    "retract_end_actual_depth_mm": 18.67065355181694,
+    "actual_retraction_mm": 0.6131231784820557,
+    "verified_before_retry": true,
+    "retry_peg_position": [
+      0.6000357866287231,
+      1.957400127139408e-05,
+      0.05632934719324112
+    ],
+    "retry_peg_quaternion": [
+      0.00016504150698892772,
+      -0.00057794846361503,
+      -0.00026180464192293584,
+      0.9999997615814209
+    ],
+    "retry_grasp_position": [
+      5.001846147933975e-06,
+      -3.041150193894282e-06,
+      0.03238843008875847
+    ],
+    "retry_grasp_quaternion": [
+      1.7640845726418775e-06,
+      -7.715231731708627e-06,
+      1.0,
+      -8.045630238484591e-06
+    ],
+    "retry_started_s": 13.516666666666666
+  }
+]

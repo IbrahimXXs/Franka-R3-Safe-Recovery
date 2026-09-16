@@ -1,0 +1,1 @@
+./productivity_detector_v2.sh --headless --output-dir outputs/Contact-Productivity-DetectorV2-Dev

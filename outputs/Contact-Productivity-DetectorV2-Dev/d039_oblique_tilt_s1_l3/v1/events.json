@@ -1,0 +1,74 @@
+[
+  {
+    "intervention": 1,
+    "trigger_time_s": 9.1,
+    "trigger_depth_mm": 16.66758731007576,
+    "trigger_command_depth_mm": 18.94636718750032,
+    "eta_raw": 0.14520234323900624,
+    "wrist_force_n": 1.9262876510620117,
+    "wrist_torque_nm": 0.0443321168422699,
+    "normal_load_n": 16.092941284179688,
+    "unloading_status": "safety_stop",
+    "max_commanded_retract_mm": 0.0,
+    "max_actual_retract_mm": 0.0,
+    "trigger_peg_position": [
+      0.5996361970901489,
+      -0.0005359782371670008,
+      0.0583324134349823
+    ],
+    "trigger_peg_quaternion": [
+      -7.722246664343402e-05,
+      0.021585198119282722,
+      0.030957845970988274,
+      0.9992876052856445
+    ],
+    "neutral_peg_position": [
+      0.6000000238418579,
+      0.0,
+      0.0583324134349823
+    ],
+    "neutral_peg_quaternion": [
+      0.0005916147492825985,
+      0.0,
+      0.0,
+      0.9999998211860657
+    ],
+    "captured_grasp_position": [
+      7.337599527090788e-05,
+      -5.61554916203022e-05,
+      0.03239721432328224
+    ],
+    "captured_grasp_quaternion": [
+      -0.0009869119385257363,
+      -0.0007694812957197428,
+      0.9999987483024597,
+      0.0009000078425742686
+    ],
+    "nominal_peg_quaternion": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "trigger_nominal_misalignment": {
+      "offset_x_mm": 0.0,
+      "offset_y_mm": 0.0,
+      "roll_deg": -4.025054886471547,
+      "pitch_deg": 2.8183737732152045
+    },
+    "previous_stall": false,
+    "actual_retract_at_last_sample_mm": -0.0037476420402526855,
+    "first_crossing_time_s": null,
+    "time_to_0_5_mm_s": null,
+    "verification_time_s": null,
+    "retry_ready_time_s": null,
+    "hold_rebounds": 0,
+    "max_relax_fraction": 0.0,
+    "after_time_s": 9.15,
+    "after_depth_mm": 16.671334952116013,
+    "after_wrist_force_n": 0.11912534385919571,
+    "after_wrist_torque_nm": 0.12080417573451996,
+    "after_normal_load_n": 18.512950897216797,
+    "after_contact_force_n": 0.12027871608734131
+  }
+]
