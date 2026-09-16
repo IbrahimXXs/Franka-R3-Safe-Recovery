@@ -1,0 +1,3288 @@
+{
+  "schema": "Contact-Productivity-DetectorV2-Generalization-v1",
+  "frozen_at_utc": "2026-09-16T04:07:00.802920+00:00",
+  "cases": [
+    {
+      "case_id": "h000_easy_controls_easy_v0",
+      "family": "easy_controls",
+      "severity": "easy",
+      "sign_variant": 0,
+      "group_id": "h000_easy_controls_easy_v0",
+      "split": "held_out",
+      "ramp_onset_mm": 6.8,
+      "offset_magnitude_mm": 0.16,
+      "tilt_magnitude_deg": 0.8,
+      "case": {
+        "family": "easy_controls",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 6.8,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.148349416730686,
+        "final_offset_y_mm": 0.05993705494654592,
+        "final_roll_deg": 0.2996852747327296,
+        "final_pitch_deg": -0.74174708365343,
+        "path_group_id": "h000_easy_controls_easy_v0",
+        "split_group_id": "h000_easy_controls_easy_v0",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h001_easy_controls_easy_v1",
+      "family": "easy_controls",
+      "severity": "easy",
+      "sign_variant": 1,
+      "group_id": "h001_easy_controls_easy_v1",
+      "split": "held_out",
+      "ramp_onset_mm": 10.4,
+      "offset_magnitude_mm": 0.16,
+      "tilt_magnitude_deg": 0.8,
+      "case": {
+        "family": "easy_controls",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 10.4,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.10911973760999975,
+        "final_offset_y_mm": -0.11701659225906727,
+        "final_roll_deg": -0.5850829612953364,
+        "final_pitch_deg": 0.5455986880499988,
+        "path_group_id": "h001_easy_controls_easy_v1",
+        "split_group_id": "h001_easy_controls_easy_v1",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h002_easy_controls_easy_v2",
+      "family": "easy_controls",
+      "severity": "easy",
+      "sign_variant": 2,
+      "group_id": "h002_easy_controls_easy_v2",
+      "split": "held_out",
+      "ramp_onset_mm": 14.2,
+      "offset_magnitude_mm": 0.16,
+      "tilt_magnitude_deg": 0.8,
+      "case": {
+        "family": "easy_controls",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 14.2,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.07263847995832749,
+        "final_offset_y_mm": -0.14256104387013885,
+        "final_roll_deg": -0.7128052193506943,
+        "final_pitch_deg": -0.3631923997916375,
+        "path_group_id": "h002_easy_controls_easy_v2",
+        "split_group_id": "h002_easy_controls_easy_v2",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h003_easy_controls_easy_v3",
+      "family": "easy_controls",
+      "severity": "easy",
+      "sign_variant": 3,
+      "group_id": "h003_easy_controls_easy_v3",
+      "split": "held_out",
+      "ramp_onset_mm": 17.2,
+      "offset_magnitude_mm": 0.16,
+      "tilt_magnitude_deg": 0.8,
+      "case": {
+        "family": "easy_controls",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 17.2,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.13714676811233797,
+        "final_offset_y_mm": 0.08240609198560866,
+        "final_roll_deg": 0.4120304599280433,
+        "final_pitch_deg": 0.68573384056169,
+        "path_group_id": "h003_easy_controls_easy_v3",
+        "split_group_id": "h003_easy_controls_easy_v3",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h004_easy_controls_easy_v0",
+      "family": "easy_controls",
+      "severity": "easy",
+      "sign_variant": 0,
+      "group_id": "h004_easy_controls_easy_v0",
+      "split": "held_out",
+      "ramp_onset_mm": 10.4,
+      "offset_magnitude_mm": 0.34,
+      "tilt_magnitude_deg": 1.7000000000000002,
+      "case": {
+        "family": "easy_controls",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 10.4,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.31524251055270774,
+        "final_offset_y_mm": 0.1273662417614101,
+        "final_roll_deg": 0.6368312088070505,
+        "final_pitch_deg": -1.5762125527635387,
+        "path_group_id": "h004_easy_controls_easy_v0",
+        "split_group_id": "h004_easy_controls_easy_v0",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h005_easy_controls_easy_v1",
+      "family": "easy_controls",
+      "severity": "easy",
+      "sign_variant": 1,
+      "group_id": "h005_easy_controls_easy_v1",
+      "split": "held_out",
+      "ramp_onset_mm": 14.2,
+      "offset_magnitude_mm": 0.34,
+      "tilt_magnitude_deg": 1.7,
+      "case": {
+        "family": "easy_controls",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 14.2,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.2318794424212495,
+        "final_offset_y_mm": -0.248660258550518,
+        "final_roll_deg": -1.2433012927525897,
+        "final_pitch_deg": 1.1593972121062475,
+        "path_group_id": "h005_easy_controls_easy_v1",
+        "split_group_id": "h005_easy_controls_easy_v1",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h006_easy_controls_easy_v2",
+      "family": "easy_controls",
+      "severity": "easy",
+      "sign_variant": 2,
+      "group_id": "h006_easy_controls_easy_v2",
+      "split": "held_out",
+      "ramp_onset_mm": 17.2,
+      "offset_magnitude_mm": 0.33999999999999997,
+      "tilt_magnitude_deg": 1.7,
+      "case": {
+        "family": "easy_controls",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 17.2,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.15435676991144592,
+        "final_offset_y_mm": -0.30294221822404505,
+        "final_roll_deg": -1.5147110911202253,
+        "final_pitch_deg": -0.7717838495572296,
+        "path_group_id": "h006_easy_controls_easy_v2",
+        "split_group_id": "h006_easy_controls_easy_v2",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h007_easy_controls_easy_v3",
+      "family": "easy_controls",
+      "severity": "easy",
+      "sign_variant": 3,
+      "group_id": "h007_easy_controls_easy_v3",
+      "split": "held_out",
+      "ramp_onset_mm": 6.8,
+      "offset_magnitude_mm": 0.34,
+      "tilt_magnitude_deg": 1.7,
+      "case": {
+        "family": "easy_controls",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 6.8,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.2914368822387182,
+        "final_offset_y_mm": 0.1751129454694184,
+        "final_roll_deg": 0.875564727347092,
+        "final_pitch_deg": 1.457184411193591,
+        "path_group_id": "h007_easy_controls_easy_v3",
+        "split_group_id": "h007_easy_controls_easy_v3",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h008_axis_offset_moderate_v0",
+      "family": "axis_offset",
+      "severity": "moderate",
+      "sign_variant": 0,
+      "group_id": "h008_axis_offset_moderate_v0",
+      "split": "held_out",
+      "ramp_onset_mm": 10.4,
+      "offset_magnitude_mm": 0.83,
+      "tilt_magnitude_deg": 0.0,
+      "case": {
+        "family": "axis_offset",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 10.4,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.83,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "h008_axis_offset_moderate_v0",
+        "split_group_id": "h008_axis_offset_moderate_v0",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h009_axis_offset_moderate_v1",
+      "family": "axis_offset",
+      "severity": "moderate",
+      "sign_variant": 1,
+      "group_id": "h009_axis_offset_moderate_v1",
+      "split": "held_out",
+      "ramp_onset_mm": 14.2,
+      "offset_magnitude_mm": 0.83,
+      "tilt_magnitude_deg": 0.0,
+      "case": {
+        "family": "axis_offset",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 14.2,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.83,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "h009_axis_offset_moderate_v1",
+        "split_group_id": "h009_axis_offset_moderate_v1",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h010_axis_offset_moderate_v2",
+      "family": "axis_offset",
+      "severity": "moderate",
+      "sign_variant": 2,
+      "group_id": "h010_axis_offset_moderate_v2",
+      "split": "held_out",
+      "ramp_onset_mm": 17.2,
+      "offset_magnitude_mm": 0.83,
+      "tilt_magnitude_deg": 0.0,
+      "case": {
+        "family": "axis_offset",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 17.2,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": -0.83,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "h010_axis_offset_moderate_v2",
+        "split_group_id": "h010_axis_offset_moderate_v2",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h011_axis_offset_moderate_v3",
+      "family": "axis_offset",
+      "severity": "moderate",
+      "sign_variant": 3,
+      "group_id": "h011_axis_offset_moderate_v3",
+      "split": "held_out",
+      "ramp_onset_mm": 6.8,
+      "offset_magnitude_mm": 0.83,
+      "tilt_magnitude_deg": 0.0,
+      "case": {
+        "family": "axis_offset",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 6.8,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.83,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "h011_axis_offset_moderate_v3",
+        "split_group_id": "h011_axis_offset_moderate_v3",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h012_axis_offset_severe_v0",
+      "family": "axis_offset",
+      "severity": "severe",
+      "sign_variant": 0,
+      "group_id": "h012_axis_offset_severe_v0",
+      "split": "held_out",
+      "ramp_onset_mm": 14.2,
+      "offset_magnitude_mm": 1.37,
+      "tilt_magnitude_deg": 0.0,
+      "case": {
+        "family": "axis_offset",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 14.2,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 1.37,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "h012_axis_offset_severe_v0",
+        "split_group_id": "h012_axis_offset_severe_v0",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h013_axis_offset_severe_v1",
+      "family": "axis_offset",
+      "severity": "severe",
+      "sign_variant": 1,
+      "group_id": "h013_axis_offset_severe_v1",
+      "split": "held_out",
+      "ramp_onset_mm": 17.2,
+      "offset_magnitude_mm": 1.37,
+      "tilt_magnitude_deg": 0.0,
+      "case": {
+        "family": "axis_offset",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 17.2,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -1.37,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "h013_axis_offset_severe_v1",
+        "split_group_id": "h013_axis_offset_severe_v1",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h014_axis_offset_severe_v2",
+      "family": "axis_offset",
+      "severity": "severe",
+      "sign_variant": 2,
+      "group_id": "h014_axis_offset_severe_v2",
+      "split": "held_out",
+      "ramp_onset_mm": 6.8,
+      "offset_magnitude_mm": 1.37,
+      "tilt_magnitude_deg": 0.0,
+      "case": {
+        "family": "axis_offset",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 6.8,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": -1.37,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "h014_axis_offset_severe_v2",
+        "split_group_id": "h014_axis_offset_severe_v2",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h015_axis_offset_severe_v3",
+      "family": "axis_offset",
+      "severity": "severe",
+      "sign_variant": 3,
+      "group_id": "h015_axis_offset_severe_v3",
+      "split": "held_out",
+      "ramp_onset_mm": 10.4,
+      "offset_magnitude_mm": 1.37,
+      "tilt_magnitude_deg": 0.0,
+      "case": {
+        "family": "axis_offset",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 10.4,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 1.37,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "h015_axis_offset_severe_v3",
+        "split_group_id": "h015_axis_offset_severe_v3",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h016_oblique_offset_moderate_v0",
+      "family": "oblique_offset",
+      "severity": "moderate",
+      "sign_variant": 0,
+      "group_id": "h016_oblique_offset_moderate_v0",
+      "split": "held_out",
+      "ramp_onset_mm": 14.2,
+      "offset_magnitude_mm": 0.8300000000000001,
+      "tilt_magnitude_deg": 0.0,
+      "case": {
+        "family": "oblique_offset",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 14.2,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.7695625992904336,
+        "final_offset_y_mm": 0.31092347253520697,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "h016_oblique_offset_moderate_v0",
+        "split_group_id": "h016_oblique_offset_moderate_v0",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h017_oblique_offset_moderate_v1",
+      "family": "oblique_offset",
+      "severity": "moderate",
+      "sign_variant": 1,
+      "group_id": "h017_oblique_offset_moderate_v1",
+      "split": "held_out",
+      "ramp_onset_mm": 17.2,
+      "offset_magnitude_mm": 0.83,
+      "tilt_magnitude_deg": 0.0,
+      "case": {
+        "family": "oblique_offset",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 17.2,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.5660586388518737,
+        "final_offset_y_mm": -0.6070235723439115,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "h017_oblique_offset_moderate_v1",
+        "split_group_id": "h017_oblique_offset_moderate_v1",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h018_oblique_offset_moderate_v2",
+      "family": "oblique_offset",
+      "severity": "moderate",
+      "sign_variant": 2,
+      "group_id": "h018_oblique_offset_moderate_v2",
+      "split": "held_out",
+      "ramp_onset_mm": 6.8,
+      "offset_magnitude_mm": 0.83,
+      "tilt_magnitude_deg": 0.0,
+      "case": {
+        "family": "oblique_offset",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 6.8,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.3768121147838238,
+        "final_offset_y_mm": -0.7395354150763452,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "h018_oblique_offset_moderate_v2",
+        "split_group_id": "h018_oblique_offset_moderate_v2",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h019_oblique_offset_moderate_v3",
+      "family": "oblique_offset",
+      "severity": "moderate",
+      "sign_variant": 3,
+      "group_id": "h019_oblique_offset_moderate_v3",
+      "split": "held_out",
+      "ramp_onset_mm": 10.4,
+      "offset_magnitude_mm": 0.83,
+      "tilt_magnitude_deg": 0.0,
+      "case": {
+        "family": "oblique_offset",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 10.4,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.7114488595827532,
+        "final_offset_y_mm": 0.4274816021753449,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "h019_oblique_offset_moderate_v3",
+        "split_group_id": "h019_oblique_offset_moderate_v3",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h020_oblique_offset_severe_v0",
+      "family": "oblique_offset",
+      "severity": "severe",
+      "sign_variant": 0,
+      "group_id": "h020_oblique_offset_severe_v0",
+      "split": "held_out",
+      "ramp_onset_mm": 17.2,
+      "offset_magnitude_mm": 1.37,
+      "tilt_magnitude_deg": 0.0,
+      "case": {
+        "family": "oblique_offset",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 17.2,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 1.2702418807564988,
+        "final_offset_y_mm": 0.5132110329797995,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "h020_oblique_offset_severe_v0",
+        "split_group_id": "h020_oblique_offset_severe_v0",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h021_oblique_offset_severe_v1",
+      "family": "oblique_offset",
+      "severity": "severe",
+      "sign_variant": 1,
+      "group_id": "h021_oblique_offset_severe_v1",
+      "split": "held_out",
+      "ramp_onset_mm": 6.8,
+      "offset_magnitude_mm": 1.37,
+      "tilt_magnitude_deg": 0.0,
+      "case": {
+        "family": "oblique_offset",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 6.8,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.934337753285623,
+        "final_offset_y_mm": -1.0019545712182636,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "h021_oblique_offset_severe_v1",
+        "split_group_id": "h021_oblique_offset_severe_v1",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h022_oblique_offset_severe_v2",
+      "family": "oblique_offset",
+      "severity": "severe",
+      "sign_variant": 2,
+      "group_id": "h022_oblique_offset_severe_v2",
+      "split": "held_out",
+      "ramp_onset_mm": 10.4,
+      "offset_magnitude_mm": 1.37,
+      "tilt_magnitude_deg": 0.0,
+      "case": {
+        "family": "oblique_offset",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 10.4,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.6219669846431791,
+        "final_offset_y_mm": -1.220678938138064,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "h022_oblique_offset_severe_v2",
+        "split_group_id": "h022_oblique_offset_severe_v2",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h023_oblique_offset_severe_v3",
+      "family": "oblique_offset",
+      "severity": "severe",
+      "sign_variant": 3,
+      "group_id": "h023_oblique_offset_severe_v3",
+      "split": "held_out",
+      "ramp_onset_mm": 14.2,
+      "offset_magnitude_mm": 1.37,
+      "tilt_magnitude_deg": 0.0,
+      "case": {
+        "family": "oblique_offset",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 14.2,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -1.174319201961894,
+        "final_offset_y_mm": 0.7056021626267742,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "h023_oblique_offset_severe_v3",
+        "split_group_id": "h023_oblique_offset_severe_v3",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h024_axis_tilt_moderate_v0",
+      "family": "axis_tilt",
+      "severity": "moderate",
+      "sign_variant": 0,
+      "group_id": "h024_axis_tilt_moderate_v0",
+      "split": "held_out",
+      "ramp_onset_mm": 17.2,
+      "offset_magnitude_mm": 0.0,
+      "tilt_magnitude_deg": 3.8,
+      "case": {
+        "family": "axis_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 17.2,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 3.8,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "h024_axis_tilt_moderate_v0",
+        "split_group_id": "h024_axis_tilt_moderate_v0",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h025_axis_tilt_moderate_v1",
+      "family": "axis_tilt",
+      "severity": "moderate",
+      "sign_variant": 1,
+      "group_id": "h025_axis_tilt_moderate_v1",
+      "split": "held_out",
+      "ramp_onset_mm": 6.8,
+      "offset_magnitude_mm": 0.0,
+      "tilt_magnitude_deg": 3.8,
+      "case": {
+        "family": "axis_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 6.8,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": -3.8,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "h025_axis_tilt_moderate_v1",
+        "split_group_id": "h025_axis_tilt_moderate_v1",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h026_axis_tilt_moderate_v2",
+      "family": "axis_tilt",
+      "severity": "moderate",
+      "sign_variant": 2,
+      "group_id": "h026_axis_tilt_moderate_v2",
+      "split": "held_out",
+      "ramp_onset_mm": 10.4,
+      "offset_magnitude_mm": 0.0,
+      "tilt_magnitude_deg": 3.8,
+      "case": {
+        "family": "axis_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 10.4,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": -3.8,
+        "path_group_id": "h026_axis_tilt_moderate_v2",
+        "split_group_id": "h026_axis_tilt_moderate_v2",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h027_axis_tilt_moderate_v3",
+      "family": "axis_tilt",
+      "severity": "moderate",
+      "sign_variant": 3,
+      "group_id": "h027_axis_tilt_moderate_v3",
+      "split": "held_out",
+      "ramp_onset_mm": 14.2,
+      "offset_magnitude_mm": 0.0,
+      "tilt_magnitude_deg": 3.8,
+      "case": {
+        "family": "axis_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 14.2,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 3.8,
+        "path_group_id": "h027_axis_tilt_moderate_v3",
+        "split_group_id": "h027_axis_tilt_moderate_v3",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h028_axis_tilt_severe_v0",
+      "family": "axis_tilt",
+      "severity": "severe",
+      "sign_variant": 0,
+      "group_id": "h028_axis_tilt_severe_v0",
+      "split": "held_out",
+      "ramp_onset_mm": 6.8,
+      "offset_magnitude_mm": 0.0,
+      "tilt_magnitude_deg": 7.3,
+      "case": {
+        "family": "axis_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 6.8,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 7.3,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "h028_axis_tilt_severe_v0",
+        "split_group_id": "h028_axis_tilt_severe_v0",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h029_axis_tilt_severe_v1",
+      "family": "axis_tilt",
+      "severity": "severe",
+      "sign_variant": 1,
+      "group_id": "h029_axis_tilt_severe_v1",
+      "split": "held_out",
+      "ramp_onset_mm": 10.4,
+      "offset_magnitude_mm": 0.0,
+      "tilt_magnitude_deg": 7.3,
+      "case": {
+        "family": "axis_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 10.4,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": -7.3,
+        "final_pitch_deg": 0.0,
+        "path_group_id": "h029_axis_tilt_severe_v1",
+        "split_group_id": "h029_axis_tilt_severe_v1",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h030_axis_tilt_severe_v2",
+      "family": "axis_tilt",
+      "severity": "severe",
+      "sign_variant": 2,
+      "group_id": "h030_axis_tilt_severe_v2",
+      "split": "held_out",
+      "ramp_onset_mm": 14.2,
+      "offset_magnitude_mm": 0.0,
+      "tilt_magnitude_deg": 7.3,
+      "case": {
+        "family": "axis_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 14.2,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": -7.3,
+        "path_group_id": "h030_axis_tilt_severe_v2",
+        "split_group_id": "h030_axis_tilt_severe_v2",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h031_axis_tilt_severe_v3",
+      "family": "axis_tilt",
+      "severity": "severe",
+      "sign_variant": 3,
+      "group_id": "h031_axis_tilt_severe_v3",
+      "split": "held_out",
+      "ramp_onset_mm": 17.2,
+      "offset_magnitude_mm": 0.0,
+      "tilt_magnitude_deg": 7.3,
+      "case": {
+        "family": "axis_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 17.2,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 0.0,
+        "final_pitch_deg": 7.3,
+        "path_group_id": "h031_axis_tilt_severe_v3",
+        "split_group_id": "h031_axis_tilt_severe_v3",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h032_oblique_tilt_moderate_v0",
+      "family": "oblique_tilt",
+      "severity": "moderate",
+      "sign_variant": 0,
+      "group_id": "h032_oblique_tilt_moderate_v0",
+      "split": "held_out",
+      "ramp_onset_mm": 6.8,
+      "offset_magnitude_mm": 0.0,
+      "tilt_magnitude_deg": 3.8,
+      "case": {
+        "family": "oblique_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 6.8,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 3.523298647353792,
+        "final_pitch_deg": 1.4235050549804655,
+        "path_group_id": "h032_oblique_tilt_moderate_v0",
+        "split_group_id": "h032_oblique_tilt_moderate_v0",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h033_oblique_tilt_moderate_v1",
+      "family": "oblique_tilt",
+      "severity": "moderate",
+      "sign_variant": 1,
+      "group_id": "h033_oblique_tilt_moderate_v1",
+      "split": "held_out",
+      "ramp_onset_mm": 10.4,
+      "offset_magnitude_mm": 0.0,
+      "tilt_magnitude_deg": 3.8,
+      "case": {
+        "family": "oblique_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 10.4,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": -2.591593768237494,
+        "final_pitch_deg": -2.7791440661528477,
+        "path_group_id": "h033_oblique_tilt_moderate_v1",
+        "split_group_id": "h033_oblique_tilt_moderate_v1",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h034_oblique_tilt_moderate_v2",
+      "family": "oblique_tilt",
+      "severity": "moderate",
+      "sign_variant": 2,
+      "group_id": "h034_oblique_tilt_moderate_v2",
+      "split": "held_out",
+      "ramp_onset_mm": 14.2,
+      "offset_magnitude_mm": 0.0,
+      "tilt_magnitude_deg": 3.7999999999999994,
+      "case": {
+        "family": "oblique_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 14.2,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 1.7251638990102778,
+        "final_pitch_deg": -3.3858247919157973,
+        "path_group_id": "h034_oblique_tilt_moderate_v2",
+        "split_group_id": "h034_oblique_tilt_moderate_v2",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h035_oblique_tilt_moderate_v3",
+      "family": "oblique_tilt",
+      "severity": "moderate",
+      "sign_variant": 3,
+      "group_id": "h035_oblique_tilt_moderate_v3",
+      "split": "held_out",
+      "ramp_onset_mm": 17.2,
+      "offset_magnitude_mm": 0.0,
+      "tilt_magnitude_deg": 3.8,
+      "case": {
+        "family": "oblique_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 17.2,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": -3.2572357426680267,
+        "final_pitch_deg": 1.9571446846582057,
+        "path_group_id": "h035_oblique_tilt_moderate_v3",
+        "split_group_id": "h035_oblique_tilt_moderate_v3",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h036_oblique_tilt_severe_v0",
+      "family": "oblique_tilt",
+      "severity": "severe",
+      "sign_variant": 0,
+      "group_id": "h036_oblique_tilt_severe_v0",
+      "split": "held_out",
+      "ramp_onset_mm": 10.4,
+      "offset_magnitude_mm": 0.0,
+      "tilt_magnitude_deg": 7.3,
+      "case": {
+        "family": "oblique_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 10.4,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 6.768442138337548,
+        "final_pitch_deg": 2.734628131936158,
+        "path_group_id": "h036_oblique_tilt_severe_v0",
+        "split_group_id": "h036_oblique_tilt_severe_v0",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h037_oblique_tilt_severe_v1",
+      "family": "oblique_tilt",
+      "severity": "severe",
+      "sign_variant": 1,
+      "group_id": "h037_oblique_tilt_severe_v1",
+      "split": "held_out",
+      "ramp_onset_mm": 14.2,
+      "offset_magnitude_mm": 0.0,
+      "tilt_magnitude_deg": 7.299999999999999,
+      "case": {
+        "family": "oblique_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 14.2,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": -4.9785880284562385,
+        "final_pitch_deg": -5.338882021819944,
+        "path_group_id": "h037_oblique_tilt_severe_v1",
+        "split_group_id": "h037_oblique_tilt_severe_v1",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h038_oblique_tilt_severe_v2",
+      "family": "oblique_tilt",
+      "severity": "severe",
+      "sign_variant": 2,
+      "group_id": "h038_oblique_tilt_severe_v2",
+      "split": "held_out",
+      "ramp_onset_mm": 17.2,
+      "offset_magnitude_mm": 0.0,
+      "tilt_magnitude_deg": 7.299999999999999,
+      "case": {
+        "family": "oblique_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 17.2,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": 3.3141306480986916,
+        "final_pitch_deg": -6.504347626575084,
+        "path_group_id": "h038_oblique_tilt_severe_v2",
+        "split_group_id": "h038_oblique_tilt_severe_v2",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h039_oblique_tilt_severe_v3",
+      "family": "oblique_tilt",
+      "severity": "severe",
+      "sign_variant": 3,
+      "group_id": "h039_oblique_tilt_severe_v3",
+      "split": "held_out",
+      "ramp_onset_mm": 6.8,
+      "offset_magnitude_mm": 0.0,
+      "tilt_magnitude_deg": 7.300000000000001,
+      "case": {
+        "family": "oblique_tilt",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 6.8,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.0,
+        "final_offset_y_mm": 0.0,
+        "final_roll_deg": -6.25732129512542,
+        "final_pitch_deg": 3.7597779468433954,
+        "path_group_id": "h039_oblique_tilt_severe_v3",
+        "split_group_id": "h039_oblique_tilt_severe_v3",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h040_combined_moderate_v0",
+      "family": "combined",
+      "severity": "moderate",
+      "sign_variant": 0,
+      "group_id": "h040_combined_moderate_v0",
+      "split": "held_out",
+      "ramp_onset_mm": 10.4,
+      "offset_magnitude_mm": 0.8300000000000001,
+      "tilt_magnitude_deg": 3.8,
+      "case": {
+        "family": "combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 10.4,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.7695625992904336,
+        "final_offset_y_mm": 0.31092347253520697,
+        "final_roll_deg": 1.4235050549804655,
+        "final_pitch_deg": -3.523298647353792,
+        "path_group_id": "h040_combined_moderate_v0",
+        "split_group_id": "h040_combined_moderate_v0",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h041_combined_moderate_v1",
+      "family": "combined",
+      "severity": "moderate",
+      "sign_variant": 1,
+      "group_id": "h041_combined_moderate_v1",
+      "split": "held_out",
+      "ramp_onset_mm": 14.2,
+      "offset_magnitude_mm": 0.83,
+      "tilt_magnitude_deg": 3.8,
+      "case": {
+        "family": "combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 14.2,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.5660586388518737,
+        "final_offset_y_mm": -0.6070235723439115,
+        "final_roll_deg": -2.7791440661528477,
+        "final_pitch_deg": 2.591593768237494,
+        "path_group_id": "h041_combined_moderate_v1",
+        "split_group_id": "h041_combined_moderate_v1",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h042_combined_moderate_v2",
+      "family": "combined",
+      "severity": "moderate",
+      "sign_variant": 2,
+      "group_id": "h042_combined_moderate_v2",
+      "split": "held_out",
+      "ramp_onset_mm": 17.2,
+      "offset_magnitude_mm": 0.83,
+      "tilt_magnitude_deg": 3.7999999999999994,
+      "case": {
+        "family": "combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 17.2,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.3768121147838238,
+        "final_offset_y_mm": -0.7395354150763452,
+        "final_roll_deg": -3.3858247919157973,
+        "final_pitch_deg": -1.7251638990102778,
+        "path_group_id": "h042_combined_moderate_v2",
+        "split_group_id": "h042_combined_moderate_v2",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h043_combined_moderate_v3",
+      "family": "combined",
+      "severity": "moderate",
+      "sign_variant": 3,
+      "group_id": "h043_combined_moderate_v3",
+      "split": "held_out",
+      "ramp_onset_mm": 6.8,
+      "offset_magnitude_mm": 0.83,
+      "tilt_magnitude_deg": 3.8,
+      "case": {
+        "family": "combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 6.8,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.7114488595827532,
+        "final_offset_y_mm": 0.4274816021753449,
+        "final_roll_deg": 1.9571446846582057,
+        "final_pitch_deg": 3.2572357426680267,
+        "path_group_id": "h043_combined_moderate_v3",
+        "split_group_id": "h043_combined_moderate_v3",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h044_combined_severe_v0",
+      "family": "combined",
+      "severity": "severe",
+      "sign_variant": 0,
+      "group_id": "h044_combined_severe_v0",
+      "split": "held_out",
+      "ramp_onset_mm": 14.2,
+      "offset_magnitude_mm": 1.37,
+      "tilt_magnitude_deg": 7.3,
+      "case": {
+        "family": "combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 14.2,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 1.2702418807564988,
+        "final_offset_y_mm": 0.5132110329797995,
+        "final_roll_deg": 2.734628131936158,
+        "final_pitch_deg": -6.768442138337548,
+        "path_group_id": "h044_combined_severe_v0",
+        "split_group_id": "h044_combined_severe_v0",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h045_combined_severe_v1",
+      "family": "combined",
+      "severity": "severe",
+      "sign_variant": 1,
+      "group_id": "h045_combined_severe_v1",
+      "split": "held_out",
+      "ramp_onset_mm": 17.2,
+      "offset_magnitude_mm": 1.37,
+      "tilt_magnitude_deg": 7.299999999999999,
+      "case": {
+        "family": "combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 17.2,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.934337753285623,
+        "final_offset_y_mm": -1.0019545712182636,
+        "final_roll_deg": -5.338882021819944,
+        "final_pitch_deg": 4.9785880284562385,
+        "path_group_id": "h045_combined_severe_v1",
+        "split_group_id": "h045_combined_severe_v1",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h046_combined_severe_v2",
+      "family": "combined",
+      "severity": "severe",
+      "sign_variant": 2,
+      "group_id": "h046_combined_severe_v2",
+      "split": "held_out",
+      "ramp_onset_mm": 6.8,
+      "offset_magnitude_mm": 1.37,
+      "tilt_magnitude_deg": 7.299999999999999,
+      "case": {
+        "family": "combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 6.8,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.6219669846431791,
+        "final_offset_y_mm": -1.220678938138064,
+        "final_roll_deg": -6.504347626575084,
+        "final_pitch_deg": -3.3141306480986916,
+        "path_group_id": "h046_combined_severe_v2",
+        "split_group_id": "h046_combined_severe_v2",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h047_combined_severe_v3",
+      "family": "combined",
+      "severity": "severe",
+      "sign_variant": 3,
+      "group_id": "h047_combined_severe_v3",
+      "split": "held_out",
+      "ramp_onset_mm": 10.4,
+      "offset_magnitude_mm": 1.37,
+      "tilt_magnitude_deg": 7.300000000000001,
+      "case": {
+        "family": "combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 10.4,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -1.174319201961894,
+        "final_offset_y_mm": 0.7056021626267742,
+        "final_roll_deg": 3.7597779468433954,
+        "final_pitch_deg": 6.25732129512542,
+        "path_group_id": "h047_combined_severe_v3",
+        "split_group_id": "h047_combined_severe_v3",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h048_terminal_band_moderate_v0",
+      "family": "terminal_band",
+      "severity": "moderate",
+      "sign_variant": 0,
+      "group_id": "h048_terminal_band_moderate_v0",
+      "split": "held_out",
+      "ramp_onset_mm": 14.2,
+      "offset_magnitude_mm": 0.28,
+      "tilt_magnitude_deg": 3.28,
+      "case": {
+        "family": "terminal_band",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 14.2,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.2596114792787005,
+        "final_offset_y_mm": 0.10488984615645537,
+        "final_roll_deg": 1.2287096264041912,
+        "final_pitch_deg": -3.0411630429790626,
+        "path_group_id": "h048_terminal_band_moderate_v0",
+        "split_group_id": "h048_terminal_band_moderate_v0",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h049_terminal_band_moderate_v1",
+      "family": "terminal_band",
+      "severity": "moderate",
+      "sign_variant": 1,
+      "group_id": "h049_terminal_band_moderate_v1",
+      "split": "held_out",
+      "ramp_onset_mm": 17.2,
+      "offset_magnitude_mm": 0.28,
+      "tilt_magnitude_deg": 3.28,
+      "case": {
+        "family": "terminal_band",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 17.2,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.19095954081749958,
+        "final_offset_y_mm": -0.20477903645336776,
+        "final_roll_deg": -2.398840141310879,
+        "final_pitch_deg": 2.236954621004995,
+        "path_group_id": "h049_terminal_band_moderate_v1",
+        "split_group_id": "h049_terminal_band_moderate_v1",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h050_terminal_band_moderate_v2",
+      "family": "terminal_band",
+      "severity": "moderate",
+      "sign_variant": 2,
+      "group_id": "h050_terminal_band_moderate_v2",
+      "split": "held_out",
+      "ramp_onset_mm": 6.8,
+      "offset_magnitude_mm": 0.28,
+      "tilt_magnitude_deg": 3.28,
+      "case": {
+        "family": "terminal_band",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 6.8,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.1271173399270731,
+        "final_offset_y_mm": -0.249481826772743,
+        "final_roll_deg": -2.9225013993378464,
+        "final_pitch_deg": -1.4890888391457133,
+        "path_group_id": "h050_terminal_band_moderate_v2",
+        "split_group_id": "h050_terminal_band_moderate_v2",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h051_terminal_band_moderate_v3",
+      "family": "terminal_band",
+      "severity": "moderate",
+      "sign_variant": 3,
+      "group_id": "h051_terminal_band_moderate_v3",
+      "split": "held_out",
+      "ramp_onset_mm": 10.4,
+      "offset_magnitude_mm": 0.28,
+      "tilt_magnitude_deg": 3.28,
+      "case": {
+        "family": "terminal_band",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 10.4,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.2400068441965915,
+        "final_offset_y_mm": 0.14421066097481516,
+        "final_roll_deg": 1.6893248857049776,
+        "final_pitch_deg": 2.8115087463029282,
+        "path_group_id": "h051_terminal_band_moderate_v3",
+        "split_group_id": "h051_terminal_band_moderate_v3",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h052_terminal_band_severe_v0",
+      "family": "terminal_band",
+      "severity": "severe",
+      "sign_variant": 0,
+      "group_id": "h052_terminal_band_severe_v0",
+      "split": "held_out",
+      "ramp_onset_mm": 17.2,
+      "offset_magnitude_mm": 0.52,
+      "tilt_magnitude_deg": 4.18,
+      "case": {
+        "family": "terminal_band",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 17.2,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.48213560437472947,
+        "final_offset_y_mm": 0.19479542857627424,
+        "final_roll_deg": 1.565855560478512,
+        "final_pitch_deg": -3.8756285120891714,
+        "path_group_id": "h052_terminal_band_severe_v0",
+        "split_group_id": "h052_terminal_band_severe_v0",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h053_terminal_band_severe_v1",
+      "family": "terminal_band",
+      "severity": "severe",
+      "sign_variant": 1,
+      "group_id": "h053_terminal_band_severe_v1",
+      "split": "held_out",
+      "ramp_onset_mm": 6.8,
+      "offset_magnitude_mm": 0.52,
+      "tilt_magnitude_deg": 4.18,
+      "case": {
+        "family": "terminal_band",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 6.8,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.35463914723249923,
+        "final_offset_y_mm": -0.3803039248419687,
+        "final_roll_deg": -3.0570584727681323,
+        "final_pitch_deg": 2.8507531450612436,
+        "path_group_id": "h053_terminal_band_severe_v1",
+        "split_group_id": "h053_terminal_band_severe_v1",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h054_terminal_band_severe_v2",
+      "family": "terminal_band",
+      "severity": "severe",
+      "sign_variant": 2,
+      "group_id": "h054_terminal_band_severe_v2",
+      "split": "held_out",
+      "ramp_onset_mm": 10.4,
+      "offset_magnitude_mm": 0.52,
+      "tilt_magnitude_deg": 4.18,
+      "case": {
+        "family": "terminal_band",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 10.4,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.23607505986456434,
+        "final_offset_y_mm": -0.46332339257795124,
+        "final_roll_deg": -3.7244072711073772,
+        "final_pitch_deg": -1.8976802889113056,
+        "path_group_id": "h054_terminal_band_severe_v2",
+        "split_group_id": "h054_terminal_band_severe_v2",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h055_terminal_band_severe_v3",
+      "family": "terminal_band",
+      "severity": "severe",
+      "sign_variant": 3,
+      "group_id": "h055_terminal_band_severe_v3",
+      "split": "held_out",
+      "ramp_onset_mm": 14.2,
+      "offset_magnitude_mm": 0.52,
+      "tilt_magnitude_deg": 4.18,
+      "case": {
+        "family": "terminal_band",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 14.2,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.44572699636509844,
+        "final_offset_y_mm": 0.26781979895322816,
+        "final_roll_deg": 2.152859153124026,
+        "final_pitch_deg": 3.5829593169348293,
+        "path_group_id": "h055_terminal_band_severe_v3",
+        "split_group_id": "h055_terminal_band_severe_v3",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h056_late_combined_moderate_v0",
+      "family": "late_combined",
+      "severity": "moderate",
+      "sign_variant": 0,
+      "group_id": "h056_late_combined_moderate_v0",
+      "split": "held_out",
+      "ramp_onset_mm": 15.8,
+      "offset_magnitude_mm": 0.73,
+      "tilt_magnitude_deg": 4.7,
+      "case": {
+        "family": "late_combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 15.8,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.6768442138337548,
+        "final_offset_y_mm": 0.27346281319361576,
+        "final_roll_deg": 1.7606509890547866,
+        "final_pitch_deg": -4.357764116463901,
+        "path_group_id": "h056_late_combined_moderate_v0",
+        "split_group_id": "h056_late_combined_moderate_v0",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h057_late_combined_moderate_v1",
+      "family": "late_combined",
+      "severity": "moderate",
+      "sign_variant": 1,
+      "group_id": "h057_late_combined_moderate_v1",
+      "split": "held_out",
+      "ramp_onset_mm": 16.8,
+      "offset_magnitude_mm": 0.73,
+      "tilt_magnitude_deg": 4.7,
+      "case": {
+        "family": "late_combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 16.8,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.4978588028456239,
+        "final_offset_y_mm": -0.5338882021819944,
+        "final_roll_deg": -3.437362397610101,
+        "final_pitch_deg": 3.205392292293743,
+        "path_group_id": "h057_late_combined_moderate_v1",
+        "split_group_id": "h057_late_combined_moderate_v1",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h058_late_combined_moderate_v2",
+      "family": "late_combined",
+      "severity": "moderate",
+      "sign_variant": 2,
+      "group_id": "h058_late_combined_moderate_v2",
+      "split": "held_out",
+      "ramp_onset_mm": 17.8,
+      "offset_magnitude_mm": 0.7299999999999999,
+      "tilt_magnitude_deg": 4.7,
+      "case": {
+        "family": "late_combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 17.8,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.33141306480986915,
+        "final_offset_y_mm": -0.6504347626575084,
+        "final_roll_deg": -4.187730663685329,
+        "final_pitch_deg": -2.1337553487758703,
+        "path_group_id": "h058_late_combined_moderate_v2",
+        "split_group_id": "h058_late_combined_moderate_v2",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h059_late_combined_moderate_v3",
+      "family": "late_combined",
+      "severity": "moderate",
+      "sign_variant": 3,
+      "group_id": "h059_late_combined_moderate_v3",
+      "split": "held_out",
+      "ramp_onset_mm": 18.2,
+      "offset_magnitude_mm": 0.73,
+      "tilt_magnitude_deg": 4.7,
+      "case": {
+        "family": "late_combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 18.2,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.625732129512542,
+        "final_offset_y_mm": 0.3759777946843395,
+        "final_roll_deg": 2.4206789520772545,
+        "final_pitch_deg": 4.028686313299928,
+        "path_group_id": "h059_late_combined_moderate_v3",
+        "split_group_id": "h059_late_combined_moderate_v3",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h060_late_combined_severe_v0",
+      "family": "late_combined",
+      "severity": "severe",
+      "sign_variant": 0,
+      "group_id": "h060_late_combined_severe_v0",
+      "split": "held_out",
+      "ramp_onset_mm": 15.8,
+      "offset_magnitude_mm": 1.13,
+      "tilt_magnitude_deg": 7.7,
+      "case": {
+        "family": "late_combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 15.8,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 1.0477177556604698,
+        "final_offset_y_mm": 0.42330545055998053,
+        "final_roll_deg": 2.8844707693025224,
+        "final_pitch_deg": -7.139315680164263,
+        "path_group_id": "h060_late_combined_severe_v0",
+        "split_group_id": "h060_late_combined_severe_v0",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h061_late_combined_severe_v1",
+      "family": "late_combined",
+      "severity": "severe",
+      "sign_variant": 1,
+      "group_id": "h061_late_combined_severe_v1",
+      "split": "held_out",
+      "ramp_onset_mm": 16.8,
+      "offset_magnitude_mm": 1.13,
+      "tilt_magnitude_deg": 7.699999999999999,
+      "case": {
+        "family": "late_combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 16.8,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.7706581468706232,
+        "final_offset_y_mm": -0.8264296828296626,
+        "final_roll_deg": -5.631423502467612,
+        "final_pitch_deg": 5.251387372481238,
+        "path_group_id": "h061_late_combined_severe_v1",
+        "split_group_id": "h061_late_combined_severe_v1",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h062_late_combined_severe_v2",
+      "family": "late_combined",
+      "severity": "severe",
+      "sign_variant": 2,
+      "group_id": "h062_late_combined_severe_v2",
+      "split": "held_out",
+      "ramp_onset_mm": 17.8,
+      "offset_magnitude_mm": 1.1299999999999997,
+      "tilt_magnitude_deg": 7.699999999999999,
+      "case": {
+        "family": "late_combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 17.8,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": 0.5130092647056879,
+        "final_offset_y_mm": -1.0068373723328554,
+        "final_roll_deg": -6.860750236250432,
+        "final_pitch_deg": -3.4957268479945105,
+        "path_group_id": "h062_late_combined_severe_v2",
+        "split_group_id": "h062_late_combined_severe_v2",
+        "sample_role": "final_frozen_held_out"
+      }
+    },
+    {
+      "case_id": "h063_late_combined_severe_v3",
+      "family": "late_combined",
+      "severity": "severe",
+      "sign_variant": 3,
+      "group_id": "h063_late_combined_severe_v3",
+      "split": "held_out",
+      "ramp_onset_mm": 18.2,
+      "offset_magnitude_mm": 1.13,
+      "tilt_magnitude_deg": 7.700000000000001,
+      "case": {
+        "family": "late_combined",
+        "offset_x_mm": 0.0,
+        "offset_y_mm": 0.0,
+        "roll_deg": 0.0,
+        "pitch_deg": 0.0,
+        "insertion_duration_s": 8.0,
+        "ramp_onset_mm": 18.2,
+        "ramp_full_depth_mm": 20.0,
+        "final_offset_x_mm": -0.9685990497933868,
+        "final_offset_y_mm": 0.5819930246483611,
+        "final_roll_deg": 3.9657931768074173,
+        "final_pitch_deg": 6.600188215406265,
+        "path_group_id": "h063_late_combined_severe_v3",
+        "split_group_id": "h063_late_combined_severe_v3",
+        "sample_role": "final_frozen_held_out"
+      }
+    }
+  ],
+  "schedule": [
+    {
+      "case_id": "h050_terminal_band_moderate_v2",
+      "policy": "v2",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h050_terminal_band_moderate_v2",
+      "policy": "nominal",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h050_terminal_band_moderate_v2",
+      "policy": "v1",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h061_late_combined_severe_v1",
+      "policy": "v2",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h061_late_combined_severe_v1",
+      "policy": "nominal",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h061_late_combined_severe_v1",
+      "policy": "v1",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h024_axis_tilt_moderate_v0",
+      "policy": "nominal",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h024_axis_tilt_moderate_v0",
+      "policy": "v1",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h024_axis_tilt_moderate_v0",
+      "policy": "v2",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h046_combined_severe_v2",
+      "policy": "v1",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h046_combined_severe_v2",
+      "policy": "v2",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h046_combined_severe_v2",
+      "policy": "nominal",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h058_late_combined_moderate_v2",
+      "policy": "v1",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h058_late_combined_moderate_v2",
+      "policy": "v2",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h058_late_combined_moderate_v2",
+      "policy": "nominal",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h026_axis_tilt_moderate_v2",
+      "policy": "nominal",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h026_axis_tilt_moderate_v2",
+      "policy": "v1",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h026_axis_tilt_moderate_v2",
+      "policy": "v2",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h045_combined_severe_v1",
+      "policy": "nominal",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h045_combined_severe_v1",
+      "policy": "v1",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h045_combined_severe_v1",
+      "policy": "v2",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h000_easy_controls_easy_v0",
+      "policy": "nominal",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h000_easy_controls_easy_v0",
+      "policy": "v1",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h000_easy_controls_easy_v0",
+      "policy": "v2",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h028_axis_tilt_severe_v0",
+      "policy": "nominal",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h028_axis_tilt_severe_v0",
+      "policy": "v1",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h028_axis_tilt_severe_v0",
+      "policy": "v2",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h029_axis_tilt_severe_v1",
+      "policy": "nominal",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h029_axis_tilt_severe_v1",
+      "policy": "v1",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h029_axis_tilt_severe_v1",
+      "policy": "v2",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h044_combined_severe_v0",
+      "policy": "v1",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h044_combined_severe_v0",
+      "policy": "v2",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h044_combined_severe_v0",
+      "policy": "nominal",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h049_terminal_band_moderate_v1",
+      "policy": "v2",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h049_terminal_band_moderate_v1",
+      "policy": "nominal",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h049_terminal_band_moderate_v1",
+      "policy": "v1",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h030_axis_tilt_severe_v2",
+      "policy": "v2",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h030_axis_tilt_severe_v2",
+      "policy": "nominal",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h030_axis_tilt_severe_v2",
+      "policy": "v1",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h025_axis_tilt_moderate_v1",
+      "policy": "nominal",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h025_axis_tilt_moderate_v1",
+      "policy": "v1",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h025_axis_tilt_moderate_v1",
+      "policy": "v2",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h032_oblique_tilt_moderate_v0",
+      "policy": "nominal",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h032_oblique_tilt_moderate_v0",
+      "policy": "v1",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h032_oblique_tilt_moderate_v0",
+      "policy": "v2",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h001_easy_controls_easy_v1",
+      "policy": "v2",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h001_easy_controls_easy_v1",
+      "policy": "nominal",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h001_easy_controls_easy_v1",
+      "policy": "v1",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h036_oblique_tilt_severe_v0",
+      "policy": "v1",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h036_oblique_tilt_severe_v0",
+      "policy": "v2",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h036_oblique_tilt_severe_v0",
+      "policy": "nominal",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h041_combined_moderate_v1",
+      "policy": "v1",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h041_combined_moderate_v1",
+      "policy": "v2",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h041_combined_moderate_v1",
+      "policy": "nominal",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h008_axis_offset_moderate_v0",
+      "policy": "nominal",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h008_axis_offset_moderate_v0",
+      "policy": "v1",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h008_axis_offset_moderate_v0",
+      "policy": "v2",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h053_terminal_band_severe_v1",
+      "policy": "v2",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h053_terminal_band_severe_v1",
+      "policy": "nominal",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h053_terminal_band_severe_v1",
+      "policy": "v1",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h059_late_combined_moderate_v3",
+      "policy": "v1",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h059_late_combined_moderate_v3",
+      "policy": "v2",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h059_late_combined_moderate_v3",
+      "policy": "nominal",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h057_late_combined_moderate_v1",
+      "policy": "nominal",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h057_late_combined_moderate_v1",
+      "policy": "v1",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h057_late_combined_moderate_v1",
+      "policy": "v2",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h019_oblique_offset_moderate_v3",
+      "policy": "v2",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h019_oblique_offset_moderate_v3",
+      "policy": "nominal",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h019_oblique_offset_moderate_v3",
+      "policy": "v1",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h062_late_combined_severe_v2",
+      "policy": "nominal",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h062_late_combined_severe_v2",
+      "policy": "v1",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h062_late_combined_severe_v2",
+      "policy": "v2",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h043_combined_moderate_v3",
+      "policy": "v1",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h043_combined_moderate_v3",
+      "policy": "v2",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h043_combined_moderate_v3",
+      "policy": "nominal",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h004_easy_controls_easy_v0",
+      "policy": "v1",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h004_easy_controls_easy_v0",
+      "policy": "v2",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h004_easy_controls_easy_v0",
+      "policy": "nominal",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h054_terminal_band_severe_v2",
+      "policy": "nominal",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h054_terminal_band_severe_v2",
+      "policy": "v1",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h054_terminal_band_severe_v2",
+      "policy": "v2",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h005_easy_controls_easy_v1",
+      "policy": "v1",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h005_easy_controls_easy_v1",
+      "policy": "v2",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h005_easy_controls_easy_v1",
+      "policy": "nominal",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h033_oblique_tilt_moderate_v1",
+      "policy": "v1",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h033_oblique_tilt_moderate_v1",
+      "policy": "v2",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h033_oblique_tilt_moderate_v1",
+      "policy": "nominal",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h060_late_combined_severe_v0",
+      "policy": "v1",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h060_late_combined_severe_v0",
+      "policy": "v2",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h060_late_combined_severe_v0",
+      "policy": "nominal",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h016_oblique_offset_moderate_v0",
+      "policy": "v2",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h016_oblique_offset_moderate_v0",
+      "policy": "nominal",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h016_oblique_offset_moderate_v0",
+      "policy": "v1",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h034_oblique_tilt_moderate_v2",
+      "policy": "nominal",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h034_oblique_tilt_moderate_v2",
+      "policy": "v1",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h034_oblique_tilt_moderate_v2",
+      "policy": "v2",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h014_axis_offset_severe_v2",
+      "policy": "nominal",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h014_axis_offset_severe_v2",
+      "policy": "v1",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h014_axis_offset_severe_v2",
+      "policy": "v2",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h017_oblique_offset_moderate_v1",
+      "policy": "v2",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h017_oblique_offset_moderate_v1",
+      "policy": "nominal",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h017_oblique_offset_moderate_v1",
+      "policy": "v1",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h031_axis_tilt_severe_v3",
+      "policy": "v2",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h031_axis_tilt_severe_v3",
+      "policy": "nominal",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h031_axis_tilt_severe_v3",
+      "policy": "v1",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h015_axis_offset_severe_v3",
+      "policy": "v1",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h015_axis_offset_severe_v3",
+      "policy": "v2",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h015_axis_offset_severe_v3",
+      "policy": "nominal",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h018_oblique_offset_moderate_v2",
+      "policy": "v2",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h018_oblique_offset_moderate_v2",
+      "policy": "nominal",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h018_oblique_offset_moderate_v2",
+      "policy": "v1",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h011_axis_offset_moderate_v3",
+      "policy": "v1",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h011_axis_offset_moderate_v3",
+      "policy": "v2",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h011_axis_offset_moderate_v3",
+      "policy": "nominal",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h021_oblique_offset_severe_v1",
+      "policy": "v2",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h021_oblique_offset_severe_v1",
+      "policy": "nominal",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h021_oblique_offset_severe_v1",
+      "policy": "v1",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h002_easy_controls_easy_v2",
+      "policy": "v2",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h002_easy_controls_easy_v2",
+      "policy": "nominal",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h002_easy_controls_easy_v2",
+      "policy": "v1",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h012_axis_offset_severe_v0",
+      "policy": "nominal",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h012_axis_offset_severe_v0",
+      "policy": "v1",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h012_axis_offset_severe_v0",
+      "policy": "v2",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h013_axis_offset_severe_v1",
+      "policy": "v2",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h013_axis_offset_severe_v1",
+      "policy": "nominal",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h013_axis_offset_severe_v1",
+      "policy": "v1",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h006_easy_controls_easy_v2",
+      "policy": "v2",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h006_easy_controls_easy_v2",
+      "policy": "nominal",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h006_easy_controls_easy_v2",
+      "policy": "v1",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h048_terminal_band_moderate_v0",
+      "policy": "v2",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h048_terminal_band_moderate_v0",
+      "policy": "nominal",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h048_terminal_band_moderate_v0",
+      "policy": "v1",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h023_oblique_offset_severe_v3",
+      "policy": "nominal",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h023_oblique_offset_severe_v3",
+      "policy": "v1",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h023_oblique_offset_severe_v3",
+      "policy": "v2",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h037_oblique_tilt_severe_v1",
+      "policy": "v2",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h037_oblique_tilt_severe_v1",
+      "policy": "nominal",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h037_oblique_tilt_severe_v1",
+      "policy": "v1",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h035_oblique_tilt_moderate_v3",
+      "policy": "nominal",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h035_oblique_tilt_moderate_v3",
+      "policy": "v1",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h035_oblique_tilt_moderate_v3",
+      "policy": "v2",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h007_easy_controls_easy_v3",
+      "policy": "v1",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h007_easy_controls_easy_v3",
+      "policy": "v2",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h007_easy_controls_easy_v3",
+      "policy": "nominal",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h047_combined_severe_v3",
+      "policy": "v1",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h047_combined_severe_v3",
+      "policy": "v2",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h047_combined_severe_v3",
+      "policy": "nominal",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h056_late_combined_moderate_v0",
+      "policy": "v1",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h056_late_combined_moderate_v0",
+      "policy": "v2",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h056_late_combined_moderate_v0",
+      "policy": "nominal",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h010_axis_offset_moderate_v2",
+      "policy": "v2",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h010_axis_offset_moderate_v2",
+      "policy": "nominal",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h010_axis_offset_moderate_v2",
+      "policy": "v1",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h042_combined_moderate_v2",
+      "policy": "nominal",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h042_combined_moderate_v2",
+      "policy": "v1",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h042_combined_moderate_v2",
+      "policy": "v2",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h020_oblique_offset_severe_v0",
+      "policy": "nominal",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h020_oblique_offset_severe_v0",
+      "policy": "v1",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h020_oblique_offset_severe_v0",
+      "policy": "v2",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h040_combined_moderate_v0",
+      "policy": "nominal",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h040_combined_moderate_v0",
+      "policy": "v1",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h040_combined_moderate_v0",
+      "policy": "v2",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h051_terminal_band_moderate_v3",
+      "policy": "v2",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h051_terminal_band_moderate_v3",
+      "policy": "nominal",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h051_terminal_band_moderate_v3",
+      "policy": "v1",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h052_terminal_band_severe_v0",
+      "policy": "v2",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h052_terminal_band_severe_v0",
+      "policy": "nominal",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h052_terminal_band_severe_v0",
+      "policy": "v1",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h022_oblique_offset_severe_v2",
+      "policy": "nominal",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h022_oblique_offset_severe_v2",
+      "policy": "v1",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h022_oblique_offset_severe_v2",
+      "policy": "v2",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h027_axis_tilt_moderate_v3",
+      "policy": "v1",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h027_axis_tilt_moderate_v3",
+      "policy": "v2",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h027_axis_tilt_moderate_v3",
+      "policy": "nominal",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h038_oblique_tilt_severe_v2",
+      "policy": "v2",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h038_oblique_tilt_severe_v2",
+      "policy": "nominal",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h038_oblique_tilt_severe_v2",
+      "policy": "v1",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h003_easy_controls_easy_v3",
+      "policy": "nominal",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h003_easy_controls_easy_v3",
+      "policy": "v1",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h003_easy_controls_easy_v3",
+      "policy": "v2",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h063_late_combined_severe_v3",
+      "policy": "v1",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h063_late_combined_severe_v3",
+      "policy": "v2",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h063_late_combined_severe_v3",
+      "policy": "nominal",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h009_axis_offset_moderate_v1",
+      "policy": "v1",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h009_axis_offset_moderate_v1",
+      "policy": "v2",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h009_axis_offset_moderate_v1",
+      "policy": "nominal",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h055_terminal_band_severe_v3",
+      "policy": "v1",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h055_terminal_band_severe_v3",
+      "policy": "v2",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h055_terminal_band_severe_v3",
+      "policy": "nominal",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h039_oblique_tilt_severe_v3",
+      "policy": "v1",
+      "policy_order": 0,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h039_oblique_tilt_severe_v3",
+      "policy": "v2",
+      "policy_order": 1,
+      "repeat": 0,
+      "stage": "held_out"
+    },
+    {
+      "case_id": "h039_oblique_tilt_severe_v3",
+      "policy": "nominal",
+      "policy_order": 2,
+      "repeat": 0,
+      "stage": "held_out"
+    }
+  ],
+  "policies": [
+    "nominal",
+    "v1",
+    "v2"
+  ],
+  "optional_baselines_included": false,
+  "optional_baselines_reason": "192 required episodes; optional force and axial baselines add 128 episodes (~67% collection time). Prioritize all 64 fresh paired conditions.",
+  "previous_experiment": "outputs/Contact-Productivity-DetectorV2-Dev",
+  "detector_v2_config": "outputs/Contact-Productivity-DetectorV2-Dev/detector_v2_config.json",
+  "detector_v2_config_sha256": "189da99e1ba35a73a68221683cf0d6d215b3443d332c906e7e1afd231194de1d",
+  "design": {
+    "history_s": 0.5,
+    "check_s": 0.1,
+    "minimum_command_mm": 0.1,
+    "contact_margin_mm": 0.1,
+    "consecutive_checks": 2,
+    "stop_s": 0.25,
+    "retract_mm": 1.0,
+    "retract_s": 0.5,
+    "rejoin_s": 0.5,
+    "max_interventions": 2,
+    "insertion_budget_s": 20.0,
+    "nonstall_alert_budget": 0.1
+  },
+  "unloading_design": {
+    "actual_target_mm": 0.5,
+    "max_command_mm": 5.0,
+    "command_ramp_s": 4.0,
+    "recovery_timeout_s": 5.0,
+    "verification_hold_s": 0.25
+  },
+  "dewedge_design": {
+    "relaxation_s": 0.5,
+    "post_verification_hold_s": 0.25
+  },
+  "source_sha256": {
+    "research/productivity_control.py": "03f4fd21ca6adb2f88f9649477d2b12370e6cb2c4556dcc22631b58dd2c3a262",
+    "simulation/productivity_control.py": "085fd486208fe80b88d1314729a4ab6d9edd312445508f0c55cbec9809fd5d4b",
+    "research/productivity_unloading.py": "0317b208c963e52bc2c30b614fca0cdd4e54a67fe43888c9035fd2f77c12420f",
+    "simulation/productivity_unloading.py": "8ddd17fc748c8f116772210de0d44c6e6a448c88153d097de55904690321e8f2",
+    "research/productivity_dewedge.py": "85ea24f65e566baeb3ccb2b6d5b315ebab567a5a4e3f8d286e277cf37635ab71",
+    "simulation/productivity_dewedge.py": "c5f658c8ee25a9bd05e2fca91f619c41e128c04f9b448e7c2b693a19b90f2e89",
+    "simulation/forge_backend.py": "fa60db0c72e74cb79a0b76e5e2819dbc3419c53e0ec56c20f36e88d85712887e",
+    "simulation/contact.py": "a23500505916cf97fe792258fedae0ea583f03b2652dc42121e2d761fbb6e522",
+    "simulation/forge_experiment.py": "f6e94fb4c1ee614ef1e6cc7424583bb6149774a4a881257ff5c1b2999f935357",
+    "research/forge_protocol.py": "c636047d37dfffad068ad5f30a4a592aee70abcdf4b58ec99086e554b10d194d",
+    "research/phase2_protocol.py": "3d05bd187320591bb9e69d38f9dc3263925608f17213c945caf8c7a6adcc84ca",
+    "research/phase2b.py": "0dfa4d32fd924a72576a7f1316198352147a389e5fe4e328727eb0637a94949a",
+    "experiments/forge_phase2.json": "3657344364a049517872c72d572e583499b39bf6488ef679f9432baeae505557",
+    "experiments/productivity_control_calibration.json": "64b95b05689507778eee00807f171c74ea9d33d157221a6d561ae2ee1d07ab92",
+    "research/productivity_detector_v2.py": "5b4d224e3b67a0f3d8ce9c051af4862fd42b924e1761db0e79fb533caea149ce",
+    "research/productivity_detector_v2_calibration.py": "223330f67d17bc516a2b49719009d88cd5c078beb358b291e774c86b8934a791",
+    "research/productivity_detector_v2_design.py": "f8cfc3a2fb43e589a493c6ab5a05e5fc4a3701b98160b0985d93a48d26f52f50",
+    "research/productivity_detector_v2_report.py": "de2e2fff2de954e91a48008f2aba80af68c82c1b1e045f9fed3820298fe2893c",
+    "research/productivity_generalization.py": "eff27c4bc4e93251ad5153563c76eb5fe1ccd347565f5920dc4f97048375e4fd",
+    "research/productivity_dewedge_report.py": "148efbc4c3d9a4b9fe2ac9a820a1b5c32f1b97f925a88b76c0a958bcfe2a3bca",
+    "research/productivity_unloading_report.py": "327f5c80a556a55f69b32f1d67ea454b57f192c55cb3b69342b2e3ec0c417aa7",
+    "research/productivity_control_report.py": "d3cdf8e1a1c823cf616de3c567c5143a53c80f744e7cdadf53b30c49cc57e70a",
+    "research/future_stall.py": "7fac0904b704ee79c51a15ee32aeaf99eace9ee46fff2f2716dcdd2a129de642",
+    "research/productivity_detector_v2_generalization.py": "46de8392aa317f38f9324dbf32bd479398d96736e14c8194050b690b1e3f7a97",
+    "research/productivity_detector_v2_generalization_report.py": "b77bf580f3c3111cd102e825a39792a8d4b00e1eea995924a2dc36038508a362",
+    "simulation/productivity_detector_v2_generalization.py": "a7d00fe7b634cb98fac535fed4d442da60c8bfc332c24386decd78f2b8287264",
+    "simulation/launch_productivity_detector_v2_generalization.py": "2d5c0b447d474d7aeccc5422fa901f4827bb1e866d9ea967287da7cd520696b4",
+    "productivity_detector_v2_generalization.sh": "f1008e61d4b150ecb92e7624342c56c7797714185c5f7d6fd251be076bdd3cd7",
+    "tests/test_productivity_detector_v2_generalization.py": "608bd5dde7609aaa577ed9f4ac17c3d30b48f1b1384bb78ea930a8cc95a22c2c",
+    "docs/productivity_detector_v2_generalization.md": "db9c572437fd69f7486c30a751e27065c24c408412bbf55cf63f3ed14c1c6ce8",
+    "research/active_probing.py": "2d1bbac3457a1065023b6ec0dc8020a3f7b500ec85bcd7a7d413d98e98b14c78",
+    "research/contact_productivity.py": "76cb184fbbe133491e4604488edc59297af3a1b7c9252dc26347bb46d09ec960",
+    "research/contact_response.py": "9e67c5277294c14ea7932f27cffa9aad0c9500b563f3063e1de1bc1191473e2e",
+    "research/forge_collection.py": "777593344ee172987c9c6cbee3198d7b280ce9d8d04e4f9f9ece1e56a60fb317",
+    "research/planner.py": "6def307c90f08d3d2eee970dc2d683b9ca80129c99255205b30dffdfac3b313e",
+    "research/productivity_generalization_report.py": "ae985949a7bf6b5ed5d8585a4729dc6f8d0485e5f2ced51a5a27a1ee5d264047",
+    "research/validate_forge.py": "5de0517b6975a80334797b2999ca85209895e2a59d3520561f607b07b890f4f2",
+    "simulation/active_probing.py": "136cf2fa6c08707ecb7ed362112859fbdeeb0aa1b0bc460800e18fb37cebe17b",
+    "simulation/forge_calibration.py": "21fac7dc79bed34959791e944bbd1ad4fe8aabfcf0ab76e61ca5a9f2bd179b6a",
+    "simulation/forge_pilot.py": "ee6cfee3b457ef1368353689193bb3852283003bc79cc5f8a04e0999b471d904",
+    "simulation/forge_report.py": "9c7e52d2f818f2f78f370de1095e8bf494126e568211cc1854e2e0413c8127db",
+    "simulation/launch.py": "4a176c132ecda29c47a2ea8c984199542ebc55310efc58bac626e1215343ba32",
+    "simulation/launch_active_probing.py": "b55a5a8ecd3b894678cc97fc7750dbada0d62d509893e2ebee5ab9a59b82ac9d",
+    "simulation/launch_forge_study.py": "de8624a0413e09a6a5e65112c50d9e5db7d1989931cb3f1c28af93e64d7e09b0",
+    "simulation/launch_productivity_control.py": "4fb00c6717990244b61e0dfe139d5e84dc77db65f2eb55beb54e0b79350bbcfb",
+    "simulation/launch_productivity_detector_v2.py": "df0cdddb6231e6cba5303021c9eded03f644838fd05229d921b5b4b30411a879",
+    "simulation/launch_productivity_dewedge.py": "8a4de5b7ae70745f80bc61efa05c6c12d11f3a37c7c769c65e36a04d2d36fe4b",
+    "simulation/launch_productivity_generalization.py": "d8dd0c7ef78df34fd58d4c6d4b4132a9b15f9deeaecf09ef044bb911c0c5f33f",
+    "simulation/launch_productivity_unloading.py": "69982937670fce3371948278a8c894a1a3428420dbf7c7b877ba963cef65186b",
+    "simulation/phase2.py": "ffcae9c7e366aff96fa2ffa97e4a71fc6a0b9d97b0a0741cc9e2e8807f6e31c0",
+    "simulation/phase2_report.py": "5d305ae6e02390aacc9253c2092db3b47cfe3dac6a66e72aa5b28d7d815a6bc8",
+    "simulation/productivity_detector_v2.py": "2e429b04af53b2c0637344953be593db6cca661bd88be4a99b354ddf19ac6507",
+    "simulation/productivity_generalization.py": "e4e68fba2a6cbb0a13a612405378c4ad1af2109c04055cde8b1a68f6a2a8d7f2",
+    "simulation/scene.py": "9f39a47d412bd3c1449d253288e4262059e67ced05fd771f7e1946246903a431",
+    "simulation/study.py": "46fb7614c8521315d30463b9c83df4ef77b6d67a1d32f8b9429e92d3ee14a608",
+    "simulation/study_report.py": "4dd3af6dc1911239042d37e391dedc7a52cf0a866ec1ad3c29f38d77a7a20c5d"
+  },
+  "holdout_audit": {
+    "source_sha256": {
+      "experiments/productivity_detector_v2_dev.json": "83c0d40269d9bc3a7a7e42d6b3ce6faab1c1e57977c99020f170f869fd933469",
+      "experiments/productivity_generalization_frozen.json": "ed84d146fdefb44997ff39584e05516c85885ec0ac81e27da3be59f3b2ff9fb7",
+      "outputs/Contact-Productivity-Control-v1/experiment.json": "9a113787152e71de51060bcaab0a473989dbe4f1c153c84e4f42bcc875c0e53e",
+      "outputs/Contact-Productivity-DetectorV2-Dev/experiment.json": "af41933d4f12673c9d201baf558bb903aac44df3e7318709d0dceeac49179417",
+      "outputs/Contact-Productivity-Dewedge-v1/experiment.json": "6ca4f556da5f0bb2e3aef0be05bc43980a7b5c16cd43022a4b393d4e37995bb5",
+      "outputs/Contact-Productivity-Generalization-v1/experiment.json": "0fb88dda80f170445682629741f24db11b49790e1b88356c7366cf424d51ff6d",
+      "outputs/Contact-Productivity-Unloading-v1/experiment.json": "cdb5b6e0506eec2e3da234e3d846110600df230fed8a91d2945e4331767d6517",
+      "outputs/Forge-Phase2-100/study.json": "16471dd38d275a530d22b9a282084c38d19a8b33be7bcdf939442155212a7048",
+      "outputs/Forge-Phase2B-Stage1/study.json": "95fc5e677fed0b61c96a7b894189386297dcbff6c421bf05f17e4f80afa798d5",
+      "outputs/Forge-Phase2B-Stage2/study.json": "2255d2a0994c7803637faeceefd3f95c3472c8927da73b5ac643e2c85a854fe4",
+      "outputs/Forge-Phase2B-Stage3/study.json": "c4e274c670ba4b5c4ebcc8943d75f832932b99421400620af30797cc96e0eca3",
+      "outputs/Forge-Phase2B-Stage4/study.json": "48afe9094b7a881d8804bbab2214d80f6c2d66993f7545c28afb915d89272d75",
+      "outputs/Initial-Test-480Hz/study.json": "b7f0ca9d586a0ef67bd9d2879a85c4e919952b9f5fdc7f3cdba4117be3e37ff7",
+      "outputs/Initial-Test-960Hz/study.json": "82fc36d29b8939b2104b69c291f9da37c739bbb951c2a18949b797bee0ef136c"
+    },
+    "descriptor_counts": {
+      "experiments/productivity_detector_v2_dev.json": 80,
+      "experiments/productivity_generalization_frozen.json": 48,
+      "outputs/Contact-Productivity-Control-v1/experiment.json": 4,
+      "outputs/Contact-Productivity-DetectorV2-Dev/experiment.json": 80,
+      "outputs/Contact-Productivity-Dewedge-v1/experiment.json": 4,
+      "outputs/Contact-Productivity-Generalization-v1/experiment.json": 48,
+      "outputs/Contact-Productivity-Unloading-v1/experiment.json": 4,
+      "outputs/Forge-Phase2-100/study.json": 100,
+      "outputs/Forge-Phase2B-Stage1/study.json": 48,
+      "outputs/Forge-Phase2B-Stage2/study.json": 40,
+      "outputs/Forge-Phase2B-Stage3/study.json": 26,
+      "outputs/Forge-Phase2B-Stage4/study.json": 26,
+      "outputs/Initial-Test-480Hz/study.json": 0,
+      "outputs/Initial-Test-960Hz/study.json": 0
+    },
+    "unique_prior_paths": 291
+  },
+  "exact_previous_path_overlaps": 0,
+  "condition_selection": "Fixed structured design. No outcome-dependent tuning, exclusions, substitutions, stopping, or repeats.",
+  "geometry_scope": "64 new imposed contact paths on unchanged FORGE peg/socket assets; no clearance variation.",
+  "analysis": {
+    "primary": "Paired insertion success v2 versus v1, all 64 conditions; all failures retained.",
+    "severe_definition": "Preassigned upper level in each non-control family, including terminal-band and late-ramp strata; 28 conditions, independent of observed outcomes.",
+    "paired_test": "Two-sided exact conditional McNemar/binomial on discordant success pairs, p=1 if none.",
+    "bootstrap_seed": 20260918,
+    "bootstrap_samples": 10000,
+    "bootstrap": "Paired condition resampling, stratified by the eight predeclared families; 95% percentile CI for success-rate difference. Descriptive structured-design uncertainty.",
+    "strict_match": "All samples of the common prefix through the earlier first intervention (or earlier episode end) pass original FORGE pose, velocity, joints, wrench, load and grasp replay tolerances. No tolerances changed.",
+    "coverage": "Safe shadow alarms replayed on identical nominal histories; failed nominal trajectories form denominator. No future data enter detector.",
+    "unnecessary": "Shadow alarm on subsequently successful nominal history; actual interventions on paired nominal successes reported separately, with strict-match sensitivity.",
+    "lead": "Nominal first-stall and safety-stop time minus first safe shadow alarm; positive means earlier. Report safety lead >=0.1s; terminal opportunity delay separately.",
+    "secondary": "Severe subset, safety, timeouts, coverage, false interventions, branch counts and lead are descriptive; no multiplicity-adjusted confirmatory claims."
+  }
+}

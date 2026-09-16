@@ -1,0 +1,74 @@
+[
+  {
+    "intervention": 1,
+    "trigger_time_s": 9.9,
+    "trigger_depth_mm": 19.192056357860565,
+    "trigger_command_depth_mm": 19.98605468750005,
+    "eta_raw": -0.027337866016943383,
+    "wrist_force_n": 0.9780274033546448,
+    "wrist_torque_nm": 0.05514111742377281,
+    "normal_load_n": 13.871623039245605,
+    "unloading_status": "safety_stop",
+    "max_commanded_retract_mm": 0.0,
+    "max_actual_retract_mm": 0.001519918441772461,
+    "trigger_peg_position": [
+      0.5994774103164673,
+      0.0003242155071347952,
+      0.055807944387197495
+    ],
+    "trigger_peg_quaternion": [
+      0.001338195288553834,
+      0.02669653482735157,
+      -0.016177605837583542,
+      0.9995117783546448
+    ],
+    "neutral_peg_position": [
+      0.6000000238418579,
+      0.0,
+      0.055807944387197495
+    ],
+    "neutral_peg_quaternion": [
+      0.000906950852368027,
+      0.0,
+      0.0,
+      0.9999995827674866
+    ],
+    "captured_grasp_position": [
+      9.034189861267805e-05,
+      2.443324774503708e-05,
+      0.03239022195339203
+    ],
+    "captured_grasp_quaternion": [
+      -0.0011472648475319147,
+      -0.0008607531781308353,
+      0.9999988079071045,
+      -0.0005158515414223075
+    ],
+    "nominal_peg_quaternion": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "trigger_nominal_misalignment": {
+      "offset_x_mm": -0.5409664520207952,
+      "offset_y_mm": 0.32504543723435797,
+      "roll_deg": 2.2149113864642094,
+      "pitch_deg": 3.6862315757169233
+    },
+    "previous_stall": true,
+    "actual_retract_at_last_sample_mm": -0.004958361387252808,
+    "first_crossing_time_s": null,
+    "time_to_0_5_mm_s": null,
+    "verification_time_s": null,
+    "retry_ready_time_s": null,
+    "hold_rebounds": 0,
+    "max_relax_fraction": 0.0,
+    "after_time_s": 9.95,
+    "after_depth_mm": 19.197014719247818,
+    "after_wrist_force_n": 0.8767217397689819,
+    "after_wrist_torque_nm": 0.09519872069358826,
+    "after_normal_load_n": 13.426146507263184,
+    "after_contact_force_n": 1.2727465629577637
+  }
+]

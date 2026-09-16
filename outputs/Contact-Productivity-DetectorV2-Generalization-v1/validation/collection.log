@@ -1,0 +1,628 @@
+WARNING: overwriting environment variables set in the machine
+overwriting variable ['IsaacLab_PATH']
+[INFO][AppLauncher]: Using device: cuda:0
+[INFO][AppLauncher]: Loading experience file: /home/ibrahim/Documents/Franka-Safe-Recovery/.deps/IsaacLab/apps/isaaclab.python.headless.kit
+Loading user config located at: '/home/ibrahim/miniconda3/envs/franka-safe-recovery/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: /home/ibrahim/miniconda3/envs/franka-safe-recovery/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20260916_080711.log
+2026-09-16T04:07:11Z [59ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-09-16T04:07:11Z [372ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-09-16T04:07:11Z [494ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 580.178.04    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA GeForce RTX 3080          | Yes: 0 |     | 10486   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2206      | 20805ce9.. |
+|     |                                  |        |     |            | 1         |            |
+|=============================================================================================|
+| OS: 22.04.5 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.5, Kernel: 6.8.0-138-generic
+| XServer Vendor: The X.Org Foundation, XServer Version: 12101004 (1.21.1.4)
+| Processor: Intel(R) Core(TM) i5-14600KF
+| Bare Metal Cores: 14 | Bare Metal Logical Cores: 28
+| Available Cores:  20 
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 31923 | Free Memory: 21653
+| Total Page/Swap (MB): 2047 | Free Page/Swap: 2046
+|---------------------------------------------------------------------------------------------|
+2026-09-16T04:07:14Z [3,472ms] [Warning] [gpu.foundation.plugin] CPU performance profile is set to powersave. This profile sets the CPU to the lowest frequency reducing performance.
+2026-09-16T04:07:14Z [3,481ms] [Warning] [gpu.foundation.plugin] IOMMU is enabled.
+FORGE physics: 120 Hz (upstream_default); installed scene default: 120 Hz
+Setting seed: 20260913
+[INFO]: Base environment:
+	Environment device    : cuda:0
+	Environment seed      : 20260913
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.03333333333333333
+	Environment step-size : 0.06666666666666667
+2026-09-16T04:07:15Z [4,282ms] [Warning] [isaaclab.envs.direct_rl_env] The render interval (4) is smaller than the decimation (8). Multiple render calls will happen for each environment step.If this is not intended, set the render interval to be equal to the decimation.
+[INFO]: Time taken for scene creation : 2.199481 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 2.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 0.352539 seconds
+[INFO]: Completed setting up the environment...
+Setting seed: 20260913
+[held-out-v2] 1/192 h050_terminal_band_moderate_v2/v2 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.720 recoveries=0
+[held-out-v2] 2/192 h050_terminal_band_moderate_v2/nominal (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.720 recoveries=0
+[held-out-v2] 3/192 h050_terminal_band_moderate_v2/v1 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.661 recoveries=0
+[held-out-v2] 4/192 h061_late_combined_severe_v1/v2 (severe)
+Setting seed: 20260913
+[held-out-v2] grasp_retention_limit; depth=18.863 recoveries=0
+[held-out-v2] 5/192 h061_late_combined_severe_v1/nominal (severe)
+Setting seed: 20260913
+[held-out-v2] grasp_retention_limit; depth=18.863 recoveries=0
+[held-out-v2] 6/192 h061_late_combined_severe_v1/v1 (severe)
+Setting seed: 20260913
+[held-out-v2] grasp_retention_limit; depth=18.880 recoveries=0
+[held-out-v2] 7/192 h024_axis_tilt_moderate_v0/nominal (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.640 recoveries=0
+[held-out-v2] 8/192 h024_axis_tilt_moderate_v0/v1 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.640 recoveries=0
+[held-out-v2] 9/192 h024_axis_tilt_moderate_v0/v2 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.585 recoveries=0
+[held-out-v2] 10/192 h046_combined_severe_v2/v1 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.820 recoveries=1
+[held-out-v2] 11/192 h046_combined_severe_v2/v2 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.820 recoveries=1
+[held-out-v2] 12/192 h046_combined_severe_v2/nominal (severe)
+Setting seed: 20260913
+[held-out-v2] time_budget_exhausted; depth=15.838 recoveries=0
+[held-out-v2] 13/192 h058_late_combined_moderate_v2/v1 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.756 recoveries=0
+[held-out-v2] 14/192 h058_late_combined_moderate_v2/v2 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.756 recoveries=0
+[held-out-v2] 15/192 h058_late_combined_moderate_v2/nominal (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.781 recoveries=0
+[held-out-v2] 16/192 h026_axis_tilt_moderate_v2/nominal (moderate)
+Setting seed: 20260913
+[held-out-v2] time_budget_exhausted; depth=19.268 recoveries=0
+[held-out-v2] 17/192 h026_axis_tilt_moderate_v2/v1 (moderate)
+Setting seed: 20260913
+[held-out-v2] time_budget_exhausted; depth=19.268 recoveries=0
+[held-out-v2] 18/192 h026_axis_tilt_moderate_v2/v2 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.955 recoveries=1
+[held-out-v2] 19/192 h045_combined_severe_v1/nominal (severe)
+Setting seed: 20260913
+[held-out-v2] grasp_retention_limit; depth=18.946 recoveries=0
+[held-out-v2] 20/192 h045_combined_severe_v1/v1 (severe)
+Setting seed: 20260913
+[held-out-v2] grasp_retention_limit; depth=18.946 recoveries=0
+[held-out-v2] 21/192 h045_combined_severe_v1/v2 (severe)
+Setting seed: 20260913
+[held-out-v2] grasp_retention_limit; depth=18.988 recoveries=0
+[held-out-v2] 22/192 h000_easy_controls_easy_v0/nominal (easy)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.780 recoveries=0
+[held-out-v2] 23/192 h000_easy_controls_easy_v0/v1 (easy)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.780 recoveries=0
+[held-out-v2] 24/192 h000_easy_controls_easy_v0/v2 (easy)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.780 recoveries=0
+[held-out-v2] 25/192 h028_axis_tilt_severe_v0/nominal (severe)
+Setting seed: 20260913
+[held-out-v2] time_budget_exhausted; depth=15.409 recoveries=0
+[held-out-v2] 26/192 h028_axis_tilt_severe_v0/v1 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.823 recoveries=1
+[held-out-v2] 27/192 h028_axis_tilt_severe_v0/v2 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.821 recoveries=1
+[held-out-v2] 28/192 h029_axis_tilt_severe_v1/nominal (severe)
+Setting seed: 20260913
+[held-out-v2] time_budget_exhausted; depth=16.555 recoveries=0
+[held-out-v2] 29/192 h029_axis_tilt_severe_v1/v1 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.834 recoveries=1
+[held-out-v2] 30/192 h029_axis_tilt_severe_v1/v2 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.840 recoveries=1
+[held-out-v2] 31/192 h044_combined_severe_v0/v1 (severe)
+Setting seed: 20260913
+[held-out-v2] grasp_retention_limit; depth=18.469 recoveries=0
+[held-out-v2] 32/192 h044_combined_severe_v0/v2 (severe)
+Setting seed: 20260913
+[held-out-v2] grasp_retention_limit; depth=18.469 recoveries=0
+[held-out-v2] 33/192 h044_combined_severe_v0/nominal (severe)
+Setting seed: 20260913
+[held-out-v2] grasp_retention_limit; depth=18.503 recoveries=0
+[held-out-v2] 34/192 h049_terminal_band_moderate_v1/v2 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.593 recoveries=0
+[held-out-v2] 35/192 h049_terminal_band_moderate_v1/nominal (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.593 recoveries=0
+[held-out-v2] 36/192 h049_terminal_band_moderate_v1/v1 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.685 recoveries=0
+[held-out-v2] 37/192 h030_axis_tilt_severe_v2/v2 (severe)
+Setting seed: 20260913
+[held-out-v2] grasp_retention_limit; depth=18.009 recoveries=0
+[held-out-v2] 38/192 h030_axis_tilt_severe_v2/nominal (severe)
+Setting seed: 20260913
+[held-out-v2] grasp_retention_limit; depth=18.009 recoveries=0
+[held-out-v2] 39/192 h030_axis_tilt_severe_v2/v1 (severe)
+Setting seed: 20260913
+[held-out-v2] grasp_retention_limit; depth=17.998 recoveries=0
+[held-out-v2] 40/192 h025_axis_tilt_moderate_v1/nominal (moderate)
+Setting seed: 20260913
+[held-out-v2] time_budget_exhausted; depth=19.020 recoveries=0
+[held-out-v2] 41/192 h025_axis_tilt_moderate_v1/v1 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.908 recoveries=1
+[held-out-v2] 42/192 h025_axis_tilt_moderate_v1/v2 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.898 recoveries=1
+[held-out-v2] 43/192 h032_oblique_tilt_moderate_v0/nominal (moderate)
+Setting seed: 20260913
+[held-out-v2] time_budget_exhausted; depth=18.855 recoveries=0
+[held-out-v2] 44/192 h032_oblique_tilt_moderate_v0/v1 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.864 recoveries=1
+[held-out-v2] 45/192 h032_oblique_tilt_moderate_v0/v2 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.860 recoveries=1
+[held-out-v2] 46/192 h001_easy_controls_easy_v1/v2 (easy)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.779 recoveries=0
+[held-out-v2] 47/192 h001_easy_controls_easy_v1/nominal (easy)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.779 recoveries=0
+[held-out-v2] 48/192 h001_easy_controls_easy_v1/v1 (easy)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.779 recoveries=0
+[held-out-v2] 49/192 h036_oblique_tilt_severe_v0/v1 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.788 recoveries=1
+[held-out-v2] 50/192 h036_oblique_tilt_severe_v0/v2 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.788 recoveries=1
+[held-out-v2] 51/192 h036_oblique_tilt_severe_v0/nominal (severe)
+Setting seed: 20260913
+[held-out-v2] time_budget_exhausted; depth=16.583 recoveries=0
+[held-out-v2] 52/192 h041_combined_moderate_v1/v1 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.755 recoveries=0
+[held-out-v2] 53/192 h041_combined_moderate_v1/v2 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.755 recoveries=0
+[held-out-v2] 54/192 h041_combined_moderate_v1/nominal (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.747 recoveries=0
+[held-out-v2] 55/192 h008_axis_offset_moderate_v0/nominal (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.730 recoveries=0
+[held-out-v2] 56/192 h008_axis_offset_moderate_v0/v1 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.730 recoveries=0
+[held-out-v2] 57/192 h008_axis_offset_moderate_v0/v2 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.726 recoveries=0
+[held-out-v2] 58/192 h053_terminal_band_severe_v1/v2 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.825 recoveries=1
+[held-out-v2] 59/192 h053_terminal_band_severe_v1/nominal (severe)
+Setting seed: 20260913
+[held-out-v2] time_budget_exhausted; depth=18.620 recoveries=0
+[held-out-v2] 60/192 h053_terminal_band_severe_v1/v1 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.822 recoveries=1
+[held-out-v2] 61/192 h059_late_combined_moderate_v3/v1 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.807 recoveries=0
+[held-out-v2] 62/192 h059_late_combined_moderate_v3/v2 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.807 recoveries=0
+[held-out-v2] 63/192 h059_late_combined_moderate_v3/nominal (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.771 recoveries=0
+[held-out-v2] 64/192 h057_late_combined_moderate_v1/nominal (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.586 recoveries=0
+[held-out-v2] 65/192 h057_late_combined_moderate_v1/v1 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.586 recoveries=0
+[held-out-v2] 66/192 h057_late_combined_moderate_v1/v2 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.592 recoveries=0
+[held-out-v2] 67/192 h019_oblique_offset_moderate_v3/v2 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.703 recoveries=0
+[held-out-v2] 68/192 h019_oblique_offset_moderate_v3/nominal (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.703 recoveries=0
+[held-out-v2] 69/192 h019_oblique_offset_moderate_v3/v1 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.698 recoveries=0
+[held-out-v2] 70/192 h062_late_combined_severe_v2/nominal (severe)
+Setting seed: 20260913
+[held-out-v2] grasp_retention_limit; depth=19.142 recoveries=0
+[held-out-v2] 71/192 h062_late_combined_severe_v2/v1 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.953 recoveries=1
+[held-out-v2] 72/192 h062_late_combined_severe_v2/v2 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.946 recoveries=1
+[held-out-v2] 73/192 h043_combined_moderate_v3/v1 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.888 recoveries=1
+[held-out-v2] 74/192 h043_combined_moderate_v3/v2 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.888 recoveries=1
+[held-out-v2] 75/192 h043_combined_moderate_v3/nominal (moderate)
+Setting seed: 20260913
+[held-out-v2] time_budget_exhausted; depth=19.183 recoveries=0
+[held-out-v2] 76/192 h004_easy_controls_easy_v0/v1 (easy)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.728 recoveries=0
+[held-out-v2] 77/192 h004_easy_controls_easy_v0/v2 (easy)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.728 recoveries=0
+[held-out-v2] 78/192 h004_easy_controls_easy_v0/nominal (easy)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.728 recoveries=0
+[held-out-v2] 79/192 h054_terminal_band_severe_v2/nominal (severe)
+Setting seed: 20260913
+[held-out-v2] time_budget_exhausted; depth=19.019 recoveries=0
+[held-out-v2] 80/192 h054_terminal_band_severe_v2/v1 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.923 recoveries=1
+[held-out-v2] 81/192 h054_terminal_band_severe_v2/v2 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.903 recoveries=1
+[held-out-v2] 82/192 h005_easy_controls_easy_v1/v1 (easy)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.768 recoveries=0
+[held-out-v2] 83/192 h005_easy_controls_easy_v1/v2 (easy)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.768 recoveries=0
+[held-out-v2] 84/192 h005_easy_controls_easy_v1/nominal (easy)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.768 recoveries=0
+[held-out-v2] 85/192 h033_oblique_tilt_moderate_v1/v1 (moderate)
+Setting seed: 20260913
+[held-out-v2] time_budget_exhausted; depth=19.259 recoveries=0
+[held-out-v2] 86/192 h033_oblique_tilt_moderate_v1/v2 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.968 recoveries=1
+[held-out-v2] 87/192 h033_oblique_tilt_moderate_v1/nominal (moderate)
+Setting seed: 20260913
+[held-out-v2] time_budget_exhausted; depth=19.285 recoveries=0
+[held-out-v2] 88/192 h060_late_combined_severe_v0/v1 (severe)
+Setting seed: 20260913
+[held-out-v2] grasp_retention_limit; depth=18.607 recoveries=0
+[held-out-v2] 89/192 h060_late_combined_severe_v0/v2 (severe)
+Setting seed: 20260913
+[held-out-v2] grasp_retention_limit; depth=18.607 recoveries=0
+[held-out-v2] 90/192 h060_late_combined_severe_v0/nominal (severe)
+Setting seed: 20260913
+[held-out-v2] grasp_retention_limit; depth=18.619 recoveries=0
+[held-out-v2] 91/192 h016_oblique_offset_moderate_v0/v2 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.700 recoveries=0
+[held-out-v2] 92/192 h016_oblique_offset_moderate_v0/nominal (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.700 recoveries=0
+[held-out-v2] 93/192 h016_oblique_offset_moderate_v0/v1 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.724 recoveries=0
+[held-out-v2] 94/192 h034_oblique_tilt_moderate_v2/nominal (moderate)
+Setting seed: 20260913
+[held-out-v2] time_budget_exhausted; depth=19.435 recoveries=0
+[held-out-v2] 95/192 h034_oblique_tilt_moderate_v2/v1 (moderate)
+Setting seed: 20260913
+[held-out-v2] time_budget_exhausted; depth=19.435 recoveries=0
+[held-out-v2] 96/192 h034_oblique_tilt_moderate_v2/v2 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.984 recoveries=1
+[held-out-v2] 97/192 h014_axis_offset_severe_v2/nominal (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.580 recoveries=0
+[held-out-v2] 98/192 h014_axis_offset_severe_v2/v1 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.580 recoveries=0
+[held-out-v2] 99/192 h014_axis_offset_severe_v2/v2 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.598 recoveries=0
+[held-out-v2] 100/192 h017_oblique_offset_moderate_v1/v2 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.738 recoveries=0
+[held-out-v2] 101/192 h017_oblique_offset_moderate_v1/nominal (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.738 recoveries=0
+[held-out-v2] 102/192 h017_oblique_offset_moderate_v1/v1 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.725 recoveries=0
+[held-out-v2] 103/192 h031_axis_tilt_severe_v3/v2 (severe)
+Setting seed: 20260913
+[held-out-v2] grasp_retention_limit; depth=19.040 recoveries=0
+[held-out-v2] 104/192 h031_axis_tilt_severe_v3/nominal (severe)
+Setting seed: 20260913
+[held-out-v2] grasp_retention_limit; depth=19.040 recoveries=0
+[held-out-v2] 105/192 h031_axis_tilt_severe_v3/v1 (severe)
+Setting seed: 20260913
+[held-out-v2] grasp_retention_limit; depth=19.085 recoveries=0
+[held-out-v2] 106/192 h015_axis_offset_severe_v3/v1 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.574 recoveries=0
+[held-out-v2] 107/192 h015_axis_offset_severe_v3/v2 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.574 recoveries=0
+[held-out-v2] 108/192 h015_axis_offset_severe_v3/nominal (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.510 recoveries=0
+[held-out-v2] 109/192 h018_oblique_offset_moderate_v2/v2 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.771 recoveries=0
+[held-out-v2] 110/192 h018_oblique_offset_moderate_v2/nominal (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.771 recoveries=0
+[held-out-v2] 111/192 h018_oblique_offset_moderate_v2/v1 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.736 recoveries=0
+[held-out-v2] 112/192 h011_axis_offset_moderate_v3/v1 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.702 recoveries=0
+[held-out-v2] 113/192 h011_axis_offset_moderate_v3/v2 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.702 recoveries=0
+[held-out-v2] 114/192 h011_axis_offset_moderate_v3/nominal (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.691 recoveries=0
+[held-out-v2] 115/192 h021_oblique_offset_severe_v1/v2 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.595 recoveries=0
+[held-out-v2] 116/192 h021_oblique_offset_severe_v1/nominal (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.595 recoveries=0
+[held-out-v2] 117/192 h021_oblique_offset_severe_v1/v1 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.595 recoveries=0
+[held-out-v2] 118/192 h002_easy_controls_easy_v2/v2 (easy)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.758 recoveries=0
+[held-out-v2] 119/192 h002_easy_controls_easy_v2/nominal (easy)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.758 recoveries=0
+[held-out-v2] 120/192 h002_easy_controls_easy_v2/v1 (easy)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.758 recoveries=0
+[held-out-v2] 121/192 h012_axis_offset_severe_v0/nominal (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.592 recoveries=0
+[held-out-v2] 122/192 h012_axis_offset_severe_v0/v1 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.592 recoveries=0
+[held-out-v2] 123/192 h012_axis_offset_severe_v0/v2 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.610 recoveries=0
+[held-out-v2] 124/192 h013_axis_offset_severe_v1/v2 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.547 recoveries=0
+[held-out-v2] 125/192 h013_axis_offset_severe_v1/nominal (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.547 recoveries=0
+[held-out-v2] 126/192 h013_axis_offset_severe_v1/v1 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.543 recoveries=0
+[held-out-v2] 127/192 h006_easy_controls_easy_v2/v2 (easy)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.760 recoveries=0
+[held-out-v2] 128/192 h006_easy_controls_easy_v2/nominal (easy)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.760 recoveries=0
+[held-out-v2] 129/192 h006_easy_controls_easy_v2/v1 (easy)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.760 recoveries=0
+[held-out-v2] 130/192 h048_terminal_band_moderate_v0/v2 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.744 recoveries=0
+[held-out-v2] 131/192 h048_terminal_band_moderate_v0/nominal (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.744 recoveries=0
+[held-out-v2] 132/192 h048_terminal_band_moderate_v0/v1 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.720 recoveries=0
+[held-out-v2] 133/192 h023_oblique_offset_severe_v3/nominal (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.565 recoveries=0
+[held-out-v2] 134/192 h023_oblique_offset_severe_v3/v1 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.565 recoveries=0
+[held-out-v2] 135/192 h023_oblique_offset_severe_v3/v2 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.558 recoveries=0
+[held-out-v2] 136/192 h037_oblique_tilt_severe_v1/v2 (severe)
+Setting seed: 20260913
+[held-out-v2] grasp_retention_limit; depth=17.779 recoveries=1
+[held-out-v2] 137/192 h037_oblique_tilt_severe_v1/nominal (severe)
+Setting seed: 20260913
+[held-out-v2] grasp_retention_limit; depth=17.782 recoveries=0
+[held-out-v2] 138/192 h037_oblique_tilt_severe_v1/v1 (severe)
+Setting seed: 20260913
+[held-out-v2] grasp_retention_limit; depth=17.799 recoveries=0
+[held-out-v2] 139/192 h035_oblique_tilt_moderate_v3/nominal (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.578 recoveries=0
+[held-out-v2] 140/192 h035_oblique_tilt_moderate_v3/v1 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.578 recoveries=0
+[held-out-v2] 141/192 h035_oblique_tilt_moderate_v3/v2 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.530 recoveries=0
+[held-out-v2] 142/192 h007_easy_controls_easy_v3/v1 (easy)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.769 recoveries=0
+[held-out-v2] 143/192 h007_easy_controls_easy_v3/v2 (easy)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.769 recoveries=0
+[held-out-v2] 144/192 h007_easy_controls_easy_v3/nominal (easy)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.769 recoveries=0
+[held-out-v2] 145/192 h047_combined_severe_v3/v1 (severe)
+Setting seed: 20260913
+[held-out-v2] grasp_retention_limit; depth=16.800 recoveries=0
+[held-out-v2] 146/192 h047_combined_severe_v3/v2 (severe)
+Setting seed: 20260913
+[held-out-v2] grasp_retention_limit; depth=16.800 recoveries=0
+[held-out-v2] 147/192 h047_combined_severe_v3/nominal (severe)
+Setting seed: 20260913
+[held-out-v2] grasp_retention_limit; depth=16.807 recoveries=0
+[held-out-v2] 148/192 h056_late_combined_moderate_v0/v1 (moderate)
+Setting seed: 20260913
+[held-out-v2] grasp_retention_limit; depth=19.460 recoveries=0
+[held-out-v2] 149/192 h056_late_combined_moderate_v0/v2 (moderate)
+Setting seed: 20260913
+[held-out-v2] grasp_retention_limit; depth=19.460 recoveries=0
+[held-out-v2] 150/192 h056_late_combined_moderate_v0/nominal (moderate)
+Setting seed: 20260913
+[held-out-v2] grasp_retention_limit; depth=19.456 recoveries=0
+[held-out-v2] 151/192 h010_axis_offset_moderate_v2/v2 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.737 recoveries=0
+[held-out-v2] 152/192 h010_axis_offset_moderate_v2/nominal (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.737 recoveries=0
+[held-out-v2] 153/192 h010_axis_offset_moderate_v2/v1 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.689 recoveries=0
+[held-out-v2] 154/192 h042_combined_moderate_v2/nominal (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.728 recoveries=0
+[held-out-v2] 155/192 h042_combined_moderate_v2/v1 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.728 recoveries=0
+[held-out-v2] 156/192 h042_combined_moderate_v2/v2 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.752 recoveries=0
+[held-out-v2] 157/192 h020_oblique_offset_severe_v0/nominal (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.584 recoveries=0
+[held-out-v2] 158/192 h020_oblique_offset_severe_v0/v1 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.584 recoveries=0
+[held-out-v2] 159/192 h020_oblique_offset_severe_v0/v2 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.622 recoveries=0
+[held-out-v2] 160/192 h040_combined_moderate_v0/nominal (moderate)
+Setting seed: 20260913
+[held-out-v2] time_budget_exhausted; depth=19.405 recoveries=0
+[held-out-v2] 161/192 h040_combined_moderate_v0/v1 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.967 recoveries=1
+[held-out-v2] 162/192 h040_combined_moderate_v0/v2 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.974 recoveries=1
+[held-out-v2] 163/192 h051_terminal_band_moderate_v3/v2 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.637 recoveries=0
+[held-out-v2] 164/192 h051_terminal_band_moderate_v3/nominal (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.637 recoveries=0
+[held-out-v2] 165/192 h051_terminal_band_moderate_v3/v1 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.718 recoveries=0
+[held-out-v2] 166/192 h052_terminal_band_severe_v0/v2 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.819 recoveries=0
+[held-out-v2] 167/192 h052_terminal_band_severe_v0/nominal (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.819 recoveries=0
+[held-out-v2] 168/192 h052_terminal_band_severe_v0/v1 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.825 recoveries=0
+[held-out-v2] 169/192 h022_oblique_offset_severe_v2/nominal (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.556 recoveries=0
+[held-out-v2] 170/192 h022_oblique_offset_severe_v2/v1 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.556 recoveries=0
+[held-out-v2] 171/192 h022_oblique_offset_severe_v2/v2 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.589 recoveries=0
+[held-out-v2] 172/192 h027_axis_tilt_moderate_v3/v1 (moderate)
+Setting seed: 20260913
+[held-out-v2] time_budget_exhausted; depth=19.477 recoveries=0
+[held-out-v2] 173/192 h027_axis_tilt_moderate_v3/v2 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=20.046 recoveries=1
+[held-out-v2] 174/192 h027_axis_tilt_moderate_v3/nominal (moderate)
+Setting seed: 20260913
+[held-out-v2] time_budget_exhausted; depth=19.463 recoveries=0
+[held-out-v2] 175/192 h038_oblique_tilt_severe_v2/v2 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.923 recoveries=1
+[held-out-v2] 176/192 h038_oblique_tilt_severe_v2/nominal (severe)
+Setting seed: 20260913
+[held-out-v2] time_budget_exhausted; depth=18.633 recoveries=0
+[held-out-v2] 177/192 h038_oblique_tilt_severe_v2/v1 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.918 recoveries=1
+[held-out-v2] 178/192 h003_easy_controls_easy_v3/nominal (easy)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.832 recoveries=0
+[held-out-v2] 179/192 h003_easy_controls_easy_v3/v1 (easy)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.832 recoveries=0
+[held-out-v2] 180/192 h003_easy_controls_easy_v3/v2 (easy)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.832 recoveries=0
+[held-out-v2] 181/192 h063_late_combined_severe_v3/v1 (severe)
+Setting seed: 20260913
+[held-out-v2] grasp_retention_limit; depth=19.197 recoveries=1
+[held-out-v2] 182/192 h063_late_combined_severe_v3/v2 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.918 recoveries=1
+[held-out-v2] 183/192 h063_late_combined_severe_v3/nominal (severe)
+Setting seed: 20260913
+[held-out-v2] grasp_retention_limit; depth=19.188 recoveries=0
+[held-out-v2] 184/192 h009_axis_offset_moderate_v1/v1 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.714 recoveries=0
+[held-out-v2] 185/192 h009_axis_offset_moderate_v1/v2 (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.714 recoveries=0
+[held-out-v2] 186/192 h009_axis_offset_moderate_v1/nominal (moderate)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.701 recoveries=0
+[held-out-v2] 187/192 h055_terminal_band_severe_v3/v1 (severe)
+Setting seed: 20260913
+[held-out-v2] time_budget_exhausted; depth=19.415 recoveries=0
+[held-out-v2] 188/192 h055_terminal_band_severe_v3/v2 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.955 recoveries=1
+[held-out-v2] 189/192 h055_terminal_band_severe_v3/nominal (severe)
+Setting seed: 20260913
+[held-out-v2] time_budget_exhausted; depth=19.399 recoveries=0
+[held-out-v2] 190/192 h039_oblique_tilt_severe_v3/v1 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.804 recoveries=1
+[held-out-v2] 191/192 h039_oblique_tilt_severe_v3/v2 (severe)
+Setting seed: 20260913
+[held-out-v2] insertion_success; depth=19.804 recoveries=1
+[held-out-v2] 192/192 h039_oblique_tilt_severe_v3/nominal (severe)
+Setting seed: 20260913
+[held-out-v2] time_budget_exhausted; depth=15.636 recoveries=0

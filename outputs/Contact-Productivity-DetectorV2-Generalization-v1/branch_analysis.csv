@@ -1,0 +1,7 @@
+policy,branch,recoveries,conditions,verified_unloadings,ready_unloadings,retry_successes,repeated_stalls
+v1,normal,14,14,13,13,13,0
+v1,urgent,0,0,0,0,0,0
+v1,terminal,0,0,0,0,0,0
+v2,normal,13,13,12,12,12,0
+v2,urgent,2,2,2,2,2,0
+v2,terminal,5,5,5,5,5,0
