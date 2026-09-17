@@ -1,0 +1,2 @@
+held_out/ft023_oblique_offset_severe_v3/productivity AssertionError('\nNot equal to tolerance rtol=0, atol=3e-07\n\nMismatched elements: 2 / 3 (66.7%)\nMax absolute difference: 3.5782551e-07\nMax relative difference: 0.00110779\n x: array([5.996146e-01, 2.865282e-04, 8.790769e-02])\n y: array([5.996142e-01, 2.862111e-04, 8.790770e-02])')
+Counter({'passed': 383, 'failed': 1})

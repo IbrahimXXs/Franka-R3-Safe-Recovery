@@ -1,0 +1,43 @@
+{
+  "status": "passed_runtime_math_replay_with_frozen_audit_exception",
+  "development_conditions": 32,
+  "held_out_conditions": 64,
+  "episodes": 384,
+  "physics_rows": 543727,
+  "causal_checks": 45120,
+  "interventions": 46,
+  "retry_ready_unloadings": 46,
+  "exact_same_recovery_code_object": true,
+  "identical_recovery_parameters": true,
+  "full_recovery_safety_replay": true,
+  "force_only_decision_features": true,
+  "privileged_normal_load_not_used_online": true,
+  "force_selection_development_only": true,
+  "held_out_config_frozen": true,
+  "source_archives_verified": 63,
+  "no_old_paths_or_development_test_overlap": true,
+  "scene_config_unchanged": true,
+  "force_detector_config_sha256": "e6e7f8cc2faa72c0dbba302a80cb7b29fea0a30c822d911592467dcd153654c2",
+  "detector_v2_config_sha256": "189da99e1ba35a73a68221683cf0d6d215b3443d332c906e7e1afd231194de1d",
+  "strict_preintervention_matches": 28,
+  "preexisting_outputs_checked": 5877,
+  "preexisting_outputs_changed": [],
+  "frozen_audit_status": "383_passed_1_failed",
+  "original_frozen_audit": {
+    "counts": {
+      "passed": 383,
+      "failed": 1
+    },
+    "failures": [
+      {
+        "run_id": "held_out/ft023_oblique_offset_severe_v3/productivity",
+        "error": "AssertionError('\\nNot equal to tolerance rtol=0, atol=3e-07\\n\\nMismatched elements: 2 / 3 (66.7%)\\nMax absolute difference: 3.5782551e-07\\nMax relative difference: 0.00110779\\n x: array([5.996146e-01, 2.865282e-04, 8.790769e-02])\\n y: array([5.996142e-01, 2.862111e-04, 8.790770e-02])')",
+        "traceback": "Traceback (most recent call last):\n  File \"<stdin>\", line 9, in <module>\n  File \"/home/ibrahim/Documents/Franka-Safe-Recovery/research/force_productivity_analysis.py\", line 62, in audit_run\n    return v2_audit(directory,m,dict(run,policy='v2' if run['policy']=='productivity' else 'nominal'),rows,v2config)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ibrahim/Documents/Franka-Safe-Recovery/research/productivity_detector_v2_report.py\", line 43, in audit_run\n    return function(directory,m,raw)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ibrahim/Documents/Franka-Safe-Recovery/research/productivity_dewedge_report.py\", line 96, in audit\n    np.testing.assert_allclose([r[f'command_hand_position_{k}'] for k in range(3)],hp,atol=3e-7,rtol=0)\n  File \"/home/ibrahim/miniconda3/envs/franka-safe-recovery/lib/python3.11/site-packages/numpy/testing/_private/utils.py\", line 1504, in assert_allclose\n    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),\n  File \"/home/ibrahim/miniconda3/envs/franka-safe-recovery/lib/python3.11/contextlib.py\", line 81, in inner\n    return func(*args, **kwds)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/home/ibrahim/miniconda3/envs/franka-safe-recovery/lib/python3.11/site-packages/numpy/testing/_private/utils.py\", line 797, in assert_array_compare\n    raise AssertionError(msg)\nAssertionError: \nNot equal to tolerance rtol=0, atol=3e-07\n\nMismatched elements: 2 / 3 (66.7%)\nMax absolute difference: 3.5782551e-07\nMax relative difference: 0.00110779\n x: array([5.996146e-01, 2.865282e-04, 8.790769e-02])\n y: array([5.996142e-01, 2.862111e-04, 8.790770e-02])\n"
+      }
+    ]
+  },
+  "postcollection_audit_erratum": true,
+  "original_audit_tolerances_unchanged": true,
+  "detector_metrics_and_paired_matching_unchanged": true,
+  "explanation": "Offline SciPy SLERP differs from the existing Isaac Lab float32 near-identity branch. Runtime reconstruction replaces only expected recovery hand transform; every original assertion and tolerance remains unchanged."
+}

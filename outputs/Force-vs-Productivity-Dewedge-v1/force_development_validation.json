@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "runs": 192,
+  "physics_rows": 281492,
+  "causal_checks": 23364,
+  "interventions": 12,
+  "retry_ready_unloadings": 12
+}

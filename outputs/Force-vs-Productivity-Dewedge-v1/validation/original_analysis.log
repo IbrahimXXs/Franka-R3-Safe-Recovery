@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/ibrahim/Documents/Franka-Safe-Recovery/research/force_productivity_report.py", line 270, in <module>
+    print(json.dumps(analyze(parser.parse_args().directory),indent=2))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ibrahim/Documents/Franka-Safe-Recovery/research/force_productivity_report.py", line 121, in analyze
+    rows=read_log(directory/r['log']);a=audit_run(directory,m,r,rows,v2)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ibrahim/Documents/Franka-Safe-Recovery/research/force_productivity_analysis.py", line 62, in audit_run
+    return v2_audit(directory,m,dict(run,policy='v2' if run['policy']=='productivity' else 'nominal'),rows,v2config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ibrahim/Documents/Franka-Safe-Recovery/research/productivity_detector_v2_report.py", line 43, in audit_run
+    return function(directory,m,raw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ibrahim/Documents/Franka-Safe-Recovery/research/productivity_dewedge_report.py", line 96, in audit
+    np.testing.assert_allclose([r[f'command_hand_position_{k}'] for k in range(3)],hp,atol=3e-7,rtol=0)
+  File "/home/ibrahim/miniconda3/envs/franka-safe-recovery/lib/python3.11/site-packages/numpy/testing/_private/utils.py", line 1504, in assert_allclose
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+  File "/home/ibrahim/miniconda3/envs/franka-safe-recovery/lib/python3.11/contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ibrahim/miniconda3/envs/franka-safe-recovery/lib/python3.11/site-packages/numpy/testing/_private/utils.py", line 797, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Not equal to tolerance rtol=0, atol=3e-07
+
+Mismatched elements: 2 / 3 (66.7%)
+Max absolute difference: 3.5782551e-07
+Max relative difference: 0.00110779
+ x: array([5.996146e-01, 2.865282e-04, 8.790769e-02])
+ y: array([5.996142e-01, 2.862111e-04, 8.790770e-02])

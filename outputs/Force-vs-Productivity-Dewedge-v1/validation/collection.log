@@ -1,0 +1,1205 @@
+WARNING: overwriting environment variables set in the machine
+overwriting variable ['IsaacLab_PATH']
+[INFO][AppLauncher]: Using device: cuda:0
+[INFO][AppLauncher]: Loading experience file: /home/ibrahim/Documents/Franka-Safe-Recovery/.deps/IsaacLab/apps/isaaclab.python.headless.kit
+Loading user config located at: '/home/ibrahim/miniconda3/envs/franka-safe-recovery/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: /home/ibrahim/miniconda3/envs/franka-safe-recovery/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20260916_192457.log
+2026-09-16T15:24:57Z [62ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-09-16T15:24:58Z [366ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-09-16T15:24:58Z [489ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 580.178.04    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA GeForce RTX 3080          | Yes: 0 |     | 10486   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2206      | 20805ce9.. |
+|     |                                  |        |     |            | 1         |            |
+|=============================================================================================|
+| OS: 22.04.5 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.5, Kernel: 6.8.0-138-generic
+| XServer Vendor: The X.Org Foundation, XServer Version: 12101004 (1.21.1.4)
+| Processor: Intel(R) Core(TM) i5-14600KF
+| Bare Metal Cores: 14 | Bare Metal Logical Cores: 28
+| Available Cores:  20 
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 31923 | Free Memory: 24000
+| Total Page/Swap (MB): 2047 | Free Page/Swap: 2046
+|---------------------------------------------------------------------------------------------|
+2026-09-16T15:25:01Z [3,476ms] [Warning] [gpu.foundation.plugin] CPU performance profile is set to powersave. This profile sets the CPU to the lowest frequency reducing performance.
+2026-09-16T15:25:01Z [3,484ms] [Warning] [gpu.foundation.plugin] IOMMU is enabled.
+FORGE physics: 120 Hz (upstream_default); installed scene default: 120 Hz
+Setting seed: 20260913
+[INFO]: Base environment:
+	Environment device    : cuda:0
+	Environment seed      : 20260913
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.03333333333333333
+	Environment step-size : 0.06666666666666667
+2026-09-16T15:25:02Z [4,392ms] [Warning] [isaaclab.envs.direct_rl_env] The render interval (4) is smaller than the decimation (8). Multiple render calls will happen for each environment step.If this is not intended, set the render interval to be equal to the decimation.
+[INFO]: Time taken for scene creation : 2.881072 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 2.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 0.345760 seconds
+[INFO]: Completed setting up the environment...
+Setting seed: 20260913
+[force-ablation] 1/384 development/fd016_oblique_tilt_moderate_v0/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=19.390 recoveries=0
+[force-ablation] 2/384 development/fd003_easy_controls_easy_v3/nominal (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.748 recoveries=0
+[force-ablation] 3/384 development/fd014_axis_tilt_severe_v2/nominal (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=18.233 recoveries=0
+[force-ablation] 4/384 development/fd026_terminal_band_moderate_v2/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.705 recoveries=0
+[force-ablation] 5/384 development/fd019_oblique_tilt_severe_v3/nominal (severe)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=16.116 recoveries=0
+[force-ablation] 6/384 development/fd028_late_combined_severe_v0/nominal (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=18.731 recoveries=0
+[force-ablation] 7/384 development/fd022_combined_severe_v2/nominal (severe)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=16.325 recoveries=0
+[force-ablation] 8/384 development/fd007_axis_offset_moderate_v3/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.701 recoveries=0
+[force-ablation] 9/384 development/fd021_combined_moderate_v1/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.772 recoveries=0
+[force-ablation] 10/384 development/fd029_late_combined_moderate_v1/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=19.405 recoveries=0
+[force-ablation] 11/384 development/fd031_late_combined_moderate_v3/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.729 recoveries=0
+[force-ablation] 12/384 development/fd015_axis_tilt_moderate_v3/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.585 recoveries=0
+[force-ablation] 13/384 development/fd027_terminal_band_severe_v3/nominal (severe)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=19.291 recoveries=0
+[force-ablation] 14/384 development/fd009_oblique_offset_severe_v1/nominal (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.537 recoveries=0
+[force-ablation] 15/384 development/fd005_axis_offset_moderate_v1/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.678 recoveries=0
+[force-ablation] 16/384 development/fd000_easy_controls_easy_v0/nominal (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.805 recoveries=0
+[force-ablation] 17/384 development/fd018_oblique_tilt_moderate_v2/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.524 recoveries=0
+[force-ablation] 18/384 development/fd013_axis_tilt_moderate_v1/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=19.346 recoveries=0
+[force-ablation] 19/384 development/fd002_easy_controls_easy_v2/nominal (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.779 recoveries=0
+[force-ablation] 20/384 development/fd001_easy_controls_easy_v1/nominal (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.783 recoveries=0
+[force-ablation] 21/384 development/fd008_oblique_offset_moderate_v0/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.716 recoveries=0
+[force-ablation] 22/384 development/fd017_oblique_tilt_severe_v1/nominal (severe)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=18.055 recoveries=0
+[force-ablation] 23/384 development/fd012_axis_tilt_severe_v0/nominal (severe)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=15.752 recoveries=0
+[force-ablation] 24/384 development/fd010_oblique_offset_moderate_v2/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.784 recoveries=0
+[force-ablation] 25/384 development/fd024_terminal_band_moderate_v0/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.686 recoveries=0
+[force-ablation] 26/384 development/fd023_combined_moderate_v3/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.512 recoveries=0
+[force-ablation] 27/384 development/fd020_combined_severe_v0/nominal (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=18.739 recoveries=0
+[force-ablation] 28/384 development/fd030_late_combined_severe_v2/nominal (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=19.139 recoveries=0
+[force-ablation] 29/384 development/fd004_axis_offset_severe_v0/nominal (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.589 recoveries=0
+[force-ablation] 30/384 development/fd011_oblique_offset_severe_v3/nominal (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.527 recoveries=0
+[force-ablation] 31/384 development/fd025_terminal_band_severe_v1/nominal (severe)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=18.456 recoveries=0
+[force-ablation] 32/384 development/fd006_axis_offset_severe_v2/nominal (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.631 recoveries=0
+[force-ablation] 33/384 development/fd003_easy_controls_easy_v3/force_1 (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.748 recoveries=0
+[force-ablation] 34/384 development/fd003_easy_controls_easy_v3/force_2 (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.748 recoveries=0
+[force-ablation] 35/384 development/fd003_easy_controls_easy_v3/force_3 (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.748 recoveries=0
+[force-ablation] 36/384 development/fd003_easy_controls_easy_v3/force_4 (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.748 recoveries=0
+[force-ablation] 37/384 development/fd003_easy_controls_easy_v3/force_5 (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.748 recoveries=0
+[force-ablation] 38/384 development/fd001_easy_controls_easy_v1/force_2 (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.783 recoveries=0
+[force-ablation] 39/384 development/fd001_easy_controls_easy_v1/force_3 (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.783 recoveries=0
+[force-ablation] 40/384 development/fd001_easy_controls_easy_v1/force_4 (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.783 recoveries=0
+[force-ablation] 41/384 development/fd001_easy_controls_easy_v1/force_5 (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.783 recoveries=0
+[force-ablation] 42/384 development/fd001_easy_controls_easy_v1/force_1 (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.783 recoveries=0
+[force-ablation] 43/384 development/fd007_axis_offset_moderate_v3/force_1 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.701 recoveries=0
+[force-ablation] 44/384 development/fd007_axis_offset_moderate_v3/force_2 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.701 recoveries=0
+[force-ablation] 45/384 development/fd007_axis_offset_moderate_v3/force_3 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.700 recoveries=0
+[force-ablation] 46/384 development/fd007_axis_offset_moderate_v3/force_4 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.701 recoveries=0
+[force-ablation] 47/384 development/fd007_axis_offset_moderate_v3/force_5 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.701 recoveries=0
+[force-ablation] 48/384 development/fd028_late_combined_severe_v0/force_1 (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=18.731 recoveries=0
+[force-ablation] 49/384 development/fd028_late_combined_severe_v0/force_2 (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=18.730 recoveries=0
+[force-ablation] 50/384 development/fd028_late_combined_severe_v0/force_3 (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=18.730 recoveries=0
+[force-ablation] 51/384 development/fd028_late_combined_severe_v0/force_4 (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=18.731 recoveries=0
+[force-ablation] 52/384 development/fd028_late_combined_severe_v0/force_5 (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=18.730 recoveries=0
+[force-ablation] 53/384 development/fd008_oblique_offset_moderate_v0/force_5 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.724 recoveries=0
+[force-ablation] 54/384 development/fd008_oblique_offset_moderate_v0/force_1 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.716 recoveries=0
+[force-ablation] 55/384 development/fd008_oblique_offset_moderate_v0/force_2 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.724 recoveries=0
+[force-ablation] 56/384 development/fd008_oblique_offset_moderate_v0/force_3 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.724 recoveries=0
+[force-ablation] 57/384 development/fd008_oblique_offset_moderate_v0/force_4 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.716 recoveries=0
+[force-ablation] 58/384 development/fd005_axis_offset_moderate_v1/force_1 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.692 recoveries=0
+[force-ablation] 59/384 development/fd005_axis_offset_moderate_v1/force_2 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.692 recoveries=0
+[force-ablation] 60/384 development/fd005_axis_offset_moderate_v1/force_3 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.678 recoveries=0
+[force-ablation] 61/384 development/fd005_axis_offset_moderate_v1/force_4 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.692 recoveries=0
+[force-ablation] 62/384 development/fd005_axis_offset_moderate_v1/force_5 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.692 recoveries=0
+[force-ablation] 63/384 development/fd002_easy_controls_easy_v2/force_2 (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.779 recoveries=0
+[force-ablation] 64/384 development/fd002_easy_controls_easy_v2/force_3 (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.779 recoveries=0
+[force-ablation] 65/384 development/fd002_easy_controls_easy_v2/force_4 (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.779 recoveries=0
+[force-ablation] 66/384 development/fd002_easy_controls_easy_v2/force_5 (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.779 recoveries=0
+[force-ablation] 67/384 development/fd002_easy_controls_easy_v2/force_1 (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.779 recoveries=0
+[force-ablation] 68/384 development/fd020_combined_severe_v0/force_4 (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=18.713 recoveries=0
+[force-ablation] 69/384 development/fd020_combined_severe_v0/force_5 (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=18.739 recoveries=0
+[force-ablation] 70/384 development/fd020_combined_severe_v0/force_1 (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=18.713 recoveries=0
+[force-ablation] 71/384 development/fd020_combined_severe_v0/force_2 (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=18.713 recoveries=0
+[force-ablation] 72/384 development/fd020_combined_severe_v0/force_3 (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=18.739 recoveries=0
+[force-ablation] 73/384 development/fd018_oblique_tilt_moderate_v2/force_3 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.524 recoveries=0
+[force-ablation] 74/384 development/fd018_oblique_tilt_moderate_v2/force_4 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.524 recoveries=0
+[force-ablation] 75/384 development/fd018_oblique_tilt_moderate_v2/force_5 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.520 recoveries=0
+[force-ablation] 76/384 development/fd018_oblique_tilt_moderate_v2/force_1 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.524 recoveries=0
+[force-ablation] 77/384 development/fd018_oblique_tilt_moderate_v2/force_2 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.524 recoveries=0
+[force-ablation] 78/384 development/fd029_late_combined_moderate_v1/force_4 (moderate)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=19.465 recoveries=0
+[force-ablation] 79/384 development/fd029_late_combined_moderate_v1/force_5 (moderate)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=19.405 recoveries=0
+[force-ablation] 80/384 development/fd029_late_combined_moderate_v1/force_1 (moderate)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=19.405 recoveries=0
+[force-ablation] 81/384 development/fd029_late_combined_moderate_v1/force_2 (moderate)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=19.465 recoveries=0
+[force-ablation] 82/384 development/fd029_late_combined_moderate_v1/force_3 (moderate)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=19.405 recoveries=0
+[force-ablation] 83/384 development/fd009_oblique_offset_severe_v1/force_2 (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.537 recoveries=0
+[force-ablation] 84/384 development/fd009_oblique_offset_severe_v1/force_3 (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.529 recoveries=0
+[force-ablation] 85/384 development/fd009_oblique_offset_severe_v1/force_4 (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.537 recoveries=0
+[force-ablation] 86/384 development/fd009_oblique_offset_severe_v1/force_5 (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.537 recoveries=0
+[force-ablation] 87/384 development/fd009_oblique_offset_severe_v1/force_1 (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.529 recoveries=0
+[force-ablation] 88/384 development/fd027_terminal_band_severe_v3/force_1 (severe)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=19.291 recoveries=0
+[force-ablation] 89/384 development/fd027_terminal_band_severe_v3/force_2 (severe)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=19.291 recoveries=0
+[force-ablation] 90/384 development/fd027_terminal_band_severe_v3/force_3 (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=19.332 recoveries=0
+[force-ablation] 91/384 development/fd027_terminal_band_severe_v3/force_4 (severe)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=19.291 recoveries=0
+[force-ablation] 92/384 development/fd027_terminal_band_severe_v3/force_5 (severe)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=19.291 recoveries=0
+[force-ablation] 93/384 development/fd025_terminal_band_severe_v1/force_2 (severe)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=18.480 recoveries=0
+[force-ablation] 94/384 development/fd025_terminal_band_severe_v1/force_3 (severe)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=18.456 recoveries=0
+[force-ablation] 95/384 development/fd025_terminal_band_severe_v1/force_4 (severe)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=18.456 recoveries=0
+[force-ablation] 96/384 development/fd025_terminal_band_severe_v1/force_5 (severe)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=18.480 recoveries=0
+[force-ablation] 97/384 development/fd025_terminal_band_severe_v1/force_1 (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.809 recoveries=1
+[force-ablation] 98/384 development/fd012_axis_tilt_severe_v0/force_2 (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.845 recoveries=1
+[force-ablation] 99/384 development/fd012_axis_tilt_severe_v0/force_3 (severe)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=15.736 recoveries=0
+[force-ablation] 100/384 development/fd012_axis_tilt_severe_v0/force_4 (severe)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=15.752 recoveries=0
+[force-ablation] 101/384 development/fd012_axis_tilt_severe_v0/force_5 (severe)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=15.752 recoveries=0
+[force-ablation] 102/384 development/fd012_axis_tilt_severe_v0/force_1 (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.814 recoveries=1
+[force-ablation] 103/384 development/fd013_axis_tilt_moderate_v1/force_3 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=20.038 recoveries=1
+[force-ablation] 104/384 development/fd013_axis_tilt_moderate_v1/force_4 (moderate)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=19.433 recoveries=0
+[force-ablation] 105/384 development/fd013_axis_tilt_moderate_v1/force_5 (moderate)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=19.346 recoveries=0
+[force-ablation] 106/384 development/fd013_axis_tilt_moderate_v1/force_1 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.950 recoveries=1
+[force-ablation] 107/384 development/fd013_axis_tilt_moderate_v1/force_2 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=20.038 recoveries=1
+[force-ablation] 108/384 development/fd010_oblique_offset_moderate_v2/force_5 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.784 recoveries=0
+[force-ablation] 109/384 development/fd010_oblique_offset_moderate_v2/force_1 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.756 recoveries=0
+[force-ablation] 110/384 development/fd010_oblique_offset_moderate_v2/force_2 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.756 recoveries=0
+[force-ablation] 111/384 development/fd010_oblique_offset_moderate_v2/force_3 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.784 recoveries=0
+[force-ablation] 112/384 development/fd010_oblique_offset_moderate_v2/force_4 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.756 recoveries=0
+[force-ablation] 113/384 development/fd017_oblique_tilt_severe_v1/force_5 (severe)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=18.055 recoveries=0
+[force-ablation] 114/384 development/fd017_oblique_tilt_severe_v1/force_1 (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.762 recoveries=1
+[force-ablation] 115/384 development/fd017_oblique_tilt_severe_v1/force_2 (severe)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=18.055 recoveries=0
+[force-ablation] 116/384 development/fd017_oblique_tilt_severe_v1/force_3 (severe)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=18.055 recoveries=0
+[force-ablation] 117/384 development/fd017_oblique_tilt_severe_v1/force_4 (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=18.007 recoveries=0
+[force-ablation] 118/384 development/fd015_axis_tilt_moderate_v3/force_2 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.518 recoveries=0
+[force-ablation] 119/384 development/fd015_axis_tilt_moderate_v3/force_3 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.518 recoveries=0
+[force-ablation] 120/384 development/fd015_axis_tilt_moderate_v3/force_4 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.585 recoveries=0
+[force-ablation] 121/384 development/fd015_axis_tilt_moderate_v3/force_5 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.518 recoveries=0
+[force-ablation] 122/384 development/fd015_axis_tilt_moderate_v3/force_1 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.518 recoveries=0
+[force-ablation] 123/384 development/fd011_oblique_offset_severe_v3/force_5 (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.527 recoveries=0
+[force-ablation] 124/384 development/fd011_oblique_offset_severe_v3/force_1 (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.543 recoveries=0
+[force-ablation] 125/384 development/fd011_oblique_offset_severe_v3/force_2 (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.543 recoveries=0
+[force-ablation] 126/384 development/fd011_oblique_offset_severe_v3/force_3 (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.527 recoveries=0
+[force-ablation] 127/384 development/fd011_oblique_offset_severe_v3/force_4 (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.543 recoveries=0
+[force-ablation] 128/384 development/fd030_late_combined_severe_v2/force_4 (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=19.139 recoveries=0
+[force-ablation] 129/384 development/fd030_late_combined_severe_v2/force_5 (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=19.158 recoveries=0
+[force-ablation] 130/384 development/fd030_late_combined_severe_v2/force_1 (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=19.139 recoveries=0
+[force-ablation] 131/384 development/fd030_late_combined_severe_v2/force_2 (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=19.139 recoveries=0
+[force-ablation] 132/384 development/fd030_late_combined_severe_v2/force_3 (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=19.158 recoveries=0
+[force-ablation] 133/384 development/fd019_oblique_tilt_severe_v3/force_4 (severe)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=16.116 recoveries=0
+[force-ablation] 134/384 development/fd019_oblique_tilt_severe_v3/force_5 (severe)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=16.116 recoveries=0
+[force-ablation] 135/384 development/fd019_oblique_tilt_severe_v3/force_1 (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.778 recoveries=1
+[force-ablation] 136/384 development/fd019_oblique_tilt_severe_v3/force_2 (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.788 recoveries=1
+[force-ablation] 137/384 development/fd019_oblique_tilt_severe_v3/force_3 (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.771 recoveries=1
+[force-ablation] 138/384 development/fd006_axis_offset_severe_v2/force_1 (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.566 recoveries=0
+[force-ablation] 139/384 development/fd006_axis_offset_severe_v2/force_2 (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.631 recoveries=0
+[force-ablation] 140/384 development/fd006_axis_offset_severe_v2/force_3 (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.631 recoveries=0
+[force-ablation] 141/384 development/fd006_axis_offset_severe_v2/force_4 (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.566 recoveries=0
+[force-ablation] 142/384 development/fd006_axis_offset_severe_v2/force_5 (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.631 recoveries=0
+[force-ablation] 143/384 development/fd022_combined_severe_v2/force_4 (severe)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=16.325 recoveries=0
+[force-ablation] 144/384 development/fd022_combined_severe_v2/force_5 (severe)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=16.306 recoveries=0
+[force-ablation] 145/384 development/fd022_combined_severe_v2/force_1 (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.802 recoveries=1
+[force-ablation] 146/384 development/fd022_combined_severe_v2/force_2 (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.745 recoveries=1
+[force-ablation] 147/384 development/fd022_combined_severe_v2/force_3 (severe)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=16.306 recoveries=0
+[force-ablation] 148/384 development/fd024_terminal_band_moderate_v0/force_3 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.686 recoveries=0
+[force-ablation] 149/384 development/fd024_terminal_band_moderate_v0/force_4 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.686 recoveries=0
+[force-ablation] 150/384 development/fd024_terminal_band_moderate_v0/force_5 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.740 recoveries=0
+[force-ablation] 151/384 development/fd024_terminal_band_moderate_v0/force_1 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.686 recoveries=0
+[force-ablation] 152/384 development/fd024_terminal_band_moderate_v0/force_2 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.686 recoveries=0
+[force-ablation] 153/384 development/fd016_oblique_tilt_moderate_v0/force_1 (moderate)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=19.415 recoveries=0
+[force-ablation] 154/384 development/fd016_oblique_tilt_moderate_v0/force_2 (moderate)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=19.390 recoveries=0
+[force-ablation] 155/384 development/fd016_oblique_tilt_moderate_v0/force_3 (moderate)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=19.390 recoveries=0
+[force-ablation] 156/384 development/fd016_oblique_tilt_moderate_v0/force_4 (moderate)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=19.415 recoveries=0
+[force-ablation] 157/384 development/fd016_oblique_tilt_moderate_v0/force_5 (moderate)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=19.390 recoveries=0
+[force-ablation] 158/384 development/fd014_axis_tilt_severe_v2/force_2 (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=18.244 recoveries=0
+[force-ablation] 159/384 development/fd014_axis_tilt_severe_v2/force_3 (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=18.233 recoveries=0
+[force-ablation] 160/384 development/fd014_axis_tilt_severe_v2/force_4 (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=18.244 recoveries=0
+[force-ablation] 161/384 development/fd014_axis_tilt_severe_v2/force_5 (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=18.244 recoveries=0
+[force-ablation] 162/384 development/fd014_axis_tilt_severe_v2/force_1 (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=18.233 recoveries=0
+[force-ablation] 163/384 development/fd004_axis_offset_severe_v0/force_3 (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.589 recoveries=0
+[force-ablation] 164/384 development/fd004_axis_offset_severe_v0/force_4 (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.589 recoveries=0
+[force-ablation] 165/384 development/fd004_axis_offset_severe_v0/force_5 (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.581 recoveries=0
+[force-ablation] 166/384 development/fd004_axis_offset_severe_v0/force_1 (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.589 recoveries=0
+[force-ablation] 167/384 development/fd004_axis_offset_severe_v0/force_2 (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.589 recoveries=0
+[force-ablation] 168/384 development/fd023_combined_moderate_v3/force_5 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.524 recoveries=0
+[force-ablation] 169/384 development/fd023_combined_moderate_v3/force_1 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.512 recoveries=0
+[force-ablation] 170/384 development/fd023_combined_moderate_v3/force_2 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.512 recoveries=0
+[force-ablation] 171/384 development/fd023_combined_moderate_v3/force_3 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.524 recoveries=0
+[force-ablation] 172/384 development/fd023_combined_moderate_v3/force_4 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.512 recoveries=0
+[force-ablation] 173/384 development/fd026_terminal_band_moderate_v2/force_3 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.705 recoveries=0
+[force-ablation] 174/384 development/fd026_terminal_band_moderate_v2/force_4 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.674 recoveries=0
+[force-ablation] 175/384 development/fd026_terminal_band_moderate_v2/force_5 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.705 recoveries=0
+[force-ablation] 176/384 development/fd026_terminal_band_moderate_v2/force_1 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.705 recoveries=0
+[force-ablation] 177/384 development/fd026_terminal_band_moderate_v2/force_2 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.674 recoveries=0
+[force-ablation] 178/384 development/fd000_easy_controls_easy_v0/force_4 (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.805 recoveries=0
+[force-ablation] 179/384 development/fd000_easy_controls_easy_v0/force_5 (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.805 recoveries=0
+[force-ablation] 180/384 development/fd000_easy_controls_easy_v0/force_1 (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.805 recoveries=0
+[force-ablation] 181/384 development/fd000_easy_controls_easy_v0/force_2 (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.805 recoveries=0
+[force-ablation] 182/384 development/fd000_easy_controls_easy_v0/force_3 (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.805 recoveries=0
+[force-ablation] 183/384 development/fd031_late_combined_moderate_v3/force_5 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.706 recoveries=0
+[force-ablation] 184/384 development/fd031_late_combined_moderate_v3/force_1 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.729 recoveries=0
+[force-ablation] 185/384 development/fd031_late_combined_moderate_v3/force_2 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.729 recoveries=0
+[force-ablation] 186/384 development/fd031_late_combined_moderate_v3/force_3 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.706 recoveries=0
+[force-ablation] 187/384 development/fd031_late_combined_moderate_v3/force_4 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.729 recoveries=0
+[force-ablation] 188/384 development/fd021_combined_moderate_v1/force_3 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.736 recoveries=0
+[force-ablation] 189/384 development/fd021_combined_moderate_v1/force_4 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.772 recoveries=0
+[force-ablation] 190/384 development/fd021_combined_moderate_v1/force_5 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.736 recoveries=0
+[force-ablation] 191/384 development/fd021_combined_moderate_v1/force_1 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.736 recoveries=0
+[force-ablation] 192/384 development/fd021_combined_moderate_v1/force_2 (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.772 recoveries=0
+[force-ablation] FORCE CONFIG FROZEN: 1.0 N; SHA e6e7f8cc2faa72c0dbba302a80cb7b29fea0a30c822d911592467dcd153654c2
+[force-ablation] 193/384 held_out/ft008_axis_offset_moderate_v0/productivity (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.774 recoveries=0
+[force-ablation] 194/384 held_out/ft008_axis_offset_moderate_v0/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.774 recoveries=0
+[force-ablation] 195/384 held_out/ft008_axis_offset_moderate_v0/force (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.691 recoveries=0
+[force-ablation] 196/384 held_out/ft015_axis_offset_severe_v3/force (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.597 recoveries=0
+[force-ablation] 197/384 held_out/ft015_axis_offset_severe_v3/productivity (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.597 recoveries=0
+[force-ablation] 198/384 held_out/ft015_axis_offset_severe_v3/nominal (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.587 recoveries=0
+[force-ablation] 199/384 held_out/ft007_easy_controls_easy_v3/productivity (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.808 recoveries=0
+[force-ablation] 200/384 held_out/ft007_easy_controls_easy_v3/nominal (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.808 recoveries=0
+[force-ablation] 201/384 held_out/ft007_easy_controls_easy_v3/force (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.808 recoveries=0
+[force-ablation] 202/384 held_out/ft058_late_combined_moderate_v2/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.669 recoveries=0
+[force-ablation] 203/384 held_out/ft058_late_combined_moderate_v2/force (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.669 recoveries=0
+[force-ablation] 204/384 held_out/ft058_late_combined_moderate_v2/productivity (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.660 recoveries=0
+[force-ablation] 205/384 held_out/ft056_late_combined_moderate_v0/productivity (moderate)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=19.410 recoveries=0
+[force-ablation] 206/384 held_out/ft056_late_combined_moderate_v0/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=19.410 recoveries=0
+[force-ablation] 207/384 held_out/ft056_late_combined_moderate_v0/force (moderate)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=19.423 recoveries=0
+[force-ablation] 208/384 held_out/ft061_late_combined_severe_v1/force (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=18.847 recoveries=0
+[force-ablation] 209/384 held_out/ft061_late_combined_severe_v1/productivity (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=18.847 recoveries=0
+[force-ablation] 210/384 held_out/ft061_late_combined_severe_v1/nominal (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=18.853 recoveries=0
+[force-ablation] 211/384 held_out/ft032_oblique_tilt_moderate_v0/productivity (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.835 recoveries=1
+[force-ablation] 212/384 held_out/ft032_oblique_tilt_moderate_v0/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=18.879 recoveries=0
+[force-ablation] 213/384 held_out/ft032_oblique_tilt_moderate_v0/force (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.823 recoveries=1
+[force-ablation] 214/384 held_out/ft038_oblique_tilt_severe_v2/productivity (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=18.967 recoveries=0
+[force-ablation] 215/384 held_out/ft038_oblique_tilt_severe_v2/nominal (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=18.967 recoveries=0
+[force-ablation] 216/384 held_out/ft038_oblique_tilt_severe_v2/force (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.973 recoveries=1
+[force-ablation] 217/384 held_out/ft037_oblique_tilt_severe_v1/productivity (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=18.069 recoveries=0
+[force-ablation] 218/384 held_out/ft037_oblique_tilt_severe_v1/nominal (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=18.069 recoveries=0
+[force-ablation] 219/384 held_out/ft037_oblique_tilt_severe_v1/force (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.768 recoveries=1
+[force-ablation] 220/384 held_out/ft044_combined_severe_v0/nominal (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=18.517 recoveries=0
+[force-ablation] 221/384 held_out/ft044_combined_severe_v0/force (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=18.517 recoveries=0
+[force-ablation] 222/384 held_out/ft044_combined_severe_v0/productivity (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=18.546 recoveries=0
+[force-ablation] 223/384 held_out/ft059_late_combined_moderate_v3/force (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.775 recoveries=0
+[force-ablation] 224/384 held_out/ft059_late_combined_moderate_v3/productivity (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.775 recoveries=0
+[force-ablation] 225/384 held_out/ft059_late_combined_moderate_v3/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.743 recoveries=0
+[force-ablation] 226/384 held_out/ft023_oblique_offset_severe_v3/productivity (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.946 recoveries=1
+[force-ablation] 227/384 held_out/ft023_oblique_offset_severe_v3/nominal (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.542 recoveries=0
+[force-ablation] 228/384 held_out/ft023_oblique_offset_severe_v3/force (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.509 recoveries=0
+[force-ablation] 229/384 held_out/ft030_axis_tilt_severe_v2/force (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=18.368 recoveries=0
+[force-ablation] 230/384 held_out/ft030_axis_tilt_severe_v2/productivity (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.682 recoveries=1
+[force-ablation] 231/384 held_out/ft030_axis_tilt_severe_v2/nominal (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=18.364 recoveries=0
+[force-ablation] 232/384 held_out/ft003_easy_controls_easy_v3/nominal (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.816 recoveries=0
+[force-ablation] 233/384 held_out/ft003_easy_controls_easy_v3/force (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.816 recoveries=0
+[force-ablation] 234/384 held_out/ft003_easy_controls_easy_v3/productivity (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.816 recoveries=0
+[force-ablation] 235/384 held_out/ft045_combined_severe_v1/nominal (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=19.100 recoveries=0
+[force-ablation] 236/384 held_out/ft045_combined_severe_v1/force (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=19.100 recoveries=0
+[force-ablation] 237/384 held_out/ft045_combined_severe_v1/productivity (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=19.112 recoveries=0
+[force-ablation] 238/384 held_out/ft060_late_combined_severe_v0/nominal (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=18.496 recoveries=0
+[force-ablation] 239/384 held_out/ft060_late_combined_severe_v0/force (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=18.496 recoveries=0
+[force-ablation] 240/384 held_out/ft060_late_combined_severe_v0/productivity (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=18.496 recoveries=0
+[force-ablation] 241/384 held_out/ft002_easy_controls_easy_v2/nominal (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.773 recoveries=0
+[force-ablation] 242/384 held_out/ft002_easy_controls_easy_v2/force (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.773 recoveries=0
+[force-ablation] 243/384 held_out/ft002_easy_controls_easy_v2/productivity (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.773 recoveries=0
+[force-ablation] 244/384 held_out/ft001_easy_controls_easy_v1/productivity (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.782 recoveries=0
+[force-ablation] 245/384 held_out/ft001_easy_controls_easy_v1/nominal (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.782 recoveries=0
+[force-ablation] 246/384 held_out/ft001_easy_controls_easy_v1/force (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.782 recoveries=0
+[force-ablation] 247/384 held_out/ft027_axis_tilt_moderate_v3/force (moderate)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=19.436 recoveries=0
+[force-ablation] 248/384 held_out/ft027_axis_tilt_moderate_v3/productivity (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=20.023 recoveries=1
+[force-ablation] 249/384 held_out/ft027_axis_tilt_moderate_v3/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=19.423 recoveries=0
+[force-ablation] 250/384 held_out/ft010_axis_offset_moderate_v2/productivity (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.694 recoveries=0
+[force-ablation] 251/384 held_out/ft010_axis_offset_moderate_v2/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.694 recoveries=0
+[force-ablation] 252/384 held_out/ft010_axis_offset_moderate_v2/force (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.691 recoveries=0
+[force-ablation] 253/384 held_out/ft013_axis_offset_severe_v1/productivity (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.527 recoveries=0
+[force-ablation] 254/384 held_out/ft013_axis_offset_severe_v1/nominal (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.527 recoveries=0
+[force-ablation] 255/384 held_out/ft013_axis_offset_severe_v1/force (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.529 recoveries=0
+[force-ablation] 256/384 held_out/ft034_oblique_tilt_moderate_v2/productivity (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.989 recoveries=1
+[force-ablation] 257/384 held_out/ft034_oblique_tilt_moderate_v2/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=19.471 recoveries=0
+[force-ablation] 258/384 held_out/ft034_oblique_tilt_moderate_v2/force (moderate)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=19.477 recoveries=0
+[force-ablation] 259/384 held_out/ft020_oblique_offset_severe_v0/force (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.601 recoveries=0
+[force-ablation] 260/384 held_out/ft020_oblique_offset_severe_v0/productivity (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.601 recoveries=0
+[force-ablation] 261/384 held_out/ft020_oblique_offset_severe_v0/nominal (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.580 recoveries=0
+[force-ablation] 262/384 held_out/ft051_terminal_band_moderate_v3/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.632 recoveries=0
+[force-ablation] 263/384 held_out/ft051_terminal_band_moderate_v3/force (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.632 recoveries=0
+[force-ablation] 264/384 held_out/ft051_terminal_band_moderate_v3/productivity (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.629 recoveries=0
+[force-ablation] 265/384 held_out/ft028_axis_tilt_severe_v0/nominal (severe)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=15.576 recoveries=0
+[force-ablation] 266/384 held_out/ft028_axis_tilt_severe_v0/force (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.828 recoveries=1
+[force-ablation] 267/384 held_out/ft028_axis_tilt_severe_v0/productivity (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.817 recoveries=1
+[force-ablation] 268/384 held_out/ft063_late_combined_severe_v3/force (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=19.296 recoveries=0
+[force-ablation] 269/384 held_out/ft063_late_combined_severe_v3/productivity (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=19.296 recoveries=0
+[force-ablation] 270/384 held_out/ft063_late_combined_severe_v3/nominal (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=19.296 recoveries=0
+[force-ablation] 271/384 held_out/ft039_oblique_tilt_severe_v3/nominal (severe)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=15.747 recoveries=0
+[force-ablation] 272/384 held_out/ft039_oblique_tilt_severe_v3/force (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.816 recoveries=1
+[force-ablation] 273/384 held_out/ft039_oblique_tilt_severe_v3/productivity (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.803 recoveries=1
+[force-ablation] 274/384 held_out/ft040_combined_moderate_v0/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=19.343 recoveries=0
+[force-ablation] 275/384 held_out/ft040_combined_moderate_v0/force (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.976 recoveries=1
+[force-ablation] 276/384 held_out/ft040_combined_moderate_v0/productivity (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.950 recoveries=1
+[force-ablation] 277/384 held_out/ft000_easy_controls_easy_v0/productivity (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.776 recoveries=0
+[force-ablation] 278/384 held_out/ft000_easy_controls_easy_v0/nominal (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.776 recoveries=0
+[force-ablation] 279/384 held_out/ft000_easy_controls_easy_v0/force (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.776 recoveries=0
+[force-ablation] 280/384 held_out/ft017_oblique_offset_moderate_v1/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.659 recoveries=0
+[force-ablation] 281/384 held_out/ft017_oblique_offset_moderate_v1/force (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.659 recoveries=0
+[force-ablation] 282/384 held_out/ft017_oblique_offset_moderate_v1/productivity (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.654 recoveries=0
+[force-ablation] 283/384 held_out/ft022_oblique_offset_severe_v2/productivity (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.640 recoveries=0
+[force-ablation] 284/384 held_out/ft022_oblique_offset_severe_v2/nominal (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.640 recoveries=0
+[force-ablation] 285/384 held_out/ft022_oblique_offset_severe_v2/force (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.650 recoveries=0
+[force-ablation] 286/384 held_out/ft036_oblique_tilt_severe_v0/productivity (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.761 recoveries=1
+[force-ablation] 287/384 held_out/ft036_oblique_tilt_severe_v0/nominal (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=16.784 recoveries=0
+[force-ablation] 288/384 held_out/ft036_oblique_tilt_severe_v0/force (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.782 recoveries=1
+[force-ablation] 289/384 held_out/ft054_terminal_band_severe_v2/productivity (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.858 recoveries=1
+[force-ablation] 290/384 held_out/ft054_terminal_band_severe_v2/nominal (severe)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=18.781 recoveries=0
+[force-ablation] 291/384 held_out/ft054_terminal_band_severe_v2/force (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.854 recoveries=1
+[force-ablation] 292/384 held_out/ft016_oblique_offset_moderate_v0/force (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.684 recoveries=0
+[force-ablation] 293/384 held_out/ft016_oblique_offset_moderate_v0/productivity (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.684 recoveries=0
+[force-ablation] 294/384 held_out/ft016_oblique_offset_moderate_v0/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.681 recoveries=0
+[force-ablation] 295/384 held_out/ft029_axis_tilt_severe_v1/force (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.797 recoveries=1
+[force-ablation] 296/384 held_out/ft029_axis_tilt_severe_v1/productivity (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.830 recoveries=1
+[force-ablation] 297/384 held_out/ft029_axis_tilt_severe_v1/nominal (severe)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=16.563 recoveries=0
+[force-ablation] 298/384 held_out/ft053_terminal_band_severe_v1/productivity (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.794 recoveries=1
+[force-ablation] 299/384 held_out/ft053_terminal_band_severe_v1/nominal (severe)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=18.365 recoveries=0
+[force-ablation] 300/384 held_out/ft053_terminal_band_severe_v1/force (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.780 recoveries=1
+[force-ablation] 301/384 held_out/ft024_axis_tilt_moderate_v0/productivity (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.565 recoveries=0
+[force-ablation] 302/384 held_out/ft024_axis_tilt_moderate_v0/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.565 recoveries=0
+[force-ablation] 303/384 held_out/ft024_axis_tilt_moderate_v0/force (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.581 recoveries=0
+[force-ablation] 304/384 held_out/ft018_oblique_offset_moderate_v2/force (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.720 recoveries=0
+[force-ablation] 305/384 held_out/ft018_oblique_offset_moderate_v2/productivity (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.720 recoveries=0
+[force-ablation] 306/384 held_out/ft018_oblique_offset_moderate_v2/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.729 recoveries=0
+[force-ablation] 307/384 held_out/ft043_combined_moderate_v3/productivity (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.870 recoveries=1
+[force-ablation] 308/384 held_out/ft043_combined_moderate_v3/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=18.869 recoveries=0
+[force-ablation] 309/384 held_out/ft043_combined_moderate_v3/force (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.858 recoveries=1
+[force-ablation] 310/384 held_out/ft014_axis_offset_severe_v2/nominal (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.540 recoveries=0
+[force-ablation] 311/384 held_out/ft014_axis_offset_severe_v2/force (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.540 recoveries=0
+[force-ablation] 312/384 held_out/ft014_axis_offset_severe_v2/productivity (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.548 recoveries=0
+[force-ablation] 313/384 held_out/ft042_combined_moderate_v2/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.765 recoveries=0
+[force-ablation] 314/384 held_out/ft042_combined_moderate_v2/force (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.765 recoveries=0
+[force-ablation] 315/384 held_out/ft042_combined_moderate_v2/productivity (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.785 recoveries=0
+[force-ablation] 316/384 held_out/ft033_oblique_tilt_moderate_v1/force (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.971 recoveries=1
+[force-ablation] 317/384 held_out/ft033_oblique_tilt_moderate_v1/productivity (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.966 recoveries=1
+[force-ablation] 318/384 held_out/ft033_oblique_tilt_moderate_v1/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=19.190 recoveries=0
+[force-ablation] 319/384 held_out/ft057_late_combined_moderate_v1/force (moderate)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=19.482 recoveries=0
+[force-ablation] 320/384 held_out/ft057_late_combined_moderate_v1/productivity (moderate)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=19.482 recoveries=0
+[force-ablation] 321/384 held_out/ft057_late_combined_moderate_v1/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=19.459 recoveries=0
+[force-ablation] 322/384 held_out/ft049_terminal_band_moderate_v1/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.737 recoveries=0
+[force-ablation] 323/384 held_out/ft049_terminal_band_moderate_v1/force (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.737 recoveries=0
+[force-ablation] 324/384 held_out/ft049_terminal_band_moderate_v1/productivity (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.715 recoveries=0
+[force-ablation] 325/384 held_out/ft041_combined_moderate_v1/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.753 recoveries=0
+[force-ablation] 326/384 held_out/ft041_combined_moderate_v1/force (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.753 recoveries=0
+[force-ablation] 327/384 held_out/ft041_combined_moderate_v1/productivity (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.758 recoveries=0
+[force-ablation] 328/384 held_out/ft006_easy_controls_easy_v2/nominal (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.786 recoveries=0
+[force-ablation] 329/384 held_out/ft006_easy_controls_easy_v2/force (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.786 recoveries=0
+[force-ablation] 330/384 held_out/ft006_easy_controls_easy_v2/productivity (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.786 recoveries=0
+[force-ablation] 331/384 held_out/ft021_oblique_offset_severe_v1/nominal (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.596 recoveries=0
+[force-ablation] 332/384 held_out/ft021_oblique_offset_severe_v1/force (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.596 recoveries=0
+[force-ablation] 333/384 held_out/ft021_oblique_offset_severe_v1/productivity (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.578 recoveries=0
+[force-ablation] 334/384 held_out/ft055_terminal_band_severe_v3/force (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=19.316 recoveries=0
+[force-ablation] 335/384 held_out/ft055_terminal_band_severe_v3/productivity (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.898 recoveries=1
+[force-ablation] 336/384 held_out/ft055_terminal_band_severe_v3/nominal (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=19.314 recoveries=0
+[force-ablation] 337/384 held_out/ft005_easy_controls_easy_v1/force (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.808 recoveries=0
+[force-ablation] 338/384 held_out/ft005_easy_controls_easy_v1/productivity (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.808 recoveries=0
+[force-ablation] 339/384 held_out/ft005_easy_controls_easy_v1/nominal (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.808 recoveries=0
+[force-ablation] 340/384 held_out/ft050_terminal_band_moderate_v2/productivity (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.603 recoveries=0
+[force-ablation] 341/384 held_out/ft050_terminal_band_moderate_v2/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.603 recoveries=0
+[force-ablation] 342/384 held_out/ft050_terminal_band_moderate_v2/force (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.658 recoveries=0
+[force-ablation] 343/384 held_out/ft012_axis_offset_severe_v0/productivity (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.593 recoveries=0
+[force-ablation] 344/384 held_out/ft012_axis_offset_severe_v0/nominal (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.593 recoveries=0
+[force-ablation] 345/384 held_out/ft012_axis_offset_severe_v0/force (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.596 recoveries=0
+[force-ablation] 346/384 held_out/ft031_axis_tilt_severe_v3/nominal (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=19.299 recoveries=0
+[force-ablation] 347/384 held_out/ft031_axis_tilt_severe_v3/force (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=19.299 recoveries=0
+[force-ablation] 348/384 held_out/ft031_axis_tilt_severe_v3/productivity (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=19.309 recoveries=0
+[force-ablation] 349/384 held_out/ft048_terminal_band_moderate_v0/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.763 recoveries=0
+[force-ablation] 350/384 held_out/ft048_terminal_band_moderate_v0/force (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.763 recoveries=0
+[force-ablation] 351/384 held_out/ft048_terminal_band_moderate_v0/productivity (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.761 recoveries=0
+[force-ablation] 352/384 held_out/ft025_axis_tilt_moderate_v1/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=18.880 recoveries=0
+[force-ablation] 353/384 held_out/ft025_axis_tilt_moderate_v1/force (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.894 recoveries=1
+[force-ablation] 354/384 held_out/ft025_axis_tilt_moderate_v1/productivity (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.885 recoveries=1
+[force-ablation] 355/384 held_out/ft052_terminal_band_severe_v0/force (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.867 recoveries=0
+[force-ablation] 356/384 held_out/ft052_terminal_band_severe_v0/productivity (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.867 recoveries=0
+[force-ablation] 357/384 held_out/ft052_terminal_band_severe_v0/nominal (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.950 recoveries=0
+[force-ablation] 358/384 held_out/ft035_oblique_tilt_moderate_v3/force (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.577 recoveries=0
+[force-ablation] 359/384 held_out/ft035_oblique_tilt_moderate_v3/productivity (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.577 recoveries=0
+[force-ablation] 360/384 held_out/ft035_oblique_tilt_moderate_v3/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.517 recoveries=0
+[force-ablation] 361/384 held_out/ft046_combined_severe_v2/productivity (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.785 recoveries=1
+[force-ablation] 362/384 held_out/ft046_combined_severe_v2/nominal (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=15.852 recoveries=0
+[force-ablation] 363/384 held_out/ft046_combined_severe_v2/force (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.795 recoveries=1
+[force-ablation] 364/384 held_out/ft019_oblique_offset_moderate_v3/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.700 recoveries=0
+[force-ablation] 365/384 held_out/ft019_oblique_offset_moderate_v3/force (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.700 recoveries=0
+[force-ablation] 366/384 held_out/ft019_oblique_offset_moderate_v3/productivity (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.680 recoveries=0
+[force-ablation] 367/384 held_out/ft009_axis_offset_moderate_v1/force (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.685 recoveries=0
+[force-ablation] 368/384 held_out/ft009_axis_offset_moderate_v1/productivity (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.685 recoveries=0
+[force-ablation] 369/384 held_out/ft009_axis_offset_moderate_v1/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.676 recoveries=0
+[force-ablation] 370/384 held_out/ft026_axis_tilt_moderate_v2/force (moderate)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=19.181 recoveries=0
+[force-ablation] 371/384 held_out/ft026_axis_tilt_moderate_v2/productivity (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.973 recoveries=1
+[force-ablation] 372/384 held_out/ft026_axis_tilt_moderate_v2/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] time_budget_exhausted; depth=19.181 recoveries=0
+[force-ablation] 373/384 held_out/ft011_axis_offset_moderate_v3/force (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.688 recoveries=0
+[force-ablation] 374/384 held_out/ft011_axis_offset_moderate_v3/productivity (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.688 recoveries=0
+[force-ablation] 375/384 held_out/ft011_axis_offset_moderate_v3/nominal (moderate)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.674 recoveries=0
+[force-ablation] 376/384 held_out/ft004_easy_controls_easy_v0/nominal (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.823 recoveries=0
+[force-ablation] 377/384 held_out/ft004_easy_controls_easy_v0/force (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.823 recoveries=0
+[force-ablation] 378/384 held_out/ft004_easy_controls_easy_v0/productivity (easy)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.823 recoveries=0
+[force-ablation] 379/384 held_out/ft062_late_combined_severe_v2/force (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.918 recoveries=1
+[force-ablation] 380/384 held_out/ft062_late_combined_severe_v2/productivity (severe)
+Setting seed: 20260913
+[force-ablation] insertion_success; depth=19.918 recoveries=1
+[force-ablation] 381/384 held_out/ft062_late_combined_severe_v2/nominal (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=19.161 recoveries=0
+[force-ablation] 382/384 held_out/ft047_combined_severe_v3/force (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=16.979 recoveries=0
+[force-ablation] 383/384 held_out/ft047_combined_severe_v3/productivity (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=16.979 recoveries=0
+[force-ablation] 384/384 held_out/ft047_combined_severe_v3/nominal (severe)
+Setting seed: 20260913
+[force-ablation] grasp_retention_limit; depth=16.984 recoveries=0

@@ -1,0 +1,12 @@
+{
+  "collection_command": "./force_productivity_dewedge.sh --headless",
+  "collection_exit_code": 0,
+  "collection_complete": true,
+  "original_offline_analysis_command": "python -m research.force_productivity_report outputs/Force-vs-Productivity-Dewedge-v1",
+  "original_offline_analysis_exit_code": 1,
+  "final_offline_analysis_command": "python outputs/Force-vs-Productivity-Dewedge-v1/validation/finish_with_runtime_audit.py",
+  "final_offline_analysis_exit_code": 0,
+  "precollection_tests_command": "python -m unittest discover -s tests",
+  "precollection_tests_passed": 181,
+  "note": "Original audit exception is retained; runtime-math correction changed no frozen source or tolerance and excluded no episode."
+}

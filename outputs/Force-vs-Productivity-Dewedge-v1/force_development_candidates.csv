@@ -1,0 +1,6 @@
+threshold_n,nominal_successes,nominal_failures,false_alerts,false_alert_fraction,failed_cases_alerted,failure_coverage,useful_failed_cases_alerted,capped_useful_lead_score_s,admissible,closed_loop_successes,interventions,verified_unloadings,retry_successes,safety_stops,median_safety_lead_s,median_stall_lead_s,actual_interventions_on_nominal_success,verified_unloading_rate,retry_success_rate
+1.0,19,13,0,0.0,6,0.46153846153846156,3,2.3250000000001343,True,25,6,6,6,5,,0.03333333333330302,0,1.0,1.0
+2.0,19,13,0,0.0,3,0.23076923076923078,0,0.0,True,23,4,4,4,5,,-0.44166666666701815,0,1.0,1.0
+3.0,19,13,0,0.0,1,0.07692307692307693,0,0.0,True,21,2,2,2,6,,-0.8416666666673365,0,1.0,1.0
+4.0,19,13,0,0.0,0,0.0,0,0.0,True,19,0,0,0,6,,,0,,
+5.0,19,13,0,0.0,0,0.0,0,0.0,True,19,0,0,0,5,,,0,,

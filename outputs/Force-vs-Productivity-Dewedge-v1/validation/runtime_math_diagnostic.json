@@ -1,0 +1,28 @@
+{
+  "run_id": "held_out/ft023_oblique_offset_severe_v3/productivity",
+  "row": 1334,
+  "time_s": 11.116666666504898,
+  "phase": "relax",
+  "fraction": 0.04859259259259227,
+  "quat_dot": 1.0,
+  "runtime_near_identity_cutoff": 4.76837158203125e-07,
+  "runtime_returns_anchor": true,
+  "scipy_error_m": 3.578255102221206e-07,
+  "runtime_error_m": 3.4924596548080444e-10,
+  "logged": [
+    0.5996145606040955,
+    0.00028652820037677884,
+    0.08790768682956696
+  ],
+  "runtime": [
+    0.5996145606040955,
+    0.00028652785113081336,
+    0.08790768682956696
+  ],
+  "scipy": [
+    0.5996142027785852,
+    0.0002862111375217268,
+    0.08790770283269911
+  ],
+  "isaaclab_math_sha256": "48f7052ed30d9e7ae21e0e20ac963ccb52f784a076f1a602cae1c641e923e3cd"
+}

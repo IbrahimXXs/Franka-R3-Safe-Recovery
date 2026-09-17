@@ -1,0 +1,13 @@
+{
+  "counts": {
+    "passed": 383,
+    "failed": 1
+  },
+  "failures": [
+    {
+      "run_id": "held_out/ft023_oblique_offset_severe_v3/productivity",
+      "error": "AssertionError('\\nNot equal to tolerance rtol=0, atol=3e-07\\n\\nMismatched elements: 2 / 3 (66.7%)\\nMax absolute difference: 3.5782551e-07\\nMax relative difference: 0.00110779\\n x: array([5.996146e-01, 2.865282e-04, 8.790769e-02])\\n y: array([5.996142e-01, 2.862111e-04, 8.790770e-02])')",
+      "traceback": "Traceback (most recent call last):\n  File \"<stdin>\", line 9, in <module>\n  File \"/home/ibrahim/Documents/Franka-Safe-Recovery/research/force_productivity_analysis.py\", line 62, in audit_run\n    return v2_audit(directory,m,dict(run,policy='v2' if run['policy']=='productivity' else 'nominal'),rows,v2config)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ibrahim/Documents/Franka-Safe-Recovery/research/productivity_detector_v2_report.py\", line 43, in audit_run\n    return function(directory,m,raw)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/ibrahim/Documents/Franka-Safe-Recovery/research/productivity_dewedge_report.py\", line 96, in audit\n    np.testing.assert_allclose([r[f'command_hand_position_{k}'] for k in range(3)],hp,atol=3e-7,rtol=0)\n  File \"/home/ibrahim/miniconda3/envs/franka-safe-recovery/lib/python3.11/site-packages/numpy/testing/_private/utils.py\", line 1504, in assert_allclose\n    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),\n  File \"/home/ibrahim/miniconda3/envs/franka-safe-recovery/lib/python3.11/contextlib.py\", line 81, in inner\n    return func(*args, **kwds)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/home/ibrahim/miniconda3/envs/franka-safe-recovery/lib/python3.11/site-packages/numpy/testing/_private/utils.py\", line 797, in assert_array_compare\n    raise AssertionError(msg)\nAssertionError: \nNot equal to tolerance rtol=0, atol=3e-07\n\nMismatched elements: 2 / 3 (66.7%)\nMax absolute difference: 3.5782551e-07\nMax relative difference: 0.00110779\n x: array([5.996146e-01, 2.865282e-04, 8.790769e-02])\n y: array([5.996142e-01, 2.862111e-04, 8.790770e-02])\n"
+    }
+  ]
+}
