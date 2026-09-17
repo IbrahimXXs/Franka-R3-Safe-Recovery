@@ -1,0 +1,22 @@
+{
+  "eye": [
+    0.68,
+    -0.16,
+    0.13
+  ],
+  "target": [
+    0.6,
+    0.0,
+    0.09
+  ],
+  "focal_length_mm": 22.0,
+  "horizontal_aperture_mm": 20.955,
+  "clipping_range_m": [
+    0.001,
+    10.0
+  ],
+  "resolution": [
+    1920,
+    1080
+  ]
+}

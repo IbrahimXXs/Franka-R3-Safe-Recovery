@@ -1,0 +1,28 @@
+{
+  "case_id": "ft030_axis_tilt_severe_v2",
+  "family": "axis_tilt",
+  "severity": "severe",
+  "split": "held_out",
+  "group_id": "ft030_axis_tilt_severe_v2",
+  "sign_variant": 2,
+  "ramp_onset_mm": 14.9,
+  "offset_magnitude_mm": 0.0,
+  "tilt_magnitude_deg": 7.6,
+  "case": {
+    "family": "axis_tilt",
+    "offset_x_mm": 0.0,
+    "offset_y_mm": 0.0,
+    "roll_deg": 0.0,
+    "pitch_deg": 0.0,
+    "insertion_duration_s": 8.0,
+    "ramp_onset_mm": 14.9,
+    "ramp_full_depth_mm": 20.0,
+    "final_offset_x_mm": 0.0,
+    "final_offset_y_mm": 0.0,
+    "final_roll_deg": 0.0,
+    "final_pitch_deg": -7.6,
+    "path_group_id": "ft030_axis_tilt_severe_v2",
+    "split_group_id": "ft030_axis_tilt_severe_v2",
+    "sample_role": "force_detector_held_out"
+  }
+}

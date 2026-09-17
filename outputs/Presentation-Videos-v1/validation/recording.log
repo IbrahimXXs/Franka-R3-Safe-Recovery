@@ -1,0 +1,72 @@
+WARNING: overwriting environment variables set in the machine
+overwriting variable ['IsaacLab_PATH']
+[INFO][AppLauncher]: Using device: cuda:0
+[INFO][AppLauncher]: Loading experience file: /home/ibrahim/Documents/Franka-Safe-Recovery/.deps/IsaacLab/apps/isaaclab.python.headless.rendering.kit
+Loading user config located at: '/home/ibrahim/miniconda3/envs/franka-safe-recovery/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: /home/ibrahim/miniconda3/envs/franka-safe-recovery/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20260917_070502.log
+2026-09-17T03:05:02Z [147ms] [Warning] [carb.windowing-glfw.gamepad] Joystick with unknown remapping detected (will be ignored):  Microsoft Android [03000000373500004610000010010000]
+2026-09-17T03:05:02Z [147ms] [Warning] [carb.windowing-glfw.gamepad] Joystick with unknown remapping detected (will be ignored):  ASRock LED Controller [03000000ce260000a201000010010000]
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 580.178.04    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA GeForce RTX 3080          | Yes: 0 |     | 10486   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2206      | 20805ce9.. |
+|     |                                  |        |     |            | 1         |            |
+|=============================================================================================|
+| OS: 22.04.5 LTS (Jammy Jellyfish) ubuntu, Version: 22.04.5, Kernel: 6.8.0-138-generic
+| XServer Vendor: The X.Org Foundation, XServer Version: 12101004 (1.21.1.4)
+| Processor: Intel(R) Core(TM) i5-14600KF
+| Bare Metal Cores: 14 | Bare Metal Logical Cores: 28
+| Available Cores:  20 
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 31923 | Free Memory: 24514
+| Total Page/Swap (MB): 2047 | Free Page/Swap: 2045
+|---------------------------------------------------------------------------------------------|
+2026-09-17T03:05:03Z [839ms] [Warning] [gpu.foundation.plugin] CPU performance profile is set to powersave. This profile sets the CPU to the lowest frequency reducing performance.
+2026-09-17T03:05:03Z [847ms] [Warning] [gpu.foundation.plugin] IOMMU is enabled.
+2026-09-17T03:05:04Z [1,475ms] [Warning] [omni.log] Source: omni.hydra was already registered.
+2026-09-17T03:05:04Z [1,651ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-09-17T03:05:04Z [1,662ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+2026-09-17T03:05:05Z [3,104ms] [Warning] [pxr.Semantics] pxr.Semantics is deprecated - please use Semantics instead
+2026-09-17T03:05:05Z [3,198ms] [Warning] [omni.graph.core.plugin] Found duplicate of category 'Replicator' - was 'Annotators', adding 'Fabric Reader'
+2026-09-17T03:05:05Z [3,198ms] [Warning] [omni.graph.core.plugin] Category 'Replicator' not accepted on node type 'omni.replicator.core.FabricReader' in extension 'omni.replicator.core'
+2026-09-17T03:05:05Z [3,200ms] [Warning] [omni.replicator.core.scripts.extension] No material configuration file, adding configuration to material settings directly.
+2026-09-17T03:05:09Z [6,354ms] [Warning] [omni.fabric.plugin] Warning: attribute resolution not found for bucket id 7
+
+FORGE physics: 120 Hz (upstream_default); installed scene default: 120 Hz
+Setting seed: 20260913
+[INFO]: Base environment:
+	Environment device    : cuda:0
+	Environment seed      : 20260913
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.03333333333333333
+	Environment step-size : 0.06666666666666667
+2026-09-17T03:05:10Z [7,565ms] [Warning] [isaaclab.envs.direct_rl_env] The render interval (4) is smaller than the decimation (8). Multiple render calls will happen for each environment step.If this is not intended, set the render interval to be equal to the decimation.
+[INFO]: Time taken for scene creation : 2.193870 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 2.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 0.954950 seconds
+[INFO]: Completed setting up the environment...
+2026-09-17T03:05:14Z [11,373ms] [Warning] [omni.syntheticdata.plugin] OgnSdPostRenderVarToHost : rendervar copy from texture directly to host buffer is counter-performant. Please use copy from texture to device buffer first.
+Setting seed: 20260913
+RECORDING ft030_axis_tilt_severe_v2
+Setting seed: 20260913
+/home/ibrahim/Documents/Franka-Safe-Recovery/simulation/record_productivity_videos.py:81: DeprecationWarning: 'mode' parameter is deprecated and will be removed in Pillow 13 (2026-10-15)
+  image=Image.fromarray(np.ascontiguousarray(data[:,:,:3]),'RGB')
+2026-09-17T03:05:43Z [40,801ms] [Warning] [carb] Client gpu.foundation.plugin has acquired [gpu::unstable::IMemoryBudgetManagerFactory v0.1] 100 times. Consider accessing this interface with carb::getCachedInterface() (Performance warning)
+VIDEO TRIGGER normal 8.899999999999588 0.2383815199136734 0.3732615732226903
+RECORDED ft030_axis_tilt_severe_v2 insertion_success 1
+RECORDING ft027_axis_tilt_moderate_v3
+Setting seed: 20260913
+VIDEO TRIGGER terminal 10.899999999999384 0.37263134121894836 None
+RECORDED ft027_axis_tilt_moderate_v3 insertion_success 1
